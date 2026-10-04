@@ -1,0 +1,802 @@
+{
+  "created_at": "2026-09-23T19:52:37.478329+00:00",
+  "models": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about NPCI circulars, retrieve relevant passages that answer the question.",
+    "context_length": 8192,
+    "max_output_tokens": 1500,
+    "model_timeout_seconds": 300
+  },
+  "fingerprint": "5ae80aea9d4b7fc649ace7a51125f02fe56db25a800f3c67ece089d86cfaf8ad",
+  "note": "Developer smoke checks, not a held-out accuracy benchmark. Review claims against their cited passages.",
+  "retrieval": [
+    {
+      "method": "bm25",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "5ae80aea9d4b7fc649ace7a51125f02fe56db25a800f3c67ece089d86cfaf8ad",
+      "chunk_count": 428,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.62
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2026-OC-115F",
+            "2025-OC-115E",
+            "2024-OC-193",
+            "2025-OC-193A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.18
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.26
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2024-OC-205",
+            "2025-OC-169A",
+            "2025-OC-213"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.13
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2024-OC-76A",
+            "2026-OC-186A",
+            "2025-OC-224",
+            "2025-OC-215A",
+            "2025-OC-39A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.14
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2025-OC-211",
+            "2026-OC-227A",
+            "2023-UPI-175"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.17
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.21
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.09
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.07
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.1
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.08
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.07
+        }
+      ]
+    },
+    {
+      "method": "vector",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "5ae80aea9d4b7fc649ace7a51125f02fe56db25a800f3c67ece089d86cfaf8ad",
+      "chunk_count": 428,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 0.9166666666666666,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 963.77
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F",
+            "2024-OC-193",
+            "2024-OC-107A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 149.69
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 128.54
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2024-OC-205",
+            "2025-OC-PCOMP-001",
+            "2023-Product-Compliance-PCOMP-005"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 6976.94
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2024-OC-76A",
+            "2025-OC-115E",
+            "2023-UPI-183",
+            "2024-OC-204"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 130.68
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2025-OC-141D",
+            "2024-OC-199",
+            "2023-UPI-183",
+            "2025-OC-115E"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 111.53
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 39.91
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.19
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.12
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [
+            "2024-OC-199",
+            "2023-UPI-170A",
+            "2026-OC-100B",
+            "2023-UPI-183"
+          ],
+          "hit": false,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 61.27
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.25
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.12
+        }
+      ]
+    },
+    {
+      "method": "hybrid",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "5ae80aea9d4b7fc649ace7a51125f02fe56db25a800f3c67ece089d86cfaf8ad",
+      "chunk_count": 428,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 0.9166666666666666,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 41.95
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2026-OC-115F",
+            "2025-OC-115E",
+            "2024-OC-193",
+            "2025-OC-193A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 57.28
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 108.13
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2024-OC-205",
+            "2023-UPI-186",
+            "2025-OC-213"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 132.62
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2024-OC-76A",
+            "2023-UPI-163",
+            "2025-OC-215A",
+            "2023-UPI-187",
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 71.33
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2025-OC-141D",
+            "2026-OC-227A",
+            "2023-Product-Compliance-PCOMP-005",
+            "2023-UPI-175"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 74.72
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 49.26
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.22
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.14
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [
+            "2024-OC-199",
+            "2023-UPI-170A",
+            "2026-OC-100B",
+            "2023-UPI-183"
+          ],
+          "hit": false,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 82.62
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.2
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.12
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "query": "According to OC 186A, what consent must the user give for UPI Tap & Pay on PoS?",
+      "mode": "generate",
+      "sources": [
+        {
+          "id": "2026-OC-186A:p1:c1",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "serena a Oe Prt | FORWPRD NPCI/UPI/OC-186A/2026-27 10\" September 2026 To, Members and UPI Application Providers — Unified Payments Interface (UPI) Subject: Enhancement - UPI Tap & Pay on Point of Sale (PoS) With reference to UPI Operating Circular NPCI/UPI/OC-186/2023-24 dated 19° December 2023, UPI Tap & Pay through Near Field Communication (NFC) on QR was introduced as an additional mode for initiating UPI transactions. In addition to QR, UPI Tap & Pay shall now be extended to Point of Sale (PoS) terminals enabling Users to make contactless (NFC-based) UPI! payments by unlocking their mobile device and tapping it on the PoS terminal. Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions. 2. Members and UPI Application Providers shall ensure explicit User consent is obtained for enabling UPI Tap & Pay feature, with Users having the ability to opt out at any time. 3. Members and UPI Application Providers shall ensure that per transaction limit is capped at $5000, up to which additional factor of authentication shall not be required.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "score": 0.03279,
+          "citation": "S1"
+        },
+        {
+          "id": "2026-OC-186A:p2:c1",
+          "document_id": "2026-OC-186A",
+          "page": 2,
+          "text": "sero na EE ETE | FORWARD UPI Application Provider 1. UP! Application Providers / PSP Banks shall ensure explicit User consent is obtained after each device binding operation before allowing further transactions using UPI! Tap & Pay. 2. UPI Application Providers shall ensure that device lock is enabled as a prerequisite for activating UP! Tap & Pay. Further, the device shall be in an unlocked state at the time of initiating a UP! Tap & Pay transaction. 3. UPI Application Providers shall ensure that UP! Tap & Pay is made available through a dedicated call-to- action. The functionality shall be presented as a standalone feature and shall not be embedded within any other service, feature, or menu category. Remitter Bank 1. Remitter Bank shall validate the User’s account for UPI Tap & Pay feature enablement status before processing each transaction. Further, Members & UPI Application Providers shall be consulted to provide option to Users to set their own transaction limits within the aforesaid ceiling of $5000. Yours sincerely, SD/- Sourabh Tomar Deputy Chief — UPI Product Page 2 of 2",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "score": 0.03226,
+          "citation": "S2"
+        }
+      ],
+      "claims": [
+        {
+          "text": "According to OC 186A, Members and UPI Application Providers must ensure explicit User consent is obtained for enabling the UPI Tap & Pay feature.",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "Users must have the ability to opt out of the UPI Tap & Pay feature at any time.",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "Explicit User consent must be obtained after each device binding operation before allowing further transactions using UPI Tap & Pay.",
+          "sources": [
+            "S2"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 8701
+    },
+    {
+      "query": "According to OC 201, who is the primary user and who is the secondary user in UPI Circle?",
+      "mode": "generate",
+      "sources": [
+        {
+          "id": "2024-OC-201:p1:c1",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "aRearT wskr wrart Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI /UPI/OC No.201/2024-25 13!\" August 2024 To, All Members - Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of “UPI Circle” —- Delegated Payments for secondary users UPI has emerged as a preferred mode of payment for users. UPI has created a seamless digital experience to enable users to transact via their mobile devices. There are users who are still dependent on cash for their daily payment needs because they do not manage their own money through their own account. With the objective of addressing these unmet needs, introduce “UPI Circle” is introduced, wherein UPI users can delegate to their trusted secondary users for making payments. UPI Steering Committee meeting held on 3% August 2023 had endorsed the introduction of “UPI Circle - Delegate Payments”. UPI Circle is a feature where a UPI user acts as a primary to link with their trusted secondary users on their UPI App for either partial or full delegation. Primary user can authorize a trusted secondary user for performing transactions within the security protocols/ limits. Full Delegation — Primary user authorizes a secondary user to initiate and complete UPI transactions as per defined spend limits Partial Delegation — Primary user authorizes initiation of payment requests from secondary users, Primary user shall complete UP! transaction with",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "score": 0.03279,
+          "citation": "S1"
+        },
+        {
+          "id": "2024-OC-201:p1:c2",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "authorizes a secondary user to initiate and complete UPI transactions as per defined spend limits Partial Delegation — Primary user authorizes initiation of payment requests from secondary users, Primary user shall complete UP! transaction with UPI PIN Members are required to ensure the below guidelines are followed: 1. UPl apps and PSP to offer independent user journey for Primary and secondary users. User shall have their own choice of UPI app 2. UPI Apps shall ensure App passcode/ biometrics (finger/face), etc. mandatory for ail secondary users 3. For linking, Primary user shall scan QR/enter UPI Id followed by selection of contact number from the contact list. In the later phase, Primary user shall be able to link Secondary user in lieu of QR code scan by selection of contact number from the contact list only, details to notified. a. Manual entry of mobile number shall be restricted 4. A primary user can delegate to up to 5 secondary users and a secondary user can accept delegation from only one primary user 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051- T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "score": 0.032,
+          "citation": "S2"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The primary user is the UPI user who acts as a primary to link with their trusted secondary users and authorizes them for transactions.",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "The secondary user is a trusted user authorized by the primary user to perform transactions within security protocols/limits.",
+          "sources": [
+            "S1"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 2951
+    },
+    {
+      "query": "What requirements are specified in OC 999?",
+      "mode": "generate",
+      "sources": [],
+      "claims": [],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."
+      ],
+      "answer": "No matching evidence was retrieved; no model request was made.",
+      "abstained": true,
+      "elapsed_ms": 0
+    },
+    {
+      "query": "Explain quantum photosynthesis and chlorophyll.",
+      "mode": "generate",
+      "sources": [
+        {
+          "id": "2024-OC-199:p1:c1",
+          "document_id": "2024-OC-199",
+          "page": 1,
+          "text": "fs Conroe =) NPCI/UPI/OC no.199/2024-25 25\" June 2024 To, All Members, UPI (Unified Payment Interface) Dear Sir/Madam, Subject: Update to NPCI CL version 1.8 or above UPI has become a preferred digital payment mode across the country. It provides ease of use, convenience and superior user experience with security and interoperability. To ensure the safety and security of the UPI systems, NPCI constantly reviews the security checks of all components in the UPI ecosystem and regularly upgrades them to address evolving threats in cyber landscape. There are security checks implemented as part of the code embedded in the Common Library (CL) along with the feature release to enhance user experience on UPI platforms. Integration of latest versions of CL is important to ensure enhanced security and safety in UPI ecosystem. With this objective, NPCI will be retiring the support for CL prior to Version 1.8 after 30% September 2024. To ensure compliance PSP Banks shall certify and enable CL 1.8 or above and their respective UPI Apps shall integrate the latest version of CL within their application, on or before 30% September 2024. Members are requested to take note of this compliance and communicate it to relevant stakeholders and their respective partners. Yours sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex,",
+          "title": "Update to NPCI CL version 1.8 or above",
+          "circular_number": "199",
+          "series": "UPI",
+          "issue_date": "2024-06-25",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_199_FY_24_25_Update_to_NPCI_CL_version_1_8_or_above_2ce3cf4e5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "score": 0.01639,
+          "citation": "S1"
+        },
+        {
+          "id": "2023-UPI-170A:p1:c1",
+          "document_id": "2023-UPI-170A",
+          "page": 1,
+          "text": "Rey uss wrart Par NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC-170A/2023-24(Addendum) 7\" November 2023 To All Members participating in Unified Payment Interface (UPI) Subject: Addendum to “RBI’s Digital Rupee - CBDC and UPI Interoperability” for P2P UPI QR Vide reference to NPCI UP! OC NPCI/UPI/OC No 170/2023-24 dated 20\" September,2023 on “RBI's Digital Rupee — CBDC and UPI Interoperability’, interoperability between UPI and Digital Rupee was allowed which was in line with the RBI's direction on enhancing interoperability. With the mentioned guideline the benefits of making payment to UP! Quick Response Code (QR Code) was extended to the Digital Rupee users for merchant transactions(P2M/P2PM). The interoperability of CBDC on UPI transaction shall be extended to UPI P2P QR’s based on the regulatory approval. Members shall implement the following for enabling interoperability and acceptance of UPI P2P QR Codes for Digital Rupee transactions: 1. All the details as mentioned in NPCI’s UP! Operating Circular 170 shall be applicable for the aforesaid transactions as well. 2. Existing NPCI switching fees for UPI P2P transactions shall be applicable for the aforesaid transactions. 3. The purpose code for such transactions shall be ‘92’ . No other purpose code should be passed for such transactions. Further, it is also mandated that the loading of CBDC wallets via RuPay Credit Card on UPI as the payment mode",
+          "title": "Addendum to RBI Digital Rupee - CBDC and UPI Interoperability for P2P UPI QR",
+          "circular_number": "170A",
+          "series": "UPI",
+          "issue_date": "2023-11-07",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_170_A_FY_23_24_Addendum_to_RBI_Digital_Rupee_CBDC_and_UPI_Interoperability_for_P2_P_UPI_QR_168f72ee5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "score": 0.01613,
+          "citation": "S2"
+        },
+        {
+          "id": "2024-OC-199:p1:c2",
+          "document_id": "2024-OC-199",
+          "page": 1,
+          "text": "requested to take note of this compliance and communicate it to relevant stakeholders and their respective partners. Yours sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 www.npci.org.in CIN: U74990MH2008NPL189067 cantact@Annci ara in",
+          "title": "Update to NPCI CL version 1.8 or above",
+          "circular_number": "199",
+          "series": "UPI",
+          "issue_date": "2024-06-25",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_199_FY_24_25_Update_to_NPCI_CL_version_1_8_or_above_2ce3cf4e5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "score": 0.01587,
+          "citation": "S3"
+        },
+        {
+          "id": "2026-OC-100B:p20:c1",
+          "document_id": "2026-OC-100B",
+          "page": 20,
+          "text": "waren oT IT | FORWPRD Annexure B Design Approval Process: 1. Mandatory Approval Requirement: All UP! QR Code designs shall obtain prior approval from NPCI before implementation or deployment. 2. Submission Process: Approval requests, along with the proposed QR code design shall be submitted to: upi.marketing@npci.org.in | upi.compliance@npci.org.in 3. Turnaround Time : NPC] shall review and communicate its approval/ observations within 5 working days of receiving the submission. 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. we T: +91 22 40009100 F: +91 22 40009101 yoeetnes ‘on contact@npci.org.in www.npci.org.in eBuild ane CIN: U74990MH2008NPL189067",
+          "title": "Addendum to Mandatory Brand Guidelines for BHIM UPI Merchant QR",
+          "circular_number": "100B",
+          "series": "UPI",
+          "issue_date": "2026-06-05",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_100_B_FY_2026_27_Addendum_to_Mandatory_Brand_Guidelines_for_BHIM_UPI_Merchant_QR_e88d1b6cd2.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 85,
+          "score": 0.01562,
+          "citation": "S4"
+        },
+        {
+          "id": "2023-UPI-183:p1:c2",
+          "document_id": "2023-UPI-183",
+          "page": 1,
+          "text": "operating circular NPCI/2022-23/RuPay/019-A dated 7\" December 2022. The respective ecosystem members are requested to adhere to above latest by 315 January 2024. The content of the circular to be noted for implementation and requisite information to be disseminated to all concerned officials. Regards, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: #91 22 40009100 F: +9122 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+          "title": "Enhancing UPI Payment Experience",
+          "circular_number": "183",
+          "series": "UPI",
+          "issue_date": "2023-12-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_183_Enhancing_UPI_Payment_Experience_b9d44e9bb0.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "score": 0.01538,
+          "citation": "S5"
+        },
+        {
+          "id": "2024-OC-76A:p1:c1",
+          "document_id": "2024-OC-76A",
+          "page": 1,
+          "text": "NATIONAL Cp NPCI/UPI/2023-24/0C/ 76A 12‘ March 2024 To All Members of UPI, Dear Madan/Sir, Subject: Revision in transaction limits based on merchant & transaction types - Addendum to OC76 NPCI vide circular NPCI/UPI/2019-20/0C76 dated 31st October 2019, had released guidelines regarding transaction limits based on merchant segment and transaction types. Considering the constantly expanding UPI merchant ecosystem and the impending risks which can arise, it is advised that the following guidelines to be taken note of and implemented by respective entities. Cae Circular Reference & as Payer PSP shall ensure P2P Intent based NPCI/UPI/2019-20/OC/76A 1 transactions (Initiation mode ‘04’ and ‘05’) shall be : (New) disallowed. Payee PSP shall ensure Intent based transactions NPCI/UPI/2019-20/0C/76 2 (Initiation mode ‘04’) shall be disallowed for all (Modification) ‘Offline’ non-verified merchants. QR share & Pay shall have a limit of INR 2000/- for NPCI/UPI/2019-20/OC/76 3 all P2P transactions (Payer PSP to ensure that UPI (Existing — No change) app to identify the same). g 9 QR share & Pay shall have a limit of INR 2000/- for NPCI/UPI/2019-20/0C/76 4 all P2M (non-verified offline merchants) and Payer (Existing - No change) PSP to ensure that Payer UPI app identify the same. Wallet load, Gift/Prepaid cards (MCC 6540) shall NPCI/UPI/2019-20/0C/76 continue to be disallowed on ‘collect’ and QR mode (Existing - No change) payments as per",
+          "title": "Revision in transaction limits based on Merchant & transaction types",
+          "circular_number": "76A",
+          "series": "UPI",
+          "issue_date": "2024-03-12",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_76_A_Revision_in_transaction_limits_based_on_Merchant_and_transaction_types_1f54360fd2.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 90,
+          "score": 0.01515,
+          "citation": "S6"
+        }
+      ],
+      "claims": [],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."
+      ],
+      "answer": "The model could not answer from the retrieved evidence.",
+      "abstained": true,
+      "elapsed_ms": 1732
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "source_pack": "data/source-originals",
+  "ollama_url": "http://127.0.0.1:11434",
+  "embedding_model": "qwen3-embedding:0.6b",
+  "generation_model": "qwen3.5:9b",
+  "query_instruction": "Given a question about NPCI circulars, retrieve relevant passages that answer the question.",
+  "context_length": 16384,
+  "max_output_tokens": 3072,
+  "model_timeout_seconds": 300,
+  "vector_backend": "chroma",
+  "chunker_version": "clauses-v1",
+  "context_scope": "related",
+  "context_char_budget": 18000,
+  "adaptive_retrieval": true,
+  "reranker_enabled": true,
+  "reranker_path": "models/reranker",
+  "claim_check_enabled": true,
+  "review_overlays": true,
+  "data_dir": "data/all-products-v1",
+  "multi_product": true,
+  "embedding_cache": "data/embedding_cache.sqlite3"
+}

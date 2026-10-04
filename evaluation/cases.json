@@ -1,0 +1,68 @@
+[
+  {
+    "query": "OC 186A Tap Pay point of sale",
+    "expected_documents": [
+      "2026-OC-186A"
+    ]
+  },
+  {
+    "query": "Numeric UPI ID resolution",
+    "expected_documents": [
+      "2025-OC-115E",
+      "2026-OC-115F"
+    ]
+  },
+  {
+    "query": "UPI Circle delegated payments secondary users",
+    "expected_documents": [
+      "2024-OC-201"
+    ]
+  },
+  {
+    "query": "Auto replenishment NETC FASTag NCMC",
+    "expected_documents": [
+      "2024-OC-207"
+    ]
+  },
+  {
+    "query": "Discontinuing Collect Request person to person",
+    "expected_documents": [
+      "2025-OC-220"
+    ]
+  },
+  {
+    "query": "Safeguarding User Information",
+    "expected_documents": [
+      "2026-OC-234"
+    ]
+  },
+  {
+    "query": "RuPay credit card transaction limit",
+    "series": "RuPay",
+    "expected_documents": [
+      "2023-RuPay-022"
+    ]
+  },
+  {
+    "query": "OC 201A",
+    "cutoff": "2024-12-31",
+    "expected_documents": []
+  },
+  {
+    "query": "OC 999",
+    "expected_documents": []
+  },
+  {
+    "query": "quantum photosynthesis chlorophyll",
+    "expected_documents": []
+  },
+  {
+    "query": "OC 165",
+    "cutoff": "2024-12-31",
+    "expected_documents": []
+  },
+  {
+    "query": "OC 237",
+    "expected_documents": []
+  }
+]

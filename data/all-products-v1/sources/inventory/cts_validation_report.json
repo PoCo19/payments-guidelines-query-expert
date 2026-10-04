@@ -1,0 +1,109 @@
+{
+  "product": "cts",
+  "listed_items": 248,
+  "with_pdf": 235,
+  "extracted": 235,
+  "skipped_no_pdf": 1,
+  "skipped_zip": 12,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_zip": 12,
+    "skipped_no_pdf": 1
+  },
+  "categories": {
+    "circular": 235,
+    "zip": 12,
+    "no_pdf": 1
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_CTS_Circular_1565_FY-2016-17.md",
+      "title": "NPCI/2017-18/CTS/003 National Archival services - API - Annexure - All",
+      "pages": 62,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_CTS_Circular_OC-25_FY-2016-17.md",
+      "title": "NPCI/2015-16/CTS/Circular No.25 - Annexure - Circular No. 25-Annexure - Specification document Version 2.4 - All",
+      "pages": 177,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_CTS_Circular_OC-063_FY-2018-19.md",
+      "title": "Circular no. 063 Annexure I-SOP for Bank Administration ADFS and Work Group configuration - All",
+      "pages": 16,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_CTS_Circular_OC-001_FY-2020-21.md",
+      "title": "Circular no. 001 - Adherence to NPCI guidelines by members or participant...",
+      "pages": 7,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_CTS_Circular_1533_FY-2023-24.md",
+      "title": "Product Compliance | 005 | FY 23-24 | New PCOMP (Product Compliance) Portal for Self-Attestation from F.Y. 2023-24 for Members/Participants",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_CTS_Circular_1536_FY-2023-24.md",
+      "title": "Completion of Self Attestation on PCOMP Portal Q2 & Q3 FY 22-23",
+      "pages": 2,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_CTS_Circular_OC-52_FY-2016-17.md",
+      "title": "NPCI 2015-16/CTS/Circular no. 52 - CPPS-Circular on Concept Note - All",
+      "pages": 4,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1601_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/H - Circular No. h-P2F Commencement Letter_Thiruvarur_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1602_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/H - Circular No. h-P2F Commencement Letter_Thiruvarur_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1603_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/G - Circular No. g-P2F Commencement Letter_Sivakasi_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1604_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/F - Circular No. f-P2F Commencement Letter_Sivagangai_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1605_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/D - Circular No. d-P2F Commencement Letter_Rajapalayam_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1606_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/E - Circular No. e-P2F Commencement Letter_Ramanathapuram_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_CTS_Circular_1607_FY-2015-16.md",
+      "title": "NPCI/CHENNAI/2015-16/C - Circular No. c-P2F Commencement Letter_Perambalur_Non Micr - SOUTHERN",
+      "pages": 2,
+      "scanned": true
+    }
+  ]
+}

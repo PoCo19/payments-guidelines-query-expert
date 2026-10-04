@@ -1,0 +1,169 @@
+{
+  "method": "bm25",
+  "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+  "fingerprint": "5ae80aea9d4b7fc649ace7a51125f02fe56db25a800f3c67ece089d86cfaf8ad",
+  "chunk_count": 428,
+  "k": 6,
+  "cases": 12,
+  "hit_rate": 1.0,
+  "mrr": 1.0,
+  "mean_document_recall": 1.0,
+  "rows": [
+    {
+      "query": "OC 186A Tap Pay point of sale",
+      "expected_documents": [
+        "2026-OC-186A"
+      ],
+      "retrieved_documents": [
+        "2026-OC-186A"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.37
+    },
+    {
+      "query": "Numeric UPI ID resolution",
+      "expected_documents": [
+        "2025-OC-115E",
+        "2026-OC-115F"
+      ],
+      "retrieved_documents": [
+        "2026-OC-115F",
+        "2025-OC-115E",
+        "2024-OC-193",
+        "2025-OC-193A"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.14
+    },
+    {
+      "query": "UPI Circle delegated payments secondary users",
+      "expected_documents": [
+        "2024-OC-201"
+      ],
+      "retrieved_documents": [
+        "2024-OC-201",
+        "2025-OC-201A",
+        "2025-OC-201B"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.18
+    },
+    {
+      "query": "Auto replenishment NETC FASTag NCMC",
+      "expected_documents": [
+        "2024-OC-207"
+      ],
+      "retrieved_documents": [
+        "2024-OC-207",
+        "2024-OC-205",
+        "2025-OC-169A",
+        "2025-OC-213"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.1
+    },
+    {
+      "query": "Discontinuing Collect Request person to person",
+      "expected_documents": [
+        "2025-OC-220"
+      ],
+      "retrieved_documents": [
+        "2025-OC-220",
+        "2024-OC-76A",
+        "2026-OC-186A",
+        "2025-OC-224",
+        "2025-OC-215A",
+        "2025-OC-39A"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.11
+    },
+    {
+      "query": "Safeguarding User Information",
+      "expected_documents": [
+        "2026-OC-234"
+      ],
+      "retrieved_documents": [
+        "2026-OC-234",
+        "2025-OC-211",
+        "2026-OC-227A",
+        "2023-UPI-175"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.13
+    },
+    {
+      "query": "RuPay credit card transaction limit",
+      "series": "RuPay",
+      "expected_documents": [
+        "2023-RuPay-022"
+      ],
+      "retrieved_documents": [
+        "2023-RuPay-022"
+      ],
+      "hit": true,
+      "reciprocal_rank": 1.0,
+      "recall": 1.0,
+      "elapsed_ms": 0.11
+    },
+    {
+      "query": "OC 201A",
+      "cutoff": "2024-12-31",
+      "expected_documents": [],
+      "retrieved_documents": [],
+      "hit": true,
+      "reciprocal_rank": 0,
+      "recall": null,
+      "elapsed_ms": 0.07
+    },
+    {
+      "query": "OC 999",
+      "expected_documents": [],
+      "retrieved_documents": [],
+      "hit": true,
+      "reciprocal_rank": 0,
+      "recall": null,
+      "elapsed_ms": 0.06
+    },
+    {
+      "query": "quantum photosynthesis chlorophyll",
+      "expected_documents": [],
+      "retrieved_documents": [],
+      "hit": true,
+      "reciprocal_rank": 0,
+      "recall": null,
+      "elapsed_ms": 0.08
+    },
+    {
+      "query": "OC 165",
+      "cutoff": "2024-12-31",
+      "expected_documents": [],
+      "retrieved_documents": [],
+      "hit": true,
+      "reciprocal_rank": 0,
+      "recall": null,
+      "elapsed_ms": 0.06
+    },
+    {
+      "query": "OC 237",
+      "expected_documents": [],
+      "retrieved_documents": [],
+      "hit": true,
+      "reciprocal_rank": 0,
+      "recall": null,
+      "elapsed_ms": 0.06
+    }
+  ]
+}

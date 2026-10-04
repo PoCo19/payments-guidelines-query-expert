@@ -1,0 +1,31 @@
+{
+  "kept": [],
+  "flagged": [
+    {
+      "text": "No consent is required before enabling the feature.",
+      "sources": [
+        "S1"
+      ],
+      "support_status": "unsupported",
+      "review_reasons": [
+        "contradicted"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "claim_index": 0,
+      "status": "unsupported",
+      "reasons": [
+        "contradicted"
+      ],
+      "quotes": [
+        {
+          "citation": "S1",
+          "quote": "Explicit consent is required before enabling the feature."
+        }
+      ],
+      "checker": "local_model_plus_deterministic_guards"
+    }
+  ]
+}

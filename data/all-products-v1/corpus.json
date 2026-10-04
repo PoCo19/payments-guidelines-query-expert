@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "release": "all-products-v1",
+  "baseline": "v0.4",
+  "documents": 1921,
+  "pages": 4826,
+  "source_inventory_rows": 1955,
+  "actions": {
+    "converted": 1455,
+    "attachment_not_extracted": 53,
+    "preserved_existing": 105,
+    "needs_source_review": 2,
+    "extraction_failed": 1,
+    "no_public_pdf": 281,
+    "existing_gap_candidate": 1
+  },
+  "snapshot": "Inventories 2026-09-09 to 2026-09-15; retained UPI source snapshot through 2026-09-22",
+  "window": "Inventory archive years 2009-2026; issue dates largely unverified",
+  "status": "staged_not_active"
+}

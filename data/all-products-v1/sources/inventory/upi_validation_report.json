@@ -1,0 +1,120 @@
+{
+  "listed_items": 277,
+  "with_pdf": 245,
+  "extracted": 245,
+  "skipped_no_pdf": 32,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 32
+  },
+  "categories": {
+    "upi_oc": 229,
+    "other": 4,
+    "no_pdf": 32,
+    "rupay": 2,
+    "pcomp": 10
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_UPI_Circular_OC-40_FY-2017-18.md",
+      "title": "Circular 40 – UPI Complaints Handling Process",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-39_FY-2017-18.md",
+      "title": "Circular 39 - Efficient implementations for merchant on-boarding on UPI",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-38_FY-2017-18.md",
+      "title": "Circular 38 - UPI - RRC Refund/Return Reversal Confirmation",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-37_FY-2017-18.md",
+      "title": "Circular 37 - Bank PSP apps and third party apps Compliance to UPI Deep Linking Specs 1.5.1",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-35_FY-2017-18.md",
+      "title": "Circular 35 - Positioning-UPI-BHIM at Merchant checkout",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-34_FY-2017-18.md",
+      "title": "Circular 34 - MCC Standardization",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-32_FY-2017-18.md",
+      "title": "Circular 32 - Multi-Bank Approach_15th Sept",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-31_FY-2017-18.md",
+      "title": "Circular 31 - Inclusion of UPI Banks in BHIM Merchant Cashback and Referral Bonus Scheme.",
+      "pages": 1,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_UPI_Circular_OC-13_FY-2016-17.md",
+      "title": "Circular 13 - UPI - Compliance to Merchant Onboarding and SDK guidelines checklist",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-12_FY-2016-17.md",
+      "title": "Circular 12 - Revision in benchmarking criteria of UPI system, interface of member banks",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-11_FY-2016-17.md",
+      "title": "Circular 11 - Urgent enablement of reading, generating dynamic QR code by 20th December 2016",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-10_FY-2016-17.md",
+      "title": "Circular 10 - UPI - Recommendations to Simplify UPI PSP Apps for seamless customer Onboarding",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-09_FY-2016-17.md",
+      "title": "Circular 09 - UPI - Daily Reconciliation and Dispute Handling",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-08_FY-2016-17.md",
+      "title": "Circular 08 - Addendum to Circular for implementing UPI 1.5 changes",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-07_FY-2016-17.md",
+      "title": "Circular 07 - UPI - Usability enhancements",
+      "pages": 4,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_UPI_Circular_OC-05_FY-2016-17.md",
+      "title": "Circular 05 - Security Considerations on UPI - Immediate Actions",
+      "pages": 2,
+      "scanned": true
+    }
+  ]
+}

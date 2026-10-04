@@ -1,0 +1,25 @@
+{
+  "product": "others",
+  "listed_items": 1,
+  "with_pdf": 1,
+  "extracted": 1,
+  "skipped_no_pdf": 0,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {},
+  "categories": {
+    "circular": 1
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_OTHERS_Circular_3772_FY-unknown.md",
+      "title": "Third Party Risk Management | NPCI/2024-25/RMD/006 | Directions to member banks, NPCI partners on Managing Third Party Risks",
+      "pages": 2,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": []
+}

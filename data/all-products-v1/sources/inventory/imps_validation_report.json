@@ -1,0 +1,119 @@
+{
+  "product": "imps",
+  "listed_items": 143,
+  "with_pdf": 128,
+  "extracted": 128,
+  "skipped_no_pdf": 15,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 15
+  },
+  "categories": {
+    "no_pdf": 15,
+    "circular": 128
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_IMPS_Circular_OC-27I_FY-2013-14.md",
+      "title": "IMPS I OC 27 I FY 13-14 I Multiple Settlement - 24 Sep 2013",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-16I_FY-2013-14.md",
+      "title": "IMPS I OC 16 I FY 13-14 I Immediate Payment System (IMPS) Merchant Payments - Alternative FlowI Annexure",
+      "pages": 5,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-51I_FY-2014-15.md",
+      "title": "IMPS I OC 51 I FY 14-15 I Introduction of MPIN Management Facility for existing Mobile Banking Customers through NUUP",
+      "pages": 8,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-49I_FY-2014-15.md",
+      "title": "IMPS I OC 49 I FY 14-15 I Helpdesk by NPCI for _IMPS and NUUP",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-45I_FY-2014-15.md",
+      "title": "IMPS I OC 45 I FY 14-15 I IMPS - Chargeback process (Revision in timelines)",
+      "pages": 7,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-44I_FY-2014-15.md",
+      "title": "IMPS I OC 44 I FY 14-15 I National Payments Excellence Awards 2014 - IMPS",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-43I_FY-2014-15.md",
+      "title": "IMPS I OC 43 I FY 14-15 I Roll Out of National Unified USSD Service (NUUP)",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-37I_FY-2014-15.md",
+      "title": "IMPS I OC 37 I FY 14-15 I Implementation of three settlements in a day for IMPS transactions - Effective from 3rd June 2014",
+      "pages": 2,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_IMPS_Circular_OC-2I_FY-2011-12.md",
+      "title": "IMPS I OC 2 I FY 10-11 I Customer Education",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-3I_FY-2011-12.md",
+      "title": "IMPS I OC 3 I FY 11-12 I Merchant Payments & IMPS activation for other channel",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-4I_FY-2011-12.md",
+      "title": "IMPS I OC 4 I FY 11-12 I Increasing Limit for unencrypted end to end Transactions",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-5I_FY-2011-12.md",
+      "title": "IMPS I OC 5 I FY 11-12 I Increasing Limit for encrypted end to end Transactions",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-6I_FY-2011-12.md",
+      "title": "IMPS I OC 6 I FY 11-12 I Amount limit for alternate channels",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-7I_FY-2012-13.md",
+      "title": "IMPS I OC 7 I FY 11-12 I Charges Effective 06 March 2012",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-10I_FY-2012-13.md",
+      "title": "IMPS I OC 10 I FY 12-13 I Default MMID",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_IMPS_Circular_OC-11I_FY-2012-13.md",
+      "title": "IMPS I OC 11 I FY 12-13 I Best practices",
+      "pages": 1,
+      "scanned": true
+    }
+  ]
+}

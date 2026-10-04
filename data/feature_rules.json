@@ -1,0 +1,10 @@
+[
+  {"id":"tap_pay","label":"UPI Tap & Pay","pattern":"tap\\s*(?:&|and)?\\s*pay"},
+  {"id":"upi_circle","label":"UPI Circle / delegated payments","pattern":"upi\\s+circle|delegat(?:ed|ion)"},
+  {"id":"autopay","label":"UPI AutoPay / mandates","pattern":"auto\\s*pay|mandate|auto.?replenishment"},
+  {"id":"netc_ncmc","label":"NETC FASTag / NCMC replenishment","pattern":"fastag|ncmc|netc"},
+  {"id":"nrp_prd","label":"NRP / PRD and arbitration","pattern":"\\bnrp\\b|\\bprd\\b|arbitration"},
+  {"id":"upi_lite","label":"UPI LITE","pattern":"upi\\s+lite"},
+  {"id":"credit_on_upi","label":"Credit cards / credit lines on UPI","pattern":"credit\\s+(?:card|line)"},
+  {"id":"numeric_upi_id","label":"Numeric UPI ID","pattern":"numeric\\s+upi"}
+]

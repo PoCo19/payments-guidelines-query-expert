@@ -1,0 +1,24 @@
+{
+  "revision": "Slide refinements 4 October 2026",
+  "slide_count": 8,
+  "report_pages": 3,
+  "narration_words": 1001,
+  "checks": [
+    "matching recorded retrieval metrics",
+    "all eight speaker notes",
+    "package links",
+    "PDF page counts",
+    "PPTX package integrity"
+  ],
+  "files": {
+    "Payments_Guidelines_Query_Expert_Slides.pptx": "0fd2c3d8307c3b2a8da8994c8c2c179e647deb3dbcc813e74dcfb31020185714",
+    "Payments_Guidelines_Query_Expert_Slides.pdf": "17c65fc3e2985b9dd00a0b1e44d52cf1c121f50b3b3c3d1fbb0ed93dee52e591",
+    "Payments_Guidelines_Query_Expert_Report.docx": "2bf79680d4f0b8b3df859dbb13fdfd6ef998b505edb8ec2f520eec6d6cdbf596",
+    "Payments_Guidelines_Query_Expert_Report.pdf": "2df3ef347a0914e9881450fbda98be90949f79292ac928cb05b592c14b3d3114",
+    "Narration_and_Recording_Checklist.md": "9046cf2225fc1e96a7276b9df115a361f1cdd1e1f2356ab5f8d081e1389f4418",
+    "Submission_Checklist.md": "8ba1650ccbf767a0b4c01557a7e66882e823a152d59ff5b0d4cfdddfcc02d3dc",
+    "CURRENT_SCOPE.md": "af8270c3f81510a9bbcc808cca5b5d3a8ed446ea455312d112612858c718942b",
+    "START_HERE.md": "cf92002a45602c531ef9726ec2337912a30c31d30f83ae8ecf00fb19267b3bd9",
+    "team_details.json": "abfa394fa4e49ed9d2138bbd399bfc5600e02359137c5855350d252d632fc045"
+  }
+}

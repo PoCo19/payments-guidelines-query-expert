@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-15T10:06:01.365479+00:00",
+  "product": "others",
+  "source_page": "https://www.npci.org.in/circulars/others",
+  "api": "https://www.npci.org.in/api/circulars/others",
+  "counts": {
+    "extracted": 1,
+    "category_circular": 1
+  },
+  "item_count": 1,
+  "items": [
+    {
+      "id": 3772,
+      "product": "others",
+      "title": "Third Party Risk Management | NPCI/2024-25/RMD/006 | Directions to member banks, NPCI partners on Managing Third Party Risks",
+      "year": 2025,
+      "year_label": "",
+      "category": "circular",
+      "circular_number": null,
+      "fy": "unknown",
+      "source_url": "https://www.npci.org.in/circulars/others",
+      "pdf_url": "https://www.npci.org.in/uploads/Circular_on_Third_Party_Risk_Management_1_543f88b5a3.pdf",
+      "file_url": "https://www.npci.org.in/uploads/Circular_on_Third_Party_Risk_Management_1_543f88b5a3.pdf",
+      "is_scanned": false,
+      "output_filename": "NPCI_OTHERS_Circular_3772_FY-unknown.md",
+      "extraction_status": "extracted",
+      "page_count": 2,
+      "markdown_pages": 2,
+      "error": null
+    }
+  ]
+}

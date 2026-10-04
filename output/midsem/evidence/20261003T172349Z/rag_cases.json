@@ -1,0 +1,933 @@
+[
+  {
+    "query": "Under OC 186A, are PoS tap payments for merchants or person-to-person transfers?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Person-to-Merchant (P2M)"
+      }
+    ],
+    "expected_answer": "P2M only.",
+    "id": "RAG-001",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Can a user disable the PoS tap payment feature after consenting in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "ability to opt out at any time"
+      }
+    ],
+    "expected_answer": "Yes, opt-out at any time.",
+    "id": "RAG-002",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What must happen after device binding before tap payments resume under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "after each device binding operation"
+      }
+    ],
+    "expected_answer": "Explicit user consent must be obtained again.",
+    "id": "RAG-003",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What device-lock requirements does OC 186A set?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "device lock is enabled"
+      }
+    ],
+    "expected_answer": "Enable device lock; device must be unlocked at initiation.",
+    "id": "RAG-004",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "May the PoS tap payment feature be hidden inside another service in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "shall not be embedded within any other service"
+      }
+    ],
+    "expected_answer": "No, a dedicated standalone call-to-action is required.",
+    "id": "RAG-005",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What does the remitter bank check before each tap payment in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "before processing each transaction"
+      }
+    ],
+    "expected_answer": "Account feature-enablement status.",
+    "id": "RAG-006",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Who integrates the PoS common library under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Payee PSP shall integrate"
+      }
+    ],
+    "expected_answer": "Payee PSP.",
+    "id": "RAG-007",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Which PoS terminals may the payee PSP enable for tap payments under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "only on NFC-enabled PoS terminals"
+      }
+    ],
+    "expected_answer": "NFC-enabled terminals certified to the stated standards.",
+    "id": "RAG-008",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What phone capability is required for Tap Pay in OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      }
+    ],
+    "expected_answer": "NFC capability.",
+    "id": "RAG-009",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Where should the Tap Pay button be placed under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "on the homepage"
+      }
+    ],
+    "expected_answer": "Separate call-to-action button on the homepage.",
+    "id": "RAG-010",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Which initiation mode identifies tap payments in OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "initiation mode 06"
+      }
+    ],
+    "expected_answer": "06.",
+    "id": "RAG-011",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "How must acquiring banks protect NFC tags under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "non-rewritable post personalisation"
+      }
+    ],
+    "expected_answer": "NFC Forum Type 2 certification and non-rewritability after personalisation; periodic checks.",
+    "id": "RAG-012",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Where are acquiring banks to procure NFC tags under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 2,
+        "quote": "empanelied vendors"
+      }
+    ],
+    "expected_answer": "NPCI empanelled vendors, referencing the cited circulars.",
+    "id": "RAG-013",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Who completes a payment in partial delegation under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "Primary user shall complete"
+      }
+    ],
+    "expected_answer": "Primary user completes it with UPI PIN.",
+    "id": "RAG-014",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Who can initiate and complete a fully delegated payment under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "initiate and complete UPI transactions"
+      }
+    ],
+    "expected_answer": "The authorised secondary user, within defined limits.",
+    "id": "RAG-015",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "May primary and secondary users choose their own apps under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "own choice of UPI app"
+      }
+    ],
+    "expected_answer": "Yes; independent user journeys and own app choice.",
+    "id": "RAG-016",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Can a secondary user receive delegation from several primary users under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      }
+    ],
+    "expected_answer": "Only one primary user; primary can delegate to five secondary users.",
+    "id": "RAG-017",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Which authentication controls apply to secondary users under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "App passcode/ biometrics"
+      }
+    ],
+    "expected_answer": "App passcode/biometrics mandatory.",
+    "id": "RAG-018",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Can primary users see secondary-user transactions under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "visibility of transactions"
+      }
+    ],
+    "expected_answer": "Yes, in their UPI app and bank account statement.",
+    "id": "RAG-019",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Does OC 201 require an online dispute facility?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "Online Dispute Resolution (ODR)"
+      }
+    ],
+    "expected_answer": "Yes, ODR functionality must be available.",
+    "id": "RAG-020",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Which secondary-user segments qualify for full-delegation linking under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Domestic or Small Business Employee"
+      }
+    ],
+    "expected_answer": "Specified family members or domestic/small-business employees.",
+    "id": "RAG-021",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What identification details must the primary payer PSP share under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Secondary user document type and document ID number, to secondary payer PSP and issuer bank.",
+    "id": "RAG-022",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Whose consent is required before accepting full delegation under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "explicit consent from Secondary User"
+      }
+    ],
+    "expected_answer": "Secondary user consent to the additional document details.",
+    "id": "RAG-023",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Who identifies the secondary user by name mobile and official document under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Issuer Bank of the Primary User"
+      }
+    ],
+    "expected_answer": "The primary user issuer bank.",
+    "id": "RAG-024",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "How frequently must the recycled-number database be refreshed under OC 115E?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "at least on weekly basis"
+      }
+    ],
+    "expected_answer": "At least weekly using MNRL/DIP.",
+    "id": "RAG-025",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Can consent to seed a UPI Number be taken during a payment under OC 115E?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "before or during a transaction"
+      }
+    ],
+    "expected_answer": "No, not before or during a transaction.",
+    "id": "RAG-026",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Who bears liability for failing to update the numeric mapper under OC 115F?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "liability of the PSP and the UPI Application"
+      }
+    ],
+    "expected_answer": "PSP and UPI application.",
+    "id": "RAG-027",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "When may local mobile-number resolution be used under OC 115F?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      }
+    ],
+    "expected_answer": "Only when Numeric UPI ID Mapper response exceeds one second; stated PSP/app liability remains.",
+    "id": "RAG-028",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "What triggers automatic FASTag replenishment under OC 207?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "threshold set by the customer"
+      }
+    ],
+    "expected_answer": "Balance falling below the customer-set threshold.",
+    "id": "RAG-029",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Does the PDN exception in OC 207 apply to unrelated merchant categories?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 2,
+        "quote": "only for the mentioned MCCs"
+      }
+    ],
+    "expected_answer": "No; only the stated NETC FASTag and RuPay NCMC categories/intended purposes.",
+    "id": "RAG-030",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "Which user identifiers must be masked under OC 234?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-234",
+        "page": 1,
+        "quote": "UPI IDs, mobile numbers, and account numbers"
+      }
+    ],
+    "expected_answer": "UPI IDs, mobile numbers and account numbers across customer-facing interfaces and communications.",
+    "id": "RAG-031",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "strict"
+  },
+  {
+    "query": "How is the linked RuPay card limit selected under circular 022?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-RuPay-022",
+        "page": 1,
+        "quote": "lowest of the following"
+      }
+    ],
+    "expected_answer": "Lowest of the issuer card limit, issuer UPI risk limit and customer-set limit.",
+    "id": "RAG-032",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "RuPay",
+    "scope": "strict"
+  },
+  {
+    "query": "Summarise OC 186A, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Payee PSP shall integrate"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "before processing each transaction"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-033",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 186, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      },
+      {
+        "document_id": "2023-UPI-186",
+        "page": 2,
+        "quote": "empanelied vendors"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-034",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 201, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      },
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "Online Dispute Resolution (ODR)"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-035",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 201A, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-036",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 115F, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 2,
+        "quote": "appropriate investigation"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-037",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 207, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "threshold set by the customer"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 2,
+        "quote": "only for the mentioned MCCs"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-038",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 186 and OC 186A: Attribute original NFC capability and later device-lock requirements separately.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "device lock is enabled"
+      }
+    ],
+    "expected_answer": "Attribute original NFC capability and later device-lock requirements separately.",
+    "id": "RAG-039",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 201 and OC 201A: Distinguish original delegation rules and later linking identification requirements.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      },
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Distinguish original delegation rules and later linking identification requirements.",
+    "id": "RAG-040",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 115E and OC 115F: Attribute mapper update frequency and later response threshold separately.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "at least on weekly basis"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      }
+    ],
+    "expected_answer": "Attribute mapper update frequency and later response threshold separately.",
+    "id": "RAG-041",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 186 and OC 186A: Compare original homepage button and later dedicated standalone feature.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "on the homepage"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "shall not be embedded within any other service"
+      }
+    ],
+    "expected_answer": "Compare original homepage button and later dedicated standalone feature.",
+    "id": "RAG-042",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 201 and OC 201A: Compare secondary user security with later consent to additional identification details.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "App passcode/ biometrics"
+      },
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "explicit consent from Secondary User"
+      }
+    ],
+    "expected_answer": "Compare secondary user security with later consent to additional identification details.",
+    "id": "RAG-043",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 115E and OC 115F: Explain consent restrictions separately from later complaint-investigation provisions.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "before or during a transaction"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 2,
+        "quote": "appropriate investigation"
+      }
+    ],
+    "expected_answer": "Explain consent restrictions separately from later complaint-investigation provisions.",
+    "id": "RAG-044",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "What does OC 999 require?",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-045",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 237.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-046",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 186 and OC 999.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-047",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Explain quantum photosynthesis and chlorophyll.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-048",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "Summarise OC 201A.",
+    "route": "auto",
+    "cutoff": "2024-12-31",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-049",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  },
+  {
+    "query": "What requirements are in OC 186AA?",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-050",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "",
+    "scope": "related"
+  }
+]

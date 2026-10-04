@@ -1,0 +1,23 @@
+{
+  "product": "rupay",
+  "listed_items": 240,
+  "with_pdf": 224,
+  "extracted": 224,
+  "skipped_no_pdf": 12,
+  "skipped_zip": 4,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 12,
+    "skipped_zip": 4
+  },
+  "categories": {
+    "circular": 224,
+    "no_pdf": 12,
+    "zip": 4
+  },
+  "unscanned_sample": [],
+  "scanned_sample": []
+}

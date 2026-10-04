@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "payments positioning and separate scope",
+    "actual local answer and UPI filter",
+    "source reader",
+    "Markdown export retains citations",
+    "summary",
+    "comparison includes both documents",
+    "ambiguous reference selection",
+    "unavailable evidence abstention",
+    "partial extraction warning",
+    "simulated model outage and actual evidence-search recovery",
+    "library loading",
+    "collection details in About",
+    "mobile layout without horizontal overflow"
+  ],
+  "errors": [],
+  "outage": "HTTP 503 simulated in browser; recovery used real server"
+}

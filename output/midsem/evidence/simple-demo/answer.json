@@ -1,0 +1,959 @@
+{
+  "captured_at": "2026-10-03T21:28:56.081Z",
+  "query": "Can I use UPI Tap & Pay at a shop's card machine?",
+  "http_status": 200,
+  "response": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "UPI Tap & Pay can be used at a shop's Point-of-Sale (PoS) terminal if the terminal is NFC-enabled and certified in accordance with PCI PTS / CPOC standards.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "The facility is restricted to Person-to-Merchant (P2M) transactions only.",
+            "sources": [
+              "S4"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "Payee PSPs must integrate the Point-of-Sale Common Library for UPI at the PoS terminal.",
+            "sources": [
+              "S10"
+            ],
+            "draft_index": 3,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The claim is fully supported by the excerpt which explicitly states that Payee PSPs shall enable UPI Tap & Pay only on NFC-enabled PoS terminals certified in accordance with PCI PTS / CPOC standards."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "Payee PSP shall enable UPI Tap & Pay only on NFC-enabled PoS terminals that are certified in accordance with the Payment Card Industry PIN Transaction Security / Contactless Payments on Commercial Off-The-Shelf (COTS) devices (PCI PTS / CPOC) standards."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The claim is fully supported by the provided excerpt which explicitly states that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions."
+        ],
+        "quotes": [
+          {
+            "citation": "S4",
+            "quote": "Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 2,
+        "status": "supported",
+        "reasons": [
+          "The claim is directly supported by the provided excerpt which explicitly states the requirement for Payee PSPs to integrate the specified library."
+        ],
+        "quotes": [
+          {
+            "citation": "S10",
+            "quote": "2. Payee PSP shall integrate the Point-of-Sale Common Library for UPI (PoS CL) at the PoS terminal and complete the integration on all the PoS terminals under its acquiring network."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "2026-OC-186A:p1:v3c8",
+        "2023-UPI-186:p1:v3c3",
+        "2023-UPI-186:p1:v3c2",
+        "2026-OC-186A:p1:v3c2",
+        "2023-UPI-186:p1:v3c5",
+        "2026-OC-186A:p2:v3c2",
+        "2024-OC-204:p1:v3c1",
+        "npci-source-66fa61ebbe8982d61200cdb3:p1:v3c2"
+      ],
+      "included_chunk_ids": [
+        "2026-OC-186A:p1:v3c8",
+        "2023-UPI-186:p1:v3c3",
+        "2023-UPI-186:p1:v3c2",
+        "2026-OC-186A:p1:v3c2",
+        "2023-UPI-186:p1:v3c5",
+        "2026-OC-186A:p2:v3c2",
+        "2024-OC-204:p1:v3c1",
+        "npci-source-66fa61ebbe8982d61200cdb3:p1:v3c2",
+        "2025-OC-169A:p2:v3c4",
+        "2026-OC-186A:p1:v3c9",
+        "2023-UPI-186:p1:v3c4",
+        "2023-UPI-186:p1:v3c1",
+        "2026-OC-186A:p1:v3c3",
+        "2023-UPI-186:p1:v3c6",
+        "2026-OC-186A:p2:v3c3"
+      ],
+      "evidence_characters": 10458,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 32,
+        "elapsed_ms": 486
+      }
+    },
+    "sources": [
+      {
+        "id": "2026-OC-186A:p1:v3c8",
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "text": "Payee PSP 1. Payee PSP shall enable UPI Tap & Pay only on NFC-enabled PoS terminals that are certified in accordance with the Payment Card Industry PIN Transaction Security / Contactless Payments on Commercial Off-The-Shelf (COTS) devices (PCI PTS / CPOC) standards.",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-001"
+        ],
+        "start_word": 295,
+        "end_word": 337,
+        "section_id": "2026-OC-186A:s2",
+        "section_heading": "Payee PSP",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p1:v3c7",
+        "next_chunk_id": "2026-OC-186A:p1:v3c9",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.0311,
+        "citation": "S1",
+        "rerank_score": 3.43528,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c3",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "2. UPI APPs shall take permission from the customer to enable NFC for Tap & Pay transactions.",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 91,
+        "end_word": 108,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-186:p1:v3c2",
+        "next_chunk_id": "2023-UPI-186:p1:v3c4",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02854,
+        "citation": "S2",
+        "rerank_score": 1.54404,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c2",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "1. UPI APPs shall ensure to provide the Tap & Pay mode of payment only through mobiles devices having NFC capability.",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 70,
+        "end_word": 91,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-186:p1:v3c1",
+        "next_chunk_id": "2023-UPI-186:p1:v3c3",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02964,
+        "citation": "S3",
+        "rerank_score": 1.23688,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2026-OC-186A:p1:v3c2",
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "text": "Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-001"
+        ],
+        "start_word": 103,
+        "end_word": 129,
+        "section_id": "2026-OC-186A:s1",
+        "section_heading": "Key Guidelines",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p1:v3c1",
+        "next_chunk_id": "2026-OC-186A:p1:v3c3",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.0278,
+        "citation": "S4",
+        "rerank_score": 1.10245,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c5",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "4. On Tap, the transaction amount of Rs.500 and less will be processed through UP! LITE account, if enabled by the user, if not, then the transaction shall be processed with UPI PIN. UPI APPs are recommended to have the App passcode, biometrics or pattern based lock in case of UPI LITE.",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 126,
+        "end_word": 178,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-186:p1:v3c4",
+        "next_chunk_id": "2023-UPI-186:p1:v3c6",
+        "feature_ids": [
+          "tap_pay",
+          "upi_lite"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02167,
+        "citation": "S5",
+        "rerank_score": 1.05314,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2026-OC-186A:p2:v3c2",
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "text": "UPI Application Provider 1. UP! Application Providers / PSP Banks shall ensure explicit User consent is obtained after each device binding operation before allowing further transactions using UPI! Tap & Pay.",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-002"
+        ],
+        "start_word": 6,
+        "end_word": 37,
+        "section_id": "2026-OC-186A:s3",
+        "section_heading": "UPI Application Provider",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p2:v3c1",
+        "next_chunk_id": "2026-OC-186A:p2:v3c3",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "assistant_source_checked",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "assistant_source_checked",
+        "review_id": "bootstrap-008",
+        "score": 0.02181,
+        "citation": "S6",
+        "rerank_score": 0.87467,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2024-OC-204:p1:v3c1",
+        "document_id": "2024-OC-204",
+        "page": 1,
+        "text": "aden ereshe arars Prre NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC No.204/2024-25 Date: 16\" Aug 2024 To, All Member of Unified Payment Interface (UPI) Dear Sir/Madam, Sub: Enablement of Interoperable Cash Deposit using UPI at Cash Deposit/Recycler Machines. Ref: NPCI/2024-25/NFS/421 dated 16 August 2024 We are pleased to introduce functionality to facilitate Interoperable Cardless Cash Deposits using UPI. The facility can be provided at Cash deposit / Cash re-cycler machines (CDMs) deployed by the banks and White Label ATM Operators (WLAQs). This service shall facilitate (participating) bank’s customers who are live on UPI, to deposit cash in any participating banks’ / WLAQs’ CDMs (enabled for UPI-ICD) without using their card. Key Features:",
+        "title": "Enablement of Interoperable Cash Deposit using UPI at Cash Deposit / Recycler Machines",
+        "circular_number": "204",
+        "series": "UPI",
+        "issue_date": "2024-08-16",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_204_FY_24_25_Enablement_of_Interoperable_Cash_Deposit_using_UPI_at_Cash_Deposit_Recycler_Machines_98b33b4acd.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 204",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 111,
+        "section_id": "2024-OC-204:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2024-OC-204:p1:v3c2",
+        "feature_ids": [],
+        "family": "204",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.01587,
+        "citation": "S7",
+        "rerank_score": -1.03731,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "npci-source-66fa61ebbe8982d61200cdb3:p1:v3c2",
+        "document_id": "npci-source-66fa61ebbe8982d61200cdb3",
+        "page": 1,
+        "text": "and the increased opportunity to use their credit cards. Merchants will benefit from the increase in consumption by being part of the credit ecosystem with acceptance of credit cards using asset lite QR codes. Credit cards can now be linked to a Virtual Payment Address (VPA) i.e., UPI ID (credit card number cannot be part of this) thus directly enabling safe, and secure payment transactions. To enable linking of credit card on UPl, the ecosystem will have to enhance their tech platforms. While the issuers will enable linking of credit card accounts at customer's end, the acquirers will enable the acceptance of linked credit card at merchant's end. The initial phase of operationalisation will provide learnings and critical inputs, that can be used to fine tune the proposition in tater phases to scale up the usage. NPCl shall continue to refine the rules and processes based on market feedback. 1001A,The Capital, B Wing, 10th Floor, BandraKurlaCompiex,Bandra(E),Mumbai 4ooO51. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.inwww.npci.org.in CIN: U74990MH2008NPL189067",
+        "title": "RuPay OC 019-A: Operating circular for RuPay Credit Cards linked to UPI- (Amended)",
+        "circular_number": "019A",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Ru_Pay_OC_019_A_Operating_circular_for_Ru_Pay_Credit_Cards_linked_to_UPI_Amended_e58bc8d322.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 019A",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 185,
+        "end_word": 353,
+        "section_id": "npci-source-66fa61ebbe8982d61200cdb3:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-66fa61ebbe8982d61200cdb3:p1:v3c1",
+        "next_chunk_id": "npci-source-66fa61ebbe8982d61200cdb3:p2:v3c1",
+        "feature_ids": [
+          "credit_on_upi"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.01955,
+        "citation": "S8",
+        "rerank_score": -2.50189,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2025-OC-169A:p2:v3c4",
+        "document_id": "2025-OC-169A",
+        "page": 2,
+        "text": "4. NPCI circular, ‘introduction of UP! TAP & PAY mode of Payments’ vide No. NPCI/UPI/OC No.186/2023-24, dated 19\"\" December 2023",
+        "title": "Addendum to Enhancement in UPI LITE Limits",
+        "circular_number": "169A",
+        "series": "UPI",
+        "issue_date": "2025-02-27",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 65,
+        "end_word": 85,
+        "section_id": "2025-OC-169A:s1",
+        "section_heading": "Annexure A",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-169A:p2:v3c3",
+        "next_chunk_id": "2025-OC-169A:p2:v3c5",
+        "feature_ids": [
+          "tap_pay",
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S9",
+        "retrieval_reason": "same_feature",
+        "via_document_id": "",
+        "relation": null
+      },
+      {
+        "id": "2026-OC-186A:p1:v3c9",
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "text": "2. Payee PSP shall integrate the Point-of-Sale Common Library for UPI (PoS CL) at the PoS terminal and complete the integration on all the PoS terminals under its acquiring network. Page 1 of 2 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 O51-",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-001"
+        ],
+        "start_word": 337,
+        "end_word": 386,
+        "section_id": "2026-OC-186A:s2",
+        "section_heading": "Payee PSP",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p1:v3c8",
+        "next_chunk_id": "2026-OC-186A:p2:v3c1",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S10",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2026-OC-186A",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c4",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "3. UPI Apps shall provide separate call to action button for Tap & Pay mode on the homepage.",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 108,
+        "end_word": 126,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-186:p1:v3c3",
+        "next_chunk_id": "2023-UPI-186:p1:v3c5",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S11",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2023-UPI-186",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c1",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "NZE) NATIONAL PAYMENTS CORPORATION OF INDIA NPCIUPIOG No.186/2023-24 19\" December 2023 To, All Members, Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of UP] TAP & PAY mode of payments In addition to the existing modes (Scan & Pay, Pay to Contact, UPI Number, etc.) of UPI Payments, “UPI Tap & Pay” is the new mode introduced for UP] transactions. Following is the construct for UPI Tap & Pay transactions:",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 70,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2023-UPI-186:p1:v3c2",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S12",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2023-UPI-186",
+        "relation": null
+      },
+      {
+        "id": "2026-OC-186A:p1:v3c3",
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "text": "2. Members and UPI Application Providers shall ensure explicit User consent is obtained for enabling UPI Tap & Pay feature, with Users having the ability to opt out at any time.",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-001"
+        ],
+        "start_word": 129,
+        "end_word": 160,
+        "section_id": "2026-OC-186A:s1",
+        "section_heading": "Key Guidelines",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p1:v3c2",
+        "next_chunk_id": "2026-OC-186A:p1:v3c4",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "assistant_source_checked",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "assistant_source_checked",
+        "review_id": "bootstrap-007",
+        "citation": "S13",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2026-OC-186A",
+        "relation": null
+      },
+      {
+        "id": "2023-UPI-186:p1:v3c6",
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "text": "5. On Tap, the transaction amount more than Rs.500 will need UP! PIN and will be processed online.",
+        "title": "Introduction of UPI TAP & PAY mode of Payments",
+        "circular_number": "186",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 178,
+        "end_word": 196,
+        "section_id": "2023-UPI-186:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-186:p1:v3c5",
+        "next_chunk_id": "2023-UPI-186:p1:v3c7",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S14",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2023-UPI-186",
+        "relation": null
+      },
+      {
+        "id": "2026-OC-186A:p2:v3c3",
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "text": "2. UPI Application Providers shall ensure that device lock is enabled as a prerequisite for activating UP! Tap & Pay. Further, the device shall be in an unlocked state at the time of initiating a UP! Tap & Pay transaction.",
+        "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+        "circular_number": "186A",
+        "series": "UPI",
+        "issue_date": "2026-09-10",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 186A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-002"
+        ],
+        "start_word": 37,
+        "end_word": 77,
+        "section_id": "2026-OC-186A:s3",
+        "section_heading": "UPI Application Provider",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-186A:p2:v3c2",
+        "next_chunk_id": "2026-OC-186A:p2:v3c4",
+        "feature_ids": [
+          "tap_pay"
+        ],
+        "family": "186",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S15",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2026-OC-186A",
+        "relation": null
+      }
+    ],
+    "claims": [
+      {
+        "text": "UPI Tap & Pay can be used at a shop's Point-of-Sale (PoS) terminal if the terminal is NFC-enabled and certified in accordance with PCI PTS / CPOC standards.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "The facility is restricted to Person-to-Merchant (P2M) transactions only.",
+        "sources": [
+          "S4"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "Payee PSPs must integrate the Point-of-Sale Common Library for UPI at the PoS terminal.",
+        "sources": [
+          "S10"
+        ],
+        "draft_index": 3,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review."
+    ],
+    "answer": "Draft answer — check the supporting excerpts.",
+    "abstained": false,
+    "elapsed_ms": 19418
+  }
+}

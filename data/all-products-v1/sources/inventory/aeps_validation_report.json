@@ -1,0 +1,119 @@
+{
+  "product": "aeps",
+  "listed_items": 110,
+  "with_pdf": 97,
+  "extracted": 97,
+  "skipped_no_pdf": 13,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 13
+  },
+  "categories": {
+    "circular": 97,
+    "no_pdf": 13
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_AEPS_Circular_OC-33_FY-2018-19.md",
+      "title": "AePS | OC 33| FY 18 19 | AEPS-Response Code Streamlining",
+      "pages": 10,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-44_FY-2019-20.md",
+      "title": "AePS | OC 44| FY 19 20 | Timeline for AePS Certification of VID and UID token",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-43_FY-2019-20.md",
+      "title": "AePS | OC 43| FY 19 20 | Mandating All txn types by Acq and Iss banks live in AePS",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-42_FY-2019-20.md",
+      "title": "AePS | OC 42| FY 19 20 | Standardization of SMS alerts to customers",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-50_FY-2020-21.md",
+      "title": "AePS | OC 50| FY 20 21 | AePS Best practices",
+      "pages": 5,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-61_FY-2021-22.md",
+      "title": "AePS | OC 61| FY 21 22 | Splitting of transactions below Rs. 10,000 for Off-us transactions initiated from Micro-ATMAePS & Card +PIN)",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-59_FY-2021-22.md",
+      "title": "AePS | OC 59| FY 20 21 | Implementation of monthly limit for Off-us Mini Statement",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_AEPS_Circular_1024_FY-2022-23.md",
+      "title": "AePS Risk | 004 | FY 21 22 | Addendum to AePS Fraud Liability Guidelines",
+      "pages": 10,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_AEPS_Circular_OC-13_FY-2016-17.md",
+      "title": "20th Oct 2016 - NPCI/2016-17/AEPS/23 - Circular 13 Availability of Mini Statement transaction to member bank",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-12_FY-2016-17.md",
+      "title": "28th Sept 2016 - NPCI/2016-17/AEPS/211 - Circular 12 Implemention of Switching fee for AePS and eKYC from October 1, 2016_NBFC's",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-11_FY-2016-17.md",
+      "title": "29th Sept 2016 - NPCI/2016-17/AEPS/03 - Circular 11 Implementation of switching fee for AEPS and eKYC from October 1, 2016_Banks",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-10_FY-2016-17.md",
+      "title": "28th Sept 2016 - NPCI/2016-17/AEPS/06 - Circular 10 Adherence to AePS XML specification - 28th Sept 2016",
+      "pages": 4,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-9_FY-2016-17.md",
+      "title": "12th Sept 2016 - NPCI/2016-17/AEPS/05 - Circular 9 Release of AePS interface specification 4.6",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-2_FY-2016-17.md",
+      "title": "9th August 2016 - NPCI/2015-16/AEPS/02 - Circular 2 List of entities live on AePS OFFUS",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-8_FY-2016-17.md",
+      "title": "30th May 2016 - NPCI/2016-17/AEPS/04 - Circular 8 Debit BC account",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_AEPS_Circular_OC-7_FY-2016-17.md",
+      "title": "10th May 2016 - NPCI/2016-17/AEPS/03 - Circular 7 AEPS ONUS & eKYC service using IRIS authentication",
+      "pages": 1,
+      "scanned": true
+    }
+  ]
+}

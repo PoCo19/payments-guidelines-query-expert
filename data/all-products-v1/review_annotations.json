@@ -1,0 +1,169 @@
+[
+  {
+    "id": "bootstrap-001",
+    "kind": "correction",
+    "document_id": "2026-OC-186A",
+    "page": 1,
+    "source_hash": "70b7acc4abc6fd10bcd54d5836b86e1c07636e736a6e5582e90da02036f92c85",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "before": "$5000",
+    "after": "₹5000"
+  },
+  {
+    "id": "bootstrap-002",
+    "kind": "correction",
+    "document_id": "2026-OC-186A",
+    "page": 2,
+    "source_hash": "3f0ae732f335f61eee3a50bf280b908586b4bac480eb59b976b77a646fd9c7a0",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "before": "$5000",
+    "after": "₹5000"
+  },
+  {
+    "id": "bootstrap-003",
+    "kind": "correction",
+    "document_id": "2024-OC-201",
+    "page": 2,
+    "source_hash": "46d08338bbc6ed2c95a3ba9f60bf6e2cca51c9eade2b3dc39130c373a4703254",
+    "pdf_sha256": "3d4a6969dc240cd51bf4207e6a830f3b24b46ca7c61f8fe713c6ee8b21869980",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "before": "315,000/-",
+    "after": "₹15,000/-"
+  },
+  {
+    "id": "bootstrap-004",
+    "kind": "correction",
+    "document_id": "2024-OC-201",
+    "page": 2,
+    "source_hash": "46d08338bbc6ed2c95a3ba9f60bf6e2cca51c9eade2b3dc39130c373a4703254",
+    "pdf_sha256": "3d4a6969dc240cd51bf4207e6a830f3b24b46ca7c61f8fe713c6ee8b21869980",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "before": "transaction limit of 5000",
+    "after": "transaction limit of ₹5000"
+  },
+  {
+    "id": "bootstrap-005",
+    "kind": "correction",
+    "document_id": "2024-OC-201",
+    "page": 2,
+    "source_hash": "46d08338bbc6ed2c95a3ba9f60bf6e2cca51c9eade2b3dc39130c373a4703254",
+    "pdf_sha256": "3d4a6969dc240cd51bf4207e6a830f3b24b46ca7c61f8fe713c6ee8b21869980",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "before": "limit of 5000 shall",
+    "after": "limit of ₹5000 shall"
+  },
+  {
+    "id": "bootstrap-006",
+    "kind": "metadata",
+    "document_id": "2026-OC-186A",
+    "page": 1,
+    "source_hash": "70b7acc4abc6fd10bcd54d5836b86e1c07636e736a6e5582e90da02036f92c85",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "field": "issue_date",
+    "value": "2026-09-10",
+    "anchor": "NPCI/UPI/OC-186A/2026-27"
+  },
+  {
+    "id": "bootstrap-007",
+    "kind": "feature",
+    "document_id": "2026-OC-186A",
+    "page": 1,
+    "source_hash": "70b7acc4abc6fd10bcd54d5836b86e1c07636e736a6e5582e90da02036f92c85",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "anchor": "explicit User consent is obtained",
+    "feature_ids": [
+      "tap_pay"
+    ],
+    "roles": [
+      "upi_app"
+    ]
+  },
+  {
+    "id": "bootstrap-008",
+    "kind": "feature",
+    "document_id": "2026-OC-186A",
+    "page": 2,
+    "source_hash": "3f0ae732f335f61eee3a50bf280b908586b4bac480eb59b976b77a646fd9c7a0",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "anchor": "after each device binding operation",
+    "feature_ids": [
+      "tap_pay"
+    ],
+    "roles": [
+      "upi_app"
+    ]
+  },
+  {
+    "id": "bootstrap-009",
+    "kind": "feature",
+    "document_id": "2026-OC-186A",
+    "page": 2,
+    "source_hash": "3f0ae732f335f61eee3a50bf280b908586b4bac480eb59b976b77a646fd9c7a0",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "anchor": "before processing each transaction",
+    "feature_ids": [
+      "tap_pay"
+    ],
+    "roles": [
+      "remitter_bank"
+    ]
+  },
+  {
+    "id": "bootstrap-010",
+    "kind": "relationship",
+    "document_id": "2026-OC-186A",
+    "page": 1,
+    "source_hash": "70b7acc4abc6fd10bcd54d5836b86e1c07636e736a6e5582e90da02036f92c85",
+    "pdf_sha256": "10602696405093008c14488f698e1b4aea4bd647925fbc27141442838661c82a",
+    "status": "accepted",
+    "reviewer": "Codex source-image inspection",
+    "reviewer_kind": "assistant_source_checked",
+    "created_at": "2026-09-25",
+    "note": "Specific field/phrase checked against original PDF image; not a full-page expert review.",
+    "target_id": "2023-UPI-186",
+    "relation": "references",
+    "anchor": "With reference to UPI Operating Circular NPCI/UPI/OC-186/2023-24"
+  }
+]

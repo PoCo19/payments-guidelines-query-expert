@@ -1,0 +1,314 @@
+{
+  "created_utc": "20261003T172349Z",
+  "dataset_sha256": "a09ceaac119e46119f48ebc1e2f5701a8bbc759bfa40400d5307a736d7c00362",
+  "config_sha256": "b79957e8c4c05819c722b58fd27750e2b035ba776bbf455e68e05b3c53698662",
+  "configuration": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about NPCI circulars, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "data\\all-products-v1",
+    "multi_product": true,
+    "embedding_cache": "data/embedding_cache.sqlite3"
+  },
+  "stats": {
+    "version": "0.5.1",
+    "documents": 1921,
+    "converted": 1562,
+    "pages": 4826,
+    "chunks": 14060,
+    "availability": {
+      "no_public_pdf": 301,
+      "converted": 1562,
+      "public_link_failed": 1,
+      "cancelled_as_listed": 1,
+      "attachment_not_extracted": 53,
+      "needs_source_review": 2,
+      "extraction_failed": 1
+    },
+    "series": {
+      "UPI": 299,
+      "IMPS": 142,
+      "Product Compliance": 9,
+      "AePS": 110,
+      "CTS": 247,
+      "NACH": 419,
+      "NETC": 55,
+      "NFS": 448,
+      "RuPay": 232,
+      "BHIM Aadhaar": 2,
+      "Others": 1,
+      "e-KYC Setu": 4,
+      "e-RUPI": 5
+    },
+    "multi_product": true,
+    "data_directory": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\all-products-v1",
+    "fiscal_years": [
+      "2026-27",
+      "2025-26",
+      "2024-25",
+      "2023-24",
+      "2022-23",
+      "2021-22",
+      "2020-21",
+      "2019-20",
+      "2018-19",
+      "2017-18",
+      "2016-17",
+      "2015-16",
+      "2014-15",
+      "2013-14",
+      "2012-13",
+      "2011-12",
+      "2010-11",
+      "2009-10"
+    ],
+    "priority_pages": 134,
+    "snapshot": "Inventories 2026-09-09 to 2026-09-15; retained UPI source snapshot through 2026-09-22",
+    "window": "Inventory archive years 2009-2026; issue dates largely unverified",
+    "generation_configured": true,
+    "generation_model": "qwen3.5:9b",
+    "vector_ready": true,
+    "vector_status": "Ready",
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "features": [
+      {
+        "id": "tap_pay",
+        "label": "UPI Tap & Pay",
+        "pattern": "tap\\s*(?:&|and)?\\s*pay",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "upi_circle",
+        "label": "UPI Circle / delegated payments",
+        "pattern": "upi\\s+circle|delegat(?:ed|ion)",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "autopay",
+        "label": "UPI AutoPay / mandates",
+        "pattern": "auto\\s*pay|mandate|auto.?replenishment",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "netc_ncmc",
+        "label": "NETC FASTag / NCMC replenishment",
+        "pattern": "fastag|ncmc|netc",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "nrp_prd",
+        "label": "NRP / PRD and arbitration",
+        "pattern": "\\bnrp\\b|\\bprd\\b|arbitration",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "upi_lite",
+        "label": "UPI LITE",
+        "pattern": "upi\\s+lite",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "credit_on_upi",
+        "label": "Credit cards / credit lines on UPI",
+        "pattern": "credit\\s+(?:card|line)",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "numeric_upi_id",
+        "label": "Numeric UPI ID",
+        "pattern": "numeric\\s+upi",
+        "products": [
+          "UPI",
+          "RuPay",
+          "NETC"
+        ]
+      },
+      {
+        "id": "aeps_authentication",
+        "label": "AePS authentication / micro-ATM",
+        "products": [
+          "AePS"
+        ],
+        "pattern": "biometric|authentication|micro.?atm|aadhaar"
+      },
+      {
+        "id": "nach_mandates",
+        "label": "NACH mandates / debit",
+        "products": [
+          "NACH"
+        ],
+        "pattern": "mandate|debit|umrn"
+      },
+      {
+        "id": "imps_transfers",
+        "label": "IMPS transfers / settlement",
+        "products": [
+          "IMPS"
+        ],
+        "pattern": "transfer|settlement|transaction"
+      },
+      {
+        "id": "cts_clearing",
+        "label": "CTS cheque clearing",
+        "products": [
+          "CTS"
+        ],
+        "pattern": "cheque|clearing|truncation"
+      },
+      {
+        "id": "rupay_cards",
+        "label": "RuPay card operations",
+        "products": [
+          "RuPay"
+        ],
+        "pattern": "card|issuer|acquir|contactless"
+      },
+      {
+        "id": "nfs_atm",
+        "label": "NFS ATM operations",
+        "products": [
+          "NFS"
+        ],
+        "pattern": "atm|cash|withdrawal"
+      },
+      {
+        "id": "netc_toll",
+        "label": "NETC toll / FASTag",
+        "products": [
+          "NETC"
+        ],
+        "pattern": "toll|fastag"
+      },
+      {
+        "id": "aadhaar_pay",
+        "label": "BHIM Aadhaar payments",
+        "products": [
+          "BHIM Aadhaar"
+        ],
+        "pattern": "payment|merchant|aadhaar"
+      },
+      {
+        "id": "kyc_setu",
+        "label": "e-KYC Setu",
+        "products": [
+          "e-KYC Setu"
+        ],
+        "pattern": "kyc|setu|identity"
+      },
+      {
+        "id": "erupi_voucher",
+        "label": "e-RUPI vouchers",
+        "products": [
+          "e-RUPI"
+        ],
+        "pattern": "voucher|redemption|rupi"
+      }
+    ],
+    "reference_edges": 54,
+    "registry_fingerprint": "cfd940095d111120d81eca300d7cb6f7aa547e7ca4838729ac56c51f9b365369",
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "claim_check_enabled": true,
+    "review_annotations": 10,
+    "fingerprint": "f05b8dd8cbd45ce284526e3fd6728caecca03b0b53d857ecc6defa8c001ef77b",
+    "embedding_model": "qwen3-embedding:0.6b"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "modified_at": "2026-09-24T01:11:59.6552717+05:30",
+        "size": 6594474711,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 4096
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "tools",
+          "thinking"
+        ]
+      },
+      {
+        "name": "qwen3-embedding:0.6b",
+        "model": "qwen3-embedding:0.6b",
+        "modified_at": "2026-09-24T00:55:17.9025643+05:30",
+        "size": 639150858,
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024
+        },
+        "capabilities": [
+          "tools",
+          "thinking",
+          "embedding"
+        ]
+      }
+    ]
+  },
+  "runs": {},
+  "caveat": "AI-assisted 50-case UPI set awaiting independent review. Anchor recall is evidence coverage, not answer accuracy. Negative empty evidence is not generated abstention. One interleaved pass after warm-up; timings are preliminary, not a capacity benchmark."
+}

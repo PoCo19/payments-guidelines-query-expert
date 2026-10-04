@@ -1,0 +1,126 @@
+{
+  "product": "nfs",
+  "listed_items": 449,
+  "with_pdf": 247,
+  "extracted": 246,
+  "skipped_no_pdf": 201,
+  "skipped_zip": 1,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [
+    {
+      "title": "NFS OC 139 NFS-BIN Maintenance - Annexure A",
+      "error": "open failed: Failed to open file 'C:\\\\Users\\\\AI\\\\Desktop\\\\psk\\\\_source\\\\pdfs\\\\nfs\\\\NPCI_NFS_Circular_OC-139_FY-2014-15.pdf'."
+    }
+  ],
+  "skipped": {
+    "skipped_no_pdf": 201,
+    "skipped_zip": 1
+  },
+  "categories": {
+    "no_pdf": 201,
+    "circular": 247,
+    "zip": 1
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_NFS_Circular_OC-5_FY-2009-10.md",
+      "title": "NFS OC 5 Calendar of Steering Committee & User Group Meeting 2010",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-4_FY-2009-10.md",
+      "title": "NFS OC 4 Takeover of NFS by NPCI",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-2_FY-2009-10.md",
+      "title": "NFS OC 2 Takeover of NFS by NPCI",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-1_FY-2009-10.md",
+      "title": "NFS OC 1 Takeover of NFS by NPCI from IDRBT",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-14_FY-2010-11.md",
+      "title": "NFS OC 14 Capacity Building of NFS Member Banks",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-13_FY-2010-11.md",
+      "title": "NFS OC 13 Customer Complaints on Wrongful Debit with non disbursement of cash at ATMs",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-11_FY-2010-11.md",
+      "title": "NFS OC 11 Upload of JP EJ Copy into Online Dispute Management System",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-10_FY-2010-11.md",
+      "title": "NFS OC 10 Best Practices Codes - NFS",
+      "pages": 1,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_NFS_Circular_OC-20_FY-2010-11.md",
+      "title": "NFS OC 20 ATM Statistics Updation",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-18_FY-2010-11.md",
+      "title": "NFS OC 18 Successful Completion of NFS DR Drill",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-17_FY-2010-11.md",
+      "title": "NFS OC 17 Value added Services in IndiaPay National Financial Switch",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-15_FY-2010-11.md",
+      "title": "NFS OC 15 Displaying NPCI- NFS Logo on ATMs of Member Banks",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-46_FY-2011-12.md",
+      "title": "NFS OC 46 Letter of authority for executing NFS Settlements through NPCI",
+      "pages": 3,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-43_FY-2011-12.md",
+      "title": "NFS OC 43 Need for upgradation of Switch & Associated Systems",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-40_FY-2011-12.md",
+      "title": "NFS OC 40 NPCI Award for Operational Excellence",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NFS_Circular_OC-38_FY-2011-12.md",
+      "title": "NFS OC 38 Merger of DMS & MIS Application to DMS -MIS Application",
+      "pages": 1,
+      "scanned": true
+    }
+  ]
+}

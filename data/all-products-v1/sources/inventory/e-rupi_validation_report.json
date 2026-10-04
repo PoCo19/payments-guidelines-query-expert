@@ -1,0 +1,40 @@
+{
+  "product": "e-rupi",
+  "listed_items": 5,
+  "with_pdf": 3,
+  "extracted": 3,
+  "skipped_no_pdf": 2,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 2
+  },
+  "categories": {
+    "no_pdf": 2,
+    "circular": 3
+  },
+  "unscanned_sample": [],
+  "scanned_sample": [
+    {
+      "file": "NPCI_E-RUPI_Circular_OC-1E_FY-2021-22.md",
+      "title": "e-RUPI OC No.1 - e-RUPI Product Circular",
+      "pages": 4,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_E-RUPI_Circular_OC-04_FY-2022-23.md",
+      "title": "e-RUPI OC 04 - Limit enhancement, Multiple Use voucher & Acceptance of e-RUPI vouchers",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_E-RUPI_Circular_OC-05_FY-2023-24.md",
+      "title": "e-RUPI | OC No.05 | FY 23-24 | Enhancement to e-RUPI voucher",
+      "pages": 8,
+      "scanned": true
+    }
+  ]
+}

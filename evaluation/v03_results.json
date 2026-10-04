@@ -1,0 +1,2482 @@
+{
+  "note": "Developer checks, not held-out answer accuracy.",
+  "migration": [
+    {
+      "query": "OC 186A Tap Pay point of sale",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2026-OC-186A:p1:c1",
+        "2026-OC-186A:p1:c2"
+      ],
+      "chroma_ids": [
+        "2026-OC-186A:p1:c1",
+        "2026-OC-186A:p1:c2"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Numeric UPI ID resolution",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2025-OC-115E:p1:c1",
+        "2026-OC-115F:p1:c1",
+        "2025-OC-115E:p2:c1",
+        "2026-OC-115F:p1:c2",
+        "2024-OC-193:p1:c1",
+        "2024-OC-107A:p1:c1"
+      ],
+      "chroma_ids": [
+        "2025-OC-115E:p1:c1",
+        "2026-OC-115F:p1:c1",
+        "2025-OC-115E:p2:c1",
+        "2026-OC-115F:p1:c2",
+        "2024-OC-193:p1:c1",
+        "2024-OC-107A:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "UPI Circle delegated payments secondary users",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-201:p1:c1",
+        "2025-OC-201A:p1:c1",
+        "2024-OC-201:p2:c2",
+        "2025-OC-201B:p1:c1",
+        "2025-OC-201A:p1:c2",
+        "2025-OC-201B:p2:c3"
+      ],
+      "chroma_ids": [
+        "2024-OC-201:p1:c1",
+        "2025-OC-201A:p1:c1",
+        "2024-OC-201:p2:c2",
+        "2025-OC-201B:p1:c1",
+        "2025-OC-201A:p1:c2",
+        "2025-OC-201B:p2:c3"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Auto replenishment NETC FASTag NCMC",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-207:p1:c2",
+        "2024-OC-207:p1:c1",
+        "2024-OC-205:p1:c1",
+        "2025-OC-PCOMP-001:p1:c1",
+        "2023-Product-Compliance-PCOMP-005:p1:c1",
+        "2024-OC-205:p2:c1"
+      ],
+      "chroma_ids": [
+        "2024-OC-207:p1:c2",
+        "2024-OC-207:p1:c1",
+        "2024-OC-205:p1:c1",
+        "2025-OC-PCOMP-001:p1:c1",
+        "2023-Product-Compliance-PCOMP-005:p1:c1",
+        "2024-OC-205:p2:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Discontinuing Collect Request person to person",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2025-OC-220:p1:c1",
+        "2024-OC-76A:p1:c2",
+        "2025-OC-115E:p2:c1",
+        "2023-UPI-183:p1:c2",
+        "2025-OC-115E:p1:c2",
+        "2024-OC-204:p1:c1"
+      ],
+      "chroma_ids": [
+        "2025-OC-220:p1:c1",
+        "2024-OC-76A:p1:c2",
+        "2025-OC-115E:p2:c1",
+        "2023-UPI-183:p1:c2",
+        "2025-OC-115E:p1:c2",
+        "2024-OC-204:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Safeguarding User Information",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2026-OC-234:p1:c1",
+        "2025-OC-141D:p1:c1",
+        "2024-OC-199:p1:c1",
+        "2023-UPI-183:p1:c2",
+        "2025-OC-115E:p1:c2",
+        "2026-OC-234:p2:c1"
+      ],
+      "chroma_ids": [
+        "2026-OC-234:p1:c1",
+        "2025-OC-141D:p1:c1",
+        "2024-OC-199:p1:c1",
+        "2023-UPI-183:p1:c2",
+        "2025-OC-115E:p1:c2",
+        "2026-OC-234:p2:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "RuPay credit card transaction limit",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2023-RuPay-022:p1:c1"
+      ],
+      "chroma_ids": [
+        "2023-RuPay-022:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 201A",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 999",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "quantum photosynthesis chlorophyll",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-199:p1:c1",
+        "2024-OC-199:p1:c2",
+        "2023-UPI-170A:p1:c1",
+        "2026-OC-100B:p20:c1",
+        "2023-UPI-183:p1:c2",
+        "2026-OC-100B:p1:c1"
+      ],
+      "chroma_ids": [
+        "2024-OC-199:p1:c1",
+        "2024-OC-199:p1:c2",
+        "2023-UPI-170A:p1:c1",
+        "2026-OC-100B:p20:c1",
+        "2023-UPI-183:p1:c2",
+        "2026-OC-100B:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 165",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 237",
+      "method": "vector",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 186A Tap Pay point of sale",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2026-OC-186A:p1:c1",
+        "2026-OC-186A:p1:c2"
+      ],
+      "chroma_ids": [
+        "2026-OC-186A:p1:c1",
+        "2026-OC-186A:p1:c2"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Numeric UPI ID resolution",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2026-OC-115F:p1:c1",
+        "2025-OC-115E:p1:c1",
+        "2025-OC-115E:p2:c1",
+        "2026-OC-115F:p1:c2",
+        "2024-OC-193:p1:c1",
+        "2025-OC-193A:p2:c1"
+      ],
+      "chroma_ids": [
+        "2026-OC-115F:p1:c1",
+        "2025-OC-115E:p1:c1",
+        "2025-OC-115E:p2:c1",
+        "2026-OC-115F:p1:c2",
+        "2024-OC-193:p1:c1",
+        "2025-OC-193A:p2:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "UPI Circle delegated payments secondary users",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-201:p1:c1",
+        "2024-OC-201:p2:c2",
+        "2025-OC-201A:p1:c1",
+        "2025-OC-201A:p1:c2",
+        "2025-OC-201B:p1:c1",
+        "2025-OC-201B:p2:c2"
+      ],
+      "chroma_ids": [
+        "2024-OC-201:p1:c1",
+        "2024-OC-201:p2:c2",
+        "2025-OC-201A:p1:c1",
+        "2025-OC-201A:p1:c2",
+        "2025-OC-201B:p1:c1",
+        "2025-OC-201B:p2:c2"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Auto replenishment NETC FASTag NCMC",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-207:p1:c1",
+        "2024-OC-207:p1:c2",
+        "2024-OC-205:p1:c1",
+        "2024-OC-205:p2:c1",
+        "2023-UPI-186:p2:c1",
+        "2025-OC-213:p1:c1"
+      ],
+      "chroma_ids": [
+        "2024-OC-207:p1:c1",
+        "2024-OC-207:p1:c2",
+        "2024-OC-205:p1:c1",
+        "2024-OC-205:p2:c1",
+        "2023-UPI-186:p2:c1",
+        "2025-OC-213:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Discontinuing Collect Request person to person",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2025-OC-220:p1:c1",
+        "2024-OC-76A:p1:c2",
+        "2023-UPI-163:p2:c1",
+        "2025-OC-215A:p2:c1",
+        "2023-UPI-187:p1:c1",
+        "2026-OC-186A:p1:c1"
+      ],
+      "chroma_ids": [
+        "2025-OC-220:p1:c1",
+        "2024-OC-76A:p1:c2",
+        "2023-UPI-163:p2:c1",
+        "2025-OC-215A:p2:c1",
+        "2023-UPI-187:p1:c1",
+        "2026-OC-186A:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "Safeguarding User Information",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2026-OC-234:p1:c1",
+        "2026-OC-234:p2:c1",
+        "2025-OC-141D:p1:c1",
+        "2026-OC-227A:p1:c2",
+        "2023-Product-Compliance-PCOMP-005:p2:c2",
+        "2023-UPI-175:p1:c2"
+      ],
+      "chroma_ids": [
+        "2026-OC-234:p1:c1",
+        "2026-OC-234:p2:c1",
+        "2025-OC-141D:p1:c1",
+        "2026-OC-227A:p1:c2",
+        "2023-Product-Compliance-PCOMP-005:p2:c2",
+        "2023-UPI-175:p1:c2"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "RuPay credit card transaction limit",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2023-RuPay-022:p1:c1"
+      ],
+      "chroma_ids": [
+        "2023-RuPay-022:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 201A",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 999",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "quantum photosynthesis chlorophyll",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [
+        "2024-OC-199:p1:c1",
+        "2024-OC-199:p1:c2",
+        "2023-UPI-170A:p1:c1",
+        "2026-OC-100B:p20:c1",
+        "2023-UPI-183:p1:c2",
+        "2026-OC-100B:p1:c1"
+      ],
+      "chroma_ids": [
+        "2024-OC-199:p1:c1",
+        "2024-OC-199:p1:c2",
+        "2023-UPI-170A:p1:c1",
+        "2026-OC-100B:p20:c1",
+        "2023-UPI-183:p1:c2",
+        "2026-OC-100B:p1:c1"
+      ],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 165",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    },
+    {
+      "query": "OC 237",
+      "method": "hybrid",
+      "identical": true,
+      "old_ids": [],
+      "chroma_ids": [],
+      "overlap": 1.0
+    }
+  ],
+  "retrieval": [
+    {
+      "method": "bm25",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "91b2c3998250964bcd118e06e9b81cfa4416bcb1a6ca1558a0f2ad079f5d3f24",
+      "chunk_count": 916,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 1.0,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.38
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F",
+            "2024-OC-209",
+            "2024-OC-193"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.37
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.45
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2024-OC-205",
+            "2025-OC-169A",
+            "2025-OC-213"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.26
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2026-OC-186A",
+            "2024-OC-170B",
+            "2024-OC-190",
+            "2025-OC-215A",
+            "2026-OC-229A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.25
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2023-UPI-175",
+            "2025-OC-211",
+            "2026-OC-227A",
+            "2026-OC-229A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.32
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 0.26
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.16
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.15
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.21
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.15
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.15
+        }
+      ]
+    },
+    {
+      "method": "vector",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "91b2c3998250964bcd118e06e9b81cfa4416bcb1a6ca1558a0f2ad079f5d3f24",
+      "chunk_count": 916,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 0.9166666666666666,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 77.83
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F",
+            "2024-OC-107A",
+            "2025-OC-193B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 92.13
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 87.19
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2023-UPI-186",
+            "2025-OC-169A",
+            "2024-OC-205"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 90.18
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2023-UPI-180",
+            "2025-OC-115E",
+            "2024-OC-201",
+            "2024-OC-76A",
+            "2024-OC-197"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 101.54
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2025-OC-141D",
+            "2025-OC-201B",
+            "2024-OC-199",
+            "2023-UPI-175"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 89.2
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 105.2
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.51
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.33
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [
+            "2024-OC-199",
+            "2023-UPI-170A",
+            "2026-OC-227A",
+            "2026-OC-100B"
+          ],
+          "hit": false,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 108.66
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.99
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.45
+        }
+      ]
+    },
+    {
+      "method": "hybrid",
+      "dataset": "Developer smoke set; not a held-out benchmark or answer-quality evaluation.",
+      "fingerprint": "91b2c3998250964bcd118e06e9b81cfa4416bcb1a6ca1558a0f2ad079f5d3f24",
+      "chunk_count": 916,
+      "k": 6,
+      "cases": 12,
+      "hit_rate": 0.9166666666666666,
+      "mrr": 1.0,
+      "mean_document_recall": 1.0,
+      "rows": [
+        {
+          "query": "OC 186A Tap Pay point of sale",
+          "expected_documents": [
+            "2026-OC-186A"
+          ],
+          "retrieved_documents": [
+            "2026-OC-186A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 102.39
+        },
+        {
+          "query": "Numeric UPI ID resolution",
+          "expected_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F"
+          ],
+          "retrieved_documents": [
+            "2025-OC-115E",
+            "2026-OC-115F",
+            "2024-OC-193",
+            "2024-OC-209"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 97.95
+        },
+        {
+          "query": "UPI Circle delegated payments secondary users",
+          "expected_documents": [
+            "2024-OC-201"
+          ],
+          "retrieved_documents": [
+            "2024-OC-201",
+            "2025-OC-201A",
+            "2025-OC-201B"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 89.92
+        },
+        {
+          "query": "Auto replenishment NETC FASTag NCMC",
+          "expected_documents": [
+            "2024-OC-207"
+          ],
+          "retrieved_documents": [
+            "2024-OC-207",
+            "2023-UPI-186",
+            "2024-OC-205",
+            "2025-OC-169A"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 113.9
+        },
+        {
+          "query": "Discontinuing Collect Request person to person",
+          "expected_documents": [
+            "2025-OC-220"
+          ],
+          "retrieved_documents": [
+            "2025-OC-220",
+            "2024-OC-190",
+            "2024-OC-170B",
+            "2024-OC-76A",
+            "2023-UPI-163",
+            "2023-UPI-182"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 108.21
+        },
+        {
+          "query": "Safeguarding User Information",
+          "expected_documents": [
+            "2026-OC-234"
+          ],
+          "retrieved_documents": [
+            "2026-OC-234",
+            "2025-OC-141D",
+            "2023-UPI-175",
+            "2025-OC-115E",
+            "2024-OC-201"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 92.53
+        },
+        {
+          "query": "RuPay credit card transaction limit",
+          "series": "RuPay",
+          "expected_documents": [
+            "2023-RuPay-022"
+          ],
+          "retrieved_documents": [
+            "2023-RuPay-022"
+          ],
+          "hit": true,
+          "reciprocal_rank": 1.0,
+          "recall": 1.0,
+          "elapsed_ms": 84.9
+        },
+        {
+          "query": "OC 201A",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.48
+        },
+        {
+          "query": "OC 999",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.29
+        },
+        {
+          "query": "quantum photosynthesis chlorophyll",
+          "expected_documents": [],
+          "retrieved_documents": [
+            "2024-OC-199",
+            "2023-UPI-170A",
+            "2026-OC-227A",
+            "2026-OC-100B"
+          ],
+          "hit": false,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 72.96
+        },
+        {
+          "query": "OC 165",
+          "cutoff": "2024-12-31",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.4
+        },
+        {
+          "query": "OC 237",
+          "expected_documents": [],
+          "retrieved_documents": [],
+          "hit": true,
+          "reciprocal_rank": 0,
+          "recall": null,
+          "elapsed_ms": 0.25
+        }
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "request": {
+        "query": "According to OC 186A, what consent must the user give for UPI Tap & Pay on PoS?",
+        "scope": "related"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "related",
+        "seed_chunk_ids": [
+          "2026-OC-186A:p1:v3c1",
+          "2026-OC-186A:p1:v3c3",
+          "2026-OC-186A:p2:v3c2",
+          "2026-OC-186A:p1:v3c2"
+        ],
+        "included_chunk_ids": [
+          "2026-OC-186A:p1:v3c1",
+          "2026-OC-186A:p1:v3c3",
+          "2026-OC-186A:p2:v3c2",
+          "2026-OC-186A:p1:v3c2",
+          "2023-UPI-186:p1:v3c1",
+          "2026-OC-186A:p1:v3c4",
+          "2026-OC-186A:p2:v3c3"
+        ],
+        "evidence_characters": 4474,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [
+        {
+          "id": "2026-OC-186A:p1:v3c1",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "serena a Oe Prt | FORWPRD NPCI/UPI/OC-186A/2026-27 10\" September 2026 To, Members and UPI Application Providers — Unified Payments Interface (UPI) Subject: Enhancement - UPI Tap & Pay on Point of Sale (PoS) With reference to UPI Operating Circular NPCI/UPI/OC-186/2023-24 dated 19° December 2023, UPI Tap & Pay through Near Field Communication (NFC) on QR was introduced as an additional mode for initiating UPI transactions. In addition to QR, UPI Tap & Pay shall now be extended to Point of Sale (PoS) terminals enabling Users to make contactless (NFC-based) UPI! payments by unlocking their mobile device and tapping it on the PoS terminal.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 103,
+          "section_id": "2026-OC-186A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2026-OC-186A:p1:v3c2",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03227,
+          "citation": "S1",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2026-OC-186A:p1:v3c3",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "2. Members and UPI Application Providers shall ensure explicit User consent is obtained for enabling UPI Tap & Pay feature, with Users having the ability to opt out at any time.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 129,
+          "end_word": 160,
+          "section_id": "2026-OC-186A:s1",
+          "section_heading": "Key Guidelines",
+          "clause_label": "2.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p1:v3c2",
+          "next_chunk_id": "2026-OC-186A:p1:v3c4",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03227,
+          "citation": "S2",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2026-OC-186A:p2:v3c2",
+          "document_id": "2026-OC-186A",
+          "page": 2,
+          "text": "UPI Application Provider 1. UP! Application Providers / PSP Banks shall ensure explicit User consent is obtained after each device binding operation before allowing further transactions using UPI! Tap & Pay.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "start_word": 6,
+          "end_word": 37,
+          "section_id": "2026-OC-186A:s3",
+          "section_heading": "UPI Application Provider",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p2:v3c1",
+          "next_chunk_id": "2026-OC-186A:p2:v3c3",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03175,
+          "citation": "S3",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2026-OC-186A:p1:v3c2",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 103,
+          "end_word": 129,
+          "section_id": "2026-OC-186A:s1",
+          "section_heading": "Key Guidelines",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p1:v3c1",
+          "next_chunk_id": "2026-OC-186A:p1:v3c3",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03078,
+          "citation": "S4",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c1",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "NZE) NATIONAL PAYMENTS CORPORATION OF INDIA NPCIUPIOG No.186/2023-24 19\" December 2023 To, All Members, Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of UP] TAP & PAY mode of payments In addition to the existing modes (Scan & Pay, Pay to Contact, UPI Number, etc.) of UPI Payments, “UPI Tap & Pay” is the new mode introduced for UP] transactions. Following is the construct for UPI Tap & Pay transactions:",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 70,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2023-UPI-186:p1:v3c2",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "recorded_reference",
+          "via_document_id": "2026-OC-186A",
+          "relation": {
+            "from_id": "2026-OC-186A",
+            "target_id": "2023-UPI-186",
+            "reference": "186",
+            "relation": "references",
+            "basis": "imported_related_circulars",
+            "evidence_pages": [
+              1
+            ],
+            "evidence_status": "number_occurrence_only",
+            "status": "resolved",
+            "candidate_ids": [
+              "2023-UPI-186"
+            ],
+            "direction": "referenced_by_seed"
+          },
+          "citation": "S5"
+        },
+        {
+          "id": "2026-OC-186A:p1:v3c4",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "3. Members and UPI Application Providers shall ensure that per transaction limit is capped at $5000, up to which additional factor of authentication shall not be required.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 160,
+          "end_word": 187,
+          "section_id": "2026-OC-186A:s1",
+          "section_heading": "Key Guidelines",
+          "clause_label": "3.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p1:v3c3",
+          "next_chunk_id": "2026-OC-186A:p1:v3c5",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2026-OC-186A",
+          "relation": null,
+          "citation": "S6"
+        },
+        {
+          "id": "2026-OC-186A:p2:v3c3",
+          "document_id": "2026-OC-186A",
+          "page": 2,
+          "text": "2. UPI Application Providers shall ensure that device lock is enabled as a prerequisite for activating UP! Tap & Pay. Further, the device shall be in an unlocked state at the time of initiating a UP! Tap & Pay transaction.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "start_word": 37,
+          "end_word": 77,
+          "section_id": "2026-OC-186A:s3",
+          "section_heading": "UPI Application Provider",
+          "clause_label": "2.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p2:v3c2",
+          "next_chunk_id": "2026-OC-186A:p2:v3c4",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2026-OC-186A",
+          "relation": null,
+          "citation": "S7"
+        }
+      ],
+      "claims": [
+        {
+          "text": "For enabling the UPI Tap & Pay feature on PoS terminals, Members and UPI Application Providers must ensure explicit User consent is obtained.",
+          "sources": [
+            "S2"
+          ]
+        },
+        {
+          "text": "Explicit User consent must be obtained after each device binding operation before allowing further transactions using UPI Tap & Pay.",
+          "sources": [
+            "S3"
+          ]
+        },
+        {
+          "text": "Users must have the ability to opt out of the UPI Tap & Pay feature at any time.",
+          "sources": [
+            "S2"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 8591
+    },
+    {
+      "request": {
+        "query": "Compare OC 186 and OC 186A: how is the Tap & Pay initiation method extended?",
+        "scope": "related"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "related",
+        "seed_chunk_ids": [
+          "2026-OC-186A:p1:v3c1",
+          "2023-UPI-186:p1:v3c9",
+          "2023-UPI-186:p1:v3c1",
+          "2026-OC-186A:p1:v3c7"
+        ],
+        "included_chunk_ids": [
+          "2026-OC-186A:p1:v3c1",
+          "2023-UPI-186:p1:v3c9",
+          "2023-UPI-186:p1:v3c1",
+          "2026-OC-186A:p1:v3c7",
+          "2023-UPI-186:p1:v3c8",
+          "2023-UPI-186:p1:v3c10",
+          "2023-UPI-186:p1:v3c2"
+        ],
+        "evidence_characters": 4703,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [
+        {
+          "id": "2026-OC-186A:p1:v3c1",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "serena a Oe Prt | FORWPRD NPCI/UPI/OC-186A/2026-27 10\" September 2026 To, Members and UPI Application Providers — Unified Payments Interface (UPI) Subject: Enhancement - UPI Tap & Pay on Point of Sale (PoS) With reference to UPI Operating Circular NPCI/UPI/OC-186/2023-24 dated 19° December 2023, UPI Tap & Pay through Near Field Communication (NFC) on QR was introduced as an additional mode for initiating UPI transactions. In addition to QR, UPI Tap & Pay shall now be extended to Point of Sale (PoS) terminals enabling Users to make contactless (NFC-based) UPI! payments by unlocking their mobile device and tapping it on the PoS terminal.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 103,
+          "section_id": "2026-OC-186A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2026-OC-186A:p1:v3c2",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03252,
+          "citation": "S1",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c9",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "8. Initiation mode ‘06’ shall be used for UPI Tap & Pay transactions. All UP] Apps and banks shall ensure to process TAP & Pay transactions with initiation mode 06.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 236,
+          "end_word": 266,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "8.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c8",
+          "next_chunk_id": "2023-UPI-186:p1:v3c10",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03227,
+          "citation": "S2",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c1",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "NZE) NATIONAL PAYMENTS CORPORATION OF INDIA NPCIUPIOG No.186/2023-24 19\" December 2023 To, All Members, Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of UP] TAP & PAY mode of payments In addition to the existing modes (Scan & Pay, Pay to Contact, UPI Number, etc.) of UPI Payments, “UPI Tap & Pay” is the new mode introduced for UP] transactions. Following is the construct for UPI Tap & Pay transactions:",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 70,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2023-UPI-186:p1:v3c2",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.032,
+          "citation": "S3",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2026-OC-186A:p1:v3c7",
+          "document_id": "2026-OC-186A",
+          "page": 1,
+          "text": "6. Members and UPI Application Providers shall refer to the applicable UP! Tap & Pay Feature Document, Technical Specifications and other instructions issued by NPCI from time to time for detailed functional, technical and operational requirements.",
+          "title": "Enhancement - UPI Tap & Pay on Point of Sale (PoS)",
+          "circular_number": "186A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 259,
+          "end_word": 295,
+          "section_id": "2026-OC-186A:s1",
+          "section_heading": "Key Guidelines",
+          "clause_label": "6.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-186A:p1:v3c6",
+          "next_chunk_id": "2026-OC-186A:p1:v3c8",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.02932,
+          "citation": "S4",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c8",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "7. UPI Tap & Pay mode of payment shall be available on mobile devices with both android/ ios operating systems.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 216,
+          "end_word": 236,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "7.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c7",
+          "next_chunk_id": "2023-UPI-186:p1:v3c9",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S5"
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c10",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "9. Acquiring banks shall ensure that NFC tags used inside the UPI Smart QRs/ Tags are NFC forum certified (Type 2) and non-rewritable post personalisation. Acquiring banks shall be liable for the loss occurred due to tampering, if any. Acquiring banks shall perform the periodic checks of the UPI Smart QRs installed at the merchants and ensure replacement, if required. 1OO1A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 266,
+          "end_word": 353,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "9.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c9",
+          "next_chunk_id": "2023-UPI-186:p2:v3c1",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S6"
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c2",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "1. UPI APPs shall ensure to provide the Tap & Pay mode of payment only through mobiles devices having NFC capability.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 70,
+          "end_word": 91,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c1",
+          "next_chunk_id": "2023-UPI-186:p1:v3c3",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S7"
+        }
+      ],
+      "claims": [
+        {
+          "text": "OC 186 introduced UPI Tap & Pay as an additional mode for initiating UPI transactions on QR terminals via Near Field Communication (NFC).",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "OC 186A extends the Tap & Pay initiation method to Point of Sale (PoS) terminals.",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "Under OC 186A, users can make contactless (NFC-based) UPI payments by unlocking their mobile device and tapping it on the PoS terminal.",
+          "sources": [
+            "S1"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 4822
+    },
+    {
+      "request": {
+        "query": "According to OC 201, who is the primary user and who is the secondary user?",
+        "scope": "strict"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "strict",
+        "seed_chunk_ids": [
+          "2024-OC-201:p1:v3c1",
+          "2024-OC-201:p1:v3c3",
+          "2024-OC-201:p1:v3c7",
+          "2024-OC-201:p2:v3c1",
+          "2024-OC-201:p2:v3c2",
+          "2024-OC-201:p1:v3c2"
+        ],
+        "included_chunk_ids": [
+          "2024-OC-201:p1:v3c1",
+          "2024-OC-201:p1:v3c3",
+          "2024-OC-201:p1:v3c7",
+          "2024-OC-201:p2:v3c1",
+          "2024-OC-201:p2:v3c2",
+          "2024-OC-201:p1:v3c2"
+        ],
+        "evidence_characters": 4612,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [
+        {
+          "id": "2024-OC-201:p1:v3c1",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "aRearT wskr wrart Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI /UPI/OC No.201/2024-25 13!\" August 2024 To, All Members - Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of “UPI Circle” —- Delegated Payments for secondary users UPI has emerged as a preferred mode of payment for users. UPI has created a seamless digital experience to enable users to transact via their mobile devices. There are users who are still dependent on cash for their daily payment needs because they do not manage their own money through their own account. With the objective of addressing these unmet needs, introduce “UPI Circle” is introduced, wherein UPI users can delegate to their trusted secondary users for making payments. UPI Steering Committee meeting held on 3% August 2023 had endorsed the introduction of “UPI Circle - Delegate Payments”. UPI Circle is a feature where a UPI user acts as a primary to link with their trusted secondary users on their UPI App for either partial or full delegation. Primary user can authorize a trusted secondary user for performing transactions within the security protocols/ limits. Full Delegation — Primary user authorizes a secondary user to initiate and complete UPI transactions as per defined spend limits Partial Delegation — Primary user authorizes initiation of payment requests from secondary users, Primary user shall complete UP! transaction with",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2024-OC-201:p1:v3c2",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.03154,
+          "citation": "S1",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-201:p1:v3c3",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "1. UPl apps and PSP to offer independent user journey for Primary and secondary users. User shall have their own choice of UPI app",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 232,
+          "end_word": 256,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-201:p1:v3c2",
+          "next_chunk_id": "2024-OC-201:p1:v3c4",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.03126,
+          "citation": "S2",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-201:p1:v3c7",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "4. A primary user can delegate to up to 5 secondary users and a secondary user can accept delegation from only one primary user 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051- T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 332,
+          "end_word": 383,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "4.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-201:p1:v3c6",
+          "next_chunk_id": "2024-OC-201:p2:v3c1",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.0308,
+          "citation": "S3",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-201:p2:v3c1",
+          "document_id": "2024-OC-201",
+          "page": 2,
+          "text": "5. Members shall ensure that the primary authorize the secondary user on either full or partial delegation",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 94,
+          "start_word": 0,
+          "end_word": 17,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "5.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-201:p1:v3c7",
+          "next_chunk_id": "2024-OC-201:p2:v3c2",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.03078,
+          "citation": "S4",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-201:p2:v3c2",
+          "document_id": "2024-OC-201",
+          "page": 2,
+          "text": "6. Members shall ensure limits contro! to be available for the primary to set usage controls over their secondary users",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 94,
+          "start_word": 17,
+          "end_word": 37,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "6.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-201:p2:v3c1",
+          "next_chunk_id": "2024-OC-201:p2:v3c3",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.03062,
+          "citation": "S5",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-201:p1:v3c2",
+          "document_id": "2024-OC-201",
+          "page": 1,
+          "text": "authorizes a secondary user to initiate and complete UPI transactions as per defined spend limits Partial Delegation — Primary user authorizes initiation of payment requests from secondary users, Primary user shall complete UP! transaction with UPI PIN Members are required to ensure the below guidelines are followed:",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "circular_number": "201",
+          "series": "UPI",
+          "issue_date": "2024-08-13",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 185,
+          "end_word": 232,
+          "section_id": "2024-OC-201:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-201:p1:v3c1",
+          "next_chunk_id": "2024-OC-201:p1:v3c3",
+          "feature_ids": [
+            "upi_circle"
+          ],
+          "family": "201",
+          "score": 0.03021,
+          "citation": "S6",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        }
+      ],
+      "claims": [
+        {
+          "text": "The primary user is the UPI user who acts as a primary to link with their trusted secondary users on their UPI App for either partial or full delegation.",
+          "sources": [
+            "S1"
+          ]
+        },
+        {
+          "text": "The secondary user is a trusted user authorized by the primary user to initiate and complete UPI transactions (full delegation) or initiate payment requests which the primary user completes (partial delegation).",
+          "sources": [
+            "S1",
+            "S6"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 3688
+    },
+    {
+      "request": {
+        "query": "What requirements are specified in OC 999?",
+        "scope": "related"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "related",
+        "seed_chunk_ids": [],
+        "included_chunk_ids": [],
+        "evidence_characters": 0,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [],
+      "claims": [],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."
+      ],
+      "answer": "No matching evidence was retrieved; no model request was made.",
+      "abstained": true,
+      "elapsed_ms": 1
+    },
+    {
+      "request": {
+        "query": "Explain quantum photosynthesis and chlorophyll.",
+        "scope": "related"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "related",
+        "seed_chunk_ids": [
+          "2023-UPI-170A:p1:v3c2",
+          "2024-OC-199:p1:v3c1",
+          "2026-OC-227A:p2:v3c6",
+          "2024-OC-199:p1:v3c2"
+        ],
+        "included_chunk_ids": [
+          "2023-UPI-170A:p1:v3c2",
+          "2024-OC-199:p1:v3c1",
+          "2026-OC-227A:p2:v3c6",
+          "2024-OC-199:p1:v3c2",
+          "2023-UPI-170:p1:v3c1",
+          "2023-UPI-170A:p1:v3c1",
+          "2023-UPI-170A:p1:v3c3",
+          "2026-OC-227A:p2:v3c5"
+        ],
+        "evidence_characters": 6839,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [
+        {
+          "id": "2023-UPI-170A:p1:v3c2",
+          "document_id": "2023-UPI-170A",
+          "page": 1,
+          "text": "1. All the details as mentioned in NPCI’s UP! Operating Circular 170 shall be applicable for the aforesaid transactions as well.",
+          "title": "Addendum to RBI Digital Rupee - CBDC and UPI Interoperability for P2P UPI QR",
+          "circular_number": "170A",
+          "series": "UPI",
+          "issue_date": "2023-11-07",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_170_A_FY_23_24_Addendum_to_RBI_Digital_Rupee_CBDC_and_UPI_Interoperability_for_P2_P_UPI_QR_168f72ee5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "start_word": 141,
+          "end_word": 162,
+          "section_id": "2023-UPI-170A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-170A:p1:v3c1",
+          "next_chunk_id": "2023-UPI-170A:p1:v3c3",
+          "feature_ids": [],
+          "family": "170",
+          "score": 0.01639,
+          "citation": "S1",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-199:p1:v3c1",
+          "document_id": "2024-OC-199",
+          "page": 1,
+          "text": "fs Conroe =) NPCI/UPI/OC no.199/2024-25 25\" June 2024 To, All Members, UPI (Unified Payment Interface) Dear Sir/Madam, Subject: Update to NPCI CL version 1.8 or above UPI has become a preferred digital payment mode across the country. It provides ease of use, convenience and superior user experience with security and interoperability. To ensure the safety and security of the UPI systems, NPCI constantly reviews the security checks of all components in the UPI ecosystem and regularly upgrades them to address evolving threats in cyber landscape. There are security checks implemented as part of the code embedded in the Common Library (CL) along with the feature release to enhance user experience on UPI platforms. Integration of latest versions of CL is important to ensure enhanced security and safety in UPI ecosystem. With this objective, NPCI will be retiring the support for CL prior to Version 1.8 after 30% September 2024. To ensure compliance PSP Banks shall certify and enable CL 1.8 or above and their respective UPI Apps shall integrate the latest version of CL within their application, on or before 30% September 2024. Members are requested to take note of this compliance and communicate it to relevant stakeholders and their respective partners. Yours sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex,",
+          "title": "Update to NPCI CL version 1.8 or above",
+          "circular_number": "199",
+          "series": "UPI",
+          "issue_date": "2024-06-25",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_199_FY_24_25_Update_to_NPCI_CL_version_1_8_or_above_2ce3cf4e5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2024-OC-199:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2024-OC-199:p1:v3c2",
+          "feature_ids": [],
+          "family": "199",
+          "score": 0.01613,
+          "citation": "S2",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2026-OC-227A:p2:v3c6",
+          "document_id": "2026-OC-227A",
+          "page": 2,
+          "text": "c) NPCI website & channels: and",
+          "title": "Addendum to UPI OC 227 – “MyUPI” - AI powered support for UPI payments (UPI HELP 2.0)",
+          "circular_number": "227A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_227_A_I_Addendum_to_UPI_OC_227_My_UPI_AI_powered_support_for_UPI_payments_UPI_HELP_2_0_cd357bfa84.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 190,
+          "end_word": 196,
+          "section_id": "2026-OC-227A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "c)",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-227A:p2:v3c5",
+          "next_chunk_id": "2026-OC-227A:p2:v3c7",
+          "feature_ids": [],
+          "family": "227",
+          "score": 0.01587,
+          "citation": "S3",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2024-OC-199:p1:v3c2",
+          "document_id": "2024-OC-199",
+          "page": 1,
+          "text": "requested to take note of this compliance and communicate it to relevant stakeholders and their respective partners. Yours sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 www.npci.org.in CIN: U74990MH2008NPL189067 cantact@Annci ara in",
+          "title": "Update to NPCI CL version 1.8 or above",
+          "circular_number": "199",
+          "series": "UPI",
+          "issue_date": "2024-06-25",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_199_FY_24_25_Update_to_NPCI_CL_version_1_8_or_above_2ce3cf4e5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 185,
+          "end_word": 239,
+          "section_id": "2024-OC-199:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2024-OC-199:p1:v3c1",
+          "next_chunk_id": "",
+          "feature_ids": [],
+          "family": "199",
+          "score": 0.01562,
+          "citation": "S4",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-170:p1:v3c1",
+          "document_id": "2023-UPI-170",
+          "page": 1,
+          "text": "ander eestr yprart rrr NATIONAL PAYMENTS CORPORATION OF INDIA NPCIUPI/OC No 170/2023-24 20\" September 2023 To All Members participating in Unified Payment Interface (UPI) Subject: RBIs Digital Rupee - CBDC and UPI Interoperability RBI's Digital Rupee facilitates fast and efficient transactions, which aims to enhance financial inclusion. It further provides a secure and regulated digital alternative to physical cash. In line with RBI's decision to enhance interoperability between UPI and Digital Rupee, it is intended to extend the benefits of UPI Quick Response Code (QR Code) to the Digital Rupee users. This will enable all the merchants that are already using UPI QR Code to be enabled for receiving payments from Digital Rupee users. Members shall implement the following for enabling interoperability and acceptance of UPI QR Codes for Digital Rupee transactions:",
+          "title": "RBI's Digital Rupee - CBDC and UPI Interoperability",
+          "circular_number": "170",
+          "series": "UPI",
+          "issue_date": "2023-09-20",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_170_RBI_s_Digital_Rupee_CBDC_and_UPI_Interoperability_c61688c62c.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 0,
+          "end_word": 132,
+          "section_id": "2023-UPI-170:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2023-UPI-170:p1:v3c2",
+          "feature_ids": [],
+          "family": "170",
+          "retrieval_reason": "recorded_reference",
+          "via_document_id": "2023-UPI-170A",
+          "relation": {
+            "from_id": "2023-UPI-170A",
+            "target_id": "2023-UPI-170",
+            "reference": "170",
+            "relation": "references",
+            "basis": "imported_related_circulars",
+            "evidence_pages": [
+              1
+            ],
+            "evidence_status": "number_occurrence_only",
+            "status": "resolved",
+            "candidate_ids": [
+              "2023-UPI-170"
+            ],
+            "direction": "referenced_by_seed"
+          },
+          "citation": "S5"
+        },
+        {
+          "id": "2023-UPI-170A:p1:v3c1",
+          "document_id": "2023-UPI-170A",
+          "page": 1,
+          "text": "Rey uss wrart Par NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC-170A/2023-24(Addendum) 7\" November 2023 To All Members participating in Unified Payment Interface (UPI) Subject: Addendum to “RBI’s Digital Rupee - CBDC and UPI Interoperability” for P2P UPI QR Vide reference to NPCI UP! OC NPCI/UPI/OC No 170/2023-24 dated 20\" September,2023 on “RBI's Digital Rupee — CBDC and UPI Interoperability’, interoperability between UPI and Digital Rupee was allowed which was in line with the RBI's direction on enhancing interoperability. With the mentioned guideline the benefits of making payment to UP! Quick Response Code (QR Code) was extended to the Digital Rupee users for merchant transactions(P2M/P2PM). The interoperability of CBDC on UPI transaction shall be extended to UPI P2P QR’s based on the regulatory approval. Members shall implement the following for enabling interoperability and acceptance of UPI P2P QR Codes for Digital Rupee transactions:",
+          "title": "Addendum to RBI Digital Rupee - CBDC and UPI Interoperability for P2P UPI QR",
+          "circular_number": "170A",
+          "series": "UPI",
+          "issue_date": "2023-11-07",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_170_A_FY_23_24_Addendum_to_RBI_Digital_Rupee_CBDC_and_UPI_Interoperability_for_P2_P_UPI_QR_168f72ee5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "start_word": 0,
+          "end_word": 141,
+          "section_id": "2023-UPI-170A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2023-UPI-170A:p1:v3c2",
+          "feature_ids": [],
+          "family": "170",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-170A",
+          "relation": null,
+          "citation": "S6"
+        },
+        {
+          "id": "2023-UPI-170A:p1:v3c3",
+          "document_id": "2023-UPI-170A",
+          "page": 1,
+          "text": "2. Existing NPCI switching fees for UPI P2P transactions shall be applicable for the aforesaid transactions.",
+          "title": "Addendum to RBI Digital Rupee - CBDC and UPI Interoperability for P2P UPI QR",
+          "circular_number": "170A",
+          "series": "UPI",
+          "issue_date": "2023-11-07",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_170_A_FY_23_24_Addendum_to_RBI_Digital_Rupee_CBDC_and_UPI_Interoperability_for_P2_P_UPI_QR_168f72ee5e.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 91,
+          "start_word": 162,
+          "end_word": 178,
+          "section_id": "2023-UPI-170A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "2.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-170A:p1:v3c2",
+          "next_chunk_id": "2023-UPI-170A:p1:v3c4",
+          "feature_ids": [],
+          "family": "170",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-170A",
+          "relation": null,
+          "citation": "S7"
+        },
+        {
+          "id": "2026-OC-227A:p2:v3c5",
+          "document_id": "2026-OC-227A",
+          "page": 2,
+          "text": "b) Member’s customer interface channels like website, chatbot, etc.;",
+          "title": "Addendum to UPI OC 227 – “MyUPI” - AI powered support for UPI payments (UPI HELP 2.0)",
+          "circular_number": "227A",
+          "series": "UPI",
+          "issue_date": "2026-09-10",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_I_OC_No_227_A_I_Addendum_to_UPI_OC_227_My_UPI_AI_powered_support_for_UPI_payments_UPI_HELP_2_0_cd357bfa84.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 92,
+          "start_word": 181,
+          "end_word": 190,
+          "section_id": "2026-OC-227A:s0",
+          "section_heading": "Document opening",
+          "clause_label": "b)",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2026-OC-227A:p2:v3c4",
+          "next_chunk_id": "2026-OC-227A:p2:v3c6",
+          "feature_ids": [],
+          "family": "227",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2026-OC-227A",
+          "relation": null,
+          "citation": "S8"
+        }
+      ],
+      "claims": [],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."
+      ],
+      "answer": "The model could not answer from the retrieved evidence.",
+      "abstained": true,
+      "elapsed_ms": 1723
+    },
+    {
+      "request": {
+        "query": "According to OC 186, how is Tap Pay initiated?",
+        "scope": "related",
+        "cutoff": "2024-01-01"
+      },
+      "mode": "generate",
+      "retrieval_trace": {
+        "scope": "related",
+        "seed_chunk_ids": [
+          "2023-UPI-186:p1:v3c1",
+          "2023-UPI-186:p1:v3c9",
+          "2023-UPI-186:p1:v3c3",
+          "2023-UPI-186:p1:v3c7"
+        ],
+        "included_chunk_ids": [
+          "2023-UPI-186:p1:v3c1",
+          "2023-UPI-186:p1:v3c9",
+          "2023-UPI-186:p1:v3c3",
+          "2023-UPI-186:p1:v3c7",
+          "2023-UPI-186:p1:v3c2",
+          "2023-UPI-186:p1:v3c8",
+          "2023-UPI-186:p1:v3c10"
+        ],
+        "evidence_characters": 4004,
+        "character_budget": 12000,
+        "max_reference_hops": 1,
+        "notes": []
+      },
+      "sources": [
+        {
+          "id": "2023-UPI-186:p1:v3c1",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "NZE) NATIONAL PAYMENTS CORPORATION OF INDIA NPCIUPIOG No.186/2023-24 19\" December 2023 To, All Members, Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of UP] TAP & PAY mode of payments In addition to the existing modes (Scan & Pay, Pay to Contact, UPI Number, etc.) of UPI Payments, “UPI Tap & Pay” is the new mode introduced for UP] transactions. Following is the construct for UPI Tap & Pay transactions:",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 0,
+          "end_word": 70,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "",
+          "next_chunk_id": "2023-UPI-186:p1:v3c2",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03252,
+          "citation": "S1",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c9",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "8. Initiation mode ‘06’ shall be used for UPI Tap & Pay transactions. All UP] Apps and banks shall ensure to process TAP & Pay transactions with initiation mode 06.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 236,
+          "end_word": 266,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "8.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c8",
+          "next_chunk_id": "2023-UPI-186:p1:v3c10",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03252,
+          "citation": "S2",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c3",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "2. UPI APPs shall take permission from the customer to enable NFC for Tap & Pay transactions.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 91,
+          "end_word": 108,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "2.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c2",
+          "next_chunk_id": "2023-UPI-186:p1:v3c4",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03126,
+          "citation": "S3",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c7",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "6. Members shall ensure to comply with the NPCI brand guidelines updated on NPCI website for UPI Tap & Pay.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 196,
+          "end_word": 216,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "6.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c6",
+          "next_chunk_id": "2023-UPI-186:p1:v3c8",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "score": 0.03126,
+          "citation": "S4",
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c2",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "1. UPI APPs shall ensure to provide the Tap & Pay mode of payment only through mobiles devices having NFC capability.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 70,
+          "end_word": 91,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c1",
+          "next_chunk_id": "2023-UPI-186:p1:v3c3",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S5"
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c8",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "7. UPI Tap & Pay mode of payment shall be available on mobile devices with both android/ ios operating systems.",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 216,
+          "end_word": 236,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "7.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c7",
+          "next_chunk_id": "2023-UPI-186:p1:v3c9",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S6"
+        },
+        {
+          "id": "2023-UPI-186:p1:v3c10",
+          "document_id": "2023-UPI-186",
+          "page": 1,
+          "text": "9. Acquiring banks shall ensure that NFC tags used inside the UPI Smart QRs/ Tags are NFC forum certified (Type 2) and non-rewritable post personalisation. Acquiring banks shall be liable for the loss occurred due to tampering, if any. Acquiring banks shall perform the periodic checks of the UPI Smart QRs installed at the merchants and ensure replacement, if required. 1OO1A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+          "title": "Introduction of UPI TAP & PAY mode of Payments",
+          "circular_number": "186",
+          "series": "UPI",
+          "issue_date": "2023-12-19",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf",
+          "method": "ocr",
+          "review_status": "machine_extraction_not_verified_word_for_word",
+          "needs_priority_review": false,
+          "ocr_confidence": 93,
+          "start_word": 266,
+          "end_word": 353,
+          "section_id": "2023-UPI-186:s0",
+          "section_heading": "Document opening",
+          "clause_label": "9.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2023-UPI-186:p1:v3c9",
+          "next_chunk_id": "2023-UPI-186:p2:v3c1",
+          "feature_ids": [
+            "tap_pay"
+          ],
+          "family": "186",
+          "retrieval_reason": "adjacent_context",
+          "via_document_id": "2023-UPI-186",
+          "relation": null,
+          "citation": "S7"
+        }
+      ],
+      "claims": [
+        {
+          "text": "Tap & Pay transactions are initiated using the initiation mode '06'.",
+          "sources": [
+            "S2"
+          ]
+        },
+        {
+          "text": "UPI Apps must take permission from the customer to enable NFC for Tap & Pay transactions.",
+          "sources": [
+            "S3"
+          ]
+        },
+        {
+          "text": "The Tap & Pay mode of payment is provided only through mobile devices having NFC capability.",
+          "sources": [
+            "S5"
+          ]
+        }
+      ],
+      "warnings": [
+        "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+        "The date filter excludes later issues and known later public revisions. It does not reconstruct all requirements effective on that date.",
+        "Citation IDs are validated. Whether each citation supports its claim still requires review."
+      ],
+      "answer": "Draft answer — check the supporting excerpts.",
+      "abstained": false,
+      "elapsed_ms": 3556
+    }
+  ],
+  "stats": {
+    "version": "0.3.0",
+    "documents": 129,
+    "converted": 107,
+    "pages": 251,
+    "chunks": 916,
+    "availability": {
+      "no_public_pdf": 20,
+      "converted": 107,
+      "public_link_failed": 1,
+      "cancelled_as_listed": 1
+    },
+    "series": {
+      "UPI": 119,
+      "Product Compliance": 9,
+      "RuPay": 1
+    },
+    "priority_pages": 25,
+    "snapshot": "2026-09-22 / 2026-09-23",
+    "window": "2023-01-01 to 2026-09-22, plus one older reference",
+    "generation_configured": true,
+    "generation_model": "qwen3.5:9b",
+    "vector_ready": true,
+    "vector_status": "Ready",
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "features": [
+      {
+        "id": "tap_pay",
+        "label": "UPI Tap & Pay",
+        "pattern": "tap\\s*(?:&|and)?\\s*pay"
+      },
+      {
+        "id": "upi_circle",
+        "label": "UPI Circle / delegated payments",
+        "pattern": "upi\\s+circle|delegat(?:ed|ion)"
+      },
+      {
+        "id": "autopay",
+        "label": "UPI AutoPay / mandates",
+        "pattern": "auto\\s*pay|mandate|auto.?replenishment"
+      },
+      {
+        "id": "netc_ncmc",
+        "label": "NETC FASTag / NCMC replenishment",
+        "pattern": "fastag|ncmc|netc"
+      },
+      {
+        "id": "nrp_prd",
+        "label": "NRP / PRD and arbitration",
+        "pattern": "\\bnrp\\b|\\bprd\\b|arbitration"
+      },
+      {
+        "id": "upi_lite",
+        "label": "UPI LITE",
+        "pattern": "upi\\s+lite"
+      },
+      {
+        "id": "credit_on_upi",
+        "label": "Credit cards / credit lines on UPI",
+        "pattern": "credit\\s+(?:card|line)"
+      },
+      {
+        "id": "numeric_upi_id",
+        "label": "Numeric UPI ID",
+        "pattern": "numeric\\s+upi"
+      }
+    ],
+    "reference_edges": 54,
+    "registry_fingerprint": "fb4bafd7c003854adb2c7f3ce4cdbab878478c04fd6df7762727ccf028d4776b",
+    "fingerprint": "91b2c3998250964bcd118e06e9b81cfa4416bcb1a6ca1558a0f2ad079f5d3f24",
+    "embedding_model": "qwen3-embedding:0.6b"
+  },
+  "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+  "chunk_words": {
+    "min": 3,
+    "max": 220,
+    "median": 44.0
+  },
+  "reference_statuses": {
+    "missing": 21,
+    "resolved": 32,
+    "text_unavailable": 1
+  },
+  "validated_on": "2026-09-24",
+  "runtime": {
+    "python": "3.12.14",
+    "chroma": "1.5.9"
+  }
+}

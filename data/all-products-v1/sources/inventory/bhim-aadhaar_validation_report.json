@@ -1,0 +1,31 @@
+{
+  "product": "bhim-aadhaar",
+  "listed_items": 2,
+  "with_pdf": 2,
+  "extracted": 2,
+  "skipped_no_pdf": 0,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {},
+  "categories": {
+    "circular": 2
+  },
+  "unscanned_sample": [],
+  "scanned_sample": [
+    {
+      "file": "NPCI_BHIM-AADHAAR_Circular_OC-01_FY-2022-23.md",
+      "title": "BAP Circular 01 - Standardization in MCC (Merchant category codes) for BHIM Aadhaar Pay",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_BHIM-AADHAAR_Circular_OC-002_FY-2024-25.md",
+      "title": "BAP | OC 002 | FY 24-25 | Reference Guidelines for Members on Merchant Acquisition for BHIM Aadhaar Pay",
+      "pages": 5,
+      "scanned": true
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "product": "netc",
+  "listed_items": 56,
+  "with_pdf": 53,
+  "extracted": 53,
+  "skipped_no_pdf": 3,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 3
+  },
+  "categories": {
+    "circular": 53,
+    "no_pdf": 3
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_NETC_Circular_OC-001I_FY-2020-21.md",
+      "title": "NETC I OC001 I FY 2021-2022 I Adherence to NPCI guidelines by members or participants",
+      "pages": 5,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_975_FY-2020-21.md",
+      "title": "26th July 2020 - Approved list of Tag Suppliers/ Manufacturers for National Electronic Toll Collection (NETC) Project",
+      "pages": 5,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-008I_FY-2021-22.md",
+      "title": "NETC I OC008 I FY 2021-2022 I Tag issuance process for Issuer Bank Entity and addition of New exception codes in NETC Ecosystem",
+      "pages": 4,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-001I_FY-2021-22.md",
+      "title": "NETC I OC001 I FY 2021-2022 I Adherence to NPCI guidelines by members or participants",
+      "pages": 6,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-004I_FY-2022-23.md",
+      "title": "NETC I OC004 I FY2022-23 I Implementation of Net Debit Cap (NDC) for NETC Sub-members",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-003I_FY-2022-23.md",
+      "title": "NETC I OC003 I FY 2022-2023 I Circular for Masking of VRN Tag ID (Monthly-Pass-Portal)",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-002I_FY-2022-23.md",
+      "title": "NETC I OC002 I FY 2022-2023 I Revision of deadline for implementation of Tag issuance-process for Issuer BankEntity and addition of New exception codes in NETC Ecosystem",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-008I_FY-2022-23.md",
+      "title": "NETC I OC008 I FY 2021-2022 I Tag issuance process for issuing bank or entity and addition of new exception code",
+      "pages": 5,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_NETC_Circular_980_FY-2017-18.md",
+      "title": "18th July 2017 - Revised Timelines for Daily Settlement",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_981_FY-2017-18.md",
+      "title": "2nd May 2017 - Certification Fee for Commercial Banks, Co-operative Banks and RRBs FY 17-18",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-002I_FY-2018-19.md",
+      "title": "NETC I OC002 I FY 2018-2019 I Enablement of fastag Recharge through UPI",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-007I_FY-2018-19.md",
+      "title": "NETC I OC007 I FY 2018-2019 I Increasing TAT for Debit adjustment",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-006I_FY-2018-19.md",
+      "title": "NETC I OC006 I FY 2017-2018 I Implementaion of Two settlement Cycle Full Dsipute Cycle in EGCS",
+      "pages": 13,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-003I_FY-2019-20.md",
+      "title": "NETC I OC003 I FY 2019-2020 I Enablement of Fastag account Balance Check",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-006I_FY-2022-23.md",
+      "title": "NETC I OC006 I FY 2022-2023 I Mandating IIN Validation and Check Transaction status",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NETC_Circular_OC-001I_FY-2022-23.md",
+      "title": "NETC I OC001 I FY 2022-2023 I Circular on Launch of Self-Attestation for PCOM",
+      "pages": 15,
+      "scanned": true
+    }
+  ]
+}

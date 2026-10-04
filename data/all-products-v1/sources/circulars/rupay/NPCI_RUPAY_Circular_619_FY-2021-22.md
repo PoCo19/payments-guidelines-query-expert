@@ -1,0 +1,610 @@
+# List of Vendors of RuPay Approved Card Manufacturing and Personalization...
+
+Circular/reference number: NPCI/2021-22/RuPay/037
+Date: 02nd November 
+2021
+
+<!-- Page 1 -->
+
+List of Vendors Approved for RuPay Card Manufacturing and Personalisation
+ 
+Mfg
+Perso
+Mfg
+Perso Mfg
+Perso
+Mfg 
+Perso
+Mr. Atul Jain
+DZ Card (India) Pvt Ltd
+Plot 23-24, EHTP, Sector 34,  Gurgaon 
+122001 Haryana.  
+0124-4929888
+atul.jain@dzcard.com
+Mr. Atul Jain
+DZ Card (Thailand) Ltd.
+139 Bangplee Industrial Estate Moo 17, 
+Bangna-Trad Rd. Bangplee, Samutprakan, 
+10540 Thailand
+Mobile: +91 9811142455
+Mr. Leo Paulraj M - CISO
+Giesecke + Devrient MS India Private 
+Limited
+Plot # 118, Developed Industrial Estate, 
+Perungudi, Chennai - 600 096, India
+P +91 44 6634 3910
+M +91 9384002589
+leopaulraj.mahimaidoss@gi-de.com
+www.gi-de.com
+Mr. P. Srinivas Rao
+KL Hi-Tech Secure Print Limited
+Plot No. 22-23, Anrich Industrial Estate, 
+IDA Bollaram, Hyderabad - 502325,
+Telangana, India.
+Mobile: +91 98490 19602
+psrinivas@klhitech.com
+Mr. Rajesh Shet
+MCT Cards & Technology Pvt. Ltd.
+Plot No. 22 A, Shivalli Industrial Area, 
+Manipal, Karnataka - 576104
+Tel: +91-820-2701900
+Fax: +91-820-2574827
+Mobile: +91-9845518223
+rajesh.shet@manipalgroup.info
+Mr. Rajesh Shet
+MCT Cards & Technology Pvt Ltd
+Plot No. D - 197, TTC Industrial Area 
+MIDC, Turbhe, Navi Mumbai - 400705 
+Maharashtra
+Mobile: +91-9845518223
+ rajesh.shet@manipalgroup.info
+5
+No
+No
+No
+No
+No
+No
+No
+No
+Mr. Rajesh Shet
+Unit.4, Security Printing Division, Plot No 
+412/14 & 1A, Udayavani Road, Press 
+Corner, Manipal- 576104, Karnataka.
+Mobile: +91-9845518223
+ rajesh.shet@manipalgroup.info
+02nd November 
+2021
+01st November 
+2022
+Giesecke & Devrient (G&D)  India 
+Pvt.ltd
+2
+No
+Yes
+Yes 
+(Only 
+Chip 
+Embe
+dding)
+Yes
+Circular: NPCI/2021-22/RuPay/037
+ Members to take note, list of vendors approved for RuPay Card Manufacturing and Personalisation. The below information is as on 31st December 2021.
+No
+No
+No
+Yes
+Yes
+Yes
+Yes
+No
+Yes
+1
+Sr. 
+No.
+Name of the Company
+Service Provided
+Yes
+Yes
+4
+3
+KL -Hitech Secure Print Ltd.
+Yes
+Yes
+Yes   Yes
+No
+Yes
+No
+Yes
+No
+Audit Renewal/ 
+COC Expiry Date
+Magnetic 
+Stripe
+Contact
+Contactless
+No
+Yes
+No
+15th August 2021
+14th August 2022
+Yes
+No
+Yes
+Wearables
+No
+No
+COC Issuance 
+Date
+01st May 2021
+30th April 2022
+15th July 2021
+14th July 2022
+08th July 2022
+24thJuly 2021
+Date: 31-12-2021
+DZ Card (India) Pvt.ltd
+MCT Cards & Technology Pvt.ltd
+09th July 2021
+25th October 2022
+26th October 2021
+23rd July 2022
+Contact & Site Details
+Manipal Technologies Ltd
+(Only PIN Printing, PIN 
+Generation, PIN Mailer Handling)
+No
+No
+No
+Yes
+No
+Yes
+No
+Yes
+Yes
+Yes
+No
+No
+No
+Yes
+Yes
+Yes
+Public - ProductDevelopment
+
+<!-- Page 2 -->
+
+Mfg
+Perso
+Mfg
+Perso Mfg
+Perso
+Mfg 
+Perso
+Sr. 
+No.
+Name of the Company
+Service Provided
+Audit Renewal/ 
+COC Expiry Date
+Magnetic 
+Stripe
+Contact
+Contactless
+Wearables
+COC Issuance 
+Date
+Contact & Site Details
+Mr. Suresh. V
+Madras Security Printers Pvt. Ltd.
+72. T.H. Road, Chennai 600081
+Phone:-+91-44-25912699/ 25916086/ 
+25916942
+Mobile: +919840999399/ 9551067090
+marketing@madrassecurityprinters.com ,  
+mspindia@dataone.int
+Mr.Vijay.M.Gandhi
+Plot No. 1/2, Rajiv Gandhi InfoTech
+Park, Phase I, Hinjewadi,      
+    Pune - 411057
+Phone:+91-20-22934880/22932080
+Mobile: +91 98822014155
+vmgandhi@m-techindia.com 
+Mr. Tulesh Chandra
+SELP India Private Limited
+A-194, TTC Industrial Area,
+MIDC Khairane, 
+Navi Mumbai  -  400709,
+Maharashtra, India
+Mobile No. - +91- 9971435617
+Email Id-
+tulesh.chandra@selp.in
+Mr. P. Pavan Kumar
+C-400, TTC Industrial estate
+Turbhe MIDC, Mumbai – 400705
+Maharashtra
+Mobile:9167213011
+Email id:pavan.kumar@seshaasai.com
+Mr. Abhishek Surana
+Mobile:9819522110
+abhishek@seshaasai.com
+Mr. P. Pavan Kumar
+Seshaasai Business Forms Pvt. Ltd
+S/1C, 1ST Cross, 1ST Stage
+Peenya Industrial Area
+Bangalore , 
+Karnataka 560068
+Mobile:9167213011
+pavan.kumar@seshaasai.com
+Mr. P. Pavan Kumar
+Ramchandrapur Industrial Estate, 
+Mohan Ghosh Road,
+ PO Narendrapur, 24 Parganas(S)
+Kolkata- 700103, West Bengal, INDIA
+Mobile:9167213011
+pavan.kumar@seshaasai.com
+Yes
+Yes
+Yes
+Yes
+No
+No
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+No
+Yes
+Yes
+No
+No
+No
+Yes
+7
+M-Tech Innovations Ltd.
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+No
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+8
+SELP India Pvt.ltd
+Yes
+Yes
+Yes
+Yes
+Yes
+Seshaasai Business Forms Pvt. ltd 
+9
+No
+Yes
+No
+Yes
+No
+6
+Madras Security Printers Pvt. Ltd.
+Yes
+Yes
+Yes
+Yes
+23rd October 2021 24th October 2022
+21st September 
+2022
+04th November, 
+2021
+03rd November 
+2022
+28th  October 2021 27th October 2022
+3rd December 2020
+02nd February 
+2022
+22nd September 
+2021
+24th January 2022
+24th December 
+2020
+Public - ProductDevelopment
+
+<!-- Page 3 -->
+
+Mfg
+Perso
+Mfg
+Perso Mfg
+Perso
+Mfg 
+Perso
+Sr. 
+No.
+Name of the Company
+Service Provided
+Audit Renewal/ 
+COC Expiry Date
+Magnetic 
+Stripe
+Contact
+Contactless
+Wearables
+COC Issuance 
+Date
+Contact & Site Details
+Ms. Agnes
+Sharon Solutions Ltd.
+Plot No. A15-18, Pipdic Electronic Park 
+Thirubhuvanai, Pondicherry, India 
+Ph No.: 7845044044
+agnes@sharonsolutions.com
+Mr. William Dieu
+Plant Head:
+Plot  No. 60-61 NSEZ,
+Dadri Road, Phase-II,
+Noida, Uttar Pradesh
+          Tel No. +91-120-4710835                   
+Kuldeep Luthra 
+Sr. Manager – IT Security
+Tel No.: +91 011- 4710856
+Mobile : 9811337337
+ kuldeep.luthra@idemia.com
+Mr. William Dieu
+Plant Head:
+Plot  No. 153-154 NSEZ,
+Dadri Road, Phase-II,
+Noida, Uttar Pradesh
+          Tel No. +91-120-4710835                   
+Kuldeep Luthra 
+Sr. Manager – IT Security
+Tel No.: +91 011- 4710856
+Mobile : 9811337337
+ kuldeep.luthra@idemia.com
+Mr. Kuldeep Luthra
+EL-180, TTC Industrial Area, Mahape,
+Navi Mumbai- 400710, Maharashtra, India
+Mobile : 9811337337  
+kuldeep.luthra@idemia.com
+Mr.K. Srinivasan
+Watchdata Technologies (India) Pvt
+135/1 & 171/3, Maruti Industrial Estate,
+Rajapalia Mahadevapura Post, Bangalore, 
+Karnataka- 560048
+Mobile No.- +91-9900191968
+srinivasan@watchdata.com.sg
+Mr. Sridhar TS
+Versatile Card Technology (P) Limited 
+AC21, SIDCO Industrial Estate
+4th Main Road, Thirumudivakkam, Chennai-
+600 044
+Mobile: +91-9940519279
+ tss@vct.co.in
+Mr. Sunil Kumar
+Colorplast Systems Private Limited
+C-08,Sector 65, Noida ,UP
+India
+e-mail id: sunil.kumar@colorplast.in
+Mobile No. +91 9971892191
+No
+No
+No
+No
+No
+Yes
+No
+No
+No
+Yes
+Yes
+No
+No
+Yes
+No
+14
+Colorplast System Pvt. Ltd.
+No
+Yes
+11
+12
+Watchdata Technologies (India) 
+Pvt. Ltd.,
+Idemia Syscom India Pvt. Ltd.   (3 
+Sites)
+30th April 2022
+No
+Yes
+No
+No
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+No
+Yes
+No
+Yes
+10
+Yes
+Yes
+Yes
+Sharon Solutions Pvt.ltd
+Yes
+23rd March 2021
+22nd March 2022
+17th December 
+2020
+16th February 
+2022
+1st  May 2021
+30th April 2022
+19th  February 
+2021
+18th February 
+2022
+22nd October 2021 21st October 2022
+11th January 2021
+10th February 
+2022
+Yes
+No
+13
+Versatile Card Technology (VCT)
+1st  May 2021
+Yes
+No
+Yes
+No
+Yes
+Yes
+Yes
+No
+Yes
+No
+Yes
+Yes
+Yes
+No
+Yes
+Yes
+Yes
+Public - ProductDevelopment
+
+<!-- Page 4 -->
+
+Mfg
+Perso
+Mfg
+Perso Mfg
+Perso
+Mfg 
+Perso
+Sr. 
+No.
+Name of the Company
+Service Provided
+Audit Renewal/ 
+COC Expiry Date
+Magnetic 
+Stripe
+Contact
+Contactless
+Wearables
+COC Issuance 
+Date
+Contact & Site Details
+Mr. Gagandeep Singh
+14-b, Romell Tech Park, Nirlon Compound, 
+Near Hub Mall, Goregaon East, Mumbai – 
+400063, Maharashtra, India
+gdsingh@insolutionsglobal.com
+Mobile No. +91 8879447955
+Mr. Sasidharan K
+ITI Limited
+Kanjikkode West,
+Palakkad – 678623
+KERALA, INDIA
+Ph: 0491 2566004
+Mobile : +91 9447071961
+sasik_pkd@itiltd.co.in
+Mr. Raj Singh
+Plot # 118, HPSIDC Industrial Area,
+Baddi District, Solan, 
+Himachal Pradesh – 173205,India.
+Mobile: +91 9007762126
+raj@rstinfo.com
+Mr. Mokam Singh
+CMS Info System Pvt.Ltd
+Plot.no.D381, TTC Industrial Area Kukshet,
+ Juinagar, Navi Mumbai- 400705, 
+Maharashtra, India
+Mokam.Singh@cms.com 
+19
+Yes
+Yes
+Yes
+Yes
+Yes
+Yes
+No
+No
+Mr. Vishv Bhushan
+Sarvatra Technologies Pvt. Ltd.
+Siddh Icon, Survey No. 1/1, 3rd Floor,
+Baner Road, Baner, Pune - 411045, 
+Maharashtra, India.
+Mobile: 7263040133
+Email: vishv.bhushan@sarvatra.in  
+18th June 2021
+17th June 2022
+* Smart Card IT Solutions Pvt.Ltd has been decertified from the list.
+* CMS Info Systems Ltd, Vashi Site has been decertified from the list.
+* Watchdata Technologies Pvt. Ltd. Beijing Site has been de-certified from the list
+No
+No
+Yes
+No
+No
+No
+No
+No
+30th January 2021 29th January 2022
+09th May 2021
+08th May 2022
+15
+In-Solutions Global Limited
+16
+ITI Limited
+No
+Yes
+Yes 
+(Only 
+Chip 
+Embe
+dding)
+Yes
+No
+Yes
+No
+Yes
+No
+Yes
+No
+Yes
+* Giesecke & Devrient (G&D) India Pvt.Ltd-Mumbai Site has been decertified from the list.
+* Oberthur Technologies India Pvt.Ltd has been decertified from the list.
+Please Note:
+*  Mfg - Manufacturing and Perso - Personalisation
+* Oberthur Technologies- China is delisted from the Approved RuPay vendor list and no renewal audit will be conducted.
+Sarvatra Technologies Pvt Ltd
+15th January 2022
+17
+RST Semiconductors Pvt Ltd
+Yes
+Yes
+Yes
+Yes
+No
+Yes
+01st December 
+2020
+28th  October 2021 27th October 2022
+18
+CMS Info Systems Ltd.
+No
+Yes
+No
+Yes
+No
+Yes
+Public - ProductDevelopment

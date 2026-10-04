@@ -1,0 +1,40 @@
+{
+  "product": "e-kyc-setu-system",
+  "listed_items": 4,
+  "with_pdf": 3,
+  "extracted": 3,
+  "skipped_no_pdf": 1,
+  "skipped_zip": 0,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_no_pdf": 1
+  },
+  "categories": {
+    "no_pdf": 1,
+    "circular": 3
+  },
+  "unscanned_sample": [],
+  "scanned_sample": [
+    {
+      "file": "NPCI_E-KYC-SETU-SYSTEM_Circular_3757_FY-2024-25.md",
+      "title": "e-KYC | 001 | FY 24-25 | e-KYC Setu System",
+      "pages": 1,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_E-KYC-SETU-SYSTEM_Circular_3758_FY-2024-25.md",
+      "title": "e-KYC | 001 | FY 24-25 | e-KYC Setu System - UIDAI Circular",
+      "pages": 5,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_E-KYC-SETU-SYSTEM_Circular_3759_FY-2025-26.md",
+      "title": "e-KYC | 003 | FY 24-25 | e-KYC Setu System",
+      "pages": 1,
+      "scanned": true
+    }
+  ]
+}

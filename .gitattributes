@@ -1,0 +1,20 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.cjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.pptx binary
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+# Preserve byte-for-byte hashes of source packs and frozen evaluation records.
+/data/** -text
+/evaluation/*.json -text
+/evaluation/*.sha256 -text
+/output/midsem/evidence/** -text

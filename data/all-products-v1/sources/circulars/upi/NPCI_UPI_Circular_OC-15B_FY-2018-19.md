@@ -1,0 +1,55 @@
+# Compliance to Circular 15B and 32
+
+Circular/reference number: OC-15B
+Date: 06 July 2018
+
+<!-- Page 1 -->
+
+ 
+1001A, B wing, 10th Floor, The Capital, Bandra-Kurla Complex, Bandra (East), Mumbai - 400 051 
+CIN: U74990MH2008NPL189067 
+ 
+ 
+Circular No: NPCI/2018-19/IS/001 
+ 
+ 
+ 
+ 
+ 
+Dated: 06 July 2018 
+ 
+Compliance to Circular 15B and 32 
+To, 
+All Member Banks - Unified Payments Interface (UPI) 
+ 
+Circular 15& 15B NPCI /UPI/OC No. 15/2017-18 (UPI Merchant SDK specific requirement & compliance)  
+dated 18th January 2017 & NPCI /UPI/OC No. 15/2017-18 (Single PSP model Merchant Integration & PSP 
+SDK Addendum circular) & Circular 32 NPCI /UPI/OC No. 32/2017-18 (Unified Payment Interface: 
+Multiple bank model (API approach)) dated 15th September 2017 was sent to all the member banks 
+associated for UPI services stated that all the “banks must ensure that they conduct system and app 
+audit to ensure data integrity, encryption and the app security. This audit shall be done on annual basis.” 
+Given the premises that both the circulars 15B and circular 32 were issued on 15th September 2017, and 
+is already approaching a year completion. 
+ 
+We request all member banks to perform the audit through CERT-In empanelled audit firm & submit 
+compliance to NPCI before 30th September 2018. 
+ 
+The scope of such audit should include, but not limited to 
+1) Security Audit of Code base of PSP Bank Code, Merchant App Code, large merchant / tech 
+provider (referred as “Third party app provider) code 
+2) Systems Audit of associated IT Infrastructure connecting to the UPI system 
+3) Configuration Audit of IT Systems 
+4) Static & Dynamic Analysis of Code 
+5) Vulnerability Assessment & Penetration testing of the IT Systems 
+a. Code Obfuscation 
+b. Security Review of Application Architecture 
+c. Business logic flaws 
+ 
+For clarifications if any, you many reach out to Sarita.patel@npci.org.in or ciso@npci.org.in 
+ 
+Thanking you, 
+Yours faithfully, 
+ 
+ 
+Mathan Babu Kasilingam 
+CISO

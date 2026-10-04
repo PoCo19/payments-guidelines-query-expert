@@ -1,0 +1,121 @@
+{
+  "product": "nach",
+  "listed_items": 420,
+  "with_pdf": 382,
+  "extracted": 382,
+  "skipped_no_pdf": 1,
+  "skipped_zip": 37,
+  "missing_markdown": [],
+  "page_mismatch": [],
+  "download_failed": [],
+  "extract_failed": [],
+  "skipped": {
+    "skipped_zip": 37,
+    "skipped_no_pdf": 1
+  },
+  "categories": {
+    "circular": 382,
+    "zip": 37,
+    "no_pdf": 1
+  },
+  "unscanned_sample": [
+    {
+      "file": "NPCI_NACH_Circular_OC-04_FY-2019-20.md",
+      "title": "Circular No.04 - Introduction of additional sessions in NACH",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-24_FY-2020-21.md",
+      "title": "Circular No 24 - Facility for cancellation of mandates extension of time",
+      "pages": 3,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-010E_FY-2020-21.md",
+      "title": "Circular no. 010 - E-Mandate scope & limit enhancement",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-08_FY-2020-21.md",
+      "title": "Circular no. 08 - Payment pre-validation services - Guidelines",
+      "pages": 7,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-07_FY-2020-21.md",
+      "title": "Circular no. 07 - Migration of PDC EMI Cheques to NACH (Debit)",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-06_FY-2020-21.md",
+      "title": "Circular no. 06 - Annual maintenance charges for mandates",
+      "pages": 2,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-04_FY-2020-21.md",
+      "title": "Circular no. 04 - Aggregator portability",
+      "pages": 1,
+      "scanned": false
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-02_FY-2020-21.md",
+      "title": "Circular no. 02 - Additional Reports",
+      "pages": 1,
+      "scanned": false
+    }
+  ],
+  "scanned_sample": [
+    {
+      "file": "NPCI_NACH_Circular_OC-040_FY-2018-19.md",
+      "title": "Circular No.040 Migration of NACH debit(156) format to ACH debit(306) Legacy format",
+      "pages": 18,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-36_FY-2018-19.md",
+      "title": "Circular No.36 Migration of NACH debit (156) format to ACH debit (306) Legacy format",
+      "pages": 18,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-33_FY-2018-19.md",
+      "title": "Circular No.33 Migration of NACH Debit(156) to ACH Debit(306) Legacy format - Phase V",
+      "pages": 18,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-31_FY-2018-19.md",
+      "title": "Circular No.31 Migration of NACH Debit(156) format to ACH Debit (306) Legacy Format Phase IV",
+      "pages": 17,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-26_FY-2018-19.md",
+      "title": "Circular No.26 Migration of NACH Debit to ACH Debit(306) Legacy format",
+      "pages": 7,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-23_FY-2018-19.md",
+      "title": "Circular No.23 - Legacy Migration",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-21_FY-2018-19.md",
+      "title": "Circular No.21 - Phase Wise Legacy migration-III",
+      "pages": 2,
+      "scanned": true
+    },
+    {
+      "file": "NPCI_NACH_Circular_OC-020_FY-2018-19.md",
+      "title": "Circular No.020 - Phase wise migration - II",
+      "pages": 9,
+      "scanned": true
+    }
+  ]
+}
