@@ -1,0 +1,5 @@
+﻿id,question,draft_reference,actual_response,abstained,reviewer,source_verified,answer_correct,answer_complete,citations_supported,notes
+RAG-001,"Under OC 186A, are PoS tap payments for merchants or person-to-person transfers?",P2M only.,"Under OC 186A, UPI Tap & Pay on Point of Sale (PoS) terminals is restricted to Person-to-Merchant transactions.",False,,,,,,
+RAG-006,What does the remitter bank check before each tap payment in OC 186A?,Account feature-enablement status.,The Remitter Bank shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.,False,,,,,,
+RAG-045,What does OC 999 require?,Abstain because required evidence is absent.,No matching evidence was retrieved; no model request was made.,True,,,,,,
+RAG-048,Explain quantum photosynthesis and chlorophyll.,Abstain because required evidence is absent.,The model could not answer from the retrieved evidence.,True,,,,,,

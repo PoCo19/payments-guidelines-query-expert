@@ -28,6 +28,7 @@ Answers now adapt between paragraphs, bullets and mixed layouts while retaining 
 - [Architecture](docs/ARCHITECTURE_V05.md): metadata, storage and evidence handling.
 - [Evaluation evidence](output/midsem/evidence/README.md): saved cases and measured results.
 - [Initial 50-question catalogue](evaluation/INITIAL_50_QUESTIONS.md): exact questions, draft answers, source anchors, saved observations and review guidance.
+- [Local RAGAS evaluation](evaluation/RAGAS_EVALUATION.md): capture generated answers, score them with Ollama and review failures.
 - `web/` and root Python modules: the current RAG application.
 - `data/all-products-v1/`: indexed text inputs, raw Markdown and inventory records. Generated vectors and databases are ignored.
 - `tests/` and `evaluation/`: regression tests and reproducible evaluations.

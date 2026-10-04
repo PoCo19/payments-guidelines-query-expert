@@ -1,0 +1,5 @@
+# Separate evaluation environment; do not install into the app environment.
+ragas==0.4.3
+openai==2.8.1
+# RAGAS 0.4.3 still imports the legacy VertexAI wrapper removed in 0.4.x.
+langchain-community==0.3.31

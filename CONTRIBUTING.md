@@ -31,6 +31,8 @@ Run `setup.cmd` before `run.cmd test`: one integration test requires the downloa
 
 ## Edit submission files
 
+For generated-answer evaluation, see [the RAGAS guide](evaluation/RAGAS_EVALUATION.md). Use `setup-eval.cmd` and `run-eval.cmd` for its separate environment. The default is a 12-case local pilot; human reference review remains pending. Do not present automated pilot scores as independent answer accuracy.
+
 Use PowerPoint/Word or compatible software to edit `.pptx` and `.docx`. Scripts in `tools/` preserve the authoring process. The deck builder requires OpenAI Artifact Tool and the Codex bundled runtime; PDF export uses Microsoft Office on Windows. These authoring tools are not prerequisites for running the RAG app or editing submission files manually. The presentation finalizer refuses to overwrite an existing final deck or validation receipt: preserve the previous revision before rebuilding.
 
 Do not commit environments, tokens, model weights, databases, uploaded workspace documents, logs or old exports. Preserve source attribution and extraction limitations when changing the corpus.

@@ -18,3 +18,7 @@
 /evaluation/*.json -text
 /evaluation/*.sha256 -text
 /output/midsem/evidence/** -text
+/evaluation/ragas_runs/** -text whitespace=cr-at-eol
+# Keep exact scoring-code bytes so saved hashes/resume checks survive cloning.
+/evaluation/ragas_runner.py -text whitespace=cr-at-eol
+/evaluation/ollama_judge.py -text whitespace=cr-at-eol

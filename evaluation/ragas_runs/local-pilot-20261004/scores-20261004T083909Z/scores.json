@@ -1,0 +1,212 @@
+{
+  "capture_sha256": "927d91119fa58840813b3623769a22841c39ca51acf107d52fdea76991964fc7",
+  "judge_model": "qwen3.5:9b",
+  "judge_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "judge_endpoint": "http://127.0.0.1:11434",
+  "same_model_as_generator": true,
+  "ragas_version": "0.4.3",
+  "openai_version": "2.8.1",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "context_length": 16384,
+  "timeout_seconds": 300,
+  "metric_names": [
+    "faithfulness",
+    "factual_correctness",
+    "context_recall",
+    "context_precision",
+    "citation_support"
+  ],
+  "caveat": "Provisional automated evaluation. AI-assisted references await independent review. Scores are not overall answer accuracy. Same-model judging can share generation errors.",
+  "human_review": "pending",
+  "rows": [
+    {
+      "id": "RAG-001",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 6.0
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 4.922
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.406
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.99999999995,
+          "reason": null,
+          "seconds": 11.313
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Under OC 186A, UPI Tap & Pay on Point of Sale (PoS) terminals is restricted to Person-to-Merchant transactions.",
+                "sources": [
+                  "S2"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 4.75
+        }
+      }
+    },
+    {
+      "id": "RAG-006",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 4.218
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 4.391
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.344
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.9999999999,
+          "reason": null,
+          "seconds": 9.547
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The Remitter Bank shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 3.359
+        }
+      }
+    },
+    {
+      "id": "RAG-045",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "citation_support": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        }
+      }
+    },
+    {
+      "id": "RAG-048",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "citation_support": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "faithfulness": {
+      "mean": 1.0,
+      "scored": 2,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 4
+    },
+    "factual_correctness": {
+      "mean": 0.0,
+      "scored": 2,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 4
+    },
+    "context_recall": {
+      "mean": 1.0,
+      "scored": 2,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 4
+    },
+    "context_precision": {
+      "mean": 0.999999999925,
+      "scored": 2,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 4
+    },
+    "citation_support": {
+      "mean": 1.0,
+      "scored": 2,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 4
+    }
+  }
+}

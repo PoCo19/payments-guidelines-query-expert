@@ -1,0 +1,12 @@
+WARNING:pypdf._reader:invalid pdf header: b'not a'
+WARNING:pypdf._reader:EOF marker not found
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.01}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d2", "fingerprint": "fp", "elapsed_seconds": 0.0}
+----------------------------------------------------------------------
+Ran 184 tests in 11.283s
+
+OK

@@ -10,6 +10,7 @@ The selected capstone is Payments Guidelines Query Expert. NPCI is the initial c
 - [Corpus import](MULTI_PRODUCT_IMPORT.md)
 - [Answer formatting](ANSWER_FORMATTING.md)
 - [Initial 50-question evaluation catalogue](../evaluation/INITIAL_50_QUESTIONS.md)
+- [Local RAGAS evaluation and pilot](../evaluation/RAGAS_EVALUATION.md)
 - [Collaboration and setup](../CONTRIBUTING.md)
 
 The other versioned documents in this folder retain historical engineering context. Use the current midterm package for submission content. Older binary exports and backup releases are kept locally outside Git.

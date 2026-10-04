@@ -1,5 +1,6 @@
 # Personal settings, credentials, environments and caches
 .venv/
+.venv-eval/
 __pycache__/
 *.py[cod]
 .env

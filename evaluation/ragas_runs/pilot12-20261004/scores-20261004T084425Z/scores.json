@@ -1,0 +1,899 @@
+{
+  "capture_sha256": "c69808fce52d44ed99c32a7ec373c62fdb8574d068ade73a00b2199484751e59",
+  "judge_model": "qwen3.5:9b",
+  "judge_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "judge_endpoint": "http://127.0.0.1:11434",
+  "same_model_as_generator": true,
+  "ragas_version": "0.4.3",
+  "openai_version": "2.8.1",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "context_length": 16384,
+  "timeout_seconds": 300,
+  "metric_names": [
+    "faithfulness",
+    "factual_correctness",
+    "context_recall",
+    "context_precision",
+    "citation_support"
+  ],
+  "caveat": "Provisional automated evaluation. AI-assisted references await independent review. Scores are not overall answer accuracy. Same-model judging can share generation errors.",
+  "human_review": "pending",
+  "runner_sha256": "158f415e66fd4e7daea3c12aeeac94a0ec634c7d2b8ea30fc668a8c3a190675d",
+  "adapter_sha256": "6210c4f516972cf269a92ee994a35c6f4156c0a2b97ece8671fbea267280e8a9",
+  "rows": [
+    {
+      "id": "RAG-001",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 5.25
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 4.844
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.422
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.99999999995,
+          "reason": null,
+          "seconds": 11.375
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Under OC 186A, UPI Tap & Pay on Point of Sale (PoS) terminals is restricted to Person-to-Merchant transactions.",
+                "sources": [
+                  "S2"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 4.625
+        }
+      }
+    },
+    {
+      "id": "RAG-006",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 4.25
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 4.656
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.328
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.9999999999,
+          "reason": null,
+          "seconds": 9.641
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The Remitter Bank shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 3.406
+        }
+      }
+    },
+    {
+      "id": "RAG-008",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 5.563
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 7.265
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.86
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.99999999995,
+          "reason": null,
+          "seconds": 12.062
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Payee PSPs may enable UPI Tap & Pay only on NFC-enabled PoS terminals.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "These NFC-enabled PoS terminals must be certified in accordance with the Payment Card Industry PIN Transaction Security / Contactless Payments on Commercial Off-The-Shelf (COTS) devices standards.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 9.75
+        }
+      }
+    },
+    {
+      "id": "RAG-017",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 3.657
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.5,
+          "reason": null,
+          "seconds": 5.39
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 3.078
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.9999999999,
+          "reason": null,
+          "seconds": 15.141
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "A secondary user can accept delegation from only one primary user.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 2.844
+        }
+      }
+    },
+    {
+      "id": "RAG-024",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 5.75
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.0,
+          "reason": null,
+          "seconds": 7.484
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.453
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.7555555555303703,
+          "reason": null,
+          "seconds": 9.281
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The Issuer Bank of the Primary User identifies the Secondary User by name, mobile number, and ID number of an Officially Valid Document.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 5.953
+        }
+      }
+    },
+    {
+      "id": "RAG-028",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 9.953
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.89,
+          "reason": null,
+          "seconds": 10.453
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 3.422
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.9999999999,
+          "reason": null,
+          "seconds": 8.891
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Local resolutions for mobile number-based transactions may be initiated by the PSP and UPI Application only if the response time from the Numeric UPI ID Mapper exceeds one second.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The responsibility for any dispute or liability arising from local resolution lies with the respective Payer PSP and UPI Application.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 10.625
+        }
+      }
+    },
+    {
+      "id": "RAG-030",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 0.6666666666666666,
+          "reason": null,
+          "seconds": 8.891
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.86,
+          "reason": null,
+          "seconds": 6.984
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 2.891
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.8528571428400857,
+          "reason": null,
+          "seconds": 10.343
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 0.6666666666666666,
+          "details": [
+            {
+              "value": 0.0,
+              "reason": null,
+              "claim": {
+                "text": "The PDN exception in OC 207 applies only to NETC FASTag and RuPay NCMC.",
+                "sources": [
+                  "S1",
+                  "S4"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "UPI Members are directed to remove PDN validation for UPI Autopay execution only for the mentioned MCCs.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The exception is not applicable to unrelated merchant categories as it is restricted to the intended purposes of NETC FASTag and RuPay NCMC.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 3,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 13.375
+        }
+      }
+    },
+    {
+      "id": "RAG-032",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 7.172
+        },
+        "factual_correctness": {
+          "status": "ok",
+          "value": 0.75,
+          "reason": null,
+          "seconds": 9.25
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 3.141
+        },
+        "context_precision": {
+          "status": "ok",
+          "value": 0.99999999995,
+          "reason": null,
+          "seconds": 4.031
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 0.625,
+          "details": [
+            {
+              "value": 0.0,
+              "reason": null,
+              "claim": {
+                "text": "The limit for a linked RuPay Credit Card on UPI transactions is set to the lowest of three specific values.",
+                "sources": [
+                  "S2"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 0.5,
+              "reason": null,
+              "claim": {
+                "text": "One of these values is the RuPay Credit Card limit established by the card issuer.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Another value is the limit imposed by the issuer for 'RuPay Credit Card on UPI' transactions based on their risk management framework.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 3,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The third value is the limit set by the customer in accordance with the RBI circular on Enhancing Security of Card Transactions dated January 15, 2020.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 4,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 18.188
+        }
+      }
+    },
+    {
+      "id": "RAG-033",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 26.906
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 0.95,
+          "details": [
+            {
+              "value": 0.75,
+              "reason": null,
+              "claim": {
+                "text": "OC 186A introduces UPI Tap & Pay on Point of Sale (PoS) terminals as an additional mode for initiating UPI transactions alongside QR.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The enhancement enables Users to make contactless NFC-based UPI payments by unlocking their mobile device and tapping it on the PoS terminal.",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 0.5,
+              "reason": null,
+              "claim": {
+                "text": "UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.",
+                "sources": [
+                  "S2"
+                ],
+                "draft_index": 3,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Payee PSPs must enable UPI Tap & Pay only on NFC-enabled PoS terminals certified in accordance with PCI PTS / CPOC standards.",
+                "sources": [
+                  "S3"
+                ],
+                "draft_index": 4,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "UPI Application Providers and PSP Banks must obtain explicit User consent after each device binding operation before allowing further transactions.",
+                "sources": [
+                  "S4"
+                ],
+                "draft_index": 5,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Members and UPI Application Providers must obtain explicit User consent for enabling the UPI Tap & Pay feature, with Users having the ability to opt out at any time.",
+                "sources": [
+                  "S6"
+                ],
+                "draft_index": 6,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Payee PSPs shall integrate the Point-of-Sale Common Library for UPI (PoS CL) at the PoS terminal and complete integration on all terminals under its acquiring network.",
+                "sources": [
+                  "S7"
+                ],
+                "draft_index": 7,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "UPI Application Providers must ensure device lock is enabled as a prerequisite for activating UPI Tap & Pay, and the device shall be unlocked at the time of initiating a transaction.",
+                "sources": [
+                  "S8"
+                ],
+                "draft_index": 8,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "The per transaction limit for UPI Tap & Pay is capped at INR 5000, up to which additional factor of authentication shall not be required.",
+                "sources": [
+                  "S9"
+                ],
+                "draft_index": 9,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "UPI Application Providers must ensure UPI Tap & Pay is made available through a dedicated call-to-action and presented as a standalone feature not embedded within other services.",
+                "sources": [
+                  "S11"
+                ],
+                "draft_index": 10,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Remitter Banks shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.",
+                "sources": [
+                  "S5"
+                ],
+                "draft_index": 11,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Members and UPI Application Providers shall be consulted to provide an option to Users to set their own transaction limits within the INR 5000 ceiling.",
+                "sources": [
+                  "S5"
+                ],
+                "draft_index": 12,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Settlement, reconciliation, dispute management, and Online Dispute Resolution for UPI Tap & Pay transactions must be carried out in accordance with extant UPI guidelines.",
+                "sources": [
+                  "S12"
+                ],
+                "draft_index": 13,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Members shall be guided by RBI guidelines on Harmonization of Turn Around Time (TAT) and customer compensation for failed transactions using authorized Payment Systems.",
+                "sources": [
+                  "S13"
+                ],
+                "draft_index": 14,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "Members and UPI Application Providers shall refer to the applicable UPI Tap & Pay Feature Document, Technical Specifications and other instructions issued by NPCI for detailed requirements.",
+                "sources": [
+                  "S14"
+                ],
+                "draft_index": 15,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 109.453
+        }
+      }
+    },
+    {
+      "id": "RAG-039",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 25.266
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "requires_complete_reference_answer"
+        },
+        "citation_support": {
+          "status": "ok",
+          "value": 1.0,
+          "details": [
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186 originally required UPI Tap & Pay to be provided only through mobile devices having NFC capability.",
+                "sources": [
+                  "S3"
+                ],
+                "draft_index": 1,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186A extends UPI Tap & Pay to Point of Sale (PoS) terminals enabling contactless payments by unlocking the mobile device and tapping it on the terminal.",
+                "sources": [
+                  "S2"
+                ],
+                "draft_index": 2,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186 required UPI Apps to take permission from the customer to enable NFC for Tap & Pay transactions.",
+                "sources": [
+                  "S5"
+                ],
+                "draft_index": 3,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186A requires explicit User consent after each device binding operation before allowing further transactions using UPI Tap & Pay.",
+                "sources": [
+                  "S8"
+                ],
+                "draft_index": 4,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186 recommended having the App passcode, biometrics or pattern based lock in case of UPI LITE for small transactions.",
+                "sources": [
+                  "S9"
+                ],
+                "draft_index": 5,
+                "support_status": "automated_supported"
+              }
+            },
+            {
+              "value": 1.0,
+              "reason": null,
+              "claim": {
+                "text": "OC 186A requires device lock to be enabled as a prerequisite for activating UPI Tap & Pay and the device must be unlocked at the time of initiating a transaction.",
+                "sources": [
+                  "S16"
+                ],
+                "draft_index": 6,
+                "support_status": "automated_supported"
+              }
+            }
+          ],
+          "seconds": 39.906
+        }
+      }
+    },
+    {
+      "id": "RAG-045",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "citation_support": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        }
+      }
+    },
+    {
+      "id": "RAG-048",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "factual_correctness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_precision": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "citation_support": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "faithfulness": {
+      "mean": 0.9666666666666667,
+      "scored": 10,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 12
+    },
+    "factual_correctness": {
+      "mean": 0.375,
+      "scored": 8,
+      "errors": 0,
+      "skipped": 4,
+      "pending": 0,
+      "total": 12
+    },
+    "context_recall": {
+      "mean": 1.0,
+      "scored": 8,
+      "errors": 0,
+      "skipped": 4,
+      "pending": 0,
+      "total": 12
+    },
+    "context_precision": {
+      "mean": 0.951051587240057,
+      "scored": 8,
+      "errors": 0,
+      "skipped": 4,
+      "pending": 0,
+      "total": 12
+    },
+    "citation_support": {
+      "mean": 0.9241666666666667,
+      "scored": 10,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 12
+    }
+  }
+}

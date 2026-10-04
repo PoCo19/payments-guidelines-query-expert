@@ -1,0 +1,39 @@
+﻿id,question,draft_reference,actual_response,abstained,reviewer,source_verified,answer_correct,answer_complete,citations_supported,notes
+RAG-001,"Under OC 186A, are PoS tap payments for merchants or person-to-person transfers?",P2M only.,"Under OC 186A, UPI Tap & Pay on Point of Sale (PoS) terminals is restricted to Person-to-Merchant transactions.",False,,,,,,
+RAG-006,What does the remitter bank check before each tap payment in OC 186A?,Account feature-enablement status.,The Remitter Bank shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.,False,,,,,,
+RAG-008,Which PoS terminals may the payee PSP enable for tap payments under OC 186A?,NFC-enabled terminals certified to the stated standards.,"Payee PSPs may enable UPI Tap & Pay only on NFC-enabled PoS terminals.
+These NFC-enabled PoS terminals must be certified in accordance with the Payment Card Industry PIN Transaction Security / Contactless Payments on Commercial Off-The-Shelf (COTS) devices standards.",False,,,,,,
+RAG-017,Can a secondary user receive delegation from several primary users under OC 201?,Only one primary user; primary can delegate to five secondary users.,A secondary user can accept delegation from only one primary user.,False,,,,,,
+RAG-024,Who identifies the secondary user by name mobile and official document under OC 201A?,The primary user issuer bank.,"The Issuer Bank of the Primary User identifies the Secondary User by name, mobile number, and ID number of an Officially Valid Document.",False,,,,,,
+RAG-028,When may local mobile-number resolution be used under OC 115F?,Only when Numeric UPI ID Mapper response exceeds one second; stated PSP/app liability remains.,"Local resolutions for mobile number-based transactions may be initiated by the PSP and UPI Application only if the response time from the Numeric UPI ID Mapper exceeds one second.
+The responsibility for any dispute or liability arising from local resolution lies with the respective Payer PSP and UPI Application.",False,,,,,,
+RAG-030,Does the PDN exception in OC 207 apply to unrelated merchant categories?,No; only the stated NETC FASTag and RuPay NCMC categories/intended purposes.,"The PDN exception in OC 207 applies only to NETC FASTag and RuPay NCMC.
+UPI Members are directed to remove PDN validation for UPI Autopay execution only for the mentioned MCCs.
+The exception is not applicable to unrelated merchant categories as it is restricted to the intended purposes of NETC FASTag and RuPay NCMC.",False,,,,,,
+RAG-032,How is the linked RuPay card limit selected under circular 022?,"Lowest of the issuer card limit, issuer UPI risk limit and customer-set limit.","The limit for a linked RuPay Credit Card on UPI transactions is set to the lowest of three specific values.
+One of these values is the RuPay Credit Card limit established by the card issuer.
+Another value is the limit imposed by the issuer for 'RuPay Credit Card on UPI' transactions based on their risk management framework.
+The third value is the limit set by the customer in accordance with the RBI circular on Enhancing Security of Card Transactions dated January 15, 2020.",False,,,,,,
+RAG-033,"Summarise OC 186A, covering the requirements across its sections.",Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.,"OC 186A introduces UPI Tap & Pay on Point of Sale (PoS) terminals as an additional mode for initiating UPI transactions alongside QR.
+The enhancement enables Users to make contactless NFC-based UPI payments by unlocking their mobile device and tapping it on the PoS terminal.
+UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.
+Payee PSPs must enable UPI Tap & Pay only on NFC-enabled PoS terminals certified in accordance with PCI PTS / CPOC standards.
+UPI Application Providers and PSP Banks must obtain explicit User consent after each device binding operation before allowing further transactions.
+Members and UPI Application Providers must obtain explicit User consent for enabling the UPI Tap & Pay feature, with Users having the ability to opt out at any time.
+Payee PSPs shall integrate the Point-of-Sale Common Library for UPI (PoS CL) at the PoS terminal and complete integration on all terminals under its acquiring network.
+UPI Application Providers must ensure device lock is enabled as a prerequisite for activating UPI Tap & Pay, and the device shall be unlocked at the time of initiating a transaction.
+The per transaction limit for UPI Tap & Pay is capped at INR 5000, up to which additional factor of authentication shall not be required.
+UPI Application Providers must ensure UPI Tap & Pay is made available through a dedicated call-to-action and presented as a standalone feature not embedded within other services.
+Remitter Banks shall validate the User's account for UPI Tap & Pay feature enablement status before processing each transaction.
+Members and UPI Application Providers shall be consulted to provide an option to Users to set their own transaction limits within the INR 5000 ceiling.
+Settlement, reconciliation, dispute management, and Online Dispute Resolution for UPI Tap & Pay transactions must be carried out in accordance with extant UPI guidelines.
+Members shall be guided by RBI guidelines on Harmonization of Turn Around Time (TAT) and customer compensation for failed transactions using authorized Payment Systems.
+Members and UPI Application Providers shall refer to the applicable UPI Tap & Pay Feature Document, Technical Specifications and other instructions issued by NPCI for detailed requirements.",False,,,,,,
+RAG-039,Compare OC 186 and OC 186A: Attribute original NFC capability and later device-lock requirements separately.,Attribute original NFC capability and later device-lock requirements separately.,"OC 186 originally required UPI Tap & Pay to be provided only through mobile devices having NFC capability.
+OC 186A extends UPI Tap & Pay to Point of Sale (PoS) terminals enabling contactless payments by unlocking the mobile device and tapping it on the terminal.
+OC 186 required UPI Apps to take permission from the customer to enable NFC for Tap & Pay transactions.
+OC 186A requires explicit User consent after each device binding operation before allowing further transactions using UPI Tap & Pay.
+OC 186 recommended having the App passcode, biometrics or pattern based lock in case of UPI LITE for small transactions.
+OC 186A requires device lock to be enabled as a prerequisite for activating UPI Tap & Pay and the device must be unlocked at the time of initiating a transaction.",False,,,,,,
+RAG-045,What does OC 999 require?,Abstain because required evidence is absent.,No matching evidence was retrieved; no model request was made.,True,,,,,,
+RAG-048,Explain quantum photosynthesis and chlorophyll.,Abstain because required evidence is absent.,The model could not answer from the retrieved evidence.,True,,,,,,
