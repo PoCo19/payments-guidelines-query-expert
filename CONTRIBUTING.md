@@ -27,7 +27,7 @@ The app uses `config.example.json` when `config.json` is absent. Copy the exampl
 
 ## Checks
 
-Run `run.cmd test`. The full suite includes the separate workflow experiment. Tests use included text datasets and temporary storage; model generation is mocked where appropriate. Saved baseline results are preliminary, not independently established answer-accuracy scores.
+Run `setup.cmd` before `run.cmd test`: one integration test requires the downloaded reranker weights. If Python dependencies are already installed, `run.cmd reranker` downloads and verifies those files separately. The full suite includes the separate workflow experiment. Tests use included text datasets and temporary storage; model generation is mocked where appropriate. Saved baseline results are preliminary, not independently established answer-accuracy scores.
 
 ## Edit submission files
 

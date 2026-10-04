@@ -10,6 +10,6 @@ The 124 MB `Demo_Payments_Query.mp4` remains on the original machine and is excl
 
 Older releases and exports were moved into the ignored `.local-archive/pre-github/` folder. Windows kept `output/launch-v2/` open, so it remains locally in place and is ignored. No original corpus, model or stored workspace data was deleted.
 
-Validation: 171 tests pass on a clean checkout using the existing Python environment, including a check that fresh clones use the portable default configuration and local overrides take precedence. This does not claim a new Python environment was installed from scratch.
+Validation: 171 tests pass on the original machine. All 171 tests also pass in a separate clean checkout using the existing Python environment after running `download_reranker.py`, the model-download step included in `setup.cmd`. The suite includes portable configuration fallback and local override checks. This does not claim a new Python environment was installed from scratch. Without the downloaded reranker files, the real-model integration test cannot run.
 
 Anyone can read a public repository. Colleagues can fork it and open pull requests; direct push access requires a collaborator invitation. Coordinate binary PowerPoint and Word edits to avoid conflicts.
