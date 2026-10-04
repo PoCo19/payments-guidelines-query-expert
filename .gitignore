@@ -7,8 +7,8 @@ __pycache__/
 !.env.example
 *.pem
 *.key
-config.json
-config.products.json
+/config.json
+/config.products.json
 .local-archive/
 backups/
 versions/
