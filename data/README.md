@@ -1,25 +1,15 @@
-# NPCI UPI research collection: 2023–2026
+# Included research data
 
-Expanded on 2026-09-23. Issue-date window: 2023-01-01 to 2026-09-22, inclusive.
+The active application uses `all-products-v1/`: 1,921 register records, 1,562 searchable documents and 4,826 source pages. The corpus is an imported snapshot of NPCI circulars, with 359 unavailable or excluded records. Availability and extraction limitations are retained.
 
-Issue-date coverage: **2023-01-01 through 2026-09-22**. Archive filters 2023, 2024, 2025 and 2026 account for **129 entries**: **107 converted PDFs**, **20 without a public PDF**, **one cancelled entry**, and **one failed public PDF link**. The main date window contains **106 converted circulars / 250 pages**; OC 160 (one page, dated 2022) is retained separately. The 2023 archive adds 31 converted PDFs / 59 pages.
+- [Structured register](all-products-v1/index.json)
+- [Page text](all-products-v1/all_circular_pages.jsonl)
+- [Source Markdown](all-products-v1/sources/circulars/)
+- [Product inventories](all-products-v1/sources/inventory/)
+- [Source hashes](all-products-v1/source_manifest.json)
 
-## Start here
+The small original UPI dataset directly in this directory is retained for regression tests and provenance comparisons. It is not the active application corpus.
 
-- [Combined Markdown](COMBINED_CIRCULARS_2023-01-01_to_2026-09-22.md): 106 in-window circulars, 250 pages.
-- [Circular index](CIRCULAR_INDEX.md): 129 entries, subjects, dates, sources and access status.
-- [2023 archive only](CIRCULARS_2023_ARCHIVE.md): all 31 newly converted documents, including the labelled OC 160 reference.
-- [2023 index](CIRCULAR_INDEX_2023.md): all 39 archive entries.
-- [Addendum map](ADDENDUM_MAP.md): references now link to newly included parents where available.
-- [Unavailable and cancelled entries](UNAVAILABLE_CIRCULARS.md).
-- [Quality notes](QUALITY_NOTES.md): version exceptions, OCR caveats and checked pages.
+Original PDFs remain at their recorded official URLs. Models, Chroma indexes and generated SQLite databases are excluded from Git; build vectors locally with `run.cmd embed`. Do not treat a missing document as evidence that no requirement exists, or a reference link as proof of supersession.
 
-## Import into research models
-
-Use the combined Markdown for one-file ingestion, or individual documents in circulars/. The older_reference/ folder contains OC 160. circular_pages.jsonl has 250 in-window page records; all_circular_pages.jsonl has all 251 pages; circular_pages_2023_archive.jsonl has the 59 newly added pages. Join document_id to id in index.json. Preserve source_url, source_page, issue_date and listed_update_date in downstream citations.
-
-The full ZIP includes 107 original PDFs and 251 page images. The compact text ZIP includes Markdown and JSON/JSONL with source-image links rewritten to the corresponding official PDF page URL.
-
-Treat originals and addenda as separate sources. A common family or a later letter does not prove supersession. This collection is a research transcription; verify critical extracted figures and tables against the originals.
-
-Source: [NPCI UPI Circulars](https://www.npci.org.in/circulars/upi)
+The circular content originates from NPCI; this independent capstone does not imply NPCI affiliation or ownership of the source documents. Preserve source attribution when reusing it.
