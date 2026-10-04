@@ -27,6 +27,7 @@ Answers now adapt between paragraphs, bullets and mixed layouts while retaining 
 - [Project flow](HOW_IT_WORKS.md): chunking, retrieval, generation and source checks.
 - [Architecture](docs/ARCHITECTURE_V05.md): metadata, storage and evidence handling.
 - [Evaluation evidence](output/midsem/evidence/README.md): saved cases and measured results.
+- [Initial 50-question catalogue](evaluation/INITIAL_50_QUESTIONS.md): exact questions, draft answers, source anchors, saved observations and review guidance.
 - `web/` and root Python modules: the current RAG application.
 - `data/all-products-v1/`: indexed text inputs, raw Markdown and inventory records. Generated vectors and databases are ignored.
 - `tests/` and `evaluation/`: regression tests and reproducible evaluations.

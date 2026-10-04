@@ -1,5 +1,6 @@
 # Evidence accompanying the midterm
 
+- [Initial 50-question catalogue](../../../evaluation/INITIAL_50_QUESTIONS.md): readable questions, draft answers, source anchors, per-case observations and independent-review guidance.
 - [Retrieval summary](20261003T172349Z/SUMMARY.md): the pinned four-way comparison used in the slides and report.
 - [Per-case retrieval results](20261003T172349Z/retrieval.json): denominators, negative cases, route splits and latency.
 - [Run manifest](20261003T172349Z/manifest.json): dataset, corpus and configuration fingerprints.
