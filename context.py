@@ -2,10 +2,10 @@
 import re
 
 
-def assemble(engine, query, method, series="", cutoff="", feature="", scope="strict", route="auto", rerank=None, fiscal_year="", document_ids=None):
+def assemble(engine, query, method, series="", cutoff="", feature="", scope="strict", route="auto", rerank=None, fiscal_year="", document_ids=None, entity=""):
     if engine.config.get("adaptive_retrieval", False):
         from adaptive_context import assemble as adaptive
-        return adaptive(engine,query,method,series,cutoff,feature,scope,route,rerank,fiscal_year,document_ids)
+        return adaptive(engine,query,method,series,cutoff,feature,scope,route,rerank,fiscal_year,document_ids,entity)
     if scope not in ("strict", "related"):
         raise ValueError("Unknown context scope")
     seeds = engine.search(query, method, series, cutoff, 4 if scope == "related" else 6, feature)

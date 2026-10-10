@@ -1,0 +1,115 @@
+{
+  "capture_sha256": "c2d6681c1fca93a3000fee069281c7ed9b0dec75b0fe8e62dec76b19b1ec4d3b",
+  "judge_model": "qwen3.5:9b",
+  "judge_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "judge_endpoint": "http://127.0.0.1:11434",
+  "same_model_as_generator": true,
+  "ragas_version": "0.4.3",
+  "openai_version": "2.8.1",
+  "temperature": 0,
+  "max_tokens": 2048,
+  "context_length": 16384,
+  "timeout_seconds": 60,
+  "metric_names": [
+    "faithfulness",
+    "context_recall"
+  ],
+  "caveat": "Provisional automated evaluation. AI-assisted references await independent review. Scores are not overall answer accuracy. Same-model judging can share generation errors.",
+  "human_review": "pending",
+  "runner_sha256": "3711c0f29ba7287ec2aaff0bb226b037db320183532a0616ee3f3b342b4e52a8",
+  "adapter_sha256": "6210c4f516972cf269a92ee994a35c6f4156c0a2b97ece8671fbea267280e8a9",
+  "rows": [
+    {
+      "id": "PAY-003",
+      "metrics": {
+        "faithfulness": {
+          "status": "error",
+          "error": "TimeoutError: ",
+          "seconds": 60.016
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 0.5,
+          "reason": null,
+          "seconds": 34.734
+        }
+      }
+    },
+    {
+      "id": "PAY-009",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "no_substantive_answer_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "no_context_use_retrieval_checks"
+        }
+      }
+    },
+    {
+      "id": "PAY-013",
+      "metrics": {
+        "faithfulness": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 12.688
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 10.797
+        }
+      }
+    },
+    {
+      "id": "PAY-015",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "no_substantive_answer_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "ok",
+          "value": 1.0,
+          "reason": null,
+          "seconds": 7.64
+        }
+      }
+    },
+    {
+      "id": "PAY-018",
+      "metrics": {
+        "faithfulness": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        },
+        "context_recall": {
+          "status": "skipped",
+          "reason": "negative_case_use_abstention_checks"
+        }
+      }
+    }
+  ],
+  "summary": {
+    "faithfulness": {
+      "mean": 1.0,
+      "scored": 1,
+      "errors": 1,
+      "skipped": 3,
+      "pending": 0,
+      "total": 5
+    },
+    "context_recall": {
+      "mean": 0.8333333333333334,
+      "scored": 3,
+      "errors": 0,
+      "skipped": 2,
+      "pending": 0,
+      "total": 5
+    }
+  }
+}

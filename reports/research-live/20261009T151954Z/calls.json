@@ -1,0 +1,42 @@
+[
+  {
+    "endpoint": "/api/embed",
+    "stage": "embedding",
+    "seconds": 2.447,
+    "output_tokens": null,
+    "prompt_tokens": 43,
+    "done_reason": null
+  },
+  {
+    "endpoint": "/api/generate",
+    "stage": "generation",
+    "seconds": 12.906,
+    "output_tokens": 164,
+    "prompt_tokens": 6189,
+    "done_reason": "stop"
+  },
+  {
+    "endpoint": "/api/generate",
+    "stage": "claim_support",
+    "seconds": 2.327,
+    "output_tokens": 112,
+    "prompt_tokens": 501,
+    "done_reason": "stop"
+  },
+  {
+    "endpoint": "/api/generate",
+    "stage": "claim_support",
+    "seconds": 3.0,
+    "output_tokens": 191,
+    "prompt_tokens": 443,
+    "done_reason": "stop"
+  },
+  {
+    "endpoint": "/api/generate",
+    "stage": "coverage",
+    "seconds": 4.139,
+    "output_tokens": 212,
+    "prompt_tokens": 3676,
+    "done_reason": "stop"
+  }
+]

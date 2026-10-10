@@ -24,14 +24,15 @@ function clearError() {$("#global-error").hidden = true;}
 function setView(view) {
   document.querySelectorAll(".view").forEach(el => el.hidden = el.id !== view);
   document.querySelectorAll(".nav").forEach(el => {el.classList.toggle("active", el.dataset.view === view); el.setAttribute("aria-current", el.dataset.view === view ? "page" : "false");});
-  $("#view-label").textContent = {explore:"Ask a question",library:"Guideline library",experiments:"Experiments",about:"About this project",review:"Source review"}[view];
+  $("#view-label").textContent = {explore:"Ask a question",library:"Guideline library",experiments:"Experiments",about:"About this project",review:"Source review",intake:"Add documents"}[view];
   if(view === "library") loadLibrary();
   if(view === "review") loadReview();
+  if(view === "intake") Intake.refresh();
 }
 document.querySelectorAll(".nav").forEach(button => button.addEventListener("click", () => {clearError();setView(button.dataset.view);}));
-const reasonLabel = value => ({document_coverage:"Document section coverage",direct_match:"Direct match",recorded_reference:"Recorded circular reference",same_feature:"Same feature (reviewed or heuristic)",adjacent_context:"Surrounding passage"}[value] || value || "Direct match");
+const reasonLabel = value => ({document_coverage:"Document section coverage",direct_match:"Direct match",recorded_reference:"Recorded circular reference",same_feature:"Same feature (reviewed or heuristic)",adjacent_context:"Surrounding passage",qualification_context:"Definition, scope or surrounding qualification"}[value] || value || "Direct match");
 function sourceCard(s) {
-  return '<article class="source-card" id="citation-'+esc(s.citation)+'"><div class="source-top"><span class="tag">'+esc(s.citation)+' · '+esc(s.series)+' · '+esc(refLabel(s))+'</span><span>'+esc(s.issue_date || "Date unknown")+'</span></div><h3>'+esc(s.title)+'</h3><p class="retrieval-reason">'+esc(reasonLabel(s.retrieval_reason))+(s.via_document_id ? ' · via '+esc(s.via_document_id) : '')+'</p><p class="micro">'+esc(s.section_heading || 'Source passage')+(s.clause_label ? ' · clause marker '+esc(s.clause_label) : '')+'</p><blockquote>'+esc(s.text)+'</blockquote><div class="source-actions"><button data-document="'+esc(s.document_id)+'" data-page="'+s.page+'">Read page '+s.page+' ↗</button><a target="_blank" rel="noopener" href="'+esc(sourceURL(s.source_url))+'#page='+s.page+'">Official PDF ↗</a><button data-document="'+esc(s.document_id)+'">Related circulars ↗</button></div><p class="quality">'+(s.needs_priority_review ? "Priority review · " : "")+esc(s.method || "Extraction")+" · "+esc((s.review_status || "Not verified word for word").replaceAll("_"," "))+'</p></article>';
+  return '<article class="source-card" id="citation-'+esc(s.citation)+'"><div class="source-top"><span class="tag">'+esc(s.citation)+' · '+(s.issuer ? esc(s.issuer)+' · ' : '')+esc(s.series)+' · '+esc(refLabel(s))+'</span><span>'+esc(s.issue_date || "Date unknown")+'</span></div><h3>'+esc(s.title)+'</h3><p class="retrieval-reason">'+esc(reasonLabel(s.retrieval_reason))+(s.via_document_id ? ' · via '+esc(s.via_document_id) : '')+'</p><p class="micro">'+esc(s.section_heading || 'Source passage')+(s.clause_label ? ' · clause marker '+esc(s.clause_label) : '')+'</p><blockquote>'+esc(s.text)+'</blockquote><div class="source-actions"><button data-document="'+esc(s.document_id)+'" data-page="'+s.page+'">Read page '+s.page+' ↗</button><a target="_blank" rel="noopener" href="'+esc(sourceURL(s.source_url))+'#page='+s.page+'">Official source ↗</a><button data-document="'+esc(s.document_id)+'">Related circulars ↗</button></div><p class="quality">'+(s.needs_priority_review ? "Priority review · " : "")+esc(s.method || "Extraction")+" · "+esc((s.review_status || "Not verified word for word").replaceAll("_"," "))+'</p></article>';
 }
 $("#search-form").addEventListener("submit", async event => {
   event.preventDefault(); clearError();
@@ -39,18 +40,20 @@ $("#search-form").addEventListener("submit", async event => {
   const started = Date.now();
   const updateProgress = () => {button.textContent = ($("#mode").value === "generate" ? "Preparing local AI draft" : "Finding evidence") + " · " + Math.round((Date.now()-started)/1000) + "s";};
   updateProgress();
-  const progressTimer = setInterval(updateProgress, 1000);
+  const progressTimer = null;
   const query = $("#question").value.trim();
-  const request = {query,answer_style:$("#answer-style").value,fiscal_year:$("#fiscal-year").value,document_ids:selectedDocuments.map(d=>d.id),method:$("#method").value,series:$("#series").value,cutoff:$("#cutoff").value,mode:$("#mode").value,scope:$("#scope").value,feature:$("#feature").value,route:$("#route").value,rerank:$("#rerank").value === "true"};
+  const request = {query,entity:$("#entity").value.trim(),answer_style:$("#answer-style").value,fiscal_year:$("#fiscal-year").value,document_ids:selectedDocuments.map(d=>d.id),method:$("#method").value,series:$("#series").value,cutoff:$("#cutoff").value,mode:$("#mode").value,scope:$("#scope").value,feature:$("#feature").value,route:$("#route").value,rerank:$("#rerank").value === "true"};
   const methodLabel = $("#method").selectedOptions[0].textContent;
   $("#results").innerHTML = ""; lastResult = null;
   $("#empty-state").hidden = true;
   try {
-    const result = await api("/api/answer", request);
+    const result = await LocalJob.run("/api/answers", request, (stage,seconds) => {button.textContent=stage+" · "+Math.round(seconds)+"s";});
     lastResult = {...request,...result};
     const formattedAnswer = AnswerFormat.renderHTML(result);
     $("#results").innerHTML = '<div class="results-head"><h2>'+(result.mode === "generate" ? "Answer and sources" : "Source passages")+'</h2><button class="subtle-button" id="export">Export notes ↓</button></div><p class="micro">'+result.sources.length+' excerpts · '+esc(methodLabel)+' · '+result.elapsed_ms+' ms</p><div class="answer-card"><p>'+esc(result.answer)+'</p>'+formattedAnswer+'</div>'+sourceNotices(result.warnings)+'<details class="trace-box"><summary>How evidence was selected</summary><p>'+esc(result.retrieval_trace.scope)+' · '+result.retrieval_trace.seed_chunk_ids.length+' direct matches · '+result.retrieval_trace.included_chunk_ids.length+' included passages · '+result.retrieval_trace.evidence_characters+'/'+result.retrieval_trace.character_budget+' budgeted characters</p><p>Reference expansion is limited to one hop. Heading and feature labels are heuristic.</p></details><div class="source-grid">'+result.sources.map(sourceCard).join("")+"</div>";
+    if(result.timing) $("#results .source-grid").insertAdjacentHTML("beforebegin",'<details class="trace-box"><summary>Response timing</summary><p>Total: '+result.timing.total_seconds+'s · model work budget: '+result.timing.budget_seconds+'s</p>'+result.timing.stages.map(t=>'<p>'+esc(t.stage)+': '+t.seconds+'s</p>').join('')+result.timing.model_calls.map(c=>'<p>'+esc(c.stage)+' · '+esc(c.status)+' · '+c.seconds+'s · input '+(c.prompt_tokens ?? '—')+' / output '+(c.output_tokens ?? '—')+' tokens</p>').join('')+'</details>');
     const trace=result.retrieval_trace;
+    $("#results .source-grid").insertAdjacentHTML("beforebegin",ResearchView.render(trace,result.coverage_check));
     if(trace.ambiguities?.length) $('#results .source-grid').insertAdjacentHTML('beforebegin','<div class="notice"><b>Choose the intended circular</b>'+trace.ambiguities.map(d=>'<p>'+esc(d.series)+' · '+esc(d.fiscal_year || 'Year unknown')+' · '+esc(d.title)+' <button data-document="'+esc(d.id)+'">Inspect and select</button></p>').join('')+'</div>');
     const coverage=Object.entries(trace.document_coverage || {}).map(([id,c])=>esc(id)+': '+c.included_chunks+'/'+c.total_chunks+' chunks '+(c.complete?'(all indexed text included; page count checked)':'(partial or unverified source coverage)')+(c.empty_pages?.length ? ' · Missing source pages: '+c.empty_pages.join(', ') : '')).join('<br>');
     $('#results .source-grid').insertAdjacentHTML('beforebegin','<details class="trace-box"><summary>Routing, coverage & claim checks</summary><p>Route: '+esc(trace.route || 'legacy')+' · Reranked candidates: '+(trace.reranker?.candidate_count || 0)+' · '+(trace.reranker?.elapsed_ms || 0)+' ms</p><p>'+coverage+'</p><p>Claim checker: '+result.claim_checks.length+' claims checked. Automated support is not expert verification.</p>'+result.claim_checks.map(c=>'<p>Draft claim '+(c.claim_index+1)+' · '+esc(c.status)+'<br>'+c.reasons.map(esc).join('; ')+'</p>'+c.quotes.map(q=>'<blockquote>'+esc(q.citation)+': '+esc(q.quote)+'</blockquote>').join('')).join('')+'</details>');
@@ -70,8 +73,10 @@ function exportNotes() {
   output += "\nQuestion route: "+(lastResult.retrieval_trace.route || "legacy")+"\nClaim checks: "+lastResult.claim_checks.length+" (automated, not expert verification)\n";
   for(const c of lastResult.flagged_claims) output += "\nWITHHELD FOR REVIEW: "+c.text+" — "+c.review_reasons.join("; ")+"\n";
   output += "\nCoverage: "+JSON.stringify(lastResult.retrieval_trace.document_coverage || {})+"\n\n## Automated support checks\n\n"+lastResult.claim_checks.map(c=>"Draft claim "+(c.claim_index+1)+": "+c.status+"\n"+c.reasons.join("; ")+"\n"+c.quotes.map(q=>q.citation+": "+q.quote).join("\n")).join("\n\n");
+  if(lastResult.timing) output += "\n## Response timing\n\n"+JSON.stringify(lastResult.timing,null,2)+"\n";
+  output += ResearchView.markdown(lastResult.retrieval_trace,lastResult.coverage_check);
   output += "\n## Limitations\n\n"+lastResult.warnings.map(x=>"- "+x).join("\n")+"\n\n## Evidence\n\n";
-  for(const s of lastResult.sources) output += "### "+s.citation+": "+s.series+" "+refLabel(s)+", page "+s.page+"\n\n"+s.title+"\n\nIncluded because: "+reasonLabel(s.retrieval_reason)+(s.via_document_id ? "; via "+s.via_document_id : "")+"\nSection: "+(s.section_heading || "Source passage")+"; chunk ID: "+s.id+"\n\nIssued: "+s.issue_date+"; extraction: "+s.method+"; review: "+s.review_status+"\n\n"+s.text+"\n\nSource: "+s.source_url+"#page="+s.page+"\n\n";
+  for(const s of lastResult.sources) output += "### "+s.citation+": "+s.series+" "+refLabel(s)+", page "+s.page+"\n\n"+s.title+"\n\nIncluded because: "+reasonLabel(s.retrieval_reason)+(s.via_document_id ? "; via "+s.via_document_id : "")+"\nSection: "+(s.section_heading || "Source passage")+"; chunk ID: "+s.id+"\n\nIssued: "+s.issue_date+"; extraction: "+s.method+"; review: "+s.review_status+"\n\n"+s.text+"\n\nIssuer: "+(s.issuer || "NPCI")+"; type: "+(s.document_type || "Circular")+"\nSource: "+s.source_url+"#page="+s.page+"\n\n";
   const url = URL.createObjectURL(new Blob([output],{type:"text/markdown;charset=utf-8"}));
   const link = document.createElement("a"); link.href = url; link.download = "circular-research-notes.md"; link.click();
   setTimeout(()=>URL.revokeObjectURL(url), 1000);
@@ -106,11 +111,11 @@ async function readDocument(id, page) {
     const missing = data.relationships.links.filter(l=>!l.available);
     const references = data.relationships.links.map(l => '<div class="source-actions"><span>'+esc(l.from_id)+' references '+esc(l.reference)+'</span>'+l.target_ids.map(target => '<button data-document="'+esc(target)+'">Open '+esc(target)+' ↗</button>').join("")+(!l.target_ids.length ? '<span class="missing">Not in this register</span>' : "")+'</div>').join("");
     $("#reader-content").innerHTML = '<h2 class="reader-title">'+esc(d.series)+' · '+esc(refLabel(d))+' — '+esc(d.subject)+'</h2><div class="reader-meta">Issued '+esc(d.issue_date || "date unknown")+' · '+esc(availabilityName(d.availability))+'<br>Public version update: '+esc(d.listed_update_date || "Not separately recorded")+' · Effective date: '+esc(d.effective_date || 'Not reviewed / extracted')+'</div>'+
-      '<p class="micro">Products: '+esc((d.product_memberships || [d.series]).join(', '))+' · Fiscal year: '+esc(d.fiscal_year || 'Not recorded')+' · '+esc(d.metadata_quality || 'Existing metadata')+'</p>'+
+      '<p class="micro">'+(d.issuer ? 'Issuer: '+esc(d.issuer)+' · '+esc(d.document_type)+'<br>' : '')+'Products: '+esc((d.product_memberships || [d.series]).join(', '))+' · Fiscal year: '+esc(d.fiscal_year || 'Not recorded')+' · '+esc(d.metadata_quality || 'Existing metadata')+'</p>'+
       (d.availability==='converted' ? '<div class="source-actions"><button data-select-circular="'+esc(d.id)+'" data-selection-mode="summary">Summarise this circular</button><button data-select-circular="'+esc(d.id)+'" data-selection-mode="compare">Add to comparison</button></div>' : '')+
       (data.source_coverage.empty_pages.length ? '<div class="notice">Missing extracted text on source pages: '+data.source_coverage.empty_pages.join(', ')+'. Full-source coverage is incomplete.</div>' : '')+
-      (!data.source_coverage.page_count_verified ? '<p class="notice">Original PDF page count is unverified.</p>' : '')+
-      (d.source_pdf ? '<div class="source-actions"><a href="'+esc(sourceURL(d.source_pdf))+'" target="_blank" rel="noopener">Official PDF ↗</a>'+(d.local_pdf ? '<a href="/api/pdf?id='+encodeURIComponent(d.id)+'" target="_blank" rel="noopener">Saved original PDF ↗</a>' : '<span>Original PDF not saved locally</span>')+'</div>' : "")+
+      (!data.source_coverage.page_count_verified ? '<p class="notice">'+(data.source_coverage.page_basis==='logical_markdown' ? 'This Markdown file uses one logical page; citations do not refer to physical PDF pages.' : 'Original PDF page count is unverified.')+'</p>' : '')+
+      (d.source_pdf ? '<div class="source-actions"><a href="'+esc(sourceURL(d.source_pdf))+'" target="_blank" rel="noopener">Official source ↗</a>'+(d.local_pdf ? '<a href="/api/pdf?id='+encodeURIComponent(d.id)+'" target="_blank" rel="noopener">Saved original PDF ↗</a>' : '<span>Original PDF not saved locally</span>')+'</div>' : "")+
       '<h3>Related-document timeline</h3><p class="micro">'+esc(data.relationships.note)+'</p><div class="timeline">'+data.relationships.documents.map(x=>'<button class="'+(x.id===d.id?"current":"")+'" data-document="'+esc(x.id)+'">'+esc(x.series)+' · '+esc(refLabel(x))+'<small>'+esc(x.issue_date || "Date unknown")+'</small><small>'+esc(availabilityName(x.availability))+'</small></button>').join("")+'</div>'+
       (references ? '<details><summary>Recorded references</summary>'+references+'</details>' : "")+
       (missing.length ? '<p class="missing">Referenced text unavailable in this collection: '+missing.map(l=>esc(l.reference)).join(", ")+".</p>" : "")+
@@ -139,6 +144,8 @@ $("#evaluate").addEventListener("click", async () => {
 async function init() {
   try {
     stats = await api("/api/stats");
+    document.querySelectorAll('[data-corpus-label]').forEach(el => el.textContent=(stats.source_publishers || []).length?'Current sources: '+stats.source_publishers.join(' and ')+'.':'No sources indexed yet. Use Add documents to build your library.');
+    $("#research-entities").innerHTML=(stats.research_entities || []).map(value=>'<option value="'+esc(value)+'"></option>').join("");
     $("#nav-count").textContent = stats.documents;
     $("#collection-snapshot").textContent = stats.snapshot+". "+stats.window;
     $("#stats").innerHTML = '<div class="stat"><strong>'+stats.converted+'</strong><p><b>Source documents</b><br>Converted & indexed</p></div><div class="stat"><strong>'+stats.pages+'</strong><p><b>Source pages</b><br>Traceable evidence</p></div><div class="stat"><strong>'+(stats.documents-stats.converted)+'</strong><p><b>Collection gaps</b><br>Explicitly recorded</p></div>';

@@ -1,4 +1,19 @@
-# Current capstone status — 4 October 2026
+# Current project status — 10 October 2026
+
+## 10 October 2026 - colleague handoff
+
+Frozen NPCI + eight-RBI source archive, file hashes, portable configuration, model digest checks and evaluation records are packaged for the `handoff-2026-10-10` Git tag. See [the handoff guide](docs/COLLEAGUE_HANDOFF.md). Independent source/answer review remains pending.
+
+**10 October priorities implemented:** shared answer/model budgets, stage progress, source fallback, explicit partial-answer/reviewer status; a frozen 20-case RBI–NPCI development dataset with full generated-answer capture, RAGAS pilot and human-review worksheet; and an Add documents screen covering preview, preparation, embedding/index build, activation and rollback. The real NPCI–RBI corpus and model choices are preserved. See [implementation and validation](docs/IMPLEMENTATION_20261010.md) and [the import walkthrough](docs/ADDING_DOCUMENTS_QUICKSTART.md).
+
+The 20-case run found 18/34 source anchors, retrieved all anchors for 7/17 answerable questions, abstained on 3/3 negatives and also on 7/17 positives. Median request latency was 24.0545 seconds; maximum 65.187 seconds. These are development observations, not answer-accuracy scores. Five coverage reviews were unavailable. Cross-source reference filtering, reviewer reliability and independent review remain open priorities. The final Python regression run passed 251 tests with four optional skips; both JavaScript suites passed. No bigger model was installed and no Git push was performed.
+
+The active local release remains `payments-rbi-core-20261009`: eight core RBI directions imported from official HTML-derived Markdown alongside NPCI. It adds 420 chunks and reuses 14,060 existing vectors. The prior integration request took 718.943 seconds; the new processing budgets and timings are documented separately and are not a controlled speedup comparison. Local source releases are Git-ignored. See [the integration record](docs/RBI_CORE_INTEGRATION_20261009.md).
+
+
+Further implementation on 9 October: publisher-neutral topic research now avoids inferred product exclusion on broad questions, diversifies relevant evidence across documents, adds qualification passages, exposes an evidence map and checks for possible omissions/conflicts. Controlled retrieval comparison retained 55/55 provisional anchors and 5/6 empty negatives. Mixed-publisher fixtures and one real RBI/NPCI retrieval example pass; independent mixed-authority answer evaluation remains pending. See [the flow and limits](docs/TOPIC_RESEARCH.md).
+
+## Mid-sem package status recorded 4 October 2026
 
 **Payments Guidelines Query Expert** is the selected project. Initial corpus: multi-product NPCI circulars. Preliminary evaluation: UPI. The separate feature workflow is preserved and excluded from this submission.
 

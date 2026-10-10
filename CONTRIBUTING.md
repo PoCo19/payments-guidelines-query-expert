@@ -12,18 +12,7 @@ The owner can invite colleagues through GitHub Settings → Collaborators. Their
 
 ## Run locally
 
-Install Python 3.12 and Ollama. On Windows run `setup.cmd`, then:
-
-```text
-ollama pull qwen3.5:9b
-ollama pull qwen3-embedding:0.6b
-run.cmd embed
-run.cmd
-```
-
-Open http://127.0.0.1:8765. Building the full vector index is a one-time local operation and can take time. BM25 source search works without the vector index; hybrid search needs embeddings. Models and generated indexes are not versioned.
-
-The app uses `config.example.json` when `config.json` is absent. Copy the example to `config.json` for personal settings; Git ignores that file. Original PDFs remain accessible through official links. Optional local originals belong under the configured `source_pack` directory and are not bundled.
+Follow [the frozen colleague handoff](docs/COLLEAGUE_HANDOFF.md) for the exact version, source restoration, Python/model setup and evaluation commands. Use `config.handoff.json` explicitly for reproducible comparisons. Your personal `config.json` remains ignored.
 
 ## Checks
 

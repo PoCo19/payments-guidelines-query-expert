@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "rbi:ppi:2026-09-30",
+      "file": "ppi-master-directions.pdf",
+      "title": "Master Directions on Prepaid Payment Instruments (PPIs)",
+      "issuer": "RBI",
+      "document_type": "Master Directions",
+      "reference": "Master Directions on Prepaid Payment Instruments (PPIs)",
+      "products": ["PPI"],
+      "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+      "retrieved_on": "2026-10-09",
+      "updated_on": "2026-09-30"
+    }
+  ]
+}

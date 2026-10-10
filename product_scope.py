@@ -13,12 +13,12 @@ def fiscal_year(doc):
  if not date:return ''
  year=int(date[:4])-(int(date[5:7])<4);return f'{year}-{str(year+1)[-2:]}'
 
-def resolve(engine,query,numbers,series,cutoff,feature,year='',document_ids=None):
+def resolve(engine,query,numbers,series,cutoff,feature,year='',document_ids=None,infer_product=True):
  if year and not re.fullmatch(r'\d{4}-\d{2}',year):raise ValueError('Fiscal year must use YYYY-YY, for example 2018-19')
  if document_ids is not None and (not isinstance(document_ids,list) or len(document_ids)>4 or not all(isinstance(x,str) for x in document_ids) or len(set(document_ids))!=len(document_ids)):raise ValueError('Select up to four distinct circulars')
  notes=[];ambiguous=[];missing=[]
  inferred=[name for name,pattern in ALIASES.items() if re.search(pattern,query,re.I)]
- if not series and len(inferred)==1:
+ if infer_product and not series and len(inferred)==1:
   series=inferred[0];notes.append('Product inferred from the question: '+series+'. Use the Product selector to override.')
  if not year:
   match=re.search(r'\bFY\s*(\d{4}-\d{2})\b',query,re.I)
@@ -44,7 +44,7 @@ def resolve(engine,query,numbers,series,cutoff,feature,year='',document_ids=None
 def source_coverage(engine,docid):
  d=engine.by_id[docid];pages=[p for p in engine.pages_by_doc[docid]]
  declared=d.get('source_coverage',{});empty=[p['source_page'] for p in pages if not p['text'].strip()]
- return dict(total_pages=len(pages),empty_pages=empty,thin_pages=declared.get('thin_pages',[]),page_count_verified=declared.get('page_count_verified',bool(d.get('page_count'))),metadata_quality=d.get('metadata_quality','existing_source_metadata'))
+ return dict(total_pages=len(pages),empty_pages=empty,thin_pages=declared.get('thin_pages',[]),page_count_verified=declared.get('page_count_verified',bool(d.get('page_count'))),metadata_quality=d.get('metadata_quality','existing_source_metadata'),page_basis=declared.get('page_basis','source_pages'))
 
 def feature_applies(rule,doc):
     return not rule.get("products") or bool(set(rule["products"]).intersection(memberships(doc)))

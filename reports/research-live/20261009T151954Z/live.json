@@ -1,0 +1,1589 @@
+{
+  "request": {
+    "query": "Give an overview of UPI Circle consent requirements. Who gives consent? Use only two short sentences.",
+    "entity": "payer bank",
+    "method": "hybrid",
+    "mode": "generate",
+    "scope": "related"
+  },
+  "corpus_fingerprint": "f05b8dd8cbd45ce284526e3fd6728caecca03b0b53d857ecc6defa8c001ef77b",
+  "generation_model": "qwen3.5:9b",
+  "review_status": "developer_observation_not_independent_accuracy_score",
+  "response": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "The Secondary User must give explicit consent for the additional details (Document Type and Document ID number) before a Primary User Member accepts a Full Delegation request.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "Primary UPI Apps shall capture user consent with clear opt-out options for linking and authorizing IoT devices or software via 2 Factor Authentication.",
+            "sources": [
+              "S5",
+              "S9"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The claim is fully supported by the excerpt which explicitly states that consent must be taken from the Secondary User regarding specific details before accepting a Full Delegation request."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "4. Secondary Payer PSP shall take explicit consent from Secondary User on the additional details (Document Type and Document ID number) before accepting the Full Delegation request"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The claim is fully supported by the combination of requirements in S5 and S9. S5 mandates capturing user consent with 2 Factor Authentication for linking IoT devices/software, while S9 explicitly requires 'clear opt-out option' for obtaining user consent."
+        ],
+        "quotes": [
+          {
+            "citation": "S5",
+            "quote": "1. Primary UPI Apps shall clearly display the secondary device/software details and capture the user consent for linking and authorizing the device/software with 2 Factor Authentication."
+          },
+          {
+            "citation": "S9",
+            "quote": "2. UPIApp shall obtain explicit user consent with clear opt-out option (by default checked out, and user needs to click on opt-in) for seeding or porting UPI Number."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "topic",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "2025-OC-201A:p1:v3c5",
+        "2025-OC-115E:p1:v3c4",
+        "npci-source-bd2daaeb1486442f521b2872:p2:v3c7",
+        "2024-OC-201:p2:v3c1",
+        "2025-OC-201B:p2:v3c3",
+        "2024-OC-201:p1:v3c6"
+      ],
+      "included_chunk_ids": [
+        "2025-OC-201A:p1:v3c5",
+        "2025-OC-115E:p1:v3c4",
+        "npci-source-bd2daaeb1486442f521b2872:p2:v3c7",
+        "2024-OC-201:p2:v3c1",
+        "2025-OC-201B:p2:v3c3",
+        "2024-OC-201:p1:v3c6",
+        "2025-OC-201A:p1:v3c4",
+        "2025-OC-115E:p1:v3c5",
+        "2025-OC-115E:p1:v3c3",
+        "npci-source-bd2daaeb1486442f521b2872:p2:v3c8",
+        "npci-source-bd2daaeb1486442f521b2872:p2:v3c6",
+        "2024-OC-201:p2:v3c2",
+        "2026-OC-115F:p1:v3c3",
+        "2024-OC-201:p1:v3c7",
+        "2025-OC-201B:p2:v3c2",
+        "2025-OC-201B:p2:v3c4",
+        "2024-OC-201:p1:v3c5"
+      ],
+      "evidence_characters": 12068,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 64,
+        "elapsed_ms": 1689
+      },
+      "research_policy": "publisher_neutral_v1",
+      "followup_query": null,
+      "query_plan": {
+        "query": "Give an overview of UPI Circle consent requirements. Who gives consent? Use only two short sentences.",
+        "entity": "payer bank",
+        "entity_basis": "user_selected",
+        "requested_aspects": [
+          "requirements"
+        ],
+        "product_filter": null,
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "circle",
+          "consent",
+          "gives",
+          "only",
+          "sentences",
+          "short",
+          "two",
+          "upi",
+          "use"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "2025-OC-201A",
+          "title": "Introduction of UPI Circle – Delegated Payments for secondary users – Full Delegation Additional Requirements",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-07-08",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S2",
+          "document_id": "2025-OC-115E",
+          "title": "Addendum to circular on the Numeric UPI ID resolution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-03-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S3",
+          "document_id": "npci-source-bd2daaeb1486442f521b2872",
+          "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S4",
+          "document_id": "2024-OC-201",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-13",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S5",
+          "document_id": "2025-OC-201B",
+          "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-10-08",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S6",
+          "document_id": "2024-OC-201",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-13",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S7",
+          "document_id": "2025-OC-201A",
+          "title": "Introduction of UPI Circle – Delegated Payments for secondary users – Full Delegation Additional Requirements",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "definitions"
+          ],
+          "applicability": {},
+          "issue_date": "2025-07-08",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S8",
+          "document_id": "2025-OC-115E",
+          "title": "Addendum to circular on the Numeric UPI ID resolution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "exceptions"
+          ],
+          "applicability": {},
+          "issue_date": "2025-03-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S9",
+          "document_id": "2025-OC-115E",
+          "title": "Addendum to circular on the Numeric UPI ID resolution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-03-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S10",
+          "document_id": "npci-source-bd2daaeb1486442f521b2872",
+          "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S11",
+          "document_id": "npci-source-bd2daaeb1486442f521b2872",
+          "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S12",
+          "document_id": "2024-OC-201",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-13",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S13",
+          "document_id": "2026-OC-115F",
+          "title": "Addendum to OC NPCI/UPI/OC-115E/2024-25 on the Numeric UPI ID",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-30",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "recorded_reference"
+        },
+        {
+          "citation": "S14",
+          "document_id": "2024-OC-201",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2024-08-13",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "adjacent_context"
+        },
+        {
+          "citation": "S15",
+          "document_id": "2025-OC-201B",
+          "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-10-08",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "adjacent_context"
+        },
+        {
+          "citation": "S16",
+          "document_id": "2025-OC-201B",
+          "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-10-08",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "adjacent_context"
+        },
+        {
+          "citation": "S17",
+          "document_id": "2024-OC-201",
+          "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-13",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "adjacent_context"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "requirements",
+          "label": "Requirements",
+          "citations": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S11",
+            "S12",
+            "S13",
+            "S15",
+            "S16",
+            "S17"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+    },
+    "sources": [
+      {
+        "id": "2025-OC-201A:p1:v3c5",
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "text": "4. Secondary Payer PSP shall take explicit consent from Secondary User on the additional details (Document Type and Document ID number) before accepting the Full Delegation request from the Primary User Members are advised to refer to UPI Circle Procedural Guidelines for detailed information updated from time to time along with existing regulatory and legal framework. Members live on UPI Circle feature to make necessary changes by 31% August 2025. Yours Sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+        "title": "Introduction of UPI Circle – Delegated Payments for secondary users – Full Delegation Additional Requirements",
+        "circular_number": "201A",
+        "series": "UPI",
+        "issue_date": "2025-07-08",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_A_FY_2025_26_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_Full_Delegation_Additional_Requirements_ba7e414c1a.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 232,
+        "end_word": 337,
+        "section_id": "2025-OC-201A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-201A:p1:v3c4",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payer_psp",
+          "primary_user",
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03227,
+        "citation": "S1",
+        "rerank_score": -0.0572,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-115E:p1:v3c4",
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "text": "a) UPI App shall ensure clear, non-intrusive communication without misleading/forceful messaging. Consent shail not be taken before or during a transaction in any condition.",
+        "title": "Addendum to circular on the Numeric UPI ID resolution",
+        "circular_number": "115E",
+        "series": "UPI",
+        "issue_date": "2025-03-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_115_E_FY_2024_25_Addendum_to_circular_on_the_Numeric_UPI_ID_resolution_5bf6b7d3a5.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 115E",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 176,
+        "end_word": 200,
+        "section_id": "2025-OC-115E:s0",
+        "section_heading": "Document opening",
+        "clause_label": "a)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-115E:p1:v3c3",
+        "next_chunk_id": "2025-OC-115E:p1:v3c5",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "115",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.01613,
+        "citation": "S2",
+        "rerank_score": -2.3609,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c7",
+        "document_id": "npci-source-bd2daaeb1486442f521b2872",
+        "page": 2,
+        "text": "6) Generation of UP Number is voluntary and explicit user consent is required to seed in UPI ID mapper. The consent also can be taken as part of the Terms and Conditions of the PsP/TPAP.",
+        "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+        "circular_number": "115",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_115_Rollout_of_Numeric_UPI_ID_Mapper_to_enable_UPI_Number_c7ad12604f.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 115",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 163,
+        "end_word": 198,
+        "section_id": "npci-source-bd2daaeb1486442f521b2872:s0",
+        "section_heading": "Document opening",
+        "clause_label": "6)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c6",
+        "next_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c8",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.0137,
+        "citation": "S3",
+        "rerank_score": -2.58019,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2024-OC-201:p2:v3c1",
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "text": "5. Members shall ensure that the primary authorize the secondary user on either full or partial delegation",
+        "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+        "circular_number": "201",
+        "series": "UPI",
+        "issue_date": "2024-08-13",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 94,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-003",
+          "bootstrap-004",
+          "bootstrap-005"
+        ],
+        "start_word": 0,
+        "end_word": 17,
+        "section_id": "2024-OC-201:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-201:p1:v3c7",
+        "next_chunk_id": "2024-OC-201:p2:v3c2",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02132,
+        "citation": "S4",
+        "rerank_score": -2.58097,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-201B:p2:v3c3",
+        "document_id": "2025-OC-201B",
+        "page": 2,
+        "text": "1. Primary UPI Apps shall clearly display the secondary device/software details and capture the user consent for linking and authorizing the device/software with 2 Factor Authentication.",
+        "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+        "circular_number": "201B",
+        "series": "UPI",
+        "issue_date": "2025-10-08",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 61,
+        "end_word": 87,
+        "section_id": "2025-OC-201B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-201B:p2:v3c2",
+        "next_chunk_id": "2025-OC-201B:p2:v3c4",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02816,
+        "citation": "S5",
+        "rerank_score": -2.63094,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2024-OC-201:p1:v3c6",
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "text": "a. Manual entry of mobile number shall be restricted",
+        "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+        "circular_number": "201",
+        "series": "UPI",
+        "issue_date": "2024-08-13",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 323,
+        "end_word": 332,
+        "section_id": "2024-OC-201:s0",
+        "section_heading": "Document opening",
+        "clause_label": "a.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-201:p1:v3c5",
+        "next_chunk_id": "2024-OC-201:p1:v3c7",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02461,
+        "citation": "S6",
+        "rerank_score": -2.74966,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-201A:p1:v3c4",
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "text": "3. Issuer Bank of the Primary User shall identify the Secondary User at the time of delegation by way of name, mobile number and ID number of an Officially Valid Document as defined under Master Direction Know Your Customer (KYC) Direction, 2016 (as updated from time to time)",
+        "title": "Introduction of UPI Circle – Delegated Payments for secondary users – Full Delegation Additional Requirements",
+        "circular_number": "201A",
+        "series": "UPI",
+        "issue_date": "2025-07-08",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_A_FY_2025_26_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_Full_Delegation_Additional_Requirements_ba7e414c1a.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 93,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 184,
+        "end_word": 232,
+        "section_id": "2025-OC-201A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-201A:p1:v3c3",
+        "next_chunk_id": "2025-OC-201A:p1:v3c5",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "issuer_bank",
+          "primary_user",
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S7",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2025-OC-201A",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "definitions"
+        ]
+      },
+      {
+        "id": "2025-OC-115E:p1:v3c5",
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "text": "b) Seeding or porting communications of UPI number shall exclude miscommunication (For example - the user will stop receiving the money using UPI without taking an action on seeding the number in mapper) in case of NPC! mapper response time is not as per requirements, then the PSP app can resolve the number locally, subject to the PSP App report such occurrences on monthly basis to NPCI as listed in",
+        "title": "Addendum to circular on the Numeric UPI ID resolution",
+        "circular_number": "115E",
+        "series": "UPI",
+        "issue_date": "2025-03-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_115_E_FY_2024_25_Addendum_to_circular_on_the_Numeric_UPI_ID_resolution_5bf6b7d3a5.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 115E",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 200,
+        "end_word": 270,
+        "section_id": "2025-OC-115E:s0",
+        "section_heading": "Document opening",
+        "clause_label": "b)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-115E:p1:v3c4",
+        "next_chunk_id": "2025-OC-115E:p1:v3c6",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "115",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S8",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2025-OC-115E",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "exceptions"
+        ]
+      },
+      {
+        "id": "2025-OC-115E:p1:v3c3",
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "text": "2. UPIApp shall obtain explicit user consent with clear opt-out option (by default checked out, and user needs to click on opt-in) for seeding or porting UPI Number.",
+        "title": "Addendum to circular on the Numeric UPI ID resolution",
+        "circular_number": "115E",
+        "series": "UPI",
+        "issue_date": "2025-03-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_115_E_FY_2024_25_Addendum_to_circular_on_the_Numeric_UPI_ID_resolution_5bf6b7d3a5.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 115E",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 148,
+        "end_word": 176,
+        "section_id": "2025-OC-115E:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-115E:p1:v3c2",
+        "next_chunk_id": "2025-OC-115E:p1:v3c4",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "115",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S9",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2025-OC-115E",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c8",
+        "document_id": "npci-source-bd2daaeb1486442f521b2872",
+        "page": 2,
+        "text": "7) ln case user does not want to receive money using UPl Number for any reason (i.e. declines the consent in specific app for seeding into UPl ID mapper), they will not be able to receive money However, they will continue to receive money using UPl ID or other payment address like Bank Account number. MapperManagement",
+        "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+        "circular_number": "115",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_115_Rollout_of_Numeric_UPI_ID_Mapper_to_enable_UPI_Number_c7ad12604f.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 115",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 198,
+        "end_word": 254,
+        "section_id": "npci-source-bd2daaeb1486442f521b2872:s0",
+        "section_heading": "Document opening",
+        "clause_label": "7)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c7",
+        "next_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c9",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S10",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-bd2daaeb1486442f521b2872",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c6",
+        "document_id": "npci-source-bd2daaeb1486442f521b2872",
+        "page": 2,
+        "text": "5) It shall be mandatory for all UPI enabled apps (PSP / TPAPs) to participate in UPI ID mapper. User Consent",
+        "title": "OC 115 - Rollout of “Numeric UPI ID Mapper” to enable “UPI Number”",
+        "circular_number": "115",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_115_Rollout_of_Numeric_UPI_ID_Mapper_to_enable_UPI_Number_c7ad12604f.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 115",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 142,
+        "end_word": 163,
+        "section_id": "npci-source-bd2daaeb1486442f521b2872:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c5",
+        "next_chunk_id": "npci-source-bd2daaeb1486442f521b2872:p2:v3c7",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S11",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-bd2daaeb1486442f521b2872",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2024-OC-201:p2:v3c2",
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "text": "6. Members shall ensure limits contro! to be available for the primary to set usage controls over their secondary users",
+        "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+        "circular_number": "201",
+        "series": "UPI",
+        "issue_date": "2024-08-13",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 94,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "source_corrections": [
+          "bootstrap-003",
+          "bootstrap-004",
+          "bootstrap-005"
+        ],
+        "start_word": 17,
+        "end_word": 37,
+        "section_id": "2024-OC-201:s0",
+        "section_heading": "Document opening",
+        "clause_label": "6.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-201:p2:v3c1",
+        "next_chunk_id": "2024-OC-201:p2:v3c3",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S12",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-201",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2026-OC-115F:p1:v3c3",
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "text": "b. UPI Mapper Usage: Payer PSP and UPI Applications shall route mobile number-based transactions through the Numeric UP! ID Mapper only. Loca! resolutions for mobile number-based transactions can only be initiated by the PSP and UPI Application if the response time from Numeric UPI ID Mapper is exceeding one (1) second. It is to be noted that any dispute or liability arising on account of local resolution shall be the responsibility of the respective Payer PSP and UPI Application. All Members may refer to Annexure for handling user complaints in this regard. Members are further advised to bring the contents of this circular to the notice of all concerned stakeholders for necessary compliance. Yours Sincerely, SD/- Sourabh Tomar Deputy Chief UPI Product 1001A, The Capital, B Wing, 10\" Floor, a Bandra Kurla Complex, Bandra (E), Mumbai 400 051. Together Nowe T: +91 22 40009100 F: +91 22 40009101 eBuild \\arem contact@npci.org.in www.npci.org.in 7 CIN: U74990MH2008NPL189067",
+        "title": "Addendum to OC NPCI/UPI/OC-115E/2024-25 on the Numeric UPI ID",
+        "circular_number": "115F",
+        "series": "UPI",
+        "issue_date": "2026-07-30",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_115_F_Addendum_to_OC_NPCI_UPI_OC_115_E_2024_25_on_the_Numeric_UPI_ID_334510ae0c.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 115F",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 124,
+        "end_word": 279,
+        "section_id": "2026-OC-115F:s0",
+        "section_heading": "Document opening",
+        "clause_label": "b.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-115F:p1:v3c2",
+        "next_chunk_id": "2026-OC-115F:p2:v3c1",
+        "feature_ids": [
+          "numeric_upi_id"
+        ],
+        "family": "115",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payer_psp",
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S13",
+        "retrieval_reason": "recorded_reference",
+        "via_document_id": "2025-OC-115E",
+        "relation": {
+          "from_id": "2026-OC-115F",
+          "target_id": "2025-OC-115E",
+          "reference": "115E",
+          "relation": "references",
+          "basis": "imported_related_circulars",
+          "evidence_pages": [
+            1
+          ],
+          "evidence_status": "number_occurrence_only",
+          "status": "resolved",
+          "candidate_ids": [
+            "2025-OC-115E"
+          ],
+          "direction": "references_seed"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2024-OC-201:p1:v3c7",
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "text": "4. A primary user can delegate to up to 5 secondary users and a secondary user can accept delegation from only one primary user 1001A, The Capital, B Wing, 10* Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051- T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+        "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+        "circular_number": "201",
+        "series": "UPI",
+        "issue_date": "2024-08-13",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 332,
+        "end_word": 383,
+        "section_id": "2024-OC-201:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-201:p1:v3c6",
+        "next_chunk_id": "2024-OC-201:p2:v3c1",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "primary_user",
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S14",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2024-OC-201",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2025-OC-201B:p2:v3c2",
+        "document_id": "2025-OC-201B",
+        "page": 2,
+        "text": "8. Members shall ensure 24 hours cooling period with cumulative transaction limit of INR 5,000/- and shall auto-revoke the authorization for the loT device app/ software if delegation is inactive for a period of 6 months or in case of any security concerns with the device such as device tampering etc. Primary UPI Apps",
+        "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+        "circular_number": "201B",
+        "series": "UPI",
+        "issue_date": "2025-10-08",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 7,
+        "end_word": 61,
+        "section_id": "2025-OC-201B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "8.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-201B:p2:v3c1",
+        "next_chunk_id": "2025-OC-201B:p2:v3c3",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S15",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2025-OC-201B",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2025-OC-201B:p2:v3c4",
+        "document_id": "2025-OC-201B",
+        "page": 2,
+        "text": "2. Primary UPI Apps shall provide lifecycle management (limit management and delinking) and transaction history'for the transactions made under the loT devices/software.",
+        "title": "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle",
+        "circular_number": "201B",
+        "series": "UPI",
+        "issue_date": "2025-10-08",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 87,
+        "end_word": 109,
+        "section_id": "2025-OC-201B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-201B:p2:v3c3",
+        "next_chunk_id": "2025-OC-201B:p2:v3c5",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S16",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2025-OC-201B",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-201:p1:v3c5",
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "text": "3. For linking, Primary user shall scan QR/enter UPI Id followed by selection of contact number from the contact list. In the later phase, Primary user shall be able to link Secondary user in lieu of QR code scan by selection of contact number from the contact list only, details to notified.",
+        "title": "Introduction of “UPI Circle” – Delegated Payments for secondary users",
+        "circular_number": "201",
+        "series": "UPI",
+        "issue_date": "2024-08-13",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_201_FY_24_25_Introduction_of_UPI_Circle_Delegated_Payments_for_secondary_users_cf6799f126.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 201",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 271,
+        "end_word": 323,
+        "section_id": "2024-OC-201:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-201:p1:v3c4",
+        "next_chunk_id": "2024-OC-201:p1:v3c6",
+        "feature_ids": [
+          "upi_circle"
+        ],
+        "family": "201",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "primary_user",
+          "secondary_user"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S17",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "2024-OC-201",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "text": "The Secondary User must give explicit consent for the additional details (Document Type and Document ID number) before a Primary User Member accepts a Full Delegation request.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "Primary UPI Apps shall capture user consent with clear opt-out options for linking and authorizing IoT devices or software via 2 Factor Authentication.",
+        "sources": [
+          "S5",
+          "S9"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+      "The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below."
+    ],
+    "answer": "Draft answer — check the supporting excerpts.",
+    "abstained": false,
+    "coverage_check": {
+      "status": "issues_flagged",
+      "findings": [
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer states that consent is given by the 'Secondary User' for additional details before a Primary User accepts delegation (S1.1), but it also claims 'Primary UPI Apps' capture user consent for linking IoT devices (S5.1). These are incompatible requirements for the same entity (the user) and action (giving consent) within the scope of UPI Circle delegation, as one excerpt assigns the duty to the Secondary User while the other assigns it to the Primary User context.",
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "4. Secondary Payer PSP shall take explicit consent from Secondary User on the additional details (Document Type and Document ID number) before accepting the Full Delegation request from the Primary User Members are advised to refer to UPI Circle Procedural Guidelines for detailed information updated from time to time along with existing regulatory and legal framework. Members live on UPI Circle feature to make necessary changes by 31% August 2025. Yours Sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067"
+            },
+            {
+              "citation": "S5",
+              "quote": "1. Primary UPI Apps shall clearly display the secondary device/software details and capture the user consent for linking and authorizing the device/software with 2 Factor Authentication."
+            }
+          ]
+        },
+        {
+          "kind": "scope_unclear",
+          "reason": "The answer conflates consent for 'additional details' (Document Type/ID) with consent for 'linking IoT devices', blurring the distinction between Full Delegation requirements and IoT device authorization which are separate scopes in the provided evidence.",
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "4. Secondary Payer PSP shall take explicit consent from Secondary User on the additional details (Document Type and Document ID number) before accepting the Full Delegation request from the Primary User Members are advised to refer to UPI Circle Procedural Guidelines for detailed information updated from time to time along with existing regulatory and legal framework. Members live on UPI Circle feature to make necessary changes by 31% August 2025. Yours Sincerely, SD/- Kunal Kalawatia Chief of Products 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067"
+            },
+            {
+              "citation": "S5",
+              "quote": "1. Primary UPI Apps shall clearly display the secondary device/software details and capture the user consent for linking and authorizing the device/software with 2 Factor Authentication."
+            }
+          ]
+        }
+      ],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+    },
+    "elapsed_ms": 26887
+  },
+  "calls": [
+    {
+      "endpoint": "/api/embed",
+      "stage": "embedding",
+      "seconds": 2.447,
+      "output_tokens": null,
+      "prompt_tokens": 43,
+      "done_reason": null
+    },
+    {
+      "endpoint": "/api/generate",
+      "stage": "generation",
+      "seconds": 12.906,
+      "output_tokens": 164,
+      "prompt_tokens": 6189,
+      "done_reason": "stop"
+    },
+    {
+      "endpoint": "/api/generate",
+      "stage": "claim_support",
+      "seconds": 2.327,
+      "output_tokens": 112,
+      "prompt_tokens": 501,
+      "done_reason": "stop"
+    },
+    {
+      "endpoint": "/api/generate",
+      "stage": "claim_support",
+      "seconds": 3.0,
+      "output_tokens": 191,
+      "prompt_tokens": 443,
+      "done_reason": "stop"
+    },
+    {
+      "endpoint": "/api/generate",
+      "stage": "coverage",
+      "seconds": 4.139,
+      "output_tokens": 212,
+      "prompt_tokens": 3676,
+      "done_reason": "stop"
+    }
+  ]
+}

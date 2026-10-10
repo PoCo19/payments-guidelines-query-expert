@@ -9,13 +9,13 @@ def mentions(query):
     return list(dict.fromkeys(x.upper() for x in values))
 
 def route_question(query,route='auto'):
-    if route not in ('auto','clause','summary','compare'):raise ValueError('Unknown question type')
+    if route not in ('auto','clause','topic','summary','compare'):raise ValueError('Unknown question type')
     if route!='auto':return route
     if re.search(r'\b(?:compare|comparison|difference|versus|vs\.?|changed between)\b',query,re.I):return 'compare'
     if re.search(r'\b(?:summari[sz]e|summary|overview|all (?:the )?(?:requirements|responsibilities)|comprehensive)\b',query,re.I):return 'summary'
     return 'clause'
 
-def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',route='auto',rerank=None,fiscal_year='',document_ids=None):
+def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',route='auto',rerank=None,fiscal_year='',document_ids=None,entity=''):
     from app import validate_date
     from reranker import get_reranker
     if not query.strip() or len(query)>2000:raise ValueError('Enter a question between 1 and 2000 characters.')
@@ -25,7 +25,12 @@ def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',r
     if feature and feature not in {r['id'] for r in engine.registry.rules}:raise ValueError('Unknown feature')
     budget=int(engine.config.get('context_char_budget',18000))
     if not 2000<=budget<=18000:raise ValueError('context_char_budget must be between 2000 and 18000')
-    route=route_question(query,route);numbers=mentions(query)
+    requested_route=route;route=route_question(query,route);numbers=mentions(query)
+    research=engine.config.get('research_enabled',True) and engine.config.get('multi_product',False)
+    from research import plan_query,diversity_select,qualify,followup_query,annotate_evidence
+    plan=plan_query(engine,query,entity,series,cutoff,document_ids) if research else None
+    if research and requested_route=='auto' and route=='summary' and not numbers and not document_ids:route='topic'
+    followup=None
     selected=[];seen=set();notes=[];used=0;seed_ids=[];rerank_ms=0;ranked_count=0;coverage={};reranker_model=None
     do_rerank=engine.config.get('reranker_enabled',False) if rerank is None else rerank
     if not isinstance(do_rerank,bool):raise ValueError('rerank must be true or false')
@@ -42,7 +47,7 @@ def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',r
     requested=[];missing=[];resolution=None
     if engine.config.get('multi_product'):
         from product_scope import resolve
-        resolution=resolve(engine,query,numbers,series,cutoff,feature,fiscal_year,document_ids)
+        resolution=resolve(engine,query,numbers,series,cutoff,feature,fiscal_year,document_ids,infer_product=not research or bool(numbers))
         series=resolution['series'];notes.extend(resolution['notes'])
         if resolution['ambiguous'] or resolution['missing']:
             return [],dict(route=route,scope=scope,seed_chunk_ids=[],included_chunk_ids=[],evidence_characters=0,character_budget=budget,max_reference_hops=1,notes=notes,document_coverage={},requested_circulars=numbers,ambiguities=resolution['ambiguous'],reranker={'enabled':False,'model':None,'candidate_count':0,'elapsed_ms':0})
@@ -87,19 +92,28 @@ def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',r
             seed_ids=[p['id'] for p in selected]
     else:
         candidate_ids=set(requested) if resolution and requested else resolution['eligible_ids'] if resolution else None
-        candidates=engine.search(query,method,series,cutoff,32,feature,candidate_mode=True,document_ids=candidate_ids)
+        candidates=engine.search(query,method,series,cutoff,64 if research else 32,feature,candidate_mode=True,document_ids=candidate_ids)
         if numbers and not resolution:candidates=[p for p in candidates if str(p['circular_number']).upper() in numbers]
+        if research and candidates:
+            followup=followup_query(candidates[:8],plan)
+            if followup:
+                extra=engine.search(followup,method,series,cutoff,16,feature,candidate_mode=True,document_ids=candidate_ids)
+                candidates=list({p['id']:p for p in candidates+extra}.values())[:80]
         if do_rerank and candidates:
             ranker=get_reranker(Path(__file__).parent/engine.config.get('reranker_path','models/reranker'))
             start=time.perf_counter();candidates=ranker.rank(query,candidates);rerank_ms=round((time.perf_counter()-start)*1000);ranked_count=len(candidates);reranker_model=ranker.model
         seeds=[];counts=collections.Counter()
-        for p in candidates:
-            cap=8 if len(numbers)==1 else 3
-            if counts[p['document_id']]>=cap:continue
-            seeds.append(p);counts[p['document_id']]+=1
-            if len(seeds)>=8:break
+        if research:
+            seeds=diversity_select(candidates,engine.by_id,plan,limit=6,per_document=8 if len(numbers)==1 or len(requested)==1 else 3)
+        else:
+            for p in candidates:
+                cap=8 if len(numbers)==1 else 3
+                if counts[p['document_id']]>=cap:continue
+                seeds.append(p);counts[p['document_id']]+=1
+                if len(seeds)>=8:break
         seed_ids=[p['id'] for p in seeds]
         for p in seeds:add(p,'direct_match')
+        if research:qualify(engine,seeds,add,plan)
         if scope=='related' and seeds:
             seed_docs=list(dict.fromkeys(p['document_id'] for p in seeds));expanded=set(seed_docs)
             terms=set(engine.query_terms(query))
@@ -128,6 +142,11 @@ def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',r
             info=engine.by_id[doc]
             if info.get('metadata_quality')=='inventory_unverified':notes.append('Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.')
             if info.get('source_coverage',{}).get('empty_pages'):notes.append(doc+': some source pages have no extracted text. The answer may omit requirements.')
-    return selected,dict(route=route,scope=scope,seed_chunk_ids=seed_ids,included_chunk_ids=[p['id'] for p in selected],
+            notes.extend(info.get('intake_metadata',{}).get('source_notes',[]))
+    trace=dict(route=route,scope=scope,seed_chunk_ids=seed_ids,included_chunk_ids=[p['id'] for p in selected],
         evidence_characters=used,character_budget=budget,max_reference_hops=1,notes=list(dict.fromkeys(notes)),
-        document_coverage=coverage,requested_circulars=numbers,reranker={'enabled':bool(do_rerank and route=='clause'),'model':reranker_model,'candidate_count':ranked_count,'elapsed_ms':rerank_ms})
+        document_coverage=coverage,requested_circulars=numbers,reranker={'enabled':bool(do_rerank and route in ('clause','topic')),'model':reranker_model,'candidate_count':ranked_count,'elapsed_ms':rerank_ms})
+    if research:
+        trace['research_policy']='publisher_neutral_v1';trace['followup_query']=followup
+        annotate_evidence(engine,selected,plan,trace)
+    return selected,trace

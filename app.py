@@ -7,6 +7,7 @@ from ingestion import clause_chunks
 from registry import Registry
 from context import assemble
 from quality import apply_reviews, load_reviews, enrich, scan, ReviewStore
+from request_runtime import CURRENT, tracked_answer, stage, call_stage
 from claim_check import check_claims
 from answer_format import answer_schema, FORMAT_INSTRUCTIONS, requested_style, format_answer
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -81,6 +82,10 @@ class Engine:
                     ocr_confidence=page.get("ocr_engine_confidence")))
                 if self.config.get("multi_product"):
                     self.parts[-1].update(product_memberships=doc.get("product_memberships",[doc["series"]]),reference_label=doc.get("reference_label",str(doc["circular_number"])),fiscal_year=doc.get("fiscal_year"),source_coverage=doc.get("source_coverage",{}),metadata_quality=doc.get("metadata_quality"))
+                # Optional intake metadata preserves existing corpus fingerprints.
+                for field in ("issuer", "document_type", "listed_update_date", "source_archive_retrieved_on", "revision_of"):
+                    if doc.get("source_root") == "intake" and field in doc:
+                        self.parts[-1][field] = doc[field]
                 if page.get("corrections"):
                     self.parts[-1]["source_corrections"] = [r["id"] for r in page["corrections"]]
         self.chunker_version = self.config.get("chunker_version", "legacy-v1")
@@ -157,7 +162,7 @@ class Engine:
         parsed = urllib.parse.urlsplit(base)
         if parsed.scheme != "http" or parsed.hostname not in ("localhost", "127.0.0.1", "::1"):
             raise ValueError("Local Ollama endpoints only")
-        with urllib.request.build_opener(urllib.request.ProxyHandler({})).open(base+"/api/tags",timeout=15) as reply:
+        with urllib.request.build_opener(urllib.request.ProxyHandler({})).open(base+"/api/tags",timeout=CURRENT.get().timeout("model_metadata") if CURRENT.get() else 15) as reply:
             models = json.load(reply)["models"]
         return next((m["digest"] for m in models if m["name"] == self.config["embedding_model"]), "")
 
@@ -190,8 +195,26 @@ class Engine:
             raise ValueError("This prototype accepts local Ollama endpoints only.")
         request = urllib.request.Request(base + endpoint, json.dumps(payload).encode(), {"Content-Type": "application/json"})
         opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
-        with opener.open(request, timeout=self.config.get("model_timeout_seconds", 300)) as response:
-            return json.load(response)
+        run=CURRENT.get()
+        name=call_stage(endpoint,payload)
+        if run:run.set_stage(name)
+        started=time.monotonic(); record=dict(stage=name,status='failed')
+        try:
+            timeout=run.timeout(name) if run else self.config.get("model_timeout_seconds",300)
+            with opener.open(request,timeout=timeout) as response:
+                result=json.load(response)
+            record.update(status='completed',prompt_tokens=result.get('prompt_eval_count'),output_tokens=result.get('eval_count'),
+                          load_seconds=round(result.get('load_duration',0)/1e9,3),
+                          prompt_seconds=round(result.get('prompt_eval_duration',0)/1e9,3),
+                          decode_seconds=round(result.get('eval_duration',0)/1e9,3),done_reason=result.get('done_reason'))
+            return result
+        except Exception as exc:
+            record['error_type']=type(exc).__name__
+            raise
+        finally:
+            record['seconds']=round(time.monotonic()-started,3)
+            if run:run.calls.append(record)
+
 
     def build_vectors(self):
         if self.config.get("embedding_cache"):
@@ -232,6 +255,8 @@ class Engine:
 
     def stats(self):
         return dict(version=VERSION, documents=len(self.docs), converted=sum(d["availability"] == "converted" for d in self.docs),
+            research_entities=sorted({x for d in self.docs for x in d.get('applicability',{}).get('entities',[])}),
+            source_publishers=sorted({d.get('issuer') or ('NPCI' if (urllib.parse.urlsplit(d.get('source_pdf') or '').hostname or '').endswith('npci.org.in') else urllib.parse.urlsplit(d.get('source_pdf') or '').hostname or 'Unrecorded') for d in self.docs if d['availability']=='converted'}),
             pages=len(self.pages), chunks=len(self.parts),
             availability=dict(collections.Counter(d["availability"] for d in self.docs)),
             series=dict(collections.Counter(m for d in self.docs for m in d.get("product_memberships",[d["series"]]))),
@@ -356,12 +381,14 @@ class Engine:
             source_coverage=__import__("product_scope").source_coverage(self,document_id),
             features=self.registry.features[document_id], reference_edges=[e for e in self.registry.edges if e["from_id"] == document_id or e["target_id"] == document_id])
 
+    @tracked_answer
     def answer(self, payload):
         start = time.perf_counter()
         query = str(payload.get("query", ""))
         answer_style = requested_style(payload.get("answer_style", "auto"), query)
         evidence, trace = assemble(self, query, payload.get("method", "bm25"), payload.get("series", ""),
-            payload.get("cutoff", ""), payload.get("feature", ""), payload.get("scope", self.config.get("context_scope", "strict")), payload.get("route","auto"),payload.get("rerank"),payload.get("fiscal_year",""),payload.get("document_ids"))
+            payload.get("cutoff", ""), payload.get("feature", ""), payload.get("scope", self.config.get("context_scope", "strict")), payload.get("route","auto"),payload.get("rerank"),payload.get("fiscal_year",""),payload.get("document_ids"),payload.get("entity",""))
+        stage("generation" if payload.get("mode")=="generate" else "retrieval")
         mode = payload.get("mode", "evidence")
         warnings = ["Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."]
         if payload.get("cutoff"):
@@ -380,10 +407,16 @@ class Engine:
                     "Abstain if the excerpts do not answer the question, including when a requested date, number, or amendment is missing. "
                     "Do not equate publication date with effective date or infer supersession from ordering. Flag uncertainty in OCR numbers. "
                     "Related documents and feature labels are navigation hints, not proof of supersession. Attribute rules to their own circulars. "
+                    "Keep issuer, regulated-entity scope and source update dates distinct. A replaced local snapshot does not establish legal supersession. "
+                    "For topic research synthesize relevant requirements across the evidence, explicitly retaining definitions, conditions, exceptions and entity-specific scope. "
+                    "The query plan and evidence map contain heuristic labels, not verified facts. Explain only supported connections. "
+                    "Do not invent a universal rule by merging distinct scopes, choose precedence by publisher name, or resolve conflicting provisions without evidence. "
+                    "Do not replace a generic actor such as 'user' with a specific participant role unless the cited evidence establishes that identity. "
+                    "Answer the question directly in natural prose; use lists or comparisons only where helpful. Make material evidence gaps explicit. "
                     "For summaries cover the represented sections; for comparisons attribute each side explicitly. Do not claim complete coverage when the evidence is partial. "
                     "Do not use outside knowledge. " + FORMAT_INSTRUCTIONS)
                 data = self.ollama("/api/generate", {"model": self.config["generation_model"], "system": system,
-                    "prompt": json.dumps({"question": query, "answer_style": answer_style, "coverage": trace.get("document_coverage",{}), "retrieval_notes": trace["notes"], "route": trace.get("route"), "evidence": [{k:s.get(k) for k in ("citation", "document_id", "title", "circular_number", "page", "issue_date", "text", "needs_priority_review", "section_heading", "retrieval_reason", "roles", "source_corrections", "product_memberships", "metadata_quality", "source_coverage")} for s in evidence]}),
+                    "prompt": json.dumps({"question": query, "answer_style": answer_style, "coverage": trace.get("document_coverage",{}), "query_plan":trace.get("query_plan"), "evidence_map":[{k:row.get(k) for k in ("citation","aspects","retrieval_reason")} for row in trace.get("evidence_map",[])], "retrieval_notes": trace["notes"], "route": trace.get("route"), "evidence": [{k:s.get(k) for k in ("citation", "document_id", "title", "circular_number", "page", "issue_date", "text", "needs_priority_review", "section_heading", "retrieval_reason", "roles", "source_corrections", "product_memberships", "metadata_quality", "source_coverage", "issuer", "document_type", "listed_update_date", "revision_of", "applicability")} for s in evidence]}),
                     "stream": False, "think": False, "format": schema,
                     "options": {"temperature": 0, "num_ctx": self.config.get("context_length", 8192),
                                 "num_predict": self.config.get("max_output_tokens", 1500)}})
@@ -411,6 +444,9 @@ class Engine:
                     result["answer_blocks"], result["formatting_source"] = format_answer(
                         claim_list, parsed.get("layout"), draft_count, answer_style, trace.get("route", "clause"))
                     result["answer"] = "Draft answer — check the supporting excerpts."
+                    if result.get("flagged_claims") and claim_list:
+                        result["answer"] = "Partial draft — some statements were withheld during support checks."
+                        result["warnings"].append(f"{len(result['flagged_claims'])} of {draft_count} draft claims were withheld. The remaining statements may not fully answer your question; inspect the sources and review details.")
                     result["warnings"].append("Citation IDs are validated. Whether each citation supports its claim still requires review.")
             else:
                 result["answer"] = "No matching evidence was retrieved; no model request was made."
@@ -420,6 +456,13 @@ class Engine:
             result["answer"] = "Choose the intended circular below, or narrow the product and fiscal year. This reference matches multiple records."
         if mode=="generate" and result.get("claim_checks") and not result["claims"]:
             result.update(abstained=True,answer="No draft claims passed the automated support checks. Review the flagged claims and source excerpts.")
+        if mode=="generate" and trace.get('query_plan'):
+            from research import check_answer_coverage
+            result['coverage_check']=check_answer_coverage(self,result['claims'],evidence,trace['query_plan'])
+            if result['coverage_check']['status']=='issues_flagged':
+                result['warnings'].append('The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below.')
+            elif result['coverage_check']['status']=='unavailable':
+                result['warnings'].append('The additional completeness review was unavailable; this answer has not been checked for cross-document omissions.')
         result["elapsed_ms"] = round((time.perf_counter() - start) * 1000)
         return result
 
@@ -457,11 +500,21 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def local_host(self):
+        return urllib.parse.urlsplit("//"+self.headers.get("Host", "")).hostname in ("localhost","127.0.0.1","::1")
+
     def do_GET(self):
         try:
+            if not self.local_host():return self.send(403,{"error":"Local host required"})
             parsed = urllib.parse.urlsplit(self.path)
             args = {k: v[0] for k,v in urllib.parse.parse_qs(parsed.query).items()}
             path = parsed.path
+            if path == "/api/jobs":
+                return self.send(200,self.jobs.get(args.get("id","")))
+            if path == "/api/intake/releases":
+                return self.send(200,self.jobs.releases())
+            if path == "/api/intake/preview":
+                return self.send(200,self.jobs.preview(args.get("release","")))
             if path == "/api/stats":
                 return self.send(200, self.engine.stats())
             if path == "/api/review":
@@ -474,12 +527,12 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send(200, self.engine.evaluate(args.get("method", "bm25")))
             if path == "/api/pdf":
                 doc = self.engine.by_id[args.get("id", "")]
-                source = Path(self.engine.config["source_pack"]).resolve()
+                source = self.engine.data_dir.resolve() if doc.get("local_pdf_root") == "corpus" else Path(self.engine.config["source_pack"]).resolve()
                 pdf = (source / (doc.get("local_pdf") or "_missing")).resolve()
                 if source not in pdf.parents or pdf.suffix.lower() != ".pdf" or not pdf.is_file():
                     return self.send(404, {"error": "Local PDF unavailable. Use the official source link."})
                 return self.send(200, pdf.read_bytes(), "application/pdf")
-            static = {"/": ("index.html", "text/html; charset=utf-8"), "/app.js": ("app.js", "text/javascript; charset=utf-8"), "/answer_format.js": ("answer_format.js", "text/javascript; charset=utf-8"), "/style.css": ("style.css", "text/css; charset=utf-8")}
+            static = {"/": ("index.html", "text/html; charset=utf-8"), "/jobs.js": ("jobs.js", "text/javascript; charset=utf-8"), "/intake.js": ("intake.js", "text/javascript; charset=utf-8"), "/app.js": ("app.js", "text/javascript; charset=utf-8"), "/research_view.js": ("research_view.js", "text/javascript; charset=utf-8"), "/answer_format.js": ("answer_format.js", "text/javascript; charset=utf-8"), "/style.css": ("style.css", "text/css; charset=utf-8")}
             if path in static:
                 name, kind = static[path]
                 return self.send(200, (ROOT / "web" / name).read_bytes(), kind)
@@ -492,18 +545,31 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         try:
-            if self.path not in ("/api/answer","/api/review"):
+            if not self.local_host():return self.send(403,{"error":"Local host required"})
+            if self.headers.get("Content-Type", "").split(";")[0]!="application/json":return self.send(415,{"error":"JSON requests required"})
+            if self.path not in ("/api/answer","/api/review","/api/answers","/api/intake/upload","/api/intake/prepare","/api/intake/build","/api/intake/activate","/api/intake/rollback"):
                 return self.send(404, {"error": "Not found"})
             origin = self.headers.get("Origin")
             if origin and urllib.parse.urlsplit(origin).netloc != self.headers.get("Host"):
                 return self.send(403, {"error": "Cross-origin requests are not allowed."})
             size = int(self.headers.get("Content-Length", 0))
-            if size < 1 or size > 16000:
+            if size < 1 or size > (15*1024*1024 if self.path=="/api/intake/upload" else 16000):
                 raise ValueError("Invalid request size")
             payload = json.loads(self.rfile.read(size))
             if not isinstance(payload, dict):
                 raise ValueError("Expected a JSON object")
-            self.send(200, self.engine.review_store.save(payload,self.engine) if self.path=="/api/review" else self.engine.answer(payload))
+            if self.path=="/api/answers":return self.send(202,self.jobs.answer(payload))
+            if self.path=="/api/intake/upload":return self.send(200,self.jobs.upload(payload))
+            if self.path=="/api/intake/prepare":return self.send(202,self.jobs.start('Preparing candidate',lambda update:self.jobs.prepare(payload.get('tokens'))))
+            if self.path=="/api/intake/build":return self.send(202,self.jobs.start('Building index',lambda update:self.jobs.build(payload.get('release',''),update)))
+            if self.path=="/api/intake/activate":return self.send(202,self.jobs.start('Validating and activating',lambda update:self.jobs.activate(payload.get('release',''))))
+            if self.path=="/api/intake/rollback":return self.send(202,self.jobs.start('Restoring previous corpus',lambda update:self.jobs.rollback(payload.get('release',''))))
+            manager=getattr(self,'jobs',None)
+            if manager and not manager.gate.acquire(blocking=False):
+                return self.send(409,{'error':'Another answer or import is running. Wait for it to finish.'})
+            try:self.send(200, self.engine.review_store.save(payload,self.engine) if self.path=="/api/review" else self.engine.answer(payload))
+            finally:
+                if manager:manager.gate.release()
         except (ValueError, TypeError, KeyError) as exc:
             self.send(400, {"error": str(exc)})
         except (OSError, urllib.error.URLError) as exc:
@@ -529,6 +595,8 @@ def main():
         print(json.dumps({k:v for k,v in report.items() if k != "rows"}, indent=2))
     else:
         Handler.engine = engine
+        from local_jobs import LocalJobs
+        Handler.jobs=LocalJobs(lambda:Handler.engine,lambda value:setattr(Handler,"engine",value),args.config)
         print(f"Circular Intelligence {VERSION}: http://127.0.0.1:{args.port}", flush=True)
         ThreadingHTTPServer(("127.0.0.1", args.port), Handler).serve_forever()
 

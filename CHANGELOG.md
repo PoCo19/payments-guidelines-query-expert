@@ -1,3 +1,17 @@
+# 10 October 2026 — Bounded answers, evaluation and browser intake
+
+## 10 October 2026 - colleague handoff
+
+Frozen NPCI + eight-RBI source archive, file hashes, portable configuration, model digest checks and evaluation records are packaged for the `handoff-2026-10-10` Git tag. See [the handoff guide](docs/COLLEAGUE_HANDOFF.md). Independent source/answer review remains pending.
+
+Implemented request-local model budgets and stage/token timings, asynchronous browser jobs, keyword fallback on model failure, explicit partial-draft notices and coverage-review failure diagnostics. Added Add documents with source metadata, extraction preview, duplicate/quarantine handling, validated index build, activation and guarded rollback. Browser testing used an isolated synthetic corpus; the actual NPCI–RBI release was unchanged.
+
+Added a frozen 20-case/34-anchor development dataset, source catalogue, snapshot-checked capture runner and human-review worksheets. All 20 generation requests completed: 18/34 anchors, 7/17 complete positive-anchor coverage, 3/3 negative abstentions and 7/17 positive abstentions. Median 24.0545s; max 65.187s. Five-question RAGAS pilot retained one scoring timeout; faithfulness 1.000 applies to one successfully scored response, not system accuracy. Independent review and retrieval/reviewer improvements remain pending. Final regression: 251 Python tests passed, four optional skips; two JS suites passed. See docs/IMPLEMENTATION_20261010.md. No model upgrade or Git push.
+
+# 9 October 2026 — Publisher-neutral topic research (local changes)
+
+Added question/entity scope, relevant evidence diversity across arbitrary sources, qualification recovery, one bounded follow-up search, an inspectable evidence map and optional omission/scope review. Reviewer excerpts are selected by immutable IDs. No corpus rebuild or model change. 228 Python tests and both JavaScript suites pass. The frozen retrieval comparison preserved existing results; real-model attribution and reviewer false positives remain documented limitations. See docs/TOPIC_RESEARCH_VALIDATION_20261009.md.
+
 # v0.5.1 — Context-sensitive answer formatting
 
 Replaced the fixed bullet renderer with validated paragraph, bullet and ordered-step blocks over existing checked claims. Added Automatic/Paragraphs/Bullet points/Mixed control, generation guidance and layout schema, stable claim indices across filtering, safe fallback, inline citations and matching Markdown export. No second rewriting model call or corpus rebuild. 103 Python tests and renderer checks pass; three local-model formatting cases exercised. Backed up v0.5.0 before edits. See docs/ANSWER_FORMATTING.md.
@@ -15,6 +29,13 @@ Remaining source-quality and answer-evaluation work is recorded in PROJECT_STATU
 Implemented the six RAG improvements: frozen evaluation and review worksheet; source QA overlays/workbench; adaptive clause/summary/comparison retrieval; pinned local ONNX reranker; clause/role labels and relationship review; per-claim checks with quoted evidence and withholding. Rebuilt 916 vectors, passed 59 tests and six live cases plus a contradiction check. Browser/source QA caught metadata-attribution and quotation-normalization issues; regression checks added. Updated project flow, operating/review/architecture/validation docs and shareable illustrated PDF. Full-corpus and independent evaluation review remain pending, not represented as completed expert verification.
 
 # Changelog
+
+## 2026-10-09 — Document intake and expansion preparation
+
+- Added staged local PDF/Markdown intake with source hashes, duplicate/revision checks, extraction quarantine, cached vector computation, candidate validation, explicit activation and rollback.
+- Exposed new-source issuer/type metadata in evidence and the source reader; retained local intake PDFs for inspection.
+- Added a frozen-prompt local model timing runner. Default Qwen/embedding settings and the active corpus remain unchanged.
+- Documented the current RBI payments source map, hardware-based model shortlist and repeatable intake workflow. No RBI ingestion or larger-model superiority is claimed.
 
 ## Context tuning — 2026-09-24
 

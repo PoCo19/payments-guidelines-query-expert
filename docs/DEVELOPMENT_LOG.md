@@ -1,3 +1,13 @@
+# 10 October 2026 — Bounded answers, evaluation and browser intake
+
+## 10 October 2026 - colleague handoff
+
+Frozen NPCI + eight-RBI source archive, file hashes, portable configuration, model digest checks and evaluation records are packaged for the `handoff-2026-10-10` Git tag. See [the handoff guide](COLLEAGUE_HANDOFF.md). Independent source/answer review remains pending.
+
+Implemented request-local model budgets and stage/token timings, asynchronous browser jobs, keyword fallback on model failure, explicit partial-draft notices and coverage-review failure diagnostics. Added Add documents with source metadata, extraction preview, duplicate/quarantine handling, validated index build, activation and guarded rollback. Browser testing used an isolated synthetic corpus; the actual NPCI–RBI release was unchanged.
+
+Added a frozen 20-case/34-anchor development dataset, source catalogue, snapshot-checked capture runner and human-review worksheets. All 20 generation requests completed: 18/34 anchors, 7/17 complete positive-anchor coverage, 3/3 negative abstentions and 7/17 positive abstentions. Median 24.0545s; max 65.187s. Five-question RAGAS pilot retained one scoring timeout; faithfulness 1.000 applies to one successfully scored response, not system accuracy. Independent review and retrieval/reviewer improvements remain pending. Final regression: 251 Python tests passed, four optional skips; two JS suites passed. See docs/IMPLEMENTATION_20261010.md. No model upgrade or Git push.
+
 # 4 October 2026 — Midterm slide refinements
 
 Reworked roadmap into indicative weeks, implementation tasks and deliverables. Explained preliminary retrieval metrics and their limits; source-anchor counts do not measure answer accuracy. Replaced the document-count panel with actual chunking and indexing steps verified in ingestion.py. Added an enlarged genuine local response to a shop card-machine question with question text visible. Preserved a second, unfocused response as a finding. Updated the three-page report, speaker notes, scope and share bundle. No model, corpus, retrieval configuration or storage changes.
@@ -78,3 +88,22 @@ The original schema returned claims and the browser always wrapped them in a bul
 
 Added the style control, safe shared HTML/Markdown renderer, inline citation buttons and one support notice per answer. Kept raw model HTML/Markdown inert. Automated testing caught an explicit “bullet points only” parsing gap; fixed and verified. All 103 Python tests and renderer/export checks pass. Live Qwen cases returned paragraph, bullet-list and mixed layouts with support checks; exact brevity remains imperfect. Verified real paragraph rendering with no list elements and a working citation link. No embeddings changed; server restarted at the original localhost address. Pre-change files are in versions/v0.5.0.
 
+
+
+## 2026-10-09 — Controlled document intake and model experiments
+
+Added an operator-run PDF/Markdown intake pipeline with source provenance, page validation, quarantine, revision guards, cached embedding computation, candidate Chroma/SQLite snapshots, explicit activation and rollback. The API can serve original PDFs saved inside new corpus releases; evidence and source reader expose issuer/type metadata. Existing corpus fingerprints remain unchanged.
+
+Added a fixed-evidence generation timing runner and researched official RBI directions in parallel. Kept the active NPCI corpus and model defaults. Larger model options remain hypotheses until tested. The live synthetic integration check computed only one new vector on its second release, verified retrieval/source/PDF access and restored its isolated config. Regression and observed model timings are documented in [the validation record](INTAKE_VALIDATION_20261009.md).
+
+
+## 2026-10-09 — Publisher-neutral evidence assembly
+
+Implemented topic research without RBI/NPCI buckets or inferred product exclusion for broad questions. Explicit filters remain boundaries. Added entity hints, relevance/diversity selection, bounded qualification/follow-up retrieval, evidence coverage UI/export and optional same-model review. Intake can retain source-quoted operator applicability labels without treating them as verified legal scope.
+
+Initial live checks showed fabricated review quotations, so the reviewer now selects immutable excerpt IDs and the application attaches the original text. Participant misattribution and false conflict judgments still occur; they are preserved as evaluation findings rather than claimed fixed. All 228 Python tests and both browser-renderer suites pass. Frozen-set retrieval is unchanged at 55/55 anchors and 5/6 empty negatives. Active corpus, model settings and embeddings are unchanged. Changes remain local and unpushed. See TOPIC_RESEARCH_VALIDATION_20261009.md.
+
+
+## 2026-10-10 — RBI intake completion record
+
+Reconciled the 9 October activation of eight RBI core directions. Official PDF links did not return PDFs; retained official HTML and converted article bodies to Markdown with token-retention checks. Added source notes and a dynamic coverage label. The combined release has 14,480 chunks; 420 vectors were new and 14,060 cached. Eight retrieval checks, mixed-source evidence, browser source inspection, 230 Python tests, four optional conversion tests and both JS suites passed. The live generated answer took 718.943 seconds and its completeness review was unavailable; preserved this as an unresolved performance finding. Added a beginner intake guide and detailed integration record. No GitHub push performed.

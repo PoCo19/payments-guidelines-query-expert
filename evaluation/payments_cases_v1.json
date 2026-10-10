@@ -1,0 +1,584 @@
+[
+  {
+    "id": "PAY-001",
+    "category": "RBI direct",
+    "query": "Under the RBI PPI Master Directions updated September 2026, what is the maximum outstanding balance for a full-KYC PPI?",
+    "expected_answer": "The full-KYC PPI maximum outstanding balance is Rs.2,00,000 at any point in time. This is an outstanding-balance limit, not a universal transaction limit or the limit for UPI LITE.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/- at any point of time",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Confusing balance and transaction limits"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-002",
+    "category": "RBI direct",
+    "query": "What net-worth milestones do RBI Payment Aggregator Directions 2025 specify for a non-bank entity seeking authorisation?",
+    "expected_answer": "A non-bank PA applicant requires at least Rs.15 crore net-worth when applying and Rs.25 crore by the end of the third financial year of authorisation. The applicable minimum must be maintained on an ongoing basis. Do not generalise this to all payment businesses.",
+    "references": [
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore by the end of third financial year",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting the timeline or ongoing requirement"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-003",
+    "category": "RBI direct",
+    "query": "Who is covered by the RBI Bharat Bill Payment System Directions 2024?",
+    "expected_answer": "The directions apply to NPCI Bharat Bill Pay Limited (NBBL) and all Bharat Bill Payment Operating Units (BBPOUs). Do not describe every bank or fintech as a BBPOU.",
+    "references": [
+      {
+        "document_id": "rbi:bbps:2024-02-29",
+        "page": 1,
+        "quote": "All Bharat Bill Payment Operating Units (BBPOUs)",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12616",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Expanding applicability beyond the source"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-004",
+    "category": "RBI direct",
+    "query": "Under RBI cyber resilience directions for non-bank PSOs, when must small non-bank PSOs comply?",
+    "expected_answer": "The phased implementation date for small non-bank PSOs is April 1, 2028. The directions apply to authorised non-bank PSOs; the small-PSO date should not be applied to medium or large PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "all authorised non-bank PSOs",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Treating a size-specific deadline as universal"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-005",
+    "category": "RBI direct",
+    "query": "Do the RBI Authentication Directions 2025 prescribe SMS OTP as the only permitted additional factor?",
+    "expected_answer": "No. The directions set authentication principles rather than mandating SMS OTP as the only factor. At least two distinct factors are required unless exempted. Issuers may offer compliant choices; for transactions other than card-present transactions, at least one factor must be dynamically created or proven.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "at least two distinct factors of authentication",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting exceptions",
+      "Claiming all transactions must use OTP"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-006",
+    "category": "RBI direct",
+    "query": "What are the general and specified-category thresholds for recurring e-mandate transactions without AFA in the RBI 2026 directions?",
+    "expected_answer": "The general recurring-transaction threshold without AFA is Rs.15,000 per transaction, with AFA above it. Insurance premiums, mutual-fund subscriptions and credit-card bill payments have a Rs.1,00,000 per-transaction threshold. Registration and first-transaction AFA requirements remain separate.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹15,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹1,00,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Extending the special threshold to every category"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-007",
+    "category": "RBI direct",
+    "query": "Does RBI payment-system authorisation use one capital requirement for every payment system?",
+    "expected_answer": "No. The 2026 authorisation directions say the capital requirement follows the guidelines or directions for the specific payment system. They cover both applicants and authorised entities. A PA threshold should not be reused for all systems.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions issued for the specific payment system",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Inventing a universal capital threshold"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-008",
+    "category": "RBI direct",
+    "query": "Who can use the RBI access criteria framework for participation in payment systems?",
+    "expected_answer": "The access directions apply to scheduled/licensed banks operating in India and authorised PSPs seeking participation. Actual admission depends on the relevant system criteria. Participation and authorisation to operate a payment system are distinct questions.",
+    "references": [
+      {
+        "document_id": "rbi:access-criteria:2021-07-28",
+        "page": 1,
+        "quote": "all scheduled/ licensed banks operating in India and authorised payment system providers",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10833",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Conflating participation with operation authorisation"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-009",
+    "category": "RBI + NPCI",
+    "query": "For FASTag and NCMC automatic replenishment, do RBI e-mandate rules and NPCI OC 207 require a 24-hour pre-debit notification?",
+    "expected_answer": "RBI exempts registered FASTag and NCMC auto-replenishment e-mandates from pre-transaction notification. NPCI OC 207 implements the exception for NETC FASTag (MCC 4784) and RuPay NCMC (MCC 7412) in UPI Autopay, where replenishment follows the customer-set balance threshold. Other e-mandate requirements continue; this is not an exemption for all recurring payments.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "Exemption from 24-Hours prior Pre-Debit Notification",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "MCC 4784",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Generalising the exemption",
+      "Missing MCC scope"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-010",
+    "category": "RBI + NPCI",
+    "query": "Do RBI authentication principles and NPCI OC 226 mean every UPI user must switch to biometric authentication?",
+    "expected_answer": "No. RBI specifies compliant authentication principles, including distinct factors and exceptions. NPCI OC 226 introduces optional additional methods and says users may continue existing methods. Distinguish UIDAI face authentication for PIN set/reset from on-device biometrics for transaction authentication. OC 226 describes an initial Rs.5,000 limit, not a verified current limit.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "These additional methods are optional for the user",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Confusing PIN reset with payment authentication",
+      "Treating initial limit as latest"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-011",
+    "category": "RBI + NPCI",
+    "query": "Can we use the RBI full-KYC PPI balance ceiling as the UPI LITE limit in NPCI OC 169A?",
+    "expected_answer": "No. RBI full-KYC PPIs have a Rs.2,00,000 outstanding-balance ceiling. OC 169A states Rs.1,000 per transaction and Rs.5,000 total for UPI LITE, with online replenishment using AFA. These limits concern different products and cannot be merged into a universal wallet limit.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/-",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "₹1,000 per transaction with ₹5,000 being the total limit",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Merging distinct product limits"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-012",
+    "category": "RBI + NPCI",
+    "query": "Compare PPI UPI onboarding in NPCI OC 134 with third-party UPI app access in the RBI PPI directions updated September 2026.",
+    "expected_answer": "NPCI OC 134, referring to the November 2021 RBI snapshot, states PPI holders are onboarded by their own issuer and authenticate with existing wallet credentials. The September 2026 RBI snapshot also allows full-KYC PPI discovery through third-party UPI applications, using UPI credentials for those transactions. Preserve version and channel differences; this evidence alone does not prove formal supersession of every provision in OC 134.",
+    "references": [
+      {
+        "document_id": "npci-source-01e7e3bc387186fe8cdbcc9a",
+        "page": 1,
+        "quote": "PPI holders shall be on-boarded for UPI by their own PPI issuer only.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_134_Adherence_to_RBI_PPI_Interoperability_Guidelines_455e2af154.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "A PPI issuer may also facilitate discovery of its full-KYC PPIs on third-party UPI mobile applications",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Ignoring snapshot dates",
+      "Inferring legal supersession"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-013",
+    "category": "RBI + NPCI",
+    "query": "Do the e-mandate AFA rules mean UPI Autopay apps may automatically port a customer mandate under OC 223?",
+    "expected_answer": "No. RBI requires issuer AFA validation for modification or withdrawal of an existing e-mandate. NPCI OC 223 separately makes mandate porting strictly user-driven, bars inducements and limits porting to once in a rolling 90-day period. Authentication is not permission for app-initiated porting.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "strictly user-driven",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "once in a rolling 90-day period",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Conflating authentication with user authorisation"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-014",
+    "category": "RBI cross-document",
+    "query": "For a non-bank payment aggregator applicant, how do the generic authorisation and PA-specific capital rules fit together?",
+    "expected_answer": "The generic 2026 authorisation directions defer capital requirements to the specific payment-system guidelines. The PA 2025 directions specify Rs.15 crore at application and Rs.25 crore by the end of the third financial year of authorisation, maintained as applicable. Describe the generic framework and PA-specific rule separately.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Resolving precedence solely by issuer or date"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-015",
+    "category": "Scope and qualification",
+    "query": "Is the FASTag/NCMC pre-debit notification exemption an exemption from post-transaction notifications too?",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Transferring an exception to a different duty"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-016",
+    "category": "Scope and qualification",
+    "query": "Is the April 2028 cyber-resilience date the deadline for all non-bank PSOs?",
+    "expected_answer": "No. April 1, 2028 is the small non-bank PSO deadline. The phased schedule lists April 1, 2025 for large and April 1, 2026 for medium non-bank PSOs. Retain size classification and applicability to authorised non-bank PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2025",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2026",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Missing phased applicability"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-017",
+    "category": "Scope and qualification",
+    "query": "What was the initial transaction limit for on-device biometric authentication in NPCI OC 226, and was it final?",
+    "expected_answer": "OC 226 initially makes on-device biometric authentication available for transactions up to Rs.5,000 and explicitly says the limit will be reviewed based on performance and evaluation. This answers the historical initial-limit question, not the current limit after subsequent documents.",
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "initially be available for transactions up to Rs. 5,000",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "The limit shall be reviewed in due course",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Presenting a historical initial limit as current"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted"
+  },
+  {
+    "id": "PAY-018",
+    "category": "Unavailable evidence",
+    "query": "What is our company Acme Payments internal production fraud-score threshold for rejecting a UPI transfer?",
+    "expected_answer": "The supplied public circular corpus does not establish Acme Payments internal production fraud-score threshold. Abstain from inventing a value and request the approved internal policy.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an internal risk parameter"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true
+  },
+  {
+    "id": "PAY-019",
+    "category": "Unavailable evidence",
+    "query": "What is the confidential incident response phone number for Acme Payments on-call engineer?",
+    "expected_answer": "This confidential company contact is not established in the available public payment guidelines. State the evidence limitation and do not invent a phone number.",
+    "references": [],
+    "failure_modes": [
+      "Inventing private operational information"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true
+  },
+  {
+    "id": "PAY-020",
+    "category": "Unavailable evidence",
+    "query": "What exact percentage improvement in fraud losses did Acme Payments achieve after deploying its private model in September 2026?",
+    "expected_answer": "The corpus does not contain the company performance measurement needed to answer. Abstain from a numerical performance claim and request the relevant internal evaluation.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an outcome metric"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true
+  }
+]

@@ -101,9 +101,20 @@ def load_cases(path):
     if path.resolve() == (ROOT / 'evaluation/rag_cases.json').resolve():
         if sha(raw) != (ROOT / 'evaluation/rag_cases.sha256').read_text().strip():
             raise ValueError('Frozen dataset changed; use a new version instead.')
+    checksum = path.with_suffix('.sha256')
+    if checksum.exists() and sha(raw) != checksum.read_text().strip():
+        raise ValueError('Frozen dataset changed; use a new version instead.')
     if len({c['id'] for c in cases}) != len(cases):
         raise ValueError('Duplicate case IDs.')
     return cases, sha(raw)
+
+
+def case_payload(case, method='hybrid', rerank=True, mode='generate', legacy_upi=False):
+    payload = dict(query=case['query'], series=case.get('series') or ('UPI' if legacy_upi else ''),
+                   cutoff=case.get('cutoff', ''), scope=case['scope'], method=method, rerank=rerank, mode=mode)
+    for key in ('route', 'document_ids', 'entity'):
+        if key in case: payload[key] = case[key]
+    return payload
 
 
 def capture(args):
@@ -111,7 +122,8 @@ def capture(args):
     config = read(args.config)
     ollama = local_url(config['ollama_url'])
     cases, dataset_sha = load_cases(args.dataset)
-    selected_ids = args.ids.split(',') if args.ids else ([c['id'] for c in cases] if args.all else PILOT)
+    legacy = Path(args.dataset).resolve() == (ROOT / 'evaluation/rag_cases.json').resolve()
+    selected_ids = args.ids.split(',') if args.ids else ([c['id'] for c in cases] if args.all or not legacy else PILOT)
     by_id = {c['id']: c for c in cases}
     if len(selected_ids) != len(set(selected_ids)) or any(i not in by_id for i in selected_ids):
         raise ValueError('Unknown or duplicate selected IDs.')
@@ -135,9 +147,7 @@ def capture(args):
     save(out / 'capture.json', manifest)
     for case_id in selected_ids:
         case = by_id[case_id]
-        payload = dict(query=case['query'], series=case.get('series') or 'UPI',
-                       cutoff=case.get('cutoff', ''), scope=case['scope'], method=args.method,
-                       rerank=args.rerank, mode='generate')
+        payload = case_payload(case, args.method, args.rerank, legacy_upi=legacy)
         row = dict(id=case_id, case=case, payload=payload)
         start = time.monotonic()
         try:

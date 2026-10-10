@@ -1,0 +1,31 @@
+{
+  "python": {
+    "discovered": 255,
+    "passed": 251,
+    "skipped": 4,
+    "log": "tmp/phase123-closure-tests.log"
+  },
+  "post_banner_targeted_tests": {
+    "passed": 50,
+    "log": "tmp/partial-banner-check.log"
+  },
+  "javascript_suites": [
+    "test_answer_format.js",
+    "test_research_view.js"
+  ],
+  "browser": [
+    "synthetic Markdown upload and preview",
+    "prepare candidate",
+    "build real Chroma embedding",
+    "activate with in-memory engine switch",
+    "keyword fallback after embedding timeout",
+    "inline-confirmed rollback",
+    "rollback history retained after restart",
+    "production Add documents visual inspection"
+  ],
+  "active_corpus_unchanged": true,
+  "generated_evaluation": "evaluation/payments_runs/20261010T081610Z/capture.json",
+  "ragas_pilot": "evaluation/payments_runs/20261010T032145Z/scores-20261010T081313Z/scores.json",
+  "human_review": "pending",
+  "git_push": "not_performed"
+}

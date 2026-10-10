@@ -6,6 +6,14 @@ The implementation and initial pilot are provisional developer evidence. Human-r
 
 **Completed pilot:** [12-case results, findings and validation](ragas_runs/README.md). All 12 application calls completed; 44 applicable metric scores succeeded. The low draft-reference correctness scores are retained and explained, not presented as validated answer accuracy.
 
+## RBI–NPCI extension, 10 October 2026
+
+A separate frozen [20-case development catalogue](../docs/PAYMENTS_EVALUATION_20_CASES.md) now includes 17 answerable and 3 unavailable-evidence questions, with 34 source anchors. The original 50 questions are unchanged. [The implementation record](../docs/IMPLEMENTATION_20261010.md) links the saved runs and explains their failures.
+
+Run `python evaluation/payments_eval.py` for source retrieval or add `--mode generate` to capture actual answers. The runner checks every reference against the local corpus, records dataset/config/code/model fingerprints, saves each result, checks source inputs again at the end, and creates `human_review.csv`. Do not run an evaluation while interacting with the model in the app: both share Ollama and resource contention changes latency and can cause timeouts.
+
+Pass the generated `capture.json` to `evaluation/ragas_runner.py score` in the evaluation environment. Only completed, snapshot-checked generation captures are eligible. A five-question RAGAS pilot was run; full independent answer review is pending. References are AI-assisted drafts, not expert-approved answers.
+
 ## Evaluation flow
 
 ```mermaid

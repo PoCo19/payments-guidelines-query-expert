@@ -1,0 +1,50 @@
+{
+  "first": {
+    "passed": true,
+    "fingerprint": "45474dad8bdb5ad8834b4c37166c094ec33501ccfc47ee58512593a0ed3bc17e",
+    "registry_fingerprint": "3aa45a9326dba84aaa6657e3c34d7494606f10502f6cd8c87dcb8397f4c6bb23",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "documents": 1,
+    "chunks": 1,
+    "limitation": "Structural and per-intake-document retrieval checks; not expert answer correctness.",
+    "created_at": "2026-10-09T08:38:35.839808+00:00",
+    "embeddings": {
+      "chunks": 1,
+      "computed": 1,
+      "cache_hits": 0,
+      "dimension": 1024,
+      "model": "qwen3-embedding:0.6b",
+      "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "fingerprint": "45474dad8bdb5ad8834b4c37166c094ec33501ccfc47ee58512593a0ed3bc17e",
+      "elapsed_seconds": 2.21
+    }
+  },
+  "second": {
+    "passed": true,
+    "fingerprint": "5b7952f8210e3127c87c9a00d094e9fd57878c6b0db162ddff9d743c117824f7",
+    "registry_fingerprint": "8e11da75524535f1de9f51156595defe59fbbfbe10a4a3449bcc8b7f309569d0",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "documents": 2,
+    "chunks": 2,
+    "limitation": "Structural and per-intake-document retrieval checks; not expert answer correctness.",
+    "created_at": "2026-10-09T08:38:36.088365+00:00",
+    "embeddings": {
+      "chunks": 2,
+      "computed": 1,
+      "cache_hits": 1,
+      "dimension": 1024,
+      "model": "qwen3-embedding:0.6b",
+      "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "fingerprint": "5b7952f8210e3127c87c9a00d094e9fd57878c6b0db162ddff9d743c117824f7",
+      "elapsed_seconds": 0.09
+    }
+  },
+  "pdf_http_verified": true,
+  "reader_issuer_verified": true,
+  "vector_query_verified": true,
+  "activation_rollback_verified": true,
+  "active_config_unchanged": true,
+  "active_chunks": 14060,
+  "active_fingerprint": "f05b8dd8cbd45ce284526e3fd6728caecca03b0b53d857ecc6defa8c001ef77b",
+  "scope": "Isolated synthetic test corpus with real local embeddings and Chroma; not regulatory source evaluation."
+}

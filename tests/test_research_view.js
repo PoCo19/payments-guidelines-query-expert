@@ -1,0 +1,14 @@
+const assert = require('node:assert/strict');
+const view = require('../web/research_view.js');
+const trace = {query_plan:{entity:'<img src=x onerror=alert(1)>'}, aspect_coverage:[{label:'Exceptions',citations:['S1']},{label:'Dates',citations:[]}], evidence_map:[{citation:'S1',title:'Source',source_group:'New publisher',document_type:'Directions',page:2}]};
+const review = {status:'issues_flagged',findings:[{kind:'possible_omission',reason:'<script>bad()</script>',quotes:[{citation:'S1',quote:'Unless permission is given.'}]}]};
+const html = view.render(trace,review);
+assert(!html.includes('<script>') && !html.includes('<img '));
+assert(html.includes('data-citation="S1"') && html.includes('Not located'));
+assert(html.includes('review needed') && html.includes('New publisher'));
+assert(view.markdown(trace,review).includes('Unless permission is given.'));
+assert.equal(view.render({},null),'');
+const failed=view.render(trace,{status:'unavailable',failure_reason:'<script>timeout</script>'});
+assert(failed.includes('Why the review was unavailable') && !failed.includes('<script>'));
+assert(view.markdown(trace,{status:'unavailable',failure_reason:'TimeoutError'}).includes('Review failure: TimeoutError'));
+console.log('Research coverage rendering: escaping, citation links, missing evidence, findings and export passed.');

@@ -9,11 +9,15 @@ The central design decision is to preserve document identity while retrieving ac
 Current product scope and future priorities: [midterm scope](output/midsem/CURRENT_SCOPE.md).
 
 
-Scope refreshed 4 October 2026; underlying RAG implementation v0.5.1. This is a local research prototype for an AI capstone. It retrieves evidence from an imported NPCI circular collection; it does not train Qwen on those documents.
+Implementation refreshed 10 October 2026. This local AI capstone retrieves evidence from NPCI circulars and eight RBI direction snapshots. It uses pretrained models without training Qwen on those documents. The midterm files remain a historical submission package.
 
 ## At a glance
 
-1,562 searchable documents -> 4,826 page records -> 14,060 attributed chunks. The register contains 1,921 canonical records, including 359 unavailable or quarantined entries. All 1,955 supplied inventory listings are preserved. A circular can belong to more than one product; its pages and chunks still keep one canonical owner. New original PDFs are external links, not local files.
+**Topic research:** the [publisher-neutral research flow](docs/TOPIC_RESEARCH.md) plans the question's scope, selects complementary passages, includes qualifications, builds an evidence map and checks for possible omissions. Broad topics can span publishers without separate RBI/NPCI retrieval branches. Explicit filters remain boundaries; the active local corpus includes NPCI and RBI snapshots.
+
+**9 October extension:** [the document intake pipeline](docs/DOCUMENT_INTAKE.md) now accepts local PDF/Markdown with explicit issuer/type/date metadata, prepares a separate candidate release, reuses unchanged embeddings, and validates before activation. New PDFs are preserved locally. Eight [core RBI directions](docs/RBI_CORE_INTEGRATION_20261009.md) are activated locally. Historical UPI results remain unchanged; [mixed-source evaluation](docs/PAYMENTS_EVALUATION_20_CASES.md) is a separate development exercise awaiting independent review. [Generation model experiments](docs/LOCAL_MODEL_OPTIONS.md) use frozen evidence and do not change the embedding model.
+
+1,570 searchable documents -> 4,834 page records -> 14,480 attributed chunks. The register contains 1,929 canonical records, including 359 unavailable or quarantined entries. All 1,955 supplied inventory listings are preserved. A circular can belong to more than one product; its pages and chunks still keep one canonical owner. RBI HTML-derived Markdown uses logical pages; linked PDF attachments are not part of those eight source captures. New uploaded PDFs are preserved in their release.
 
 ```mermaid
 flowchart TD
@@ -44,9 +48,15 @@ flowchart TD
     P --> V[Independent review and evaluation feedback]
 ```
 
+## Request and import lifecycle
+
+The browser submits a local job and polls its stage, so it can show retrieval, drafting and review progress. Model calls share a 120-second processing budget, with tighter stage limits. Timeout or model outage falls back to keyword excerpts. Claims whose support check fails stay withheld. A failed coverage review remains visibly unavailable; it is never counted as a successful completeness check. CPU work and fallback are not hard real-time bounded.
+
+**Add documents → upload and register → inspect extracted text → prepare candidate → build chunks, cached embeddings, Chroma and SQLite → validate → confirm activation.** The active in-memory engine changes only after activation passes. Rollback restores the prior version. The UI adds new documents; reviewed snapshot replacement stays in the CLI. One answer or import job runs at a time per server. Job history is process-local; prepared releases survive restart. See [implementation details](docs/IMPLEMENTATION_20261010.md).
+
 ## 1. Import and review
 
-The active app reads `data/all-products-v1/index.json` and `data/all-products-v1/all_circular_pages.jsonl`, selected by `config.json`. The importer preserves raw Markdown and inventories under that dataset’s `sources/` folder with checksums. Same-source listings are joined into canonical records and product memberships; different URLs are not merged only because text matches. Existing reviewed UPI text wins on overlaps. Two known title/body conflicts are quarantined. Import commands and rollback are in `docs/MULTI_PRODUCT_IMPORT.md`.
+The active app reads `index.json` and `all_circular_pages.jsonl` from the release selected by `config.json` (`payments-rbi-core-20261009` on this machine). The importer preserves raw Markdown and inventories under that dataset’s `sources/` folder with checksums. Same-source listings are joined into canonical records and product memberships; different URLs are not merged only because text matches. Existing reviewed UPI text wins on overlaps. Two known title/body conflicts are quarantined. Import commands and rollback are in `docs/MULTI_PRODUCT_IMPORT.md`.
 
 The incoming inventories span archive years 2009–2026 and were generated 9–15 September 2026; retained UPI material extends through 22 September. This was not a live website reconciliation. New issue dates remain unknown, even when the inventory supplies a fiscal year. Blank extracted pages remain visible and are never embedded.
 

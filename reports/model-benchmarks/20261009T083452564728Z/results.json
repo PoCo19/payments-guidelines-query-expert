@@ -1,0 +1,273 @@
+{
+  "created_at": "2026-10-09T08:34:52.566728+00:00",
+  "fingerprint": "f05b8dd8cbd45ce284526e3fd6728caecca03b0b53d857ecc6defa8c001ef77b",
+  "request_sha256": "2cfe19247cb2a1ac805be7939af9c31b2d0dc657937965997c7c71ff1ba34749",
+  "installed_model_digests": {
+    "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "qwen3-embedding:0.6b": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+  },
+  "config": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about NPCI circulars, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "data\\all-products-v1",
+    "multi_product": true,
+    "embedding_cache": "data/embedding_cache.sqlite3"
+  },
+  "settings": {
+    "models": [
+      "qwen3.5:9b"
+    ],
+    "query": "What is UPI Circle and who are its primary and secondary users?",
+    "context": 8192,
+    "output_tokens": 1024,
+    "repeats": 2
+  },
+  "scope": "One frozen app prompt. Generation only; excludes retrieval and claim checking. First run may include loading. Not an accuracy benchmark.",
+  "runs": [
+    {
+      "model": "qwen3.5:9b",
+      "repeat": 1,
+      "wall_seconds": 18.839,
+      "time_to_first_output_seconds": 10.79,
+      "load_seconds": 8.8016428,
+      "prompt_tokens": 4940,
+      "output_tokens": 464,
+      "output_tokens_per_second": 57.70935405198643,
+      "done_reason": "stop",
+      "structure_and_citation_ids_valid": true,
+      "response": "{\n  \"abstain\": false,\n  \"claims\": [\n    {\n      \"text\": \"UPI Circle is a feature introduced by NPCI that allows UPI users to delegate payments to trusted secondary users for performing transactions within security protocols and limits.\",\n      \"sources\": [\"S9\"]\n    },\n    {\n      \"text\": \"Under the UPI Circle framework, a primary user can authorize a trusted secondary user to initiate and complete UPI transactions as per defined spend limits under Full Delegation or authorize initiation of payment requests under Partial Delegation.\",\n      \"sources\": [\"S1\", \"S6\", \"S9\"]\n    },\n    {\n      \"text\": \"Primary users are the individuals who act as the main account holders and authorize secondary users for payments.\",\n      \"sources\": [\"S1\", \"S2\", \"S3\", \"S6\", \"S9\"]\n    },\n    {\n      \"text\": \"Secondary users include family members such as children, parents, spouses, siblings, other family members, or domestic and small business employees.\",\n      \"sources\": [\"S2\"]\n    },\n    {\n      \"text\": \"Secondary users can also be IoT devices and software profiles like smart glasses, watches, TVs, and AI profiles under the Full Delegation framework.\",\n      \"sources\": [\"S7\"]\n    },\n    {\n      \"text\": \"A primary user can delegate to up to 5 secondary users, and a secondary user can accept delegation from only one primary user.\",\n      \"sources\": [\"S3\"]\n    },\n    {\n      \"text\": \"Primary users must have visibility of transactions performed by secondary users on their UPI App and bank account statement.\",\n      \"sources\": [\"S4\"]\n    }\n  ],\n  \"layout\": [\n    {\n      \"type\": \"paragraph\",\n      \"claim_indices\": [1, 2, 3]\n    },\n    {\n      \"type\": \"bullets\",\n      \"claim_indices\": [4, 5, 6, 7]\n    }\n  ]\n}",
+      "parsed": {
+        "abstain": false,
+        "claims": [
+          {
+            "text": "UPI Circle is a feature introduced by NPCI that allows UPI users to delegate payments to trusted secondary users for performing transactions within security protocols and limits.",
+            "sources": [
+              "S9"
+            ]
+          },
+          {
+            "text": "Under the UPI Circle framework, a primary user can authorize a trusted secondary user to initiate and complete UPI transactions as per defined spend limits under Full Delegation or authorize initiation of payment requests under Partial Delegation.",
+            "sources": [
+              "S1",
+              "S6",
+              "S9"
+            ]
+          },
+          {
+            "text": "Primary users are the individuals who act as the main account holders and authorize secondary users for payments.",
+            "sources": [
+              "S1",
+              "S2",
+              "S3",
+              "S6",
+              "S9"
+            ]
+          },
+          {
+            "text": "Secondary users include family members such as children, parents, spouses, siblings, other family members, or domestic and small business employees.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "text": "Secondary users can also be IoT devices and software profiles like smart glasses, watches, TVs, and AI profiles under the Full Delegation framework.",
+            "sources": [
+              "S7"
+            ]
+          },
+          {
+            "text": "A primary user can delegate to up to 5 secondary users, and a secondary user can accept delegation from only one primary user.",
+            "sources": [
+              "S3"
+            ]
+          },
+          {
+            "text": "Primary users must have visibility of transactions performed by secondary users on their UPI App and bank account statement.",
+            "sources": [
+              "S4"
+            ]
+          }
+        ],
+        "layout": [
+          {
+            "type": "paragraph",
+            "claim_indices": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "type": "bullets",
+            "claim_indices": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "ollama_timings": {
+        "total_duration": 18805514500,
+        "load_duration": 8801642800,
+        "prompt_eval_duration": 1925828000,
+        "eval_duration": 8040291000
+      },
+      "residency_after": {
+        "models": [
+          {
+            "name": "qwen3.5:9b",
+            "model": "qwen3.5:9b",
+            "size": 5729167604,
+            "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "qwen35",
+              "families": [
+                "qwen35"
+              ],
+              "parameter_size": "9.7B",
+              "quantization_level": "Q4_K_M"
+            },
+            "expires_at": "2026-10-09T14:10:11.404424+05:30",
+            "size_vram": 5729167604,
+            "context_length": 8192
+          }
+        ]
+      },
+      "digest_unchanged": true
+    },
+    {
+      "model": "qwen3.5:9b",
+      "repeat": 2,
+      "wall_seconds": 8.455,
+      "time_to_first_output_seconds": 0.186,
+      "load_seconds": 0.0033457,
+      "prompt_tokens": 4940,
+      "output_tokens": 464,
+      "output_tokens_per_second": 56.16794214701959,
+      "done_reason": "stop",
+      "structure_and_citation_ids_valid": true,
+      "response": "{\n  \"abstain\": false,\n  \"claims\": [\n    {\n      \"text\": \"UPI Circle is a feature introduced by NPCI that allows UPI users to delegate payments to trusted secondary users for performing transactions within security protocols and limits.\",\n      \"sources\": [\"S9\"]\n    },\n    {\n      \"text\": \"Under the UPI Circle framework, a primary user can authorize a trusted secondary user to initiate and complete UPI transactions as per defined spend limits under Full Delegation or authorize initiation of payment requests under Partial Delegation.\",\n      \"sources\": [\"S1\", \"S6\", \"S9\"]\n    },\n    {\n      \"text\": \"Primary users are the individuals who act as the main account holders and authorize secondary users for payments.\",\n      \"sources\": [\"S1\", \"S2\", \"S3\", \"S6\", \"S9\"]\n    },\n    {\n      \"text\": \"Secondary users include family members such as children, parents, spouses, siblings, other family members, or domestic and small business employees.\",\n      \"sources\": [\"S2\"]\n    },\n    {\n      \"text\": \"Secondary users can also be IoT devices and software profiles like smart glasses, watches, TVs, and AI profiles under the Full Delegation framework.\",\n      \"sources\": [\"S7\"]\n    },\n    {\n      \"text\": \"A primary user can delegate to up to 5 secondary users, and a secondary user can accept delegation from only one primary user.\",\n      \"sources\": [\"S3\"]\n    },\n    {\n      \"text\": \"Primary users must have visibility of transactions performed by secondary users on their UPI App and bank account statement.\",\n      \"sources\": [\"S4\"]\n    }\n  ],\n  \"layout\": [\n    {\n      \"type\": \"paragraph\",\n      \"claim_indices\": [1, 2, 3]\n    },\n    {\n      \"type\": \"bullets\",\n      \"claim_indices\": [4, 5, 6, 7]\n    }\n  ]\n}",
+      "parsed": {
+        "abstain": false,
+        "claims": [
+          {
+            "text": "UPI Circle is a feature introduced by NPCI that allows UPI users to delegate payments to trusted secondary users for performing transactions within security protocols and limits.",
+            "sources": [
+              "S9"
+            ]
+          },
+          {
+            "text": "Under the UPI Circle framework, a primary user can authorize a trusted secondary user to initiate and complete UPI transactions as per defined spend limits under Full Delegation or authorize initiation of payment requests under Partial Delegation.",
+            "sources": [
+              "S1",
+              "S6",
+              "S9"
+            ]
+          },
+          {
+            "text": "Primary users are the individuals who act as the main account holders and authorize secondary users for payments.",
+            "sources": [
+              "S1",
+              "S2",
+              "S3",
+              "S6",
+              "S9"
+            ]
+          },
+          {
+            "text": "Secondary users include family members such as children, parents, spouses, siblings, other family members, or domestic and small business employees.",
+            "sources": [
+              "S2"
+            ]
+          },
+          {
+            "text": "Secondary users can also be IoT devices and software profiles like smart glasses, watches, TVs, and AI profiles under the Full Delegation framework.",
+            "sources": [
+              "S7"
+            ]
+          },
+          {
+            "text": "A primary user can delegate to up to 5 secondary users, and a secondary user can accept delegation from only one primary user.",
+            "sources": [
+              "S3"
+            ]
+          },
+          {
+            "text": "Primary users must have visibility of transactions performed by secondary users on their UPI App and bank account statement.",
+            "sources": [
+              "S4"
+            ]
+          }
+        ],
+        "layout": [
+          {
+            "type": "paragraph",
+            "claim_indices": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "type": "bullets",
+            "claim_indices": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "ollama_timings": {
+        "total_duration": 8420134100,
+        "load_duration": 3345700,
+        "prompt_eval_duration": 138669000,
+        "eval_duration": 8260940000
+      },
+      "residency_after": {
+        "models": [
+          {
+            "name": "qwen3.5:9b",
+            "model": "qwen3.5:9b",
+            "size": 5729167604,
+            "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "qwen35",
+              "families": [
+                "qwen35"
+              ],
+              "parameter_size": "9.7B",
+              "quantization_level": "Q4_K_M"
+            },
+            "expires_at": "2026-10-09T14:10:19.9145594+05:30",
+            "size_vram": 5729167604,
+            "context_length": 8192
+          }
+        ]
+      },
+      "digest_unchanged": true
+    }
+  ]
+}

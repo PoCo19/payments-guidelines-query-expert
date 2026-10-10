@@ -1,0 +1,1550 @@
+{
+  "query": "For e-mandates that automatically replenish FASTag or NCMC balances, is pre-transaction notification required? Answer briefly with the exception and cite the source.",
+  "config": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about payment guidelines, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-rbi-core-20261009",
+    "multi_product": true,
+    "embedding_cache": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\embedding_cache.sqlite3"
+  },
+  "config_sha256": "8c613c35ab7db226b236e622d5762ce6a69dd008e6eabedd086f72db959be54b",
+  "corpus_fingerprint": "12baf1b5415006535c91ef99d2604ac6cb949eeb90acc9253998f1d62d8e1682",
+  "code_hashes": {
+    "app.py": "a510f5788e5ab09849bd8f885ff639eb9342ee1ddc372430569c9fbbba75a4ee",
+    "request_runtime.py": "34c46820477082bbcfe81671d539cfd8b75c9001c6cf56243c6dd52080627b81",
+    "claim_check.py": "b7ccf01f48fe15e40dd5da5569e5efd74d3cc019e6a526f6bf342588e2823e64",
+    "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26"
+  },
+  "limitation": "One developer observation; not a controlled performance or answer-quality benchmark.",
+  "response": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag and National Common Mobility Card (NCMC).",
+            "sources": [
+              "S3"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "The exception applies specifically to NETC FASTag and RuPay NCMC auto-replenishment where the balance falls below a threshold set by the customer.",
+            "sources": [
+              "S1",
+              "S2",
+              "S8"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The claim is directly supported by the cited excerpt which explicitly states that pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag and National Common Mobility Card (NCMC)."
+        ],
+        "quotes": [
+          {
+            "citation": "S3",
+            "quote": "(d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC)."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The claim is fully supported by the provided excerpts which explicitly link the auto-replenishment of NETC FASTag and RuPay NCMC to the condition where 'the balance falls below a threshold set by the customer' and confirm this applies under the e-mandate framework."
+        ],
+        "quotes": [
+          {
+            "citation": "S2",
+            "quote": "a) To include auto-replenishment of NETC FASTag and RuPay NCMC, as and when the balance falls below a threshold set by the customer, under the e- mandate framework."
+          },
+          {
+            "citation": "S8",
+            "quote": "b) Exemption from 24-Hours prior Pre-Debit Notification (PDN) for auto- replenishment of NETC FASTag and RuPay NCMC."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "2024-OC-207:p1:v3c6",
+        "2024-OC-207:p1:v3c4",
+        "rbi:e-mandates:2026-04-21:p1:v3c8",
+        "2024-OC-207:p1:v3c2",
+        "npci-source-219d08978b99b248937e1d02:p2:v3c3",
+        "npci-source-82d3d77ff7e47062a2325650:p4:v3c1"
+      ],
+      "included_chunk_ids": [
+        "2024-OC-207:p1:v3c6",
+        "2024-OC-207:p1:v3c4",
+        "rbi:e-mandates:2026-04-21:p1:v3c8",
+        "2024-OC-207:p1:v3c2",
+        "npci-source-219d08978b99b248937e1d02:p2:v3c3",
+        "npci-source-82d3d77ff7e47062a2325650:p4:v3c1",
+        "2024-OC-207:p2:v3c1",
+        "2024-OC-207:p1:v3c5",
+        "2024-OC-207:p1:v3c3",
+        "rbi:e-mandates:2026-04-21:p1:v3c7",
+        "2024-OC-207:p1:v3c1",
+        "npci-source-219d08978b99b248937e1d02:p2:v3c2",
+        "npci-source-c77af2bf3f2cc45e30f79ed4:p22:v3c2",
+        "npci-source-82d3d77ff7e47062a2325650:p3:v3c3",
+        "npci-source-82d3d77ff7e47062a2325650:p4:v3c2"
+      ],
+      "evidence_characters": 16366,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Official RBI HTML converted to Markdown. One logical page; physical PDF pagination is unavailable. The linked PDF did not return a PDF during acquisition.",
+        "The official HTML body, including its embedded annex/repeal tables and footnotes, is retained. Separate linked documents and downloadable forms are not included; follow their original source links.",
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+        "npci-source-c77af2bf3f2cc45e30f79ed4: some source pages have no extracted text. The answer may omit requirements.",
+        "Research entity was not specified. Source-specific applicability must remain explicit in the answer."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 64,
+        "elapsed_ms": 1271
+      },
+      "research_policy": "publisher_neutral_v1",
+      "followup_query": null,
+      "query_plan": {
+        "query": "For e-mandates that automatically replenish FASTag or NCMC balances, is pre-transaction notification required? Answer briefly with the exception and cite the source.",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "requirements",
+          "exceptions"
+        ],
+        "product_filter": null,
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "answer",
+          "automatically",
+          "balances",
+          "briefly",
+          "cite",
+          "e-mandates",
+          "exception",
+          "fastag",
+          "ncmc",
+          "notification",
+          "pre-transaction",
+          "replenish",
+          "required",
+          "source",
+          "that"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability"
+          ],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S2",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S3",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "source_group": "rbi",
+          "document_type": "Framework / Directions",
+          "page": 1,
+          "section": "6. Pre-transaction Notification",
+          "aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ],
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "issue_date": "2026-04-21",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "intake_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S4",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S5",
+          "document_id": "npci-source-219d08978b99b248937e1d02",
+          "title": "RuPay I OC015 I FY 22-23 I Circular - RuPay AutoPay AFA Limit enhancement and compliance",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "exceptions"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S6",
+          "document_id": "npci-source-82d3d77ff7e47062a2325650",
+          "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 4,
+          "section": "Annex",
+          "aspects": [
+            "requirements",
+            "exceptions",
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S7",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "exceptions"
+          ],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S8",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "exceptions"
+          ],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S9",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S10",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "source_group": "rbi",
+          "document_type": "Framework / Directions",
+          "page": 1,
+          "section": "5. Processing of first transaction and subsequent recurring transactions",
+          "aspects": [
+            "requirements",
+            "exceptions",
+            "limits"
+          ],
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "issue_date": "2026-04-21",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "intake_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S11",
+          "document_id": "2024-OC-207",
+          "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "definitions"
+          ],
+          "applicability": {},
+          "issue_date": "2024-09-23",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S12",
+          "document_id": "npci-source-219d08978b99b248937e1d02",
+          "title": "RuPay I OC015 I FY 22-23 I Circular - RuPay AutoPay AFA Limit enhancement and compliance",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S13",
+          "document_id": "npci-source-c77af2bf3f2cc45e30f79ed4",
+          "title": "List of Live RuPay Contactless L3 Certified PoS Terminals",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 22,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "same_feature"
+        },
+        {
+          "citation": "S14",
+          "document_id": "npci-source-82d3d77ff7e47062a2325650",
+          "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 3,
+          "section": "Annex",
+          "aspects": [
+            "requirements",
+            "exceptions",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "adjacent_context"
+        },
+        {
+          "citation": "S15",
+          "document_id": "npci-source-82d3d77ff7e47062a2325650",
+          "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 4,
+          "section": "Annex",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "exceptions",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "adjacent_context"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "requirements",
+          "label": "Requirements",
+          "citations": [
+            "S1",
+            "S3",
+            "S5",
+            "S6",
+            "S7",
+            "S10",
+            "S12",
+            "S13",
+            "S14",
+            "S15"
+          ],
+          "status": "passages_found"
+        },
+        {
+          "aspect": "exceptions",
+          "label": "Exceptions and conditions",
+          "citations": [
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S10",
+            "S14",
+            "S15"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+    },
+    "sources": [
+      {
+        "id": "2024-OC-207:p1:v3c6",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "3. All other instructions provided under the e-mandate framework shall continue to remain applicable In line with the above communications, the auto-replenishment of NETC FASTag (MCC 4784) and RuPay NCMC (MCC 7412) is permitted without 24-hrs Pre-Debited Notification under JOO1A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. T: +91 22 40009100 F: +91 22 40009101 www.npci.org.in CIN: U74990MH2008NPL189067 contact@npci.org.in",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 178,
+        "end_word": 244,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c5",
+        "next_chunk_id": "2024-OC-207:p2:v3c1",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03126,
+        "citation": "S1",
+        "rerank_score": 3.87331,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p1:v3c4",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "a) To include auto-replenishment of NETC FASTag and RuPay NCMC, as and when the balance falls below a threshold set by the customer, under the e- mandate framework.",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 117,
+        "end_word": 145,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "a)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c3",
+        "next_chunk_id": "2024-OC-207:p1:v3c5",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03128,
+        "citation": "S2",
+        "rerank_score": 2.97563,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "limits"
+        ]
+      },
+      {
+        "id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "text": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC).",
+        "title": "Digital Payments – E-mandate Framework, 2026",
+        "circular_number": "RBI/DPSS/2026-27/396",
+        "series": "E-mandates",
+        "issue_date": "2026-04-21",
+        "listed_update_date": null,
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "method": "markdown_logical_page",
+        "review_status": "intake_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "E-mandates",
+          "UPI",
+          "PPI",
+          "Cards"
+        ],
+        "reference_label": "RBI/DPSS/2026-27/396",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "page_basis": "logical_markdown"
+        },
+        "metadata_quality": "operator_supplied_not_independently_verified",
+        "issuer": "RBI",
+        "document_type": "Framework / Directions",
+        "source_archive_retrieved_on": "2026-10-09",
+        "revision_of": null,
+        "start_word": 476,
+        "end_word": 598,
+        "section_id": "rbi:e-mandates:2026-04-21:s8",
+        "section_heading": "6. Pre-transaction Notification",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+        "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03279,
+        "citation": "S3",
+        "rerank_score": 2.70349,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "rbi",
+        "applicability": {
+          "entities": [
+            "payment system providers",
+            "payment system participants"
+          ],
+          "page": 1,
+          "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+          "basis": "operator_labels_with_source_quote_not_independently_verified"
+        },
+        "evidence_aspects": [
+          "requirements",
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p1:v3c2",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "1. Reserve Bank of India (RBI) has announced to facilitate e-mandate framework for auto-replenishment of balances in NETC FASTag and RuPay National Common Mobility Card (NCMC) in “Statement on Developmental and Regulatory Policies” dated 07\" June 2024.",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 75,
+        "end_word": 112,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c1",
+        "next_chunk_id": "2024-OC-207:p1:v3c3",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03125,
+        "citation": "S4",
+        "rerank_score": 2.73291,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-219d08978b99b248937e1d02:p2:v3c3",
+        "document_id": "npci-source-219d08978b99b248937e1d02",
+        "page": 2,
+        "text": "5) The issuer shall provide the cardholder an online facility to withdraw any e-mandate at any point of time following which no further recurring transactions shall be allowed for the withdrawn e-mandate. (Note: The exception to this will be a pipeline transaction for which pre-transaction notification has already been sent to the cardholder, but the debit has not been communicated to or received by the cardholder, and the e-mandate withdrawal happens during the interregnum) Members are hereby requested to take note of the above and ensure the necessary compliance. Yours faithfully, SD/- Kunal Kalawatia Chief of Products NPCI",
+        "title": "RuPay I OC015 I FY 22-23 I Circular - RuPay AutoPay AFA Limit enhancement and compliance",
+        "circular_number": "015I",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Ru_Pay_I_OC_015_I_FY_22_23_I_Circular_Ru_Pay_Auto_Pay_AFA_Limit_enhancement_and_compliance_97292e071b.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference 015I",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 46,
+        "end_word": 144,
+        "section_id": "npci-source-219d08978b99b248937e1d02:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-219d08978b99b248937e1d02:p2:v3c2",
+        "next_chunk_id": "npci-source-219d08978b99b248937e1d02:p3:v3c1",
+        "feature_ids": [
+          "autopay",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02535,
+        "citation": "S5",
+        "rerank_score": 0.52292,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "exceptions"
+        ]
+      },
+      {
+        "id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c1",
+        "document_id": "npci-source-82d3d77ff7e47062a2325650",
+        "page": 4,
+        "text": "4 for changing this mode of receiving pre-transaction notification, shall also be provided to the cardholder. 9. The pre-transaction notification shall, at the minimum, inform the cardholder about the name of the merchant, transaction amount, date / time of debit, reference number of transaction/ e-mandate, reason for debit, i.e., e-mandate registered by the cardholder. 10. On receipt of the pre-transaction notification, the cardholder shall have the facility to opt- out of that particular transaction or the e-mandate. Any such opt-out shall entail AFA validation by the issuer. On receipt of intimation of such an opt-out, the issuer shall ensure that the particular transaction is not effected / further recurring transactions are not effected (as the case may be). A confirmation intimation to this effect shall be sent to the cardholder. Post-transaction notification 11. In line with the extant instructions, the issuer shall send post-transaction alert / notification to the cardholder. This notification shall, at the minimum, inform the cardholder about the name of the merchant, transaction amount, date / time of debit, reference number of transaction / e- mandate, reason for debit, i.e., e-mandate registered by the cardholder. Transaction limit and velocity check 12. The cap / limit for e-mandate based recurring transactions without AFA will be ` 2,000/- per transaction. Transactions above this cap shall be subject to AFA",
+        "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+        "circular_number": "",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Annexure_A_RBI_circular_Processing_of_emandates_on_cards_for_recurring_transactions_dated_21st_Aug_2019_43211e1a1a.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference not verified",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 5,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "npci-source-82d3d77ff7e47062a2325650:s1",
+        "section_heading": "Annex",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p3:v3c3",
+        "next_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c2",
+        "feature_ids": [
+          "autopay",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03009,
+        "citation": "S6",
+        "rerank_score": 0.86917,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "exceptions",
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p2:v3c1",
+        "document_id": "2024-OC-207",
+        "page": 2,
+        "text": "ardier wesfer aprart frre NATIONAL PAYMENTS CORPORATION OF INDIA UPI Autopay framework. Ail UP] Members shall remove the PDN validation for any UPI Autopay execution only for the mentioned MCCs. NETC FASTag and RuPay NCMC Issuer Banks to ensure that the auto-replenishment done under exception of Pre-Debit Notification as per the said guidelines shall be used only for the intended purposes of NETC FASTag and RuPay NCMC only. All UPI remitter banks, Payer PSP Banks, and concerned ecosystem stakeholders shall implement the same with immediate effect. This directive must be communicated to all relevant stakeholders for appropriate actions. Thanking You, SD/- Kunal Kalawatia Chief of Producis",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 90,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 106,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c6",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payer_psp",
+          "remitter_bank",
+          "issuer_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S7",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-207",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "exceptions"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p1:v3c5",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "b) Exemption from 24-Hours prior Pre-Debit Notification (PDN) for auto- replenishment of NETC FASTag and RuPay NCMC. in the Circular RBI/2024-25/64 CO.DPSS.POLC.No.S528/02-14-003/2024-25 issued by Reserve Bank of India (RBI), dated 22\" August 2024",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 145,
+        "end_word": 178,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "b)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c4",
+        "next_chunk_id": "2024-OC-207:p1:v3c6",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S8",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-207",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "exceptions"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p1:v3c3",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "2. Further, it was directed:",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 112,
+        "end_word": 117,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-207:p1:v3c2",
+        "next_chunk_id": "2024-OC-207:p1:v3c4",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S9",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-207",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "text": "## 5. Processing of first transaction and subsequent recurring transactions (a) The first transaction under an e-mandate shall require AFA validation. If the first transaction is processed along with registration of the e-mandate, then AFA validation may be combined. (b) Payments under e-mandates shall not be subject to any other limits / controls set by the customer.",
+        "title": "Digital Payments – E-mandate Framework, 2026",
+        "circular_number": "RBI/DPSS/2026-27/396",
+        "series": "E-mandates",
+        "issue_date": "2026-04-21",
+        "listed_update_date": null,
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "method": "markdown_logical_page",
+        "review_status": "intake_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "E-mandates",
+          "UPI",
+          "PPI",
+          "Cards"
+        ],
+        "reference_label": "RBI/DPSS/2026-27/396",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "page_basis": "logical_markdown"
+        },
+        "metadata_quality": "operator_supplied_not_independently_verified",
+        "issuer": "RBI",
+        "document_type": "Framework / Directions",
+        "source_archive_retrieved_on": "2026-10-09",
+        "revision_of": null,
+        "start_word": 419,
+        "end_word": 476,
+        "section_id": "rbi:e-mandates:2026-04-21:s7",
+        "section_heading": "5. Processing of first transaction and subsequent recurring transactions",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c6",
+        "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S10",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "rbi:e-mandates:2026-04-21",
+        "relation": null,
+        "source_group": "rbi",
+        "applicability": {
+          "entities": [
+            "payment system providers",
+            "payment system participants"
+          ],
+          "page": 1,
+          "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+          "basis": "operator_labels_with_source_quote_not_independently_verified"
+        },
+        "evidence_aspects": [
+          "requirements",
+          "exceptions",
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-207:p1:v3c1",
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "text": "NPCIUPVOC-207/2024-25 23\" September 2024 To, Members - Unified Payments Interface (UPI) Members — NETC FASTag Members — RuPay Auto-replenishment of NETC FASTag and RuPay NCMC with UPI Autopay Dear Madam / Sir, UPI Autopay covers recurring needs such as recurring bill payments, OTT subscriptions, loan EMI payments, and other scenarios where periodicity of payment is well-defined. To further enhance customer experience in various use cases which are recurring in nature but without any fixed periodicity,",
+        "title": "Auto- replenishment of NETC FASTag and RuPay NCMC with UPI AutoPay",
+        "circular_number": "207",
+        "series": "UPI",
+        "issue_date": "2024-09-23",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 207",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 75,
+        "section_id": "2024-OC-207:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2024-OC-207:p1:v3c2",
+        "feature_ids": [
+          "autopay",
+          "netc_ncmc"
+        ],
+        "family": "207",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S11",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-207",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "definitions"
+        ]
+      },
+      {
+        "id": "npci-source-219d08978b99b248937e1d02:p2:v3c2",
+        "document_id": "npci-source-219d08978b99b248937e1d02",
+        "page": 2,
+        "text": "4) For every RuPay AutoPay mandate registration, pre debit notification, execution, modification and revoke transactions, Issuer bank shall send standard SMS/Notification to the card holder. Format for the same is listed in Annexure C.",
+        "title": "RuPay I OC015 I FY 22-23 I Circular - RuPay AutoPay AFA Limit enhancement and compliance",
+        "circular_number": "015I",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Ru_Pay_I_OC_015_I_FY_22_23_I_Circular_Ru_Pay_Auto_Pay_AFA_Limit_enhancement_and_compliance_97292e071b.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference 015I",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 12,
+        "end_word": 46,
+        "section_id": "npci-source-219d08978b99b248937e1d02:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-219d08978b99b248937e1d02:p2:v3c1",
+        "next_chunk_id": "npci-source-219d08978b99b248937e1d02:p2:v3c3",
+        "feature_ids": [
+          "autopay",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "issuer_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S12",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-219d08978b99b248937e1d02",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-c77af2bf3f2cc45e30f79ed4:p22:v3c2",
+        "document_id": "npci-source-c77af2bf3f2cc45e30f79ed4",
+        "page": 22,
+        "text": "S. No. Steps Description Reference 1. Familiarization with NCMC  Understand the key aspects of NCMC implementation including:- o Product overview o Key features of the product o Pre-requisites for NCMC implementation  Reference document – ‘Concept Document for Implementation of One Nation One Card’ 2. Gap Analysis  Operators need to evaluate their existing fare collection/ payments system for the gap analysis purpose. This will help them:- o To understand the readiness of the existing system for implementation of NCMC based fare collection system o To identify upgrade areas and related activities  Analysis of their existing AFCS/ITMS, backend, ETIM devices etc. 3. NCMC Implementation model  Finalize the NCMC implementation model based on business requirements covering following key points:- o Provision of instant issuance, if required o Multi-banks acceptance wherein customers may use the NCMC card issued by any certified Bank o Single/Multiple Acquirer Bank based on the requirement. To start with, Operator may go ahead with a single Acquirer Bank and may extend it further based on transaction volume or requirements  Reference document – ‘Concept Document for Implementation of One Nation One Card’ 4. Define Roles & Responsibilities  Define the roles and responsibilities of key stakeholders based on finalized NCMC implementation model:- o System Integrator/AFC System Provider o Acquirer Bank o Issuer Bank for instant",
+        "title": "List of Live RuPay Contactless L3 Certified PoS Terminals",
+        "circular_number": "",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Concept_Note_Implementation_of_Ru_Pay_q_SPARC_based_NCMC_v2_1_41740f69ca.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference not verified",
+        "fiscal_year": "2020-21",
+        "source_coverage": {
+          "total_pages": 43,
+          "empty_pages": [
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "thin_pages": [
+            37,
+            39,
+            40,
+            41,
+            42,
+            43
+          ],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 37,
+        "end_word": 257,
+        "section_id": "npci-source-c77af2bf3f2cc45e30f79ed4:s0",
+        "section_heading": "Document opening",
+        "clause_label": "S.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-c77af2bf3f2cc45e30f79ed4:p22:v3c1",
+        "next_chunk_id": "npci-source-c77af2bf3f2cc45e30f79ed4:p22:v3c3",
+        "feature_ids": [
+          "netc_ncmc",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "issuer_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S13",
+        "retrieval_reason": "same_feature",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "changes"
+        ]
+      },
+      {
+        "id": "npci-source-82d3d77ff7e47062a2325650:p3:v3c3",
+        "document_id": "npci-source-82d3d77ff7e47062a2325650",
+        "page": 3,
+        "text": "value of the recurring transaction; in the case of the latter, the cardholder shall clearly specify the maximum value of recurring transactions, subject to the overall cap fixed by the RBI (currently ` 2,000/- per transaction). 5. Any modification in existing e-mandate shall entail AFA validation by the issuer. Processing of first transaction and subsequent recurring transactions 6. While processing the first transaction in e-mandate based recurring transaction series, AFA validation shall be performed. If the first transaction is being performed along with the registration of e-mandate, then AFA validation may be combined. All such AFA validation shall be as per extant instructions of the RBI. 7. Subsequent recurring transactions shall be performed only for those cards which have been successfully registered and for which the first transaction was successfully authenticated and authorised. These subsequent transactions may be performed without AFA. Pre-transaction notification 8. As a risk mitigant and customer facilitation measure, the issuer shall send a pre- transaction notification to the cardholder, at least 24 hours prior to the actual charge / debit to the card. While registering e-mandate on the card, the cardholder shall be given facility to choose a mode among available options (SMS, email, etc.) for receiving the pre-transaction notification from the issuer in a clear, unambiguous manner and in an understandable language. The facility",
+        "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+        "circular_number": "",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Annexure_A_RBI_circular_Processing_of_emandates_on_cards_for_recurring_transactions_dated_21st_Aug_2019_43211e1a1a.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference not verified",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 5,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 186,
+        "end_word": 405,
+        "section_id": "npci-source-82d3d77ff7e47062a2325650:s1",
+        "section_heading": "Annex",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p3:v3c2",
+        "next_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c1",
+        "feature_ids": [
+          "autopay",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S14",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "npci-source-82d3d77ff7e47062a2325650",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "exceptions",
+          "limits"
+        ]
+      },
+      {
+        "id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c2",
+        "document_id": "npci-source-82d3d77ff7e47062a2325650",
+        "page": 4,
+        "text": "by the cardholder. Transaction limit and velocity check 12. The cap / limit for e-mandate based recurring transactions without AFA will be ` 2,000/- per transaction. Transactions above this cap shall be subject to AFA as hitherto. 13. The limit of ` 2,000/- per transaction is applicable for all categories of merchants who accept repetitive payments based on such e-mandates. 14. Suitable velocity checks and other risk mitigation procedures shall be put in place by issuers. Withdrawal of e-mandate 15. The issuer shall provide the cardholder an online facility to withdraw any e-mandate at any point of time following which no further recurring transactions shall be allowed for the withdrawn e-mandate. (Note: The exception to this will be a pipeline transaction for which pre-transaction notification has already been sent to the cardholder, but the debit has not been communicated to or received by the cardholder, and the e-mandate withdrawal happens during the interregnum.) Information about this facility to withdraw e-mandate at any point of time, shall be clearly communicated to the cardholder at the time of registration and later on whenever felt necessary. 16. The withdrawal of any e-mandate by the cardholder shall entail AFA validation by the issuer. 17. In respect of withdrawn e-mandate/s, the acquirers shall ensure that the merchants on- boarded by them, delete all details, including",
+        "title": "Annexure-A-RBI-circular-Processing-of-emandates-on-cards-fo",
+        "circular_number": "",
+        "series": "RuPay",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Annexure_A_RBI_circular_Processing_of_emandates_on_cards_for_recurring_transactions_dated_21st_Aug_2019_43211e1a1a.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "RuPay"
+        ],
+        "reference_label": "Reference not verified",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 5,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": false,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 185,
+        "end_word": 405,
+        "section_id": "npci-source-82d3d77ff7e47062a2325650:s1",
+        "section_heading": "Annex",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c1",
+        "next_chunk_id": "npci-source-82d3d77ff7e47062a2325650:p4:v3c3",
+        "feature_ids": [
+          "autopay",
+          "rupay_cards"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S15",
+        "retrieval_reason": "adjacent_context",
+        "via_document_id": "npci-source-82d3d77ff7e47062a2325650",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "exceptions",
+          "limits"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "text": "Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag and National Common Mobility Card (NCMC).",
+        "sources": [
+          "S3"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "The exception applies specifically to NETC FASTag and RuPay NCMC auto-replenishment where the balance falls below a threshold set by the customer.",
+        "sources": [
+          "S1",
+          "S2",
+          "S8"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Official RBI HTML converted to Markdown. One logical page; physical PDF pagination is unavailable. The linked PDF did not return a PDF during acquisition.",
+      "The official HTML body, including its embedded annex/repeal tables and footnotes, is retained. Separate linked documents and downloadable forms are not included; follow their original source links.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "npci-source-c77af2bf3f2cc45e30f79ed4: some source pages have no extracted text. The answer may omit requirements.",
+      "Research entity was not specified. Source-specific applicability must remain explicit in the answer.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+      "The additional completeness review was unavailable; this answer has not been checked for cross-document omissions."
+    ],
+    "answer": "Draft answer — check the supporting excerpts.",
+    "abstained": false,
+    "coverage_check": {
+      "status": "unavailable",
+      "findings": [],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+      "failure_reason": "ValueError: Conflict requires multiple passages",
+      "note": "Coverage review was not completed. This answer has not passed the scope and omissions check."
+    },
+    "elapsed_ms": 16016,
+    "timing": {
+      "total_seconds": 16.016,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.016
+        },
+        {
+          "stage": "embedding",
+          "seconds": 1.64
+        },
+        {
+          "stage": "generation",
+          "seconds": 3.063
+        },
+        {
+          "stage": "claim_support",
+          "seconds": 5.015
+        },
+        {
+          "stage": "coverage",
+          "seconds": 6.282
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "embedding",
+          "status": "completed",
+          "prompt_tokens": 55,
+          "output_tokens": null,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.0,
+          "decode_seconds": 0.0,
+          "done_reason": null,
+          "seconds": 0.078
+        },
+        {
+          "stage": "generation",
+          "status": "completed",
+          "prompt_tokens": 7177,
+          "output_tokens": 172,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.281,
+          "decode_seconds": 2.352,
+          "done_reason": "stop",
+          "seconds": 3.047
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "prompt_tokens": 577,
+          "output_tokens": 127,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.065,
+          "decode_seconds": 1.825,
+          "done_reason": "stop",
+          "seconds": 2.062
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "prompt_tokens": 774,
+          "output_tokens": 203,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.068,
+          "decode_seconds": 2.79,
+          "done_reason": "stop",
+          "seconds": 2.953
+        },
+        {
+          "stage": "coverage",
+          "status": "completed",
+          "prompt_tokens": 4816,
+          "output_tokens": 451,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.073,
+          "decode_seconds": 6.038,
+          "done_reason": "stop",
+          "seconds": 6.266
+        }
+      ]
+    }
+  }
+}

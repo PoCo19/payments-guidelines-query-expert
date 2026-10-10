@@ -15,10 +15,20 @@
 *.jpg binary
 # Preserve byte-for-byte hashes of source packs and frozen evaluation records.
 /data/** -text
-/evaluation/*.json -text
+/evaluation/*.json -text whitespace=cr-at-eol
 /evaluation/*.sha256 -text
 /output/midsem/evidence/** -text
 /evaluation/ragas_runs/** -text whitespace=cr-at-eol
 # Keep exact scoring-code bytes so saved hashes/resume checks survive cloning.
 /evaluation/ragas_runner.py -text whitespace=cr-at-eol
 /evaluation/ollama_judge.py -text whitespace=cr-at-eol
+
+# Preserve frozen handoff checksums and original experiment bytes.
+*.zip binary
+/handoff/** -text whitespace=cr-at-eol
+/config.handoff.json -text
+/requirements-lock.txt -text
+/evaluation/requirements-ragas-lock.txt -text
+/models/reranker/manifest.json -text
+/evaluation/payments_runs/** -text whitespace=cr-at-eol
+/reports/** -text whitespace=cr-at-eol

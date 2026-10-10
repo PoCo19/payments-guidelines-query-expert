@@ -11,4 +11,4 @@ if errorlevel 1 exit /b 1
 if errorlevel 1 exit /b 1
 ".venv\Scripts\python.exe" -X utf8 download_reranker.py
 if errorlevel 1 exit /b 1
-echo Setup complete. Open Ollama, run run.cmd embed, then run run.cmd.
+echo Setup complete. See docs\COLLEAGUE_HANDOFF.md for source restoration, model checks and startup.
