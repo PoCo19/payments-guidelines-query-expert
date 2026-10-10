@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
@@ -50,6 +51,15 @@ class HandoffTests(unittest.TestCase):
             (package/'manifest.json').write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError, 'member checksum'):
                 verify_package(package)
+
+    @unittest.skipUnless(os.name == 'nt', 'Windows path limit guard')
+    def test_long_destination_rejected_before_writing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp); package = self.package(root)
+            dest = root / ('x' * 200) / 'restored'
+            with self.assertRaisesRegex(ValueError, 'shorter folder'):
+                restore(dest, package)
+            self.assertFalse(dest.parent.exists())
 
 
 if __name__ == '__main__': unittest.main()

@@ -51,14 +51,23 @@ def verify_package(package=PACKAGE):
 
 
 def verify_files(destination, manifest):
+    check_destination(destination, manifest)
     for name, expected in manifest['files'].items():
         path = destination / safe_name(name)
         if not path.is_file() or path.is_symlink() or sha(path.read_bytes()) != expected['sha256']:
             raise ValueError('Restored source missing or changed: ' + name)
 
 
+def check_destination(destination, manifest):
+    # A staged extraction can succeed and become unreadable after the final
+    # rename on Windows installations with legacy MAX_PATH enabled.
+    if os.name == 'nt' and any(len(str((destination / safe_name(name)).absolute())) >= 260 for name in manifest['files']):
+        raise ValueError('Checkout path is too long for portable Windows restoration. Clone into a shorter folder (for example C:\\work\\payments), then run handoff.cmd restore again. No system setting change is needed.')
+
+
 def restore(destination, package=PACKAGE):
     manifest = verify_package(package)
+    check_destination(destination, manifest)
     if destination.exists():
         verify_files(destination, manifest)
         return manifest  # Idempotent; never overwrite local source edits.

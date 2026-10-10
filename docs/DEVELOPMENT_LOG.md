@@ -2,7 +2,7 @@
 
 ## 10 October 2026 - colleague handoff
 
-Frozen NPCI + eight-RBI source archive, file hashes, portable configuration, model digest checks and evaluation records are packaged for the `handoff-2026-10-10` Git tag. See [the handoff guide](COLLEAGUE_HANDOFF.md). Independent source/answer review remains pending.
+Frozen NPCI + eight-RBI source archive, file hashes, portable configuration, model digest checks and evaluation records are packaged for the `handoff-2026-10-10.1` Git tag. See [the handoff guide](COLLEAGUE_HANDOFF.md). Independent source/answer review remains pending.
 
 Implemented request-local model budgets and stage/token timings, asynchronous browser jobs, keyword fallback on model failure, explicit partial-draft notices and coverage-review failure diagnostics. Added Add documents with source metadata, extraction preview, duplicate/quarantine handling, validated index build, activation and guarded rollback. Browser testing used an isolated synthetic corpus; the actual NPCI–RBI release was unchanged.
 

@@ -1,7 +1,9 @@
 # Reproduce the 10 October 2026 handoff
 
 Repository: https://github.com/PoCo19/payments-guidelines-query-expert
-Frozen version: **handoff-2026-10-10**. Use this tag when comparing results; `main` can move.
+Frozen version: **handoff-2026-10-10.1**. Use this tag when comparing results; `main` can move.
+
+This patch tag adds a Windows path-length preflight check to the original `handoff-2026-10-10` release; the source archive and frozen datasets are unchanged.
 
 ## What is included
 
@@ -13,11 +15,13 @@ The archive omits generated databases, embeddings, model weights, personal confi
 
 ## Fresh installation on Windows
 
-Install Git, **Python 3.12** (with `python` on PATH) and Ollama. Start Ollama. Run these commands in PowerShell, one line at a time:
+Install Git, **Python 3.12** (with `python` on PATH) and Ollama. Start Ollama. Choose a short checkout folder, such as `C:\work\payments`; long circular filenames can exceed Windows path limits in deeply nested folders. The restore command checks this before writing.
+
+Run these commands in PowerShell, one line at a time (substitute another short writable folder if needed):
 
 ```powershell
-git clone --branch handoff-2026-10-10 https://github.com/PoCo19/payments-guidelines-query-expert.git
-cd payments-guidelines-query-expert
+git clone --branch handoff-2026-10-10.1 https://github.com/PoCo19/payments-guidelines-query-expert.git C:\work\payments
+cd C:\work\payments
 python --version
 .\handoff.cmd restore
 .\setup.cmd

@@ -6,7 +6,7 @@ Evidence-grounded research for payments teams. Search payment circulars, ask que
 
 ## Reproducible colleague handoff
 
-Use the **handoff-2026-10-10** Git tag and [step-by-step handoff guide](docs/COLLEAGUE_HANDOFF.md). The source archive includes the NPCI corpus and eight RBI direction snapshots, with hash-checked restoration, portable configuration and saved evaluation records.
+Use the **handoff-2026-10-10.1** Git tag and [step-by-step handoff guide](docs/COLLEAGUE_HANDOFF.md). The source archive includes the NPCI corpus and eight RBI direction snapshots, with hash-checked restoration, portable configuration and saved evaluation records.
 
 ## Mid-sem submission
 

@@ -12,7 +12,9 @@ This record covers the source/configuration handoff and the current implementati
 | JavaScript regression suites | Both answer formatting and research coverage rendering suites passed. |
 | HTTP smoke | Homepage, stats, RBI PPI source reader and BM25 evidence answer all returned HTTP 200 from the clean-copy server. The answer returned 15 source passages. This checks operation, not answer correctness. [Raw record](validation/http.json). |
 | Models | Installed Qwen generation and embedding digests match the manifest; fresh-copy reranker assets match their pinned hashes. Ollama 0.34.3 on Windows 11. |
-| Archive regression checks | Idempotent restore, refusing changed-source overwrite, corrupt archive/member rejection and unsafe path rejection all passed. |
+| Windows portability | A deeply nested remote clone exposed MAX_PATH (260 characters). The patch tag checks the destination before restoration and directs users to a shorter checkout. A short-path GitHub clone restored successfully. |
+| Final patch regression | 260 discovered, **256 passed, 4 skipped**, using the newly installed environment. [Final log](validation/python-tests-final.txt). |
+| Archive regression checks | Idempotent restore, refusing changed-source overwrite, corrupt archive/member rejection and unsafe path rejection and pre-write Windows path-length checks all passed. |
 
 Corpus fingerprint: `12baf1b5415006535c91ef99d2604ac6cb949eeb90acc9253998f1d62d8e1682`
 Registry fingerprint: `41d838e42cedf7bb619b1b7adbc6bb1d1cfd8fd003223d2a026a861a2102d7b5`
