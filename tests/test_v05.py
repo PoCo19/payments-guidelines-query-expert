@@ -10,7 +10,9 @@ from embedding_cache import build_cached,cache_key
 class MultiProductTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
-  cfg=read_json(ROOT/('config.products.json' if (ROOT/'config.products.json').exists() else 'config.example.json'));cfg.update(vector_backend='json',embedding_model='',reranker_enabled=False)
+  # This tests the original multi-product migration, not later OCR corrections.
+  # Pin its checked-in fixture instead of depending on a personal configuration.
+  cfg=read_json(ROOT/'config.example.json');cfg.update(data_dir=str(ROOT/'data/all-products-v1'),multi_product=True,vector_backend='json',embedding_model='',reranker_enabled=False,evidence_graph_path='')
   cls.e=Engine(config=cfg)
   cls.old=Engine(data_dir=ROOT/'data',config=read_json(ROOT/'tests/fixtures/legacy_config.json'))
  def ask(self,q,**kw):return self.e.answer(dict(query=q,mode='evidence',method='bm25',**kw))

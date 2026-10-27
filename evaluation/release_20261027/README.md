@@ -17,3 +17,9 @@ The UPI Lite answer cites OC169 dated 31 August 2023 for the transaction and bal
 Additional unit tests cover every withholding combination for a four-cell table, and preservation of each claim across all explicit styles for one through nine claims. Tests preserve citations and human edits; they do not measure factual correctness.
 
 Cleanup keeps QA data and private workflow records local. Historical experiment records remain available; rebuildable whole-corpus graph candidates are excluded, with their code, casebooks and measured results retained. The maintained graph and corrected source release are shipped together in the new workbench handoff.
+
+## Clean checkout verification
+
+Source restoration reconstructed the corpus and registry fingerprints, validated 20 existing mixed-source case anchors, and checked the maintained graph against the new package. No embeddings were built during this check.
+
+The first clean-checkout test run found a historical migration test depending on ignored personal configuration. It accidentally compared later OCR repairs against the original migration text. The test now explicitly selects the checked-in original multi-product fixture; no source corrections or assertions were removed. The other error was an absent reranker weight file, which is deliberately installed by setup rather than committed. The repeat uses the same hash-verified reranker assets as setup and the existing pinned Python environment. This is a clean source checkout test, not a claim of a fresh dependency installation or complete index rebuild.

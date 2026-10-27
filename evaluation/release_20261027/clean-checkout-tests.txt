@@ -1,0 +1,61 @@
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.04}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.02}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+WARNING:pypdf._reader:invalid pdf header: b'not a'
+WARNING:pypdf._reader:EOF marker not found
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d2", "fingerprint": "fp", "elapsed_seconds": 0.0}
+======================================================================
+ERROR: test_real_cpu_reranker (test_v04.AdaptiveTests.test_real_cpu_reranker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\pci-git-20261027\tests\test_v04.py", line 45, in test_real_cpu_reranker
+    ranker=get_reranker(ROOT/'models/reranker');rows=ranker.rank('Who checks tap payment enablement before processing each transaction?',[
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Temp\pci-git-20261027\reranker.py", line 41, in get_reranker
+    if key not in _CACHE:_CACHE[key]=LocalReranker(key)
+                                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Temp\pci-git-20261027\reranker.py", line 14, in __init__
+    if hashlib.sha256((self.directory/name).read_bytes()).hexdigest()!=digest:
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Admin\\AppData\\Local\\Temp\\pci-git-20261027\\models\\reranker\\model_quantized.onnx'
+
+======================================================================
+FAIL: test_all_existing_chunks_preserved (test_v05.MultiProductTests.test_all_existing_chunks_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\pci-git-20261027\tests\test_v05.py", line 19, in test_all_existing_chunks_preserved
+    for p in self.old.parts:self.assertEqual(p['text'],self.e.parts_by_id[p['id']]['text'],p['id'])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'NPCI[18 chars]25 10" September 2024 To, All Members of Unifi[490 chars]i.e.' != 'NPCI[18 chars]25 10th September 2024 To, All Members of Unif[492 chars]i.e.'
+Diff is 1655 characters long. Set self.maxDiff to None to see it. : 2025-OC-193A:p1:v3c1
+
+----------------------------------------------------------------------
+Ran 465 tests in 13.374s
+
+FAILED (failures=1, errors=1)

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "command": "restore",
+  "documents": 1929,
+  "pages": 4834,
+  "chunks": 14480,
+  "corpus_fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+  "registry_fingerprint": "5e2427c12b25c7b3ccc9f777cd8279acdeec3fab5b080113d699105a20323c3b",
+  "mixed_source_cases_validated": 20,
+  "model_calls": 0
+}
