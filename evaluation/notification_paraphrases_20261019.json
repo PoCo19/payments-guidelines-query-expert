@@ -1,0 +1,92 @@
+[
+  {
+    "id": "PHASE-NEW-01",
+    "query": "For FASTag auto-replenishment, is an alert after debit still required when the pre-debit notice is waived?",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "provenance": {
+      "parent_case": "RBI-REF-03",
+      "type": "new_AI_assisted_development_paraphrase_not_held_out"
+    }
+  },
+  {
+    "id": "PHASE-NEW-02",
+    "query": "Does the FASTag auto-replenishment exception for advance notifications also remove post-transaction notification?",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "provenance": {
+      "parent_case": "RBI-REF-03",
+      "type": "new_AI_assisted_development_paraphrase_not_held_out"
+    }
+  },
+  {
+    "id": "PHASE-NEW-03",
+    "query": "For NCMC auto-replenishment, distinguish the before-debit notice exemption from the notification required after the transaction.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "The RBI e-mandate directions exempt specified NCMC auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "provenance": {
+      "parent_case": "RBI-REF-03",
+      "type": "new_AI_assisted_development_paraphrase_not_held_out"
+    }
+  }
+]

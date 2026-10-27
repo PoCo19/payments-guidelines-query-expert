@@ -1,0 +1,12 @@
+﻿id,question,draft_reference,actual_response,abstained,reviewer,source_verified,answer_correct,answer_complete,citations_supported,notes
+RAG-033,"Summarise OC 186A, covering the requirements across its sections.",Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.,"Circular OC 186A, titled 'Enhancement - UPI Tap & Pay on Point of Sale (PoS)', was issued by NPCI on September 10, 2026, to extend UPI Tap & Pay via NFC from QR codes to PoS terminals for contactless payments.
+UPI Tap & Pay transactions on PoS terminals are restricted exclusively to Person-to-Merchant (P2M) transactions.
+Payee PSPs must enable UPI Tap & Pay only on NFC-enabled PoS terminals certified in accordance with PCI PTS / CPOC standards.
+UPI Application Providers and PSP Banks must obtain explicit user consent after each device binding operation before allowing further transactions.
+Members and UPI Application Providers must obtain explicit user consent for enabling the feature, while also providing users the ability to opt out at any time.
+Payee PSPs are required to integrate the Point-of-Sale Common Library for UPI (PoS CL) on all PoS terminals within their acquiring network.
+Device lock must be enabled as a prerequisite for activating UPI Tap & Pay, and the device must be unlocked at the time of initiating a transaction.
+UPI Application Providers must present UPI Tap & Pay as a standalone feature via a dedicated call-to-action, not embedded within other services or menus.
+Settlement, reconciliation, dispute management, and Online Dispute Resolution (ODR) for these transactions must follow extant UPI guidelines, along with RBI guidelines on Turn Around Time (TAT) and customer compensation.
+Remitter Banks must validate the user's account for feature enablement before processing each transaction, while users can set their own limits within the INR 5000 ceiling.
+Detailed functional, technical, and operational requirements are to be found in applicable UPI Tap & Pay Feature Documents, Technical Specifications, and other NPCI instructions issued from time to time.",False,,,,,,

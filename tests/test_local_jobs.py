@@ -29,6 +29,20 @@ class LocalJobTests(unittest.TestCase):
         for payload in [dict(self.payload,data_base64='!!'),dict(self.payload,filename='fake.pdf')]:
             with self.assertRaises(ValueError):self.jobs.upload(payload)
 
+    def test_quality_flags_are_visible_before_and_after_prepare(self):
+        text=fixture.TEXT+'\n| A | B |\n|---|---|\n| damaged | value | extra |'
+        uploaded=self.jobs.upload(dict(self.payload,data_base64=base64.b64encode(text.encode()).decode()))
+        self.assertEqual(uploaded['intake_quality']['blocked_pages'],[1])
+        candidate=self.jobs.prepare([uploaded['token']])
+        doc=candidate['preview']['documents'][0]
+        self.assertEqual(doc['availability'],'needs_source_review')
+        self.assertEqual(doc['intake_quality']['blocked_pages'],[1])
+
+    def test_web_upload_cannot_supply_companion_path_or_review_override(self):
+        for key,value in [('original_pdf','C:/unrelated.pdf'),('quality_reviews',[])]:
+            with self.assertRaisesRegex(ValueError,'command-line'):
+                self.jobs.upload(dict(self.payload,metadata=dict(self.item,**{key:value})))
+
     def test_duplicate_source_cannot_prepare(self):
         self.engine.docs=[dict(id='old',subject='old',source_pdf=self.item['source_url'])]
         result=self.jobs.upload(self.payload)

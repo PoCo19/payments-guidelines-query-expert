@@ -1,0 +1,7 @@
+{
+  "corpus_fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+  "config_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+  "generation_model": "qwen3.5:9b",
+  "embedding_model": "qwen3-embedding:0.6b",
+  "purpose": "Development regression smoke; no independent correctness score."
+}

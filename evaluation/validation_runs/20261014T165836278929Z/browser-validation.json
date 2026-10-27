@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14",
+  "url": "http://127.0.0.1:8769",
+  "scenario": "IPO cumulative versus per-transaction limit",
+  "checks": {
+    "IPO question and generated answer visible": true,
+    "IPO-specific OC127 claim visible": true,
+    "graph coverage panel visible": true,
+    "corrupt source visibly excluded": true,
+    "completeness-check failure disclosed": true,
+    "source reader opens OC127": true
+  },
+  "observed_response_ms": 33391,
+  "limitation": "AI-observed browser behaviour, not independent answer correctness. Additional completeness review unavailable.",
+  "screenshots": [
+    "docs/images/graph-pilot-ipo-20261014.png",
+    "docs/images/graph-pilot-source-20261014.png"
+  ]
+}

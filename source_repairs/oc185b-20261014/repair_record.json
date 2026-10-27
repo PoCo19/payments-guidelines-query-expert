@@ -1,0 +1,17 @@
+{
+  "id": "oc185b-currency-20261014",
+  "document_id": "2025-OC-185B",
+  "source_page": 1,
+  "before": "Tax Payments to 25 lakh.",
+  "after": "Tax Payments to ₹5 lakh.",
+  "source_pdf_sha256": "d44d26aeaa594a9693035f2f7054b6a4bb962c3ced94e9523e3c5ac55f8bd127",
+  "previous_page_sha256": "5c2c1e1a1933359c98f58a9b8cdc0d83efa46bad44c319c28dd4453d0ddecc7a",
+  "corrected_page_sha256": "0e4fcdb7e2fa50d570e905cdf97fe8284f54bdd0656c604a4d75c4dc23f68066",
+  "corrected_markdown_sha256": "d5073e45773f249c8153808a5121f73337b2521de1b9021a4cb6b190b3fe392e",
+  "legacy_markdown": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2025-08-28_OC-185B.md",
+  "legacy_markdown_before_sha256": "4ad5ee0ed8ec393b896ad9ddcb48a4d4c2de1a334f8bb443c37261a7ac59c142",
+  "review": "AI visual comparison with original PDF page 1; independent review pending",
+  "baseline": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-rbi-core-20261009",
+  "release": "payments-oc185b-repair-20261014",
+  "created_at": "2026-10-14T17:11:38.348412+00:00"
+}

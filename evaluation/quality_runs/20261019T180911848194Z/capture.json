@@ -1,0 +1,496 @@
+{
+  "status": "complete",
+  "mode": "coverage",
+  "configuration": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about payment guidelines, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-ocr-audit-20261015",
+    "multi_product": true,
+    "embedding_cache": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\embedding_cache.sqlite3",
+    "evidence_graph_path": "pilot/upi_extended_graph_v3.json"
+  },
+  "installed_models": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "modified_at": "2026-09-24T01:11:59.6552717+05:30",
+        "size": 6594474711,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 4096
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "tools",
+          "thinking"
+        ]
+      },
+      {
+        "name": "qwen3-embedding:0.6b",
+        "model": "qwen3-embedding:0.6b",
+        "modified_at": "2026-09-24T00:55:17.9025643+05:30",
+        "size": 639150858,
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024
+        },
+        "capabilities": [
+          "tools",
+          "thinking",
+          "embedding"
+        ]
+      }
+    ]
+  },
+  "code_hashes": {
+    "adaptive_context.py": "e4520b458e77b88003df3e8a2483e1a27d54cd8517201884abc968eec6666fed",
+    "answer_format.py": "ffcc1ab9bdc7406eac13d43a55099048eb15afa7cc9c23b992241904ce0bbfda",
+    "app.py": "079d0c853198bdbbb08b528be947afd69e17648a6fd32b5adfcd720167e75e68",
+    "claim_check.py": "506e5a11e301ff939dc56a05521687b4e7acb5c523fd4810c76b784e74e6a2ef",
+    "claim_repair.py": "b25ffb3eae78c17a00880b8d72e0e565828b9120a17c3de359f791bf042a0014",
+    "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "coverage_review.py": "cec74ab0f38b325b7fa6bcf063c0b952c555ce7362afad435cf9b791e6ba94b9",
+    "download_reranker.py": "c7dfbccac6d11c0ecd6043b13d4b3655020d02e75bbf4b53fe5f7b1b1fac4c4c",
+    "embedding_cache.py": "5694593ce40fa954e03171870adb3fbccd5115cda4f52bb261681d842d6072f3",
+    "evidence_focus.py": "4d84b03387c0dc1a66faffe73ce98399126bbdd40b4c0558d59e406defbdcb9a",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+    "ingestion.py": "3d2e10e54a490bb0c3f05c2e55cc13a3f6452cf0662a002b129f2e0c6f97d0d6",
+    "intake_quality.py": "0a73d93b7eaa53dca2fd82d886f71077582779716f751adcacc426d1f6dcb0b7",
+    "launch_app.py": "9a1eaa91f1c6e4bf2d32bdf488fa6a205f9d680bac5f72928495ebc2827f0745",
+    "local_jobs.py": "eabbf3c9731bd4a6d4c8d76d6b7d062431fc779113bd178c4f9f9eacbc882a71",
+    "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+    "quality.py": "afdb3fc948d99f870678e89020b2690070a52e2fc2deb50d6c516664c265296c",
+    "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+    "reference_graph.py": "10822c1ec62349d3dcc3934a7141961d0212aa896b48d0bbb7ef1efcbe957818",
+    "registry.py": "6e06671cb6e5ce89fc93e45f6ed1f48c83a86e161e11e015389e7c0d2bfa69b2",
+    "request_runtime.py": "edf99122fc167f3520c5a6131df7a37a17c8f633972ae2634a10fec7a387489a",
+    "reranker.py": "6ad19fff021c211ce6b7f3efc4d36a72ad7bddb14b688e2258b6f7878509695a",
+    "research.py": "478e282a8e82aabb2759df02a13ae59cd4939b3ec487a83b0aacbf72d138c947",
+    "scope_guard.py": "bc7e7e1fe04d90bddb57bcfe37b08446957f562df00c8f931530483c71b2e92c",
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+    "vector_store.py": "2e818607a079111eb4b9da5aae739935dc8b4e9c2516ff7e08027a542400b585"
+  },
+  "dataset_hashes": {
+    "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\evaluation\\context_regression_20261017.json": "bc7cf369caeb946b1249cc9c07f60fc41e4fea8101c52d8461c782ddfa736448",
+    "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\evaluation\\reference_graph_rbi_cases_20261018.json": "1f488aca0594d1ee652a2cb27e3937e6a5b220102aee26df41ca5f06e1a48ca0"
+  },
+  "runner_sha256": "3472925b29e1b245f8d29f8239a821edd8fd23d69a1cce8846fc22f62055bf44",
+  "source_hashes": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33",
+    "review_annotations.json": "cd4f26006df1703d832a962615f6735b17b2a6d9de564d581d83697f25f279e6",
+    "feature_rules.json": "792ef665425210502e35493f9953a3893c6698a9cbd8bc2448bd1652cd65b0b0",
+    "source_manifest.json": "47237f4a4a9731151e18fc6b5f2c4be76ad998652f211263a084338bcd04398a"
+  },
+  "rows": [
+    {
+      "id": "X-LIMIT-03",
+      "arm": "baseline",
+      "status": "ok",
+      "coverage_check": {
+        "status": "unavailable",
+        "findings": [],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+        "failure_reason": "ValueError: Conflict requires multiple passages",
+        "note": "Coverage review was not completed. This answer has not passed the scope and omissions check."
+      },
+      "seconds": 7.281
+    },
+    {
+      "id": "X-LIMIT-03",
+      "arm": "candidate",
+      "status": "ok",
+      "coverage_check": {
+        "status": "no_additional_issue_flagged",
+        "findings": [],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+        "review_audit": [
+          {
+            "index": 0,
+            "decision": "already_addressed",
+            "reason": "The answer explicitly states the specific limits for UPI credit-card bill payments (₹5 Lakh single, ₹6 Lakh cumulative). The reviewer's warning about 'Verified Merchants' is a condition for these enhanced limits to apply; since the question asks specifically about this payment type where these limits are in effect, stating the limits themselves addresses the core query. The condition is contextually relevant but not an omission of the requested distinction.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer fails to state that the enhanced limits apply only to 'Verified Merchants', a requirement explicitly stated in S6.1 and S5.1.",
+              "quotes": [
+                {
+                  "citation": "S6",
+                  "quote": "1. The enhanced limits shall be applicable for merchants which are categorised as ‘Verified Merchant’."
+                },
+                {
+                  "citation": "S5",
+                  "quote": "sae ersshr aprary Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2024-25/0C/185A 24\" August 2024 To All Members of UPI, Dear Madan/Sir, Subject: Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories. This proposed enhancement aligns with previous limit enhancements implemented through circulars such as NPCI/UPI/OC-127/2021- 2022 dated 9'\" December 2021 and NPCI/UPI/OC-185/2023-2024 dated 19\" December 2023. In view of the above, the per transaction value limit in UPI has now been enhanced to = 5 lakhs for entities under categories aligned to tax payments. This enhanced limit shall only be applicable to ‘Verified Merchants’, in the applicable category. To enable this enhancement:"
+                }
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "decision": "already_addressed",
+            "reason": "The answer correctly identifies the unique cumulative limit of ₹6 Lakh for Credit Card Bill Payments (MCC 5413) and contrasts it implicitly by providing the specific figures requested. The reviewer's claim that other categories have ₹10 Lakh limits is a generalization from the table; however, the warning misreads the answer's intent. The answer does not need to list every category's limit to distinguish the specific one asked about. The distinction between the single payment ceiling and the 24-hour total is clearly stated in the answer text.",
+            "proposal": {
+              "kind": "scope_unclear",
+              "reason": "The answer does not distinguish between general UPI bill payments and the specific category for Credit Card Bill Payments (MCC 5413) which has a unique cumulative limit of ₹6 Lakh, unlike other categories with ₹10 Lakh limits as shown in S1.1.",
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "seconds": 6.032
+    },
+    {
+      "id": "G-DD-01",
+      "arm": "candidate",
+      "status": "ok",
+      "coverage_check": {
+        "status": "no_additional_issue_flagged",
+        "findings": [],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+        "review_audit": [
+          {
+            "index": 0,
+            "decision": "already_addressed",
+            "reason": "The answer explicitly states that in OC 128 the codes were excluded 'for remitter banks' and in OC 128A they are included 'for remitter banks', directly addressing the distinction regarding the applicable entity found in the source quote.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer fails to specify that OC 128 excluded codes 59 and K1 only for remitter banks, whereas OC 128A explicitly included them under the same condition; source S1.1 confirms both codes apply specifically to 'Remitter Bank' with a 'Yes' applicability.",
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk score by remitter | Remitter Bank Yes 2 K1 — Suspected fraud, decline/transaction declined Remitter Bank Yes based on risk score by remitter 3 | VO — Payment stopped by court order Remitter Bank No 4 |VH-— Mandate signature is tampered or corrupt Remitter Bank No 5 | VU/QD-— Mandate expired ae ae eed No 6 | VSs- Duplicate mandate request | ali Bank & Payer No | Note: No changes for any other response codes"
+                }
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "decision": "not_material",
+            "reason": "The warning requests mentioning that the update was based on 'ecosystem feedback'. This is background context about the motivation for the change rather than a factual condition affecting the scope or applicability of the rule itself; omitting this reason does not create a gap in answering how the treatment changed.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer does not mention that OC 128A updated the scope by explicitly including these codes based on ecosystem feedback, whereas source S1.1 states the update was made 'Basis the ecosystem feedback'.",
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk score by remitter | Remitter Bank Yes 2 K1 — Suspected fraud, decline/transaction declined Remitter Bank Yes based on risk score by remitter 3 | VO — Payment stopped by court order Remitter Bank No 4 |VH-— Mandate signature is tampered or corrupt Remitter Bank No 5 | VU/QD-— Mandate expired ae ae eed No 6 | VSs- Duplicate mandate request | ali Bank & Payer No | Note: No changes for any other response codes"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "seconds": 4.937
+    },
+    {
+      "id": "G-DD-01",
+      "arm": "baseline",
+      "status": "ok",
+      "coverage_check": {
+        "status": "issues_flagged",
+        "findings": [
+          {
+            "kind": "possible_conflict",
+            "reason": "The answer claims OC 128 excluded codes 59 and K1 from Deemed Debit scope, but evidence S4.2 explicitly lists code 59 as an exclusion while omitting K1 from the exclusion list, creating ambiguity about whether K1 was included or excluded in OC 128.",
+            "quotes": [
+              {
+                "citation": "S4",
+                "quote": " (URCS) system w.e.f. 25th May 2020 wherein a few response codes under mandate execution was considered as Deemed Debit. Basis the ecosystem feedback, we have now extended the scope of Deemed Debit at the remitter side further wherein any declines at the remitter end shall be considered as Deemed Debit. Only in case if the remitter bank declines the transaction with the below mentioned response codes the transaction shall be considered as failure and shall not be treated as Deemed Debit. Sr. No Decline ResponseCode and Description Decline by 59-- Suspected fraud,decline/transaction declinedbased on"
+              },
+              {
+                "citation": "S2",
+                "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22"
+              }
+            ]
+          },
+          {
+            "kind": "scope_unclear",
+            "reason": "The answer states OC 128A 'explicitly including' codes 59 and K1, yet evidence S1.1 shows code 59 was already listed as applicable (Yes) in the table under OC 128A context, while S4.2 from OC 128 only lists 59 as excluded without mentioning K1's status, making it unclear if K1 was newly included or if both were always intended to be included.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk"
+              },
+              {
+                "citation": "S4",
+                "quote": " (URCS) system w.e.f. 25th May 2020 wherein a few response codes under mandate execution was considered as Deemed Debit. Basis the ecosystem feedback, we have now extended the scope of Deemed Debit at the remitter side further wherein any declines at the remitter end shall be considered as Deemed Debit. Only in case if the remitter bank declines the transaction with the below mentioned response codes the transaction shall be considered as failure and shall not be treated as Deemed Debit. Sr. No Decline ResponseCode and Description Decline by 59-- Suspected fraud,decline/transaction declinedbased on"
+              }
+            ]
+          }
+        ],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+      },
+      "seconds": 3.344
+    },
+    {
+      "id": "G-LIMIT-04",
+      "arm": "baseline",
+      "status": "ok",
+      "coverage_check": {
+        "status": "issues_flagged",
+        "findings": [
+          {
+            "kind": "possible_conflict",
+            "reason": "The answer claims the OC 185 series documents do not establish a 25 lakh limit, citing S3 and S10 which specify an enhanced per-transaction limit of Rs 5 lakh for verified merchants in tax payment categories (MCC-9311). However, the evidence provided does not mention or reference any '25 lakh' limit anywhere in the excerpts. The answer explicitly contrasts a hypothetical '25 lakh limit' with the actual 'Rs 5 lakh' limit found in the documents. Since no source excerpt mentions a 25 lakh limit, the answer's assertion that such a limit is absent is supported by the lack of evidence for it, but the specific comparison to a non-existent 25 lakh figure creates a scope_unclear situation regarding what the user might be asking about (a cumulative vs per-transaction limit, or a different entity entirely). The instructions state: 'A per-transaction amount and a cumulative amount are different measures, not incompatible limits when the answer distinguishes them.' The answer does distinguish Rs 5 lakh (per-transaction) but introduces '25 lakh' without evidence. This is an omission of context regarding what the 25 lakh figure might refer to if it exists in other unprovided documents, or it is a user misconception not addressed by the provided evidence.",
+            "quotes": [
+              {
+                "citation": "S3",
+                "quote": "sae ersshr aprary Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2024-25/0C/185A 24\" August 2024 To All Members of UPI, Dear Madan/Sir, Subject: Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories. This proposed enhancement aligns with previous limit enhancements implemented through circulars such as NPCI/UPI/OC-127/2021- 2022 dated 9'\" December 2021 and NPCI/UPI/OC-185/2023-2024 dated 19\" December 2023. In view of the above, the per transaction value limit in UPI has now been enhanced to = 5 lakhs for"
+              },
+              {
+                "citation": "S10",
+                "quote": "urcdte ease ara Perr NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2025-26/0C/185B 28\" August 2025 To, All Members in UPI, Dear Madan/Sir, Subject: Addendum to OC 185 A — Implementation of higher per transaction limit for specific categories in UPI Vide reference to NPCI/UPI/2024-25/0C/185 A dated 24\" August 2024, NPCI has increased the per transaction limits for entities under categories aligned to Tax Payments to ₹5 lakh. With UPI emerging as a preferred payment method, there are requirements from the market on extending higher per transaction limits for additional categories of transactions in UPI. In view of the above the per transaction limits for the mentioned categories in the"
+              }
+            ]
+          },
+          {
+            "kind": "scope_unclear",
+            "reason": "The answer states that the enhanced limit applies only to 'Verified Merchants' within specific categories including MCC-9311 for tax payments (supported by S3.2, S6.1, S8.1). However, the question asks about a general 'UPI tax payment' limit without specifying merchant verification status. The answer implies that without being a 'Verified Merchant', the 5 lakh limit does not apply, but it does not explicitly state what the default limit is for non-verified merchants or if there is a separate 25 lakh cumulative limit mentioned elsewhere. The distinction between per-transaction and cumulative limits is present in S4.1 (showing cumulative limits of Rs 10 lakh for some categories), but the answer does not clarify if a 25 lakh cumulative limit exists for tax payments specifically, leading to scope_unclear on whether the user's '25 lakh' query refers to a cumulative cap not detailed in the provided excerpts.",
+            "quotes": [
+              {
+                "citation": "S4",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S8",
+                "quote": "2. Acquiring entities must ensure thai the classification of their merchants within ‘MCC- 9311’ strictly adheres to the tax payments only. They shall ensure that entities are added to the ‘Verified Merchant’ list after proper due diligence."
+              }
+            ]
+          }
+        ],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+      },
+      "seconds": 7.406
+    },
+    {
+      "id": "G-LIMIT-04",
+      "arm": "candidate",
+      "status": "ok",
+      "coverage_check": {
+        "status": "no_additional_issue_flagged",
+        "findings": [],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+        "review_audit": [
+          {
+            "index": 0,
+            "decision": "already_addressed",
+            "reason": "The answer explicitly states that the enhanced limit applies 'only to Verified Merchants', directly addressing the qualification cited in the warning's quotes from S6 and S8.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer fails to specify that the enhanced limit applies only to 'Verified Merchants', as required by S6.1 and S8.1, omitting this critical qualification.",
+              "quotes": [
+                {
+                  "citation": "S6",
+                  "quote": "1. The enhanced limits shall be applicable for merchants which are categorised as ‘Verified Merchant’."
+                },
+                {
+                  "citation": "S8",
+                  "quote": "2. Acquiring entities must ensure thai the classification of their merchants within ‘MCC- 9311’ strictly adheres to the tax payments only. They shall ensure that entities are added to the ‘Verified Merchant’ list after proper due diligence."
+                }
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "decision": "not_material",
+            "reason": "The warning claims a conflation of per-transaction and cumulative limits, but the answer correctly identifies the specific limit for tax payments (MCC-9311) as Rs 5 lakh. The distinction between per-transaction and cumulative limits mentioned in S4 is irrelevant to the user's specific question about whether a 25 lakh limit exists; the absence of a 25 lakh figure is the correct finding, making the warning's premise about conflation unsupported by the answer's content.",
+            "proposal": {
+              "kind": "scope_unclear",
+              "reason": "The answer conflates per-transaction limits with cumulative limits, whereas S4.1 explicitly distinguishes between the two measures (e.g., ₹5 Lakh per transaction vs. ₹10 Lakh cumulative).",
+              "quotes": [
+                {
+                  "citation": "S4",
+                  "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "seconds": 4.984
+    },
+    {
+      "id": "G-IPO-02",
+      "arm": "candidate",
+      "status": "ok",
+      "coverage_check": {
+        "status": "no_additional_issue_flagged",
+        "findings": [],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+        "review_audit": [
+          {
+            "index": 0,
+            "decision": "already_addressed",
+            "reason": "The answer explicitly states that the ₹10 Lakh figure is a 'Cumulative Limits (24 hrs)' and does not set the per-mandate limit, which directly addresses the reviewer's concern about the distinction between cumulative and per-transaction limits found in S1.1.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer fails to cite S1.1, which explicitly defines the ₹10 Lakh figure as a 'Cumulative Limits (24 hrs)' column distinct from the per-transaction limit of ₹5 Lakh listed in the same table.",
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+                }
+              ]
+            }
+          },
+          {
+            "index": 1,
+            "decision": "not_material",
+            "reason": "The warning asks for references to S3.1 or S6.1 regarding historical precedence ('Existing - No Change'). Since the question only asks if the new figure makes a single IPO mandate limit ₹10 lakh (which is answered as 'no' based on the cumulative nature), citing historical continuity does not change the factual answer to the specific question asked.",
+            "proposal": {
+              "kind": "possible_omission",
+              "reason": "The answer does not reference S3.1 or S6.1, which clarify that the IPO/GSec category limits (MCC 6211) remain unchanged ('Existing - No Change') from previous circulars like OC-127.",
+              "quotes": [
+                {
+                  "citation": "S3",
+                  "quote": "aR ART eT |p NATIONAL PAYMENTS CORPORATION OF INDIA Annexure to OC 185A Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI Regarding circular no. NPCI/UPI/ 2024-25/OC-185A, which pertains to the implementation of a Rs 5 Lakh limit per transaction for verified merchants in specific categories in UPI - Category Circular reference & ee Tax Payments MCC - 9311 NPCI/UPI/2024-25/0C-185A Hospitals and MCC - 8011, 8021, 8031, 8041, NPCI/UPI/2023-24/0C-185 Educational 8042, 8049, 8050, 8062, 8071, (Existing — No Change) Services 8099, 0742, 8211, 8220, 8241, 8244, 8249, 8299 IPO & G Sec MCC 6211, NPCI/UPI/OC-127/2021 -22 through RBI Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change) Retail Direct Scheme (RDS) Note:"
+                },
+                {
+                  "citation": "S6",
+                  "quote": "sae ersshr aprary Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2024-25/0C/185A 24\" August 2024 To All Members of UPI, Dear Madan/Sir, Subject: Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories. This proposed enhancement aligns with previous limit enhancements implemented through circulars such as NPCI/UPI/OC-127/2021- 2022 dated 9'\" December 2021 and NPCI/UPI/OC-185/2023-2024 dated 19\" December 2023. In view of the above, the per transaction value limit in UPI has now been enhanced to = 5 lakhs for entities under categories aligned to tax payments. This enhanced limit shall only be applicable to ‘Verified Merchants’, in the applicable category. To enable this enhancement:"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "seconds": 5.532
+    },
+    {
+      "id": "G-IPO-02",
+      "arm": "baseline",
+      "status": "ok",
+      "coverage_check": {
+        "status": "issues_flagged",
+        "findings": [
+          {
+            "kind": "possible_conflict",
+            "reason": "The answer contrasts a 'Cumulative Limits (24 hrs)' of ₹10 Lakh for Capital Market in OC 185B with a separate per-transaction ceiling of ₹5 Lakh established in OC 127. However, the evidence does not explicitly state that these two limits are incompatible or how they interact; the answer assumes they are distinct measures without citing a source that clarifies their relationship.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S2",
+                "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+              }
+            ]
+          },
+          {
+            "kind": "scope_unclear",
+            "reason": "The answer states that OC 185B does not set the per-mandate limit for a single IPO, but it does not clarify whether the ₹10 Lakh cumulative limit applies to all Capital Market transactions or only specific ones like IPOs. The evidence shows that OC 127 specifically mentions Retail Direct Scheme and UPI-based ASBA IPO transactions, while OC 185B lists 'Capital Market' broadly.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S2",
+                "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+              }
+            ]
+          },
+          {
+            "kind": "possible_conflict",
+            "reason": "The answer implies that OC 185B's cumulative limit of ₹10 Lakh does not override the per-transaction limit of ₹5 Lakh from OC 127, but it does not explicitly state whether the per-transaction limit still applies or if the cumulative limit is the only constraint. This creates ambiguity about whether a single IPO mandate can exceed ₹5 Lakh as long as the cumulative limit is not breached.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S2",
+                "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+              }
+            ]
+          },
+          {
+            "kind": "scope_unclear",
+            "reason": "The answer does not clarify whether the ₹10 Lakh cumulative limit in OC 185B applies to all Capital Market transactions or only specific ones like IPOs. The evidence shows that OC 127 specifically mentions Retail Direct Scheme and UPI-based ASBA IPO transactions, while OC 185B lists 'Capital Market' broadly.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S2",
+                "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+              }
+            ]
+          }
+        ],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+      },
+      "seconds": 8.578
+    }
+  ],
+  "caveat": "AI-assisted development cases. Anchor matches are not answer accuracy. Coverage findings require review. Both arms use the same models and corpus; the broader graph is off.",
+  "frozen_capture_sha256": "89c4fbc0bf5cbe671239cba763bc48aa3b8dd55030ba015d1e2fef3b42f4c958",
+  "baseline_reviewer_sha256": "d5b9a35557248bddea2b85969968f1fa89285dabe48c68cec3ab856865894f57",
+  "summary": {
+    "baseline": {
+      "cases": 4,
+      "errors": 0,
+      "anchors_found": 0,
+      "anchors_expected": 0,
+      "negative_cases": [],
+      "fallbacks": 0,
+      "median_seconds": 7.3435,
+      "p95_seconds": 8.578
+    },
+    "candidate": {
+      "cases": 4,
+      "errors": 0,
+      "anchors_found": 0,
+      "anchors_expected": 0,
+      "negative_cases": [],
+      "fallbacks": 0,
+      "median_seconds": 5.258,
+      "p95_seconds": 6.032
+    }
+  },
+  "snapshot_unchanged": true
+}

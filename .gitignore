@@ -50,4 +50,9 @@ output/midsem/evidence/LATEST.txt
 evaluation/context_tuning_config_before.json
 evaluation/migration_config.json
 reports/
+data/qa24/
+data/qa*/
+# Rebuildable, rejected whole-corpus graph experiments; maintained graphs stay versioned.
+pilot/corpus_reference_graph_v*.json
+handoff/engineering-20261024/*.zip
 tools/prepare_collaboration.py

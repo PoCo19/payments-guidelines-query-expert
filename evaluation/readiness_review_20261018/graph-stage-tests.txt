@@ -1,0 +1,71 @@
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.06}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.02}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+WARNING:pypdf._reader:invalid pdf header: b'not a'
+WARNING:pypdf._reader:EOF marker not found
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d2", "fingerprint": "fp", "elapsed_seconds": 0.0}
+======================================================================
+ERROR: test_jsonl_preserves_unicode_line_separators (test_document_pipeline.IntakeTests.test_jsonl_preserves_unicode_line_separators)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_document_pipeline.py", line 85, in test_jsonl_preserves_unicode_line_separators
+    self.prepare()
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_document_pipeline.py", line 51, in prepare
+    return pipeline.prepare(self.manifest, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tools\document_pipeline.py", line 267, in prepare
+    write(destination / 'reference_graph.json',build_release(destination,base/'reference_graph.json'))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\reference_graph.py", line 117, in build_release
+    return build_graph(docs,pages,rules,previous)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\reference_graph.py", line 61, in build_graph
+    doc=by_id[page['document_id']]
+        ~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'legacy'
+
+======================================================================
+ERROR: test_form_post_not_accepted_as_json (test_rag_http.HTTPTests.test_form_post_not_accepted_as_json)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_rag_http.py", line 44, in test_form_post_not_accepted_as_json
+    self.assertEqual(self.request('POST','/api/answers',{}, {'Content-Type':'text/plain'})[0],415)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_rag_http.py", line 29, in request
+    response=conn.getresponse();body=response.read();status=response.status;conn.close()
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+----------------------------------------------------------------------
+Ran 384 tests in 10.962s
+
+FAILED (errors=2)

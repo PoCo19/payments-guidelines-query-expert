@@ -1,5 +1,7 @@
 # Context-sensitive answer formatting — v0.5.1
 
+**Current extension, 26 October 2026:** Automatic style also supports optional evidence tables mixed with prose and lists. Shared saved-answer rendering and exports preserve generated layout. [Current behaviour, safeguards and verification](ADAPTIVE_ANSWER_PRESENTATION_20261026.md). The original implementation record below is historical.
+
 The earlier application asked Qwen for factual claims and always displayed those claims in an HTML bullet list. Prompt wording alone could not change that fixed renderer. v0.5.1 separates the evidence-checking structure from the visible answer structure.
 
 ## Using it

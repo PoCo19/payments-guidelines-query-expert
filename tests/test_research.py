@@ -122,6 +122,17 @@ class ResearchTests(unittest.TestCase):
     def test_empty_review_does_not_assert_complete(self):
         self.assertEqual(self.review([])['status'],'no_additional_issue_flagged')
 
+    def test_review_failure_types_are_distinct_from_empty_success(self):
+        from unittest.mock import Mock
+        r=self.ask()
+        for failure,kind in ((TimeoutError('budget'), 'timeout'),(OSError('offline'),'model_error'),(ValueError('invalid JSON'),'invalid_response')):
+            with self.subTest(kind=kind):
+                self.e.ollama=Mock(side_effect=failure)
+                result=check_answer_coverage(self.e,[dict(text='Consent is required.',sources=['S1'])],r['sources'],r['retrieval_trace']['query_plan'])
+                self.assertEqual(result['status'],'unavailable')
+                self.assertEqual(result['failure_kind'],kind)
+        self.assertNotIn('failure_kind',self.review([]))
+
     def test_fabricated_review_quotes_fail_closed(self):
         self.assertEqual(self.review([dict(kind='possible_omission',reason='Missing',evidence_ids=['S999.1'])])['status'],'unavailable')
 

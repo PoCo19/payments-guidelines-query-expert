@@ -32,6 +32,10 @@ def main():
     parser.add_argument('--dataset', type=Path, default=ROOT/'evaluation/payments_cases_v1.json')
     parser.add_argument('--mode', choices=['evidence','generate'], default='evidence')
     parser.add_argument('--ids', help='Comma-separated cases; default all 20')
+    parser.add_argument('--route', choices=['dataset','auto'], default='dataset', help='Use auto to exercise the normal frontend route without editing frozen cases')
+    parser.add_argument('--method', choices=['bm25','vector','hybrid'], default='hybrid')
+    parser.add_argument('--rerank', action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument('--series', default=None, help='Explicit product-filter override; use UPI for the original 50-case regression')
     args = parser.parse_args()
     cases, fingerprint = load_cases(args.dataset)
     selected = set(args.ids.split(',')) if args.ids else {c['id'] for c in cases}
@@ -39,19 +43,21 @@ def main():
     cases = [c for c in cases if c['id'] in selected]
     config = read_json(args.config); engine = Engine(config=config)
     validate_anchors(cases, engine)
-    out = ROOT/'evaluation/payments_runs'/dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    out = ROOT/'evaluation/payments_runs'/dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     out.mkdir(parents=True, exist_ok=False)
     manifest = dict(schema_version=1, created_utc=dt.datetime.now(dt.timezone.utc).isoformat(),
         dataset_sha256=fingerprint, config_sha256=sha(args.config.read_bytes()), configuration=config,
         application_stats=engine.stats(), case_ids=[c['id'] for c in cases], mode=args.mode,
         input_hashes=input_hashes(engine.data_dir),
-        method='hybrid', rerank=True, caveat=CAVEAT, human_review='pending', rows=[], capture_status='running',
-        code_hashes={n:sha((ROOT/n).read_bytes()) for n in ['app.py','research.py','claim_check.py','request_runtime.py','context.py','adaptive_context.py','evaluation/payments_eval.py','evaluation/ragas_runner.py']})
+        method=args.method, rerank=args.rerank, route_mode=args.route, series_override=args.series, caveat=CAVEAT, human_review='pending', rows=[], capture_status='running',
+        code_hashes={n:sha((ROOT/n).read_bytes()) for n in ['app.py','research.py','claim_check.py','claim_repair.py','scope_guard.py','structured_evidence.py','contextual_retrieval.py','evidence_spans.py','query_understanding.py','query_policies.json','product_scope.py','answer_format.py','request_runtime.py','context.py','adaptive_context.py','evaluation/payments_eval.py','evaluation/ragas_runner.py']})
     try: manifest['installed_models'] = request(local_url(config['ollama_url'])+'/api/tags', timeout=10)
     except Exception as exc: manifest['model_metadata_error'] = str(exc)
     save(out/'capture.json',manifest)
     for c in cases:
-        payload = case_payload(c, mode=args.mode)
+        payload = case_payload(c, mode=args.mode, method=args.method, rerank=args.rerank)
+        if args.route=='auto':payload['route']='auto'
+        if args.series is not None:payload['series']=args.series
         row = dict(id=c['id'],case=c,payload=payload); start=time.monotonic()
         try:
             response=engine.answer(payload)
@@ -66,15 +72,21 @@ def main():
         anchors_found=sum(sum(r['anchor_hits']) for r in positive),anchors_expected=sum(len(r['case']['references']) for r in rows),
         positive_cases_all_anchors=sum(all(r['anchor_hits']) for r in positive),positive_cases_expected=sum(bool(r['case']['references']) for r in rows),
         negative_cases_abstained=sum(bool(r['raw_response'].get('abstained')) for r in negative),negative_cases_expected=sum(bool(r['case'].get('expect_abstain')) for r in rows),
+        positive_cases_abstained=sum(bool(r['raw_response'].get('abstained')) for r in positive),
+        clarification_cases=sum(r['raw_response'].get('response_status')=='clarification_needed' for r in good),
+        incomplete_cases=sum(r['raw_response'].get('response_status')=='incomplete' for r in good),
+        model_fallback_cases=sum(bool(r['raw_response'].get('model_failure')) for r in good),
         latency_seconds=[r['wall_seconds'] for r in rows],answer_correctness='Not measured by anchor retrieval; human review pending')
     manifest['snapshot_unchanged']=(manifest['input_hashes']==input_hashes(engine.data_dir)
                                     and manifest['config_sha256']==sha(args.config.read_bytes())
-                                    and manifest['dataset_sha256']==sha(args.dataset.read_bytes()))
+                                    and manifest['dataset_sha256']==sha(args.dataset.read_bytes())
+                                    and all(sha((ROOT/n).read_bytes())==h for n,h in manifest['code_hashes'].items()))
     manifest['capture_status']='complete' if len(good)==len(rows) and manifest['snapshot_unchanged'] else 'completed_with_errors'
+    manifest['benchmark_valid']=manifest['capture_status']=='complete' and not manifest['summary']['model_fallback_cases']
     save(out/'capture.json',manifest);export_review(out,manifest)
     (out/'summary.md').write_text('# Mixed-source evaluation\n\n'+CAVEAT+'\n\nMode: '+args.mode+'\n\n```json\n'+json.dumps(manifest['summary'],indent=2)+'\n```\n',encoding='utf8')
     print(out,flush=True)
-    return int(len(good)!=len(rows))
+    return int(not manifest['benchmark_valid'])
 
 
 if __name__=='__main__':raise SystemExit(main())

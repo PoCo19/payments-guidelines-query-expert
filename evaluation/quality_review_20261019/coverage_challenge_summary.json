@@ -1,0 +1,174 @@
+{
+  "capture": "evaluation\\quality_runs\\20261020T124418596737Z\\capture.json",
+  "snapshot_unchanged": true,
+  "labels": "AI-assisted provisional labels, not independently reviewed. Presence of a warning does not establish that its reasoning is correct.",
+  "decision": "Do not promote experimental reviewer",
+  "arms": {
+    "baseline": {
+      "cases": 10,
+      "gap_cases": 5,
+      "complete_cases": 5,
+      "gap_flagged": 4,
+      "gap_missed": 0,
+      "complete_flagged": 5,
+      "complete_clear": 0,
+      "unavailable": [
+        "COV-06"
+      ],
+      "rows": [
+        {
+          "id": "COV-01",
+          "expected_material_warning": true,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 17.484
+        },
+        {
+          "id": "COV-02",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 3,
+          "seconds": 13.485
+        },
+        {
+          "id": "COV-03",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 3,
+          "seconds": 8.125
+        },
+        {
+          "id": "COV-04",
+          "expected_material_warning": true,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 9.344
+        },
+        {
+          "id": "COV-05",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 4,
+          "seconds": 15.062
+        },
+        {
+          "id": "COV-06",
+          "expected_material_warning": true,
+          "status": "unavailable",
+          "warning_count": 0,
+          "seconds": 14.468
+        },
+        {
+          "id": "COV-07",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 9.469
+        },
+        {
+          "id": "COV-08",
+          "expected_material_warning": true,
+          "status": "issues_flagged",
+          "warning_count": 4,
+          "seconds": 11.688
+        },
+        {
+          "id": "COV-09",
+          "expected_material_warning": true,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 9.234
+        },
+        {
+          "id": "COV-10",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 12.218
+        }
+      ]
+    },
+    "candidate": {
+      "cases": 10,
+      "gap_cases": 5,
+      "complete_cases": 5,
+      "gap_flagged": 1,
+      "gap_missed": 4,
+      "complete_flagged": 1,
+      "complete_clear": 4,
+      "unavailable": [],
+      "rows": [
+        {
+          "id": "COV-01",
+          "expected_material_warning": true,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 11.329
+        },
+        {
+          "id": "COV-02",
+          "expected_material_warning": false,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 9.296
+        },
+        {
+          "id": "COV-03",
+          "expected_material_warning": false,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 15.234
+        },
+        {
+          "id": "COV-04",
+          "expected_material_warning": true,
+          "status": "issues_flagged",
+          "warning_count": 2,
+          "seconds": 14.844
+        },
+        {
+          "id": "COV-05",
+          "expected_material_warning": false,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 7.985
+        },
+        {
+          "id": "COV-06",
+          "expected_material_warning": true,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 9.375
+        },
+        {
+          "id": "COV-07",
+          "expected_material_warning": false,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 8.953
+        },
+        {
+          "id": "COV-08",
+          "expected_material_warning": true,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 10.422
+        },
+        {
+          "id": "COV-09",
+          "expected_material_warning": true,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 12.891
+        },
+        {
+          "id": "COV-10",
+          "expected_material_warning": false,
+          "status": "no_additional_issue_flagged",
+          "warning_count": 0,
+          "seconds": 8.953
+        }
+      ]
+    }
+  }
+}

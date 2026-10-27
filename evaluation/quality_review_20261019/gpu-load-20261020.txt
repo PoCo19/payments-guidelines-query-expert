@@ -1,0 +1,2 @@
+name, memory.used [MiB], memory.free [MiB], utilization.gpu [%], power.draw [W], temperature.gpu
+NVIDIA GeForce RTX 5070 Ti Laptop GPU, 11759 MiB, 186 MiB, 100 %, 23.69 W, 54

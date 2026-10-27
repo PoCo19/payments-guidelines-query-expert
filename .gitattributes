@@ -32,3 +32,13 @@
 /models/reranker/manifest.json -text
 /evaluation/payments_runs/** -text whitespace=cr-at-eol
 /reports/** -text whitespace=cr-at-eol
+/evaluation/** -text whitespace=cr-at-eol
+/pilot/*.json -text whitespace=cr-at-eol
+/source_repairs/** -text whitespace=-blank-at-eof,cr-at-eol
+/config.workbench.json -text whitespace=cr-at-eol
+/requirements-acquisition.txt -text
+/query_policies.json -text
+/source_quality_flags.json -text whitespace=cr-at-eol
+# Preserve historical raw browser captures and patch artifacts verbatim.
+/evaluation/ipo_regression_20261017/browser-final.txt -text whitespace=-blank-at-eol,cr-at-eol
+/evaluation/quality_review_20261019/production.patch -text whitespace=-blank-at-eol,cr-at-eol

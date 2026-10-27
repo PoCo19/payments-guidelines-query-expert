@@ -79,6 +79,32 @@ class IntakeTests(unittest.TestCase):
             pipeline.build('test-one')
         self.assertEqual(self.before, self.active.read_bytes())
 
+    def test_maintained_graph_is_bundled_and_changes_detected(self):
+        graph=self.root/'maintained.json'
+        graph.write_text('{"nodes": [], "edges": []}',encoding='utf-8')
+        cfg=pipeline.read(self.active)
+        cfg.update(evidence_graph_path=str(graph),reference_graph_enabled=True)
+        pipeline.write(self.active,cfg)
+        self.prepare()
+        target=pipeline.release_path('test-one')
+        candidate=pipeline.read(target/'candidate_config.json')
+        self.assertEqual(Path(candidate['evidence_graph_path']),target/'evidence_graph.json')
+        self.assertFalse(candidate['reference_graph_enabled'])
+        self.assertEqual((target/'evidence_graph.json').read_bytes(),graph.read_bytes())
+        pipeline.check_candidate(target)
+        (target/'evidence_graph.json').write_text('{}')
+        with self.assertRaisesRegex(ValueError,'changed'):
+            pipeline.check_candidate(target)
+
+    def test_invalid_maintained_graph_reports_degraded_not_healthy(self):
+        graph=self.root/'invalid.json';graph.write_text('{}')
+        cfg=pipeline.read(self.active);cfg['evidence_graph_path']=str(graph)
+        pipeline.write(self.active,cfg)
+        self.prepare();self.mock_model()
+        report=pipeline.build('test-one')
+        self.assertEqual(report['graph_assistance']['status'],'degraded')
+        self.assertTrue(report['graph_assistance']['warning'])
+
     def test_jsonl_preserves_unicode_line_separators(self):
         text = 'Source text\u2028still inside one JSON record\u2029with two separators.'
         (self.base/'all_circular_pages.jsonl').write_text(json.dumps({'document_id':'legacy', 'source_page':1, 'text':text}, ensure_ascii=False)+'\n', encoding='utf-8')

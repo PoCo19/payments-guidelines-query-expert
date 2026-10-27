@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "documents": 1929,
+  "pages": 4834,
+  "chunks": 14480,
+  "changed_pages": 9,
+  "changed_documents": 6,
+  "replacements": 21,
+  "unchanged_page_texts": 4825,
+  "identity_preserved": true,
+  "previous_OC185B_repair_preserved": true,
+  "graph_anchors_validated": 55,
+  "targeted_retrieval": {
+    "2023-UPI-160": [
+      "2023-UPI-160",
+      "2023-UPI-160"
+    ],
+    "2023-Product-Compliance-PCOMP-Q4": [
+      "2023-Product-Compliance-PCOMP-Q4",
+      "2023-Product-Compliance-PCOMP-Q4"
+    ],
+    "2023-UPI-186": [
+      "2023-UPI-186"
+    ],
+    "2024-OC-107A": [
+      "2024-OC-107A",
+      "2024-OC-107A"
+    ],
+    "2025-OC-193A": [
+      "2025-OC-193A",
+      "2025-OC-193A"
+    ],
+    "2025-OC-208B": [
+      "2025-OC-208B",
+      "2025-OC-208B"
+    ]
+  },
+  "caveat": "Integrity and retrieval checks, not independent expert review or corpus-wide OCR certification."
+}

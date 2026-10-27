@@ -1,0 +1,342 @@
+{
+  "schema_version": 1,
+  "id": "upi-128-226-v1",
+  "review_status": "proposed_ai_assisted",
+  "purpose": "Development pilot; navigation and coverage, not legal precedence or completeness certification.",
+  "limitations": [
+    "OCR tables require original-PDF review. OC128 page 2 contains an incomplete sentence.",
+    "Only two amendment families. OC88, OC206A and the RBI reference in OC226 are outside this pilot.",
+    "Effective dates are provisional source readings; issue-date filtering is not an effective-date rule engine.",
+    "No independent source or question review has been completed."
+  ],
+  "nodes": [
+    {
+      "id": "dd_original",
+      "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+      "page": 1,
+      "quote": "shall be considered as failure and shall not be treated as Deemed Debit.",
+      "aspect": "original exclusions",
+      "priority": 0,
+      "page_sha256": "fa50c94e854826e11234afe651e8d4104c762657eefa242cc703f1edbd05fb4e",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf"
+    },
+    {
+      "id": "dd_original_codes",
+      "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+      "page": 1,
+      "quote": "VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt",
+      "aspect": "original exclusions codes",
+      "priority": 0,
+      "page_sha256": "fa50c94e854826e11234afe651e8d4104c762657eefa242cc703f1edbd05fb4e",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf"
+    },
+    {
+      "id": "dd_amendment",
+      "document_id": "2026-OC-128A",
+      "page": 1,
+      "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope.",
+      "aspect": "amendment codes table",
+      "priority": 0,
+      "page_sha256": "01c67c7e4567f2b408cd46d68894a782d778b0ba63e2e5117b874936a50e9969",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_capital_market",
+      "document_id": "2026-OC-128A",
+      "page": 1,
+      "quote": "Acquirer / Payee may claim the transaction amount if it is as per the mandate created;",
+      "aspect": "capital market exceptions BGGD MCC purpose",
+      "priority": 1,
+      "page_sha256": "01c67c7e4567f2b408cd46d68894a782d778b0ba63e2e5117b874936a50e9969",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_other_otm",
+      "document_id": "2026-OC-128A",
+      "page": 1,
+      "quote": "are to be considered as declined and no service should be rendered by the Acquirer/Payee.",
+      "aspect": "other OTM exception no service",
+      "priority": 1,
+      "page_sha256": "01c67c7e4567f2b408cd46d68894a782d778b0ba63e2e5117b874936a50e9969",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_settlement",
+      "document_id": "2026-OC-128A",
+      "page": 1,
+      "quote": "shall continue to be treated as Deemed Debit and settlement shall be done by debiting respective Remitter bank",
+      "aspect": "settlement purpose codes",
+      "priority": 1,
+      "page_sha256": "01c67c7e4567f2b408cd46d68894a782d778b0ba63e2e5117b874936a50e9969",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_genuine",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "populated strictly for genuine scenarios only.",
+      "aspect": "excluded declines genuine",
+      "priority": 4,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_report",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "use the Deemed Debit report and raw files for reconciliation",
+      "aspect": "report reconciliation",
+      "priority": 3,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_reconciliation",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "perform three (3) way reconciliation",
+      "aspect": "reconciliation",
+      "priority": 3,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_expiry",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "auto unblocked upon expiry of the mandate period.",
+      "aspect": "expiry unblock",
+      "priority": 3,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_claim_window",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "within the mandate validity period.",
+      "aspect": "BGGD claim validity",
+      "priority": 3,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_execution",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "no duplicate executions are processed.",
+      "aspect": "duplicate executions adjustments",
+      "priority": 3,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "dd_effective",
+      "document_id": "2026-OC-128A",
+      "page": 2,
+      "quote": "The changes in deemed debit applicability in the URCS system will be effective from",
+      "aspect": "effective date chargeback",
+      "priority": 0,
+      "page_sha256": "dd1b6b1479bb8d0edae49fe299eb148688799a1498ac8b5c9937a696b7628b6f",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+    },
+    {
+      "id": "bio_original",
+      "document_id": "2025-OC-226",
+      "page": 1,
+      "quote": "This facility shall initially be available for transactions up to Rs. 5,000.",
+      "aspect": "original transaction limit",
+      "priority": 0,
+      "page_sha256": "bc822a1fefac9e696fc5c2735811b87c4de70ea86ea9a7f73754e53d47ee19fe",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_optional",
+      "document_id": "2025-OC-226",
+      "page": 1,
+      "quote": "These additional methods are optional for the user",
+      "aspect": "optional authentication reference RBI",
+      "priority": 3,
+      "page_sha256": "bc822a1fefac9e696fc5c2735811b87c4de70ea86ea9a7f73754e53d47ee19fe",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_pin_setup",
+      "document_id": "2025-OC-226",
+      "page": 1,
+      "quote": "UIDAI Face Authentication shall be introduced as an additional option, for UPI PIN Set/Re-Set",
+      "aspect": "PIN setup UIDAI distinct authentication",
+      "priority": 3,
+      "page_sha256": "bc822a1fefac9e696fc5c2735811b87c4de70ea86ea9a7f73754e53d47ee19fe",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_security",
+      "document_id": "2025-OC-226",
+      "page": 1,
+      "quote": "restricting usage on rooted or jail-broken devices",
+      "aspect": "security device validation",
+      "priority": 1,
+      "page_sha256": "bc822a1fefac9e696fc5c2735811b87c4de70ea86ea9a7f73754e53d47ee19fe",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_consent",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "shall ensure explicit customer consent is obtained",
+      "aspect": "consent opt out",
+      "priority": 1,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_eligibility",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "validate authentication credentials before authorising",
+      "aspect": "eligibility credentials",
+      "priority": 3,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_binding",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "fresh consent is obtained after each device binding",
+      "aspect": "device binding consent",
+      "priority": 1,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_communication",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "at the time of biometric enablement, disablement, and transaction processing.",
+      "aspect": "communication",
+      "priority": 4,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_reset",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "shall disable this method for the account for all UPI Applications",
+      "aspect": "PIN reset disable consent",
+      "priority": 1,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_rotation",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "before one year of biometric enablement.",
+      "aspect": "key rotation",
+      "priority": 2,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_inactive",
+      "document_id": "2025-OC-226",
+      "page": 2,
+      "quote": "activated only upon customer confirmation.",
+      "aspect": "ninety day inactive confirmation",
+      "priority": 2,
+      "page_sha256": "1f6ee696ad1565fd38b5658afa95d68089bc87045ec80e1a7361c3a3b26aca50",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+    },
+    {
+      "id": "bio_amendment",
+      "document_id": "2026-OC-226A",
+      "page": 1,
+      "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026.",
+      "aspect": "changed transaction limit effective date",
+      "priority": 0,
+      "page_sha256": "f4f3f7a5ec0cfb86da30485939c8f326f4a69acdb5184c9b77f3c93ff0501336",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_226_A_Enhancement_of_Transaction_Limit_for_On_Device_Biometric_Authentication_in_UPI_735a88b16a.pdf"
+    },
+    {
+      "id": "bio_continuity",
+      "document_id": "2026-OC-226A",
+      "page": 1,
+      "quote": "All existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable",
+      "aspect": "continuing requirements",
+      "priority": 0,
+      "page_sha256": "f4f3f7a5ec0cfb86da30485939c8f326f4a69acdb5184c9b77f3c93ff0501336",
+      "source_url": "https://www.npci.org.in/uploads/UPI_OC_226_A_Enhancement_of_Transaction_Limit_for_On_Device_Biometric_Authentication_in_UPI_735a88b16a.pdf"
+    }
+  ],
+  "edges": [
+    {
+      "from_id": "2026-OC-128A",
+      "to_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+      "type": "amends_aspect",
+      "aspect": "deemed_debit_response_codes_and_operations",
+      "evidence_anchor": "dd_amendment",
+      "effective_date": "2026-07-15",
+      "effective_date_anchor": "dd_effective",
+      "review_status": "proposed_ai_assisted"
+    },
+    {
+      "from_id": "2026-OC-226A",
+      "to_id": "2025-OC-226",
+      "type": "amends_aspect",
+      "aspect": "on_device_biometric_transaction_limit",
+      "evidence_anchor": "bio_amendment",
+      "effective_date": "2026-08-07",
+      "effective_date_anchor": "bio_amendment",
+      "review_status": "proposed_ai_assisted"
+    }
+  ],
+  "topics": [
+    {
+      "id": "upi_deemed_debit",
+      "terms": [
+        "deemed debit"
+      ],
+      "anchors": [
+        "dd_original",
+        "dd_original_codes",
+        "dd_amendment",
+        "dd_capital_market",
+        "dd_other_otm",
+        "dd_settlement",
+        "dd_genuine",
+        "dd_report",
+        "dd_reconciliation",
+        "dd_expiry",
+        "dd_claim_window",
+        "dd_execution",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "upi_biometric",
+      "terms": [
+        "biometric",
+        "biometrics",
+        "on device authentication"
+      ],
+      "anchors": [
+        "bio_original",
+        "bio_optional",
+        "bio_pin_setup",
+        "bio_security",
+        "bio_consent",
+        "bio_eligibility",
+        "bio_binding",
+        "bio_communication",
+        "bio_reset",
+        "bio_rotation",
+        "bio_inactive",
+        "bio_amendment",
+        "bio_continuity"
+      ]
+    }
+  ]
+}

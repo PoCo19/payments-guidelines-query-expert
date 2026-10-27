@@ -22,6 +22,10 @@ The **Add documents** screen now wraps this pipeline for new sources. It creates
 
 ## First intake
 
+New candidate releases also prepare a source-anchored `reference_graph.json`. Unchanged page scans can be reused from the preceding release; all references are resolved again against the candidate inventory. Family membership, explicit references and topic mentions stay separate. The file is included in candidate-integrity checks, but preparation does not enable broader graph retrieval. The broader graph remains experimental after comparison tests showed no clear additional benefit. See [implementation and decision](GRAPH_EXPANSION_20261018.md).
+
+As of 16 October, intake also records page-hashed extraction-quality flags, quarantines damaged table structures/lost Unicode characters, and supports a saved original PDF alongside page-marked Markdown. See [quality checks and reviewed overrides](EVIDENCE_IMPROVEMENTS_20261016.md). These checks do not automatically correct OCR or certify a source.
+
 1. Create `inbox/` in the project. Save acquired original documents there. For RBI, start with the priorities in [the source map](RBI_PAYMENTS_SOURCE_MAP.md), download the complete official source and check the body/version before registering it.
 2. Copy [intake.example.json](examples/intake.example.json) to `inbox/intake.json`. Edit it to match the file actually acquired. The example is a template, not proof that its PDF has been downloaded. `file` resolves relative to the manifest. Use the actual acquisition date and verified source dates; omit an unknown issue date.
 3. From the project PowerShell terminal run:

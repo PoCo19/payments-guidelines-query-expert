@@ -1,0 +1,339 @@
+Browser tab: 2, Title: "Payments Guidelines Query Expert", URL: "http://127.0.0.1:8765/".
+0 AXWebArea Payments Guidelines Query Expert, URL: 127.0.0.1:8765/
+	1 container
+		2 link Description: Payments Guidelines Query Expert home, Value: 127.0.0.1:8765/
+		3 text YOUR WORKSPACE
+		4 container Main navigation
+			5 button ⌕ Ask a question
+				6 text ⌕
+				7 text Ask a question
+			8 button ▤ Guideline library 1929
+				9 text ▤
+				10 text Guideline library
+				11 text 1929
+			12 button ＋ Add documents
+				13 text ＋
+				14 text Add documents
+			15 button (collapsed) Project tools, Secondary Actions: Expand
+				16 text Project tools
+			17 button ⓘ About this project
+				18 text ⓘ
+				19 text About this project
+		20 text  Runs on your computer Midterm capstone prototype
+	21 container
+		22 container
+			23 text WORKSPACE /
+			24 text Ask a question
+		25 text  Local AI assistant
+		26 container explore
+			27 text PAYMENTS GUIDELINES QUERY EXPERT
+			28 heading Understand payment guidelines. Ask a question. Check the source., Value: 1
+				29 text Understand payment guidelines.
+				30 text Ask a question. Check the source.
+			31 text Find requirements, summarise a circular or compare documents, with citations you can inspect.
+			32 text Current sources: NPCI and RBI.
+			33 container search-form
+				34 text What would you like to know?
+				35 text DRAFT AI ANSWER
+				36 text entry area (settable) What would you like to know?, ID: question, Value: Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?
+				37 container
+					38 text Researching for (optional)
+					39 combo box (settable) Researching for (optional), ID: entity
+				40 container
+					41 text PRODUCT
+					42 pop up button (collapsed, settable) PRODUCT, Value: All products, ID: series, Secondary Actions: Expand
+						43 menu
+							44 (selected) All products
+							45 AePS
+							46 Authentication
+							47 BBPS
+							48 BHIM Aadhaar
+							49 CTS
+							50 Cards
+							51 Digital Payments
+							52 E-mandates
+							53 IMPS
+							54 NACH
+							55 NEFT
+							56 NETC
+							57 NFS
+							58 Non-bank PSOs
+							59 Others
+							60 PPI
+							61 Payment Aggregators
+							62 Payment Security
+							63 Payment System Access
+							64 Payment System Authorisation
+							65 Product Compliance
+							66 RTGS
+							67 RuPay
+							68 UPI
+							69 e-KYC Setu
+							70 e-RUPI
+				71 container
+					72 text OUTPUT
+					73 pop up button (collapsed, settable) OUTPUT, Value: Cited AI answer, ID: mode, Secondary Actions: Expand
+						74 menu
+							75 Source excerpts
+							76 (selected) Cited AI answer
+				77 button Ask question ↗, ID: search-button
+					317 text Ask question 
+					318 text ↗
+				80 button (collapsed) Filters and answer settings, Secondary Actions: Expand
+					81 text Filters and answer settings
+			82 text TRY A QUESTION
+			83 button Tap & Pay on PoS ↗
+			84 button UPI Circle ↗
+			85 button AutoPay & FASTag ↗
+			319 container results
+				320 heading Answer and sources, Value: 2
+					321 text Answer and sources
+				322 button Export notes ↓, ID: export
+				323 text 18 excerpts · Hybrid · RRF · 28875 ms
+				324 text Draft answer — check the supporting excerpts.
+				325 container
+					326 text The 10 lakh figure in UPI OC185B represents a cumulative limit for the Capital Market category over 24 hours, not a single IPO mandate limit. 
+					327 button Read source S1
+					328 text The ₹10 lakh cumulative limit for Capital Market transactions (MCC 6211) is established under Circular 185B, not as a specific mandate limit for single IPOs. The rule regarding the enhanced per-transaction limit of ₹5 lakh for Retail Direct Scheme and UPI-based ASBA IPOs is explicitly stated in Circular 127. 
+					329 button Read source S1
+					330 button Read source S2
+				331 text Automated support checks passed for the displayed claims. Review details below.
+				332 container
+					333 text Graph pilot: source-anchored proposed links; independent review is pending. Preserve each requirement's scope and effective date. A partial amendment does not replace the entire original circular. Current applicability beyond the indexed sources is unverified.
+					334 text Graph scope caution: Distinguish transaction limits from cumulative 24-hour limits and retain verified-merchant and bank-policy conditions.
+					335 text Graph scope caution: Prioritise the source specific to UPI ASBA IPO purpose01 and MCC6211 when explaining a mandate limit. A cumulative capital-market table value is a different measure and does not by itself change a per-mandate ceiling.
+					336 text Graph scope caution: The original OC71 extraction has an incomplete line; do not reconstruct missing execution conditions.
+					337 text Some evidence was omitted by the passage/character budget. Coverage is partial.
+					338 text The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below.
+				339 button (collapsed) Source limitations — verify important details against the original, Secondary Actions: Expand
+					340 text Source limitations — verify important details against the original
+				341 button (collapsed) How evidence was selected, Secondary Actions: Expand
+					342 text How evidence was selected
+				343 button (collapsed) Response timing, Secondary Actions: Expand
+					344 text Response timing
+				345 container
+					346 button (expanded) Linked circular evidence, Secondary Actions: Collapse
+						347 text Linked circular evidence
+					348 text 14/14 marked passages included from the supported document families. All marked graph passages are present. Proposed source links · independent review pending · up to two graph hops. The ordinary reference expansion remains one hop. This helps retain amendments and related conditions. It does not certify current applicability or complete coverage of all circulars.
+				349 button (collapsed) Scope and evidence coverage, Secondary Actions: Expand
+					350 text Scope and evidence coverage
+				351 container
+					352 button (expanded) Possible gaps or conflicting qualifications — review needed, Secondary Actions: Collapse
+						353 text Possible gaps or conflicting qualifications — review needed
+					354 text These automated findings are separate from the answer and need source review. possible conflict:  The answer claims the 10 lakh figure in UPI OC185B is a cumulative limit for Capital Market (S1.1), but it simultaneously asserts this is not a single IPO mandate limit while citing Circular 127 (S2) which establishes a per-transaction limit of ₹5 lakh for Retail Direct Scheme and UPI-based ASBA IPOs. The answer conflates the cumulative category limit with the specific IPO mandate limit without clarifying that these are distinct scopes (cumulative vs. single transaction), creating ambiguity about whether the 10 lakh figure applies to a single IPO or is merely a daily cap across multiple transactions.
+					355 button S1
+					356 text  ### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |
+					357 button S2
+					358 text  NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl scope unclear:  The answer states that the ₹10 lakh cumulative limit for Capital Market transactions is established under Circular 185B, not as a specific mandate limit for single IPOs. However, it does not explicitly define the scope of 'single IPO mandate limit' versus 'cumulative limit', leaving unclear whether a single IPO transaction can exceed ₹5 lakh if the cumulative daily limit has not been reached, or if the ₹5 lakh per-transaction limit from Circular 127 overrides the cumulative cap for individual IPOs.
+					359 button S1
+					360 text  ### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |
+					361 button S2
+					362 text  NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl
+				363 button (collapsed) Routing, coverage & claim checks, Secondary Actions: Expand
+					364 text Routing, coverage & claim checks
+				365 button (collapsed) 1 statement(s) corrected and checked again, Secondary Actions: Expand
+					366 text 1 statement(s) corrected and checked again
+				367 container citation-S1
+					368 text S1 · UPI · OC 185B 2025-08-28
+					369 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						370 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					371 text Linked source passage (pilot)
+					372 text Annexure I · clause marker 1.
+					373 text ### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5
+					374 button Read page 2 ↗
+					375 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=2
+					376 button Related circulars ↗
+					377 text ocr · source image checked transcription
+				378 container citation-S2
+					379 text S2 · UPI · Reference 127 Date unknown
+					380 heading UPI OC 127 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI, Value: 3
+						381 text UPI OC 127 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+					382 text Linked source passage (pilot)
+					383 text Document opening
+					384 text NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl Retail Direct PurposeCode25 Scheme(RDS)* MCC - 6211 *For RDS wehave introduced a new purpose as an identifier which is purpose code 25.Memberbank acting as an acquirer for RDS scheme shall send the transaction with the new purpose code All such transactions shall be considered under "Verified Merchant"and appropriate rules will be applicable. Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changeson the App&application systems.Members arerequestedtomake the necessary changes by 14th December, 2021. Yours sincerely, Praveena Rai ChiefOperatingOfficer 1001A,TheCapital,BWing,10thFlo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T:+912240009100F:+912240009101 contact@npci.org.inwww.npci.org.in CIN:U74990MH2008NPL189067
+					385 button Read page 1 ↗
+					386 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_127_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_9c0353fa31.pdf#page=1
+					387 button Related circulars ↗
+					388 text imported_markdown · imported text not verified
+				389 container citation-S3
+					390 text S3 · UPI · OC 185A 2024-08-24
+					391 heading Value: 3, Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+						392 text Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+					393 text Linked source passage (pilot)
+					394 text Document opening
+					395 text aR ART eT |p NATIONAL PAYMENTS CORPORATION OF INDIA Annexure to OC 185A Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI Regarding circular no. NPCI/UPI/ 2024-25/OC-185A, which pertains to the implementation of a Rs 5 Lakh limit per transaction for verified merchants in specific categories in UPI - Category Circular reference & ee Tax Payments MCC - 9311 NPCI/UPI/2024-25/0C-185A Hospitals and MCC - 8011, 8021, 8031, 8041, NPCI/UPI/2023-24/0C-185 Educational 8042, 8049, 8050, 8062, 8071, (Existing — No Change) Services 8099, 0742, 8211, 8220, 8241, 8244, 8249, 8299 IPO & G Sec MCC 6211, NPCI/UPI/OC-127/2021 -22 through RBI Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change) Retail Direct Scheme (RDS) Note:
+					396 button Read page 2 ↗
+					397 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf#page=2
+					398 button Related circulars ↗
+					399 text ocr · machine extraction not verified word for word
+				400 container citation-S4
+					401 text S4 · UPI · OC 185B 2025-08-28
+					402 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						403 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					404 text Linked source passage (pilot)
+					405 text Document opening · clause marker 3.
+					406 text 3. Member banks may continue to be provided the discretion to set their internal limits based on their internal policy, within the overall ceilings prescribed by NPCI.
+					407 button Read page 1 ↗
+					408 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=1
+					409 button Related circulars ↗
+					410 text ocr · targeted currency correction ai visual check
+				411 container citation-S5
+					412 text S5 · UPI · OC 185B 2025-08-28
+					413 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						414 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					415 text Linked source passage (pilot)
+					416 text Document opening · clause marker 4.
+					417 text 4. The per transaction limit for P2P shall continue as per the extant guidelines. Member, Apps and PSPs take note of the above enhancement, undertake requisite changes and ensure the compliance with the same by 15" September 2025. Yours Sincerely, SD/- Sourabh Tomar Head UPI Product 10014, The Capital, B Wing, 10" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 O51- a T: +91 22 40009100 F: +91 22 40009101 Together ‘om contacti@npci.org.in www.npci.org.in WeBuild woe CIN: U74990MH2008NPL189067
+					418 button Read page 1 ↗
+					419 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=1
+					420 button Related circulars ↗
+					421 text ocr · targeted currency correction ai visual check
+				422 container citation-S6
+					423 text S6 · UPI · OC 185A 2024-08-24
+					424 heading Value: 3, Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+						425 text Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+					426 text Linked source passage (pilot)
+					427 text Document opening
+					428 text sae ersshr aprary Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2024-25/0C/185A 24" August 2024 To All Members of UPI, Dear Madan/Sir, Subject: Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories. This proposed enhancement aligns with previous limit enhancements implemented through circulars such as NPCI/UPI/OC-127/2021- 2022 dated 9'" December 2021 and NPCI/UPI/OC-185/2023-2024 dated 19" December 2023. In view of the above, the per transaction value limit in UPI has now been enhanced to = 5 lakhs for entities under categories aligned to tax payments. This enhanced limit shall only be applicable to ‘Verified Merchants’, in the applicable category. To enable this enhancement:
+					429 button Read page 1 ↗
+					430 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf#page=1
+					431 button Related circulars ↗
+					432 text ocr · machine extraction not verified word for word
+				433 container citation-S7
+					434 text S7 · UPI · OC 185B 2025-08-28
+					435 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						436 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					437 text Linked source passage (pilot)
+					438 text Document opening · clause marker 1.
+					439 text 1. The enhanced limits shall be applicable for merchants which are categorised as ‘Verified Merchant’.
+					440 button Read page 1 ↗
+					441 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=1
+					442 button Related circulars ↗
+					443 text ocr · targeted currency correction ai visual check
+				444 container citation-S8
+					445 text S8 · UPI · Reference 71 Date unknown
+					446 heading Circular 71 - Enhancement of per transaction limit to Rs 2.Lakhs for UPI based ASBA, Value: 3
+						447 text Circular 71 - Enhancement of per transaction limit to Rs 2.Lakhs for UPI based ASBA
+					448 text Linked source passage (pilot)
+					449 text Document opening
+					450 text NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UP1/2019-20/OCNo.71 June21,2019 To, AllMembersofUPl Dear Sir/Madam, Subject:EnhancementofUPlpertransaction limittoRs.2lakhs forUPIbasedAsBA The second phase of the UPl option in IPO is going live with effect from July 1, 2019. It is now advised that all members and PsP banks live on UPl 2.0mandateblock functionality should maintain the per transaction limit of Rs. 2 lakhs for UPl based ASBA transactions with purpose Code01withMCC6211. Member banks and PsPs are advised to ensure necessary checks at their end and maintain transaction limits as directed above for both, mandate block (non-financial) and mandate The ScSB's registered with SEBl and PsP banks shall submit the necessary compliance to ipo.upi@npci.org.inonorbeforeJune30,2019. Yours faithfully, DilipAsbe ManagingDirector&CEO 1001A,The Capital,BWing,10Floor. BandraKurlaComplex,Bandra(E),Mumbai 400O51. T:+912240009100F:+912240009101www.npci.org.in CIN:U74990MH2008NPL189067
+					451 button Read page 1 ↗
+					452 link Description: Official source ↗, Value: npci.org.in/uploads/Circular_Enhancement_2_Lakhs_UPI_ASBA_7f656631f8.pdf#page=1
+					453 button Related circulars ↗
+					454 text imported_markdown · imported text not verified
+				455 container citation-S9
+					456 text S9 · UPI · OC 185B 2025-08-28
+					457 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						458 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					459 text Linked source passage (pilot)
+					460 text Annexure I · clause marker 1.
+					461 text 1. * Issuing banks are required to ensure that such cumulative limits are kept at their end. > Formatting note: the three Insurance MCC subrows and their merged cumulative-limit cell have been combined into one Markdown row without changing the values.
+					462 button Read page 2 ↗
+					463 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=2
+					464 button Related circulars ↗
+					465 text ocr · source image checked transcription
+				466 container citation-S10
+					467 text S10 · UPI · OC 185 2023-12-19
+					468 heading Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI, Value: 3
+						469 text Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+					470 text Linked source passage (pilot)
+					471 text Document opening
+					472 text HRT WERT Bras PRT NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC-185/2023-24 19" December 2023 To, All Members of UPI Dear MadanVSir, Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories, as per the RBI Statement on Developmental and Regulatory Policies, dated 8'" December 2023. In view of the above, the per transaction value limit in UP] has now been enhanced to = 5 lakhs for merchants under categories aligned to hospitals and educational services. This enhanced limit shall only be applicable to ‘Verified Merchants’. To enable this enhancement:
+					473 button Read page 1 ↗
+					474 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_185_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_65fd071f6c.pdf#page=1
+					475 button Related circulars ↗
+					476 text ocr · machine extraction not verified word for word
+				477 container citation-S11
+					478 text S11 · UPI · OC 185A 2024-08-24
+					479 heading Value: 3, Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+						480 text Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI
+					481 text Linked source passage (pilot)
+					482 text Document opening · clause marker 2.
+					483 text 2. Acquiring entities must ensure thai the classification of their merchants within ‘MCC- 9311’ strictly adheres to the tax payments only. They shall ensure that entities are added to the ‘Verified Merchant’ list after proper due diligence.
+					484 button Read page 1 ↗
+					485 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf#page=1
+					486 button Related circulars ↗
+					487 text ocr · machine extraction not verified word for word
+				488 container citation-S12
+					489 text S12 · UPI · OC 185B 2025-08-28
+					490 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						491 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					492 text Linked source passage (pilot)
+					493 text Document opening
+					494 text urcdte ease ara Perr NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2025-26/0C/185B 28" August 2025 To, All Members in UPI, Dear Madan/Sir, Subject: Addendum to OC 185 A — Implementation of higher per transaction limit for specific categories in UPI Vide reference to NPCI/UPI/2024-25/0C/185 A dated 24" August 2024, NPCI has increased the per transaction limits for entities under categories aligned to Tax Payments to ₹5 lakh. With UPI emerging as a preferred payment method, there are requirements from the market on extending higher per transaction limits for additional categories of transactions in UPI. In view of the above the per transaction limits for the mentioned categories in the Annexure I are enhanced accordingly along with additional guidelines:
+					495 button Read page 1 ↗
+					496 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=1
+					497 button Related circulars ↗
+					498 text ocr · targeted currency correction ai visual check
+				499 container citation-S13
+					500 text S13 · UPI · OC 200 2024-07-31
+					501 heading Enablement of UPI Mandate feature of Single Block Multiple Debits, Value: 3
+						502 text Enablement of UPI Mandate feature of Single Block Multiple Debits
+					503 text Direct match
+					504 text Document opening · clause marker c.
+					505 text c. The per transaction limit for such mandate creations shall be Rs 5 Lakh for the purpose code 76, while for purpose code 77 existing UPI limits shall be applicable.
+					506 button Read page 2 ↗
+					507 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf#page=2
+					508 button Related circulars ↗
+					509 text ocr · machine extraction not verified word for word
+				510 container citation-S14
+					511 text S14 · UPI · OC 185B 2025-08-28
+					512 heading Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI, Value: 3
+						513 text Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI
+					514 text Direct match
+					515 text Annexure I · clause marker 1.
+					516 text UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5 Lakh | | 11 | Digital Account Opening — Initial Funding | 7409 (New MCC) | ₹2 Lakh | ₹2 Lakh | **Notes**
+					517 button Read page 2 ↗
+					518 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf#page=2
+					519 button Related circulars ↗
+					520 text ocr · source image checked transcription
+				521 container citation-S15
+					522 text S15 · NACH · Reference 010E Date unknown
+					523 heading Circular no. 010 - E-Mandate scope & limit enhancement, Value: 3
+						524 text Circular no. 010 - E-Mandate scope & limit enhancement
+					525 text Direct match
+					526 text Document opening · clause marker 2.
+					527 text 2. Current mandate limit of Rs. 1 lakh is increased to Rs. 10 lakhs (Internet banking and debit card authentication modes). In line with the physical mandates, for discouraging PDCs, provision is made for registering security mandate. The limit for security mandate is Rs. 50 lakhs. Security mandate can be registered only for LON category. The mandate limit of Rs. 10 lakhs will be reviewed after 1 year. The limit for eSign based E – Mandate will continue to be at Rs. 1 lakh till further notice.
+					528 button Read page 1 ↗
+					529 link Description: Official source ↗, Value: npci.org.in/uploads/Circular_no_010_E_Mandate_scope_and_limit_enhancement_decae8a7a9.pdf#page=1
+					530 button Related circulars ↗
+					531 text imported_markdown · imported text not verified
+				532 container citation-S16
+					533 text S16 · UPI · OC 200 2024-07-31
+					534 heading Enablement of UPI Mandate feature of Single Block Multiple Debits, Value: 3
+						535 text Enablement of UPI Mandate feature of Single Block Multiple Debits
+					536 text Definition, scope or surrounding qualification · via 2024-OC-200
+					537 text Document opening · clause marker d.
+					538 text d. It is re-iterated that issuer bank shall do all the necessary validation at the time of mandate creation. The execution of such mandates shall be considered success with the premise that mandate created successfully shall be executed successfully. With reference to NPCI/UPI/OC No. 88/2020-21 dated 14° May 2020 and further with NPCI/UPI/OC No.128/2021-22 dated 14 December 2021, NPCI has defined the scope of Deemed Debit and the same shall be extended to Single Block Multiple Debits mandates as well.
+					539 button Read page 2 ↗
+					540 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf#page=2
+					541 button Related circulars ↗
+					542 text ocr · machine extraction not verified word for word
+				543 container citation-S17
+					544 text S17 · UPI · OC 200 2024-07-31
+					545 heading Enablement of UPI Mandate feature of Single Block Multiple Debits, Value: 3
+						546 text Enablement of UPI Mandate feature of Single Block Multiple Debits
+					547 text Definition, scope or surrounding qualification · via 2024-OC-200
+					548 text Document opening · clause marker i.
+					549 text i. QR based ii, Intent iii. | SDK/Plug In The execution/debit of the mandate shall be as per the extant mode of mandates. Other mode of initiation shall be envisaged later.
+					550 button Read page 2 ↗
+					551 link Description: Official source ↗, Value: npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf#page=2
+					552 button Related circulars ↗
+					553 text ocr · machine extraction not verified word for word
+				554 container citation-S18
+					555 text S18 · NACH · Reference 010E Date unknown
+					556 heading Circular no. 010 - E-Mandate scope & limit enhancement, Value: 3
+						557 text Circular no. 010 - E-Mandate scope & limit enhancement
+					558 text Definition, scope or surrounding qualification · via npci-source-d46417e82b6fad68d692400c
+					559 text Document opening · clause marker 3.
+					560 text 3. In order to facilitate the customer in setting up standing instruction to be processed through NACH, a new category “S002 – Standing instruction” is introduced. The customers through E – Mandate can set up a standing instruction allowing the sponsor banks to pull the funds as per their instruction at an agreed frequency. Member banks are advised to take note and carryout necessary software modification for implementing the changes as detailed above. The information herein may be disseminated to all the concerned. Queries, if any, may be raised through CRM. With Warm Regards Giridhar GM (Chief – Offline product operations & technology)
+					561 button Read page 1 ↗
+					562 link Description: Official source ↗, Value: npci.org.in/uploads/Circular_no_010_E_Mandate_scope_and_limit_enhancement_decae8a7a9.pdf#page=1
+					563 button Related circulars ↗
+					564 text imported_markdown · imported text not verified
+			313 text ◉
+			314 container
+				315 text Check important decisions against the original guideline.  This prototype uses an imported collection; some documents or pages are unavailable.
+		316 text PAYMENTS GUIDELINES QUERY EXPERT Local capstone prototype ·  Current sources: NPCI and RBI.
+
+The focused UI element is 0 AXWebArea Payments Guidelines Query Expert, URL: 127.0.0.1:8765/

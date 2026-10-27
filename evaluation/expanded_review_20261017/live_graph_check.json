@@ -1,0 +1,131 @@
+{
+  "payload": {
+    "query": "What is the UPI on-device biometric transaction limit, and when did it change?",
+    "series": "UPI",
+    "method": "hybrid",
+    "scope": "related",
+    "mode": "evidence"
+  },
+  "graph_context": {
+    "status": "active",
+    "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+    "topics": [
+      "upi_biometric"
+    ],
+    "max_hops": 2,
+    "max_graph_chunks": 12,
+    "relationships": [
+      {
+        "from_id": "2026-OC-226A",
+        "to_id": "2025-OC-226",
+        "type": "amends_aspect",
+        "aspect": "on_device_biometric_transaction_limit",
+        "evidence_anchor": "bio_amendment",
+        "effective_date": "2026-08-07",
+        "effective_date_anchor": "bio_amendment",
+        "review_status": "proposed_ai_assisted"
+      }
+    ],
+    "expected_anchor_ids": [
+      "bio_original",
+      "bio_optional",
+      "bio_pin_setup",
+      "bio_security",
+      "bio_consent",
+      "bio_eligibility",
+      "bio_binding",
+      "bio_communication",
+      "bio_reset",
+      "bio_rotation",
+      "bio_inactive",
+      "bio_amendment",
+      "bio_continuity"
+    ],
+    "source_gaps": [],
+    "cautions": [],
+    "review_status": "proposed_ai_assisted",
+    "limitation": "Proposed links guide source retrieval only. No automatic supersession or current-applicability decision.",
+    "anchor_coverage": [
+      {
+        "anchor_id": "bio_original",
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_optional",
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_pin_setup",
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_security",
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_consent",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_eligibility",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_binding",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_communication",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_reset",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_rotation",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_inactive",
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_amendment",
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "included": true
+      },
+      {
+        "anchor_id": "bio_continuity",
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "included": true
+      }
+    ],
+    "complete_within_pilot": true
+  },
+  "response_status": "source_excerpts"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "AI_assisted_development_review",
+  "decision": "Do not change the application generation prompt",
+  "reason": "No consistent benefit; observed regressions in historical treatment and source-specific mandate attribution.",
+  "capture": "evaluation/quality_runs/generation-20261019T182137210890Z/capture.json",
+  "cases": {
+    "X-LIMIT-03": "Candidate still omits the Verified Merchant restriction; additional prompt guidance did not repair the known omission.",
+    "G-DD-01": "Candidate incorrectly describes declines as failures after saying the addendum includes them in Deemed Debit; baseline preserves the distinction.",
+    "G-LIMIT-04": "Candidate distinguishes the EMD table row but the broader paired run does not establish a consistently better answer.",
+    "G-IPO-02": "Candidate infers a per-mandate rule from the general Capital Market table and loses the source-specific OC127 history."
+  },
+  "independent_review": "pending"
+}

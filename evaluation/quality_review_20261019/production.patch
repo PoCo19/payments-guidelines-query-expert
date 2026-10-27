@@ -1,0 +1,97 @@
+--- before/adaptive_context.py
++++ adaptive_context.py
+@@ -142,10 +142,12 @@
+                 if counts[p['document_id']]>=cap:continue
+                 seeds.append(p);counts[p['document_id']]+=1
+                 if len(seeds)>=8:break
+-        from evidence_focus import table_matches,phase_companions
++        from evidence_focus import table_matches,phase_companions,phase_matches
+         focused=table_matches(query,original_candidates) if research else []
+-        seeds=list({p['id']:p for p in seeds+focused}.values())
++        phase_focused=phase_matches(query,original_candidates) if research else []
++        seeds=list({p['id']:p for p in seeds+focused+phase_focused}.values())
+         candidate_trace['table_focus_ids']=[p['id'] for p in focused]
++        candidate_trace['phase_focus_ids']=[p['id'] for p in phase_focused]
+         seed_ids=[p['id'] for p in seeds]
+         if scope=='related' and not document_ids:
+             graph=getattr(engine,'evidence_graph',None)
+--- before/claim_repair.py
++++ claim_repair.py
+@@ -22,7 +22,18 @@
+             # Prefer the failing claim's own evidence; avoid overwhelming a local
+             # model with unrelated material from the rest of a long answer.
+             preferred=set(claim['sources'])
+-            selected=([s for s in eligible if s['citation'] in preferred]+[s for s in eligible if s['citation'] not in preferred])[:6]
++            phase_context=[]
++            if any('notification rule concerns a different event phase' in r for r in claim.get('review_reasons',[])):
++                from evidence_focus import phases
++                wanted=phases(question)
++                own_docs={s.get('document_id') for s in eligible if s['citation'] in preferred and s.get('document_id')}
++                phase_context=[s for s in eligible if s.get('document_id') in own_docs
++                    and phases(s.get('section_heading','')) & wanted
++                    and re.search(r'\bnotif\w*|\bnotice\b|\balert\b',s.get('section_heading',''),re.I)][:2]
++            selected=list({s['citation']:s for s in phase_context+
++                [s for s in eligible if s['citation'] in preferred]+
++                [s for s in eligible if s['citation'] not in preferred]}.values())[:6]
++            audit['evidence_citations']=[s['citation'] for s in selected]
+             selected_ids={s['citation'] for s in selected}
+             # Literal navigation hints, not inferred legal relationships. This
+             # makes a scope hidden in noisy OCR easier to locate without editing it.
+@@ -30,11 +41,17 @@
+                 if scope_term_present(term,s['text'],scope_acronyms(claim['text']))]
+                 for term in sorted(scope_acronyms(claim['text'])-{'OC','INR','RS','NA','NO','FY'})}
+             task=dict(question=question,withheld_claim=claim,scope_term_locations=scope_locations)
+-            if any(reason.startswith('The specific scope (') for reason in claim.get('review_reasons',[])):
++            if phase_context:
++                task.pop('withheld_claim',None)
++                task.update(repair_problem=claim['review_reasons'],requested_phase=sorted(wanted),
++                    phase_evidence=[s['citation'] for s in phase_context],
++                    already_supported=[c['text'] for c in kept],
++                    instruction='Fill only the missing requested-phase rule in one short sentence using phase_evidence. Other accepted claims already explain the background: do not repeat that background or compare circulars here. Put source IDs only in the sources array. State the required action directly without circular numbers, dates or parenthetical source labels. Do not transfer an exemption between phases.')
++            if any(reason.startswith(('The specific scope (','The collective category (','The collective statement')) for reason in claim.get('review_reasons',[])):
+                 # Do not prime the model to copy the very sentence that confuses
+                 # two sources. The question and scope locations identify the point.
+-                task.pop('withheld_claim')
+-                task.update(repair_problem=claim['review_reasons'],instruction='Write a fresh answer to this attribution issue. Use a separate sentence for each rule and explicitly name its own circular. Do not transfer a scope between documents.')
++                task.pop('withheld_claim',None)
++                task.update(repair_problem=claim['review_reasons'],instruction='Write a fresh correction of this attribution issue. State only the rule that the question asks about, naming the circular that actually establishes it. Do not repeat an unsupported amount from the question or restate the whole answer. Use separate sentences for rules from different circulars; a later reference to an earlier rule does not itself introduce that rule.')
+             schema={'type':'object','properties':{
+                 'status':{'type':'string','enum':['repairable','unresolved']},
+                 'text':{'type':'string'},'sources':{'type':'array','maxItems':6,'items':{'type':'string','enum':sorted(selected_ids)}}},
+--- before/evidence_focus.py
++++ evidence_focus.py
+@@ -41,6 +41,34 @@
+     return result
+ 
+ 
++def phase_matches(query, candidates, limit=2):
++    """Protect notification clauses demoted by ranking on a narrower topic.
++
++    A candidate must have a notification-phase heading and share a distinctive
++    query term in its body. Its neighbouring phase is recovered separately;
++    neither a publisher name nor the word 'notification' alone selects a rule.
++    """
++    if not phases(query) or not re.search(r'\b(?:notif\w*|notices?|messages?|alerts?)\b',query,re.I):
++        return []
++    generic=set(('the a an on in of to for and or by from with under our it is are was '
++                 'be been can could should would must shall may do doe did not no '
++                 'what which when how why whether because if than that this these '
++                 'before after prior advance pre post transaction debit charge '
++                 'notification notice message alert issuer customer user rule '
++                 'guideline requirement required exempt exemption omit skip send '
++                 'payment bank rbi npci').split())
++    focus=terms(query)-generic
++    if not focus:return []
++    found=[]
++    for part in candidates:
++        heading=part.get('section_heading','')
++        if (phases(heading) and re.search(r'\bnotif\w*|\bnotice\b|\balert\b',heading,re.I)
++                and focus & terms(part['text'])):
++            found.append(part)
++            if len(found)>=limit:break
++    return found
++
++
+ def phase_companions(engine, query, seeds, limit=2):
+     """Find an adjacent named phase of the same action in an already found document."""
+     wanted = phases(query)

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "REF-01",
+    "query": "How do the UPI Lite balance limits and optional auto top-up work together?",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Replenishment of used limit shall be allowed only in online mode with AFA."
+      },
+      {
+        "document_id": "2024-OC-205",
+        "page": 1,
+        "quote": "whenever the balance falls below a minimum limit set by them."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-02",
+    "query": "Does the later UPI Lite limit circular still refer to the separate auto top-up instructions?",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Customer will further have the option to set Auto Top-up for limit replenishment"
+      },
+      {
+        "document_id": "2024-OC-205",
+        "page": 1,
+        "quote": "option of revoking the Auto Top-up mandate at any point of time"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-03",
+    "query": "For UPI credit lines, how do transaction limits differ from changing the credit limit through an app?",
+    "references": [
+      {
+        "document_id": "2023-UPI-171",
+        "page": 2,
+        "quote": "Members shall follow standard transaction limits"
+      },
+      {
+        "document_id": "2024-OC-194",
+        "page": 2,
+        "quote": "User shall be able to accept/ apply for enhancing credit limit"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-04",
+    "query": "For UPI Single Block Multiple Debits, can the customer revoke the mandate and which reconciliation guidance is referenced?",
+    "references": [
+      {
+        "document_id": "2024-OC-200",
+        "page": 3,
+        "quote": "Customer shall also be provided with an option of revoking the mandate"
+      },
+      {
+        "document_id": "2024-OC-200",
+        "page": 3,
+        "quote": "UPI/OC/No.78/2019-2020"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-05",
+    "query": "Under UPI OC169A, what is said about dormant Lite accounts?",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Any balances in these dormant LITE accounts shall be refunded to the source bank account."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-06",
+    "query": "Explain UPI Lite auto top-up and refunds from dormant Lite accounts, keeping their separate conditions clear.",
+    "references": [
+      {
+        "document_id": "2024-OC-205",
+        "page": 1,
+        "quote": "whenever the balance falls below a minimum limit set by them."
+      },
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "zero transactions in the past six months"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-07",
+    "query": "How do the UPI Lite balance limits and optional auto top-up work together?",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Replenishment of used limit shall be allowed only in online mode with AFA."
+      },
+      {
+        "document_id": "2024-OC-205",
+        "page": 1,
+        "quote": "whenever the balance falls below a minimum limit set by them."
+      }
+    ],
+    "route": "auto",
+    "scope": "strict",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development",
+    "control": "strict_no_expansion"
+  },
+  {
+    "id": "REF-08",
+    "query": "Under UPI OC169A, what is said about dormant Lite accounts?",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Any balances in these dormant LITE accounts shall be refunded to the source bank account."
+      }
+    ],
+    "route": "auto",
+    "scope": "strict",
+    "series": "UPI",
+    "expected_answer": "Retrieve and attribute the quoted provisions separately; independently reviewed answer pending.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development",
+    "control": "strict_no_expansion"
+  },
+  {
+    "id": "REF-09",
+    "query": "Summarise UPI OC169A.",
+    "references": [
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "Any balances in these dormant LITE accounts shall be refunded to the source bank account."
+      }
+    ],
+    "route": "summary",
+    "scope": "related",
+    "series": "UPI",
+    "control": "selected_route_no_expansion",
+    "expected_answer": "Source-scoped summary; no graph expansion.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  },
+  {
+    "id": "REF-10",
+    "query": "What is the UPI rule in OC9999?",
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": true,
+    "control": "missing_reference",
+    "expected_answer": "Missing source; do not invent contents.",
+    "review_status": "AI_assisted_requires_independent_review",
+    "split": "development"
+  }
+]

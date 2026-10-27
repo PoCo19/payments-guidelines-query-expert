@@ -1,0 +1,48 @@
+{
+  "formatting_source": "fallback",
+  "answer_blocks": [
+    {
+      "type": "paragraph",
+      "claims": [
+        {
+          "text": "UPI OC 128 treats response code 59 (Suspected fraud) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+          "sources": [
+            "S1",
+            "S3"
+          ],
+          "draft_index": 1,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "UPI OC 128 treats response code K1 (Suspected fraud based on risk score) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+          "sources": [
+            "S3"
+          ],
+          "draft_index": 2,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "UPI OC 128A updates the treatment of response code 59 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+          "sources": [
+            "S2"
+          ],
+          "draft_index": 3,
+          "support_status": "automated_supported"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "claims": [
+        {
+          "text": "UPI OC 128A updates the treatment of response code K1 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+          "sources": [
+            "S2"
+          ],
+          "draft_index": 4,
+          "support_status": "automated_supported"
+        }
+      ]
+    }
+  ]
+}

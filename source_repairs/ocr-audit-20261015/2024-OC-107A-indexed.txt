@@ -1,0 +1,39 @@
+PAGE 1
+aren eresr yerart frepr
+NATIONAL PAYMENTS CORPORATION OF INDIA
+NPCI/UPI/OC-107 A/2023-24 19" April, 2024
+To,
+All Members in Unified Payments Interface(UPI)
+Dear Sir/Madam,
+Subject: Addendum to Circular for revision of Retrieval Reference Number (RRN) in UPI to avoid
+duplicates
+Background: With reference to NPCI/UPI/OC-107/2020-21 NPCI had revise the nomenclature of RRN
+in UPI to avoid duplicate transaction.
+The revised RRN nomenclature as dated 01* April, 2021 was:
+RRN construct YDDDSSSSSSSS where:
+Y-Ending digit of the Year
+DDD-Julian Date
+SSSSSSSS — STAN Number
+Basis the above RRN nomenclature, there is a limit of 100 million unique RRNs which can be generated
+within a day by a single PSP. With the UPI volumes increasing, it is observed that during peak days,
+few of the PSP are exceeding the limit of 100 million unique RRNs as per the extent RRN logic.
+Duplicate RRNs results in system issues with respect to generation of transaction details and may also
+lead transactional issues at member's end.
+Revised RRN Nomenclature: in view of the above, the current RRN nomenclature to be revised
+wherein the entire RRN shall have the provision for STAN value which shall help in accommodating
+~1000 Billion transactions with unique RRN from a single PSP.
+The revised RRN nomenclaiure shall be:
+RRN construct SSSSSSSSSSSS where:
+SSSSSSSSSSSS — STAN Number
+The PSPs/Bank wherein daily transaction limit are exceeding 100 million are advised to implement the
+revised RRN construct to avoid duplicity. Further, PSPs/Banks to remove checks, if any, against the
+‘YDDD’ of the RRN construct. In case banks/PSPs have validation of 'YDDD’ in RRN, please ensure
+that the same is removed by 31%, May 2024.
+Yours sincerely,
+SD/-
+Kunal Kalawatia
+Chief of Products 101A, The Capital, B Wing, 10® Floor,
+Bandra Kurla Complex, Bandra (E), Mumbai 400 051-
+T: #9122 40009100 F: +91 22 40009101
+contact@npci.org.in www.npci.org.in
+CIN: U74990MH2008NPL189067

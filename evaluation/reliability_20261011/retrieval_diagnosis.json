@@ -1,0 +1,592 @@
+{
+  "capture": "evaluation\\payments_runs\\20261011T140941246919Z\\capture.json",
+  "corpus_fingerprint": "12baf1b5415006535c91ef99d2604ac6cb949eeb90acc9253998f1d62d8e1682",
+  "rows": [
+    {
+      "case": "PAY-001",
+      "anchor": {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/- at any point of time",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:ppi:2026-09-30:p1:v3c34"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 5,
+      "seed": true
+    },
+    {
+      "case": "PAY-002",
+      "anchor": {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:payment-aggregators:2025-09-15:p1:v3c31"
+      ],
+      "candidate_rank": 8,
+      "reranked_rank": 11,
+      "seed": true
+    },
+    {
+      "case": "PAY-002",
+      "anchor": {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore by the end of third financial year",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:payment-aggregators:2025-09-15:p1:v3c31"
+      ],
+      "candidate_rank": 8,
+      "reranked_rank": 11,
+      "seed": true
+    },
+    {
+      "case": "PAY-003",
+      "anchor": {
+        "document_id": "rbi:bbps:2024-02-29",
+        "page": 1,
+        "quote": "All Bharat Bill Payment Operating Units (BBPOUs)",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12616",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:bbps:2024-02-29:p1:v3c9"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 3,
+      "seed": true
+    },
+    {
+      "case": "PAY-004",
+      "anchor": {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:nonbank-pso-cyber:2024-07-30:p1:v3c9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-004",
+      "anchor": {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "all authorised non-bank PSOs",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:nonbank-pso-cyber:2024-07-30:p1:v3c10"
+      ],
+      "candidate_rank": 5,
+      "reranked_rank": 3,
+      "seed": true
+    },
+    {
+      "case": "PAY-005",
+      "anchor": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "at least two distinct factors of authentication",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "candidate_rank": 6,
+      "reranked_rank": 4,
+      "seed": true
+    },
+    {
+      "case": "PAY-005",
+      "anchor": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "candidate_rank": 6,
+      "reranked_rank": 4,
+      "seed": true
+    },
+    {
+      "case": "PAY-006",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹15,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c10"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-006",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹1,00,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c10"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-007",
+      "anchor": {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions issued for the specific payment system",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:authorisation:2026-06-15:p1:v3c14"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-008",
+      "anchor": {
+        "document_id": "rbi:access-criteria:2021-07-28",
+        "page": 1,
+        "quote": "all scheduled/ licensed banks operating in India and authorised payment system providers",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10833",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:access-criteria:2021-07-28:p1:v3c8"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 3,
+      "seed": true
+    },
+    {
+      "case": "PAY-009",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c8"
+      ],
+      "candidate_rank": 8,
+      "reranked_rank": 7,
+      "seed": true
+    },
+    {
+      "case": "PAY-009",
+      "anchor": {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "Exemption from 24-Hours prior Pre-Debit Notification",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2024-OC-207:p1:v3c5"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-009",
+      "anchor": {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "MCC 4784",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2024-OC-207:p1:v3c6"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-010",
+      "anchor": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "candidate_rank": null,
+      "reranked_rank": null,
+      "seed": false,
+      "diagnosis": "not_in_candidates"
+    },
+    {
+      "case": "PAY-010",
+      "anchor": {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "These additional methods are optional for the user",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2025-OC-226:p1:v3c1"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-011",
+      "anchor": {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/-",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:ppi:2026-09-30:p1:v3c34"
+      ],
+      "candidate_rank": 24,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-011",
+      "anchor": {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "₹1,000 per transaction with ₹5,000 being the total limit",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2025-OC-169A:p1:v3c2"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 8,
+      "seed": true
+    },
+    {
+      "case": "PAY-012",
+      "anchor": {
+        "document_id": "npci-source-01e7e3bc387186fe8cdbcc9a",
+        "page": 1,
+        "quote": "PPI holders shall be on-boarded for UPI by their own PPI issuer only.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_134_Adherence_to_RBI_PPI_Interoperability_Guidelines_455e2af154.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "npci-source-01e7e3bc387186fe8cdbcc9a:p1:v3c1"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-012",
+      "anchor": {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "A PPI issuer may also facilitate discovery of its full-KYC PPIs on third-party UPI mobile applications",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:ppi:2026-09-30:p1:v3c46"
+      ],
+      "candidate_rank": 4,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-013",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c6"
+      ],
+      "candidate_rank": 47,
+      "reranked_rank": 22,
+      "seed": false,
+      "diagnosis": "not_selected_as_seed"
+    },
+    {
+      "case": "PAY-013",
+      "anchor": {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "strictly user-driven",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2025-OC-223:p1:v3c2"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 8,
+      "seed": true
+    },
+    {
+      "case": "PAY-013",
+      "anchor": {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "once in a rolling 90-day period",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      },
+      "found": true,
+      "matching_chunks": [
+        "2025-OC-223:p1:v3c2"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 8,
+      "seed": true
+    },
+    {
+      "case": "PAY-014",
+      "anchor": {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:authorisation:2026-06-15:p1:v3c14"
+      ],
+      "candidate_rank": null,
+      "reranked_rank": null,
+      "seed": false,
+      "diagnosis": "not_in_candidates"
+    },
+    {
+      "case": "PAY-014",
+      "anchor": {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:payment-aggregators:2025-09-15:p1:v3c31"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 7,
+      "seed": false,
+      "diagnosis": "not_selected_as_seed"
+    },
+    {
+      "case": "PAY-014",
+      "anchor": {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:payment-aggregators:2025-09-15:p1:v3c31"
+      ],
+      "candidate_rank": 3,
+      "reranked_rank": 7,
+      "seed": false,
+      "diagnosis": "not_selected_as_seed"
+    },
+    {
+      "case": "PAY-015",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c8"
+      ],
+      "candidate_rank": 2,
+      "reranked_rank": 2,
+      "seed": true
+    },
+    {
+      "case": "PAY-015",
+      "anchor": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "found": false,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c9"
+      ],
+      "candidate_rank": 5,
+      "reranked_rank": 5,
+      "seed": false,
+      "diagnosis": "not_selected_as_seed"
+    },
+    {
+      "case": "PAY-016",
+      "anchor": {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2025",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:nonbank-pso-cyber:2024-07-30:p1:v3c9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-016",
+      "anchor": {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2026",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:nonbank-pso-cyber:2024-07-30:p1:v3c9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-016",
+      "anchor": {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      "found": true,
+      "matching_chunks": [
+        "rbi:nonbank-pso-cyber:2024-07-30:p1:v3c9"
+      ],
+      "candidate_rank": 1,
+      "reranked_rank": 1,
+      "seed": true
+    },
+    {
+      "case": "PAY-017",
+      "anchor": {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "initially be available for transactions up to Rs. 5,000",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      "found": false,
+      "matching_chunks": [
+        "2025-OC-226:p1:v3c5"
+      ],
+      "candidate_rank": null,
+      "reranked_rank": null,
+      "seed": false,
+      "diagnosis": "reference_ambiguity"
+    },
+    {
+      "case": "PAY-017",
+      "anchor": {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "The limit shall be reviewed in due course",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      "found": false,
+      "matching_chunks": [
+        "2025-OC-226:p1:v3c5"
+      ],
+      "candidate_rank": null,
+      "reranked_rank": null,
+      "seed": false,
+      "diagnosis": "reference_ambiguity"
+    }
+  ]
+}

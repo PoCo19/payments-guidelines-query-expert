@@ -1,0 +1,81 @@
+{
+  "active": true,
+  "graph": "pilot/upi_extended_graph_v3.json",
+  "source_release": "payments-ocr-audit-20261015",
+  "configuration_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+  "paired_run": "evaluation\\graph_runs\\20261016T024256266183Z\\capture.json",
+  "paired_summary": {
+    "baseline": {
+      "cases": 40,
+      "errors": 0,
+      "anchors_found": 69,
+      "anchors_expected": 78,
+      "model_usable_anchors_found": 69,
+      "all_anchor_cases": 21,
+      "positive_cases": 28,
+      "control_passed": 12,
+      "control_cases": 12,
+      "model_fallbacks": 0,
+      "required_gaps_disclosed": 0,
+      "required_gap_cases": 2,
+      "median_seconds": 1.535,
+      "positive_median_seconds": 1.632,
+      "response_status_counts": {
+        "abstained": 3,
+        "clarification_needed": 2,
+        "source_excerpts": 35
+      }
+    },
+    "graph": {
+      "cases": 40,
+      "errors": 0,
+      "anchors_found": 78,
+      "anchors_expected": 78,
+      "model_usable_anchors_found": 78,
+      "all_anchor_cases": 28,
+      "positive_cases": 28,
+      "control_passed": 12,
+      "control_cases": 12,
+      "model_fallbacks": 0,
+      "required_gaps_disclosed": 2,
+      "required_gap_cases": 2,
+      "median_seconds": 1.536,
+      "positive_median_seconds": 1.555,
+      "response_status_counts": {
+        "abstained": 3,
+        "clarification_needed": 2,
+        "source_excerpts": 35
+      }
+    }
+  },
+  "benchmark_valid": true,
+  "graph_regression_tests_passed": 20,
+  "javascript_rendering_passed": true,
+  "answer_correctness": "Not established; unresolved IPO and summary repair failures remain withheld",
+  "independent_review": "pending",
+  "github_pushed": false,
+  "live_main_app_checks": {
+    "related": {
+      "graph_status": "active",
+      "sources": 18,
+      "anchors_present": 14,
+      "anchors_expected": 14
+    },
+    "strict": {
+      "graph_status": "bypassed",
+      "sources": 8,
+      "anchors_present": 0,
+      "anchors_expected": 0
+    }
+  },
+  "browser_verification": {
+    "url": "http://127.0.0.1:8765/",
+    "output": "Source excerpts",
+    "graph_coverage": "14/14",
+    "linked_sources_visible": [
+      "OC185B",
+      "OC127"
+    ],
+    "screenshot": "docs/images/graph-integrated-20261016.png"
+  }
+}

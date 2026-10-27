@@ -1,0 +1,215 @@
+{
+  "created_at": "2026-10-15T03:27:01.582812+00:00",
+  "release": "payments-ocr-audit-20261015",
+  "baseline": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-oc185b-repair-20261014",
+  "pages": [
+    {
+      "document_id": "2024-OC-107A",
+      "page": 1,
+      "pdf_sha256": "f0348081a01c658232917f0c31890e85e7079aea8bf7c4f7714e553855fef0d0",
+      "before_page_sha256": "1de8e741c308e1a3ed8e406683ff2f8d395b65b7c6072c555fa9d03b28ba477f",
+      "after_page_sha256": "e6c73c993fc40d2439f144cc52626a363ee18530642c3fa79cb88376c4f59b75",
+      "replacements": [
+        {
+          "before": "19\" April, 2024",
+          "after": "19th April, 2024"
+        },
+        {
+          "before": "01* April, 2021",
+          "after": "01st April, 2021"
+        },
+        {
+          "before": "31%, May 2024",
+          "after": "31st May 2024"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2023-UPI-186",
+      "page": 1,
+      "pdf_sha256": "3bfbc0e50b75907520e3b0ed2f48b167b32b253f500a7adb0f49b564be81dcc0",
+      "before_page_sha256": "22b0fcc805209ceebe094d7518ac3d7cd6256f64942dfdc8273a6c91c9edce7a",
+      "after_page_sha256": "9f37f9cb50c74aed773a1cd1a50750f86ec784aabd818ac154f3551d957a524d",
+      "replacements": [
+        {
+          "before": "NPCIUPIOG No.186/2023-24 19\" December 2023",
+          "after": "NPCI/UPI/OC No.186/2023-24 19th December 2023"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2023-UPI-186",
+      "page": 2,
+      "pdf_sha256": "3bfbc0e50b75907520e3b0ed2f48b167b32b253f500a7adb0f49b564be81dcc0",
+      "before_page_sha256": "50696efb5634b69b9522b5409ca0abbaa6bb118ad5a1f91da663be4556e40507",
+      "after_page_sha256": "262b698ca6e7b70ff65751323a160b7fba14be615074d7ea40ce8d7ee8f002df",
+      "replacements": [
+        {
+          "before": "31% January’ 2024",
+          "after": "31st January’ 2024"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2025-OC-193A",
+      "page": 1,
+      "pdf_sha256": "2f8cd8fdabe47c85cef77b5ac36382d6191cd974d2e620f88c4136b30161eecd",
+      "before_page_sha256": "181578d555f91b185fbbe0291b87a06735ad961f6e7dc12f24804af93c1b9deb",
+      "after_page_sha256": "9c793ccef730635580e94a11b48971f04075f1424029213d9835e808c4aff564",
+      "replacements": [
+        {
+          "before": "10\" September 2024",
+          "after": "10th September 2024"
+        },
+        {
+          "before": "28\" March 2024",
+          "after": "28th March 2024"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2025-OC-193A",
+      "page": 2,
+      "pdf_sha256": "2f8cd8fdabe47c85cef77b5ac36382d6191cd974d2e620f88c4136b30161eecd",
+      "before_page_sha256": "0ce2a7c927828de0b4f3bbab116c4c5aa6bc4c9610539e258a75f284082f0cc3",
+      "after_page_sha256": "00f98c0e460ca1de78ed8e41f0548a030b3b979f79dfd4616574984be1c1ac08",
+      "replacements": [
+        {
+          "before": "NPCHUPIOG No. 193/2023-24",
+          "after": "NPCI/UPI/OC No. 193/2023-24"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2025-OC-208B",
+      "page": 1,
+      "pdf_sha256": "fc7c8d0e7704d10f4f811e8de612593a855537a68170ce8a4e1528f601f7f78e",
+      "before_page_sha256": "3fa35a3e5558b6d579369545f65fc7afd27662b19ea366d2b770d681f884cfb6",
+      "after_page_sha256": "bd28f7ad524c103df025eb07c54838d8e4f49c2bb0698462a1ae257748881d32",
+      "replacements": [
+        {
+          "before": "NPCIJ/UPIV/OC 208B/2025-26",
+          "after": "NPCI/UPI/OC 208B/2025-26"
+        },
+        {
+          "before": "03\" Oct 2024",
+          "after": "03rd Oct 2024"
+        },
+        {
+          "before": "30\" Jun 2025",
+          "after": "30th Jun 2025"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2023-Product-Compliance-PCOMP-Q4",
+      "page": 1,
+      "pdf_sha256": "2f3bd190a0bc139c762201c5472be020635cc868f0fc57f8c5fcfa372d923681",
+      "before_page_sha256": "6659900b7b0fcf97d0d7a2e42470d7f717ec5dd2cbd54651fecd40228c2385e7",
+      "after_page_sha256": "78a6747492acd900cd565aedfb9266dfef8a6f6c442e99f7f319840a3e1894b0",
+      "replacements": [
+        {
+          "before": "13\" April, 2023",
+          "after": "13th April, 2023"
+        },
+        {
+          "before": "12'\" January 2021",
+          "after": "12th January 2021"
+        },
+        {
+          "before": "31% May",
+          "after": "31st May"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2023-Product-Compliance-PCOMP-Q4",
+      "page": 3,
+      "pdf_sha256": "2f3bd190a0bc139c762201c5472be020635cc868f0fc57f8c5fcfa372d923681",
+      "before_page_sha256": "7913e1616ba878dda2520c8727a6c4d51223ff6ef0f8ac36a513432c120598c3",
+      "after_page_sha256": "e680f8783d2b1892fce1a9e8a3caed6fd2e57c7acd031a3a3005bf0221271a00",
+      "replacements": [
+        {
+          "before": "Sr Product General Compliance\nNo\n1 General Member organization should be compliant/Certified to |SO27001 standard.\n| fepeeceiennseecmenn\n2 General Member should have Business Continuity Management (BCM)\nBes Policy/Disaster Recovery Policy\n3 General Member should have Cyber Security Policy.\ncompan\n4 General Member organization should be compliant/Certified to PCI DSS standard.\nCompliance | Kindly provide the date of certificate in Date Column\n5 | General Member organization should be compliant to RBI SAR (System Audit\nCompliance | Report) & Data Localization requirements. Kindly provide the date of\nCompliance in Date Column.\nGeneral Member organization should be compliant to RBI Csite/Cyber Security\nCompliance | framework compliance. Kindly provide the date of Compliance in Date\nColumn.\n7 General Member organization as an AUA/KUA (or sub-AUA/sub-KUA) should be\nCompliance | compliant to the UIDAI compliance requirement. Kindly provide the date of\nCompliance in Date Column.\nGeneral Member organization should be compliant to RBI Oversight framework\n[Compre |equrement Kindy pride he dof Conplanee nae car,",
+          "after": "| Sr No | Product | General Compliance |\n|---|---|---|\n| 1 | General Compliance | Member organization should be compliant/Certified to ISO27001 standard. Kindly provide the date of compliance letter/certificate in Date Column |\n| 2 | General Compliance | Member should have Business Continuity Management (BCM) Policy/Disaster Recovery Policy |\n| 3 | General Compliance | Member should have Cyber Security Policy. |\n| 4 | General Compliance | Member organization should be compliant/Certified to PCI DSS standard. Kindly provide the date of certificate in Date Column |\n| 5 | General Compliance | Member organization should be compliant to RBI SAR (System Audit Report) & Data Localization requirements. Kindly provide the date of Compliance in Date Column |\n| 6 | General Compliance | Member organization should be compliant to RBI Csite/Cyber Security framework compliance. Kindly provide the date of Compliance in Date Column. |\n| 7 | General Compliance | Member organization as an AUA/KUA (or sub-AUA/sub-KUA) should be compliant to the UIDAI compliance requirement. Kindly provide the date of Compliance in Date Column. |\n| 8 | General Compliance | Member organization should be compliant to RBI Oversight framework requirements. Kindly provide the date of Compliance in Date Column. |"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    },
+    {
+      "document_id": "2023-UPI-160",
+      "page": 1,
+      "pdf_sha256": "340767bb3030fe19e8a9bba1e2ff4e6b5277c856d93f1606c4e9fefdf804548d",
+      "before_page_sha256": "18fb7e0d6fe6959204682f444ed249bd47d4c4da4a0349d2b58dce0a2719dd0b",
+      "after_page_sha256": "54043071543f0739b86d3f136c9bbba19ec5be9d404d6b0419bfe751c0ed9e61",
+      "replacements": [
+        {
+          "before": "Dispute /Adjustment Type Dispute /Adjustment Type\n| 1 __| Wrong Credit Chargeback Pre Arbitration Acceptance\nWrong Credit Chargeback Re- |e | Deferred Chargeback Acceptance/ Deemed Acceptance\nPresentment\n3 Chargeback Deferred Pre Arbitration Acceptance / Deemed\nAcceptance\n4\n5 Fraud Chargeback Credit Adjustment\nFraud Chargeback Re-\nPresentment\n",
+          "after": "| S. No | Dispute /Adjustment Type | S. No | Dispute /Adjustment Type |\n|---|---|---|---|\n| 1 | Wrong Credit Chargeback | 7 | Pre Arbitration Acceptance |\n| 2 | Wrong Credit Chargeback Re-Presentment | 8 | Deferred Chargeback Acceptance/ Deemed Acceptance |\n| 3 | Chargeback | 9 | Deferred Pre Arbitration Acceptance / Deemed Acceptance |\n| 4 | Re-presentment | 10 | RET |\n| 5 | Fraud Chargeback | 11 | Credit Adjustment |\n| 6 | Fraud Chargeback Re-Presentment | | |\n"
+        },
+        {
+          "before": "28\" December, 2022",
+          "after": "28th December, 2022"
+        },
+        {
+          "before": "10\" Mar 2021",
+          "after": "10th Mar 2021"
+        },
+        {
+          "before": "1\" January 2023",
+          "after": "1st January 2023"
+        },
+        {
+          "before": "1* January 2023",
+          "after": "1st January 2023"
+        },
+        {
+          "before": "1° January 2023",
+          "after": "1st January 2023"
+        }
+      ],
+      "review": "AI visual PDF comparison; independent review pending"
+    }
+  ],
+  "legacy_files": [
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2024-04-19_OC-107A.md",
+      "before_sha256": "cd68aad766640b87f9586fc7bacb0ab712085c69829f82c71c7776b8a6c95a68",
+      "after_sha256": "5d2cc28bf972bc2bb317e8b914ac7cb0e809250f4037e833590f2b81e0b985fa"
+    },
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2023-12-19_2023-UPI-186.md",
+      "before_sha256": "ff21c6722e63b3831390507d1020c831639f8a19d073631af9be97f1d9064a3b",
+      "after_sha256": "939cc4185e9523f4bfbd1e816eb45a61d35837913324e0aaf96f407cef662875"
+    },
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2024-09-10_OC-193A.md",
+      "before_sha256": "f2cfb996e3bf5d4ef99659bcf4b3ebadb35dcfdb034f283e684021a6dce74a50",
+      "after_sha256": "1d7dba430b08f8bc60ddc027a225800d20e66b33823fbacf67bc3e9118e47ed2"
+    },
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2025-08-01_OC-208B.md",
+      "before_sha256": "491da9fe489800bd1cb06bab0a9c8d7b53ad62e7d5fc3d76c909aa20bc328a8e",
+      "after_sha256": "e56c8bf3d70f2076992fc26687678bbb77b12166be7a862d57945ff46bce74cb"
+    },
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\circulars\\2023-04-13_2023-Product-Compliance-PCOMP-Q4.md",
+      "before_sha256": "485c44e45a4b61e8bc3af2dfe1a5caabaf6fc1593d6f5d8c40b5ebf3eed64b9d",
+      "after_sha256": "3d1ff6e96b8e7e7712517157f5f46001347052ce1469c88bf692ad0c01d8c08e",
+      "formatting_note": "Blank lines added before reconstructed Markdown table; words and values unchanged."
+    },
+    {
+      "path": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\older_reference\\2022-12-28_2023-UPI-160.md",
+      "before_sha256": "33d9fb294b7f73a3b70978c8ce3fd823f30e7abee36e928c55e6b23eaf31a111",
+      "after_sha256": "4c1c71b452486070ca1ca05b7d755dc010f9e763e738bea0171a4dc6981417fa",
+      "formatting_note": "Blank lines added before reconstructed Markdown table; words and values unchanged."
+    }
+  ]
+}

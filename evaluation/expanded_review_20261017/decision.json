@@ -1,0 +1,243 @@
+{
+  "review_date": "2026-10-17",
+  "independent_review_complete": false,
+  "production_ready": false,
+  "decision": {
+    "contextual_bm25_enabled": false,
+    "structured_evidence_enabled": false,
+    "graph_assisted_retrieval": "remain enabled; bounded source-anchored pilot"
+  },
+  "evaluations": [
+    {
+      "run": "20261017T023947481452Z",
+      "kind": "context",
+      "status": "complete",
+      "dataset_sha256": "759f4d54b47eb3a7a32999f0d96e5f8133236511da786cd0c71c35dd51e27773",
+      "code_hashes": {
+        "app.py": "9911156729e80ffdf56aee8c6dc7403bd0dd73ba0231ac54063198577c81e040",
+        "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+        "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+        "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+        "claim_repair.py": "de60cbd880f8f9c8dbf66fd8925f2d57e739e23c3506e6a5c32e176f7f6f66d9",
+        "scope_guard.py": "2e2145fe24e23e920f5bb152b3e7a8c19e9edc9948228b8b46d3eb617b939810",
+        "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+        "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26",
+        "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+        "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+        "query_policies.json": "fe5b49b39bb7b4b8f7590735c5a77c35725825a8f801852254c736aace2e4394",
+        "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+        "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+        "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+        "source_quality_flags.json": "3f4ce9bcd73f5d7383c39cf3208058f76c80470e5c98206425c5db8eda1a4607",
+        "evaluation/evidence_experiments.py": "11e81dcb8099a0a817a8158e5ecf34eb3b2cb91ce202af7d8153c3c64d491b73",
+        "evaluation/ragas_runner.py": "910257b0d707e202bec045733ac4512f2975cd82d04cebf110e35398e54b1fa5",
+        "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+      },
+      "summary": {
+        "baseline": {
+          "cases": 28,
+          "errors": 0,
+          "anchors_found": 46,
+          "anchors_expected": 56,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 1.4375
+        },
+        "variant": {
+          "cases": 28,
+          "errors": 0,
+          "anchors_found": 46,
+          "anchors_expected": 56,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 1.4769999999999999
+        }
+      },
+      "benchmark_valid": true
+    },
+    {
+      "run": "20261017T024135344737Z",
+      "kind": "context",
+      "status": "complete",
+      "dataset_sha256": "759f4d54b47eb3a7a32999f0d96e5f8133236511da786cd0c71c35dd51e27773",
+      "code_hashes": {
+        "app.py": "9911156729e80ffdf56aee8c6dc7403bd0dd73ba0231ac54063198577c81e040",
+        "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+        "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+        "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+        "claim_repair.py": "de60cbd880f8f9c8dbf66fd8925f2d57e739e23c3506e6a5c32e176f7f6f66d9",
+        "scope_guard.py": "2e2145fe24e23e920f5bb152b3e7a8c19e9edc9948228b8b46d3eb617b939810",
+        "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+        "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26",
+        "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+        "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+        "query_policies.json": "fe5b49b39bb7b4b8f7590735c5a77c35725825a8f801852254c736aace2e4394",
+        "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+        "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+        "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+        "source_quality_flags.json": "3f4ce9bcd73f5d7383c39cf3208058f76c80470e5c98206425c5db8eda1a4607",
+        "evaluation/evidence_experiments.py": "11e81dcb8099a0a817a8158e5ecf34eb3b2cb91ce202af7d8153c3c64d491b73",
+        "evaluation/ragas_runner.py": "910257b0d707e202bec045733ac4512f2975cd82d04cebf110e35398e54b1fa5",
+        "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+      },
+      "summary": {
+        "baseline": {
+          "cases": 28,
+          "errors": 0,
+          "anchors_found": 35,
+          "anchors_expected": 56,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 0.07050000000000001
+        },
+        "variant": {
+          "cases": 28,
+          "errors": 0,
+          "anchors_found": 39,
+          "anchors_expected": 56,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 0.07050000000000001
+        }
+      },
+      "benchmark_valid": true
+    },
+    {
+      "run": "20261017T024213481303Z",
+      "kind": "synthesis",
+      "status": "complete",
+      "dataset_sha256": "759f4d54b47eb3a7a32999f0d96e5f8133236511da786cd0c71c35dd51e27773",
+      "code_hashes": {
+        "app.py": "9911156729e80ffdf56aee8c6dc7403bd0dd73ba0231ac54063198577c81e040",
+        "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+        "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+        "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+        "claim_repair.py": "de60cbd880f8f9c8dbf66fd8925f2d57e739e23c3506e6a5c32e176f7f6f66d9",
+        "scope_guard.py": "2e2145fe24e23e920f5bb152b3e7a8c19e9edc9948228b8b46d3eb617b939810",
+        "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+        "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26",
+        "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+        "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+        "query_policies.json": "fe5b49b39bb7b4b8f7590735c5a77c35725825a8f801852254c736aace2e4394",
+        "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+        "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+        "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+        "source_quality_flags.json": "3f4ce9bcd73f5d7383c39cf3208058f76c80470e5c98206425c5db8eda1a4607",
+        "evaluation/evidence_experiments.py": "11e81dcb8099a0a817a8158e5ecf34eb3b2cb91ce202af7d8153c3c64d491b73",
+        "evaluation/ragas_runner.py": "910257b0d707e202bec045733ac4512f2975cd82d04cebf110e35398e54b1fa5",
+        "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+      },
+      "summary": {
+        "baseline": {
+          "cases": 14,
+          "errors": 0,
+          "anchors_found": 24,
+          "anchors_expected": 29,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 2,
+          "model_fallbacks": 0,
+          "median_seconds": 18.6015
+        },
+        "variant": {
+          "cases": 14,
+          "errors": 0,
+          "anchors_found": 24,
+          "anchors_expected": 29,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 2,
+          "model_fallbacks": 0,
+          "median_seconds": 19.297
+        }
+      },
+      "benchmark_valid": true
+    },
+    {
+      "run": "20261017T072925288317Z",
+      "kind": "synthesis",
+      "status": "complete",
+      "dataset_sha256": "e477e6da0a523887006b40b898bd9640ff24d5b8aa072ea8db12bf9625a806d3",
+      "code_hashes": {
+        "app.py": "7f9f42f00c46e07534e84f3e543d40b3fc9a9631312d103a10c0e1afa0ce45db",
+        "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+        "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+        "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+        "claim_repair.py": "cdc6e153a3f5f298536552a22f7013aab14d60fcc8e8e6e81f0800c503125d7d",
+        "scope_guard.py": "a1f2f7a0ef0087a2d1b855eabb6b3c4a4d641e09c711efcf27012b9d5a85899e",
+        "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+        "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26",
+        "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+        "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+        "query_policies.json": "fe5b49b39bb7b4b8f7590735c5a77c35725825a8f801852254c736aace2e4394",
+        "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+        "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+        "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+        "source_quality_flags.json": "3f4ce9bcd73f5d7383c39cf3208058f76c80470e5c98206425c5db8eda1a4607",
+        "evaluation/evidence_experiments.py": "11e81dcb8099a0a817a8158e5ecf34eb3b2cb91ce202af7d8153c3c64d491b73",
+        "evaluation/ragas_runner.py": "910257b0d707e202bec045733ac4512f2975cd82d04cebf110e35398e54b1fa5",
+        "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+      },
+      "summary": {
+        "baseline": {
+          "cases": 6,
+          "errors": 0,
+          "anchors_found": 12,
+          "anchors_expected": 12,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 22.7105
+        },
+        "variant": {
+          "cases": 6,
+          "errors": 0,
+          "anchors_found": 12,
+          "anchors_expected": 12,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 19.992
+        }
+      },
+      "benchmark_valid": true
+    }
+  ],
+  "remaining_release_blockers": [
+    "Missing contrasting evidence and unsupported transfer of pre-debit exemption to post-debit notification.",
+    "Structured synthesis reverses deemed-debit amendment chronology in a saved paired test.",
+    "Tax and Government e-Market Place category conflation despite a shared MCC.",
+    "Same-model support checker accepts incorrect claims; completeness checker can report false conflicts.",
+    "Independent answer and source review remains pending."
+  ],
+  "interpretation": "Execution validity, source-anchor retrieval and internal supported labels are not answer accuracy. Both successes and failures are retained.",
+  "regression_closure": {
+    "reported_empty_answer": "Fixed in final All products and UPI captures; broader wording/entailment limitations remain.",
+    "final_capture": "evaluation/ipo_regression_20261017/final_verification.json",
+    "frontend_capture": "docs/images/ipo-answer-verified-20261017.png",
+    "python_tests": 365,
+    "final_code_and_config_hashes": {
+      "app.py": "7f9f42f00c46e07534e84f3e543d40b3fc9a9631312d103a10c0e1afa0ce45db",
+      "scope_guard.py": "7f074489f0a39896d0d90215c77f821c85802c32d4bcec5d4f2e9d6719c02fb2",
+      "claim_check.py": "bab21b76b4ba005c0f152cb977669ec60c23361cc400b9d58443cab0830bdb98",
+      "claim_repair.py": "58ba859764706d50ed54c039d90688b831fa17a4165e861180be859e4f869b3f",
+      "config.json": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82"
+    },
+    "current_code_matches_capture": true,
+    "response_statuses": {
+      "All products": "draft",
+      "UPI": "draft"
+    },
+    "github_push_performed": false
+  }
+}

@@ -1,3 +1,7 @@
+# Current workbench setup
+
+For the latest code, corrected source snapshot and maintained graph, follow [the 27 October handoff](docs/GITHUB_HANDOFF_20261027.md). Earlier handoff tags remain historical. This is a development build with documented answer-quality limitations.
+
 # Working together
 
 Start with [the current midterm files](output/midsem/START_HERE.md). You do not need Ollama or Python to edit the presentation, report or narration.

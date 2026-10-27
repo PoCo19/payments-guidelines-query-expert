@@ -1,0 +1,24 @@
+{
+  "purpose": "Extended graph pilot and source-quality quarantine final regression",
+  "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -v",
+  "tests": 303,
+  "failures": 0,
+  "skips": 0,
+  "elapsed_seconds": 12.297,
+  "code_hashes": {
+    "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+    "app.py": "d9de446d75d9f53abc5aeda181acd3714e1ccdba4f680a10136a2813f42d4351",
+    "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+    "source_quality_gate.py": "767e199140273a6caf9fd600c604e616164703384d87ea62d36db1591f978531",
+    "source_quality_flags.json": "b411a2509d360146c7dc1010c8b992dfb44d75a235fb89c0d3b01d8f6ce3d6d0",
+    "tests/test_graph_context.py": "8cbae3f0e9604a6b60dbc9f9adbd15e5c4a29db16dd0517d5a98975667161155",
+    "tests/test_source_quality_gate.py": "b8e9aa4e2d4dabf99fff8e59a253463eba3248ff094d1295b4935530f57c1c4e",
+    "pilot/upi_extended_graph_v2.json": "1cad5c3a72f32ea1643780d9f317538b2b75d95ddae3a2e2152948a7b930f367",
+    "web/app.js": "74d68bfc220a1d7b2be49f816450f5c3402fd4367aefa0816c43e336f5481fe4"
+  },
+  "javascript_checks": [
+    "node --check web/app.js passed",
+    "tests/test_answer_format.js passed",
+    "tests/test_research_view.js passed"
+  ]
+}

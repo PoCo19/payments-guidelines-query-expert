@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-14",
+  "tests": 306,
+  "failures": 0,
+  "skips": 0,
+  "seconds": 10.429,
+  "files": {
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "source_quality_flags.json": "3f4ce9bcd73f5d7383c39cf3208058f76c80470e5c98206425c5db8eda1a4607",
+    "tools/repair_oc185b_source.py": "7de10d54695f41de74a70edd3e67c91a5328d9f6a8a21acc34143b5978eaa575",
+    "tests/test_source_quality_gate.py": "59c32496bd9da35f299a297ce60c65a94e4b7b47b46f29d063f1e48fa7107fe7",
+    "tests/test_source_repair.py": "53dde6b74916584604149cd2d26f360a8d5b4cccf74e1f5f5a6f03f10bbd61fd",
+    "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+  }
+}

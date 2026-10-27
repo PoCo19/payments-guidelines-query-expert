@@ -1,0 +1,61 @@
+{
+  "case": "invented_reference",
+  "query": "Summarise UPI OC999999.",
+  "elapsed_seconds": 0.0,
+  "result": {
+    "answer_blocks": [],
+    "answer_style": "auto",
+    "formatting_source": "none",
+    "flagged_claims": [],
+    "claim_checks": [],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "summary",
+      "scope": "related",
+      "seed_chunk_ids": [],
+      "included_chunk_ids": [],
+      "evidence_characters": 0,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Required circulars are missing, unavailable, awaiting source review, or excluded by filters: 999999."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [
+        "999999"
+      ],
+      "ambiguities": [],
+      "reranker": {
+        "enabled": false,
+        "model": null,
+        "candidate_count": 0,
+        "elapsed_ms": 0
+      }
+    },
+    "sources": [],
+    "claims": [],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Required circulars are missing, unavailable, awaiting source review, or excluded by filters: 999999."
+    ],
+    "answer": "No matching evidence was retrieved; no model request was made.",
+    "abstained": true,
+    "response_status": "abstained",
+    "elapsed_ms": 0,
+    "timing": {
+      "total_seconds": 0.0,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "generation",
+          "seconds": 0.0
+        }
+      ],
+      "model_calls": []
+    }
+  }
+}

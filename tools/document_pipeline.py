@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-INPUTS = ('index.json', 'all_circular_pages.jsonl', 'review_annotations.json', 'feature_rules.json', 'source_manifest.json')
+INPUTS = ('index.json', 'all_circular_pages.jsonl', 'review_annotations.json', 'feature_rules.json', 'source_manifest.json', 'intake_quality.json', 'reference_graph.json', 'evidence_graph.json')
 
 
 def read(path):
@@ -133,6 +133,8 @@ def prepare(manifest_path, name, active_path=None):
     by_id = {d['id']: d for d in docs}
     source_hashes = read(base / 'source_manifest.json')['hashes'].copy()
     additions, actions = [], []
+    from intake_quality import inspect_pages, reviewed_blockers
+    quality_records = read(base / 'intake_quality.json').get('pages', []) if (base / 'intake_quality.json').exists() else []
     submitted = set()
     for item in request['documents']:
         validate_item(item)
@@ -143,9 +145,16 @@ def prepare(manifest_path, name, active_path=None):
         path = (manifest_path.parent / item['file']).resolve()
         raw = path.read_bytes()
         digest = sha(raw)
+        original_raw = None
+        if 'original_pdf' in item:
+            if path.suffix.lower() != '.md' or not isinstance(item['original_pdf'], str) or not item['original_pdf'].strip():
+                raise ValueError('original_pdf is a nonempty file path for a Markdown intake item')
+            original_raw = (manifest_path.parent / item['original_pdf']).resolve().read_bytes()
+            if not original_raw.startswith(b'%PDF-'):
+                raise ValueError('Original companion is not a PDF')
         if key in by_id:
             existing = by_id[key]
-            if existing.get('availability') != 'archived_snapshot' and existing.get('intake_metadata') == item and existing.get('source_sha256') == digest:
+            if existing.get('availability') != 'archived_snapshot' and existing.get('intake_metadata') == item and existing.get('source_sha256') == digest and existing.get('original_pdf_sha256') == (sha(original_raw) if original_raw is not None else None):
                 actions.append(dict(id=key, action='unchanged'))
                 continue
             raise ValueError('Existing id has different content or metadata. Use a new id and revision_of: ' + key)
@@ -175,10 +184,23 @@ def prepare(manifest_path, name, active_path=None):
             page_text = dict(extracted).get(scope['page'], '')
             if ' '.join(scope['quote'].split()) not in ' '.join(page_text.split()):
                 raise ValueError('Applicability quote does not match its source page: ' + key)
+        page_quality = inspect_pages(key, extracted)
+        blocked_pages = reviewed_blockers(page_quality, item.get('quality_reviews', []))
+        original_pdf = None
+        if original_raw is not None:
+            from pypdf import PdfReader
+            original_pages = len(PdfReader(io.BytesIO(original_raw)).pages)
+            if method != 'imported_markdown' or len(extracted) != original_pages:
+                raise ValueError('Companion PDF requires sequential Markdown page markers matching its physical page count')
+            original_pdf = 'intake/' + sha(key.encode())[:24] + '-original.pdf'
+            source_hashes[original_pdf] = sha(original_raw)
+            additions.append((original_pdf, original_raw))
+            physical = True  # verifies page count only, not text accuracy
+        quality_records.extend(page_quality)
         empty = [n for n, text in extracted if not text.strip()]
         thin = [n for n, text in extracted if len(text.split()) < 15]
         partial = bool(thin)
-        searchable = any(text.strip() for _, text in extracted) and (not partial or item.get('allow_partial') is True)
+        searchable = any(text.strip() for _, text in extracted) and (not partial or item.get('allow_partial') is True) and not blocked_pages
         if previous and not searchable:
             raise ValueError('A quarantined revision cannot replace a searchable snapshot. Repair/review the extraction first.')
         if previous:
@@ -199,6 +221,13 @@ def prepare(manifest_path, name, active_path=None):
                                       page_basis='physical_pdf' if physical else 'markdown_markers' if method=='imported_markdown' else 'logical_markdown'),
                  notes=['Snapshot replacement is a local indexing decision, not a legal supersession determination.'] if previous else [],
                  revision_of=previous)
+        if original_pdf:
+            d['local_pdf'] = 'sources/' + original_pdf
+            d['original_pdf_sha256'] = source_hashes[original_pdf]
+        d['intake_quality'] = dict(blocked_pages=blocked_pages, pages=page_quality,
+            reviews=item.get('quality_reviews', []), basis='heuristic_triage_not_source_certification')
+        if any(p['findings'] for p in page_quality):
+            d['notes'].append('Extraction quality flags require original-source review: ' + ', '.join(sorted({f['code'] for p in page_quality for f in p['findings']})))
         d['notes'].extend(item.get('source_notes', []))
         if partial:
             d['notes'].append('Empty/thin pages require source review.' + (' Partial extraction explicitly accepted for indexing.' if searchable else ' Excluded from retrieval.'))
@@ -208,10 +237,10 @@ def prepare(manifest_path, name, active_path=None):
         by_id[key] = d
         for n, text in extracted:
             pages.append(dict(document_id=key, source_page=n, text=text, method=method,
-                              review_status='intake_text_not_verified', needs_priority_review=n in thin,
+                              review_status='intake_text_not_verified', needs_priority_review=n in thin or bool(next(p['findings'] for p in page_quality if p['page']==n)),
                               source_text_status='empty' if n in empty else 'thin' if n in thin else 'unverified', source_file=local, source_sha256=digest))
         additions.append((relative, raw))
-        actions.append(dict(id=key, action=d['availability'], pages=len(extracted), thin_pages=thin, revision_of=previous))
+        actions.append(dict(id=key, action=d['availability'], pages=len(extracted), thin_pages=thin, blocked_quality_pages=blocked_pages, revision_of=previous))
     if all(a['action'] == 'unchanged' for a in actions):
         return dict(status='unchanged', actions=actions)
     destination.mkdir(parents=True)
@@ -225,6 +254,7 @@ def prepare(manifest_path, name, active_path=None):
         target = destination / 'sources' / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(raw)
+    write(destination / 'intake_quality.json', dict(version=1, pages=quality_records, limitation='Flags are review candidates; no automatic OCR correction.'))
     write(destination / 'index.json', docs)
     (destination / 'all_circular_pages.jsonl').write_text(''.join(json.dumps(p, ensure_ascii=False)+'\n' for p in pages), encoding='utf-8')
     write(destination / 'source_manifest.json', dict(hashes=source_hashes, policy='Immutable source copies; manually supplied provenance.'))
@@ -233,7 +263,19 @@ def prepare(manifest_path, name, active_path=None):
                   snapshot='Local intake ' + stamp()[:10] + '; source-specific retrieval dates retained',
                   window='Mixed source snapshots; inspect issue and update dates per document', intake_actions=actions)
     write(destination / 'corpus.json', corpus)
+    from reference_graph import build_release
+    write(destination / 'reference_graph.json',build_release(destination,base/'reference_graph.json'))
+    # Carry the exact maintained manifest with the candidate; validation below
+    # reports stale anchors rather than silently re-approving changed sources.
+    if config.get('evidence_graph_path'):
+        graph_path=Path(config['evidence_graph_path'])
+        if not graph_path.is_absolute():graph_path=ROOT/graph_path
+        if graph_path.is_file():
+            shutil.copy2(graph_path,destination/'evidence_graph.json')
+            config['evidence_graph_path']=str(destination/'evidence_graph.json')
+    config['reference_graph_enabled']=False
     config.update(data_dir=str(destination), multi_product=True, vector_backend='chroma',
+                  reference_graph_path=str(destination/'reference_graph.json'),
                   embedding_cache=str(ROOT / 'data/embedding_cache.sqlite3'),
                   query_instruction='Given a question about payment guidelines, retrieve relevant passages that answer the question.')
     write(destination / 'candidate_config.json', config)
@@ -269,6 +311,8 @@ def build(name):
     engine.build_vectors()
     result = read(directory / 'embedding_build.json')
     report = validate_engine(engine)
+    from graph_context import graph_status
+    report['graph_assistance']=graph_status(engine)
     report.update(created_at=stamp(), embeddings=result)
     check_candidate(directory)
     write(directory / 'validation.json', report)
@@ -310,13 +354,16 @@ def activate(name):
     config = read(directory / 'candidate_config.json')
     engine = Engine(config=config)
     current = validate_engine(engine)
+    from graph_context import graph_status
+    current['graph_assistance']=graph_status(engine)
     saved = read(directory / 'validation.json')
     if not saved.get('passed') or any(saved.get(k) != current[k] for k in ('fingerprint','registry_fingerprint','model_digest')):
         raise ValueError('Validation is missing or stale.')
     write(active, config)
     state.update(status='active', activated_at=stamp(), activated_config_sha256=sha(active.read_bytes()))
     write(directory / 'intake_state.json', state)
-    return dict(status='active', release=name, next_step='Restart run.cmd to load this release.')
+    return dict(status='active', release=name, graph_assistance=current['graph_assistance'],
+                next_step='Restart run.cmd to load this release.')
 
 
 def rollback(name):

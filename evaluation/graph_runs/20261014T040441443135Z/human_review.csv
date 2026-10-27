@@ -1,0 +1,27 @@
+﻿case,arm,question,answer,stale_rule,incorrect_scope,unsupported_supersession,missing_condition,verdict,reviewer,notes
+LIMIT-04,baseline,Does UPI tax payment have a 25 lakh limit in the available OC 185 series? Check the source quality and category.,"Draft answer — check the supporting excerpts.
+
+The available OC 185 series documents do not establish a 25 lakh limit for UPI tax payments; instead, they specify an enhanced per transaction limit of Rs 5 lakhs. [S2, S4]
+
+Circular NPCI/UPI/OC-185A dated 24 August 2024 explicitly states that the per transaction value limit for entities under categories aligned to tax payments has been enhanced to Rs 5 lakhs. [S2]
+
+The annexure to OC 185A lists MCC-9311 as the category for Tax Payments, confirming that this specific category is subject to the Rs 5 lakh limit rather than a higher amount. [S4]
+
+The documents indicate that these enhanced limits apply only to 'Verified Merchants' within the specified categories. [S2, S10]",,,,,,,
+LIMIT-04,graph,Does UPI tax payment have a 25 lakh limit in the available OC 185 series? Check the source quality and category.,"Partial draft — some statements were withheld during support checks.
+
+The available OC 185 series documents do not establish a 25 lakh limit for UPI tax payments; instead, they specify an enhanced per-transaction limit of Rs 5 lakh. [S3, S7]
+
+The specific circular addressing tax payments (MCC 9311) in the OC 185 series sets the limit at Rs 5 lakh per transaction for verified merchants, not 25 lakh. [S1, S8]
+
+The documents distinguish between per-transaction limits and cumulative 24-hour limits, with the latter for tax payments listed as Rs 10 lakh in circular 185B. [S4, S9]",,,,,,,
+IPO-02,graph,Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?,"Partial draft — some statements were withheld during support checks.
+
+The cumulative limit of ₹10 Lakh for Capital Market transactions in UPI OC 185B applies to the total value of transactions within a 24-hour period and does not establish a per-mandate ceiling of ₹10 Lakh for a single IPO. [S1]
+
+The table in Annexure I of OC 185B explicitly distinguishes between the 'Enhanced Limits' (per transaction) and 'Cumulative Limits (24 hrs)' for Capital Market, indicating these are separate measures. [S1]
+
+Historical guidance in OC 71 established a per transaction limit of ₹2 Lakh for UPI based ASBA with purpose code 01 and MCC 6211, which was later enhanced to ₹5 Lakh by subsequent circulars. [S8, S2]",,,,,,,
+IPO-02,baseline,Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?,"Draft answer — check the supporting excerpts.
+
+The 10 lakh cumulative figure in UPI OC 185B applies to Capital Market transactions but does not establish a single IPO mandate limit of 10 lakh; the per transaction limit for Capital Market is specified as Rs 5 Lakh. [S1]",,,,,,,

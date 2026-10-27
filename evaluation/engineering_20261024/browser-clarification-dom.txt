@@ -1,0 +1,86 @@
+- complementary:
+  - link "Payments Guidelines Query Expert":
+    - /url: /
+    - text: Payments Guidelines
+    - text: Query Expert
+  - navigation:
+    - link "Research and source library":
+      - /url: /
+    - link "Payments workbench":
+      - /url: /work
+  - paragraph: Supervised prototypes · Local review records
+- main:
+  - generic: Payments workbench
+  - heading "Research. Review. Reuse." [level=1]
+  - paragraph: Query Desk and Change-Impact Briefs share cited evidence and versioned review. No automatic business actions.
+  - status: "Graph-assisted retrieval: active. 55 maintained anchors, 13 relationships. Links await independent review; coverage is limited to maintained topics."
+  - status: Completed
+  - generic "Create a work item"
+  - text: Workflow
+  - combobox "Workflow":
+    - option "Payments Query Desk" [selected]
+    - option "Change-Impact Brief"
+  - text: Question or change to investigate
+  - textbox "Question or change to investigate": What is Tap and Pay?
+  - text: Product (optional)
+  - textbox "Product (optional)":
+    - /placeholder: e.g. UPI
+  - text: Issue-date cutoff (optional)
+  - textbox "Issue-date cutoff (optional)"
+  - text: Operating context (optional; analyst supplied)
+  - textbox "Operating context (optional; analyst supplied)":
+    - /placeholder: Your institution's role and processes. Without this, impact remains generic.
+  - group "Select sources for an impact brief; optional for a query":
+    - generic: Select sources for an impact brief; optional for a query
+    - paragraph: Choose the changed document first, then earlier sources. Selection order does not establish legal precedence.
+    - text: Find a document
+    - textbox "Find a document":
+      - /placeholder: Title or circular reference
+    - button "Search library"
+    - list
+  - button "Create draft"
+  - heading "Saved work" [level=2]
+  - button "Refresh"
+  - paragraph:
+    - button "What is Tap and Pay?"
+    - text: · Query Desk · Draft · v2
+  - paragraph:
+    - button "What changed in the UPI biometric addendum, and what should a payments analyst review?"
+    - text: · Impact brief · Needs review · v3
+  - paragraph:
+    - button "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?"
+    - text: · Query Desk · Needs review · v3
+  - article:
+    - heading "What is Tap and Pay?" [level=2]
+    - paragraph: Draft · version 2
+    - paragraph: No operating context supplied; institution-specific impact is not established.
+    - status: "clarification needed: Do you mean UPI Tap & Pay or RuPay contactless payments?"
+    - button "Generate cited draft" [active]
+    - generic "Clarify the question or product"
+    - heading "Documented findings" [level=3]
+    - paragraph: Edits are human-authored and are not automatically rechecked. Keep supporting citations such as [S1].
+    - textbox: Do you mean UPI Tap & Pay or RuPay contactless payments?
+    - button "Save as new draft version"
+    - button "Submit for review" [disabled]
+    - heading "Evidence and automated checks" [level=3]
+    - generic: Generate a draft to retrieve evidence.
+    - generic "Automated findings and withheld claims"
+    - heading "Review this version" [level=3]
+    - paragraph: A name records who reviewed; it is not a verified login. Approval requires inspecting original sources and checking material qualifications.
+    - text: Reviewer
+    - textbox "Reviewer"
+    - text: Review rationale
+    - textbox "Review rationale"
+    - checkbox "I verified the original sources and citations."
+    - text: I verified the original sources and citations.
+    - checkbox "I verified qualifications, scope, dates and unresolved issues."
+    - text: I verified qualifications, scope, dates and unresolved issues.
+    - button "Approve" [disabled]
+    - button "Reject" [disabled]
+    - button "Export with evidence and review status"
+    - heading "Version history" [level=3]
+    - generic "Version 1 · 2026-10-24T04:12:36.777372+00:00"
+    - generic "Version 2 · 2026-10-24T04:12:52.023035+00:00"
+    - paragraph: v1 · created · 2026-10-24T04:12:36.777372+00:00
+    - paragraph: v1 · generation started · 2026-10-24T04:12:51.970349+00:00
+    - paragraph: v2 · generated · 2026-10-24T04:12:52.023035+00:00

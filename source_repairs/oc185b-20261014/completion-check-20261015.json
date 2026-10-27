@@ -1,0 +1,13 @@
+{
+  "verified_on": "2026-10-15",
+  "active_release": "payments-oc185b-repair-20261014",
+  "markdown_hash_matches": true,
+  "legacy_markdown_corrected": true,
+  "source_manifest_verified": true,
+  "corrected_passage_generation_eligible": true,
+  "regression_code_hashes_unchanged": true,
+  "saved_tests_passed": 306,
+  "paired_evaluations_valid": true,
+  "graph_default_enabled": false,
+  "note": "Completion verification of unchanged implementation; saved model evaluations and full suite were run on 14 October, not repeated on 15 October."
+}

@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-10-18T10:24:52.093276+00:00",
+  "root_runtime_code_matches_final_generation_capture": true,
+  "changed_runtime_files": [],
+  "configuration_matches_capture": true,
+  "documents_checked": [
+    "docs/READINESS_IMPROVEMENTS_20261018.md",
+    "evaluation/readiness_review_20261018/README.md",
+    "PROJECT_STATUS.md",
+    "docs/NEXT_ENGINEERING_PRIORITIES_20261017.md",
+    "docs/INDEX.md",
+    "HOW_IT_WORKS.md"
+  ],
+  "missing_links": [],
+  "python_compile": "passed",
+  "full_regression_log_sha256": "e3b09ed15c2f911a721a726cb8af1288b37ac00ecea6deae633e16b40742d32b",
+  "release_browser_verification": "deferred",
+  "github_push": "not_performed"
+}

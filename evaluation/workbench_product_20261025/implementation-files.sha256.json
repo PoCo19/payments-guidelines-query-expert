@@ -1,0 +1,13 @@
+{
+  "app.py": "2f128371fc21b55d47e51effb63aafb53827a82e63865669e6d799f7269f3927",
+  "work_items.py": "ee70e29992c61ecc577be4848fcddeeb0aefd00b05376bee057f3d8daf0fc75e",
+  "local_jobs.py": "8e61bbdf4ba66ff13588542c0b0e783282e8c3916eeaf6c0e00eac39d1454426",
+  "web/work.html": "f1f0791f49b67ffa8c74cb05e9c030713bd18e24632d0a6141b3bb930ccd0079",
+  "web/work.js": "75766aa8f5c6adc82e7fdf277f5d553fa814b981415a7680839da310e5c8a84c",
+  "web/work.css": "952bcc662254f947e8966fb9ba2dbb3ede535d78cc2724e1676d3b6322fdd8aa",
+  "web/app.js": "df06d7b14b90049a6e113a51d8d138282c3848d6e271a2ce2fa8c3829dfb7228",
+  "web/index.html": "8fc75860a532f4145b1cdec5fcd92006890b2aa770b9a5956d0728e8c0b526ec",
+  "tests/test_workbench_product.py": "a30a20035fb87c86e1180d6e53e3b833a9e35dce07303c189901c7882c4865c3",
+  "tests/test_work_api.py": "4880793ebf5022992bc98de0062cc6051e107e66c207cdd1595fb21c0dfaadb2",
+  "tests/test_work_view.js": "20bcd17de9c1e531d11ae821ff19a972851c754ec795075e8888ac5beadc1a2f"
+}

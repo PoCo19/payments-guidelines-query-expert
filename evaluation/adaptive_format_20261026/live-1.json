@@ -1,0 +1,1768 @@
+{
+  "question": "Compare UPI OC128 and OC128A on the treatment of response codes 59 and K1. Give a short explanation and, if useful, a comparison table followed by key qualifications.",
+  "elapsed_seconds": 27.829,
+  "result": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "UPI OC 128 treats response code 59 (Suspected fraud) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+            "sources": [
+              "S1",
+              "S3"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          }
+        ]
+      },
+      {
+        "type": "bullets",
+        "claims": [
+          {
+            "text": "UPI OC 128 treats response code K1 (Suspected fraud based on risk score) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+            "sources": [
+              "S3"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "UPI OC 128A updates the treatment of response code 59 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+            "sources": [
+              "S2"
+            ],
+            "draft_index": 3,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "UPI OC 128A updates the treatment of response code K1 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+            "sources": [
+              "S2"
+            ],
+            "draft_index": 4,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "fallback",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "NPCI e Lpe hi at NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.128/2021-22 14th December, 2021 To All Members-Unified Payment Interface DearMadam/Sir, Subiect: Extension of additional response codes under Deemed Debit for mandate execution Mandate transactions functions with the premise that any mandate that is created successfully must also be executed successfully. To reduce the remitter end declines in case of the mandates execution including use case of [POs, we have developed the functionality of Deemed Debit (DD) for financial mandate execution which was introduced through UPI OC 88 dated 14th May, 2020 - Migration of \"UP] - RGCS\" system to “UPI Real Time Clearing & Settlement\" (URCS) system w.e.f. 25th May 2020 wherein a few response codes under mandate execution was considered as Deemed Debit. Basis the ecosystem feedback, we have now extended the scope of Deemed Debit at the remitter side further wherein any declines at the remitter end shall be considered as Deemed Debit. Only in case if the remitter bank declines the transaction with the below mentioned response codes the transaction shall be considered as failure and shall not be treated as Deemed Debit. Sr. No Decline ResponseCode and Description Decline by 59-- Suspected fraud,decline/transaction declinedbased on"
+          },
+          {
+            "citation": "S3",
+            "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN:U74990MH2008NPL189067"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S3",
+            "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN:U74990MH2008NPL189067"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 2,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S2",
+            "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk score by remitter | Remitter Bank Yes 2 K1 — Suspected fraud, decline/transaction declined Remitter Bank Yes based on risk score by remitter 3 | VO — Payment stopped by court order Remitter Bank No 4 |VH-— Mandate signature is tampered or corrupt Remitter Bank No 5 | VU/QD-— Mandate expired ae ae eed No 6 | VSs- Duplicate mandate request | ali Bank & Payer No | Note: No changes for any other response codes"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 3,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S2",
+            "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk score by remitter | Remitter Bank Yes 2 K1 — Suspected fraud, decline/transaction declined Remitter Bank Yes based on risk score by remitter 3 | VO — Payment stopped by court order Remitter Bank No 4 |VH-— Mandate signature is tampered or corrupt Remitter Bank No 5 | VU/QD-— Mandate expired ae ae eed No 6 | VSs- Duplicate mandate request | ali Bank & Payer No | Note: No changes for any other response codes"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "compare",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c1",
+        "2026-OC-128A:p1:v3c1",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c2",
+        "2026-OC-128A:p1:v3c2",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c2",
+        "2026-OC-128A:p1:v3c3",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c1",
+        "2026-OC-128A:p1:v3c4",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p3:v3c1",
+        "2026-OC-128A:p2:v3c1",
+        "2026-OC-128A:p2:v3c2",
+        "2026-OC-128A:p2:v3c3",
+        "2026-OC-128A:p2:v3c4",
+        "2026-OC-128A:p2:v3c5",
+        "2026-OC-128A:p2:v3c6",
+        "2026-OC-128A:p2:v3c7",
+        "2026-OC-128A:p2:v3c8",
+        "2026-OC-128A:p2:v3c9"
+      ],
+      "included_chunk_ids": [
+        "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c1",
+        "2026-OC-128A:p1:v3c1",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c2",
+        "2026-OC-128A:p1:v3c2",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c2",
+        "2026-OC-128A:p1:v3c3",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c1",
+        "2026-OC-128A:p1:v3c4",
+        "npci-source-1a52e564b7b10a4cc8b13dde:p3:v3c1",
+        "2026-OC-128A:p2:v3c1",
+        "2026-OC-128A:p2:v3c2",
+        "2026-OC-128A:p2:v3c3",
+        "2026-OC-128A:p2:v3c4",
+        "2026-OC-128A:p2:v3c5",
+        "2026-OC-128A:p2:v3c6",
+        "2026-OC-128A:p2:v3c7",
+        "2026-OC-128A:p2:v3c8",
+        "2026-OC-128A:p2:v3c9"
+      ],
+      "evidence_characters": 16361,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+        "Research entity was not specified. Source-specific applicability must remain explicit in the answer."
+      ],
+      "document_coverage": {
+        "npci-source-1a52e564b7b10a4cc8b13dde": {
+          "included_chunks": 5,
+          "total_chunks": 5,
+          "complete": true,
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "metadata_quality": "inventory_unverified",
+          "page_basis": "source_pages",
+          "available_text_complete": true
+        },
+        "2026-OC-128A": {
+          "included_chunks": 13,
+          "total_chunks": 13,
+          "complete": true,
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "metadata_quality": "existing_source_metadata",
+          "page_basis": "source_pages",
+          "available_text_complete": true
+        }
+      },
+      "requested_circulars": [
+        "128",
+        "128A"
+      ],
+      "reranker": {
+        "enabled": false,
+        "model": null,
+        "candidate_count": 0,
+        "elapsed_ms": 0
+      },
+      "candidate_stages": {},
+      "retrieval_seed_policy": "balanced",
+      "research_policy": "publisher_neutral_v2",
+      "followup_query": null,
+      "query_plan": {
+        "query": "Compare UPI OC128 and OC128A on the treatment of response codes 59 and K1. Give a short explanation and, if useful, a comparison table followed by key qualifications.",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "requirements"
+        ],
+        "product_filter": "UPI",
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "59",
+          "by",
+          "codes",
+          "explanation",
+          "followed",
+          "if",
+          "k1",
+          "key",
+          "oc128",
+          "oc128a",
+          "qualifications",
+          "response",
+          "short",
+          "table",
+          "treatment",
+          "upi",
+          "useful"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+          "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S2",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "applicability",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S3",
+          "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+          "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Remitter Bank",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S4",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S5",
+          "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+          "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Annex I.",
+          "aspects": [
+            "applicability",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S6",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S7",
+          "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+          "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Remitter Bank",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S8",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S9",
+          "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+          "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 3,
+          "section": "Annex I.",
+          "aspects": [
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S10",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S11",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S12",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S13",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S14",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S15",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S16",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "applicability"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S17",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        },
+        {
+          "citation": "S18",
+          "document_id": "2026-OC-128A",
+          "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "applicability",
+            "timing"
+          ],
+          "applicability": {},
+          "issue_date": "2026-07-03",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "document_coverage"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "requirements",
+          "label": "Requirements",
+          "citations": [
+            "S1",
+            "S3",
+            "S8",
+            "S12"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+    },
+    "sources": [
+      {
+        "id": "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c1",
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "text": "NPCI e Lpe hi at NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.128/2021-22 14th December, 2021 To All Members-Unified Payment Interface DearMadam/Sir, Subiect: Extension of additional response codes under Deemed Debit for mandate execution Mandate transactions functions with the premise that any mandate that is created successfully must also be executed successfully. To reduce the remitter end declines in case of the mandates execution including use case of [POs, we have developed the functionality of Deemed Debit (DD) for financial mandate execution which was introduced through UPI OC 88 dated 14th May, 2020 - Migration of \"UP] - RGCS\" system to “UPI Real Time Clearing & Settlement\" (URCS) system w.e.f. 25th May 2020 wherein a few response codes under mandate execution was considered as Deemed Debit. Basis the ecosystem feedback, we have now extended the scope of Deemed Debit at the remitter side further wherein any declines at the remitter end shall be considered as Deemed Debit. Only in case if the remitter bank declines the transaction with the below mentioned response codes the transaction shall be considered as failure and shall not be treated as Deemed Debit. Sr. No Decline ResponseCode and Description Decline by 59-- Suspected fraud,decline/transaction declinedbased on",
+        "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 128",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 195,
+        "section_id": "npci-source-1a52e564b7b10a4cc8b13dde:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c2",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S1",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p1:v3c1",
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "text": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk score by remitter | Remitter Bank Yes 2 K1 — Suspected fraud, decline/transaction declined Remitter Bank Yes based on risk score by remitter 3 | VO — Payment stopped by court order Remitter Bank No 4 |VH-— Mandate signature is tampered or corrupt Remitter Bank No 5 | VU/QD-— Mandate expired ae ae eed No 6 | VSs- Duplicate mandate request | ali Bank & Payer No | Note: No changes for any other response codes",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 88,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 187,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2026-OC-128A:p1:v3c2",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S2",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "applicability",
+          "changes"
+        ]
+      },
+      {
+        "id": "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c2",
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "text": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN:U74990MH2008NPL189067",
+        "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 128",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 195,
+        "end_word": 304,
+        "section_id": "npci-source-1a52e564b7b10a4cc8b13dde:s1",
+        "section_heading": "Remitter Bank",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c1",
+        "next_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c1",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S3",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p1:v3c2",
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "text": "41. For 1PO, RDS and SBMD secondary markets use case (Purpose code ‘01’, ‘25’, ‘76 and where MCC is 6211): In case of declines with response codes ‘VO’, ‘VH’, ‘VU’, ‘QD’ or ‘VS’ i.e. from Sr. No. 3 to 6 mentioned above, Acquirer / Payee may claim the transaction amount if it is as per the mandate created; through BGGD option made available in URCS. [NPCVUPI/OC No. 206A/2024-25 dated 12'\" March 2025]",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 88,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 187,
+        "end_word": 259,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "41.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p1:v3c1",
+        "next_chunk_id": "2026-OC-128A:p1:v3c3",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S4",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c2",
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 2,
+        "text": "Annex I. With the increase of scope of Deemed Debit, the acquirer bank has to ensure that there should transactions and reverse the same to respective remitter bank through credit adjustments on same day or T+1 where T is the execution day of the transaction. Remitter banks are aiso advised use the Deemed Debit report for reconciliation purpose and necessary actions. With reference to the above request the member banks to take note of the above enhancement and undertake the requisite changes. Yours sincerely, Saiprasad Nabar Chief Online Products Operations & Technology 1001A, The Capital, B Wing, 10th Floor, BandraKurlaComplex,Bandra(E),Mumbai4ooQ51. T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.inwww.npci.org.in CIN:U74990MH2008NPL189067",
+        "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 128",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 49,
+        "end_word": 159,
+        "section_id": "npci-source-1a52e564b7b10a4cc8b13dde:s2",
+        "section_heading": "Annex I.",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c1",
+        "next_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p3:v3c1",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S5",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "applicability",
+          "changes"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p1:v3c3",
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "text": "2. For other OTM use cases (i.e. purpose code ‘01’ and MCC other than 6211) Declines with response codes ‘VO’, ‘VH’, ‘VU’, ‘QD’ or ‘VS’ i.e. from Sr. No. 3 to 6 mentioned above, are to be considered as declined and no service should be rendered by the Acquirer/Payee.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 88,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 259,
+        "end_word": 308,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p1:v3c2",
+        "next_chunk_id": "2026-OC-128A:p1:v3c4",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S6",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c1",
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 2,
+        "text": "NPCI NATIONAL PAYMENTS CORPORATION OFINDIA DD (Deemed Debit) in URCS for identifying the deemed debit transactions separately and initiate suitable actions in CBs. Also, additional report for transaction treated as Deemed Debit is also provided to the member banks in URCs. The format of such report is mentioned in",
+        "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 128",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 49,
+        "section_id": "npci-source-1a52e564b7b10a4cc8b13dde:s1",
+        "section_heading": "Remitter Bank",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p1:v3c2",
+        "next_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c2",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S7",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p1:v3c4",
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "text": "3. Any un-responded/declined transactions with response codes apart from those mentioned above for mandate execution transactions with Purpose Code ‘01’ or ‘25’ or ‘76’, shall continue to be treated as Deemed Debit and settlement shall be done by debiting respective Remitter bank and crediting the Acquirer bank. JOOTA, The Capital, B Wing, 10° Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051- sae T: +91 22 40009100 F: +91 22 40009101 oer ‘on contact@npci.org.in www.npci.org.in eBuild Neem CIN: U74990MH2008NPL189067",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 88,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 308,
+        "end_word": 387,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p1:v3c3",
+        "next_chunk_id": "2026-OC-128A:p2:v3c1",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S8",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-1a52e564b7b10a4cc8b13dde:p3:v3c1",
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 3,
+        "text": "Annex! Please find the details available in the transaction Deemed Debit File Sr, No Particulars (Headers in report) Description TXN ID TransactionID TXN Type Transaction Type TXN Date Transaction Date TXN Time TransactionTime Settlement Date TransactionSettlementDate Response Code Response Code Error Code Error Code RRN Reference No STAN System Trace Audit Number 10 UMN/PayerAddress UMN/PayerAddress 11 InitiationMode Initiation Mode 12 Purpose Code Purpose Code 13 Payer Mcc Payer Merchant CategoryCode 14 Payee Mcc Payee Merchant Category Code 15 Payee Address Payee VPA 16 RemitterBank Remitter Bank 17 BeneficiaryBank BeneficiaryBank 18 BeneficiaryAccount Number Beneficiary Account Number 19 RemitterAccount Number RemitterAccountNumber 20 Amount Transaction Amount 21 PayerpSP PayerPSP",
+        "title": "UPI OC 128 - Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 128",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 106,
+        "section_id": "npci-source-1a52e564b7b10a4cc8b13dde:s2",
+        "section_heading": "Annex I.",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-1a52e564b7b10a4cc8b13dde:p2:v3c2",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S9",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "changes"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c1",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "NEI» | Aways serous mts eceecrtcr | FORWARD",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 8,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p1:v3c4",
+        "next_chunk_id": "2026-OC-128A:p2:v3c2",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S10",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c2",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "4. Payer PSPs / Remitter Banks to ensure that declines under the above mentioned response codes which are excluded for ‘Deémed Debit’ are populated strictly for genuine scenarios only.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 8,
+        "end_word": 37,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c1",
+        "next_chunk_id": "2026-OC-128A:p2:v3c3",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payer_psp",
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S11",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c3",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "5. The identifier for such settlement shall be with response code ‘DD’ (Deemed Debit) in URCS for identifying the deemed debit transactions separately and initiate suitable actions. Also, additional report for transaction treated as Deemed Debit is made available to the member banks in URCS. All member banks are advised to use the Deemed Debit report and raw files for reconciliation purpose and necessary actions.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 37,
+        "end_word": 102,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c2",
+        "next_chunk_id": "2026-OC-128A:p2:v3c4",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S12",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c4",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "6. Furthermore, members to note the following:",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 102,
+        "end_word": 109,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "6.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c3",
+        "next_chunk_id": "2026-OC-128A:p2:v3c5",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S13",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c5",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "a) Remitter and Acquirer banks are advised to perform three (3) way reconciliation for non- financial requests (create, update, revoke) and financial requests (execution) both with Mandate raw file and transaction raw file (including ‘Deemed Debit’ file) respectively.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 109,
+        "end_word": 147,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "a)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c4",
+        "next_chunk_id": "2026-OC-128A:p2:v3c6",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S14",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c6",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "b) Remitter banks to ensure that funds blocked in the customer's account are auto unblocked upon expiry of the mandate period.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 147,
+        "end_word": 168,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "b)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c5",
+        "next_chunk_id": "2026-OC-128A:p2:v3c7",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "remitter_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S15",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c7",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "c) Acquirer banks can raise BGGD, wherever applicable, within the mandate validity period.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 168,
+        "end_word": 181,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "c)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c6",
+        "next_chunk_id": "2026-OC-128A:p2:v3c8",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S16",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "applicability"
+        ]
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c8",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "d) Acquirer/Payee are advised to process executions within the mandate validity period and no duplicate executions are processed. In case of such instances, Acquirers should reconcile and process credit adjustments upfront.",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 181,
+        "end_word": 212,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "d)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c7",
+        "next_chunk_id": "2026-OC-128A:p2:v3c9",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S17",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2026-OC-128A:p2:v3c9",
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "text": "e) Issuer may raise chargebacks with appropriate reason codes for mandates executed post their validity period (Chargeback reason code 1081 — Transaction not settled within the specified timeframes) and duplicate executions (Chargeback reason code 1084 - Duplicate/Multiple Transaction), wherever applicable. Members to take note of the above and update the process accordingly. The changes in deemed debit applicability in the URCS system will be effective from 15\" July 2026. Your Sincerely, 7 SD/- Giridhar GM Chief Customer Success 1001A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 051. Togethen (3 ee aera ener Rie CIN: U74990MH2008NPL189067",
+        "title": "Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution",
+        "circular_number": "128A",
+        "series": "UPI",
+        "issue_date": "2026-07-03",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 128A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 212,
+        "end_word": 313,
+        "section_id": "2026-OC-128A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "e)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2026-OC-128A:p2:v3c8",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "128",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S18",
+        "retrieval_reason": "document_coverage",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "applicability",
+          "timing"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "text": "UPI OC 128 treats response code 59 (Suspected fraud) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+        "sources": [
+          "S1",
+          "S3"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "UPI OC 128 treats response code K1 (Suspected fraud based on risk score) as a Deemed Debit scenario where the transaction is considered failed at the remitter end and settlement proceeds by debiting the remitter bank.",
+        "sources": [
+          "S3"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "UPI OC 128A updates the treatment of response code 59 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+        "sources": [
+          "S2"
+        ],
+        "draft_index": 3,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "UPI OC 128A updates the treatment of response code K1 to remain within the Deemed Debit scope, explicitly stating applicability for the Remitter Bank is Yes.",
+        "sources": [
+          "S2"
+        ],
+        "draft_index": 4,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "Research entity was not specified. Source-specific applicability must remain explicit in the answer.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+      "The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below."
+    ],
+    "answer": "Potentially incomplete draft — the advisory review flagged a possible qualification or scope gap. Inspect the evidence before reuse.",
+    "abstained": false,
+    "central_answer_status": "retained",
+    "response_status": "incomplete",
+    "coverage_check": {
+      "status": "issues_flagged",
+      "findings": [
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer asserts that UPI OC 128 treats response code K1 as a 'Deemed Debit' scenario (supported by S3.1), but the source text in S2.1 explicitly lists K1 under the section where response codes were previously 'excluded from the deemed debit scope' before being updated. The answer fails to distinguish between the original exclusion in OC 128 and the subsequent inclusion/update in OC 128A, creating a false impression that OC 128 itself treated K1 as Deemed Debit without noting the change.",
+          "quotes": [
+            {
+              "citation": "S3",
+              "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22"
+            },
+            {
+              "citation": "S2",
+              "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk"
+            }
+          ]
+        },
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer states that UPI OC 128 treats response code 59 as a 'Deemed Debit' scenario (supported by S3.1), whereas the source text in S2.1 indicates that 59 was among the codes 'excluded from the deemed debit scope' prior to the addendum. The answer conflates the status of 59 under OC 128 with its updated status under OC 128A, ignoring the explicit exclusion mentioned in the addendum's context.",
+          "quotes": [
+            {
+              "citation": "S3",
+              "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22"
+            },
+            {
+              "citation": "S2",
+              "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk"
+            }
+          ]
+        },
+        {
+          "kind": "scope_unclear",
+          "reason": "The answer claims OC 128A updates the treatment of K1 to remain within Deemed Debit scope with applicability 'Yes' for Remitter Bank (supported by S2.1). However, it does not clarify that this is a change from an earlier exclusion or if there were specific conditions attached to this update in OC 128A versus OC 128, leading to ambiguity about the exact timeline and scope of applicability.",
+          "quotes": [
+            {
+              "citation": "S2",
+              "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk"
+            },
+            {
+              "citation": "S3",
+              "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22"
+            }
+          ]
+        },
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer implies a direct continuity where OC 128 treats K1 as Deemed Debit (S3.1) and OC 128A updates it to remain so (S2.1). However, S2.1 explicitly states that VH, K1, 59, and VO were 'excluded' before the update. The answer's phrasing suggests OC 128 included them initially, which contradicts the 'excluded' status mentioned in the addendum's preamble.",
+          "quotes": [
+            {
+              "citation": "S3",
+              "quote": "Remitter Bank risk scoreby remitter K1- Suspected fraud, decline/transaction declined based on RemitterBank risk score by remitter VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt Remitter Bank Any un-responded/declined transactions with invalid response code apart from the above for mandate execution by remitter bank with Purpose Code 1, response shall be treated as Deemed Debit and settlement shall be done by debiting respective remitter bank and credit the same to acquirer bank. The identifier for such settlement shall be with response code RC- 1001A, The Capital, B Wing, 10th Flo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T: +91 22"
+            },
+            {
+              "citation": "S2",
+              "quote": "NATIONAL PAYMENTS: piste S00 | FORWPRD NPCI/UPI/OC-128A/2026-27 3° July 2026 To, All Members — Unified Payments Interface (UPI) a Dear Sir/Madam, Sub: Addendum to OC-128 Extension of additional response codes under Deemed Debit for mandate execution With reference to UP! OC no. NPCI/UPI/OC No. 128/2021-22 dated 14°\" December 2021, response codes VH, K1, 59, and VO were excluded from the deemed debit scope. Basis the ecosystem feedback, the scope of Deemed Debit (DD) scenario are updated as mentioned below: Changes in the Deemed Debit Scenario: Decline Response Code and Description Decline B bee! P P ¥ Applicabilit 59 — Suspected fraud, decline/transaction declined | . | 1 | based on risk"
+            }
+          ]
+        }
+      ],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+    },
+    "elapsed_ms": 27829,
+    "timing": {
+      "total_seconds": 27.829,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.016
+        },
+        {
+          "stage": "generation",
+          "seconds": 14.328
+        },
+        {
+          "stage": "claim_support",
+          "seconds": 3.469
+        },
+        {
+          "stage": "coverage",
+          "seconds": 10.016
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "generation",
+          "status": "completed",
+          "timeout_seconds": 60.0,
+          "prompt_tokens": 8463,
+          "output_tokens": 428,
+          "load_seconds": 5.698,
+          "prompt_seconds": 2.689,
+          "decode_seconds": 5.885,
+          "done_reason": "stop",
+          "seconds": 14.328
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 1058,
+          "output_tokens": 39,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.386,
+          "decode_seconds": 0.532,
+          "done_reason": "stop",
+          "seconds": 1.094
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 618,
+          "output_tokens": 31,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.259,
+          "decode_seconds": 0.429,
+          "done_reason": "stop",
+          "seconds": 0.781
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 738,
+          "output_tokens": 31,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.294,
+          "decode_seconds": 0.433,
+          "done_reason": "stop",
+          "seconds": 0.797
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 737,
+          "output_tokens": 31,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.296,
+          "decode_seconds": 0.429,
+          "done_reason": "stop",
+          "seconds": 0.781
+        },
+        {
+          "stage": "coverage",
+          "status": "completed",
+          "timeout_seconds": 15.0,
+          "prompt_tokens": 5466,
+          "output_tokens": 634,
+          "load_seconds": 0.001,
+          "prompt_seconds": 1.717,
+          "decode_seconds": 8.19,
+          "done_reason": "stop",
+          "seconds": 10.016
+        }
+      ]
+    }
+  }
+}

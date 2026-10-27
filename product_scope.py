@@ -33,6 +33,14 @@ def resolve(engine,query,numbers,series,cutoff,feature,year='',document_ids=None
  else:
   for ref in numbers:
    found=[d for d in engine.docs if number(d['circular_number'])==number(ref) and eligible(d)]
+   # A product mentioned in prose helps resolve a reference, but must not
+   # exclude complementary sources from research across the whole library.
+   if not infer_product and len(found)>1 and len(inferred)==1:
+    preferred=[d for d in found if inferred[0] in memberships(d)]
+    if preferred:found=preferred
+   if len(found)>1:
+    from query_understanding import resolve_by_title
+    found=resolve_by_title(query,found)
    if len(found)>1:
     ambiguous.extend(dict(id=d['id'],series=d['series'],reference=d.get('reference_label',d['circular_number']),fiscal_year=fiscal_year(d),title=d['subject'],availability=d['availability']) for d in found)
    elif len(found)==1 and found[0]['availability']=='converted':requested.append(found[0]['id'])

@@ -1,0 +1,130 @@
+{
+  "seed": 20261015,
+  "population": 89,
+  "selection": "Uniform sample without replacement from sorted converted documents with OCR, 1-3 indexed pages and a locally available PDF. This is not a whole-corpus or all-product certification.",
+  "baseline": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-oc185b-repair-20261014",
+  "sample": [
+    {
+      "document_id": "2024-OC-107A",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2024-04-19_OC-107A.pdf",
+      "pdf_sha256": "f0348081a01c658232917f0c31890e85e7079aea8bf7c4f7714e553855fef0d0",
+      "pages": 1,
+      "markdown": "circulars/2024-04-19_OC-107A.md",
+      "series": "UPI",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Corrected three OCR date suffixes. Printed RRN strings, 100 million and approximately 1000 Billion retained.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2024-OC-107A-1.png",
+          "sha256": "44e3fa64fb402505113e087db144f061a0b64ad0aa194c266438e5326552fd4d"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-UPI-186",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2023-12-19_2023-UPI-186.pdf",
+      "pdf_sha256": "3bfbc0e50b75907520e3b0ed2f48b167b32b253f500a7adb0f49b564be81dcc0",
+      "pages": 2,
+      "markdown": "circulars/2023-12-19_2023-UPI-186.md",
+      "series": "UPI",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Corrected header reference/date and January deadline. Historical Rs.500 threshold, initiation mode 06, NFC Type 2 and liability wording retained.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2023-UPI-186-1.png",
+          "sha256": "853d4facef97ab088c138acc24f3216218c495d9918939d6e015c0da281fb521"
+        },
+        {
+          "page": 2,
+          "path": "images/2023-UPI-186-2.png",
+          "sha256": "eef05038f88b41f70ba7ce9b42d938ed5d5763d1a085b7fb0458543fb54a9107"
+        }
+      ]
+    },
+    {
+      "document_id": "2025-OC-193A",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2024-09-10_OC-193A.pdf",
+      "pdf_sha256": "2f8cd8fdabe47c85cef77b5ac36382d6191cd974d2e620f88c4136b30161eecd",
+      "pages": 2,
+      "markdown": "circulars/2024-09-10_OC-193A.md",
+      "series": "UPI",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Corrected dates and attached OC193 reference. Printed 35 digits and attached 35 characters (alphanumeric) retained as written; no harmonisation. October 1, 2024 and remitter/beneficiary conditions unchanged.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2025-OC-193A-1.png",
+          "sha256": "e2ec3c131ae9ce2db7442c980f1b3346d8f0723cab5311582b7d663ab8122515"
+        },
+        {
+          "page": 2,
+          "path": "images/2025-OC-193A-2.png",
+          "sha256": "aeff6fc2f65776566de135da5a3f8e6c619fb85c5ac9ca9bf63c86b174926753"
+        }
+      ]
+    },
+    {
+      "document_id": "2025-OC-208B",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2025-08-01_OC-208B.pdf",
+      "pdf_sha256": "fc7c8d0e7704d10f4f811e8de612593a855537a68170ce8a4e1528f601f7f78e",
+      "pages": 1,
+      "markdown": "circulars/2025-08-01_OC-208B.md",
+      "series": "UPI",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Corrected circular-reference OCR and referenced date suffixes. August 20, 2025 go-live unchanged.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2025-OC-208B-1.png",
+          "sha256": "c7846660fc5ec7605ea6d7bc02fcb8f7d999aaf812b9e233d84bb3473ab3c205"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-Product-Compliance-PCOMP-Q4",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2023-04-13_2023-Product-Compliance-PCOMP-Q4.pdf",
+      "pdf_sha256": "2f3bd190a0bc139c762201c5472be020635cc868f0fc57f8c5fcfa372d923681",
+      "pages": 3,
+      "markdown": "circulars/2023-04-13_2023-Product-Compliance-PCOMP-Q4.md",
+      "series": "Product Compliance",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Corrected page-1 dates and transcribed page-3 table with all eight rows. Recovered ISO27001 certificate-date instruction and RBI Oversight wording. Page-2 action numbers 3 and 4 are printed that way and remain unchanged.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2023-Product-Compliance-PCOMP-Q4-1.png",
+          "sha256": "75c6fb5db128c20bdd6844e0f9ea540c1b1b31b30c3fb4e0efb46f4bb098f917"
+        },
+        {
+          "page": 2,
+          "path": "images/2023-Product-Compliance-PCOMP-Q4-2.png",
+          "sha256": "7b29c8a8fe04fb6091ed0a5d593bbf0fd39d229bb9326bc4748ec18a7655839c"
+        },
+        {
+          "page": 3,
+          "path": "images/2023-Product-Compliance-PCOMP-Q4-3.png",
+          "sha256": "6dab481fa19df68b2fa72d401c5c1718349b16ad5ba9b628b173bb6dcbebb214"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-UPI-160",
+      "pdf": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2022-12-28_2023-UPI-160.pdf",
+      "pdf_sha256": "340767bb3030fe19e8a9bba1e2ff4e6b5277c856d93f1606c4e9fefdf804548d",
+      "pages": 1,
+      "markdown": "older_reference/2022-12-28_2023-UPI-160.md",
+      "series": "UPI",
+      "review_status": "AI_visual_review_complete_independent_review_pending",
+      "review_notes": "Restored complete 11-entry two-column dispute table, including Re-presentment and RET; repaired date suffixes. No reversal before January 1, 2023 and zero report values retained.",
+      "page_images": [
+        {
+          "page": 1,
+          "path": "images/2023-UPI-160-1.png",
+          "sha256": "9b84f1e8bc85ed3d17b97ec03d9addb3cdab67588e0ff40863e16f42f913d657"
+        }
+      ]
+    }
+  ]
+}

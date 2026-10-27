@@ -1,0 +1,13 @@
+....F....
+======================================================================
+FAIL: test_combined_phase_and_scope_failure_can_still_attempt_repair (test_quality_cycle.NotificationRecoveryTests.test_combined_phase_and_scope_failure_can_still_attempt_repair)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_quality_cycle.py", line 54, in test_combined_phase_and_scope_failure_can_still_attempt_repair
+    self.assertEqual(engine.ollama.call_count,1)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+FAILED (failures=1)

@@ -6,6 +6,14 @@ The central design decision is to preserve document identity while retrieving ac
 
 ## Current research implementation
 
+[19–20 October quality cycle](docs/QUALITY_CYCLE_20261019.md): protect relevant notification-phase candidates that reranking demotes, then retain the missing phase in a bounded claim-repair request. Recovery uses existing retrieved evidence and same-document context; it does not alter source text or embeddings. A 144-question paired development run found three additional source anchors without losses. Experiments with extra generation instructions and a second coverage reviewer were not promoted because they did not consistently improve answers.
+
+[Broader graph candidate, 18 October](docs/GRAPH_EXPANSION_20261018.md): document intake now prepares a graph of explicit references, separate numbering families and many-to-many topic mentions. A general UPI circular can connect to several feature documents without being assigned to one feature. The broader candidate is disabled by default because comparison testing has not shown additional benefit; the maintained UPI graph remains enabled. Category ownership, known citation labels and duplicate repaired statements now have targeted safeguards. Coverage-review reliability remains open.
+
+[18 October evidence recovery](docs/READINESS_IMPROVEMENTS_20261018.md): preserve matching table chunks for limit questions and include adjacent notification sections when the question asks about a different event phase. Both stay within existing filters and evidence budgets. Generate a question-focused answer, then check claims against their selected source excerpts, including amount/column and pre/post-notification distinctions. These safeguards reduce specific failures; they do not establish complete or independently verified answers. Graph assistance is enabled; contextual BM25 and structured synthesis are disabled.
+
+[11 October reliability update](docs/IMPLEMENTATION_20261011.md): clarify shared feature names before retrieval; preserve complementary sources around named references; protect strong lexical/original candidates from reranker demotion; select exact source excerpts by ID during claim checking; label a draft incomplete when its central answer is withheld. Validation status and remaining checks are recorded separately from the implemented flow.
+
 Current product scope and future priorities: [midterm scope](output/midsem/CURRENT_SCOPE.md).
 
 
@@ -108,7 +116,9 @@ The document feature filter uses the union of its labels. A reviewed clause does
 
 Evidence-only mode stops before generation. AI draft mode sends selected excerpts, metadata and coverage notes to local Qwen. Output must be structured claims with valid source IDs.
 
-For each claim, deterministic guards check numbers against the cited text/metadata. The local model then classifies support as supported, unsupported or uncertain and supplies quotations. Quotations must match the cited passage after whitespace and typographic punctuation normalization; OCR spelling and numbers are not silently corrected. Invalid quotations, malformed responses and unavailable checks cause claims to be withheld. Only claims passing these checks appear in the supported draft. Withheld claims remain separately inspectable and labelled in exports.
+For each claim, deterministic guards check numbers against cited text/metadata and explicit monetary tables for category or limit-column mismatches. The local model classifies support and selects immutable excerpt IDs; the application attaches the original quotations. Claimed numbers must also occur in those selected quotations or source-attribution metadata. Most chunks remain whole during checking so conditions are not separated from their statements. OCR spelling and numbers are not silently corrected during answering.
+
+Up to two withheld claims may each receive one repair attempt using the already retrieved, generation-eligible evidence. A correction can fix attribution, add necessary citations or retain a missing qualification. It must pass the same support checks again. There is no recursive retry, new retrieval or relaxation of checks; the existing request and review budgets still apply. An unavailable checker is not retried as a content repair. The original draft, attempted correction and outcome remain in the response audit and export. Claims that still fail remain withheld.
 
 This is a useful filter, not independent verification: generation and checking use the same model and share its blind spots. A human must check important claims and omissions. The check does not determine present-day applicability.
 
@@ -128,6 +138,14 @@ Generation context remains 16,384 tokens, with up to 3,072 output tokens. Eviden
 
 ## Run the project
 
+### Graph-assisted research in the main flow (16 October 2026)
+
+The normal app on port 8765 now uses the bounded v3 graph overlay for supported topics. It adds source-linked evidence for UPI OC128, OC226, OC76, OC141, OC185 and IPO limits. Hybrid retrieval finds starting passages; a matching topic and source identity activate a bounded two-hop graph expansion; the existing context budget and citation checks then apply. The graph preserves references, proposed amendments and related topics as different relationships. It does not infer that the newest circular replaces every earlier condition. Strict retrieval and selected-document summaries/comparisons keep their existing paths.
+
+The graph layer uses a source-anchored, AI-curated JSON manifest, not a new graph database or an automatic rule engine. Unknown dates, missing documents and unreviewed relationships remain visible. The UI reports coverage of marked graph passages, which is not completeness of all applicable rules. Independent review is pending. See the [current integration decision](docs/GRAPH_INTEGRATION_20261016.md) and [historical pilot comparisons](docs/GRAPH_PILOT_EXTENDED_20261014.md).
+
+OC185B's known OCR amount error has been corrected in Markdown and activated through a new indexed corpus release. Both ordinary and graph-assisted generation can use the corrected fragment. A page hash binds the correction to the inspected text; historical corrupt versions remain protected and unknown later changes require re-review. The previous extraction and corpus release remain available for audit. This targeted repair does not detect every OCR error or prevent every category/scope mistake. See the [repair and graph-rollout decision](docs/SOURCE_REPAIR_AND_GRAPH_DECISION_20261014.md).
+
 Open Ollama. Double-click `run.cmd` in the project folder and keep its window open. Visit http://127.0.0.1:8765. In PowerShell, use `.\run.cmd`; it avoids the script execution-policy error from `run.ps1`.
 
 After accepting source reviews: stop the app, run `.\run.cmd embed`, then `.\run.cmd`. The application uses immutable fingerprinted snapshots and refuses a stale vector index. No rebuild is needed just to adjust context/output limits.
@@ -140,3 +158,23 @@ A reusable SQLite embedding cache records exact text/model hashes. Rebuilds reus
 ## What the preliminary experiment shows
 
 The same-snapshot comparison recovered 55/55 proposed source anchors in all four variants. It showed no anchor-recall gain from reranking on the current reference-heavy set. Semantic methods returned evidence for one unrelated question. These observations motivate independent review, harder negatives and paraphrases. They do not establish general answer accuracy. See [mid-sem validation](docs/MIDSEM_VALIDATION.md).
+
+
+### 15 October 2026: source and answer safeguards
+
+The active source release includes a PDF-checked, six-document OCR repair sample. Table/category, named-circular and ceiling checks run before display; a bounded correction attempt must pass the same checks. Some claims still remain withheld. See [the audit and observed limitations](docs/SCOPE_CITATIONS_AND_OCR_AUDIT_20261015.md) for exact evidence and rollout status.
+
+### 17 October 2026: intake quality and controlled experiments
+
+New uploads receive page-level source-review flags; structurally damaged tables and lost characters are quarantined before indexing. Reviewed Markdown may retain an original PDF with matching page markers and immutable hashes through the CLI intake. Answers remain question-focused prose, lists or comparisons with source citations. Context-enriched lexical retrieval and an internal structured evidence ledger are available experimentally, but remain off: paired runs did not demonstrate a consistent improvement. Intake checks and narrower citation/amount attribution safeguards are active. See [implementation, results and limitations](docs/EVIDENCE_IMPROVEMENTS_20261016.md) and [the next model experiments](docs/MODEL_EXPERIMENT_PLAN_20261017.md).
+
+
+## Supervised workbench — 22 October 2026
+
+The Payments workbench adds Query Desk and Change-Impact Briefs above the same RAG engine. A request produces a cited draft and evidence snapshot; analysts inspect originals and edit it; a reviewer records a decision; export carries both findings and review status. A changed source, model digest or graph invalidates reuse. Workflow data lives separately in `data/workflows.sqlite3`.
+
+Impact briefs select the changed source and earlier evidence explicitly. Documented changes remain separate from editable analyst actions and questions. The initial team checklist is generic; internal deployment and applicability cannot be inferred from public circulars.
+
+Bounded maintained graph-assisted retrieval is supported. Automatic whole-corpus graph expansion is not selected for this release; its inventory remains available for inspection. Intake bundles and validates the maintained manifest with a candidate source release. Stale links cause a visible degraded status and ordinary retrieval fallback. All other eligible documents remain searchable. The current 144-case comparison found 223/234 expected anchors with the graph versus 212/234 without it, not an answer-accuracy score.
+
+See [implementation, trade-offs and acceptance gates](docs/SUPERVISED_WORKBENCH_20261020.md). The source and answer review gates remain real dependencies; software tests do not approve business use.

@@ -87,7 +87,7 @@ def restore(destination, package=PACKAGE):
     return manifest
 
 
-def verify_runtime(destination, manifest):
+def verify_runtime(destination, manifest, config_path=None):
     sys.path.insert(0, str(ROOT))
     from app import Engine
     from evaluation.payments_eval import validate_anchors
@@ -95,7 +95,7 @@ def verify_runtime(destination, manifest):
     from tools.document_pipeline import verify_sources
     verify_files(destination, manifest)
     verify_sources(destination)
-    config = read(ROOT / 'config.handoff.json')
+    config = read(config_path or ROOT / 'config.handoff.json')
     engine = Engine(data_dir=destination, config=dict(config, vector_backend='json'))
     if engine.fingerprint != manifest['corpus_fingerprint'] or engine.registry.fingerprint != manifest['registry_fingerprint']:
         raise ValueError('Reconstructed corpus/registry differs from the frozen handoff')
@@ -104,13 +104,18 @@ def verify_runtime(destination, manifest):
     for name, expected in manifest['reproducibility_files'].items():
         if sha((ROOT / name).read_bytes()) != expected:
             raise ValueError('Pinned configuration, dependency or dataset changed: ' + name)
+    if manifest.get('graph_sha256'):
+        from graph_context import graph_status
+        status=graph_status(engine)
+        if status['status']!='active' or status['fingerprint']!=manifest['graph_sha256']:
+            raise ValueError('Maintained graph does not match the packaged source release')
     return dict(documents=len(engine.docs), pages=len(engine.pages), chunks=len(engine.parts),
                 corpus_fingerprint=engine.fingerprint, registry_fingerprint=engine.registry.fingerprint,
                 mixed_source_cases_validated=len(cases), model_calls=0)
 
 
-def verify_models(manifest):
-    config = read(ROOT / 'config.handoff.json')
+def verify_models(manifest, config_path=None):
+    config = read(config_path or ROOT / 'config.handoff.json')
     # The release uses localhost only; no remote API credentials are required.
     with urllib.request.urlopen('http://127.0.0.1:11434/api/tags', timeout=10) as response:
         installed = {m['name']: m['digest'] for m in json.load(response)['models']}
@@ -127,10 +132,13 @@ def verify_models(manifest):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('command', choices=['restore', 'verify', 'models'])
+    parser.add_argument('--workbench', action='store_true',help='Use the current workbench source release and portable configuration')
     args = parser.parse_args()
-    destination = ROOT / DESTINATION
-    manifest = restore(destination) if args.command == 'restore' else verify_package()
-    result = verify_models(manifest) if args.command == 'models' else verify_runtime(destination, manifest)
+    package=ROOT/'handoff/workbench-20261027' if args.workbench else PACKAGE
+    config_path=ROOT/'config.workbench.json' if args.workbench else ROOT/'config.handoff.json'
+    destination = ROOT / (read(config_path)['data_dir'] if args.workbench else DESTINATION)
+    manifest = restore(destination,package) if args.command == 'restore' else verify_package(package)
+    result = verify_models(manifest,config_path) if args.command == 'models' else verify_runtime(destination, manifest,config_path)
     print(json.dumps(dict(status='passed', command=args.command, **result), indent=2))
 
 

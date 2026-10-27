@@ -1,0 +1,85 @@
+- complementary:
+  - link "Payments Guidelines Query Expert":
+    - /url: /
+    - text: Payments Guidelines
+    - text: Query Expert
+  - navigation:
+    - link "Research and source library":
+      - /url: /
+    - link "Payments workbench":
+      - /url: /work
+  - paragraph: Supervised prototypes · Local review records
+- main:
+  - generic: Payments workbench
+  - heading "Research. Review. Reuse." [level=1]
+  - paragraph: Query Desk and Change-Impact Briefs share cited evidence and versioned review. No automatic business actions.
+  - status: "Graph-assisted retrieval: active. 55 maintained anchors, 13 relationships. Links await independent review; coverage is limited to maintained topics."
+  - status: Completed
+  - generic "Create a work item" [active]
+  - option "Payments Query Desk"
+  - option "Change-Impact Brief" [selected]
+  - heading "Saved work" [level=2]
+  - button "Refresh"
+  - paragraph:
+    - button "What changed in the UPI biometric addendum, and what should a payments analyst review?"
+    - text: · Impact brief · Needs review · v3
+  - paragraph:
+    - button "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?"
+    - text: · Query Desk · Needs review · v3
+  - article:
+    - heading "What changed in the UPI biometric addendum, and what should a payments analyst review?" [level=2]
+    - paragraph: Needs review · version 3
+    - paragraph: No operating context supplied; institution-specific impact is not established.
+    - status: "incomplete: Potentially incomplete draft — the advisory review flagged a possible qualification or scope gap. Inspect the evidence before reuse."
+    - button "Generate cited draft"
+    - generic "Clarify the question or product"
+    - heading "Documented findings" [level=3]
+    - paragraph: Edits are human-authored and are not automatically rechecked. Keep supporting citations such as [S1].
+    - textbox: The transaction limit for On-Device Biometric Authentication in UPI was enhanced from ₹5,000 to ₹10,000 effective 07th August 2026. [S1] All existing validations, compliance requirements, specifications, and regulatory guidelines established in the earlier circular continue to remain fully applicable. [S1] A payments analyst should review that Issuer Banks, PSP Banks, and UPI Applications must ensure adequate customer communication regarding the updated limit. [S1]
+    - text: Analyst-proposed actions — not source requirements
+    - textbox "Analyst-proposed actions — not source requirements": "Review checklist suggestions, not inferred institutional impacts: - Product and operations: assess whether the documented change affects your processes. - Compliance or policy owner: verify applicability, dates and retained obligations. - Customer support: review whether approved guidance needs updating. - Transaction risk owner: assess whether internal rules need review; no live rule configuration is inferred."
+    - text: Unresolved questions and internal evidence needed
+    - textbox "Unresolved questions and internal evidence needed": "Engineering review note: confirm source scope, retained safeguards and institution applicability with a payments reviewer. No independent approval has been recorded."
+    - button "Save as new draft version"
+    - button "Submit for review" [disabled]
+    - heading "Evidence and automated checks" [level=3]
+    - generic "S1 · Enhancement of Transaction Limit for On-Device Biometric Authentication in UPI · page 1"
+    - generic "S2 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S3 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S4 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S5 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S6 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S7 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S8 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S9 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S10 · Introduction of Additional Authentication methods in UPI · page 1"
+    - generic "S11 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S12 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S13 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S14 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S15 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S16 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "S17 · Introduction of Additional Authentication methods in UPI · page 2"
+    - generic "Automated findings and withheld claims"
+    - heading "Review this version" [level=3]
+    - paragraph: A name records who reviewed; it is not a verified login. Approval requires inspecting original sources and checking material qualifications.
+    - text: Reviewer
+    - textbox "Reviewer"
+    - text: Review rationale
+    - textbox "Review rationale"
+    - checkbox "I verified the original sources and citations."
+    - text: I verified the original sources and citations.
+    - checkbox "I verified qualifications, scope, dates and unresolved issues."
+    - text: I verified qualifications, scope, dates and unresolved issues.
+    - button "Approve"
+    - button "Reject"
+    - button "Export with evidence and review status"
+    - heading "Version history" [level=3]
+    - generic "Version 1 · 2026-10-24T04:10:31.933461+00:00"
+    - generic "Version 2 · 2026-10-24T04:11:09.607251+00:00"
+    - generic "Version 3 · 2026-10-24T04:11:53.423217+00:00"
+    - paragraph: v1 · created · 2026-10-24T04:10:31.933461+00:00
+    - paragraph: v1 · generation started · 2026-10-24T04:10:41.060711+00:00
+    - paragraph: v2 · generated · 2026-10-24T04:11:09.607251+00:00
+    - paragraph: v3 · edited · 2026-10-24T04:11:53.425229+00:00
+    - paragraph: v3 · submit · 2026-10-24T04:12:02.548666+00:00

@@ -1,0 +1,42 @@
+{
+  "app.py": {
+    "before": "2f128371fc21b55d47e51effb63aafb53827a82e63865669e6d799f7269f3927",
+    "after": "2f128371fc21b55d47e51effb63aafb53827a82e63865669e6d799f7269f3927",
+    "unchanged": true
+  },
+  "work_items.py": {
+    "before": "ee70e29992c61ecc577be4848fcddeeb0aefd00b05376bee057f3d8daf0fc75e",
+    "after": "ee70e29992c61ecc577be4848fcddeeb0aefd00b05376bee057f3d8daf0fc75e",
+    "unchanged": true
+  },
+  "local_jobs.py": {
+    "before": "8e61bbdf4ba66ff13588542c0b0e783282e8c3916eeaf6c0e00eac39d1454426",
+    "after": "8e61bbdf4ba66ff13588542c0b0e783282e8c3916eeaf6c0e00eac39d1454426",
+    "unchanged": true
+  },
+  "research.py": {
+    "before": "380aa445fc47467b7f4b66ad837bf16324128dca551a937c3db236cc53b576bf",
+    "after": "380aa445fc47467b7f4b66ad837bf16324128dca551a937c3db236cc53b576bf",
+    "unchanged": true
+  },
+  "adaptive_context.py": {
+    "before": "9fdf4b54061e061e2c61a6b42d3d573a63c05926936f6a8cd501733a4e02ea75",
+    "after": "9fdf4b54061e061e2c61a6b42d3d573a63c05926936f6a8cd501733a4e02ea75",
+    "unchanged": true
+  },
+  "graph_context.py": {
+    "before": "af9dccf1fe87b83cfa3f5a7d39d9b3ac89954c339727a0666e2edffabab41bbb",
+    "after": "af9dccf1fe87b83cfa3f5a7d39d9b3ac89954c339727a0666e2edffabab41bbb",
+    "unchanged": true
+  },
+  "claim_check.py": {
+    "before": "78484a48f20c3ce529b9d89cc07a63cd1e27967200884dd3cf512a62c4250f0e",
+    "after": "78484a48f20c3ce529b9d89cc07a63cd1e27967200884dd3cf512a62c4250f0e",
+    "unchanged": true
+  },
+  "config.json": {
+    "before": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+    "after": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+    "unchanged": true
+  }
+}

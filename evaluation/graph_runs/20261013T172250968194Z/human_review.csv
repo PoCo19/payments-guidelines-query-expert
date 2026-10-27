@@ -1,0 +1,65 @@
+﻿case,arm,question,answer,stale_rule,incorrect_scope,unsupported_supersession,missing_condition,verdict,reviewer,notes
+BIO-01,baseline,"What is the UPI on-device biometric transaction limit, and when did it change?","Draft answer — check the supporting excerpts.
+
+The UPI on-device biometric transaction limit was initially set at Rs. 5,000 when the feature was introduced in October 2025. [S2]
+
+The limit was enhanced to Rs. 10,000 effective 07th August 2026. [S1]",,,,,,,
+BIO-01,graph,"What is the UPI on-device biometric transaction limit, and when did it change?","Draft answer — check the supporting excerpts.
+
+The UPI on-device biometric transaction limit was initially set at Rs. 5,000 when the feature was introduced in October 2025. [S2]
+
+The limit was enhanced to Rs. 10,000 effective 07th August 2026. [S1]",,,,,,,
+BIO-02,graph,Does UPI OC 226A remove the device security validations and customer consent requirements?,"Draft answer — check the supporting excerpts.
+
+UPI OC 226A does not remove device security validations or customer consent requirements. [S1]
+
+The circular explicitly states that all existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable. [S1]",,,,,,,
+BIO-02,baseline,Does UPI OC 226A remove the device security validations and customer consent requirements?,"Draft answer — check the supporting excerpts.
+
+UPI OC 226A does not remove device security validations or customer consent requirements. [S1]
+
+The circular explicitly states that all existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable. [S1]
+
+Device security validations such as restricting usage on rooted or jail-broken devices and validating biometric enrolment are required under the referenced circular 226. [S2]
+
+Customer consent requirements include obtaining fresh consent after each device binding operation before allowing further transactions. [S4, S5]",,,,,,,
+BIO-04,baseline,"According to UPI OC 226 and its addendum, was the new biometric limit effective on 15 July 2026 or only later?","Incomplete answer — a statement needed to answer your main question did not pass support checks. The remaining text provides background only.
+
+According to the addendum NPCI/UPI/OC-226A/2026-27, the enhanced limit for On-Device Biometric Authentication in UPI is effective from 07th August 2026. [S2]",,,,,,,
+BIO-04,graph,"According to UPI OC 226 and its addendum, was the new biometric limit effective on 15 July 2026 or only later?",No draft claims passed the automated support checks. Review the flagged claims and source excerpts.,,,,,,,
+DD-01,graph,How did UPI deemed debit treatment for response codes 59 and K1 change from OC 128 to OC 128A?,"Incomplete answer — a statement needed to answer your main question did not pass support checks. The remaining text provides background only.
+
+OC 128A updated this treatment to include response codes 59 and K1 within the Deemed Debit scope for remitter banks based on risk score by the remitter. [S1, S5]",,,,,,,
+DD-01,baseline,How did UPI deemed debit treatment for response codes 59 and K1 change from OC 128 to OC 128A?,"Draft answer — check the supporting excerpts.
+
+Under OC 128, response codes 59 and K1 were excluded from the Deemed Debit scope, meaning declines with these codes were not treated as Deemed Debit transactions. [S2, S4]
+
+OC 128A updated this treatment by including response codes 59 and K1 within the Deemed Debit scope, provided the decline was based on a risk score by the remitter bank. [S1]",,,,,,,
+DD-02,baseline,"For UPI deemed debit, do VO and VH declines have the same treatment for MCC 6211 and other OTM use cases?","Draft answer — check the supporting excerpts.
+
+For UPI deemed debit in other OTM use cases (purpose code '01' and MCC other than 6211), declines with response codes 'VO' and 'VH' are to be considered as declined, and no service should be rendered by the Acquirer/Payee. [S1]
+
+For UPI deemed debit in 1PO, RDS, and SBMD secondary markets use cases (purpose codes '01', '25', '76' where MCC is 6211), declines with response codes 'VO' and 'VH' allow the Acquirer/Payee to claim the transaction amount if it is as per the mandate created. [S3]",,,,,,,
+DD-02,graph,"For UPI deemed debit, do VO and VH declines have the same treatment for MCC 6211 and other OTM use cases?","Draft answer — check the supporting excerpts.
+
+For UPI deemed debit in other OTM use cases (Purpose Code '01' and MCC other than 6211), declines with response codes VO and VH are treated as declined transactions where no service should be rendered by the Acquirer/Payee. [S5]
+
+For UPI deemed debit in PO, RDS, and SBMD secondary markets use cases (Purpose Code '01', '25', '76' with MCC 6211), declines with response codes VO and VH allow the Acquirer/Payee to claim the transaction amount if it is as per the mandate created through BGGD. [S6]",,,,,,,
+DD-03,graph,What reconciliation and report checks accompany the UPI deemed debit changes?,"Draft answer — check the supporting excerpts.
+
+Member banks are advised to use the Deemed Debit report and raw files for reconciliation purposes. [S8]
+
+Remitter and Acquirer banks must perform three-way reconciliation for non-financial requests (create, update, revoke) and financial requests (execution) using both Mandate raw file and transaction raw file including the Deemed Debit file. [S9]
+
+Acquirer banks can raise BGGD claims within the mandate validity period for specific declines. [S10]
+
+Remitter banks must ensure funds blocked in a customer's account are auto-unblocked upon expiry of the mandate period. [S12]",,,,,,,
+DD-03,baseline,What reconciliation and report checks accompany the UPI deemed debit changes?,"Draft answer — check the supporting excerpts.
+
+Member banks must use the Deemed Debit report and raw files available in URCS for reconciliation purposes. [S1]
+
+Banks are required to reconcile all UPI transactions on a daily basis for both Payable and Receivable GL accounts. [S2]
+
+Banks must perform three-way reconciliation by extracting feed files from NPCI, their switch, and CBS for all UPI transactions daily. [S7]
+
+For deemed approved transactions, chargebacks should be raised only in cases of customer complaints if the beneficiary bank has not returned funds or raised specific TCC codes. [S7]",,,,,,,

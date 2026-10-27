@@ -1,0 +1,10 @@
+{
+  "chunks": 14480,
+  "computed": 1,
+  "cache_hits": 14479,
+  "dimension": 1024,
+  "model": "qwen3-embedding:0.6b",
+  "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+  "fingerprint": "5e9b67481253f77ad51243a85d7d6551d86f6d223d9cca7504b8ac77b137651e",
+  "elapsed_seconds": 19.46
+}

@@ -1,0 +1,72 @@
+{
+  "formatting_source": "fallback",
+  "answer_blocks": [
+    {
+      "type": "paragraph",
+      "claims": [
+        {
+          "text": "UPI OC 128A (issued 3 July 2026) updated the Deemed Debit scope to explicitly include response code K1 alongside 59, stating that declines for suspected fraud based on a remitter bank risk score are now treated as Deemed Debit.",
+          "sources": [
+            "S2"
+          ],
+          "draft_index": 2,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "Under OC 128A, both response codes 59 and K1 are explicitly listed with 'Yes' applicability for the Remitter Bank under the Deemed Debit scenario, whereas OC 128 only mentioned 59 in its initial text without a specific table entry for K1.",
+          "sources": [
+            "S2",
+            "S3"
+          ],
+          "draft_index": 3,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "Key qualifications from OC 128A note that declines with response codes VO, VH, VU, QD, or VS remain excluded from Deemed Debit (treated as declined/no service), and members must ensure exclusions are populated strictly for genuine scenarios.",
+          "sources": [
+            "S2",
+            "S4",
+            "S6",
+            "S11"
+          ],
+          "draft_index": 4,
+          "support_status": "automated_supported"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "claims": [
+        {
+          "text": "Circular 128A excludes response codes K1 and 59 from the Deemed Debit scope when the decline is based on a remitter bank's risk score, whereas Circular 128 previously treated such declines as Deemed Debit. Consequently, for code K1 specifically, Circular 128A mandates that no service should be rendered by the Acquirer/Payee if the decline stems from suspected fraud based on a remitter bank's risk score.",
+          "sources": [
+            "S2",
+            "S3"
+          ],
+          "draft_index": 5,
+          "original_text": "Circular 128A (S2) excludes response codes K1 and 59 from the Deemed Debit scope when the decline is based on a remitter bank's risk score, whereas Circular 128 (S3) previously treated such declines as Deemed Debit. Consequently, for code K1 specifically, Circular 128A mandates that no service should be rendered by the Acquirer/Payee if the decline stems from suspected fraud based on a remitter bank's risk score.",
+          "support_status": "automated_supported",
+          "repair_applied": true
+        },
+        {
+          "text": "Settlement for Deemed Debit transactions identified by response code DD in URCS is done by debiting the remitter bank and crediting the acquirer bank, with adjustments on the same day or T+1.",
+          "sources": [
+            "S5",
+            "S8",
+            "S12"
+          ],
+          "draft_index": 6,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "The changes in deemed debit applicability in the URCS system are effective from 15 July 2026 as per OC 128A.",
+          "sources": [
+            "S18"
+          ],
+          "draft_index": 7,
+          "support_status": "automated_supported"
+        }
+      ]
+    }
+  ]
+}

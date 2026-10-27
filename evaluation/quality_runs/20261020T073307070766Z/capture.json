@@ -1,0 +1,177 @@
+{
+  "status": "interrupted_resource_contention",
+  "mode": "coverage",
+  "configuration": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about payment guidelines, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-ocr-audit-20261015",
+    "multi_product": true,
+    "embedding_cache": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\embedding_cache.sqlite3",
+    "evidence_graph_path": "pilot/upi_extended_graph_v3.json"
+  },
+  "installed_models": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "modified_at": "2026-09-24T01:11:59.6552717+05:30",
+        "size": 6594474711,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 4096
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "tools",
+          "thinking"
+        ]
+      },
+      {
+        "name": "qwen3-embedding:0.6b",
+        "model": "qwen3-embedding:0.6b",
+        "modified_at": "2026-09-24T00:55:17.9025643+05:30",
+        "size": 639150858,
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024
+        },
+        "capabilities": [
+          "tools",
+          "thinking",
+          "embedding"
+        ]
+      }
+    ]
+  },
+  "code_hashes": {
+    "adaptive_context.py": "e4520b458e77b88003df3e8a2483e1a27d54cd8517201884abc968eec6666fed",
+    "answer_format.py": "ffcc1ab9bdc7406eac13d43a55099048eb15afa7cc9c23b992241904ce0bbfda",
+    "app.py": "079d0c853198bdbbb08b528be947afd69e17648a6fd32b5adfcd720167e75e68",
+    "claim_check.py": "506e5a11e301ff939dc56a05521687b4e7acb5c523fd4810c76b784e74e6a2ef",
+    "claim_repair.py": "b1d31f4c7fa92a383ee85f46a3cc40430606e99fbbaddac03e4c51da7c68b29e",
+    "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "download_reranker.py": "c7dfbccac6d11c0ecd6043b13d4b3655020d02e75bbf4b53fe5f7b1b1fac4c4c",
+    "embedding_cache.py": "5694593ce40fa954e03171870adb3fbccd5115cda4f52bb261681d842d6072f3",
+    "evidence_focus.py": "4d84b03387c0dc1a66faffe73ce98399126bbdd40b4c0558d59e406defbdcb9a",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+    "ingestion.py": "3d2e10e54a490bb0c3f05c2e55cc13a3f6452cf0662a002b129f2e0c6f97d0d6",
+    "intake_quality.py": "0a73d93b7eaa53dca2fd82d886f71077582779716f751adcacc426d1f6dcb0b7",
+    "launch_app.py": "9a1eaa91f1c6e4bf2d32bdf488fa6a205f9d680bac5f72928495ebc2827f0745",
+    "local_jobs.py": "eabbf3c9731bd4a6d4c8d76d6b7d062431fc779113bd178c4f9f9eacbc882a71",
+    "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+    "quality.py": "afdb3fc948d99f870678e89020b2690070a52e2fc2deb50d6c516664c265296c",
+    "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+    "reference_graph.py": "10822c1ec62349d3dcc3934a7141961d0212aa896b48d0bbb7ef1efcbe957818",
+    "registry.py": "6e06671cb6e5ce89fc93e45f6ed1f48c83a86e161e11e015389e7c0d2bfa69b2",
+    "request_runtime.py": "edf99122fc167f3520c5a6131df7a37a17c8f633972ae2634a10fec7a387489a",
+    "reranker.py": "6ad19fff021c211ce6b7f3efc4d36a72ad7bddb14b688e2258b6f7878509695a",
+    "research.py": "d5b9a35557248bddea2b85969968f1fa89285dabe48c68cec3ab856865894f57",
+    "scope_guard.py": "bc7e7e1fe04d90bddb57bcfe37b08446957f562df00c8f931530483c71b2e92c",
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+    "vector_store.py": "2e818607a079111eb4b9da5aae739935dc8b4e9c2516ff7e08027a542400b585"
+  },
+  "dataset_hashes": {
+    "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\evaluation\\context_regression_20261017.json": "bc7cf369caeb946b1249cc9c07f60fc41e4fea8101c52d8461c782ddfa736448",
+    "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\evaluation\\reference_graph_rbi_cases_20261018.json": "1f488aca0594d1ee652a2cb27e3937e6a5b220102aee26df41ca5f06e1a48ca0"
+  },
+  "runner_sha256": "456d238e439ed79f907174d4161e33bf5b0b9bef4bd68b5f0528395ea8b234f3",
+  "source_hashes": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33",
+    "review_annotations.json": "cd4f26006df1703d832a962615f6735b17b2a6d9de564d581d83697f25f279e6",
+    "feature_rules.json": "792ef665425210502e35493f9953a3893c6698a9cbd8bc2448bd1652cd65b0b0",
+    "source_manifest.json": "47237f4a4a9731151e18fc6b5f2c4be76ad998652f211263a084338bcd04398a"
+  },
+  "rows": [
+    {
+      "id": "COV-01",
+      "arm": "baseline",
+      "expected_material_warning": true,
+      "status": "ok",
+      "coverage_check": {
+        "status": "issues_flagged",
+        "findings": [
+          {
+            "kind": "possible_conflict",
+            "reason": "The answer cites S1 (specifically excerpt S1.1) as evidence for the limits on UPI credit-card bill payments (MCC 5413). However, the table in S1.1 explicitly lists 'Credit Card Bill Payments' with a single limit of ₹5 Lakh and a cumulative 24-hour limit of ₹6 Lakh. The answer text claims these are the ceilings, but it fails to distinguish that these specific limits apply only to merchants categorized as 'Verified Merchants' (a condition stated in S6.1 and referenced in S5.2/S8.1). Without explicitly stating this prerequisite, the answer presents a general rule that is actually conditional, creating a potential conflict between the implied universality of the answer and the specific applicability constraints found in the source excerpts.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S6",
+                "quote": "1. The enhanced limits shall be applicable for merchants which are categorised as ‘Verified Merchant’."
+              }
+            ]
+          },
+          {
+            "kind": "scope_unclear",
+            "reason": "The answer attributes the limits to 'UPI credit-card bill payment' generally. The source excerpt S1.1 lists the category as 'Credit Card Bill Payments' with MCC 5413. While S11.1 mentions enabling users to pay outstanding credit card bills via UPI, it does not specify the transaction limits for this action. The answer relies entirely on the table in S1.1 without clarifying if these limits apply to all credit card bill payments or only those processed through specific 'Verified Merchant' channels as implied by other excerpts (S5.2, S8.1). This blurs the distinction between general UPI bill payments and the enhanced limits for verified merchants.",
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+              },
+              {
+                "citation": "S11",
+                "quote": "2. Credit Account Bill Payment/ Instalment Payment: This shall enable user to make one- time payment or setup UP! AutoPay to pay outstanding credit card account bill/ credit line instalment for self and others using UPI app. To do this,"
+              }
+            ]
+          }
+        ],
+        "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+      },
+      "seconds": 152.641
+    }
+  ],
+  "caveat": "AI-assisted development cases. Anchor matches are not answer accuracy. Coverage findings require review. Both arms use the same models and corpus; the broader graph is off.",
+  "frozen_capture_sha256": "89c4fbc0bf5cbe671239cba763bc48aa3b8dd55030ba015d1e2fef3b42f4c958",
+  "baseline_reviewer_sha256": "d5b9a35557248bddea2b85969968f1fa89285dabe48c68cec3ab856865894f57",
+  "coverage_cases_sha256": "88e75bc85766cffc41f5cd794abe9fd2e751e8f0d61e493575f75b3d08c683bf",
+  "candidate_reviewer_sha256": "4ee7775795e14eadc5f6c10dd7b01cc2b9c43348d2ee7e0178f805ac5e41672b",
+  "candidate_second_reading_sha256": "979ff83594324f245e6cef8599407334b5f429520cd98b3459b207aed728363b",
+  "interruption": {
+    "utc": "2026-10-20T07:36:37.529536+00:00",
+    "reason": "Stopped only the task-owned evaluation process under GPU contention after one baseline review took 152.641 seconds; the candidate review was still pending. Six prior live-generation requests had timed out. A GPU snapshot showed 11759 MiB used / 186 MiB free with a concurrent game. No paired comparison score is available.",
+    "rows_completed": 1,
+    "rerun_command": ".\\.venv\\Scripts\\python.exe -X utf8 evaluation/quality_cycle.py --mode coverage --coverage-cases evaluation/coverage_cases_20261019.json"
+  }
+}

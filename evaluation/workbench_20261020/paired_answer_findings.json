@@ -1,0 +1,72 @@
+{
+  "capture": "evaluation\\maintained_graph_runs\\20261022T171138330902Z\\capture.json",
+  "sha256": "cc71491fb56661d59d2576a5fa4763c250476990921410b1f6a61fa588760459",
+  "snapshot_unchanged": true,
+  "case_count": 3,
+  "attempts": 6,
+  "model_failures": 3,
+  "independently_reviewed": false,
+  "acceptance_gate_passed": false,
+  "findings": [
+    "Three model timeouts make this run unsuitable for a quality or latency comparison.",
+    "Two exceptionally long wall-clock delays exceed the request budget; stage logs alone do not establish whether host suspension or other scheduling conditions caused them.",
+    "IPO graph-on answer recovered specific history but withheld two statements and remained incomplete. The broad all-MCC wording needs scope review.",
+    "No independent correctness verdict or critical-regression clearance is claimed."
+  ],
+  "rows": [
+    {
+      "id": "G-BIO-02",
+      "arm": "off",
+      "seconds": 1200.218,
+      "status": "model_unavailable",
+      "claims": 0,
+      "withheld": 0,
+      "coverage": null
+    },
+    {
+      "id": "G-BIO-02",
+      "arm": "on",
+      "seconds": 458.453,
+      "status": "model_unavailable",
+      "claims": 0,
+      "withheld": 0,
+      "coverage": null
+    },
+    {
+      "id": "G-DD-03",
+      "arm": "on",
+      "seconds": 66.141,
+      "status": "model_unavailable",
+      "claims": 0,
+      "withheld": 0,
+      "coverage": null
+    },
+    {
+      "id": "G-DD-03",
+      "arm": "off",
+      "seconds": 43.672,
+      "status": "incomplete",
+      "claims": 4,
+      "withheld": 0,
+      "coverage": "issues_flagged"
+    },
+    {
+      "id": "G-IPO-02",
+      "arm": "off",
+      "seconds": 16.718,
+      "status": "incomplete",
+      "claims": 1,
+      "withheld": 0,
+      "coverage": "issues_flagged"
+    },
+    {
+      "id": "G-IPO-02",
+      "arm": "on",
+      "seconds": 29.485,
+      "status": "incomplete",
+      "claims": 2,
+      "withheld": 2,
+      "coverage": "unavailable"
+    }
+  ]
+}

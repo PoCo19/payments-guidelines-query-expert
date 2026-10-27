@@ -1,0 +1,375 @@
+- complementary:
+  - link "Payments Guidelines Query Expert home":
+    - /url: /
+    - generic: pg•
+    - text: Payments Guidelines
+    - text: Query Expert
+  - generic: YOUR WORKSPACE
+  - navigation "Main navigation":
+    - button "⌕ Ask a question":
+      - generic: ⌕
+      - text: Ask a question
+    - button "▤ Guideline library 1929":
+      - generic: ▤
+      - text: Guideline library
+      - generic: "1929"
+    - button "＋ Add documents":
+      - generic: ＋
+      - text: Add documents
+    - generic "Project tools"
+    - button "ⓘ About this project":
+      - generic: ⓘ
+      - text: About this project
+  - generic: Runs on your computer
+  - paragraph: Midterm capstone prototype
+- main:
+  - generic: WORKSPACE/Ask a question
+  - generic: Local AI assistant
+  - generic: PAYMENTS GUIDELINES QUERY EXPERT
+  - heading "Understand payment guidelines. Ask a question. Check the source." [level=1]:
+    - text: Understand payment guidelines.
+    - text: Ask a question. Check the source.
+  - paragraph:
+    - text: Find requirements, summarise a circular or compare documents, with citations you can inspect.
+    - strong: "Current sources: NPCI and RBI."
+  - generic: What would you like to know?
+  - generic: DRAFT AI ANSWER
+  - textbox "What would you like to know?":
+    - /placeholder: e.g. What does OC 186A say about UPI Tap & Pay?
+    - text: Under OC 186A, are UPI Tap & Pay transactions at PoS restricted to P2M?
+  - text: Researching for (optional)
+  - combobox "Researching for (optional)"
+  - text: Product
+  - combobox "Product":
+    - option "All products"
+    - option "AePS"
+    - option "Authentication"
+    - option "BBPS"
+    - option "BHIM Aadhaar"
+    - option "CTS"
+    - option "Cards"
+    - option "Digital Payments"
+    - option "E-mandates"
+    - option "IMPS"
+    - option "NACH"
+    - option "NEFT"
+    - option "NETC"
+    - option "NFS"
+    - option "Non-bank PSOs"
+    - option "Others"
+    - option "PPI"
+    - option "Payment Aggregators"
+    - option "Payment Security"
+    - option "Payment System Access"
+    - option "Payment System Authorisation"
+    - option "Product Compliance"
+    - option "RTGS"
+    - option "RuPay"
+    - option "UPI" [selected]
+    - option "e-KYC Setu"
+    - option "e-RUPI"
+  - text: Output
+  - combobox "Output":
+    - option "Source excerpts"
+    - option "Cited AI answer" [selected]
+  - button "Ask question ↗"
+  - generic "Filters and answer settings"
+  - option "Keyword · BM25"
+  - option "Neural · embeddings"
+  - option "Hybrid · RRF" [selected]
+  - option "All fiscal years" [selected]
+  - option "2026-27"
+  - option "2025-26"
+  - option "2024-25"
+  - option "2023-24"
+  - option "2022-23"
+  - option "2021-22"
+  - option "2020-21"
+  - option "2019-20"
+  - option "2018-19"
+  - option "2017-18"
+  - option "2016-17"
+  - option "2015-16"
+  - option "2014-15"
+  - option "2013-14"
+  - option "2012-13"
+  - option "2011-12"
+  - option "2010-11"
+  - option "2009-10"
+  - option "Automatic" [selected]
+  - option "Topic across documents"
+  - option "Specific question"
+  - option "Circular summary"
+  - option "Compare circulars"
+  - option "Automatic" [selected]
+  - option "Paragraphs"
+  - option "Bullet points"
+  - option "Paragraphs + bullets"
+  - option "On" [selected]
+  - option "Off (experiment)"
+  - option "Include related context" [selected]
+  - option "Direct matches only"
+  - option "All features" [selected]
+  - option "UPI Tap & Pay"
+  - option "UPI Circle / delegated payments"
+  - option "UPI AutoPay / mandates"
+  - option "NETC FASTag / NCMC replenishment"
+  - option "NRP / PRD and arbitration"
+  - option "UPI LITE"
+  - option "Credit cards / credit lines on UPI"
+  - option "Numeric UPI ID"
+  - option "AePS authentication / micro-ATM"
+  - option "NACH mandates / debit"
+  - option "IMPS transfers / settlement"
+  - option "CTS cheque clearing"
+  - option "RuPay card operations"
+  - option "NFS ATM operations"
+  - option "NETC toll / FASTag"
+  - option "BHIM Aadhaar payments"
+  - option "e-KYC Setu"
+  - option "e-RUPI vouchers"
+  - generic: TRY A QUESTION
+  - button "Tap & Pay on PoS ↗"
+  - button "UPI Circle ↗"
+  - button "AutoPay & FASTag ↗"
+  - heading "Answer and sources" [level=2]
+  - button "Export notes ↓"
+  - paragraph: 17 excerpts · Hybrid · RRF · 16703 ms
+  - paragraph: Draft answer — check the supporting excerpts.
+  - paragraph:
+    - text: Under OC 186A, UPI Tap & Pay transactions on PoS terminals are restricted to Person-to-Merchant (P2M) transactions only.
+    - button "Read source S1": S1
+  - paragraph: Automated support checks passed for the displayed claims. Review details below.
+  - text: Research entity was not specified. Source-specific applicability must remain explicit in the answer.
+  - text: The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below.
+  - generic "Source limitations — verify important details against the original"
+  - generic "How evidence was selected"
+  - generic "Response timing"
+  - generic "Scope and evidence coverage"
+  - generic "Possible gaps or conflicting qualifications — review needed"
+  - paragraph: These automated findings are separate from the answer and need source review.
+  - paragraph: "possible conflict: The answer states that UPI Tap & Pay transactions on PoS are restricted to P2M only under OC 186A. However, evidence S5.1 from a different circular (OC 132) mentions that transaction limits for P2P based transactions will be excluded when calculating the maximum credits for a single beneficiary, implying P2P transactions exist in the ecosystem and are not universally restricted to P2M in all contexts, creating a potential conflict regarding the scope of 'restricted' vs. 'excluded from limits'."
+  - blockquote:
+    - button "S1"
+    - text: Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.
+  - blockquote:
+    - button "S5"
+    - text: 1. A single beneficiary (basis account number) can receive a maximum of 200 credits for P2P based transactions only in a 24-hour cycle (P2PM & P2M transactions will be excluded). NPCl may revise this periodically on need basis.
+  - paragraph: "scope unclear: The answer asserts a restriction to P2M for UPI Tap & Pay on PoS under OC 186A. While S1.1 explicitly states this for 'PoS terminals', other excerpts like S6.1 ('Only domestic P2M transactions shall be permitted') and S7.1 (referencing 'low-value BHIM-UPI transactions (P2M)') discuss P2M restrictions in broader or different contexts (IoT devices, incentive schemes). It is unclear if the specific 'PoS terminal' restriction in S1.1 overrides or is distinct from these other P2M-only mandates found in different circulars, blurring the distinction between a specific PoS rule and general ecosystem rules."
+  - blockquote:
+    - button "S1"
+    - text: Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.
+  - blockquote:
+    - button "S6"
+    - text: 5. Only domestic P2M transactions shall be permitted.
+  - generic "Routing, coverage & claim checks"
+  - article:
+    - generic: S1 · UPI · OC 186A
+    - generic: 2026-09-10
+    - heading "Enhancement - UPI Tap & Pay on Point of Sale (PoS)" [level=3]
+    - paragraph: Direct match
+    - paragraph: Key Guidelines · clause marker 1.
+    - blockquote: Key Guidelines 1. Members and UPI Application Providers shall ensure that UPI Tap & Pay transactions on PoS terminals are accepted only for Person-to-Merchant (P2M) transactions.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S2 · UPI · OC 186A
+    - generic: 2026-09-10
+    - heading "Enhancement - UPI Tap & Pay on Point of Sale (PoS)" [level=3]
+    - paragraph: Direct match
+    - paragraph: Document opening
+    - blockquote: "serena a Oe Prt | FORWPRD NPCI/UPI/OC-186A/2026-27 10\" September 2026 To, Members and UPI Application Providers — Unified Payments Interface (UPI) Subject: Enhancement - UPI Tap & Pay on Point of Sale (PoS) With reference to UPI Operating Circular NPCI/UPI/OC-186/2023-24 dated 19° December 2023, UPI Tap & Pay through Near Field Communication (NFC) on QR was introduced as an additional mode for initiating UPI transactions. In addition to QR, UPI Tap & Pay shall now be extended to Point of Sale (PoS) terminals enabling Users to make contactless (NFC-based) UPI! payments by unlocking their mobile device and tapping it on the PoS terminal."
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S3 · UPI · OC 186A
+    - generic: 2026-09-10
+    - heading "Enhancement - UPI Tap & Pay on Point of Sale (PoS)" [level=3]
+    - paragraph: Direct match
+    - paragraph: UPI Application Provider · clause marker 1.
+    - blockquote: UPI Application Provider 1. UP! Application Providers / PSP Banks shall ensure explicit User consent is obtained after each device binding operation before allowing further transactions using UPI! Tap & Pay.
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S4 · UPI · OC 186
+    - generic: 2023-12-19
+    - heading "Introduction of UPI TAP & PAY mode of Payments" [level=3]
+    - paragraph: Direct match
+    - paragraph: Document opening
+    - blockquote: "NZE) NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC No.186/2023-24 19th December 2023 To, All Members, Unified Payments Interface (UPI) Dear Sir/Madam, Subject: Introduction of UP] TAP & PAY mode of payments In addition to the existing modes (Scan & Pay, Pay to Contact, UPI Number, etc.) of UPI Payments, “UPI Tap & Pay” is the new mode introduced for UP] transactions. Following is the construct for UPI Tap & Pay transactions:"
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · targeted pdf checked transcription
+  - article:
+    - generic: S5 · UPI · Reference 132
+    - generic: Date unknown
+    - heading "UPI OC 132 - Safeguarding UPI ecosystem & revision of transaction limits" [level=3]
+    - paragraph: Direct match
+    - paragraph: Document opening · clause marker 1.
+    - blockquote: 1. A single beneficiary (basis account number) can receive a maximum of 200 credits for P2P based transactions only in a 24-hour cycle (P2PM & P2M transactions will be excluded). NPCl may revise this periodically on need basis.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_132_Safeguarding_UPI_ecosystem_and_revision_of_transaction_limits_4406aca2f7.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - article:
+    - generic: S6 · UPI · OC 201B
+    - generic: 2025-10-08
+    - heading "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle" [level=3]
+    - paragraph: Direct match
+    - paragraph: Document opening · clause marker 5.
+    - blockquote: 5. Only domestic P2M transactions shall be permitted.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S7 · UPI · Reference 131
+    - generic: Date unknown
+    - heading "UPI OC 131 - Submission of successful Onus transaction data (not routed through NPCI) towards incentive scheme for promotion of low-value BHIM-UPI transactions (P2M)" [level=3]
+    - paragraph: Direct match
+    - paragraph: Document opening · clause marker 2.
+    - blockquote: 2. Bank need to submit UPl P2M successful transactions value upto Rs. 2000/- excluding AutoPay, Mandate (IPO), OD, e-Rupi transactions and transaction related to other servicestobelaunchedfromtimetotime
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/OC_131_Submission_of_successful_Onus_transaction_data_not_routed_thro_4b42aeee48.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - article:
+    - generic: S8 · UPI · OC 186A
+    - generic: 2026-09-10
+    - heading "Enhancement - UPI Tap & Pay on Point of Sale (PoS)" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via 2026-OC-186A
+    - paragraph: Key Guidelines · clause marker 2.
+    - blockquote: 2. Members and UPI Application Providers shall ensure explicit User consent is obtained for enabling UPI Tap & Pay feature, with Users having the ability to opt out at any time.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S9 · UPI · OC 186A
+    - generic: 2026-09-10
+    - heading "Enhancement - UPI Tap & Pay on Point of Sale (PoS)" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via 2026-OC-186A
+    - paragraph: UPI Application Provider · clause marker 2.
+    - blockquote: 2. UPI Application Providers shall ensure that device lock is enabled as a prerequisite for activating UP! Tap & Pay. Further, the device shall be in an unlocked state at the time of initiating a UP! Tap & Pay transaction.
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_I_OC_No_186_A_I_Enhancement_UPI_Tap_and_Pay_on_Point_of_Sale_Po_S_e695625b85.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S10 · UPI · OC 186
+    - generic: 2023-12-19
+    - heading "Introduction of UPI TAP & PAY mode of Payments" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via 2023-UPI-186
+    - paragraph: Document opening · clause marker 1.
+    - blockquote: 1. UPI APPs shall ensure to provide the Tap & Pay mode of payment only through mobiles devices having NFC capability.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_TAP_and_PAY_OC_186_Introduction_of_UPI_TAP_and_PAY_mode_of_Payments_918962f06b.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · targeted pdf checked transcription
+  - article:
+    - generic: S11 · UPI · Reference 132
+    - generic: Date unknown
+    - heading "UPI OC 132 - Safeguarding UPI ecosystem & revision of transaction limits" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via npci-source-b1b6097e6791700269cddedb
+    - paragraph: Document opening · clause marker 2.
+    - blockquote: "2. All intent based transactions for non-verified merchants operating under the merchant genre other than \"Online” shall be eligible to receive credits via ‘Share Intent & Pay' transactions up to:"
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_132_Safeguarding_UPI_ecosystem_and_revision_of_transaction_limits_4406aca2f7.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - article:
+    - generic: S12 · UPI · Reference 132
+    - generic: Date unknown
+    - heading "UPI OC 132 - Safeguarding UPI ecosystem & revision of transaction limits" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via npci-source-b1b6097e6791700269cddedb
+    - paragraph: Document opening
+    - blockquote: NPCI NATIONALPAYMENTS CORPORATIONOFINDIA NPCI/UPI/OC-132/2021-22 24th December,2021 All UPI Members-Banks, PsP's &Third PartyApplications Dear Sir/Madam, Safeguarding UPl ecosystem and revision of transaction limits UPl is becoming the most preferable option to send and receive payments. To further safeguard the Users & the UPl ecosystem, the following changes will come into effect on from 1 st February 2022.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_132_Safeguarding_UPI_ecosystem_and_revision_of_transaction_limits_4406aca2f7.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - article:
+    - generic: S13 · UPI · OC 201B
+    - generic: 2025-10-08
+    - heading "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle" [level=3]
+    - paragraph: Definition, scope or surrounding qualification · via 2025-OC-201B
+    - paragraph: Document opening · clause marker 6.
+    - blockquote: 6. At the time of linking, the primary and secondary devices shall be in close proximity.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S14 · UPI · OC 169A
+    - generic: 2025-02-27
+    - heading "Addendum to Enhancement in UPI LITE Limits" [level=3]
+    - paragraph: Same feature (reviewed or heuristic)
+    - paragraph: Annexure A · clause marker 4.
+    - blockquote: 4. NPCI circular, ‘introduction of UP! TAP & PAY mode of Payments’ vide No. NPCI/UPI/OC No.186/2023-24, dated 19"" December 2023
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S15 · UPI · OC 201B
+    - generic: 2025-10-08
+    - heading "Addendum to NPCI/UPI/2024-25/OC 201– Introduction of IoT devices & software on UPI Circle" [level=3]
+    - paragraph: Surrounding passage · via 2025-OC-201B
+    - paragraph: Document opening · clause marker 4.
+    - blockquote: 4. Members shall ensure that only NPCI permitted loT devices/software are allowed to be linked as secondary.
+    - button "Read page 1 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/UPI_OC_No_201_B_FY_2025_26_Addendum_to_NPCI_UPI_2024_25_OC_201_Introduction_of_Io_T_devices_software_on_UPI_Circle_09ec83c893.pdf#page=1
+    - button "Related circulars ↗"
+    - paragraph: ocr · machine extraction not verified word for word
+  - article:
+    - generic: S16 · UPI · Reference 131
+    - generic: Date unknown
+    - heading "UPI OC 131 - Submission of successful Onus transaction data (not routed through NPCI) towards incentive scheme for promotion of low-value BHIM-UPI transactions (P2M)" [level=3]
+    - paragraph: Surrounding passage · via npci-source-36b0e3b4ebd91ab1d688c6b1
+    - paragraph: Document opening · clause marker 1.
+    - blockquote: 1. Bank need to make all integrity checks (including duplicate records) at their end before submitting the data as these transactions are not routed through NPCl.
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/OC_131_Submission_of_successful_Onus_transaction_data_not_routed_thro_4b42aeee48.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - article:
+    - generic: S17 · UPI · Reference 131
+    - generic: Date unknown
+    - heading "UPI OC 131 - Submission of successful Onus transaction data (not routed through NPCI) towards incentive scheme for promotion of low-value BHIM-UPI transactions (P2M)" [level=3]
+    - paragraph: Surrounding passage · via npci-source-36b0e3b4ebd91ab1d688c6b1
+    - paragraph: Document opening · clause marker 3.
+    - blockquote: "3. Bank need to submit the month-wise transactions data in .csv file on GsT portal (path: GST Portal >> Data to NPCl >> UPl1) on quarterly basis as per the timelines given below. The nomenclature for file should be as <Unique Bank code_Product Code_YYYYMM_XX.csv>.Acquiring banks need to refer Master Payer / Payee code list available in GST portal under folder 'Log' for Unique Bank code list & product code list. (YYYY represents the year, MM represents the month and XX represents the file number for that month) for e.g. ICIC_UPI1_202104_01.csv for the file for first file of month of April 2021forICICIBank. Quarter Period Submitted before Q1 Apr'21 to Jun'21 24th December, 2021. Q2 Jul'21 to Sep'21 24th December, 2021. Q3 Oct'21 to Dec'21 To be finalized Q4 Jan'22 to Mar'22 To be finalized Kindly make a note of the above and disseminate the information contained herein to the officials concerned. For any queries or clarification, please contact the following officials: Support related Name E-mail ID MobileNumber to Nidhi Naik gst.support@npci.org.in 9284071497 GST portal Swapnali Waydande swapnali.waydande@npci.org.in 9004015463 GST portal Sapna Gupta sapna.gupta@npci.org.in 7506446590 Incentivescheme Pankaj Samarth pankaj.samarth@npci.org.in 8108122861 Incentivescheme Yours faithfully, Saiprasad Nabar Chief - Online Product Operations and Technology Encl:Annexure A"
+    - button "Read page 2 ↗"
+    - link "Official source ↗":
+      - /url: https://www.npci.org.in/uploads/OC_131_Submission_of_successful_Onus_transaction_data_not_routed_thro_4b42aeee48.pdf#page=2
+    - button "Related circulars ↗"
+    - paragraph: imported_markdown · imported text not verified
+  - generic: ◉
+  - paragraph:
+    - strong: Check important decisions against the original guideline.
+    - text: This prototype uses an imported collection; some documents or pages are unavailable.
+  - generic: PAYMENTS GUIDELINES QUERY EXPERT
+  - generic: "Local capstone prototype · Current sources: NPCI and RBI."

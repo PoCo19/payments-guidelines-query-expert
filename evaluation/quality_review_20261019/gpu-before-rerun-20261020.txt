@@ -1,0 +1,2 @@
+name, memory.used [MiB], memory.free [MiB], utilization.gpu [%]
+NVIDIA GeForce RTX 5070 Ti Laptop GPU, 6987 MiB, 4958 MiB, 0 %

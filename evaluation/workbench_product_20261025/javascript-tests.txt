@@ -1,0 +1,4 @@
+Answer rendering: paragraphs, bullets, steps, mixed, citations, empty output, export and escaping passed.
+Intake UI: flagged candidate, quarantine notice, escaping and legacy candidate passed.
+Research coverage rendering: escaping, citation links, missing evidence, findings and export passed.
+Workbench: safe rendering, citation links, filters, dates and advisory states passed.

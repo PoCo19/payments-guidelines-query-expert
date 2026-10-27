@@ -1,0 +1,50 @@
+{
+  "kind": "synthesis",
+  "status": "running",
+  "configuration": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about payment guidelines, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-ocr-audit-20261015",
+    "multi_product": true,
+    "embedding_cache": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\embedding_cache.sqlite3",
+    "evidence_graph_path": "pilot/upi_extended_graph_v3.json"
+  },
+  "dataset_sha256": "e477e6da0a523887006b40b898bd9640ff24d5b8aa072ea8db12bf9625a806d3",
+  "config_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+  "source_hashes": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33",
+    "review_annotations.json": "cd4f26006df1703d832a962615f6735b17b2a6d9de564d581d83697f25f279e6",
+    "feature_rules.json": "792ef665425210502e35493f9953a3893c6698a9cbd8bc2448bd1652cd65b0b0",
+    "source_manifest.json": "47237f4a4a9731151e18fc6b5f2c4be76ad998652f211263a084338bcd04398a"
+  },
+  "corpus_fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+  "code_hashes": {
+    "app.py": "6584ae6454733cd51c938eb79cc374f8bb2ff3874dfb98fef648148ca8c97951",
+    "structured_evidence.py": "10d22a62d91f7cdd512a6bb10acacc1749e88f986d9ebc3dbaf5b26776c07cea",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+    "claim_repair.py": "de60cbd880f8f9c8dbf66fd8925f2d57e739e23c3506e6a5c32e176f7f6f66d9",
+    "scope_guard.py": "d293e06d12394baff8f687aac60e3cafa56099f59adcfd9578ca6b254e3fb050",
+    "adaptive_context.py": "7d8bcc83c7fd03468a649af8307a43936c4d8ca3d62e05caac260141208ebf40",
+    "evaluation/evidence_experiments.py": "a1495b1886f166b2c358630d881a537ce4e2812ddc168a50dd14cd4088e56561"
+  },
+  "rows": [],
+  "caveat": "AI-assisted development cases. No independent answer-accuracy score. Context experiment enriches lexical indexing only; dense vectors unchanged.",
+  "model_metadata_error": "<urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>"
+}

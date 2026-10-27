@@ -1,0 +1,85 @@
+[
+  {
+    "id": "RBI-REF-01",
+    "query": "Under our RBI PPI direction, what balance ceiling applies to a full-KYC prepaid instrument?",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/- at any point of time",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "The full-KYC PPI maximum outstanding balance is Rs.2,00,000 at any point in time. This is an outstanding-balance limit, not a universal transaction limit or the limit for UPI LITE.",
+    "provenance": {
+      "parent_case": "PAY-001",
+      "type": "new_development_paraphrase_not_held_out"
+    }
+  },
+  {
+    "id": "RBI-REF-02",
+    "query": "For a UPI app implementing biometrics, do RBI authentication principles and OC226 leave customer choice, or make biometrics compulsory?",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "These additional methods are optional for the user",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "No. RBI specifies compliant authentication principles, including distinct factors and exceptions. NPCI OC 226 introduces optional additional methods and says users may continue existing methods. Distinguish UIDAI face authentication for PIN set/reset from on-device biometrics for transaction authentication. OC 226 describes an initial Rs.5,000 limit, not a verified current limit.",
+    "provenance": {
+      "parent_case": "PAY-010",
+      "type": "new_development_paraphrase_not_held_out"
+    }
+  },
+  {
+    "id": "RBI-REF-03",
+    "query": "On FASTag auto-replenishment, can the issuer omit the message after a debit because advance notice is exempt under RBI rules?",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_requires_independent_review",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "provenance": {
+      "parent_case": "PAY-015",
+      "type": "new_development_paraphrase_not_held_out"
+    }
+  }
+]

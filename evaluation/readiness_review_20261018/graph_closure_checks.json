@@ -1,0 +1,16 @@
+{
+  "time_utc": "2026-10-18T15:52:38.059297+00:00",
+  "config_unchanged": true,
+  "source_inputs_unchanged": true,
+  "runtime_files_changed_after_live_capture": [
+    "reference_graph.py"
+  ],
+  "explanation": "Only reference_graph.py changed after the live capture: cross-product topic annotation refinement; reference edges identical and candidate disabled.",
+  "missing_document_links": [],
+  "python_compile": "passed",
+  "full_test_log_sha256": "2ae4eca5029535e2d631260bc53162cc35984b7de8105f011c909eb89e30c500",
+  "candidate_activated": false,
+  "server_restarted": false,
+  "github_pushed": false,
+  "final_release_verification": "deferred"
+}

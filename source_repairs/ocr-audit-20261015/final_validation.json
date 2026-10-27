@@ -1,0 +1,55 @@
+{
+  "recorded_utc": "2026-10-16T02:32:20.631636+00:00",
+  "active_release": "payments-ocr-audit-20261015",
+  "full_regression": {
+    "passed": 331,
+    "log": "regression.log"
+  },
+  "final_targeted_regression": {
+    "passed": 25
+  },
+  "javascript_suites": [
+    "test_answer_format.js passed",
+    "test_research_view.js passed",
+    "web/app.js syntax passed"
+  ],
+  "report_links_valid": true,
+  "code_sha256": {
+    "app.py": "c23dce7bd470ac6440e19839734b18be63cb21dd20004a2043022139bf56eed1",
+    "claim_check.py": "ea49423501a2c5587624e8437681a75e0ecca0db6cfc0205cb47a6cac2cec15b",
+    "claim_repair.py": "de60cbd880f8f9c8dbf66fd8925f2d57e739e23c3506e6a5c32e176f7f6f66d9",
+    "scope_guard.py": "d293e06d12394baff8f687aac60e3cafa56099f59adcfd9578ca6b254e3fb050",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "web/app.js": "3693dc94d51876f2351b4fa7720ff7956df22b69aa8774ae4984d5aa2c5201ab",
+    "tools/repair_ocr_sample.py": "7dce6dc4ac3be4b8c636c0549b92fe19860a88fad7204d5c304d303908e24338",
+    "tests/test_claim_repairs.py": "a38956802240de3b6bd72682c0070bc3acb6507bd8f680b1bfb97a29e5102bdb"
+  },
+  "source_validation": "source_validation.json",
+  "retrieval_run": "evaluation/payments_runs/20261015T155206938369Z/capture.json",
+  "latest_summary_run": "evaluation/payments_runs/20261015T160001177841Z/capture.json",
+  "latest_ipo_run": "evaluation/graph_runs/20261015T155409622507Z",
+  "limitations": [
+    "IPO graph answer incomplete; incorrect attribution withheld and repair rejected",
+    "OC186A summary incomplete; above-ceiling inference withheld and repair rejected",
+    "Sample is AI-assisted, 6 documents/10 pages, not whole-corpus certification",
+    "Graph remains opt-in; independent review and broader final-code graph evaluation pending"
+  ],
+  "github_pushed": false,
+  "http_now": {
+    "8765": {
+      "http_status": 200,
+      "documents": 1929,
+      "converted": 1570,
+      "pages": 4834,
+      "chunks": 14480
+    },
+    "8769": {
+      "http_status": 200,
+      "documents": 1929,
+      "converted": 1570,
+      "pages": 4834,
+      "chunks": 14480
+    }
+  },
+  "corrected_source_reader_http": true
+}

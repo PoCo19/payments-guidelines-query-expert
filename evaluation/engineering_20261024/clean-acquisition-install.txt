@@ -1,0 +1,8 @@
+Collecting lxml==6.0.2 (from -r requirements-acquisition.txt (line 2))
+  Using cached lxml-6.0.2-cp312-cp312-win_amd64.whl.metadata (3.7 kB)
+Using cached lxml-6.0.2-cp312-cp312-win_amd64.whl (4.0 MB)
+Installing collected packages: lxml
+Successfully installed lxml-6.0.2
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.2
+[notice] To update, run: C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\data\qa24\venv\Scripts\python.exe -m pip install --upgrade pip

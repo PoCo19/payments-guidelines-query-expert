@@ -1,0 +1,106 @@
+{
+  "capture": "evaluation\\quality_runs\\20261020T072515613851Z\\capture.json",
+  "status": "complete",
+  "snapshot_unchanged": true,
+  "summary": {
+    "current": {
+      "cases": 10,
+      "errors": 0,
+      "anchors_found": 19,
+      "anchors_expected": 19,
+      "negative_cases": [
+        {
+          "id": "RAG-045",
+          "status": "abstained",
+          "sources": 0
+        },
+        {
+          "id": "RAG-048",
+          "status": "model_unavailable",
+          "sources": 0
+        },
+        {
+          "id": "G-CTRL-01",
+          "status": "clarification_needed",
+          "sources": 0
+        }
+      ],
+      "fallbacks": 6,
+      "median_seconds": 63.7185,
+      "p95_seconds": 64.953
+    }
+  },
+  "interpretation": "Unsuccessful generation verification: six model timeouts. All expected anchors found is not answer accuracy. Concurrent GPU contention observed after run; causal impact not isolated.",
+  "rows": [
+    {
+      "id": "RAG-037",
+      "response_status": "draft",
+      "coverage_status": "not_needed_for_simple_scope",
+      "model_failure": null,
+      "seconds": 26.906
+    },
+    {
+      "id": "RAG-043",
+      "response_status": "draft",
+      "coverage_status": "unavailable",
+      "model_failure": null,
+      "seconds": 33.859
+    },
+    {
+      "id": "RAG-045",
+      "response_status": "abstained",
+      "coverage_status": null,
+      "model_failure": null,
+      "seconds": 0.0
+    },
+    {
+      "id": "RAG-048",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 64.234
+    },
+    {
+      "id": "X-LIMIT-03",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 63.203
+    },
+    {
+      "id": "G-DD-01",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 64.953
+    },
+    {
+      "id": "G-CTRL-01",
+      "response_status": "clarification_needed",
+      "coverage_status": null,
+      "model_failure": null,
+      "seconds": 0.015
+    },
+    {
+      "id": "G-LIMIT-04",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 64.657
+    },
+    {
+      "id": "G-IPO-02",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 64.766
+    },
+    {
+      "id": "RBI-REF-03",
+      "response_status": "model_unavailable",
+      "coverage_status": null,
+      "model_failure": "TimeoutError",
+      "seconds": 64.328
+    }
+  ]
+}

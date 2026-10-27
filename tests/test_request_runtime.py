@@ -4,6 +4,40 @@ from request_runtime import CURRENT, PROGRESS, Run, tracked_answer
 
 
 class RuntimeTests(unittest.TestCase):
+    def test_late_model_completion_is_rejected_and_stage_restored(self):
+        import io
+        from app import Engine
+        from unittest.mock import Mock
+        with patch('request_runtime.time.monotonic',return_value=0) as clock:
+            engine=Engine.__new__(Engine);engine.config={}
+            run=Run({});token=CURRENT.set(run)
+            def open_reply(*args,**kwargs):
+                clock.return_value=21
+                return {'embeddings':[[1,2]]}
+            try:
+                with patch('app.local_json',side_effect=open_reply):
+                    with self.assertRaisesRegex(TimeoutError,'after its time budget'):
+                        engine.ollama('/api/embed',{})
+                self.assertEqual(run.stage,'retrieval')
+                self.assertEqual(run.calls[0]['timeout_seconds'],20)
+                self.assertEqual(run.calls[0]['status'],'failed')
+                self.assertEqual(run.calls[0]['seconds'],21)
+            finally:CURRENT.reset(token)
+
+    def test_metadata_is_timed_separately_and_restores_retrieval_stage(self):
+        import io
+        from app import Engine
+        from unittest.mock import Mock
+        engine=Engine.__new__(Engine);engine.config={'embedding_model':'fixture'}
+        run=Run({});token=CURRENT.set(run)
+        try:
+            with patch('app.local_json',return_value={'models':[{'name':'fixture','digest':'abc'}]}):
+                self.assertEqual(engine.model_digest(),'abc')
+            self.assertEqual(run.stage,'retrieval')
+            self.assertEqual(run.calls[0]['stage'],'model_metadata')
+            self.assertEqual(run.calls[0]['status'],'completed')
+        finally:CURRENT.reset(token)
+
     def test_call_timeout_consumes_shared_budget(self):
         with patch('request_runtime.time.monotonic', return_value=0) as clock:
             run=Run({'answer_timeout_seconds':20})

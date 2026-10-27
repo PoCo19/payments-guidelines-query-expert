@@ -19,3 +19,13 @@ assert.doesNotMatch(safe,/<img| onclick="/);assert.match(safe,/&lt;img/);
 assert.match(toMarkdown({claims:[hostile]}),/\\<img/);
 assert.equal(toMarkdown({claims:[{text:'1. A source label.',sources:['S1']}]}),'1\\. A source label. [S1]');
 console.log('Answer rendering: paragraphs, bullets, steps, mixed, citations, empty output, export and escaping passed.');
+
+const table={type:'table',columns:['Evidence 1','Evidence 2'],claims:[claim,hostile]};
+const combined={claims:[claim,hostile],answer_blocks:[{type:'paragraph',claims:[claim]},table,{type:'bullets',claims:[claim]}]};
+const tableHtml=renderHTML(combined);
+assert.match(tableHtml,/<table class="answer-table">/);
+assert.equal((tableHtml.match(/<td>/g)||[]).length,2);
+assert.match(tableHtml,/<th scope="col">Evidence 1/);
+assert.doesNotMatch(tableHtml,/<img| onclick="/);
+assert.match(toMarkdown(combined),/\| Evidence 1 \| Evidence 2 \|/);
+console.log('Tables: mixed blocks, cited cells, semantic headers and escaping passed.');

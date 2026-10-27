@@ -1,0 +1,28 @@
+{
+  "pages_inspected": 4834,
+  "pages_queued": 2132,
+  "documents_queued": 946,
+  "unavailable_documents": 359,
+  "unknown_issue_date_documents": 1455,
+  "graph_anchors_checked": 55,
+  "stale_graph_anchors": [],
+  "graph_relationship_status": {
+    "proposed_ai_assisted": 13
+  },
+  "signals": {
+    "graph_anchor_page": 21,
+    "monetary_values": 442,
+    "operational_codes": 204,
+    "qualifications_or_dates": 1555,
+    "table_layout": 209,
+    "unknown_issue_date": 1946,
+    "empty_page": 58,
+    "thin_page": 53
+  },
+  "fingerprints": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33"
+  },
+  "graph_sha256": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+  "limitation": "Priority signals are not confirmed errors. No source text, metadata or vectors modified. Reviewer fields intentionally blank. Original URL availability has not been checked live."
+}

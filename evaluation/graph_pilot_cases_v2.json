@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "status": "AI-assisted development cases; awaiting independent review; v1 cases retained unchanged",
+  "cases": [
+    {
+      "id": "BIO-01",
+      "query": "What is the UPI on-device biometric transaction limit, and when did it change?",
+      "required_anchor_ids": [
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-02",
+      "query": "Does UPI OC 226A remove the device security validations and customer consent requirements?",
+      "required_anchor_ids": [
+        "bio_amendment",
+        "bio_continuity",
+        "bio_security",
+        "bio_consent"
+      ]
+    },
+    {
+      "id": "BIO-03",
+      "query": "Under UPI biometric authentication, what happens after a UPI PIN reset? Does the limit addendum change that?",
+      "required_anchor_ids": [
+        "bio_reset",
+        "bio_amendment",
+        "bio_continuity"
+      ]
+    },
+    {
+      "id": "BIO-04",
+      "query": "According to UPI OC 226 and its addendum, was the new biometric limit effective on 15 July 2026 or only later?",
+      "required_anchor_ids": [
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-05",
+      "query": "Is UIDAI Face Authentication for UPI PIN setup the same as on-device biometric transaction authentication?",
+      "required_anchor_ids": [
+        "bio_pin_setup",
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-06",
+      "query": "After the UPI biometric limit change, what do the sources say about key rotation and inactivity?",
+      "required_anchor_ids": [
+        "bio_rotation",
+        "bio_inactive",
+        "bio_continuity"
+      ]
+    },
+    {
+      "id": "DD-01",
+      "query": "How did UPI deemed debit treatment for response codes 59 and K1 change from OC 128 to OC 128A?",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_original_codes",
+        "dd_amendment",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-02",
+      "query": "For UPI deemed debit, do VO and VH declines have the same treatment for MCC 6211 and other OTM use cases?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_capital_market",
+        "dd_other_otm",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-03",
+      "query": "What reconciliation and report checks accompany the UPI deemed debit changes?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_report",
+        "dd_reconciliation"
+      ]
+    },
+    {
+      "id": "DD-04",
+      "query": "For UPI deemed debit mandate execution, what are the expiry, BGGD validity and duplicate execution conditions?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_expiry",
+        "dd_claim_window",
+        "dd_execution"
+      ]
+    },
+    {
+      "id": "DD-05",
+      "query": "When do the UPI OC 128A deemed debit changes take effect, and what did OC 128 exclude?",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_original_codes",
+        "dd_amendment",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-06",
+      "query": "Explain the UPI deemed debit response-code changes and the settlement scope in the available circulars.",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_amendment",
+        "dd_settlement"
+      ]
+    },
+    {
+      "id": "CTRL-01",
+      "query": "Explain OC 226",
+      "required_anchor_ids": [],
+      "series": "",
+      "control": "clarification",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-02",
+      "query": "Explain UPI OC 9999",
+      "required_anchor_ids": [],
+      "control": "empty",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-03",
+      "query": "What is the biometric transaction limit?",
+      "required_anchor_ids": [],
+      "series": "RuPay",
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    },
+    {
+      "id": "CTRL-04",
+      "query": "Explain deemed approval under UPI OC 39A",
+      "required_anchor_ids": [],
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    },
+    {
+      "id": "CTRL-05",
+      "query": "Summarise selected circular",
+      "required_anchor_ids": [],
+      "document_ids": [
+        "2025-OC-226"
+      ],
+      "route": "summary",
+      "control": "unchanged",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-06",
+      "query": "What does UPI OC 128 say about deemed debit?",
+      "required_anchor_ids": [],
+      "scope": "strict",
+      "control": "unchanged",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-07",
+      "query": "What is the UPI biometric transaction limit?",
+      "required_anchor_ids": [],
+      "cutoff": "2026-06-30",
+      "control": "cutoff",
+      "expected_graph": "active"
+    },
+    {
+      "id": "CTRL-08",
+      "query": "What are UPI Tap & Pay limits?",
+      "required_anchor_ids": [],
+      "series": "",
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    },
+    {
+      "id": "MODE-01",
+      "query": "Under UPI OC 76 series, does the domestic QR share and pay limit also permit international UPI Global P2M?",
+      "required_anchor_ids": [
+        "mode_a",
+        "mode_c_domestic",
+        "mode_c_global"
+      ]
+    },
+    {
+      "id": "MODE-02",
+      "query": "How did UPI OC 76A and OC 76C treat P2P intent initiation modes 04 and 05?",
+      "required_anchor_ids": [
+        "mode_a",
+        "mode_c_ref"
+      ]
+    },
+    {
+      "id": "MODE-03",
+      "query": "What do UPI OC 76 and its addenda say about wallet load through collect and QR share modes?",
+      "required_anchor_ids": [
+        "mode_original",
+        "mode_a",
+        "mode_c_global"
+      ]
+    },
+    {
+      "id": "MODE-04",
+      "query": "Can you confirm the complete change history of the UPI OC 76 series, including unavailable intermediate sources?",
+      "required_anchor_ids": [
+        "mode_c_ref"
+      ],
+      "expected_gap": "OC76B"
+    },
+    {
+      "id": "SAFE-01",
+      "query": "Does UPI OC 141D add Bharat QR for rent, and how does the updated OC 141 relate to it?",
+      "required_anchor_ids": [
+        "safe_rent",
+        "safe_d_rent",
+        "safe_d_mandate"
+      ]
+    },
+    {
+      "id": "SAFE-02",
+      "query": "Do the rent payment mode restrictions in UPI OC 141 and OC 141D also apply to one-time or recurring mandates?",
+      "required_anchor_ids": [
+        "safe_mandate",
+        "safe_d_mandate"
+      ]
+    },
+    {
+      "id": "SAFE-03",
+      "query": "What does UPI OC 141B say about collect for digital gold and silver on Android?",
+      "required_anchor_ids": [
+        "safe_b"
+      ]
+    },
+    {
+      "id": "SAFE-04",
+      "query": "Can the available updated UPI OC 141 be used to quote its exact original 2022 wording?",
+      "required_anchor_ids": [
+        "safe_snapshot"
+      ],
+      "expected_gap": "OC141A"
+    },
+    {
+      "id": "LIMIT-01",
+      "query": "Did UPI OC 185A change the hospital and education limit, or introduce tax-payment coverage?",
+      "required_anchor_ids": [
+        "limits_hospital",
+        "limits_tax",
+        "limits_annex"
+      ]
+    },
+    {
+      "id": "LIMIT-02",
+      "query": "Do the higher UPI merchant limits under OC 185B apply to every merchant and P2P transfer, and can banks set lower limits?",
+      "required_anchor_ids": [
+        "limits_verified",
+        "limits_bank",
+        "limits_p2p",
+        "limits_capital"
+      ]
+    },
+    {
+      "id": "LIMIT-03",
+      "query": "Under UPI OC 185B, distinguish the credit card bill payment per-transaction ceiling from its 24-hour cumulative limit.",
+      "required_anchor_ids": [
+        "limits_cc",
+        "limits_cumulative"
+      ]
+    },
+    {
+      "id": "LIMIT-04",
+      "query": "Does UPI tax payment have a 25 lakh limit in the available OC 185 series? Check the source quality and category.",
+      "required_anchor_ids": [
+        "limits_tax",
+        "limits_tax_mcc",
+        "limits_ref"
+      ]
+    },
+    {
+      "id": "IPO-01",
+      "query": "What UPI IPO mandate limit is supported by the available circulars, and which specific circular establishes it?",
+      "required_anchor_ids": [
+        "ipo_enhanced",
+        "limits_annex"
+      ]
+    },
+    {
+      "id": "IPO-02",
+      "query": "Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?",
+      "required_anchor_ids": [
+        "ipo_enhanced",
+        "limits_annex",
+        "limits_capital",
+        "limits_bank"
+      ]
+    },
+    {
+      "id": "IPO-03",
+      "query": "Explain the UPI ASBA IPO limit history from the older 2 lakh limit to the later enhancement and retained annexure reference.",
+      "required_anchor_ids": [
+        "ipo_original",
+        "ipo_enhanced",
+        "limits_annex"
+      ]
+    },
+    {
+      "id": "IPO-04",
+      "query": "IPO and RBI Retail Direct both use MCC 6211. Do the UPI sources give them the same purpose code?",
+      "required_anchor_ids": [
+        "ipo_enhanced",
+        "limits_annex"
+      ]
+    },
+    {
+      "id": "EXT-CTRL-01",
+      "query": "Explain UPI OC 76B",
+      "required_anchor_ids": [],
+      "control": "empty",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "EXT-CTRL-02",
+      "query": "What new safeguards did UPI OC 141E introduce?",
+      "required_anchor_ids": [],
+      "control": "empty",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "EXT-CTRL-03",
+      "query": "What UPI IPO limit is stated by OC 185C?",
+      "required_anchor_ids": [],
+      "control": "empty",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "EXT-CTRL-04",
+      "query": "Explain RuPay rent payment rules",
+      "required_anchor_ids": [],
+      "series": "",
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    }
+  ]
+}

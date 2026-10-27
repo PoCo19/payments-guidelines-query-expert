@@ -1,0 +1,135 @@
+[
+  {
+    "query": "Under OC 186A, are PoS tap payments for merchants or person-to-person transfers?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Person-to-Merchant (P2M)"
+      }
+    ],
+    "expected_answer": "P2M only.",
+    "id": "RAG-001",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict"
+  },
+  {
+    "query": "Summarise OC 186A, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Payee PSP shall integrate"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "before processing each transaction"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-033",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related"
+  },
+  {
+    "query": "Compare OC 186 and OC 186A: Attribute original NFC capability and later device-lock requirements separately.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "device lock is enabled"
+      }
+    ],
+    "expected_answer": "Attribute original NFC capability and later device-lock requirements separately.",
+    "id": "RAG-039",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related"
+  },
+  {
+    "query": "Explain quantum photosynthesis and chlorophyll.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-048",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related"
+  },
+  {
+    "id": "LIMIT-04",
+    "query": "Does UPI tax payment have a 25 lakh limit in the available OC 185 series? Check the source quality and category.",
+    "series": "UPI",
+    "scope": "related",
+    "route": "auto",
+    "references": [
+      {
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "quote": "lakhs for entities under categories aligned to tax payments."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "quote": "9311’ strictly adheres to the tax payments only."
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "Vide reference to NPCI/UPI/2024-25/0C/185 A"
+      }
+    ],
+    "review_status": "draft_requires_independent_review"
+  },
+  {
+    "id": "IPO-02",
+    "query": "Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?",
+    "series": "UPI",
+    "scope": "related",
+    "route": "auto",
+    "references": [
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh |"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "within the overall ceilings prescribed by NPCI."
+      }
+    ],
+    "review_status": "draft_requires_independent_review"
+  }
+]

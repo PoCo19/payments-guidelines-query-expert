@@ -1,0 +1,107 @@
+<!-- Page 1 -->
+
+oredr erssrer ras Frere
+NATIONAL PAYMENTS CORPORATION OF INDIA
+NPCI/2023-24/PD/001 13th April, 2023
+To,
+All Members participating in various NPCI Products
+Sub: Initiation of Self Attestation for Q4 and General Compliance FY 22-23
+Dear Sir/Madam,
+We refer to the circular no. NPCI/UPI/OC-99/2020-21 dated 12th January 2021 on adherence
+to NPCI guidelines by Members/Participants and Self-Attestation.
+Self-Attestation is a process where members/participants are declaring themselves as
+compliant with NPCI guidelines. The Self-Attestation check-list is based on documents -
+Procedural Guidelines, Operating Circulars, Technical Data Specifications.
+Members/participants shall submit Self-Attestation through the PCOMP portal confirming
+Compliance. The Self-Attestation activity shall be on periodic basis such as annually / quarterly
+or as and when required.
+We would like to inform you that Directives for 4 Quarter for Self-Attestation by
+members/participants is updated on the PCOMP Portal.
+We would also like to inform you that the process of seeking General Compliance confirmation
+through Self-Attestation on the PCOMP Portal for FY 2022-23 is initiated (refer Annexure 1).
+ANC (Annual Network Compliance) form — which was taken yearly is discontinued and
+members/participants will have to submit responses for General Compliances through the
+PCOMP portal confirming to the guidelines applicable to them. This activity shall be Annual
+as done for ANC.
+Action for members/participants:
+1. To complete Self-Attestation for Q4 of FY22-23 and General Compliance by 31st May
+2023.
+2. All members to complete the Self-Attestation up to Q3 at the earliest - as per
+communication released to the members/participants.
+Please note any non-submission or non-compliance to the General Compliance in the PCOMP
+portal will be subject to remedial actions by Surveillance and Enforcement Team (S&E) as per
+Circular no “NPCI/UPI/OC-99/2020-21” and Circular no “NPCI/UPI/OC-103/2020-21.
+Please make a note of the contents and disseminate the information contained herein to the
+official concerned.
+Yours Sincerely,
+Sd/-
+Kunal Kalawatia
+Chief of Product
+JOOIA, The Capital, B Wing, 10" Floor,
+Bandra Kurla Complex, Bandra (E), Mumbai 400 051-
+T: +91 22 40009100 F: +91 22 40009101
+contact@npci.org.in www.npci.org.in
+CIN: U74990MH2008NPL189067
+
+<!-- Page 2 -->
+
+aredter west yrars Fert
+NATIONAL PAYMENTS CORPORATION OF INDIA
+Annexure |
+The process of seeking General Compliance confirmation through Self-Attestation on PCOMP.
+Portal for FY 2022-23 has been initiated. ANC (Annual Network Compliance) form — which
+was taken yearly is discontinued and members/participants are required to submit responses
+for General Compliances. Compliance related to different products will be incorporated in Self-
+Attestation of that respective product.
+Members/participants are required to submit their responses through the PCOMP portal
+confirming compliance to the regulatory guidelines applicable to them. This activity shall be
+Annual as done for ANC.
+Updates:
+
+1. New section for General Compliance has been created in PCOMP (Product
+Compliance) Portal.
+
+2, The General Compliance section has been assigned to primary Maker and Checker of
+the member/participant. Members/Participants have been given Admin Access
+wherein they can create and modify existing Maker and Checker for General
+Compliance section (Maker is the one who updates/modifies the directives/checklist
+assigned in the Portal and Checker is the one who validates and is authorized to
+approve the submission in the Portal).
+
+3. The process of attestation will be on-going. All General Compliance directives will be
+updated in the portal every year and/or as-an-when there is any addition/modification,
+and the same will be intimated to the members/participants.
+
+4. Submission of response for General Compliance section is mandatory, similar to the
+existing Self-Attestation process for NPC! products.
+
+Action by Members/Participants:
+
+3. Member/Participant must complete the General Compliance for FY 22-23 before
+31st May 2023.
+
+4. It is recommended that the confirmation to the General Compliance should be
+reviewed by the relevant control function / compliance department of the
+member/participant before submission in the portal.
+
+Please note any non-submission or non-compliance to the General Compliance in the PCOMP.
+portal will subject to remedial actions by Surveillance and Enforcement Team (S&E) as per
+Circular no “NPCI/UPI/OC-99/2020-21", “NPCIVUPI/OC-103/2020-21 and “NPCI/2022-
+23/0C/PD/001”.
+
+Please make a note of the contents herein and disseminate the information contained herein
+to the officials concerned.
+
+<!-- Page 3 -->
+
+NATIONAL PAYMENTS CORPORATION OF INDIA
+| Sr No | Product | General Compliance |
+|---|---|---|
+| 1 | General Compliance | Member organization should be compliant/Certified to ISO27001 standard. Kindly provide the date of compliance letter/certificate in Date Column |
+| 2 | General Compliance | Member should have Business Continuity Management (BCM) Policy/Disaster Recovery Policy |
+| 3 | General Compliance | Member should have Cyber Security Policy. |
+| 4 | General Compliance | Member organization should be compliant/Certified to PCI DSS standard. Kindly provide the date of certificate in Date Column |
+| 5 | General Compliance | Member organization should be compliant to RBI SAR (System Audit Report) & Data Localization requirements. Kindly provide the date of Compliance in Date Column |
+| 6 | General Compliance | Member organization should be compliant to RBI Csite/Cyber Security framework compliance. Kindly provide the date of Compliance in Date Column. |
+| 7 | General Compliance | Member organization as an AUA/KUA (or sub-AUA/sub-KUA) should be compliant to the UIDAI compliance requirement. Kindly provide the date of Compliance in Date Column. |
+| 8 | General Compliance | Member organization should be compliant to RBI Oversight framework requirements. Kindly provide the date of Compliance in Date Column. |

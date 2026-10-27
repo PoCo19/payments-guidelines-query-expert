@@ -23,8 +23,11 @@
   "reranker_enabled": true,
   "reranker_path": "models/reranker",
   "claim_check_enabled": true,
+  "structured_evidence_enabled": false,
+  "contextual_bm25_enabled": false,
   "review_overlays": true,
-  "data_dir": "data/releases/payments-handoff-20261010",
+  "data_dir": "data/releases/payments-workbench-20261027",
+  "evidence_graph_path": "pilot/upi_extended_graph_v3.json",
   "multi_product": true,
   "embedding_cache": "data/embedding_cache.sqlite3"
 }

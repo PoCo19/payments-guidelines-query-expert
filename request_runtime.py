@@ -68,6 +68,7 @@ def tracked_answer(fn):
                 run.set_stage('retrieval')
                 result=fn(self,dict(payload,mode='evidence',method='bm25',rerank=False))
                 result.update(mode=payload.get('mode','evidence'),abstained=True,
+                              response_status='model_unavailable',
                               answer='The local model was unavailable or exceeded its time budget. Keyword source excerpts are shown; no AI answer is asserted.',
                               model_failure=type(exc).__name__)
                 result['warnings'].append('Model processing stopped. Retry a narrower question or inspect the source excerpts.')

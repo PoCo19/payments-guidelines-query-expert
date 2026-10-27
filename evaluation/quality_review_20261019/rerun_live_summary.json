@@ -1,0 +1,124 @@
+{
+  "capture": "evaluation\\quality_runs\\20261020T073818315407Z\\capture.json",
+  "status": "complete",
+  "snapshot_unchanged": true,
+  "summary": {
+    "current": {
+      "cases": 10,
+      "errors": 0,
+      "anchors_found": 19,
+      "anchors_expected": 19,
+      "negative_cases": [
+        {
+          "id": "RAG-045",
+          "status": "abstained",
+          "sources": 0
+        },
+        {
+          "id": "RAG-048",
+          "status": "abstained",
+          "sources": 16
+        },
+        {
+          "id": "G-CTRL-01",
+          "status": "clarification_needed",
+          "sources": 0
+        }
+      ],
+      "fallbacks": 0,
+      "median_seconds": 18.5935,
+      "p95_seconds": 33.828
+    }
+  },
+  "interpretation": "Generation completed without fallback; not an answer-accuracy pass. Four coverage reviews unavailable, known omissions/attribution errors remain.",
+  "coverage_status_counts": {
+    "not_needed_for_simple_scope": 1,
+    "issues_flagged": 2,
+    "not_applicable": 2,
+    "not_run": 1,
+    "unavailable": 4
+  },
+  "review_status": "AI-assisted development review; original-source and independent judgement pending",
+  "rows": [
+    {
+      "id": "RAG-037",
+      "response_status": "draft",
+      "coverage_status": "not_needed_for_simple_scope",
+      "coverage_failure": null,
+      "seconds": 15.906,
+      "observation": "Cited summary produced; detailed completeness awaits independent review."
+    },
+    {
+      "id": "RAG-043",
+      "response_status": "draft",
+      "coverage_status": "issues_flagged",
+      "coverage_failure": null,
+      "seconds": 21.0,
+      "observation": "Answer separates authentication and consent, but reviewer raises questionable conflicts, including a finding whose reason says no conflict exists."
+    },
+    {
+      "id": "RAG-045",
+      "response_status": "abstained",
+      "coverage_status": null,
+      "coverage_failure": null,
+      "seconds": 0.016,
+      "observation": "Abstained without model generation for nonexistent reference."
+    },
+    {
+      "id": "RAG-048",
+      "response_status": "abstained",
+      "coverage_status": "not_run",
+      "coverage_failure": null,
+      "seconds": 3.406,
+      "observation": "Abstained despite retrieved source excerpts for unrelated topic; this is an observed generation abstention."
+    },
+    {
+      "id": "X-LIMIT-03",
+      "response_status": "draft",
+      "coverage_status": "unavailable",
+      "coverage_failure": "ValueError: Conflict requires multiple passages",
+      "seconds": 20.312,
+      "observation": "Still omits Verified Merchant eligibility. Coverage review unavailable due to invalid single-passage conflict output."
+    },
+    {
+      "id": "G-DD-01",
+      "response_status": "draft",
+      "coverage_status": "issues_flagged",
+      "coverage_failure": null,
+      "seconds": 16.875,
+      "observation": "Preserves original exclusion versus addendum inclusion. Coverage warnings require review."
+    },
+    {
+      "id": "G-CTRL-01",
+      "response_status": "clarification_needed",
+      "coverage_status": null,
+      "coverage_failure": null,
+      "seconds": 0.0,
+      "observation": "Requested clarification for ambiguous circular reference."
+    },
+    {
+      "id": "G-LIMIT-04",
+      "response_status": "draft",
+      "coverage_status": "unavailable",
+      "coverage_failure": "TimeoutError: timed out",
+      "seconds": 33.828,
+      "observation": "Rejects the 25 lakh premise but still collectively attributes establishment to original/addendum and later reference. A misleading cumulative-tax claim was withheld. Coverage timed out."
+    },
+    {
+      "id": "G-IPO-02",
+      "response_status": "draft",
+      "coverage_status": "unavailable",
+      "coverage_failure": "ValueError: Conflict requires multiple passages",
+      "seconds": 24.297,
+      "observation": "Distinguishes cumulative and per-transaction limits, but omits the earlier OC127 mandate-specific history despite its evidence being retrieved. Coverage review unavailable."
+    },
+    {
+      "id": "RBI-REF-03",
+      "response_status": "draft",
+      "coverage_status": "unavailable",
+      "coverage_failure": "TimeoutError: timed out",
+      "seconds": 28.875,
+      "observation": "Wrong post-debit exemption withheld and successfully repaired from the post-transaction clause. Coverage review timed out; independent applicability review still required."
+    }
+  ]
+}

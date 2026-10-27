@@ -1,0 +1,215 @@
+{
+  "recorded_utc": "2026-10-17T02:24:57.844501+00:00",
+  "decision": {
+    "intake_quality": "enabled",
+    "citation_schema": "enabled",
+    "source_owned_amount_guard": "enabled",
+    "contextual_bm25_enabled": false,
+    "structured_evidence_enabled": false,
+    "reason": "No demonstrated retrieval gain; structured synthesis has unresolved completeness and relevance issues."
+  },
+  "runs": [
+    {
+      "path": "evaluation/improvement_runs/20261016T171117565594Z/capture.json",
+      "sha256": "eeac509c5303f9e5f6f506cd358f8bdeff66f655e83e6509e58c69b87918f8de",
+      "benchmark_execution_valid": true,
+      "summary": {
+        "baseline": {
+          "cases": 6,
+          "errors": 0,
+          "anchors_found": 12,
+          "anchors_expected": 12,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 24.460500000000003
+        },
+        "variant": {
+          "cases": 6,
+          "errors": 0,
+          "anchors_found": 12,
+          "anchors_expected": 12,
+          "negative_abstained": 1,
+          "negative_cases": 1,
+          "incomplete": 1,
+          "model_fallbacks": 0,
+          "median_seconds": 28.3285
+        }
+      },
+      "route_breakdown": {
+        "baseline/clause": {
+          "cases": 4,
+          "anchors_found": 8,
+          "anchors_expected": 8
+        },
+        "variant/clause": {
+          "cases": 4,
+          "anchors_found": 8,
+          "anchors_expected": 8
+        },
+        "variant/summary": {
+          "cases": 1,
+          "anchors_found": 2,
+          "anchors_expected": 2
+        },
+        "baseline/summary": {
+          "cases": 1,
+          "anchors_found": 2,
+          "anchors_expected": 2
+        },
+        "baseline/compare": {
+          "cases": 1,
+          "anchors_found": 2,
+          "anchors_expected": 2
+        },
+        "variant/compare": {
+          "cases": 1,
+          "anchors_found": 2,
+          "anchors_expected": 2
+        }
+      }
+    },
+    {
+      "path": "evaluation/improvement_runs/20261017T022031653859Z/capture.json",
+      "sha256": "d4a3b8025ec6bf42d8ecb616d61bf1f201d45401ca77b26084684549bc598a96",
+      "benchmark_execution_valid": true,
+      "summary": {
+        "baseline": {
+          "cases": 50,
+          "errors": 0,
+          "anchors_found": 55,
+          "anchors_expected": 55,
+          "negative_abstained": 5,
+          "negative_cases": 6,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 0.156
+        },
+        "variant": {
+          "cases": 50,
+          "errors": 0,
+          "anchors_found": 55,
+          "anchors_expected": 55,
+          "negative_abstained": 5,
+          "negative_cases": 6,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 0.156
+        }
+      },
+      "route_breakdown": {
+        "baseline/clause": {
+          "cases": 35,
+          "anchors_found": 32,
+          "anchors_expected": 32
+        },
+        "variant/clause": {
+          "cases": 35,
+          "anchors_found": 32,
+          "anchors_expected": 32
+        },
+        "baseline/summary": {
+          "cases": 8,
+          "anchors_found": 11,
+          "anchors_expected": 11
+        },
+        "variant/summary": {
+          "cases": 8,
+          "anchors_found": 11,
+          "anchors_expected": 11
+        },
+        "baseline/compare": {
+          "cases": 7,
+          "anchors_found": 12,
+          "anchors_expected": 12
+        },
+        "variant/compare": {
+          "cases": 7,
+          "anchors_found": 12,
+          "anchors_expected": 12
+        }
+      }
+    },
+    {
+      "path": "evaluation/improvement_runs/20261017T022116649710Z/capture.json",
+      "sha256": "9c74fd202762326eff23b97b7a1a670e1bd36ff9b503f0721caf5013356a1b60",
+      "benchmark_execution_valid": true,
+      "summary": {
+        "baseline": {
+          "cases": 20,
+          "errors": 0,
+          "anchors_found": 29,
+          "anchors_expected": 34,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 1.586
+        },
+        "variant": {
+          "cases": 20,
+          "errors": 0,
+          "anchors_found": 29,
+          "anchors_expected": 34,
+          "negative_abstained": 0,
+          "negative_cases": 3,
+          "incomplete": 0,
+          "model_fallbacks": 0,
+          "median_seconds": 1.6640000000000001
+        }
+      },
+      "route_breakdown": {
+        "baseline/clause": {
+          "cases": 20,
+          "anchors_found": 29,
+          "anchors_expected": 34
+        },
+        "variant/clause": {
+          "cases": 20,
+          "anchors_found": 29,
+          "anchors_expected": 34
+        }
+      }
+    }
+  ],
+  "tests": {
+    "python": {
+      "passed": 348,
+      "log": "python-regression.log"
+    },
+    "javascript": [
+      "tests/test_answer_format.js",
+      "tests/test_research_view.js",
+      "tests/test_intake_view.js"
+    ],
+    "javascript_log": "javascript-checks.log"
+  },
+  "browser": {
+    "screenshot": "docs/images/intake-quality-20261017.png",
+    "verified": "Synthetic malformed-table upload flagged before preparation; removed from batch; never activated."
+  },
+  "hardware": {
+    "cpu": "Intel Core Ultra 9 275HX",
+    "cores": 24,
+    "ram_bytes": 33690247168,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "vram_mib": 12227
+  },
+  "active_config_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+  "no_model_upgrade_performed": true,
+  "github_pushed": false,
+  "limitations": [
+    "AI-assisted development sets; no independent correctness score.",
+    "Retrieval negatives may return evidence even when generation abstains.",
+    "Synthesis baseline and variant both retain relevance/attribution weaknesses.",
+    "Scope checks are narrow and can withhold a mixed-source claim.",
+    "No new embeddings or source corrections were required for this implementation."
+  ],
+  "documentation": [
+    "docs/EVIDENCE_IMPROVEMENTS_20261016.md",
+    "docs/MODEL_EXPERIMENT_PLAN_20261017.md",
+    "HOW_IT_WORKS.md",
+    "docs/DOCUMENT_INTAKE.md"
+  ]
+}

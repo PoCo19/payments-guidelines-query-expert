@@ -1,0 +1,12 @@
+{
+  "before": {
+    "work_items": 2,
+    "work_versions": 6,
+    "work_events": 13
+  },
+  "after_startup": {
+    "work_items": 2,
+    "work_versions": 6,
+    "work_events": 13
+  }
+}

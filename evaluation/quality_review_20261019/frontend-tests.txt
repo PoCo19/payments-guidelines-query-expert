@@ -1,0 +1,1 @@
+20 October 2026: node tests/test_research_view.js, node tests/test_answer_format.js, node tests/test_intake_view.js all exited 0. Rendering, citations, export, escaping, missing evidence and intake candidate checks passed. No browser release check performed.

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "fingerprint": "5e9b67481253f77ad51243a85d7d6551d86f6d223d9cca7504b8ac77b137651e",
+  "registry_fingerprint": "edc309b3b5795b73119caacf9f81ecf17274d154be4495a505bb1069c9859271",
+  "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+  "documents": 1929,
+  "chunks": 14480,
+  "limitation": "Structural and per-intake-document retrieval checks; not expert answer correctness.",
+  "created_at": "2026-10-14T17:12:52.295132+00:00",
+  "embeddings": {
+    "chunks": 14480,
+    "computed": 1,
+    "cache_hits": 14479,
+    "dimension": 1024,
+    "model": "qwen3-embedding:0.6b",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "fingerprint": "5e9b67481253f77ad51243a85d7d6551d86f6d223d9cca7504b8ac77b137651e",
+    "elapsed_seconds": 19.46
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "active_release": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-oc185b-repair-20261014",
+  "live_source_reader_corrected": true,
+  "source_integrity": true,
+  "graph_default_enabled": false,
+  "pilot_config": "pilot/upi_extended_graph_v3.json"
+}

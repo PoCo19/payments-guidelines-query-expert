@@ -27,7 +27,7 @@ class LocalJobs:
         self.jobs={};self.lock=threading.Lock();self.gate=threading.Lock()
         self.upload_root=pipeline.ROOT/'inbox/ui';self.upload_root.mkdir(parents=True,exist_ok=True)
 
-    def start(self,label,operation):
+    def start(self,label,operation,metadata=None):
         if not self.gate.acquire(blocking=False):raise BusyError('Another answer or import is running. Wait for it to finish.')
         key=uuid.uuid4().hex
         with self.lock:
@@ -41,7 +41,9 @@ class LocalJobs:
             token=PROGRESS.set(update)
             try:
                 result=operation(update)
-                with self.lock:self.jobs[key].update(status='completed',stage='Completed',result=result)
+                with self.lock:
+                    self.jobs[key].update(status='completed',stage='Completed',result=result)
+                    if metadata: self.jobs[key].update(metadata)
             except Exception as exc:
                 with self.lock:self.jobs[key].update(status='failed',stage='Stopped',error=str(exc))
             finally:
@@ -59,7 +61,17 @@ class LocalJobs:
         return result
 
     def answer(self,payload):
-        return self.start('Finding evidence',lambda update:self.get_engine().answer(payload))
+        # Capture provenance alongside the job, not in the answer contract.
+        request = copy.deepcopy(payload)
+        record = {}
+        def run(update):
+            from work_items import snapshot
+            engine = self.get_engine()
+            response = engine.answer(request)
+            if request.get('mode') == 'generate' and response.get('claims') and response.get('sources'):
+                record.update(research_request=request,research_snapshot=snapshot(engine,response))
+            return response
+        return self.start('Finding evidence',run,record)
 
     def upload(self,payload):
         name=payload.get('filename','');suffix=Path(name).suffix.lower()
@@ -79,6 +91,8 @@ class LocalJobs:
         item.setdefault('id','intake:'+key)
         item.setdefault('retrieved_on',dt.date.today().isoformat())
         pipeline.validate_item(item)
+        if 'original_pdf' in item or 'quality_reviews' in item:
+            raise ValueError('Companion PDFs and page-specific quality acknowledgements use the reviewed command-line intake.')
         if item.get('revision_of') or item.get('expected_previous_sha256'):
             raise ValueError('Reviewed snapshot replacements currently use ingest.cmd; this screen adds new documents.')
         pages,method,physical=pipeline.extract(raw,suffix)
@@ -86,10 +100,13 @@ class LocalJobs:
         digest=pipeline.sha(raw)
         duplicate=[dict(id=d['id'],title=d['subject']) for d in self.get_engine().docs if digest in (d.get('source_sha256'),d.get('markdown_sha256')) or d['id']==item['id'] or d.get('source_pdf')==item['source_url']]
         thin=[n for n,text in pages if len(text.split())<15]
+        from intake_quality import inspect_pages, reviewed_blockers
+        quality_pages=inspect_pages(item['id'],pages)
+        quality_report=dict(pages=quality_pages,blocked_pages=reviewed_blockers(quality_pages,[]))
         target=self.upload_root/key;target.mkdir()
         (target/item['file']).write_bytes(raw)
         preview=dict(token=key,filename=Path(name).name,metadata=item,sha256=digest,page_count=len(pages),
-                     physical_pages=physical,method=method,thin_pages=thin,duplicates=duplicate,
+                     physical_pages=physical,method=method,thin_pages=thin,duplicates=duplicate,intake_quality=quality_report,
                      pages=[dict(page=n,text=text[:5000],characters=len(text)) for n,text in pages[:3]],
                      note='Preview shows up to three pages; extraction is not independently verified. Thin pages require review.')
         pipeline.write(target/'upload.json',preview)
@@ -115,7 +132,7 @@ class LocalJobs:
         directory=pipeline.release_path(name);state=pipeline.read(directory/'intake_state.json')
         if Path(state['active_config']).resolve()!=self.config_path:raise ValueError('Release belongs to a different app configuration.')
         docs=pipeline.read(directory/'index.json');added={a['id'] for a in state.get('actions',[])}
-        return dict(release=name,status=state['status'],documents=[{k:d.get(k) for k in ('id','subject','availability','page_count','source_coverage','notes')} for d in docs if d['id'] in added],
+        return dict(release=name,status=state['status'],documents=[{k:d.get(k) for k in ('id','subject','availability','page_count','source_coverage','notes','intake_quality')} for d in docs if d['id'] in added],
                     validation=pipeline.read(directory/'validation.json') if (directory/'validation.json').exists() else None)
 
     def releases(self):

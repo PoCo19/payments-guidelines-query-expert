@@ -1,0 +1,20 @@
+{
+  "paired_responses": 276,
+  "metrics_reconciled": true,
+  "links_checked": [
+    "PROJECT_STATUS.md",
+    "docs/CONTEXT_RETRIEVAL_DECISION_20261017.md",
+    "docs/NEXT_ENGINEERING_PRIORITIES_20261017.md",
+    "docs/IMPLEMENTATION_20261011.md",
+    "docs/INDEX.md"
+  ],
+  "missing_links": [],
+  "active_flags_off": true,
+  "graph_enabled": true,
+  "runtime_hashes_unchanged": true,
+  "application_tests": "No rerun: this turn changed evaluation/documentation only. Latest saved full application regression: 365 passed.",
+  "script_sha256": {
+    "evaluation/build_context_regression.py": "b31ec7d8fb0442a85e1f9a844498c49cd03d0710c2ebe8626fd79719a4c85fad",
+    "evaluation/summarize_context_regression.py": "6a0c0f725b46eb01b49ec01b2ca626a5abd32e26cd8fb8e3190eba85cdfc30d8"
+  }
+}

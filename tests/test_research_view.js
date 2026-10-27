@@ -5,10 +5,21 @@ const review = {status:'issues_flagged',findings:[{kind:'possible_omission',reas
 const html = view.render(trace,review);
 assert(!html.includes('<script>') && !html.includes('<img '));
 assert(html.includes('data-citation="S1"') && html.includes('Not located'));
-assert(html.includes('review needed') && html.includes('New publisher'));
+assert(html.includes('Evidence limitations') && html.includes('New publisher'));
 assert(view.markdown(trace,review).includes('Unless permission is given.'));
 assert.equal(view.render({},null),'');
 const failed=view.render(trace,{status:'unavailable',failure_reason:'<script>timeout</script>'});
-assert(failed.includes('Why the review was unavailable') && !failed.includes('<script>'));
-assert(view.markdown(trace,{status:'unavailable',failure_reason:'TimeoutError'}).includes('Review failure: TimeoutError'));
+assert(failed.includes('Why the check could not complete') && !failed.includes('<script>'));
+assert(view.markdown(trace,{status:'unavailable',failure_reason:'TimeoutError'}).includes('Check failure: TimeoutError'));
 console.log('Research coverage rendering: escaping, citation links, missing evidence, findings and export passed.');
+
+assert.match(view.answerNotice({response_status:'incomplete',claims:[{}],answer:'Old draft label'}),/may be incomplete/);
+assert(!view.answerNotice({response_status:'draft',claims:[{}]}).includes('review'));
+assert.equal(view.answerNotice({response_status:'abstained',answer:'No relevant evidence found.'}),'No relevant evidence found.');
+assert.equal(view.answerNotice({response_status:'model_unavailable',answer:'Model unavailable; no answer asserted.'}),'Model unavailable; no answer asserted.');
+assert.match(view.checkLabel('invalid_output'),/invalid output/);
+assert.match(view.checkLabel('unavailable'),/unavailable/);
+assert.match(view.checkLabel('no_additional_issue_flagged'),/does not establish completeness/);
+assert.equal(view.progressLabel('Reviewing scope and omissions'),'Checking evidence coverage');
+assert.equal(view.progressLabel('Encoding the question'),'Encoding the question');
+console.log('Answer wording: automated checks, human sign-off and unsuccessful checks remain distinct.');

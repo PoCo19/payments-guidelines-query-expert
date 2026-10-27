@@ -1,0 +1,4077 @@
+[
+  {
+    "query": "Under OC 186A, are PoS tap payments for merchants or person-to-person transfers?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Person-to-Merchant (P2M)"
+      }
+    ],
+    "expected_answer": "P2M only.",
+    "id": "RAG-001",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-001"
+    }
+  },
+  {
+    "query": "Can a user disable the PoS tap payment feature after consenting in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "ability to opt out at any time"
+      }
+    ],
+    "expected_answer": "Yes, opt-out at any time.",
+    "id": "RAG-002",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-002"
+    }
+  },
+  {
+    "query": "What must happen after device binding before tap payments resume under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "after each device binding operation"
+      }
+    ],
+    "expected_answer": "Explicit user consent must be obtained again.",
+    "id": "RAG-003",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-003"
+    }
+  },
+  {
+    "query": "What device-lock requirements does OC 186A set?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "device lock is enabled"
+      }
+    ],
+    "expected_answer": "Enable device lock; device must be unlocked at initiation.",
+    "id": "RAG-004",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-004"
+    }
+  },
+  {
+    "query": "May the PoS tap payment feature be hidden inside another service in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "shall not be embedded within any other service"
+      }
+    ],
+    "expected_answer": "No, a dedicated standalone call-to-action is required.",
+    "id": "RAG-005",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-005"
+    }
+  },
+  {
+    "query": "What does the remitter bank check before each tap payment in OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "before processing each transaction"
+      }
+    ],
+    "expected_answer": "Account feature-enablement status.",
+    "id": "RAG-006",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-006"
+    }
+  },
+  {
+    "query": "Who integrates the PoS common library under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Payee PSP shall integrate"
+      }
+    ],
+    "expected_answer": "Payee PSP.",
+    "id": "RAG-007",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-007"
+    }
+  },
+  {
+    "query": "Which PoS terminals may the payee PSP enable for tap payments under OC 186A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "only on NFC-enabled PoS terminals"
+      }
+    ],
+    "expected_answer": "NFC-enabled terminals certified to the stated standards.",
+    "id": "RAG-008",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-008"
+    }
+  },
+  {
+    "query": "What phone capability is required for Tap Pay in OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      }
+    ],
+    "expected_answer": "NFC capability.",
+    "id": "RAG-009",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-009"
+    }
+  },
+  {
+    "query": "Where should the Tap Pay button be placed under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "on the homepage"
+      }
+    ],
+    "expected_answer": "Separate call-to-action button on the homepage.",
+    "id": "RAG-010",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-010"
+    }
+  },
+  {
+    "query": "Which initiation mode identifies tap payments in OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "initiation mode 06"
+      }
+    ],
+    "expected_answer": "06.",
+    "id": "RAG-011",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-011"
+    }
+  },
+  {
+    "query": "How must acquiring banks protect NFC tags under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "non-rewritable post personalisation"
+      }
+    ],
+    "expected_answer": "NFC Forum Type 2 certification and non-rewritability after personalisation; periodic checks.",
+    "id": "RAG-012",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-012"
+    }
+  },
+  {
+    "query": "Where are acquiring banks to procure NFC tags under OC 186?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 2,
+        "quote": "empanelied vendors"
+      }
+    ],
+    "expected_answer": "NPCI empanelled vendors, referencing the cited circulars.",
+    "id": "RAG-013",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-013"
+    }
+  },
+  {
+    "query": "Who completes a payment in partial delegation under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "Primary user shall complete"
+      }
+    ],
+    "expected_answer": "Primary user completes it with UPI PIN.",
+    "id": "RAG-014",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-014"
+    }
+  },
+  {
+    "query": "Who can initiate and complete a fully delegated payment under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "initiate and complete UPI transactions"
+      }
+    ],
+    "expected_answer": "The authorised secondary user, within defined limits.",
+    "id": "RAG-015",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-015"
+    }
+  },
+  {
+    "query": "May primary and secondary users choose their own apps under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "own choice of UPI app"
+      }
+    ],
+    "expected_answer": "Yes; independent user journeys and own app choice.",
+    "id": "RAG-016",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-016"
+    }
+  },
+  {
+    "query": "Can a secondary user receive delegation from several primary users under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      }
+    ],
+    "expected_answer": "Only one primary user; primary can delegate to five secondary users.",
+    "id": "RAG-017",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-017"
+    }
+  },
+  {
+    "query": "Which authentication controls apply to secondary users under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "App passcode/ biometrics"
+      }
+    ],
+    "expected_answer": "App passcode/biometrics mandatory.",
+    "id": "RAG-018",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-018"
+    }
+  },
+  {
+    "query": "Can primary users see secondary-user transactions under OC 201?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "visibility of transactions"
+      }
+    ],
+    "expected_answer": "Yes, in their UPI app and bank account statement.",
+    "id": "RAG-019",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-019"
+    }
+  },
+  {
+    "query": "Does OC 201 require an online dispute facility?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "Online Dispute Resolution (ODR)"
+      }
+    ],
+    "expected_answer": "Yes, ODR functionality must be available.",
+    "id": "RAG-020",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-020"
+    }
+  },
+  {
+    "query": "Which secondary-user segments qualify for full-delegation linking under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Domestic or Small Business Employee"
+      }
+    ],
+    "expected_answer": "Specified family members or domestic/small-business employees.",
+    "id": "RAG-021",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-021"
+    }
+  },
+  {
+    "query": "What identification details must the primary payer PSP share under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Secondary user document type and document ID number, to secondary payer PSP and issuer bank.",
+    "id": "RAG-022",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-022"
+    }
+  },
+  {
+    "query": "Whose consent is required before accepting full delegation under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "explicit consent from Secondary User"
+      }
+    ],
+    "expected_answer": "Secondary user consent to the additional document details.",
+    "id": "RAG-023",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-023"
+    }
+  },
+  {
+    "query": "Who identifies the secondary user by name mobile and official document under OC 201A?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Issuer Bank of the Primary User"
+      }
+    ],
+    "expected_answer": "The primary user issuer bank.",
+    "id": "RAG-024",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-024"
+    }
+  },
+  {
+    "query": "How frequently must the recycled-number database be refreshed under OC 115E?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "at least on weekly basis"
+      }
+    ],
+    "expected_answer": "At least weekly using MNRL/DIP.",
+    "id": "RAG-025",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-025"
+    }
+  },
+  {
+    "query": "Can consent to seed a UPI Number be taken during a payment under OC 115E?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "before or during a transaction"
+      }
+    ],
+    "expected_answer": "No, not before or during a transaction.",
+    "id": "RAG-026",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-026"
+    }
+  },
+  {
+    "query": "Who bears liability for failing to update the numeric mapper under OC 115F?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "liability of the PSP and the UPI Application"
+      }
+    ],
+    "expected_answer": "PSP and UPI application.",
+    "id": "RAG-027",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-027"
+    }
+  },
+  {
+    "query": "When may local mobile-number resolution be used under OC 115F?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      }
+    ],
+    "expected_answer": "Only when Numeric UPI ID Mapper response exceeds one second; stated PSP/app liability remains.",
+    "id": "RAG-028",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-028"
+    }
+  },
+  {
+    "query": "What triggers automatic FASTag replenishment under OC 207?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "threshold set by the customer"
+      }
+    ],
+    "expected_answer": "Balance falling below the customer-set threshold.",
+    "id": "RAG-029",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-029"
+    }
+  },
+  {
+    "query": "Does the PDN exception in OC 207 apply to unrelated merchant categories?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 2,
+        "quote": "only for the mentioned MCCs"
+      }
+    ],
+    "expected_answer": "No; only the stated NETC FASTag and RuPay NCMC categories/intended purposes.",
+    "id": "RAG-030",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-030"
+    }
+  },
+  {
+    "query": "Which user identifiers must be masked under OC 234?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2026-OC-234",
+        "page": 1,
+        "quote": "UPI IDs, mobile numbers, and account numbers"
+      }
+    ],
+    "expected_answer": "UPI IDs, mobile numbers and account numbers across customer-facing interfaces and communications.",
+    "id": "RAG-031",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-031"
+    }
+  },
+  {
+    "query": "How is the linked RuPay card limit selected under circular 022?",
+    "route": "clause",
+    "references": [
+      {
+        "document_id": "2023-RuPay-022",
+        "page": 1,
+        "quote": "lowest of the following"
+      }
+    ],
+    "expected_answer": "Lowest of the issuer card limit, issuer UPI risk limit and customer-set limit.",
+    "id": "RAG-032",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "strict",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-032"
+    }
+  },
+  {
+    "query": "Summarise OC 186A, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2026-OC-186A",
+        "page": 1,
+        "quote": "Payee PSP shall integrate"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "before processing each transaction"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-033",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-033"
+    }
+  },
+  {
+    "query": "Summarise OC 186, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      },
+      {
+        "document_id": "2023-UPI-186",
+        "page": 2,
+        "quote": "empanelied vendors"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-034",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-034"
+    }
+  },
+  {
+    "query": "Summarise OC 201, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      },
+      {
+        "document_id": "2024-OC-201",
+        "page": 2,
+        "quote": "Online Dispute Resolution (ODR)"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-035",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-035"
+    }
+  },
+  {
+    "query": "Summarise OC 201A, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-036",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-036"
+    }
+  },
+  {
+    "query": "Summarise OC 115F, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 2,
+        "quote": "appropriate investigation"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-037",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-037"
+    }
+  },
+  {
+    "query": "Summarise OC 207, covering the requirements across its sections.",
+    "route": "summary",
+    "references": [
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "threshold set by the customer"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 2,
+        "quote": "only for the mentioned MCCs"
+      }
+    ],
+    "expected_answer": "Cover the source-supported requirements across all cited pages; report incomplete coverage explicitly.",
+    "id": "RAG-038",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-038"
+    }
+  },
+  {
+    "query": "Compare OC 186 and OC 186A: Attribute original NFC capability and later device-lock requirements separately.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "NFC capability"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "device lock is enabled"
+      }
+    ],
+    "expected_answer": "Attribute original NFC capability and later device-lock requirements separately.",
+    "id": "RAG-039",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-039"
+    }
+  },
+  {
+    "query": "Compare OC 201 and OC 201A: Distinguish original delegation rules and later linking identification requirements.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "only one primary user"
+      },
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "Document Type and Document ID number"
+      }
+    ],
+    "expected_answer": "Distinguish original delegation rules and later linking identification requirements.",
+    "id": "RAG-040",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-040"
+    }
+  },
+  {
+    "query": "Compare OC 115E and OC 115F: Attribute mapper update frequency and later response threshold separately.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "at least on weekly basis"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 1,
+        "quote": "exceeding one (1) second"
+      }
+    ],
+    "expected_answer": "Attribute mapper update frequency and later response threshold separately.",
+    "id": "RAG-041",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-041"
+    }
+  },
+  {
+    "query": "Compare OC 186 and OC 186A: Compare original homepage button and later dedicated standalone feature.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2023-UPI-186",
+        "page": 1,
+        "quote": "on the homepage"
+      },
+      {
+        "document_id": "2026-OC-186A",
+        "page": 2,
+        "quote": "shall not be embedded within any other service"
+      }
+    ],
+    "expected_answer": "Compare original homepage button and later dedicated standalone feature.",
+    "id": "RAG-042",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-042"
+    }
+  },
+  {
+    "query": "Compare OC 201 and OC 201A: Compare secondary user security with later consent to additional identification details.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2024-OC-201",
+        "page": 1,
+        "quote": "App passcode/ biometrics"
+      },
+      {
+        "document_id": "2025-OC-201A",
+        "page": 1,
+        "quote": "explicit consent from Secondary User"
+      }
+    ],
+    "expected_answer": "Compare secondary user security with later consent to additional identification details.",
+    "id": "RAG-043",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-043"
+    }
+  },
+  {
+    "query": "Compare OC 115E and OC 115F: Explain consent restrictions separately from later complaint-investigation provisions.",
+    "route": "compare",
+    "references": [
+      {
+        "document_id": "2025-OC-115E",
+        "page": 1,
+        "quote": "before or during a transaction"
+      },
+      {
+        "document_id": "2026-OC-115F",
+        "page": 2,
+        "quote": "appropriate investigation"
+      }
+    ],
+    "expected_answer": "Explain consent restrictions separately from later complaint-investigation provisions.",
+    "id": "RAG-044",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-044"
+    }
+  },
+  {
+    "query": "What does OC 999 require?",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-045",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-045"
+    }
+  },
+  {
+    "query": "Summarise OC 237.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-046",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-046"
+    }
+  },
+  {
+    "query": "Compare OC 186 and OC 999.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-047",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-047"
+    }
+  },
+  {
+    "query": "Explain quantum photosynthesis and chlorophyll.",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-048",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-048"
+    }
+  },
+  {
+    "query": "Summarise OC 201A.",
+    "route": "auto",
+    "cutoff": "2024-12-31",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-049",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-049"
+    }
+  },
+  {
+    "query": "What requirements are in OC 186AA?",
+    "route": "auto",
+    "cutoff": "",
+    "references": [],
+    "expected_answer": "Abstain because required evidence is absent.",
+    "expect_abstain": true,
+    "id": "RAG-050",
+    "split": "reserved_review",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "series": "UPI",
+    "scope": "related",
+    "evaluation_group": "original_upi",
+    "provenance": {
+      "dataset": "rag_cases.json",
+      "case_id": "RAG-050"
+    }
+  },
+  {
+    "id": "PAY-001",
+    "category": "RBI direct",
+    "query": "Under the RBI PPI Master Directions updated September 2026, what is the maximum outstanding balance for a full-KYC PPI?",
+    "expected_answer": "The full-KYC PPI maximum outstanding balance is Rs.2,00,000 at any point in time. This is an outstanding-balance limit, not a universal transaction limit or the limit for UPI LITE.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/- at any point of time",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Confusing balance and transaction limits"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-001"
+    }
+  },
+  {
+    "id": "PAY-002",
+    "category": "RBI direct",
+    "query": "What net-worth milestones do RBI Payment Aggregator Directions 2025 specify for a non-bank entity seeking authorisation?",
+    "expected_answer": "A non-bank PA applicant requires at least Rs.15 crore net-worth when applying and Rs.25 crore by the end of the third financial year of authorisation. The applicable minimum must be maintained on an ongoing basis. Do not generalise this to all payment businesses.",
+    "references": [
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore by the end of third financial year",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting the timeline or ongoing requirement"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-002"
+    }
+  },
+  {
+    "id": "PAY-003",
+    "category": "RBI direct",
+    "query": "Who is covered by the RBI Bharat Bill Payment System Directions 2024?",
+    "expected_answer": "The directions apply to NPCI Bharat Bill Pay Limited (NBBL) and all Bharat Bill Payment Operating Units (BBPOUs). Do not describe every bank or fintech as a BBPOU.",
+    "references": [
+      {
+        "document_id": "rbi:bbps:2024-02-29",
+        "page": 1,
+        "quote": "All Bharat Bill Payment Operating Units (BBPOUs)",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12616",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Expanding applicability beyond the source"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-003"
+    }
+  },
+  {
+    "id": "PAY-004",
+    "category": "RBI direct",
+    "query": "Under RBI cyber resilience directions for non-bank PSOs, when must small non-bank PSOs comply?",
+    "expected_answer": "The phased implementation date for small non-bank PSOs is April 1, 2028. The directions apply to authorised non-bank PSOs; the small-PSO date should not be applied to medium or large PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "all authorised non-bank PSOs",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Treating a size-specific deadline as universal"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-004"
+    }
+  },
+  {
+    "id": "PAY-005",
+    "category": "RBI direct",
+    "query": "Do the RBI Authentication Directions 2025 prescribe SMS OTP as the only permitted additional factor?",
+    "expected_answer": "No. The directions set authentication principles rather than mandating SMS OTP as the only factor. At least two distinct factors are required unless exempted. Issuers may offer compliant choices; for transactions other than card-present transactions, at least one factor must be dynamically created or proven.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "at least two distinct factors of authentication",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting exceptions",
+      "Claiming all transactions must use OTP"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-005"
+    }
+  },
+  {
+    "id": "PAY-006",
+    "category": "RBI direct",
+    "query": "What are the general and specified-category thresholds for recurring e-mandate transactions without AFA in the RBI 2026 directions?",
+    "expected_answer": "The general recurring-transaction threshold without AFA is Rs.15,000 per transaction, with AFA above it. Insurance premiums, mutual-fund subscriptions and credit-card bill payments have a Rs.1,00,000 per-transaction threshold. Registration and first-transaction AFA requirements remain separate.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹15,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹1,00,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Extending the special threshold to every category"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-006"
+    }
+  },
+  {
+    "id": "PAY-007",
+    "category": "RBI direct",
+    "query": "Does RBI payment-system authorisation use one capital requirement for every payment system?",
+    "expected_answer": "No. The 2026 authorisation directions say the capital requirement follows the guidelines or directions for the specific payment system. They cover both applicants and authorised entities. A PA threshold should not be reused for all systems.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions issued for the specific payment system",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Inventing a universal capital threshold"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-007"
+    }
+  },
+  {
+    "id": "PAY-008",
+    "category": "RBI direct",
+    "query": "Who can use the RBI access criteria framework for participation in payment systems?",
+    "expected_answer": "The access directions apply to scheduled/licensed banks operating in India and authorised PSPs seeking participation. Actual admission depends on the relevant system criteria. Participation and authorisation to operate a payment system are distinct questions.",
+    "references": [
+      {
+        "document_id": "rbi:access-criteria:2021-07-28",
+        "page": 1,
+        "quote": "all scheduled/ licensed banks operating in India and authorised payment system providers",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10833",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Conflating participation with operation authorisation"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-008"
+    }
+  },
+  {
+    "id": "PAY-009",
+    "category": "RBI + NPCI",
+    "query": "For FASTag and NCMC automatic replenishment, do RBI e-mandate rules and NPCI OC 207 require a 24-hour pre-debit notification?",
+    "expected_answer": "RBI exempts registered FASTag and NCMC auto-replenishment e-mandates from pre-transaction notification. NPCI OC 207 implements the exception for NETC FASTag (MCC 4784) and RuPay NCMC (MCC 7412) in UPI Autopay, where replenishment follows the customer-set balance threshold. Other e-mandate requirements continue; this is not an exemption for all recurring payments.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "Exemption from 24-Hours prior Pre-Debit Notification",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "MCC 4784",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Generalising the exemption",
+      "Missing MCC scope"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-009"
+    }
+  },
+  {
+    "id": "PAY-010",
+    "category": "RBI + NPCI",
+    "query": "Do RBI authentication principles and NPCI OC 226 mean every UPI user must switch to biometric authentication?",
+    "expected_answer": "No. RBI specifies compliant authentication principles, including distinct factors and exceptions. NPCI OC 226 introduces optional additional methods and says users may continue existing methods. Distinguish UIDAI face authentication for PIN set/reset from on-device biometrics for transaction authentication. OC 226 describes an initial Rs.5,000 limit, not a verified current limit.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "These additional methods are optional for the user",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Confusing PIN reset with payment authentication",
+      "Treating initial limit as latest"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-010"
+    }
+  },
+  {
+    "id": "PAY-011",
+    "category": "RBI + NPCI",
+    "query": "Can we use the RBI full-KYC PPI balance ceiling as the UPI LITE limit in NPCI OC 169A?",
+    "expected_answer": "No. RBI full-KYC PPIs have a Rs.2,00,000 outstanding-balance ceiling. OC 169A states Rs.1,000 per transaction and Rs.5,000 total for UPI LITE, with online replenishment using AFA. These limits concern different products and cannot be merged into a universal wallet limit.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/-",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "₹1,000 per transaction with ₹5,000 being the total limit",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Merging distinct product limits"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-011"
+    }
+  },
+  {
+    "id": "PAY-012",
+    "category": "RBI + NPCI",
+    "query": "Compare PPI UPI onboarding in NPCI OC 134 with third-party UPI app access in the RBI PPI directions updated September 2026.",
+    "expected_answer": "NPCI OC 134, referring to the November 2021 RBI snapshot, states PPI holders are onboarded by their own issuer and authenticate with existing wallet credentials. The September 2026 RBI snapshot also allows full-KYC PPI discovery through third-party UPI applications, using UPI credentials for those transactions. Preserve version and channel differences; this evidence alone does not prove formal supersession of every provision in OC 134.",
+    "references": [
+      {
+        "document_id": "npci-source-01e7e3bc387186fe8cdbcc9a",
+        "page": 1,
+        "quote": "PPI holders shall be on-boarded for UPI by their own PPI issuer only.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_134_Adherence_to_RBI_PPI_Interoperability_Guidelines_455e2af154.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "A PPI issuer may also facilitate discovery of its full-KYC PPIs on third-party UPI mobile applications",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Ignoring snapshot dates",
+      "Inferring legal supersession"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-012"
+    }
+  },
+  {
+    "id": "PAY-013",
+    "category": "RBI + NPCI",
+    "query": "Do the e-mandate AFA rules mean UPI Autopay apps may automatically port a customer mandate under OC 223?",
+    "expected_answer": "No. RBI requires issuer AFA validation for modification or withdrawal of an existing e-mandate. NPCI OC 223 separately makes mandate porting strictly user-driven, bars inducements and limits porting to once in a rolling 90-day period. Authentication is not permission for app-initiated porting.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "strictly user-driven",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "once in a rolling 90-day period",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Conflating authentication with user authorisation"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-013"
+    }
+  },
+  {
+    "id": "PAY-014",
+    "category": "RBI cross-document",
+    "query": "For a non-bank payment aggregator applicant, how do the generic authorisation and PA-specific capital rules fit together?",
+    "expected_answer": "The generic 2026 authorisation directions defer capital requirements to the specific payment-system guidelines. The PA 2025 directions specify Rs.15 crore at application and Rs.25 crore by the end of the third financial year of authorisation, maintained as applicable. Describe the generic framework and PA-specific rule separately.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Resolving precedence solely by issuer or date"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-014"
+    }
+  },
+  {
+    "id": "PAY-015",
+    "category": "Scope and qualification",
+    "query": "Is the FASTag/NCMC pre-debit notification exemption an exemption from post-transaction notifications too?",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Transferring an exception to a different duty"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-015"
+    }
+  },
+  {
+    "id": "PAY-016",
+    "category": "Scope and qualification",
+    "query": "Is the April 2028 cyber-resilience date the deadline for all non-bank PSOs?",
+    "expected_answer": "No. April 1, 2028 is the small non-bank PSO deadline. The phased schedule lists April 1, 2025 for large and April 1, 2026 for medium non-bank PSOs. Retain size classification and applicability to authorised non-bank PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2025",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2026",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Missing phased applicability"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-016"
+    }
+  },
+  {
+    "id": "PAY-017",
+    "category": "Scope and qualification",
+    "query": "What was the initial transaction limit for on-device biometric authentication in NPCI OC 226, and was it final?",
+    "expected_answer": "OC 226 initially makes on-device biometric authentication available for transactions up to Rs.5,000 and explicitly says the limit will be reviewed based on performance and evaluation. This answers the historical initial-limit question, not the current limit after subsequent documents.",
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "initially be available for transactions up to Rs. 5,000",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "The limit shall be reviewed in due course",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Presenting a historical initial limit as current"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-017"
+    }
+  },
+  {
+    "id": "PAY-018",
+    "category": "Unavailable evidence",
+    "query": "What is our company Acme Payments internal production fraud-score threshold for rejecting a UPI transfer?",
+    "expected_answer": "The supplied public circular corpus does not establish Acme Payments internal production fraud-score threshold. Abstain from inventing a value and request the approved internal policy.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an internal risk parameter"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-018"
+    }
+  },
+  {
+    "id": "PAY-019",
+    "category": "Unavailable evidence",
+    "query": "What is the confidential incident response phone number for Acme Payments on-call engineer?",
+    "expected_answer": "This confidential company contact is not established in the available public payment guidelines. State the evidence limitation and do not invent a phone number.",
+    "references": [],
+    "failure_modes": [
+      "Inventing private operational information"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-019"
+    }
+  },
+  {
+    "id": "PAY-020",
+    "category": "Unavailable evidence",
+    "query": "What exact percentage improvement in fraud losses did Acme Payments achieve after deploying its private model in September 2026?",
+    "expected_answer": "The corpus does not contain the company performance measurement needed to answer. Abstain from a numerical performance claim and request the relevant internal evaluation.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an outcome metric"
+    ],
+    "route": "clause",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "draft_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "evaluation_group": "payments",
+    "provenance": {
+      "dataset": "payments_cases_v1.json",
+      "case_id": "PAY-020"
+    }
+  },
+  {
+    "id": "X-PAY-001",
+    "category": "payments paraphrase",
+    "query": "How much money may a fully KYC-verified prepaid wallet hold at once under RBI rules? Is that a transaction ceiling?",
+    "expected_answer": "The full-KYC PPI maximum outstanding balance is Rs.2,00,000 at any point in time. This is an outstanding-balance limit, not a universal transaction limit or the limit for UPI LITE.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/- at any point of time",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Confusing balance and transaction limits"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-001",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-001"
+    }
+  },
+  {
+    "id": "X-PAY-002",
+    "category": "payments paraphrase",
+    "query": "We are applying to operate as a non-bank payment aggregator. What net worth do we need initially and by year three, and must we keep it thereafter?",
+    "expected_answer": "A non-bank PA applicant requires at least Rs.15 crore net-worth when applying and Rs.25 crore by the end of the third financial year of authorisation. The applicable minimum must be maintained on an ongoing basis. Do not generalise this to all payment businesses.",
+    "references": [
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore by the end of third financial year",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting the timeline or ongoing requirement"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-002",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-002"
+    }
+  },
+  {
+    "id": "X-PAY-003",
+    "category": "payments paraphrase",
+    "query": "Which organisations fall within the Reserve Bank bill-payment system directions?",
+    "expected_answer": "The directions apply to NPCI Bharat Bill Pay Limited (NBBL) and all Bharat Bill Payment Operating Units (BBPOUs). Do not describe every bank or fintech as a BBPOU.",
+    "references": [
+      {
+        "document_id": "rbi:bbps:2024-02-29",
+        "page": 1,
+        "quote": "All Bharat Bill Payment Operating Units (BBPOUs)",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12616",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Expanding applicability beyond the source"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-003",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-003"
+    }
+  },
+  {
+    "id": "X-PAY-004",
+    "category": "payments paraphrase",
+    "query": "For a small authorised non-bank payment system operator, when does the phased cyber-resilience compliance timetable take effect?",
+    "expected_answer": "The phased implementation date for small non-bank PSOs is April 1, 2028. The directions apply to authorised non-bank PSOs; the small-PSO date should not be applied to medium or large PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "all authorised non-bank PSOs",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Treating a size-specific deadline as universal"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-004",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-004"
+    }
+  },
+  {
+    "id": "X-PAY-005",
+    "category": "payments paraphrase",
+    "query": "Must a bank use a text-message OTP as its second factor, or can it offer other compliant ways to authenticate a payment?",
+    "expected_answer": "No. The directions set authentication principles rather than mandating SMS OTP as the only factor. At least two distinct factors are required unless exempted. Issuers may offer compliant choices; for transactions other than card-present transactions, at least one factor must be dynamically created or proven.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "at least two distinct factors of authentication",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Omitting exceptions",
+      "Claiming all transactions must use OTP"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-005",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-005"
+    }
+  },
+  {
+    "id": "X-PAY-006",
+    "category": "payments paraphrase",
+    "query": "For recurring debits, distinguish the usual additional-authentication threshold from the exceptions for insurance, mutual funds and credit-card bills.",
+    "expected_answer": "The general recurring-transaction threshold without AFA is Rs.15,000 per transaction, with AFA above it. Insurance premiums, mutual-fund subscriptions and credit-card bill payments have a Rs.1,00,000 per-transaction threshold. Registration and first-transaction AFA requirements remain separate.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹15,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "without AFA up to ₹1,00,000/- per transaction",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Extending the special threshold to every category"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-006",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-006"
+    }
+  },
+  {
+    "id": "X-PAY-007",
+    "category": "payments paraphrase",
+    "query": "Does a payment-system licence always require the same capital, regardless of the service being operated?",
+    "expected_answer": "No. The 2026 authorisation directions say the capital requirement follows the guidelines or directions for the specific payment system. They cover both applicants and authorised entities. A PA threshold should not be reused for all systems.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions issued for the specific payment system",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Inventing a universal capital threshold"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-007",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-007"
+    }
+  },
+  {
+    "id": "X-PAY-008",
+    "category": "payments paraphrase",
+    "query": "Who is eligible to seek entry to payment systems under the RBI participation framework, and is that the same as permission to operate one?",
+    "expected_answer": "The access directions apply to scheduled/licensed banks operating in India and authorised PSPs seeking participation. Actual admission depends on the relevant system criteria. Participation and authorisation to operate a payment system are distinct questions.",
+    "references": [
+      {
+        "document_id": "rbi:access-criteria:2021-07-28",
+        "page": 1,
+        "quote": "all scheduled/ licensed banks operating in India and authorised payment system providers",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10833",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Conflating participation with operation authorisation"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-008",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-008"
+    }
+  },
+  {
+    "id": "X-PAY-009",
+    "category": "payments paraphrase",
+    "query": "Does automatic top-up of FASTag or NCMC require an alert a day before the debit? Explain how the RBI framework and UPI implementation fit together.",
+    "expected_answer": "RBI exempts registered FASTag and NCMC auto-replenishment e-mandates from pre-transaction notification. NPCI OC 207 implements the exception for NETC FASTag (MCC 4784) and RuPay NCMC (MCC 7412) in UPI Autopay, where replenishment follows the customer-set balance threshold. Other e-mandate requirements continue; this is not an exemption for all recurring payments.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "Exemption from 24-Hours prior Pre-Debit Notification",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2024-OC-207",
+        "page": 1,
+        "quote": "MCC 4784",
+        "source_url": "https://www.npci.org.in/uploads/NPCI_UPI_OC_207_Auto_replenishment_of_NETC_FAS_Tag_and_Ru_Pay_NCMC_with_UPI_Auto_Pay_375b0d066f.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Generalising the exemption",
+      "Missing MCC scope"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-009",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-009"
+    }
+  },
+  {
+    "id": "X-PAY-010",
+    "category": "payments paraphrase",
+    "query": "Are customers required to replace their existing UPI authentication with biometrics? Distinguish RBI principles, PIN setup and transaction authentication.",
+    "expected_answer": "No. RBI specifies compliant authentication principles, including distinct factors and exceptions. NPCI OC 226 introduces optional additional methods and says users may continue existing methods. Distinguish UIDAI face authentication for PIN set/reset from on-device biometrics for transaction authentication. OC 226 describes an initial Rs.5,000 limit, not a verified current limit.",
+    "references": [
+      {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "These additional methods are optional for the user",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Confusing PIN reset with payment authentication",
+      "Treating initial limit as latest"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-010",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-010"
+    }
+  },
+  {
+    "id": "X-PAY-011",
+    "category": "payments paraphrase",
+    "query": "Can I apply the full-KYC prepaid-wallet balance ceiling to UPI LITE? Explain the differences in balance and single-payment limits.",
+    "expected_answer": "No. RBI full-KYC PPIs have a Rs.2,00,000 outstanding-balance ceiling. OC 169A states Rs.1,000 per transaction and Rs.5,000 total for UPI LITE, with online replenishment using AFA. These limits concern different products and cannot be merged into a universal wallet limit.",
+    "references": [
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "The amount outstanding shall not exceed Rs.2,00,000/-",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "quote": "₹1,000 per transaction with ₹5,000 being the total limit",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Merging distinct product limits"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-011",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-011"
+    }
+  },
+  {
+    "id": "X-PAY-012",
+    "category": "payments paraphrase",
+    "query": "Can full-KYC prepaid-wallet holders use third-party UPI apps? Reconcile the RBI PPI directions with the older NPCI issuer-onboarding circular, without assuming blanket supersession.",
+    "expected_answer": "NPCI OC 134, referring to the November 2021 RBI snapshot, states PPI holders are onboarded by their own issuer and authenticate with existing wallet credentials. The September 2026 RBI snapshot also allows full-KYC PPI discovery through third-party UPI applications, using UPI credentials for those transactions. Preserve version and channel differences; this evidence alone does not prove formal supersession of every provision in OC 134.",
+    "references": [
+      {
+        "document_id": "npci-source-01e7e3bc387186fe8cdbcc9a",
+        "page": 1,
+        "quote": "PPI holders shall be on-boarded for UPI by their own PPI issuer only.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_134_Adherence_to_RBI_PPI_Interoperability_Guidelines_455e2af154.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "rbi:ppi:2026-09-30",
+        "page": 1,
+        "quote": "A PPI issuer may also facilitate discovery of its full-KYC PPIs on third-party UPI mobile applications",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12156",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Ignoring snapshot dates",
+      "Inferring legal supersession"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-012",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-012"
+    }
+  },
+  {
+    "id": "X-PAY-013",
+    "category": "payments paraphrase",
+    "query": "If the required authentication is completed, may a UPI AutoPay app move a customer mandate on its own? Explain customer initiation and repeat-porting restrictions.",
+    "expected_answer": "No. RBI requires issuer AFA validation for modification or withdrawal of an existing e-mandate. NPCI OC 223 separately makes mandate porting strictly user-driven, bars inducements and limits porting to once in a rolling 90-day period. Authentication is not permission for app-initiated porting.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "strictly user-driven",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-223",
+        "page": 1,
+        "quote": "once in a rolling 90-day period",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_223_FY_2025_26_Enhancement_of_UPI_Autopay_88b38535cb.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Conflating authentication with user authorisation"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-013",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-013"
+    }
+  },
+  {
+    "id": "X-PAY-014",
+    "category": "payments paraphrase",
+    "query": "For a non-bank PA applicant, how should we read the general payment-system capital framework alongside the payment-aggregator-specific capital milestones?",
+    "expected_answer": "The generic 2026 authorisation directions defer capital requirements to the specific payment-system guidelines. The PA 2025 directions specify Rs.15 crore at application and Rs.25 crore by the end of the third financial year of authorisation, maintained as applicable. Describe the generic framework and PA-specific rule separately.",
+    "references": [
+      {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹15 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:payment-aggregators:2025-09-15",
+        "page": 1,
+        "quote": "minimum net-worth of ₹25 crore",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12896",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Resolving precedence solely by issuer or date"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-014",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-014"
+    }
+  },
+  {
+    "id": "X-PAY-015",
+    "category": "payments paraphrase",
+    "query": "If a FASTag or NCMC automatic top-up does not need advance debit notice, can the issuer skip the message after the debit as well?",
+    "expected_answer": "The RBI e-mandate directions exempt specified auto-replenishment mandates from pre-transaction notification, while separately requiring the issuer to send a post-transaction notification. Do not extend the pre-transaction exemption to post-transaction notices.",
+    "references": [
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Pre-transaction notification is not required",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "An issuer shall send a post-transaction notification",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Transferring an exception to a different duty"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-015",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-015"
+    }
+  },
+  {
+    "id": "X-PAY-016",
+    "category": "payments paraphrase",
+    "query": "Can every authorised non-bank PSO wait until April 2028 for cyber-resilience compliance? Distinguish operator size.",
+    "expected_answer": "No. April 1, 2028 is the small non-bank PSO deadline. The phased schedule lists April 1, 2025 for large and April 1, 2026 for medium non-bank PSOs. Retain size classification and applicability to authorised non-bank PSOs.",
+    "references": [
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2025",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2026",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      },
+      {
+        "document_id": "rbi:nonbank-pso-cyber:2024-07-30",
+        "page": 1,
+        "quote": "April 1, 2028",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12715",
+        "page_basis": "logical_markdown"
+      }
+    ],
+    "failure_modes": [
+      "Missing phased applicability"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-016",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-016"
+    }
+  },
+  {
+    "id": "X-PAY-017",
+    "category": "payments paraphrase",
+    "query": "Historically, what was the first UPI on-device biometric payment ceiling in circular 226, and did it say that ceiling could be reviewed?",
+    "expected_answer": "OC 226 initially makes on-device biometric authentication available for transactions up to Rs.5,000 and explicitly says the limit will be reviewed based on performance and evaluation. This answers the historical initial-limit question, not the current limit after subsequent documents.",
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "initially be available for transactions up to Rs. 5,000",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "The limit shall be reviewed in due course",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      }
+    ],
+    "failure_modes": [
+      "Presenting a historical initial limit as current"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "parent_case": "PAY-017",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-017"
+    }
+  },
+  {
+    "id": "X-PAY-018",
+    "category": "payments paraphrase",
+    "query": "What exact fraud-score cutoff does our company Acme Payments configure in production to decline a UPI transfer?",
+    "expected_answer": "The supplied public circular corpus does not establish Acme Payments internal production fraud-score threshold. Abstain from inventing a value and request the approved internal policy.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an internal risk parameter"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "parent_case": "PAY-018",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-018"
+    }
+  },
+  {
+    "id": "X-PAY-019",
+    "category": "payments paraphrase",
+    "query": "Give me the private mobile number of Acme Payments on-call incident responder.",
+    "expected_answer": "This confidential company contact is not established in the available public payment guidelines. State the evidence limitation and do not invent a phone number.",
+    "references": [],
+    "failure_modes": [
+      "Inventing private operational information"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "parent_case": "PAY-019",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-019"
+    }
+  },
+  {
+    "id": "X-PAY-020",
+    "category": "payments paraphrase",
+    "query": "What percentage did Acme Payments private fraud model reduce losses by in September 2026?",
+    "expected_answer": "The corpus does not contain the company performance measurement needed to answer. Abstain from a numerical performance claim and request the relevant internal evaluation.",
+    "references": [],
+    "failure_modes": [
+      "Inventing an outcome metric"
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "",
+    "split": "development",
+    "review_status": "AI_assisted_paraphrase_requires_independent_review",
+    "author": "AI_assisted",
+    "expect_abstain": true,
+    "parent_case": "PAY-020",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-PAY-020"
+    }
+  },
+  {
+    "id": "X-BIO-01",
+    "query": "For UPI payments approved with biometrics on the device, explain the original ceiling, its later increase and when the change applied.",
+    "category": "graph paraphrase",
+    "parent_case": "BIO-01",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "This facility shall initially be available for transactions up to Rs. 5,000.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_226_A_Enhancement_of_Transaction_Limit_for_On_Device_Biometric_Authentication_in_UPI_735a88b16a.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-BIO-01"
+    }
+  },
+  {
+    "id": "X-BIO-03",
+    "query": "If a customer resets their UPI PIN, what happens to on-device biometric transaction authentication? Does the later ceiling increase remove that condition?",
+    "category": "graph paraphrase",
+    "parent_case": "BIO-03",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "quote": "shall disable this method for the account for all UPI Applications",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf"
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_226_A_Enhancement_of_Transaction_Limit_for_On_Device_Biometric_Authentication_in_UPI_735a88b16a.pdf"
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "All existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_226_A_Enhancement_of_Transaction_Limit_for_On_Device_Biometric_Authentication_in_UPI_735a88b16a.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-BIO-03"
+    }
+  },
+  {
+    "id": "X-DD-01",
+    "query": "For UPI mandate execution, explain how response codes 59 and K1 were treated before and after the deemed-debit addendum.",
+    "category": "graph paraphrase",
+    "parent_case": "DD-01",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "shall be considered as failure and shall not be treated as Deemed Debit.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf"
+      },
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_6b390acecf.pdf"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "The changes in deemed debit applicability in the URCS system will be effective from",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_128_A_Addendum_to_OC_128_Extension_of_additional_response_codes_under_Deemed_Debit_for_mandate_execution_3b1e59eab2.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-DD-01"
+    }
+  },
+  {
+    "id": "X-SAFE-02",
+    "query": "Do UPI rent payment initiation-mode restrictions also govern one-time and recurring mandates, or do the circulars distinguish them?",
+    "category": "graph paraphrase",
+    "parent_case": "SAFE-02",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "npci-source-853953bec76d31753dfa5904",
+        "page": 2,
+        "quote": "This circular is not applicable for Mandate Transactions (One time and Recurring Mandates)",
+        "source_url": "https://www.npci.org.in/uploads/OC_No_141_7e958ee3b1.pdf"
+      },
+      {
+        "document_id": "2025-OC-141D",
+        "page": 1,
+        "quote": "This circular is not applicable for Mandate transactions (One time and Recurring Mandates)",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_141_D_FY_2024_25_Compliance_Addendum_to_OC_141_series_807f98753e.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-SAFE-02"
+    }
+  },
+  {
+    "id": "X-LIMIT-02",
+    "query": "Are the enhanced UPI merchant payment ceilings available to any merchant or person-to-person transfer? May a bank retain a lower ceiling?",
+    "category": "graph paraphrase",
+    "parent_case": "LIMIT-02",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "applicable for merchants which are categorised as ‘Verified Merchant’.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "within the overall ceilings prescribed by NPCI.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "The per transaction limit for P2P shall continue as per the extant guidelines.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh |",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-LIMIT-02"
+    }
+  },
+  {
+    "id": "X-LIMIT-03",
+    "query": "For UPI credit-card bill payment, distinguish the ceiling for a single payment from the total permitted over 24 hours.",
+    "category": "graph paraphrase",
+    "parent_case": "LIMIT-03",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh |",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "Issuing banks are required to ensure that such cumulative limits are kept at their end.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-LIMIT-03"
+    }
+  },
+  {
+    "id": "X-IPO-03",
+    "query": "How did the UPI ASBA IPO mandate ceiling evolve from the earlier two-lakh figure? Identify the later enhancement and explain retained older annexure references.",
+    "category": "graph paraphrase",
+    "parent_case": "IPO-03",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "npci-source-9c7b5f01193a8e2a82195b29",
+        "page": 1,
+        "quote": "maintain the per transaction limit of Rs. 2 lakhs for UPl based ASBA transactions",
+        "source_url": "https://www.npci.org.in/uploads/Circular_Enhancement_2_Lakhs_UPI_ASBA_7f656631f8.pdf"
+      },
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_127_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_9c0353fa31.pdf"
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-IPO-03"
+    }
+  },
+  {
+    "id": "X-IPO-04",
+    "query": "IPO and RBI Retail Direct share merchant category 6211. Does that mean they also share the same UPI purpose code?",
+    "category": "graph paraphrase",
+    "parent_case": "IPO-04",
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "references": [
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_127_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_9c0353fa31.pdf"
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf"
+      }
+    ],
+    "expected_answer": "Address the question using the source-owned reference passages; retain conditions, dates and distinct categories. Do not infer blanket supersession.",
+    "review_status": "AI_assisted_source_rubric_requires_independent_review",
+    "evaluation_group": "paraphrases",
+    "provenance": {
+      "dataset": "expanded_evidence_cases_20261017.json",
+      "case_id": "X-IPO-04"
+    }
+  },
+  {
+    "id": "G-BIO-01",
+    "query": "What is the UPI on-device biometric transaction limit, and when did it change?",
+    "required_anchor_ids": [
+      "bio_original",
+      "bio_amendment"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-01"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "This facility shall initially be available for transactions up to Rs. 5,000."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-BIO-02",
+    "query": "Does UPI OC 226A remove the device security validations and customer consent requirements?",
+    "required_anchor_ids": [
+      "bio_amendment",
+      "bio_continuity",
+      "bio_security",
+      "bio_consent"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-02"
+    },
+    "references": [
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "All existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "restricting usage on rooted or jail-broken devices"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "quote": "shall ensure explicit customer consent is obtained"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-BIO-03",
+    "query": "Under UPI biometric authentication, what happens after a UPI PIN reset? Does the limit addendum change that?",
+    "required_anchor_ids": [
+      "bio_reset",
+      "bio_amendment",
+      "bio_continuity"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-03"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "quote": "shall disable this method for the account for all UPI Applications"
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "All existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-BIO-04",
+    "query": "According to UPI OC 226 and its addendum, was the new biometric limit effective on 15 July 2026 or only later?",
+    "required_anchor_ids": [
+      "bio_original",
+      "bio_amendment"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-04"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "This facility shall initially be available for transactions up to Rs. 5,000."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-BIO-05",
+    "query": "Is UIDAI Face Authentication for UPI PIN setup the same as on-device biometric transaction authentication?",
+    "required_anchor_ids": [
+      "bio_pin_setup",
+      "bio_original",
+      "bio_amendment"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-05"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "UIDAI Face Authentication shall be introduced as an additional option, for UPI PIN Set/Re-Set"
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "This facility shall initially be available for transactions up to Rs. 5,000."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "enhanced from ₹5,000 to ₹10,000, effective 07th August 2026."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-BIO-06",
+    "query": "After the UPI biometric limit change, what do the sources say about key rotation and inactivity?",
+    "required_anchor_ids": [
+      "bio_rotation",
+      "bio_inactive",
+      "bio_continuity"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "BIO-06"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "quote": "before one year of biometric enablement."
+      },
+      {
+        "document_id": "2025-OC-226",
+        "page": 2,
+        "quote": "activated only upon customer confirmation."
+      },
+      {
+        "document_id": "2026-OC-226A",
+        "page": 1,
+        "quote": "All existing validations, compliance requirements, specifications, and regulatory guidelines shall continue to remain fully applicable"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-01",
+    "query": "How did UPI deemed debit treatment for response codes 59 and K1 change from OC 128 to OC 128A?",
+    "required_anchor_ids": [
+      "dd_original",
+      "dd_original_codes",
+      "dd_amendment",
+      "dd_effective"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-01"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "shall be considered as failure and shall not be treated as Deemed Debit."
+      },
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "The changes in deemed debit applicability in the URCS system will be effective from"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-02",
+    "query": "For UPI deemed debit, do VO and VH declines have the same treatment for MCC 6211 and other OTM use cases?",
+    "required_anchor_ids": [
+      "dd_amendment",
+      "dd_capital_market",
+      "dd_other_otm",
+      "dd_effective"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-02"
+    },
+    "references": [
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "Acquirer / Payee may claim the transaction amount if it is as per the mandate created;"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "are to be considered as declined and no service should be rendered by the Acquirer/Payee."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "The changes in deemed debit applicability in the URCS system will be effective from"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-03",
+    "query": "What reconciliation and report checks accompany the UPI deemed debit changes?",
+    "required_anchor_ids": [
+      "dd_amendment",
+      "dd_report",
+      "dd_reconciliation"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-03"
+    },
+    "references": [
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "use the Deemed Debit report and raw files for reconciliation"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "perform three (3) way reconciliation"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-04",
+    "query": "For UPI deemed debit mandate execution, what are the expiry, BGGD validity and duplicate execution conditions?",
+    "required_anchor_ids": [
+      "dd_amendment",
+      "dd_expiry",
+      "dd_claim_window",
+      "dd_execution"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-04"
+    },
+    "references": [
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "auto unblocked upon expiry of the mandate period."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "within the mandate validity period."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "no duplicate executions are processed."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-05",
+    "query": "When do the UPI OC 128A deemed debit changes take effect, and what did OC 128 exclude?",
+    "required_anchor_ids": [
+      "dd_original",
+      "dd_original_codes",
+      "dd_amendment",
+      "dd_effective"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-05"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "shall be considered as failure and shall not be treated as Deemed Debit."
+      },
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "VO- Payment stopped by court order Remitter Bank VH- Mandate signature is tampered or corrupt"
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 2,
+        "quote": "The changes in deemed debit applicability in the URCS system will be effective from"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-DD-06",
+    "query": "Explain the UPI deemed debit response-code changes and the settlement scope in the available circulars.",
+    "required_anchor_ids": [
+      "dd_original",
+      "dd_amendment",
+      "dd_settlement"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "DD-06"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-1a52e564b7b10a4cc8b13dde",
+        "page": 1,
+        "quote": "shall be considered as failure and shall not be treated as Deemed Debit."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "response codes VH, K1, 59, and VO were excluded from the deemed debit scope."
+      },
+      {
+        "document_id": "2026-OC-128A",
+        "page": 1,
+        "quote": "shall continue to be treated as Deemed Debit and settlement shall be done by debiting respective Remitter bank"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-01",
+    "query": "Explain OC 226",
+    "required_anchor_ids": [],
+    "series": "",
+    "control": "clarification",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-01"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "expect_abstain": true,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-02",
+    "query": "Explain UPI OC 9999",
+    "required_anchor_ids": [],
+    "control": "empty",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-02"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": true,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-03",
+    "query": "What is the biometric transaction limit?",
+    "required_anchor_ids": [],
+    "series": "RuPay",
+    "control": "graph_inactive",
+    "expected_graph": "not_applicable",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-03"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-04",
+    "query": "Explain deemed approval under UPI OC 39A",
+    "required_anchor_ids": [],
+    "control": "graph_inactive",
+    "expected_graph": "not_applicable",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-04"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-05",
+    "query": "Summarise selected circular",
+    "required_anchor_ids": [],
+    "document_ids": [
+      "2025-OC-226"
+    ],
+    "route": "summary",
+    "control": "unchanged",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-05"
+    },
+    "references": [],
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-06",
+    "query": "What does UPI OC 128 say about deemed debit?",
+    "required_anchor_ids": [],
+    "scope": "strict",
+    "control": "unchanged",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-06"
+    },
+    "references": [],
+    "route": "auto",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-07",
+    "query": "What is the UPI biometric transaction limit?",
+    "required_anchor_ids": [],
+    "cutoff": "2026-06-30",
+    "control": "cutoff",
+    "expected_graph": "active",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-07"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-CTRL-08",
+    "query": "What are UPI Tap & Pay limits?",
+    "required_anchor_ids": [],
+    "series": "",
+    "control": "graph_inactive",
+    "expected_graph": "not_applicable",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "CTRL-08"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-MODE-01",
+    "query": "Under UPI OC 76 series, does the domestic QR share and pay limit also permit international UPI Global P2M?",
+    "required_anchor_ids": [
+      "mode_a",
+      "mode_c_domestic",
+      "mode_c_global"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "MODE-01"
+    },
+    "references": [
+      {
+        "document_id": "2024-OC-76A",
+        "page": 1,
+        "quote": "transactions (Initiation mode ‘04’ and ‘05’) shall be"
+      },
+      {
+        "document_id": "2025-OC-76C",
+        "page": 2,
+        "quote": "2000/- for all P2M (non-verified offline merchants)"
+      },
+      {
+        "document_id": "2025-OC-76C",
+        "page": 2,
+        "quote": "QR share & Pay shall not be allowed for all (Modification for International) UPI Global P2M transactions"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-MODE-02",
+    "query": "How did UPI OC 76A and OC 76C treat P2P intent initiation modes 04 and 05?",
+    "required_anchor_ids": [
+      "mode_a",
+      "mode_c_ref"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "MODE-02"
+    },
+    "references": [
+      {
+        "document_id": "2024-OC-76A",
+        "page": 1,
+        "quote": "transactions (Initiation mode ‘04’ and ‘05’) shall be"
+      },
+      {
+        "document_id": "2025-OC-76C",
+        "page": 1,
+        "quote": "NPCI/UPI/2024-25/OC76B dated 23 August 2024"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-MODE-03",
+    "query": "What do UPI OC 76 and its addenda say about wallet load through collect and QR share modes?",
+    "required_anchor_ids": [
+      "mode_original",
+      "mode_a",
+      "mode_c_global"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "MODE-03"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-1ab364443958f0c6fcad0acf",
+        "page": 2,
+        "quote": "disable all Wallet loads (MCC 6540) through Collect requests."
+      },
+      {
+        "document_id": "2024-OC-76A",
+        "page": 1,
+        "quote": "transactions (Initiation mode ‘04’ and ‘05’) shall be"
+      },
+      {
+        "document_id": "2025-OC-76C",
+        "page": 2,
+        "quote": "QR share & Pay shall not be allowed for all (Modification for International) UPI Global P2M transactions"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-MODE-04",
+    "query": "Can you confirm the complete change history of the UPI OC 76 series, including unavailable intermediate sources?",
+    "required_anchor_ids": [
+      "mode_c_ref"
+    ],
+    "expected_gap": "OC76B",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "MODE-04"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-76C",
+        "page": 1,
+        "quote": "NPCI/UPI/2024-25/OC76B dated 23 August 2024"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-SAFE-01",
+    "query": "Does UPI OC 141D add Bharat QR for rent, and how does the updated OC 141 relate to it?",
+    "required_anchor_ids": [
+      "safe_rent",
+      "safe_d_rent",
+      "safe_d_mandate"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "SAFE-01"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-853953bec76d31753dfa5904",
+        "page": 1,
+        "quote": "141D/2024-25(Addendum) dated 2nd April 2025."
+      },
+      {
+        "document_id": "2025-OC-141D",
+        "page": 1,
+        "quote": "transactions will be allowed on initiation mode 03(Bharat QR)."
+      },
+      {
+        "document_id": "2025-OC-141D",
+        "page": 1,
+        "quote": "This circular is not applicable for Mandate transactions (One time and Recurring Mandates)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-SAFE-02",
+    "query": "Do the rent payment mode restrictions in UPI OC 141 and OC 141D also apply to one-time or recurring mandates?",
+    "required_anchor_ids": [
+      "safe_mandate",
+      "safe_d_mandate"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "SAFE-02"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-853953bec76d31753dfa5904",
+        "page": 2,
+        "quote": "This circular is not applicable for Mandate Transactions (One time and Recurring Mandates)"
+      },
+      {
+        "document_id": "2025-OC-141D",
+        "page": 1,
+        "quote": "This circular is not applicable for Mandate transactions (One time and Recurring Mandates)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-SAFE-03",
+    "query": "What does UPI OC 141B say about collect for digital gold and silver on Android?",
+    "required_anchor_ids": [
+      "safe_b"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "SAFE-03"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-ab9a46ef29ebae2022dbb869",
+        "page": 1,
+        "quote": "not be allowed from 10th November 2022 for android users."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-SAFE-04",
+    "query": "Can the available updated UPI OC 141 be used to quote its exact original 2022 wording?",
+    "required_anchor_ids": [
+      "safe_snapshot"
+    ],
+    "expected_gap": "OC141A",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "SAFE-04"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-853953bec76d31753dfa5904",
+        "page": 1,
+        "quote": "(Updated as on 23rd February 2026*)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-LIMIT-01",
+    "query": "Did UPI OC 185A change the hospital and education limit, or introduce tax-payment coverage?",
+    "required_anchor_ids": [
+      "limits_hospital",
+      "limits_tax",
+      "limits_annex"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "LIMIT-01"
+    },
+    "references": [
+      {
+        "document_id": "2023-UPI-185",
+        "page": 1,
+        "quote": "lakhs for merchants under categories aligned to hospitals and educational services."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "quote": "lakhs for entities under categories aligned to tax payments."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-LIMIT-02",
+    "query": "Do the higher UPI merchant limits under OC 185B apply to every merchant and P2P transfer, and can banks set lower limits?",
+    "required_anchor_ids": [
+      "limits_verified",
+      "limits_bank",
+      "limits_p2p",
+      "limits_capital"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "LIMIT-02"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "applicable for merchants which are categorised as ‘Verified Merchant’."
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "within the overall ceilings prescribed by NPCI."
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "The per transaction limit for P2P shall continue as per the extant guidelines."
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh |"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-LIMIT-03",
+    "query": "Under UPI OC 185B, distinguish the credit card bill payment per-transaction ceiling from its 24-hour cumulative limit.",
+    "required_anchor_ids": [
+      "limits_cc",
+      "limits_cumulative"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "LIMIT-03"
+    },
+    "references": [
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh |"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "Issuing banks are required to ensure that such cumulative limits are kept at their end."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-LIMIT-04",
+    "query": "Does UPI tax payment have a 25 lakh limit in the available OC 185 series? Check the source quality and category.",
+    "required_anchor_ids": [
+      "limits_tax",
+      "limits_tax_mcc",
+      "limits_ref"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "LIMIT-04"
+    },
+    "references": [
+      {
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "quote": "lakhs for entities under categories aligned to tax payments."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "quote": "9311’ strictly adheres to the tax payments only."
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "Vide reference to NPCI/UPI/2024-25/0C/185 A"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-IPO-01",
+    "query": "What UPI IPO mandate limit is supported by the available circulars, and which specific circular establishes it?",
+    "required_anchor_ids": [
+      "ipo_enhanced",
+      "limits_annex"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "IPO-01"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-IPO-02",
+    "query": "Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?",
+    "required_anchor_ids": [
+      "ipo_enhanced",
+      "limits_annex",
+      "limits_capital",
+      "limits_bank"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "IPO-02"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh |"
+      },
+      {
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "quote": "within the overall ceilings prescribed by NPCI."
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-IPO-03",
+    "query": "Explain the UPI ASBA IPO limit history from the older 2 lakh limit to the later enhancement and retained annexure reference.",
+    "required_anchor_ids": [
+      "ipo_original",
+      "ipo_enhanced",
+      "limits_annex"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "IPO-03"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-9c7b5f01193a8e2a82195b29",
+        "page": 1,
+        "quote": "maintain the per transaction limit of Rs. 2 lakhs for UPl based ASBA transactions"
+      },
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-IPO-04",
+    "query": "IPO and RBI Retail Direct both use MCC 6211. Do the UPI sources give them the same purpose code?",
+    "required_anchor_ids": [
+      "ipo_enhanced",
+      "limits_annex"
+    ],
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "IPO-04"
+    },
+    "references": [
+      {
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "quote": "now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO."
+      },
+      {
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "quote": "Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change)"
+      }
+    ],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-EXT-CTRL-01",
+    "query": "Explain UPI OC 76B",
+    "required_anchor_ids": [],
+    "control": "empty",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "EXT-CTRL-01"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": true,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-EXT-CTRL-02",
+    "query": "What new safeguards did UPI OC 141E introduce?",
+    "required_anchor_ids": [],
+    "control": "empty",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "EXT-CTRL-02"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": true,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-EXT-CTRL-03",
+    "query": "What UPI IPO limit is stated by OC 185C?",
+    "required_anchor_ids": [],
+    "control": "empty",
+    "expected_graph": "bypass",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "EXT-CTRL-03"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "series": "UPI",
+    "expect_abstain": true,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  },
+  {
+    "id": "G-EXT-CTRL-04",
+    "query": "Explain RuPay rent payment rules",
+    "required_anchor_ids": [],
+    "series": "",
+    "control": "graph_inactive",
+    "expected_graph": "not_applicable",
+    "evaluation_group": "graph",
+    "provenance": {
+      "dataset": "graph_pilot_cases_v2.json",
+      "case_id": "EXT-CTRL-04"
+    },
+    "references": [],
+    "route": "auto",
+    "scope": "related",
+    "expect_abstain": false,
+    "expected_answer": "Retrieval/control case only; no reference answer authored.",
+    "review_status": "AI_assisted_requires_independent_review"
+  }
+]

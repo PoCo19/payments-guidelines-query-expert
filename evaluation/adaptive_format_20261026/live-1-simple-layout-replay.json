@@ -1,0 +1,32 @@
+{
+  "formatting_source": "repaired_layout",
+  "answer_blocks": [
+    {
+      "type": "table",
+      "columns": [
+        "Evidence 1",
+        "Evidence 2"
+      ],
+      "claims": [
+        {
+          "text": "UPI Lite is designed to process small transactions of Rs. 500 or less without a UPI PIN, provided the user has enabled the feature and the app includes passcode, biometrics, or pattern locks.",
+          "sources": [
+            "S1"
+          ],
+          "draft_index": 1,
+          "original_text": "UPI Lite is designed to process small transactions of Rs. 500 or less without a UPI PIN, provided the user has enabled the feature and the app includes passcode, biometrics, or pattern locks (S1).",
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "UPI Tap & Pay enables contactless NFC-based payments by tapping an unlocked mobile device on a PoS terminal or QR tag, extending beyond QR scanning to include Point of Sale terminals.",
+          "sources": [
+            "S8"
+          ],
+          "draft_index": 2,
+          "original_text": "UPI Tap & Pay enables contactless NFC-based payments by tapping an unlocked mobile device on a PoS terminal or QR tag, extending beyond QR scanning to include Point of Sale terminals (S8).",
+          "support_status": "automated_supported"
+        }
+      ]
+    }
+  ]
+}

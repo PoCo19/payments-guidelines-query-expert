@@ -1,0 +1,18 @@
+{
+  "case_count": 50,
+  "query_cases": 20,
+  "impact_cases": 10,
+  "challenge_cases": 20,
+  "challenge_note": "Includes two legitimate short/misspelled controls: do not score all 20 as expected abstentions.",
+  "dataset_sha256": "d6e41822be3018ca7e4d0921b03a5e67aa5840e16edcc9a53b0b34a284eae3c6",
+  "graph_sha256": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+  "source_hashes": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33",
+    "review_annotations.json": "cd4f26006df1703d832a962615f6735b17b2a6d9de564d581d83697f25f279e6",
+    "feature_rules.json": "792ef665425210502e35493f9953a3893c6698a9cbd8bc2448bd1652cd65b0b0",
+    "source_manifest.json": "47237f4a4a9731151e18fc6b5f2c4be76ad998652f211263a084338bcd04398a"
+  },
+  "review_gate": "pending",
+  "scoring_allowed": false
+}

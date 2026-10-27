@@ -1,0 +1,152 @@
+{
+  "review": "AI visual comparison with PDF images; independent review pending",
+  "pages": [
+    {
+      "document_id": "2024-OC-107A",
+      "page": 1,
+      "before_page_sha256": "1de8e741c308e1a3ed8e406683ff2f8d395b65b7c6072c555fa9d03b28ba477f",
+      "replacements": [
+        {
+          "before": "19\" April, 2024",
+          "after": "19th April, 2024"
+        },
+        {
+          "before": "01* April, 2021",
+          "after": "01st April, 2021"
+        },
+        {
+          "before": "31%, May 2024",
+          "after": "31st May 2024"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-UPI-186",
+      "page": 1,
+      "before_page_sha256": "22b0fcc805209ceebe094d7518ac3d7cd6256f64942dfdc8273a6c91c9edce7a",
+      "replacements": [
+        {
+          "before": "NPCIUPIOG No.186/2023-24 19\" December 2023",
+          "after": "NPCI/UPI/OC No.186/2023-24 19th December 2023"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-UPI-186",
+      "page": 2,
+      "before_page_sha256": "50696efb5634b69b9522b5409ca0abbaa6bb118ad5a1f91da663be4556e40507",
+      "replacements": [
+        {
+          "before": "31% January’ 2024",
+          "after": "31st January’ 2024"
+        }
+      ]
+    },
+    {
+      "document_id": "2025-OC-193A",
+      "page": 1,
+      "before_page_sha256": "181578d555f91b185fbbe0291b87a06735ad961f6e7dc12f24804af93c1b9deb",
+      "replacements": [
+        {
+          "before": "10\" September 2024",
+          "after": "10th September 2024"
+        },
+        {
+          "before": "28\" March 2024",
+          "after": "28th March 2024"
+        }
+      ]
+    },
+    {
+      "document_id": "2025-OC-193A",
+      "page": 2,
+      "before_page_sha256": "0ce2a7c927828de0b4f3bbab116c4c5aa6bc4c9610539e258a75f284082f0cc3",
+      "replacements": [
+        {
+          "before": "NPCHUPIOG No. 193/2023-24",
+          "after": "NPCI/UPI/OC No. 193/2023-24"
+        }
+      ]
+    },
+    {
+      "document_id": "2025-OC-208B",
+      "page": 1,
+      "before_page_sha256": "3fa35a3e5558b6d579369545f65fc7afd27662b19ea366d2b770d681f884cfb6",
+      "replacements": [
+        {
+          "before": "NPCIJ/UPIV/OC 208B/2025-26",
+          "after": "NPCI/UPI/OC 208B/2025-26"
+        },
+        {
+          "before": "03\" Oct 2024",
+          "after": "03rd Oct 2024"
+        },
+        {
+          "before": "30\" Jun 2025",
+          "after": "30th Jun 2025"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-Product-Compliance-PCOMP-Q4",
+      "page": 1,
+      "before_page_sha256": "6659900b7b0fcf97d0d7a2e42470d7f717ec5dd2cbd54651fecd40228c2385e7",
+      "replacements": [
+        {
+          "before": "13\" April, 2023",
+          "after": "13th April, 2023"
+        },
+        {
+          "before": "12'\" January 2021",
+          "after": "12th January 2021"
+        },
+        {
+          "before": "31% May",
+          "after": "31st May"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-Product-Compliance-PCOMP-Q4",
+      "page": 3,
+      "before_page_sha256": "7913e1616ba878dda2520c8727a6c4d51223ff6ef0f8ac36a513432c120598c3",
+      "replacements": [
+        {
+          "before": "Sr Product General Compliance\nNo\n1 General Member organization should be compliant/Certified to |SO27001 standard.\n| fepeeceiennseecmenn\n2 General Member should have Business Continuity Management (BCM)\nBes Policy/Disaster Recovery Policy\n3 General Member should have Cyber Security Policy.\ncompan\n4 General Member organization should be compliant/Certified to PCI DSS standard.\nCompliance | Kindly provide the date of certificate in Date Column\n5 | General Member organization should be compliant to RBI SAR (System Audit\nCompliance | Report) & Data Localization requirements. Kindly provide the date of\nCompliance in Date Column.\nGeneral Member organization should be compliant to RBI Csite/Cyber Security\nCompliance | framework compliance. Kindly provide the date of Compliance in Date\nColumn.\n7 General Member organization as an AUA/KUA (or sub-AUA/sub-KUA) should be\nCompliance | compliant to the UIDAI compliance requirement. Kindly provide the date of\nCompliance in Date Column.\nGeneral Member organization should be compliant to RBI Oversight framework\n[Compre |equrement Kindy pride he dof Conplanee nae car,",
+          "after": "| Sr No | Product | General Compliance |\n|---|---|---|\n| 1 | General Compliance | Member organization should be compliant/Certified to ISO27001 standard. Kindly provide the date of compliance letter/certificate in Date Column |\n| 2 | General Compliance | Member should have Business Continuity Management (BCM) Policy/Disaster Recovery Policy |\n| 3 | General Compliance | Member should have Cyber Security Policy. |\n| 4 | General Compliance | Member organization should be compliant/Certified to PCI DSS standard. Kindly provide the date of certificate in Date Column |\n| 5 | General Compliance | Member organization should be compliant to RBI SAR (System Audit Report) & Data Localization requirements. Kindly provide the date of Compliance in Date Column |\n| 6 | General Compliance | Member organization should be compliant to RBI Csite/Cyber Security framework compliance. Kindly provide the date of Compliance in Date Column. |\n| 7 | General Compliance | Member organization as an AUA/KUA (or sub-AUA/sub-KUA) should be compliant to the UIDAI compliance requirement. Kindly provide the date of Compliance in Date Column. |\n| 8 | General Compliance | Member organization should be compliant to RBI Oversight framework requirements. Kindly provide the date of Compliance in Date Column. |"
+        }
+      ]
+    },
+    {
+      "document_id": "2023-UPI-160",
+      "page": 1,
+      "before_page_sha256": "18fb7e0d6fe6959204682f444ed249bd47d4c4da4a0349d2b58dce0a2719dd0b",
+      "replacements": [
+        {
+          "before": "Dispute /Adjustment Type Dispute /Adjustment Type\n| 1 __| Wrong Credit Chargeback Pre Arbitration Acceptance\nWrong Credit Chargeback Re- |e | Deferred Chargeback Acceptance/ Deemed Acceptance\nPresentment\n3 Chargeback Deferred Pre Arbitration Acceptance / Deemed\nAcceptance\n4\n5 Fraud Chargeback Credit Adjustment\nFraud Chargeback Re-\nPresentment\n",
+          "after": "| S. No | Dispute /Adjustment Type | S. No | Dispute /Adjustment Type |\n|---|---|---|---|\n| 1 | Wrong Credit Chargeback | 7 | Pre Arbitration Acceptance |\n| 2 | Wrong Credit Chargeback Re-Presentment | 8 | Deferred Chargeback Acceptance/ Deemed Acceptance |\n| 3 | Chargeback | 9 | Deferred Pre Arbitration Acceptance / Deemed Acceptance |\n| 4 | Re-presentment | 10 | RET |\n| 5 | Fraud Chargeback | 11 | Credit Adjustment |\n| 6 | Fraud Chargeback Re-Presentment | | |\n"
+        },
+        {
+          "before": "28\" December, 2022",
+          "after": "28th December, 2022"
+        },
+        {
+          "before": "10\" Mar 2021",
+          "after": "10th Mar 2021"
+        },
+        {
+          "before": "1\" January 2023",
+          "after": "1st January 2023"
+        },
+        {
+          "before": "1* January 2023",
+          "after": "1st January 2023"
+        },
+        {
+          "before": "1° January 2023",
+          "after": "1st January 2023"
+        }
+      ]
+    }
+  ]
+}

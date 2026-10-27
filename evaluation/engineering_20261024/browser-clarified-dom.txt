@@ -1,0 +1,111 @@
+- complementary:
+  - link "Payments Guidelines Query Expert":
+    - /url: /
+    - text: Payments Guidelines
+    - text: Query Expert
+  - navigation:
+    - link "Research and source library":
+      - /url: /
+    - link "Payments workbench":
+      - /url: /work
+  - paragraph: Supervised prototypes · Local review records
+- main:
+  - generic: Payments workbench
+  - heading "Research. Review. Reuse." [level=1]
+  - paragraph: Query Desk and Change-Impact Briefs share cited evidence and versioned review. No automatic business actions.
+  - status: "Graph-assisted retrieval: active. 55 maintained anchors, 13 relationships. Links await independent review; coverage is limited to maintained topics."
+  - status: Completed
+  - generic "Create a work item"
+  - text: Workflow
+  - combobox "Workflow":
+    - option "Payments Query Desk" [selected]
+    - option "Change-Impact Brief"
+  - text: Question or change to investigate
+  - textbox "Question or change to investigate": What is Tap and Pay?
+  - text: Product (optional)
+  - textbox "Product (optional)":
+    - /placeholder: e.g. UPI
+  - text: Issue-date cutoff (optional)
+  - textbox "Issue-date cutoff (optional)"
+  - text: Operating context (optional; analyst supplied)
+  - textbox "Operating context (optional; analyst supplied)":
+    - /placeholder: Your institution's role and processes. Without this, impact remains generic.
+  - group "Select sources for an impact brief; optional for a query":
+    - generic: Select sources for an impact brief; optional for a query
+    - paragraph: Choose the changed document first, then earlier sources. Selection order does not establish legal precedence.
+    - text: Find a document
+    - textbox "Find a document":
+      - /placeholder: Title or circular reference
+    - button "Search library"
+    - list
+  - button "Create draft"
+  - heading "Saved work" [level=2]
+  - button "Refresh"
+  - paragraph:
+    - button "What is UPI Tap and Pay?"
+    - text: · Query Desk · Draft · v4
+  - paragraph:
+    - button "What changed in the UPI biometric addendum, and what should a payments analyst review?"
+    - text: · Impact brief · Needs review · v3
+  - paragraph:
+    - button "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?"
+    - text: · Query Desk · Needs review · v3
+  - article:
+    - heading "What is UPI Tap and Pay?" [level=2]
+    - paragraph: Draft · version 4
+    - paragraph: No operating context supplied; institution-specific impact is not established.
+    - status: "draft: Draft answer — check the supporting excerpts."
+    - button "Generate cited draft" [active]
+    - generic "Clarify the question or product"
+    - paragraph: Changing the request starts a new draft and clears the old answer. Earlier versions remain available. To choose a different set of documents, create another work item.
+    - text: Revised question
+    - textbox "Revised question": What is UPI Tap and Pay?
+    - text: Product
+    - textbox "Product": UPI
+    - button "Save clarified request"
+    - heading "Documented findings" [level=3]
+    - paragraph: Edits are human-authored and are not automatically rechecked. Keep supporting citations such as [S1].
+    - textbox: UPI Tap & Pay is a new mode of payment introduced for Unified Payments Interface (UPI) transactions in addition to existing modes such as Scan & Pay, Pay to Contact, and UPI Number. [S2] The feature is designed for mobile devices with both Android and iOS operating systems that possess NFC capability. [S6, S10] Transactions are initiated using a specific mode code '06' and require the UPI application to provide a separate call-to-action button on the homepage. [S1, S3, S4] For transactions of Rs. 500 or less, the payment is processed through a UPI LITE account if enabled by the user; otherwise, it requires a UPI PIN. [S5, S12] Transactions exceeding Rs. 500 must be processed online and require a UPI PIN. [S12] The device must have an enabled lock (app passcode, biometrics, or pattern) and be in an unlocked state at the time of initiating a transaction. [S5, S7] Acquiring banks must ensure NFC tags used inside UPI Smart QRs/Tags are NFC forum certified (Type 2) and non-rewritable post personalisation. [S9] Explicit user consent is required after each device binding operation before allowing further transactions using UPI Tap & Pay. [S8] Members must comply with NPCI brand guidelines updated on the NPCI website for UPI Tap & Pay. [S13]
+    - button "Save as new draft version"
+    - button "Submit for review"
+    - heading "Evidence and automated checks" [level=3]
+    - generic "S1 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S2 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S3 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S4 · Enhancement - UPI Tap & Pay on Point of Sale (PoS) · page 2"
+    - generic "S5 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S6 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S7 · Enhancement - UPI Tap & Pay on Point of Sale (PoS) · page 2"
+    - generic "S8 · Enhancement - UPI Tap & Pay on Point of Sale (PoS) · page 2"
+    - generic "S9 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S10 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S11 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S12 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S13 · Introduction of UPI TAP & PAY mode of Payments · page 1"
+    - generic "S14 · Enhancement - UPI Tap & Pay on Point of Sale (PoS) · page 1"
+    - generic "S15 · Addendum to Enhancement in UPI LITE Limits · page 2"
+    - generic "Automated findings and withheld claims"
+    - heading "Review this version" [level=3]
+    - paragraph: A name records who reviewed; it is not a verified login. Approval requires inspecting original sources and checking material qualifications.
+    - text: Reviewer
+    - textbox "Reviewer"
+    - text: Review rationale
+    - textbox "Review rationale"
+    - checkbox "I verified the original sources and citations."
+    - text: I verified the original sources and citations.
+    - checkbox "I verified qualifications, scope, dates and unresolved issues."
+    - text: I verified qualifications, scope, dates and unresolved issues.
+    - button "Approve" [disabled]
+    - button "Reject" [disabled]
+    - button "Export with evidence and review status"
+    - heading "Version history" [level=3]
+    - generic "Version 1 · 2026-10-24T04:12:36.777372+00:00"
+    - generic "Version 2 · 2026-10-24T04:12:52.023035+00:00"
+    - generic "Version 3 · 2026-10-24T04:13:34.628966+00:00"
+    - generic "Version 4 · 2026-10-24T04:14:47.576395+00:00"
+    - paragraph: v1 · created · 2026-10-24T04:12:36.777372+00:00
+    - paragraph: v1 · generation started · 2026-10-24T04:12:51.970349+00:00
+    - paragraph: v2 · generated · 2026-10-24T04:12:52.023035+00:00
+    - paragraph: v3 · edited · 2026-10-24T04:13:34.629493+00:00
+    - paragraph: v3 · generation started · 2026-10-24T04:14:24.403713+00:00
+    - paragraph: v4 · generated · 2026-10-24T04:14:47.576395+00:00

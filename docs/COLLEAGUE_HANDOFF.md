@@ -1,5 +1,7 @@
 # Reproduce the 10 October 2026 handoff
 
+For the current Git checkout, use [the 27 October workbench handoff](GITHUB_HANDOFF_20261027.md). This page documents the historical tag and its original source snapshot.
+
 Repository: https://github.com/PoCo19/payments-guidelines-query-expert
 Frozen version: **handoff-2026-10-10.1**. Use this tag when comparing results; `main` can move.
 

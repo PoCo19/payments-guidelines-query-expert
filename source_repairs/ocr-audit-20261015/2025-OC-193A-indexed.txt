@@ -1,0 +1,73 @@
+PAGE 1
+NPCI/UPI/OC 193A/2024-25 10" September 2024
+To,
+All Members of Unified Payment Interface (UPI),
+
+Subject: Addendum to OC 193 ~ Compliance to UPI technical specifications — TRAN ID
+Reference may be taken from our circular No. NPCI/UPI/OC 193/2023-24 dated 28" March 2024
+(copy enclosed) and further clarification provided advising compliance to the UPI technical
+specifications with respect to the generation of duplicate TRAN IDs. It is observed that duplicate
+transaction IDs are still being generated. Banks and PSPs must ensure adherence to the guidelines i.e.
+
+1. Tran ID shall be 35 digits.
+2. No duplicate Tran IDs shall be generated.
+lt may be noted that with effect from October 1, 2024, any liability arising out of such transactions
+originated with duplicate IDs will be shifted to the defaulting PSP Banks / Banks. All members banks
+are advised to implement necessary controls at their end, including their PSPs / PA/ PG / merchants.
+All participating entities are advised to take note and ensure compliance. The information herein may
+be disseminated io all the concerned officiats for compliance.
+Yours cerely,
+Giridhar G M
+Chief — Customer Success
+
+
+PAGE 2
+‘ a ? ba
+NEE)
+{ ey f
+wieder wetter ararr Rrrr
+NATIONAL PAYAENTS CORPORATION OF INDIA
+NPCHUPIOG No. 193/2023-24 March 28, 2024
+To,
+All Members of Unified Payments Interface (UP)
+Sub: Compliance to UPI technical specificatlons — TRAN ID
+As per UPI technical specification transaction ID (TXNID) length must be 35 digits alpha
+numeric. On analyzing the data, the following anomalies are observed:
+1. Length of the transaction IDs: PSPs are not using consistent length of transaction ids
+(current transaction ids (TXNID) are ranging from 4 digits to 35 digits) which is
+inconsistent with the technical specifications of UPI.
+2, Duplicate transaction Ids: Duplicate transaction Ids are used by PSPs while
+originating the transactions.
+1. Length of transaction ids:
+a. In order to bring in standardization, it is mandated that the participating entities should
+use the transaction ID with a length of 35 characters (alphanumeric) only.
+b. Validation of field length should be implemented in the central system, any transaction
+with transaction id not in compliance with the specification shall be rejected by the
+system with appropriate reason. The exact dafe of implementation of validation in
+central system shall be communicated separately however all the participants are
+advised io take immediate measures to comply with technicat Specification to avoid
+fast minute rush.
+2. Duplicate transaction Ids:
+@, Validation is already in place, duplicate records are already validated and rejected.
+Such rejections due to duplicate TXNID are causing immense customer dissatisfaction.
+Further, in some exceptional cases where in the central system mufiple DBs are
+involved, a few transactions with duplicate IDs are getiing processed in online system
+however the same is getting rejected in the back office leading to settlement issues.
+b. In the event of such dupficate transactions getting processed by the central system
+leading to settlement issues, it may be noted that the liability will be shifted (defaulting
+PSP shall be debited) to such originating entity as duplicate transaction Id is not in
+compliance with the technical specifications.
+3. Additionally in a scenario wherein the banks have successful transactions in their switch/
+intemal system however such transaction/s are not present in the raw file provided then:
+a) Remitting banks should not reverse the funds to the customer’s account.
+b) Beneificiary banks should hold funds in the beneficiary account.
+Such cases should be reported to NPCI immediately for further course of action.
+All participating entities are advised to fake note and ensure compliance, The information
+hesein may please be disseminated to all the concerned officials for compliance.
+With carn tegards
+iN
+AWN 100A, The Capital, B Wing, 10" Floor,
+Siidhar S7 Bandra Kurla Complex, Bandra (E), Mumbai 400 O51-
+Chief — Customer Success & Govi Relations T: +9122 40003100 F: +91 22 40009101
+m contact@npci.org.in www.npci.org.in
+CIN: U74990MH2008NPL182067

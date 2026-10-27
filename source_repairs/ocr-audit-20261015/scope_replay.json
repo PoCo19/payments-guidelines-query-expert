@@ -1,0 +1,26 @@
+{
+  "source": "source_repairs/oc185b-20261014/OC185B_corrected.md",
+  "type": "Controlled adversarial claims against source text; not generated answers or held-out evaluation",
+  "cases": [
+    {
+      "claim": "Tax payments have a cumulative limit of Rs 10 lakh.",
+      "expected_flag": true,
+      "issue": "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+    },
+    {
+      "claim": "Government e-Market Place EMD payments have a cumulative limit of Rs 10 lakh.",
+      "expected_flag": false,
+      "issue": null
+    },
+    {
+      "claim": "Capital Market has a per-transaction limit of Rs 10 lakh.",
+      "expected_flag": true,
+      "issue": "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+    },
+    {
+      "claim": "Capital Market has a cumulative limit of Rs 10 lakh.",
+      "expected_flag": false,
+      "issue": null
+    }
+  ]
+}

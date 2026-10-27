@@ -1,0 +1,111 @@
+{
+  "case": "gibberish",
+  "query": "asdfg qwerty zzzxv 123blah",
+  "elapsed_seconds": 0.016,
+  "result": {
+    "answer_blocks": [],
+    "answer_style": "auto",
+    "formatting_source": "none",
+    "flagged_claims": [],
+    "claim_checks": [],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "related",
+      "seed_chunk_ids": [],
+      "included_chunk_ids": [],
+      "evidence_characters": 0,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [],
+      "document_coverage": {},
+      "requested_circulars": [],
+      "reranker": {
+        "enabled": true,
+        "model": null,
+        "candidate_count": 0,
+        "elapsed_ms": 0
+      },
+      "candidate_stages": {
+        "protected_seed_ids": [],
+        "topic_query": "asdfg qwerty zzzxv 123blah",
+        "table_focus_ids": [],
+        "phase_focus_ids": [],
+        "phase_companion_ids": []
+      },
+      "retrieval_seed_policy": "balanced",
+      "research_policy": "publisher_neutral_v2",
+      "followup_query": null,
+      "query_plan": {
+        "query": "asdfg qwerty zzzxv 123blah",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "requirements"
+        ],
+        "product_filter": "UPI",
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "123blah",
+          "asdfg",
+          "qwerty",
+          "zzzxv"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [],
+      "aspect_coverage": [
+        {
+          "aspect": "requirements",
+          "label": "Requirements",
+          "citations": [],
+          "status": "not_located"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability.",
+      "graph_context": {
+        "status": "not_applicable",
+        "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+        "topics": [],
+        "max_hops": 2,
+        "max_graph_chunks": 12,
+        "relationships": [],
+        "expected_anchor_ids": [],
+        "source_gaps": [],
+        "cautions": [],
+        "review_status": "proposed_ai_assisted",
+        "limitation": "Proposed links guide source retrieval only. No automatic supersession or current-applicability decision."
+      }
+    },
+    "sources": [],
+    "claims": [],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original."
+    ],
+    "answer": "No matching evidence was retrieved; no model request was made.",
+    "abstained": true,
+    "response_status": "abstained",
+    "coverage_check": {
+      "status": "not_run",
+      "findings": [],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+    },
+    "elapsed_ms": 16,
+    "timing": {
+      "total_seconds": 0.016,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.016
+        },
+        {
+          "stage": "generation",
+          "seconds": 0.0
+        }
+      ],
+      "model_calls": []
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿case,arm,question,answer,stale_rule,incorrect_scope,unsupported_supersession,missing_condition,verdict,reviewer,notes
+IPO-02,baseline,Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?,"Draft answer — check the supporting excerpts.
+
+The 10 lakh cumulative figure in NPCI/UPI/2025-OC-185B establishes a per transaction limit of Rs. 5 Lakh and a separate Cumulative Limit (24 hrs) of Rs. 10 Lakh for the Capital Market category, whereas Circular 71 specifically addresses UPI IPO mandates with a per transaction limit of Rs. 2 Lakhs. [S1, S3]",,,,,,,
+IPO-02,graph,Does the 10 lakh cumulative Capital Market figure in UPI OC 185B make a single IPO mandate limit 10 lakh?,"Draft answer — check the supporting excerpts.
+
+The 10 lakh figure in UPI OC 185B represents the cumulative limit for Capital Market transactions over a 24-hour period, not the per-transaction mandate limit. [S1]
+
+The per-transaction limit for Capital Market transactions under UPI OC 185B is explicitly set at Rs 5 Lakh, which applies to single IPO mandates and other specified categories. This rule originates from NPCI/UPI/OC-127/2021-22 (Circular 127), while the cumulative limit of Rs 10 Lakh for Capital Market transactions is prescribed in Annexure I of UPI OC 185B. [S1, S2]",,,,,,,

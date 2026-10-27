@@ -1,0 +1,2 @@
+# Optional helper for converting acquired RBI HTML snapshots. Runtime RAG does not require it.
+lxml==6.0.2

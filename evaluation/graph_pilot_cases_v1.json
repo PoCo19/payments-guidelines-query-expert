@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "status": "AI-assisted development cases; awaiting independent review; not held-out",
+  "cases": [
+    {
+      "id": "BIO-01",
+      "query": "What is the UPI on-device biometric transaction limit, and when did it change?",
+      "required_anchor_ids": [
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-02",
+      "query": "Does UPI OC 226A remove the device security validations and customer consent requirements?",
+      "required_anchor_ids": [
+        "bio_amendment",
+        "bio_continuity",
+        "bio_security",
+        "bio_consent"
+      ]
+    },
+    {
+      "id": "BIO-03",
+      "query": "Under UPI biometric authentication, what happens after a UPI PIN reset? Does the limit addendum change that?",
+      "required_anchor_ids": [
+        "bio_reset",
+        "bio_amendment",
+        "bio_continuity"
+      ]
+    },
+    {
+      "id": "BIO-04",
+      "query": "According to UPI OC 226 and its addendum, was the new biometric limit effective on 15 July 2026 or only later?",
+      "required_anchor_ids": [
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-05",
+      "query": "Is UIDAI Face Authentication for UPI PIN setup the same as on-device biometric transaction authentication?",
+      "required_anchor_ids": [
+        "bio_pin_setup",
+        "bio_original",
+        "bio_amendment"
+      ]
+    },
+    {
+      "id": "BIO-06",
+      "query": "After the UPI biometric limit change, what do the sources say about key rotation and inactivity?",
+      "required_anchor_ids": [
+        "bio_rotation",
+        "bio_inactive",
+        "bio_continuity"
+      ]
+    },
+    {
+      "id": "DD-01",
+      "query": "How did UPI deemed debit treatment for response codes 59 and K1 change from OC 128 to OC 128A?",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_original_codes",
+        "dd_amendment",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-02",
+      "query": "For UPI deemed debit, do VO and VH declines have the same treatment for MCC 6211 and other OTM use cases?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_capital_market",
+        "dd_other_otm",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-03",
+      "query": "What reconciliation and report checks accompany the UPI deemed debit changes?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_report",
+        "dd_reconciliation"
+      ]
+    },
+    {
+      "id": "DD-04",
+      "query": "For UPI deemed debit mandate execution, what are the expiry, BGGD validity and duplicate execution conditions?",
+      "required_anchor_ids": [
+        "dd_amendment",
+        "dd_expiry",
+        "dd_claim_window",
+        "dd_execution"
+      ]
+    },
+    {
+      "id": "DD-05",
+      "query": "When do the UPI OC 128A deemed debit changes take effect, and what did OC 128 exclude?",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_original_codes",
+        "dd_amendment",
+        "dd_effective"
+      ]
+    },
+    {
+      "id": "DD-06",
+      "query": "Explain the UPI deemed debit response-code changes and the settlement scope in the available circulars.",
+      "required_anchor_ids": [
+        "dd_original",
+        "dd_amendment",
+        "dd_settlement"
+      ]
+    },
+    {
+      "id": "CTRL-01",
+      "query": "Explain OC 226",
+      "required_anchor_ids": [],
+      "series": "",
+      "control": "clarification",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-02",
+      "query": "Explain UPI OC 9999",
+      "required_anchor_ids": [],
+      "control": "empty",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-03",
+      "query": "What is the biometric transaction limit?",
+      "required_anchor_ids": [],
+      "series": "RuPay",
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    },
+    {
+      "id": "CTRL-04",
+      "query": "Explain deemed approval under UPI OC 39A",
+      "required_anchor_ids": [],
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    },
+    {
+      "id": "CTRL-05",
+      "query": "Summarise selected circular",
+      "required_anchor_ids": [],
+      "document_ids": [
+        "2025-OC-226"
+      ],
+      "route": "summary",
+      "control": "unchanged",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-06",
+      "query": "What does UPI OC 128 say about deemed debit?",
+      "required_anchor_ids": [],
+      "scope": "strict",
+      "control": "unchanged",
+      "expected_graph": "bypass"
+    },
+    {
+      "id": "CTRL-07",
+      "query": "What is the UPI biometric transaction limit?",
+      "required_anchor_ids": [],
+      "cutoff": "2026-06-30",
+      "control": "cutoff",
+      "expected_graph": "active"
+    },
+    {
+      "id": "CTRL-08",
+      "query": "What are UPI Tap & Pay limits?",
+      "required_anchor_ids": [],
+      "series": "",
+      "control": "graph_inactive",
+      "expected_graph": "not_applicable"
+    }
+  ]
+}

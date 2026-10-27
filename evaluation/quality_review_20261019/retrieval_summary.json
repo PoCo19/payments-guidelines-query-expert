@@ -1,0 +1,97 @@
+{
+  "baseline": {
+    "groups": {
+      "original_138": {
+        "cases": 138,
+        "anchors_found": 212,
+        "anchors_expected": 223
+      },
+      "rbi_paraphrases": {
+        "cases": 3,
+        "anchors_found": 3,
+        "anchors_expected": 5
+      },
+      "fresh_notification_paraphrases": {
+        "cases": 3,
+        "anchors_found": 5,
+        "anchors_expected": 6
+      },
+      "reranked": {
+        "cases": 120,
+        "anchors_found": 197,
+        "anchors_expected": 209
+      },
+      "reranking_bypassed": {
+        "cases": 24,
+        "anchors_found": 23,
+        "anchors_expected": 25
+      }
+    },
+    "negative_control_statuses": {
+      "abstained": 8,
+      "source_excerpts": 14,
+      "clarification_needed": 2
+    },
+    "budget_violations": []
+  },
+  "candidate": {
+    "groups": {
+      "original_138": {
+        "cases": 138,
+        "anchors_found": 212,
+        "anchors_expected": 223
+      },
+      "rbi_paraphrases": {
+        "cases": 3,
+        "anchors_found": 5,
+        "anchors_expected": 5
+      },
+      "fresh_notification_paraphrases": {
+        "cases": 3,
+        "anchors_found": 6,
+        "anchors_expected": 6
+      },
+      "reranked": {
+        "cases": 120,
+        "anchors_found": 200,
+        "anchors_expected": 209
+      },
+      "reranking_bypassed": {
+        "cases": 24,
+        "anchors_found": 23,
+        "anchors_expected": 25
+      }
+    },
+    "negative_control_statuses": {
+      "abstained": 8,
+      "source_excerpts": 14,
+      "clarification_needed": 2
+    },
+    "budget_violations": []
+  },
+  "anchor_changes": [
+    {
+      "id": "PHASE-NEW-01",
+      "before": [
+        true,
+        false
+      ],
+      "after": [
+        true,
+        true
+      ]
+    },
+    {
+      "id": "RBI-REF-03",
+      "before": [
+        false,
+        false
+      ],
+      "after": [
+        true,
+        true
+      ]
+    }
+  ],
+  "snapshot_unchanged": true
+}

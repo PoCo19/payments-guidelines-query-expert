@@ -1,0 +1,1845 @@
+{
+  "status": "complete",
+  "configuration": {
+    "source_pack": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026",
+    "ollama_url": "http://127.0.0.1:11434",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_model": "qwen3.5:9b",
+    "query_instruction": "Given a question about payment guidelines, retrieve relevant passages that answer the question.",
+    "context_length": 16384,
+    "max_output_tokens": 3072,
+    "model_timeout_seconds": 300,
+    "vector_backend": "chroma",
+    "chunker_version": "clauses-v1",
+    "context_scope": "related",
+    "context_char_budget": 18000,
+    "adaptive_retrieval": true,
+    "reranker_enabled": true,
+    "reranker_path": "models/reranker",
+    "claim_check_enabled": true,
+    "review_overlays": true,
+    "data_dir": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\releases\\payments-ocr-audit-20261015",
+    "multi_product": true,
+    "embedding_cache": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-23\\i-have-a-set-of-circulars\\data\\embedding_cache.sqlite3",
+    "evidence_graph_path": "pilot/upi_extended_graph_v3.json"
+  },
+  "installed_models": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "modified_at": "2026-09-24T01:11:59.6552717+05:30",
+        "size": 6594474711,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 4096
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "tools",
+          "thinking"
+        ]
+      },
+      {
+        "name": "qwen3-embedding:0.6b",
+        "model": "qwen3-embedding:0.6b",
+        "modified_at": "2026-09-24T00:55:17.9025643+05:30",
+        "size": 639150858,
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024
+        },
+        "capabilities": [
+          "tools",
+          "thinking",
+          "embedding"
+        ]
+      }
+    ]
+  },
+  "code_hashes": {
+    "adaptive_context.py": "567f7c6f1884d56defc719b066db3b076804b13ceee7b16971888256897b2095",
+    "answer_format.py": "ffcc1ab9bdc7406eac13d43a55099048eb15afa7cc9c23b992241904ce0bbfda",
+    "app.py": "7f9f42f00c46e07534e84f3e543d40b3fc9a9631312d103a10c0e1afa0ce45db",
+    "claim_check.py": "b0988ee837aa99fc58977570ac831fde2346c6ac751c9548c536448b52c115b0",
+    "claim_repair.py": "58ba859764706d50ed54c039d90688b831fa17a4165e861180be859e4f869b3f",
+    "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "download_reranker.py": "c7dfbccac6d11c0ecd6043b13d4b3655020d02e75bbf4b53fe5f7b1b1fac4c4c",
+    "embedding_cache.py": "5694593ce40fa954e03171870adb3fbccd5115cda4f52bb261681d842d6072f3",
+    "evidence_focus.py": "639d4eda19396d7aa7e3c3fd294c5ff33dce69256126d628aa5acca9ff4e6141",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+    "ingestion.py": "3d2e10e54a490bb0c3f05c2e55cc13a3f6452cf0662a002b129f2e0c6f97d0d6",
+    "intake_quality.py": "0a73d93b7eaa53dca2fd82d886f71077582779716f751adcacc426d1f6dcb0b7",
+    "launch_app.py": "9a1eaa91f1c6e4bf2d32bdf488fa6a205f9d680bac5f72928495ebc2827f0745",
+    "local_jobs.py": "eabbf3c9731bd4a6d4c8d76d6b7d062431fc779113bd178c4f9f9eacbc882a71",
+    "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+    "quality.py": "afdb3fc948d99f870678e89020b2690070a52e2fc2deb50d6c516664c265296c",
+    "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+    "registry.py": "6e06671cb6e5ce89fc93e45f6ed1f48c83a86e161e11e015389e7c0d2bfa69b2",
+    "request_runtime.py": "edf99122fc167f3520c5a6131df7a37a17c8f633972ae2634a10fec7a387489a",
+    "reranker.py": "6ad19fff021c211ce6b7f3efc4d36a72ad7bddb14b688e2258b6f7878509695a",
+    "research.py": "ba72cbaa99b49b56cf2984a6ec39cc2ef9aef8d184c68dedbdee7d307e16af26",
+    "scope_guard.py": "3e3828fb82845fe245423a2fbb6a6092f34028260fd8ffc68e41709baddcdd68",
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+    "vector_store.py": "2e818607a079111eb4b9da5aae739935dc8b4e9c2516ff7e08027a542400b585"
+  },
+  "source_capture_sha256": "feb2717a7546408c3bb9ae3b557e31cbd44cb4774c77ccc67006260f663b5056",
+  "cases": [
+    {
+      "id": "CHECK-01",
+      "claim": {
+        "text": "Pre-transaction notification is not required for FASTag auto-replenishment.",
+        "sources": [
+          "S8"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC).",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 476,
+          "end_word": 598,
+          "section_id": "rbi:e-mandates:2026-04-21:s8",
+          "section_heading": "6. Pre-transaction Notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "feature_ids": [
+            "autopay",
+            "netc_ncmc"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "score": 0.02608,
+          "citation": "S8",
+          "rerank_score": -3.27967,
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-02",
+      "claim": {
+        "text": "An issuer shall send a post-transaction notification to the customer.",
+        "sources": [
+          "S9"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] .",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 598,
+          "end_word": 654,
+          "section_id": "rbi:e-mandates:2026-04-21:s9",
+          "section_heading": "7. Post-transaction notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c10",
+          "feature_ids": [
+            "autopay"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "citation": "S9",
+          "retrieval_reason": "requested_phase_context",
+          "via_document_id": "rbi:e-mandates:2026-04-21",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-03",
+      "claim": {
+        "text": "Post-transaction notification is not required for FASTag auto-replenishment.",
+        "sources": [
+          "S8"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC).",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 476,
+          "end_word": 598,
+          "section_id": "rbi:e-mandates:2026-04-21:s8",
+          "section_heading": "6. Pre-transaction Notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "feature_ids": [
+            "autopay",
+            "netc_ncmc"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "score": 0.02608,
+          "citation": "S8",
+          "rerank_score": -3.27967,
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-04",
+      "claim": {
+        "text": "Post-transaction notification is not required for FASTag auto-replenishment.",
+        "sources": [
+          "S8",
+          "S9"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC).",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 476,
+          "end_word": 598,
+          "section_id": "rbi:e-mandates:2026-04-21:s8",
+          "section_heading": "6. Pre-transaction Notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "feature_ids": [
+            "autopay",
+            "netc_ncmc"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "score": 0.02608,
+          "citation": "S8",
+          "rerank_score": -3.27967,
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        },
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] .",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 598,
+          "end_word": 654,
+          "section_id": "rbi:e-mandates:2026-04-21:s9",
+          "section_heading": "7. Post-transaction notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c10",
+          "feature_ids": [
+            "autopay"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "citation": "S9",
+          "retrieval_reason": "requested_phase_context",
+          "via_document_id": "rbi:e-mandates:2026-04-21",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-05",
+      "claim": {
+        "text": "FASTag auto-replenishment is exempt from pre-transaction notification, while the issuer must send post-transaction notification.",
+        "sources": [
+          "S8",
+          "S9"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC).",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 476,
+          "end_word": 598,
+          "section_id": "rbi:e-mandates:2026-04-21:s8",
+          "section_heading": "6. Pre-transaction Notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c7",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "feature_ids": [
+            "autopay",
+            "netc_ncmc"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "score": 0.02608,
+          "citation": "S8",
+          "rerank_score": -3.27967,
+          "retrieval_reason": "direct_match",
+          "via_document_id": "",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        },
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] .",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 598,
+          "end_word": 654,
+          "section_id": "rbi:e-mandates:2026-04-21:s9",
+          "section_heading": "7. Post-transaction notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c10",
+          "feature_ids": [
+            "autopay"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "citation": "S9",
+          "retrieval_reason": "requested_phase_context",
+          "via_document_id": "rbi:e-mandates:2026-04-21",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-06",
+      "claim": {
+        "text": "Pre-transaction notification is mandatory for every FASTag auto-replenishment.",
+        "sources": [
+          "S9"
+        ]
+      },
+      "sources": [
+        {
+          "id": "rbi:e-mandates:2026-04-21:p1:v3c9",
+          "document_id": "rbi:e-mandates:2026-04-21",
+          "page": 1,
+          "text": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] .",
+          "title": "Digital Payments – E-mandate Framework, 2026",
+          "circular_number": "RBI/DPSS/2026-27/396",
+          "series": "E-mandates",
+          "issue_date": "2026-04-21",
+          "listed_update_date": null,
+          "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+          "method": "markdown_logical_page",
+          "review_status": "intake_text_not_verified",
+          "needs_priority_review": false,
+          "ocr_confidence": null,
+          "product_memberships": [
+            "E-mandates",
+            "UPI",
+            "PPI",
+            "Cards"
+          ],
+          "reference_label": "RBI/DPSS/2026-27/396",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 1,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": false,
+            "page_basis": "logical_markdown"
+          },
+          "metadata_quality": "operator_supplied_not_independently_verified",
+          "issuer": "RBI",
+          "document_type": "Framework / Directions",
+          "source_archive_retrieved_on": "2026-10-09",
+          "revision_of": null,
+          "start_word": 598,
+          "end_word": 654,
+          "section_id": "rbi:e-mandates:2026-04-21:s9",
+          "section_heading": "7. Post-transaction notification",
+          "clause_label": "",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c8",
+          "next_chunk_id": "rbi:e-mandates:2026-04-21:p1:v3c10",
+          "feature_ids": [
+            "autopay"
+          ],
+          "family": "",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "citation": "S9",
+          "retrieval_reason": "requested_phase_context",
+          "via_document_id": "rbi:e-mandates:2026-04-21",
+          "relation": null,
+          "source_group": "rbi",
+          "applicability": {
+            "entities": [
+              "payment system providers",
+              "payment system participants"
+            ],
+            "page": 1,
+            "quote": "The provisions of these Directions shall be applicable to all Payment System Providers and Payment System Participants in respect of processing of recurring transactions, domestic or cross-border, using cards / PPI / UPI.",
+            "basis": "operator_labels_with_source_quote_not_independently_verified"
+          },
+          "evidence_aspects": [
+            "requirements",
+            "limits",
+            "changes"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-07",
+      "claim": {
+        "text": "Credit Card Bill Payments have an enhanced per-transaction limit of INR 5 lakh.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-08",
+      "claim": {
+        "text": "Credit Card Bill Payments have a cumulative limit of INR 6 lakh over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-09",
+      "claim": {
+        "text": "Credit Card Bill Payments have a cumulative limit of INR 10 lakh over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-10",
+      "claim": {
+        "text": "Tax payments have a cumulative limit of INR 10 lakh over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-11",
+      "claim": {
+        "text": "Capital Market has a cumulative limit of INR 10 lakh over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-12",
+      "claim": {
+        "text": "Capital Market has a per-transaction limit of INR 10 lakh.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-13",
+      "claim": {
+        "text": "Credit Card Bill Payments allow INR 5 lakh for a single payment while INR 6 lakh is cumulative over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": true,
+      "review_status": "AI_assisted_requires_independent_review"
+    },
+    {
+      "id": "CHECK-14",
+      "claim": {
+        "text": "Credit Card Bill Payments allow INR 6 lakh for a single payment while INR 5 lakh is cumulative over 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      "sources": [
+        {
+          "id": "2025-OC-185B:p2:v3c1",
+          "document_id": "2025-OC-185B",
+          "page": 2,
+          "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "circular_number": "185B",
+          "series": "UPI",
+          "issue_date": "2025-08-28",
+          "listed_update_date": null,
+          "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+          "method": "ocr",
+          "review_status": "source_image_checked_transcription",
+          "needs_priority_review": false,
+          "ocr_confidence": 75,
+          "product_memberships": [
+            "UPI"
+          ],
+          "reference_label": "OC 185B",
+          "fiscal_year": null,
+          "source_coverage": {
+            "total_pages": 2,
+            "empty_pages": [],
+            "thin_pages": [],
+            "page_count_verified": true,
+            "origin": "existing_v04"
+          },
+          "metadata_quality": "existing_source_metadata",
+          "start_word": 0,
+          "end_word": 220,
+          "section_id": "2025-OC-185B:s1",
+          "section_heading": "Annexure I",
+          "clause_label": "1.",
+          "chunker_version": "clauses-v1",
+          "segmentation_status": "heuristic_not_reviewed",
+          "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+          "next_chunk_id": "2025-OC-185B:p2:v3c2",
+          "feature_ids": [
+            "autopay",
+            "credit_on_upi"
+          ],
+          "family": "185",
+          "feature_basis": "title_and_clause_regex_unreviewed",
+          "roles": [],
+          "role_basis": "text_regex_unreviewed",
+          "graph_anchor": "limits_cc",
+          "graph_scope": [
+            "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+            "Credit-card bill payments: separate per-transaction and daily columns",
+            "GeM EMD is a specified use case, not every MCC9311 payment"
+          ],
+          "citation": "S1",
+          "retrieval_reason": "graph_anchor",
+          "via_document_id": "",
+          "relation": {
+            "anchor_id": "limits_cc",
+            "review_status": "proposed_ai_assisted"
+          },
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "applicability": {},
+          "evidence_aspects": [
+            "requirements",
+            "limits"
+          ]
+        }
+      ],
+      "expected_supported": false,
+      "review_status": "AI_assisted_requires_independent_review"
+    }
+  ],
+  "rows": [
+    {
+      "id": "CHECK-01",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S8",
+              "quote": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC)."
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "Pre-transaction notification is not required for FASTag auto-replenishment.",
+          "sources": [
+            "S8"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-02",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S9",
+              "quote": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] ."
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "An issuer shall send a post-transaction notification to the customer.",
+          "sources": [
+            "S9"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-03",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Post-transaction notification is not required for FASTag auto-replenishment.",
+          "sources": [
+            "S8"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-04",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The local model accepted the selected evidence as support.",
+            "Selected supporting excerpts: The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ],
+          "quotes": [
+            {
+              "citation": "S8",
+              "quote": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC)."
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Post-transaction notification is not required for FASTag auto-replenishment.",
+          "sources": [
+            "S8",
+            "S9"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The local model accepted the selected evidence as support.",
+            "Selected supporting excerpts: The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-05",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S8",
+              "quote": "## 6. Pre-transaction Notification (a) An issuer shall send a pre-transaction notification to the customer, at least 24 hours prior to the actual charge / debit. (b) The pre-transaction notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date / time of debit, reference number of e-mandate, reason for debit, i.e., e-mandate registered by the customer. (c) The issuer shall provider a customer with a facility to opt-out of any particular transaction or the e-mandate. Any such opt-out shall be validated by the issuer using AFA. An intimation to this effect shall be sent to the customer. (d) Pre-transaction notification is not required for e-mandates registered to auto-replenish balances of FASTag, and National Common Mobility Card (NCMC)."
+            },
+            {
+              "citation": "S9",
+              "quote": "## 7. Post-transaction notification An issuer shall send a post-transaction notification to the customer. This notification shall, at the minimum, inform the customer about the merchant’s name, transaction amount, date and time of debit, reference number of transaction and e-mandate, reason for debit, i.e., e-mandate registered by the customer, and details on grievance redressal [[1](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374#F1)] ."
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "FASTag auto-replenishment is exempt from pre-transaction notification, while the issuer must send post-transaction notification.",
+          "sources": [
+            "S8",
+            "S9"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-06",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Pre-transaction notification is mandatory for every FASTag auto-replenishment.",
+          "sources": [
+            "S9"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The cited notification rule concerns a different event phase. A pre-transaction exemption does not establish a post-transaction exemption, or vice versa."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-07",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "Credit Card Bill Payments have an enhanced per-transaction limit of INR 5 lakh.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-08",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "Credit Card Bill Payments have a cumulative limit of INR 6 lakh over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-09",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Credit Card Bill Payments have a cumulative limit of INR 10 lakh over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-10",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Tax payments have a cumulative limit of INR 10 lakh over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-11",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "Capital Market has a cumulative limit of INR 10 lakh over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-12",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Capital Market has a per-transaction limit of INR 10 lakh.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CHECK-13",
+      "accepted": true,
+      "expected_supported": true,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "supported",
+          "reasons": [
+            "The local model accepted the selected evidence as support."
+          ],
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+            }
+          ],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [
+        {
+          "text": "Credit Card Bill Payments allow INR 5 lakh for a single payment while INR 6 lakh is cumulative over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "automated_supported"
+        }
+      ],
+      "flagged": []
+    },
+    {
+      "id": "CHECK-14",
+      "accepted": false,
+      "expected_supported": false,
+      "checks": [
+        {
+          "claim_index": 0,
+          "status": "uncertain",
+          "reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ],
+          "quotes": [],
+          "checker": "local_model_plus_deterministic_guards"
+        }
+      ],
+      "kept": [],
+      "flagged": [
+        {
+          "text": "Credit Card Bill Payments allow INR 6 lakh for a single payment while INR 5 lakh is cumulative over 24 hours.",
+          "sources": [
+            "S1"
+          ],
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ]
+        }
+      ]
+    }
+  ],
+  "caveat": "Fourteen deliberately constructed claims with AI-assisted expected labels. Not independent accuracy or a full checker benchmark.",
+  "summary": {
+    "false_acceptances": 0,
+    "valid_withheld": 0,
+    "checker_unavailable": 0
+  },
+  "snapshot_unchanged": true
+}

@@ -34,7 +34,15 @@ def save(path, data):
     path = Path(path)
     pending = path.with_suffix(path.suffix + '.pending')
     pending.write_text(json.dumps(data, indent=2, ensure_ascii=False, allow_nan=False), encoding='utf-8')
-    pending.replace(path)
+    # Windows readers/indexers can briefly hold the destination open. Keep the
+    # old complete record intact and retry the atomic replacement, never truncate.
+    for attempt in range(6):
+        try:
+            pending.replace(path)
+            break
+        except PermissionError:
+            if attempt==5:raise
+            time.sleep(.05 * 2**attempt)
 
 
 def local_url(url):
@@ -83,7 +91,8 @@ def adapt(case, response):
     return dict(user_input=case['query'], response=text, retrieved_contexts=contexts,
                 reference=case['expected_answer'], claims=claims,
                 abstained=bool(response.get('abstained')),
-                clarification_requested=bool(response.get('retrieval_trace', {}).get('ambiguities')),
+                clarification_requested=bool(response.get('retrieval_trace', {}).get('ambiguities') or response.get('retrieval_trace', {}).get('clarification')),
+                response_status=response.get('response_status'),
                 citation_ids=[s['citation'] for s in sources],
                 checks=dict(anchor_hits=hits, anchors_expected=len(hits),
                             invalid_citations=invalid, uncited_claims=uncited,

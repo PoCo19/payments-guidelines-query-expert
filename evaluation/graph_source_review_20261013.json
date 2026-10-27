@@ -1,0 +1,36 @@
+{
+  "review_type": "AI-assisted visual check; not independent human verification",
+  "corpus_modified": false,
+  "graph_review_status": "proposed_ai_assisted",
+  "sources": [
+    {
+      "file": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2026-07-03_OC-128A.pdf",
+      "sha256": "0eb1e46b9659d24847bb64a505fdb03056ccf0b2c7a5a1004b12e642aeebb5a7",
+      "pages_visually_inspected": [
+        1,
+        2
+      ],
+      "observations": [
+        "Table has DD applicability Yes for rows 59 and K1; separate No rows and use-case qualifications follow.",
+        "Capital-market / MCC 6211 context is separate from other OTM context.",
+        "Effective date appears on page 2: 15 July 2026.",
+        "Raw OCR has layout noise; code glyphs and complete applicability need independent source review."
+      ]
+    },
+    {
+      "file": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2026-07-03_OC-226A.pdf",
+      "sha256": "02688369c1dfe6ad0d2b4143fda290fc40a73b495e96381409f5669887374ec8",
+      "pages_visually_inspected": [
+        1
+      ],
+      "observations": [
+        "Paragraph changes the on-device biometric per-transaction limit from 5000 to 10000, effective 07 August 2026.",
+        "A separate paragraph explicitly retains existing validations, compliance requirements, specifications and regulatory guidelines."
+      ]
+    }
+  ],
+  "limitations": [
+    "Original OC128 PDF not inspected; imported source page 2 has an incomplete sentence.",
+    "Other potentially relevant circulars and current applicability are not established by this check."
+  ]
+}

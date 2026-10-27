@@ -1,0 +1,15 @@
+{
+  "purpose": "Graph pilot regression",
+  "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests -v",
+  "tests": 292,
+  "failures": 0,
+  "skips": 0,
+  "elapsed_seconds": 17.196,
+  "code_hashes": {
+    "graph_context.py": "00f76f335aa7709aaf39f6e2223befb5bc72e6effc5532f0c22c8a9f08fa8017",
+    "app.py": "3e6ccd4d36a0aadc23dddc372b592d8b1b9441cac0f2fc443bf4b486a55dc20c",
+    "adaptive_context.py": "4e4ce4e2680c8786342998c4eb78586f6d2e6d85c60a127a17a80db313ddef10",
+    "tests/test_graph_context.py": "210cddf8ffc92a02eaa982242acb098b1def011674f65fa38364df58af4077d5",
+    "pilot/upi_128_226_graph_v1.json": "7676793ed2a8352ad9f07023486e75196e28f65a6854b1958e1404883a2cf14a"
+  }
+}

@@ -1,0 +1,91 @@
+- complementary:
+  - link "Payments Guidelines Query Expert":
+    - /url: /
+    - text: Payments Guidelines
+    - text: Query Expert
+  - navigation:
+    - link "Research and source library":
+      - /url: /
+    - link "Payments workbench":
+      - /url: /work
+  - paragraph: Supervised prototypes · Local review records
+- main:
+  - generic: Payments workbench
+  - heading "Research. Review. Reuse." [level=1]
+  - paragraph: Query Desk and Change-Impact Briefs share cited evidence and versioned review. No automatic business actions.
+  - status: "Graph-assisted retrieval: active. 55 maintained anchors, 13 relationships. Links await independent review; coverage is limited to maintained topics."
+  - status: Completed
+  - generic "Create a work item" [active]
+  - option "Payments Query Desk" [selected]
+  - option "Change-Impact Brief"
+  - heading "Saved work" [level=2]
+  - button "Refresh"
+  - paragraph:
+    - button "What is UPI Tap and Pay?"
+    - text: · Query Desk · Draft · v4
+  - paragraph:
+    - button "What changed in the UPI biometric addendum, and what should a payments analyst review?"
+    - text: · Impact brief · Needs review · v3
+  - paragraph:
+    - button "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?"
+    - text: · Query Desk · Needs review · v3
+  - article:
+    - heading "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?" [level=2]
+    - paragraph: Needs review · version 3
+    - paragraph: No operating context supplied; institution-specific impact is not established.
+    - status: "incomplete: Partial draft — some statements were withheld during support checks."
+    - button "Generate cited draft"
+    - generic "Clarify the question or product"
+    - paragraph: Changing the request starts a new draft and clears the old answer. Earlier versions remain available. To choose a different set of documents, create another work item.
+    - text: Revised question
+    - textbox "Revised question": Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?
+    - text: Product
+    - textbox "Product": UPI
+    - button "Save clarified request"
+    - heading "Documented findings" [level=3]
+    - paragraph: Edits are human-authored and are not automatically rechecked. Keep supporting citations such as [S1].
+    - textbox: "The table in UPI OC 185B (The cited source) lists a 'Cumulative Limits (24 hrs)' of ₹10 Lakh for the Capital Market category but does not state that this figure sets the per-mandate limit for a single IPO. [S1] The cited source (OC 127) establishes that the per transaction value limit for UPI based ASBA IPO is Rs 5 Lakh, while The cited source (OC 71) historically advised maintaining a per transaction limit of Rs 2 lakhs for UPI based ASBA transactions. [S2, S8] Engineering test draft: independent payments review pending."
+    - button "Save as new draft version"
+    - button "Submit for review" [disabled]
+    - heading "Evidence and automated checks" [level=3]
+    - generic "S1 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 2"
+    - generic "S2 · UPI OC 127 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI · page 1"
+    - generic "S3 · Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI · page 2"
+    - generic "S4 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 1"
+    - generic "S5 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 1"
+    - generic "S6 · Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI · page 1"
+    - generic "S7 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 1"
+    - generic "S8 · Circular 71 - Enhancement of per transaction limit to Rs 2.Lakhs for UPI based ASBA · page 1"
+    - generic "S9 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 2"
+    - generic "S10 · Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI · page 1"
+    - generic "S11 · Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI · page 1"
+    - generic "S12 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 1"
+    - generic "S13 · Enablement of UPI Mandate feature of Single Block Multiple Debits · page 2"
+    - generic "S14 · Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI · page 2"
+    - generic "S15 · Compliance to Merchant Onboarding in UPI and Usage Limits · page 1"
+    - generic "S16 · Enablement of UPI Mandate feature of Single Block Multiple Debits · page 2"
+    - generic "S17 · Enablement of UPI Mandate feature of Single Block Multiple Debits · page 2"
+    - generic "S18 · Compliance to Merchant Onboarding in UPI and Usage Limits · page 1"
+    - generic "Automated findings and withheld claims"
+    - heading "Review this version" [level=3]
+    - paragraph: A name records who reviewed; it is not a verified login. Approval requires inspecting original sources and checking material qualifications.
+    - text: Reviewer
+    - textbox "Reviewer"
+    - text: Review rationale
+    - textbox "Review rationale"
+    - checkbox "I verified the original sources and citations."
+    - text: I verified the original sources and citations.
+    - checkbox "I verified qualifications, scope, dates and unresolved issues."
+    - text: I verified qualifications, scope, dates and unresolved issues.
+    - button "Approve"
+    - button "Reject"
+    - button "Export with evidence and review status"
+    - heading "Version history" [level=3]
+    - generic "Version 1 · 2026-10-23T19:29:25.575281+00:00"
+    - generic "Version 2 · 2026-10-23T19:30:03.014761+00:00"
+    - generic "Version 3 · 2026-10-24T04:09:23.591481+00:00"
+    - paragraph: v1 · created · 2026-10-23T19:29:25.576277+00:00
+    - paragraph: v1 · generation started · 2026-10-23T19:29:42.274199+00:00
+    - paragraph: v2 · generated · 2026-10-23T19:30:03.015781+00:00
+    - paragraph: v3 · edited · 2026-10-24T04:09:23.591481+00:00
+    - paragraph: v3 · submit · 2026-10-24T04:09:32.936834+00:00

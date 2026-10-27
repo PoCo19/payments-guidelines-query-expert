@@ -2,6 +2,15 @@
 const Intake = (() => {
   let uploads=[],busy=false,pendingAction=null;
   const value=id=>$('#intake-'+id).value.trim();
+  function qualityNotice(quality){
+    if(!quality)return '';
+    const pages=(quality.pages || []).filter(p=>(p.findings || []).length);
+    if(!pages.length)return '';
+    const blocked=quality.blocked_pages || [];
+    return '<details class="notice" open><summary>Source review: '+pages.length+' flagged page(s)</summary>'+
+      (blocked.length?'<p>Quarantined pages: '+blocked.map(esc).join(', ')+'. Correct the source or use a documented page review before indexing.</p>':'<p>Review these details against the original; flags do not necessarily indicate errors.</p>')+
+      pages.map(p=>'<p>Page '+esc(p.page)+': '+p.findings.map(f=>esc(f.detail)).join(' ')+'</p>').join('')+'</details>';
+  }
   const progress=(message,seconds)=>{const p=$('#intake-progress');p.hidden=false;p.textContent=message+(seconds===undefined?'':' · '+Math.round(seconds)+'s');};
   async function operation(fn){
     if(busy)return;busy=true;clearError();
@@ -10,12 +19,14 @@ const Intake = (() => {
     finally{busy=false;$('#intake').querySelectorAll('button').forEach(b=>b.disabled=false);}
   }
   function renderUploads(){
-    $('#intake-uploads').innerHTML=uploads.map(u=>'<article class="intake-item"><h3>'+esc(u.metadata.title)+'</h3><p>'+esc(u.metadata.issuer)+' · '+u.page_count+' '+(u.physical_pages?'PDF pages':'logical text pages')+'</p><p>'+esc(u.note)+'</p>'+(u.thin_pages.length?'<p class="notice">Thin or empty pages: '+u.thin_pages.join(', ')+'. '+(u.metadata.allow_partial?'Partial extraction accepted; warnings retained.':'This document will be quarantined.')+'</p>':'')+(u.duplicates.length?'<p class="notice">Duplicate source: '+u.duplicates.map(d=>esc(d.title)).join(', ')+'. Remove it from this batch.</p>':'')+u.pages.map(p=>'<details><summary>Preview page '+p.page+' · '+p.characters+' characters</summary><pre class="intake-preview">'+esc(p.text)+'</pre></details>').join('')+'<button data-remove-upload="'+u.token+'">Remove from batch</button></article>').join('');
+    $('#intake-uploads').innerHTML=uploads.map(u=>'<article class="intake-item"><h3>'+esc(u.metadata.title)+'</h3><p>'+esc(u.metadata.issuer)+' · '+u.page_count+' '+(u.physical_pages?'PDF pages':'logical text pages')+'</p><p>'+esc(u.note)+'</p>'+qualityNotice(u.intake_quality)+(u.thin_pages.length?'<p class="notice">Thin or empty pages: '+u.thin_pages.join(', ')+'. '+(u.metadata.allow_partial?'Partial extraction accepted; warnings retained.':'This document will be quarantined.')+'</p>':'')+(u.duplicates.length?'<p class="notice">Duplicate source: '+u.duplicates.map(d=>esc(d.title)).join(', ')+'. Remove it from this batch.</p>':'')+u.pages.map(p=>'<details><summary>Preview page '+p.page+' · '+p.characters+' characters</summary><pre class="intake-preview">'+esc(p.text)+'</pre></details>').join('')+'<button data-remove-upload="'+u.token+'">Remove from batch</button></article>').join('');
     $('#intake-prepare-controls').hidden=!uploads.length;
     $('#intake-reviewed').checked=false;
   }
   function candidate(p){
-    $('#intake-candidate').innerHTML='<article class="intake-item"><h2>Candidate library</h2><p>'+esc(p.release)+' · '+esc(p.status)+'</p>'+p.documents.map(d=>'<p>'+esc(d.subject)+' — '+esc(d.availability.replaceAll('_',' '))+'</p>').join('')+(p.validation?'<p>Validated '+p.validation.chunks+' chunks. New embeddings: '+p.validation.embeddings.computed+'; reused: '+p.validation.embeddings.cache_hits+'. Structural checks are not answer-accuracy checks.</p>':'')+(['prepared','validated'].includes(p.status)?'<button data-build-release="'+esc(p.release)+'">'+(p.status==='validated'?'Rebuild candidate':'Build index')+'</button> ':'')+(p.status==='validated'?'<button class="primary" data-activate-release="'+esc(p.release)+'">Activate reviewed version</button>':'')+'</article>';
+    const graph=p.validation?.graph_assistance;
+    const graphNotice=graph?'<p class="notice">Graph-assisted retrieval: '+esc(graph.status)+'. '+esc(graph.warning || 'Maintained source anchors validated; independent relationship review remains separate.')+'</p>':'';
+    $('#intake-candidate').innerHTML='<article class="intake-item"><h2>Candidate library</h2><p>'+esc(p.release)+' · '+esc(p.status)+'</p>'+p.documents.map(d=>'<p>'+esc(d.subject)+' — '+esc(d.availability.replaceAll('_',' '))+'</p>'+qualityNotice(d.intake_quality)).join('')+(p.validation?'<p>Validated '+p.validation.chunks+' chunks. New embeddings: '+p.validation.embeddings.computed+'; reused: '+p.validation.embeddings.cache_hits+'. Structural checks are not answer-accuracy checks.</p>':'')+(['prepared','validated'].includes(p.status)?'<button data-build-release="'+esc(p.release)+'">'+(p.status==='validated'?'Rebuild candidate':'Build index')+'</button> ':'')+(p.status==='validated'?'<button class="primary" data-activate-release="'+esc(p.release)+'">Activate reviewed version</button>':'')+graphNotice+'</article>';
   }
   async function refresh(){
     try{const releases=await api('/api/intake/releases');$('#intake-releases').innerHTML=releases.map(r=>'<p><button data-preview-release="'+esc(r.release)+'">'+esc(r.release)+'</button> · '+esc(r.status==='active' && !r.can_rollback?'previous activation':r.status)+(r.can_rollback?' <button data-rollback-release="'+esc(r.release)+'">Roll back this activation</button>':'')+'</p>').join('') || '<p>No intake releases yet.</p>';}

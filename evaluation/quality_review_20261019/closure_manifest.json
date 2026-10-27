@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-20T07:36:37.900258+00:00",
+  "changed_production_modules": [
+    "adaptive_context.py",
+    "claim_repair.py",
+    "evidence_focus.py"
+  ],
+  "final_code_hashes": {
+    "adaptive_context.py": "e4520b458e77b88003df3e8a2483e1a27d54cd8517201884abc968eec6666fed",
+    "answer_format.py": "ffcc1ab9bdc7406eac13d43a55099048eb15afa7cc9c23b992241904ce0bbfda",
+    "app.py": "079d0c853198bdbbb08b528be947afd69e17648a6fd32b5adfcd720167e75e68",
+    "claim_check.py": "506e5a11e301ff939dc56a05521687b4e7acb5c523fd4810c76b784e74e6a2ef",
+    "claim_repair.py": "b1d31f4c7fa92a383ee85f46a3cc40430606e99fbbaddac03e4c51da7c68b29e",
+    "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "download_reranker.py": "c7dfbccac6d11c0ecd6043b13d4b3655020d02e75bbf4b53fe5f7b1b1fac4c4c",
+    "embedding_cache.py": "5694593ce40fa954e03171870adb3fbccd5115cda4f52bb261681d842d6072f3",
+    "evidence_focus.py": "4d84b03387c0dc1a66faffe73ce98399126bbdd40b4c0558d59e406defbdcb9a",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "graph_context.py": "c8299e398664b53ab31ea1289ccaa2c999a3f5c5860bc4048a149fba04e80b8a",
+    "ingestion.py": "3d2e10e54a490bb0c3f05c2e55cc13a3f6452cf0662a002b129f2e0c6f97d0d6",
+    "intake_quality.py": "0a73d93b7eaa53dca2fd82d886f71077582779716f751adcacc426d1f6dcb0b7",
+    "launch_app.py": "9a1eaa91f1c6e4bf2d32bdf488fa6a205f9d680bac5f72928495ebc2827f0745",
+    "local_jobs.py": "eabbf3c9731bd4a6d4c8d76d6b7d062431fc779113bd178c4f9f9eacbc882a71",
+    "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+    "quality.py": "afdb3fc948d99f870678e89020b2690070a52e2fc2deb50d6c516664c265296c",
+    "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+    "reference_graph.py": "10822c1ec62349d3dcc3934a7141961d0212aa896b48d0bbb7ef1efcbe957818",
+    "registry.py": "6e06671cb6e5ce89fc93e45f6ed1f48c83a86e161e11e015389e7c0d2bfa69b2",
+    "request_runtime.py": "edf99122fc167f3520c5a6131df7a37a17c8f633972ae2634a10fec7a387489a",
+    "reranker.py": "6ad19fff021c211ce6b7f3efc4d36a72ad7bddb14b688e2258b6f7878509695a",
+    "research.py": "d5b9a35557248bddea2b85969968f1fa89285dabe48c68cec3ab856865894f57",
+    "scope_guard.py": "bc7e7e1fe04d90bddb57bcfe37b08446957f562df00c8f931530483c71b2e92c",
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+    "vector_store.py": "2e818607a079111eb4b9da5aae739935dc8b4e9c2516ff7e08027a542400b585",
+    "evaluation\\quality_cycle.py": "456d238e439ed79f907174d4161e33bf5b0b9bef4bd68b5f0528395ea8b234f3",
+    "evaluation\\repair_replay.py": "3d1b6fd13e04bcbb2ded57efa52af3166994f4d5c4fde52b5575ad2d01601f3b",
+    "evaluation\\generation_focus_experiment.py": "395ca245d89a8a5c0a3f1d1d3e411914b4ce705028ed2ebe57eaf61889767dc8",
+    "evaluation\\coverage_candidate.py": "4ee7775795e14eadc5f6c10dd7b01cc2b9c43348d2ee7e0178f805ac5e41672b",
+    "evaluation\\coverage_review_candidate.py": "979ff83594324f245e6cef8599407334b5f429520cd98b3459b207aed728363b",
+    "tests\\test_quality_cycle.py": "534f7728ca742177776875357f892bfc9260d80841c07d7a2cd7eced53f6a460"
+  },
+  "configuration_unchanged": true,
+  "corpus_hashes_unchanged": true,
+  "source_hashes": {
+    "index.json": "3d9181d6734c99d2b06f7c5e958b258e092d5d33d8368054c9728ec1f4ec55a9",
+    "all_circular_pages.jsonl": "a9e7144f6f20090c99578fc8aa6933fd07182d491485b6ddeda5b3a5c6a94f33",
+    "review_annotations.json": "cd4f26006df1703d832a962615f6735b17b2a6d9de564d581d83697f25f279e6",
+    "feature_rules.json": "792ef665425210502e35493f9953a3893c6698a9cbd8bc2448bd1652cd65b0b0",
+    "source_manifest.json": "47237f4a4a9731151e18fc6b5f2c4be76ad998652f211263a084338bcd04398a"
+  },
+  "python_tests": {
+    "passed": 399,
+    "failed": 0,
+    "log": "regression-tests-closed.txt"
+  },
+  "javascript_suites": {
+    "passed": 3,
+    "log": "frontend-tests.txt"
+  },
+  "coverage_challenge_capture": "evaluation\\quality_runs\\20261020T124418596737Z\\capture.json",
+  "live_run_before_defensive_fix": "evaluation/quality_runs/20261020T072515613851Z/capture.json",
+  "live_pass": false,
+  "browser_release_verification": "deferred",
+  "application_server_restarted": false,
+  "github_published": false,
+  "coverage_challenge_complete": true,
+  "live_repeat_capture": "evaluation/quality_runs/20261020T073818315407Z/capture.json",
+  "live_generation_without_fallback": true,
+  "live_pass_reason": "Not an answer-quality acceptance pass: incomplete/attribution issues and four unavailable coverage reviews remain.",
+  "coverage_candidate_promoted": false,
+  "closed_utc": "2026-10-20T12:49:29.531484+00:00",
+  "documentation_links_checked": 7,
+  "final_code_hashes_verified": true,
+  "pending": [
+    "Eligibility omissions and source attribution",
+    "Historical detail missing from synthesis",
+    "Completeness reviewer reliability",
+    "Independent labels/source review",
+    "Final browser/recovery/clean-copy release verification"
+  ]
+}

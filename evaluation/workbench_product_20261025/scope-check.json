@@ -1,0 +1,15 @@
+{
+  "baseline": "Frozen engineering candidate 2026-10-24",
+  "engine_class_ast_unchanged": true,
+  "core_files_byte_identical": {
+    "research.py": true,
+    "adaptive_context.py": true,
+    "graph_context.py": true,
+    "claim_check.py": true,
+    "claim_repair.py": true,
+    "scope_guard.py": true,
+    "evidence_focus.py": true,
+    "product_scope.py": true
+  },
+  "config_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "flags": [
+    {
+      "id": "ocr-currency-oc185b-p1",
+      "document_id": "2025-OC-185B",
+      "page": 1,
+      "page_sha256": "5c2c1e1a1933359c98f58a9b8cdc0d83efa46bad44c319c28dd4453d0ddecc7a",
+      "repaired_page_sha256": "0e4fcdb7e2fa50d570e905cdf97fe8284f54bdd0656c604a4d75c4dc23f68066",
+      "repair_record": "source_repairs/oc185b-20261014/repair_record.json",
+      "unsafe_quote": "Tax Payments to 25 lakh.",
+      "action": "exclude_model_use",
+      "reason": "A rupee symbol was read as an extra digit in a monetary amount. Source text requires versioned correction.",
+      "review_status": "AI_visual_check_independent_review_pending",
+      "evidence_record": "evaluation/graph_source_review_20261014.json"
+    }
+  ]
+}

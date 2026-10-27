@@ -1,0 +1,293 @@
+{
+  "count": 11,
+  "classifications": {
+    "ranking_or_context_selection": 6,
+    "not_in_initial_candidate_pool": 5
+  },
+  "capture_sha256": "dcfde319bc44a12ea4b814fb9e12da421274d1257f315017cebc1eafdd4a43cc",
+  "corpus_fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+  "findings": [
+    {
+      "case": "PAY-013",
+      "query": "Do the e-mandate AFA rules mean UPI Autopay apps may automatically port a customer mandate under OC 223?",
+      "reference": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c6"
+      ],
+      "stage_positions": {
+        "before_rerank": 38,
+        "after_rerank": 23,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "PAY-014",
+      "query": "For a non-bank payment aggregator applicant, how do the generic authorisation and PA-specific capital rules fit together?",
+      "reference": {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "not_in_initial_candidate_pool",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:authorisation:2026-06-15:p1:v3c14"
+      ],
+      "stage_positions": {
+        "before_rerank": null,
+        "after_rerank": null,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "PAY-017",
+      "query": "What was the initial transaction limit for on-device biometric authentication in NPCI OC 226, and was it final?",
+      "reference": {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "initially be available for transactions up to Rs. 5,000",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      "classification": "not_in_initial_candidate_pool",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "2025-OC-226:p1:v3c5"
+      ],
+      "stage_positions": {},
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "PAY-017",
+      "query": "What was the initial transaction limit for on-device biometric authentication in NPCI OC 226, and was it final?",
+      "reference": {
+        "document_id": "2025-OC-226",
+        "page": 1,
+        "quote": "The limit shall be reviewed in due course",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_226_FY_2025_26_Introduction_of_Additional_Authentication_methods_in_UPI_42c3693399.pdf",
+        "page_basis": "source_page"
+      },
+      "classification": "not_in_initial_candidate_pool",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "2025-OC-226:p1:v3c5"
+      ],
+      "stage_positions": {},
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-005",
+      "query": "Must a bank use a text-message OTP as its second factor, or can it offer other compliant ways to authenticate a payment?",
+      "reference": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "at least two distinct factors of authentication",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "stage_positions": {
+        "before_rerank": 39,
+        "after_rerank": 7,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-005",
+      "query": "Must a bank use a text-message OTP as its second factor, or can it offer other compliant ways to authenticate a payment?",
+      "reference": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "stage_positions": {
+        "before_rerank": 39,
+        "after_rerank": 7,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-008",
+      "query": "Who is eligible to seek entry to payment systems under the RBI participation framework, and is that the same as permission to operate one?",
+      "reference": {
+        "document_id": "rbi:access-criteria:2021-07-28",
+        "page": 1,
+        "quote": "all scheduled/ licensed banks operating in India and authorised payment system providers",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10833",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:access-criteria:2021-07-28:p1:v3c8"
+      ],
+      "stage_positions": {
+        "before_rerank": 4,
+        "after_rerank": 16,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-010",
+      "query": "Are customers required to replace their existing UPI authentication with biometrics? Distinguish RBI principles, PIN setup and transaction authentication.",
+      "reference": {
+        "document_id": "rbi:authentication:2025-09-25",
+        "page": 1,
+        "quote": "offer a choice of authentication factors",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12898",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:authentication:2025-09-25:p1:v3c10"
+      ],
+      "stage_positions": {
+        "before_rerank": 7,
+        "after_rerank": 32,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-013",
+      "query": "If the required authentication is completed, may a UPI AutoPay app move a customer mandate on its own? Explain customer initiation and repeat-porting restrictions.",
+      "reference": {
+        "document_id": "rbi:e-mandates:2026-04-21",
+        "page": 1,
+        "quote": "Any modification in, or withdrawal of, an existing e-mandate shall require AFA",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13374",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "not_in_initial_candidate_pool",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:e-mandates:2026-04-21:p1:v3c6"
+      ],
+      "stage_positions": {
+        "before_rerank": null,
+        "after_rerank": null,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-PAY-014",
+      "query": "For a non-bank PA applicant, how should we read the general payment-system capital framework alongside the payment-aggregator-specific capital milestones?",
+      "reference": {
+        "document_id": "rbi:authorisation:2026-06-15",
+        "page": 1,
+        "quote": "capital requirement shall be in accordance with the Guidelines/ Directions",
+        "source_url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13502",
+        "page_basis": "logical_markdown"
+      },
+      "classification": "not_in_initial_candidate_pool",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "rbi:authorisation:2026-06-15:p1:v3c14"
+      ],
+      "stage_positions": {
+        "before_rerank": null,
+        "after_rerank": null,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    },
+    {
+      "case": "X-LIMIT-02",
+      "query": "Are the enhanced UPI merchant payment ceilings available to any merchant or person-to-person transfer? May a bank retain a lower ceiling?",
+      "reference": {
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "quote": "| 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh |",
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf"
+      },
+      "classification": "ranking_or_context_selection",
+      "source_quote_present": true,
+      "matching_chunks": [
+        "2025-OC-185B:p2:v3c1"
+      ],
+      "stage_positions": {
+        "before_rerank": 49,
+        "after_rerank": 29,
+        "protected_seed_ids": null,
+        "table_focus_ids": null,
+        "phase_focus_ids": null,
+        "phase_companion_ids": null
+      },
+      "selected": false,
+      "reference_review": "AI-assisted expected anchor; relevance and essentiality await independent review.",
+      "next_action": "Inspect exact candidate and inclusion traces; confirm this anchor is essential before changing ranking."
+    }
+  ]
+}

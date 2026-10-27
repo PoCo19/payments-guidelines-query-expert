@@ -1,0 +1,35 @@
+{
+  "formatting_source": "model_layout",
+  "answer_blocks": [
+    {
+      "type": "paragraph",
+      "claims": [
+        {
+          "text": "UPI Lite is an 'On-Device wallet' functionality designed by NPCI to process small value digital payments in offline or near-offline mode.",
+          "sources": [
+            "S5"
+          ],
+          "draft_index": 1,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "It allows users to allocate funds from their bank account to a balance that resides on-device within the UPI App, where only debit is permitted and credits are processed online.",
+          "sources": [
+            "S5"
+          ],
+          "draft_index": 2,
+          "support_status": "automated_supported"
+        },
+        {
+          "text": "UPI Lite transactions are offered without a UPI PIN but require app authentication (biometric, pattern, etc.) unless disabled by the user.",
+          "sources": [
+            "S4",
+            "S13"
+          ],
+          "draft_index": 3,
+          "support_status": "automated_supported"
+        }
+      ]
+    }
+  ]
+}

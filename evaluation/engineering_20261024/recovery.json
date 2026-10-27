@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "checks": {
+    "rebuilt_index": {
+      "passed": true,
+      "fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+      "registry_fingerprint": "5e2427c12b25c7b3ccc9f777cd8279acdeec3fab5b080113d699105a20323c3b",
+      "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+      "documents": 1929,
+      "chunks": 14480,
+      "limitation": "Structural and per-intake-document retrieval checks; not expert answer correctness."
+    },
+    "active_graph": {
+      "status": "active",
+      "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+      "anchors": 55,
+      "relationships": 13,
+      "topics": [
+        "upi_deemed_debit",
+        "upi_biometric",
+        "upi_modes_76",
+        "upi_safeguards_141",
+        "upi_category_limits_185",
+        "upi_ipo_limit"
+      ],
+      "review_status": "proposed_ai_assisted",
+      "warning": null,
+      "corpus_expansion": "not_selected_for_release",
+      "limitation": "Graph coverage is bounded. All other eligible documents remain searchable. Links do not establish supersession."
+    },
+    "model_outage": {
+      "status": "model_unavailable",
+      "evidence_count": 12,
+      "claims": 0
+    },
+    "zzqqvv mmkkrr": "abstained",
+    "What is required under UPI OC999999X?": "abstained",
+    "Tap & Pay limit?": "clarification_needed",
+    "stale_graph": {
+      "status": "degraded",
+      "fingerprint": null,
+      "anchors": 0,
+      "relationships": 0,
+      "topics": [],
+      "review_status": null,
+      "warning": "Graph expansion unavailable: Graph source changed; review anchors: dd_original. Standard retrieval remains available.",
+      "corpus_expansion": "not_selected_for_release",
+      "limitation": "Graph coverage is bounded. All other eligible documents remain searchable. Links do not establish supersession."
+    },
+    "interrupted_work": {
+      "busy": 0,
+      "version": 1,
+      "event": "interrupted"
+    },
+    "intake_activation_rollback": {
+      "build": {
+        "passed": true,
+        "fingerprint": "f54c8b003b1e4d496f66f6101945dd460da420f6715b0326bf92904dd05755da",
+        "registry_fingerprint": "66b74d9973a7e1e76cbc56ccd34170fe4cbc53568941b2f826661530ef2ffbd4",
+        "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "documents": 1930,
+        "chunks": 14481,
+        "limitation": "Structural and per-intake-document retrieval checks; not expert answer correctness.",
+        "graph_assistance": {
+          "status": "active",
+          "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+          "anchors": 55,
+          "relationships": 13,
+          "topics": [
+            "upi_deemed_debit",
+            "upi_biometric",
+            "upi_modes_76",
+            "upi_safeguards_141",
+            "upi_category_limits_185",
+            "upi_ipo_limit"
+          ],
+          "review_status": "proposed_ai_assisted",
+          "warning": null,
+          "corpus_expansion": "not_selected_for_release",
+          "limitation": "Graph coverage is bounded. All other eligible documents remain searchable. Links do not establish supersession."
+        },
+        "created_at": "2026-10-23T19:25:55.757086+00:00",
+        "embeddings": {
+          "chunks": 14481,
+          "computed": 1,
+          "cache_hits": 14480,
+          "dimension": 1024,
+          "model": "qwen3-embedding:0.6b",
+          "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+          "fingerprint": "f54c8b003b1e4d496f66f6101945dd460da420f6715b0326bf92904dd05755da",
+          "elapsed_seconds": 15.9
+        }
+      },
+      "activation": {
+        "status": "active",
+        "release": "qa24-isolated-intake",
+        "graph_assistance": {
+          "status": "active",
+          "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+          "anchors": 55,
+          "relationships": 13,
+          "topics": [
+            "upi_deemed_debit",
+            "upi_biometric",
+            "upi_modes_76",
+            "upi_safeguards_141",
+            "upi_category_limits_185",
+            "upi_ipo_limit"
+          ],
+          "review_status": "proposed_ai_assisted",
+          "warning": null,
+          "corpus_expansion": "not_selected_for_release",
+          "limitation": "Graph coverage is bounded. All other eligible documents remain searchable. Links do not establish supersession."
+        },
+        "next_step": "Restart run.cmd to load this release."
+      },
+      "rollback": {
+        "status": "rolled_back",
+        "next_step": "Restart run.cmd. Both source releases were retained."
+      },
+      "original_config_restored": true
+    }
+  },
+  "scope": "Isolated engineering recovery; not independent payments acceptance",
+  "corpus_unchanged": true
+}

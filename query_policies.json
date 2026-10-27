@@ -1,0 +1,8 @@
+[
+  {
+    "term": "Tap & Pay",
+    "pattern": "\\btap\\s*(?:&|and)?\\s*pay\\b",
+    "question": "Do you mean UPI Tap & Pay or RuPay contactless payments?",
+    "products": ["UPI", "RuPay"]
+  }
+]

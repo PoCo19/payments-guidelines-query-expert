@@ -1,0 +1,19 @@
+{
+  "cases": 138,
+  "unique_request_specs": 138,
+  "groups": {
+    "graph": 40,
+    "original_upi": 50,
+    "paraphrases": 28,
+    "payments": 20
+  },
+  "input_sha256": {
+    "evaluation/rag_cases.json": "a09ceaac119e46119f48ebc1e2f5701a8bbc759bfa40400d5307a736d7c00362",
+    "evaluation/payments_cases_v1.json": "33aa63a3765ba279e05f027bd909ce39a586461a497f2d785f55247b16a177bf",
+    "evaluation/expanded_evidence_cases_20261017.json": "759f4d54b47eb3a7a32999f0d96e5f8133236511da786cd0c71c35dd51e27773",
+    "pilot/upi_extended_graph_v3.json": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+    "evaluation/graph_pilot_cases_v2.json": "ea33866e31b296508714d7b61ae5ffcb182172b83a4da4f263728444a3c5d564"
+  },
+  "dataset_sha256": "bc7cf369caeb946b1249cc9c07f60fc41e4fea8101c52d8461c782ddfa736448",
+  "caveat": "Consolidated existing development cases, including related paraphrases. Not new independent questions or a held-out benchmark. Graph and expectations were co-designed. Original routes preserved; legacy UPI filter explicit. No answer-correctness metric."
+}

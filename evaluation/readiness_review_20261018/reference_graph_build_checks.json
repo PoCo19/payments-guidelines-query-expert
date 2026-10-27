@@ -1,0 +1,13 @@
+{
+  "v3_v4_reference_edges_identical": true,
+  "cached_pages_reused": 4832,
+  "edges_identical": true,
+  "topic_mentions_identical": true,
+  "unique_resolved_document_pairs": 234,
+  "numbering_families": 210,
+  "topic_mentions": 2963,
+  "topic_documents": 1131,
+  "all_runtime_anchors_valid": true,
+  "broader_candidate_enabled": false,
+  "maintained_graph_path": "pilot/upi_extended_graph_v3.json"
+}

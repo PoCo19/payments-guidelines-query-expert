@@ -1,0 +1,28 @@
+{
+  "review_type": "AI visual check; independent review pending",
+  "source_corpus_modified": false,
+  "checks": [
+    {
+      "file": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2025-08-28_OC-185B.pdf",
+      "sha256": "d44d26aeaa594a9693035f2f7054b6a4bb962c3ced94e9523e3c5ac55f8bd127",
+      "pages": [
+        1
+      ],
+      "findings": [
+        "PDF shows rupee sign followed by 5 lakh in the tax reference. Indexed OCR reads 25 lakh.",
+        "Do not interpret the indexed 25 lakh as a new tax limit; source repair is needed."
+      ]
+    },
+    {
+      "file": "C:\\Users\\Admin\\Documents\\Codex\\2026-09-22\\https-www-npci-org-in-circulars\\outputs\\UPI_Research_Pack_2023_2026\\source_pdfs\\2025-04-08_OC-76C.pdf",
+      "sha256": "7ba278aee9bb1a5a398c66f76d83904015a3221e58d19ceb98137ab11299e04b",
+      "pages": [
+        2
+      ],
+      "findings": [
+        "Domestic QR share and pay for non-verified offline P2M is separated from the international UPI Global P2M prohibition.",
+        "Compliance date printed as 30 April 2025."
+      ]
+    }
+  ]
+}

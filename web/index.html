@@ -2,17 +2,20 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Payments Guidelines Query Expert</title><link rel="stylesheet" href="/style.css"><script src="/answer_format.js" defer></script><script src="/research_view.js" defer></script><script src="/jobs.js" defer></script><script src="/app.js" defer></script><script src="/intake.js" defer></script></head>
 <body>
 <aside class="sidebar">
-<a class="brand" href="/" aria-label="Payments Guidelines Query Expert home"><span class="brand-mark">pg<span>•</span></span><span>Payments Guidelines<br>Query Expert</span></a>
+<a class="brand" href="/work" aria-label="Payments Research Workbench home"><span class="brand-mark">pg<span>•</span></span><span>Payments Research<br>Workbench</span></a>
 <div class="workspace-label">YOUR WORKSPACE</div>
 <nav aria-label="Main navigation">
-<button class="nav active" data-view="explore"><span>⌕</span> Ask a question</button>
+<a class="nav" href="/work">Overview</a>
+<button class="nav active" data-view="explore"><span>⌕</span> Ask &amp; Research</button>
 <button class="nav" data-view="library"><span>▤</span> Guideline library <small id="nav-count"></small></button>
 <button class="nav" data-view="intake"><span>＋</span> Add documents</button>
+<a class="nav" href="/work?kind=query">Query Desk</a>
+<a class="nav" href="/work?kind=impact">Change Briefs</a>
 <details class="tools-menu"><summary>Project tools</summary><button class="nav" data-view="experiments"><span>◈</span> Experiments</button>
 <button class="nav" data-view="review"><span>✓</span> Source review</button>
 </details><button class="nav" data-view="about"><span>ⓘ</span> About this project</button>
 </nav>
-<div class="sidebar-bottom"><div class="local"><i></i> Runs on your computer</div><p>Midterm capstone prototype</p></div>
+<div class="sidebar-bottom"><div class="local"><i></i> Runs on your computer</div><p>Supervised payments research</p></div>
 </aside>
 <main>
 <header><div><span class="breadcrumb">WORKSPACE</span><span class="slash">/</span><span id="view-label">Ask a question</span></div><span class="badge"><i></i> Local AI assistant</span></header>
@@ -73,7 +76,7 @@
 </section>
 
 <section id="about" class="view" hidden><div class="eyebrow">MIDTERM CAPSTONE</div><h1>About this project</h1><p class="intro">Payments Guidelines Query Expert helps payments product, operations and compliance teams find and understand documented requirements. <span data-corpus-label>Imported payment guidelines.</span></p>
-<div class="stats" id="stats"><div class="stat">Loading collection details…</div></div>
+<p id="graph-health" class="notice" role="status"></p><div class="stats" id="stats"><div class="stat">Loading collection details…</div></div>
 <div class="note-card"><h3>What you can do</h3><p>Ask a question with citations, inspect the supporting source, and summarise or compare selected circulars. The app runs locally with pretrained models.</p><h3>How an answer is produced</h3><p>Your question and filters select relevant passages using keyword and semantic search. A local reranker orders candidates for focused questions. The language model receives a limited selection of evidence and drafts a cited answer. Citation and support checks run before the answer is displayed.</p><h3>What needs review</h3><p>The collection is a snapshot, not a live feed. Extracted text and dates can be incomplete. Related circulars do not automatically replace one another. Automated checks help find errors but do not guarantee correctness.</p><p id="collection-snapshot" class="micro"></p><h3>Next steps</h3><p>1. Validate answers with independent reviewers.<br>2. Improve retrieval and source quality based on observed failures.<br>3. Test with payments users and prepare a repeatable local demonstration. Further source coverage is an optional extension after validation.</p></div><details><summary>Model and index details</summary><div id="model-status" class="notice"></div></details></section>
 <footer><span>PAYMENTS GUIDELINES QUERY EXPERT</span><span>Local capstone prototype · <span data-corpus-label>Imported payment guidelines</span></span></footer>
 </main>
