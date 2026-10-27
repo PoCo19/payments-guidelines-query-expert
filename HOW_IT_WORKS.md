@@ -1,10 +1,12 @@
 # Payments Guidelines Query Expert flow
 
+For a beginner-friendly explanation of the current build, read [the team project flow](docs/team/PROJECT_FLOW.md) and [concepts guide](docs/team/CONCEPTS.md). Dated implementation notes below preserve the development history.
+
 The capstone focuses on evidence-grounded payments research. NPCI is the initial corpus; cross-functional feature orchestration is a separate experiment outside this submission.
 
 The central design decision is to preserve document identity while retrieving across related documents. Metadata, semantic similarity and model interpretation have different jobs: none alone establishes legal applicability.
 
-## Current research implementation
+## Dated research implementation notes
 
 [19–20 October quality cycle](docs/QUALITY_CYCLE_20261019.md): protect relevant notification-phase candidates that reranking demotes, then retain the missing phase in a bounded claim-repair request. Recovery uses existing retrieved evidence and same-document context; it does not alter source text or embeddings. A 144-question paired development run found three additional source anchors without losses. Experiments with extra generation instructions and a second coverage reviewer were not promoted because they did not consistently improve answers.
 
@@ -14,7 +16,7 @@ The central design decision is to preserve document identity while retrieving ac
 
 [11 October reliability update](docs/IMPLEMENTATION_20261011.md): clarify shared feature names before retrieval; preserve complementary sources around named references; protect strong lexical/original candidates from reranker demotion; select exact source excerpts by ID during claim checking; label a draft incomplete when its central answer is withheld. Validation status and remaining checks are recorded separately from the implemented flow.
 
-Current product scope and future priorities: [midterm scope](output/midsem/CURRENT_SCOPE.md).
+Current product flow: [team guide](docs/team/PROJECT_FLOW.md). The [midterm scope](output/midsem/CURRENT_SCOPE.md) records the earlier submission scope.
 
 
 Implementation refreshed 10 October 2026. This local AI capstone retrieves evidence from NPCI circulars and eight RBI direction snapshots. It uses pretrained models without training Qwen on those documents. The midterm files remain a historical submission package.
@@ -51,7 +53,7 @@ flowchart TD
     L --> M
     M --> N[Evidence-only view OR local Qwen draft]
     N --> O[Citation validation and per-claim support checks]
-    O --> O1[Validated layout: paragraphs, bullets or ordered steps]
+    O --> O1[Validated layout: prose, lists or optional evidence tables]
     O1 --> P[Supported draft, withheld claims, source reader and export]
     P --> V[Independent review and evaluation feedback]
 ```
@@ -64,7 +66,7 @@ The browser submits a local job and polls its stage, so it can show retrieval, d
 
 ## 1. Import and review
 
-The active app reads `index.json` and `all_circular_pages.jsonl` from the release selected by `config.json` (`payments-rbi-core-20261009` on this machine). The importer preserves raw Markdown and inventories under that dataset’s `sources/` folder with checksums. Same-source listings are joined into canonical records and product memberships; different URLs are not merged only because text matches. Existing reviewed UPI text wins on overlaps. Two known title/body conflicts are quarantined. Import commands and rollback are in `docs/MULTI_PRODUCT_IMPORT.md`.
+The app reads `index.json` and `all_circular_pages.jsonl` from the release selected by its runtime configuration. The current portable handoff uses `config.workbench.json` and `payments-workbench-20261027`; personal intake uses an ignored `config.json`. The importer preserves raw Markdown and inventories under the dataset’s `sources/` folder with checksums. Same-source listings are joined into canonical records and product memberships; different URLs are not merged only because text matches. Existing reviewed UPI text wins on overlaps. Two known title/body conflicts are quarantined. Import commands and rollback are in `docs/MULTI_PRODUCT_IMPORT.md`.
 
 The incoming inventories span archive years 2009–2026 and were generated 9–15 September 2026; retained UPI material extends through 22 September. This was not a live website reconciliation. New issue dates remain unknown, even when the inventory supplies a fiscal year. Blank extracted pages remain visible and are never embedded.
 
@@ -150,7 +152,7 @@ Open Ollama. Double-click `run.cmd` in the project folder and keep its window op
 
 After accepting source reviews: stop the app, run `.\run.cmd embed`, then `.\run.cmd`. The application uses immutable fingerprinted snapshots and refuses a stale vector index. No rebuild is needed just to adjust context/output limits.
 
-For colleagues: share this updated flow, `docs/VALIDATION_V05.md` and the beginner guide. Current screenshots are in `docs/screenshots/v05-*.png`. The existing v0.4 PDF is historical and does not describe the expanded corpus. Do not send `.venv` or the vector database as reading material.
+For colleagues: share [TEAM_START_HERE.md](TEAM_START_HERE.md) and its linked guides. The v0.5 validation/screenshots and v0.4 PDF are historical; they do not describe all current workflows. Do not send `.venv` or the vector database as reading material.
 
 A reusable SQLite embedding cache records exact text/model hashes. Rebuilds reuse unchanged vectors, then publish a complete Chroma snapshot. The initial expanded build took about 15.4 minutes; ordinary questions do not re-embed the corpus.
 

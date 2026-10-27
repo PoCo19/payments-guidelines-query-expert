@@ -1,10 +1,14 @@
 # Current project status — 27 October 2026
 
+The development handoff is published on GitHub `main`. The tested code/source commit is `ff470b81747e23b2e63f5260c4db6ec0552584b5`; the subsequent teammate-onboarding changes document that build and update the setup help message. Start with [TEAM_START_HERE.md](TEAM_START_HERE.md) and [HOW_TO_RUN.md](HOW_TO_RUN.md).
+
 The [27 October GitHub development handoff](docs/GITHUB_HANDOFF_20261027.md) includes current code, the corrected source snapshot and matching maintained graph. Additional checks passed **465 Python tests**; negative smoke inputs abstained. A broad UPI Lite answer returned historical limits without the later amendment, and both positive smoke completeness checks were unavailable. This is an open answer-quality regression, not a production-ready release. See [saved results](evaluation/release_20261027/README.md).
 
 Adaptive presentation closeout is complete: the final combination-of-tables-and-prose handling passed 15 focused formatting tests, all four frontend suites passed again, and the current application was restarted and checked in the browser. The preceding full suite passed 463 tests. Independent answer-quality acceptance remains separate and pending.
 
 Latest presentation extension: [Automatic style with optional tables](docs/ADAPTIVE_ANSWER_PRESENTATION_20261026.md), consistent saved-answer rendering and Markdown export. **463 Python tests and four JavaScript suites passed.** Seven development model calls retained incomplete-answer warnings; a saved comparison produced a table through a deterministic layout-only replay. This does not establish answer-quality improvement. Corpus, embeddings, retrieval and evidence-checking logic are unchanged.
+
+## Historical review-clarity verification — 26 October 2026
 
 The [review clarity increment](docs/REVIEW_CLARITY_20261026.md) separates automatic answer checks, optional human sign-off on a saved response, and independent project evaluation. Query Desk leads with answers, edits and evidence export. Human sign-off and saved revisions are in collapsed sections; existing states, decision requirements, freshness guards and history are preserved.
 

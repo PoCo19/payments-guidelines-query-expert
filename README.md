@@ -1,5 +1,7 @@
 # Payments Guidelines Query Expert
 
+**New to the project? Start with [the teammate guide](TEAM_START_HERE.md).** For installation and everyday startup, use [HOW_TO_RUN.md](HOW_TO_RUN.md). The guides explain the flow, concepts, three workspaces and contribution process without assuming prior RAG knowledge.
+
 Evidence-grounded research for payments teams. Search payment circulars, ask questions with citations, and summarise or compare selected documents while inspecting the original evidence.
 
 **Initial corpus: NPCI circulars; local expansion now includes eight core RBI directions.** The active local library covers multiple NPCI products and the RBI snapshots collected on 9 October 2026. The original 50-case UPI evaluation is preserved; a separate 20-case RBI–NPCI development set now tests broader questions. This is a local research assistant, not an authoritative compliance decision-maker.
@@ -22,7 +24,7 @@ The maintained graph remains a supported bounded retrieval component; automatic 
 
 The corrected OC185B passage is searchable in the active OCR-audit source release and the 27 October workbench handoff. [Historical source repair](docs/SOURCE_REPAIR_AND_GRAPH_DECISION_20261014.md). No additional source or embedding changes were made for the workflow implementation. The older Git tag below predates the workflows; use the current colleague guide for the latest checkout.
 
-Use the **handoff-2026-10-10.1** Git tag and [step-by-step handoff guide](docs/COLLEAGUE_HANDOFF.md). The source archive includes the NPCI corpus and eight RBI direction snapshots, with hash-checked restoration, portable configuration and saved evaluation records.
+For historical reproduction only, use the **handoff-2026-10-10.1** Git tag and [its handoff guide](docs/COLLEAGUE_HANDOFF.md). New teammates should use the current setup above, not that older tag.
 
 ## Mid-sem submission
 
@@ -30,11 +32,11 @@ Use the **handoff-2026-10-10.1** Git tag and [step-by-step handoff guide](docs/C
 
 The eight-slide presentation follows the supplied AI/ML sample structure. A three-page report explains module choices, trade-offs, observed findings and future evaluation. Review copies await team identity and contribution details. Recording and portal submission remain pending.
 
-The active local corpus has 1,929 register records, 1,570 searchable documents, 4,834 page records and 14,480 chunks. The eight RBI records use logical HTML-derived text pages, not physical PDF pages. A fresh Git clone includes the frozen source archive; run `handoff.cmd restore` to restore the expanded corpus. Generated release databases remain excluded from Git. It is an imported snapshot, not a live archive mirror. Shared circulars may belong to multiple products.
+The source handoff has 1,929 register records, 1,570 searchable documents, 4,834 page records and 14,480 chunks. The eight RBI records use logical HTML-derived text pages, not physical PDF pages. After setup, run `.venv\Scripts\python.exe tools\handoff.py restore --workbench` to restore the current frozen archive. Generated release databases remain excluded from Git. It is an imported snapshot, not a live archive mirror. Shared circulars may belong to multiple products.
 
 ## Run
 
-Open Ollama, then double-click **run.cmd** in this folder. Open **http://127.0.0.1:8765** and keep the server running. In PowerShell use `.\run.cmd`; no execution-policy change is needed. For a fresh clone, follow [collaboration and setup instructions](CONTRIBUTING.md). Models and vector indexes must be installed or rebuilt locally.
+For first-time setup, follow [HOW_TO_RUN.md](HOW_TO_RUN.md). Afterward, open Ollama and run `.venv\Scripts\python.exe app.py serve --config config.workbench.json`. Open **http://127.0.0.1:8765** and keep the server running. Existing users with an intentional personal `config.json` can continue using `run.cmd`; no PowerShell execution-policy change is needed.
 
 Open **Payments workbench** in the navigation for Query Desk and Change-Impact Briefs.
 

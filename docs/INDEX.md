@@ -1,6 +1,8 @@
 # Current capstone documents
 
-Start with [mid-sem submission package](../output/midsem/START_HERE.md), [validation and limitations](MIDSEM_VALIDATION.md), and [payments research flow](../HOW_IT_WORKS.md).
+New teammates: start with [the reading guide](../TEAM_START_HERE.md), [how to run](../HOW_TO_RUN.md), [current flow](team/PROJECT_FLOW.md), [concepts](team/CONCEPTS.md), [application walkthrough](team/USING_THE_APP.md) and [team contribution guide](team/WORKING_TOGETHER.md).
+
+The [mid-sem package](../output/midsem/START_HERE.md) and [mid-sem validation](MIDSEM_VALIDATION.md) are historical submission records. Use [current project status](../PROJECT_STATUS.md) for later implementation and limitations.
 
 The selected capstone is Payments Guidelines Query Expert. NPCI is the initial corpus. Feature Workspace documents below describe a separate experiment and are outside the submission.
 

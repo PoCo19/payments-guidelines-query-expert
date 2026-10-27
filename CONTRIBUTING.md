@@ -1,5 +1,7 @@
 # Current workbench setup
 
+First read [TEAM_START_HERE.md](TEAM_START_HERE.md). [HOW_TO_RUN.md](HOW_TO_RUN.md) covers setup; [Working together](docs/team/WORKING_TOGETHER.md) maps the code and explains the branch/test/review process.
+
 For the latest code, corrected source snapshot and maintained graph, follow [the 27 October handoff](docs/GITHUB_HANDOFF_20261027.md). Earlier handoff tags remain historical. This is a development build with documented answer-quality limitations.
 
 # Working together

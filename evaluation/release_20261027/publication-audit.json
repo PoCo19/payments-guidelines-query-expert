@@ -1,6 +1,6 @@
 {
-  "candidate_files": 2647,
-  "total_bytes": 281298995,
+  "candidate_files": 2654,
+  "total_bytes": 281339925,
   "files_over_50mb": [],
   "findings": [],
   "limitation": "Checks known credential patterns and local-file exclusions only; not a security certification."

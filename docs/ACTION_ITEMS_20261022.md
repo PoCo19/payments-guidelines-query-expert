@@ -1,6 +1,8 @@
 # Payments research workbench — action register
 
-Updated 24 October 2026. This is the active register for Payments Query Desk and Change-Impact Briefs. Historical experiments retain their original results.
+Updated 27 October 2026. This is the active register for Payments Query Desk and Change-Impact Briefs. Historical experiments retain their original results.
+
+The user authorized GitHub publication on 27 October. The development build and corrected source/graph handoff are published on `main`; see [current teammate setup](../TEAM_START_HERE.md). Earlier publication exclusions below describe their dated increments. Independent acceptance remains pending, including the historical-limit finding in [additional checks](../evaluation/release_20261027/README.md).
 
 **Engineering implementation and operational checks completed; answer-quality acceptance remains open.** [Closeout and evidence](ENGINEERING_CLOSEOUT_20261024.md): 445 Python tests, four JavaScript suites, fresh pinned installation, complete cached-vector index rebuild, intake/rollback/recovery and both browser workflows. The portable archive is an engineering candidate, not a pilot-approved release.
 
@@ -38,7 +40,7 @@ Updated 24 October 2026. This is the active register for Payments Query Desk and
 | A7 | Run and score reviewed 50 cases | Engineering + payments reviewer | Zero critical errors, 27/30 materially complete answers, 20/20 controls, resolvable citations and 95% supported claims are proposed gates, not achievements. |
 | A8 | Development latency measurement closed | Engineering | 10 warm observations per workflow meet proposed timing targets. Repeat with accepted answers after material quality changes; current small sample is not an SLA. |
 | A9 | Engineering candidate verification closed; pilot sign-off pending | Engineering + payments reviewer | Clean install/rebuild, browser, recovery and intake checks passed. Repeat affected checks after fixes; independent acceptance still prevents a release-ready claim. |
-| A10 | Engineering candidate handoff closed; approved handoff pending | Engineering + payments reviewer | Portable candidate and setup/evidence are ready. A pilot-approved package requires remaining gates. No GitHub publication authorized. |
+| A10 | Development handoff published; approved handoff pending | Engineering + payments reviewer | Current code, source package, graph and colleague guides are on GitHub. A pilot-approved package requires remaining gates. |
 
 Independent review must come from a payments colleague. AI-generated expected answers, local reviewer names and successful software tests do not satisfy it.
 

@@ -1,0 +1,49 @@
+{
+  "checked_at_utc": "2026-10-27T15:42:42.381772+00:00",
+  "document_files": [
+    "TEAM_START_HERE.md",
+    "HOW_TO_RUN.md",
+    "docs/team/PROJECT_FLOW.md",
+    "docs/team/CONCEPTS.md",
+    "docs/team/USING_THE_APP.md",
+    "docs/team/WORKING_TOGETHER.md",
+    "README.md",
+    "CONTRIBUTING.md",
+    "HOW_IT_WORKS.md",
+    "PROJECT_STATUS.md",
+    "docs/INDEX.md",
+    "docs/ACTION_ITEMS_20261022.md"
+  ],
+  "local_link_count": 164,
+  "missing_local_links": [],
+  "cli_help_checks": [
+    {
+      "args": [
+        "app.py",
+        "serve",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: app.py [-h] [--port PORT] [--config CONFIG]\n              [{serve,evaluate,embed,migrate}]\n\npositional arguments:\n  {serve,evaluate,embed,migrate}\n\noptions:\n  -h, --help            show this help message and exit\n  --port PORT\n  --config CONFIG"
+    },
+    {
+      "args": [
+        "app.py",
+        "embed",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: app.py [-h] [--port PORT] [--config CONFIG]\n              [{serve,evaluate,embed,migrate}]\n\npositional arguments:\n  {serve,evaluate,embed,migrate}\n\noptions:\n  -h, --help            show this help message and exit\n  --port PORT\n  --config CONFIG"
+    },
+    {
+      "args": [
+        "tools/handoff.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: handoff.py [-h] [--workbench] {restore,verify,models}\n\nRestore and verify the frozen colleague source handoff (standard library\nonly).\n\npositional arguments:\n  {restore,verify,models}\n\noptions:\n  -h, --help            show this help message and exit\n  --workbench           Use the current workbench source release and portable\n                        configuration"
+    }
+  ],
+  "frozen_package_validation": "passed",
+  "limits": "Documentation and CLI syntax checks only. No new model evaluation, fresh dependency installation or vector rebuild. Existing test evidence remains dated separately."
+}
