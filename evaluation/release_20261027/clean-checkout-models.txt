@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "command": "models",
+  "models_match": true,
+  "reranker_matches": true
+}

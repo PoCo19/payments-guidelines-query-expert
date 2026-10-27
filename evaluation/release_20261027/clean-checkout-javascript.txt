@@ -1,0 +1,7 @@
+Answer rendering: paragraphs, bullets, steps, mixed, citations, empty output, export and escaping passed.
+Tables: mixed blocks, cited cells, semantic headers and escaping passed.
+Intake UI: flagged candidate, quarantine notice, escaping and legacy candidate passed.
+Research coverage rendering: escaping, citation links, missing evidence, findings and export passed.
+Answer wording: automated checks, human sign-off and unsuccessful checks remain distinct.
+Workbench: safe rendering, citation links, filters, dates and advisory states passed.
+Optional human sign-off: distinct labels, preserved stale-source warning and collapsed controls passed.

@@ -56,3 +56,5 @@ node tests\test_work_view.js
 ```
 
 Use a branch for collaboration, record the commit used for each experiment, and keep the frozen source/config files unchanged when comparing results. See `evaluation/release_20261027/README.md` for the publication checks and their limits.
+
+The clean-source checkout passed 465 Python tests and four JavaScript suites using the existing pinned test environment and hash-verified reranker assets. Restoration reproduced the source/registry fingerprints, 14,480 chunks and 20 existing case anchors, and validated the maintained graph. This check did not repeat a fresh dependency installation or build all embeddings.
