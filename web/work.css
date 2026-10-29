@@ -7,3 +7,10 @@
 .workbench .nav{text-decoration:none}.workbench #finding-options label{font-size:12px;padding:12px;background:#f4f6f1;border-radius:7px}
 
 .workbench #confirm-work{max-width:500px;width:90vw;padding:26px;border:1px solid var(--line);border-radius:14px;line-height:1.8}.workbench #confirm-work::backdrop{background:#132a2466}
+.workbench .saved-filters{margin:12px 0 20px}.workbench .saved-filters>summary{font-size:13px;color:var(--green)}
+.workbench .record-options{position:relative;font-size:13px}.workbench .record-options button{margin:8px!important}
+.workbench #brief-focus{margin:20px 0}.workbench #impact-notes>summary{font-weight:600}
+.workbench #saved-panel:has(+ #work-detail:not([hidden])){display:none}
+.workbench #create-panel:not([hidden]) ~ #saved-panel{display:none}
+.workbench #flow-strip{flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

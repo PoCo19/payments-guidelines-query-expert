@@ -1,0 +1,31 @@
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.05}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.02}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.04}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+............................................................................................................................................................................WARNING:pypdf._reader:invalid pdf header: b'not a'
+WARNING:pypdf._reader:EOF marker not found
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d2", "fingerprint": "fp", "elapsed_seconds": 0.0}
+..........................................................................................................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 470 tests in 14.300s
+
+OK

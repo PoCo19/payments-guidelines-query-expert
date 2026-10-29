@@ -78,4 +78,12 @@ flowchart TD
 
 The shared engine uses the maintained graph with the current handoff configuration. Whole-corpus automatic graph expansion is not selected. Context-enriched BM25 and structured-evidence-before-synthesis experiments are not enabled by default. Their code and results remain for reproducibility, not as proof that they improved the deployed flow.
 
-The current open UPI Lite regression demonstrates why these boundaries matter: the system can retrieve a historical provision and miss an available later amendment. More readable output does not fix that failure. See [the saved test findings](../../evaluation/release_20261027/README.md).
+The UPI Lite investigation found that candidate retrieval had located an amendment, but final context assembly retained its historical preface and dropped its operative clause. Broad explanations now recover at most two matching amendment provisions from already retrieved candidates, within existing budgets and filters. Historical/exact-document routes bypass this addition. This does not infer supersession or guarantee that the model explains the evidence correctly. See [current verification](../PRODUCT_MATURITY_20261028.md).
+
+## How the two tasks use this flow
+
+Asking a question runs the flow above. Saving its result copies the completed answer, evidence and settings snapshot; it does not call a more accurate second model.
+
+Understanding a change starts with source selection. The user confirms the revised document and comparison baseline. The shared engine uses its document-comparison route and is instructed to separate earlier/revised provisions, source-backed conditions, dates and unresolved points. Absence from a newer document is not proof of retention or withdrawal. Internal notes are optional human input, not automatically generated departmental obligations.
+
+Both results can be saved, inspected and exported. Human sign-off records a person's local decision. It is separate from automatic checks and the independently reviewed acceptance benchmark. Existing source-change invalidation and version history remain in place.

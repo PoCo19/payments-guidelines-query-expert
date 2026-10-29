@@ -1,0 +1,442 @@
+{
+  "request": {
+    "query": "What limit did UPI OC169 introduce?",
+    "mode": "generate",
+    "method": "hybrid",
+    "rerank": true,
+    "answer_style": "auto",
+    "document_ids": [
+      "2023-UPI-169"
+    ],
+    "scope": "strict"
+  },
+  "result": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "UPI OC169 introduced a new per transaction value limit of ₹500 for UPI LITE (Purpose code 44 - Online and 45 - Offline), replacing the previous limit of ₹200.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "The circular also clarified that pricing rules applicable to amounts between ₹201 and ₹500 apply to both P2P and P2M transactions under this new limit.",
+            "sources": [
+              "S1",
+              "S2"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "strict",
+      "seed_chunk_ids": [
+        "2023-UPI-169:p1:v3c1",
+        "2023-UPI-169:p1:v3c2"
+      ],
+      "included_chunk_ids": [
+        "2023-UPI-169:p1:v3c1",
+        "2023-UPI-169:p1:v3c2"
+      ],
+      "evidence_characters": 2564,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [],
+      "document_coverage": {},
+      "requested_circulars": [
+        "169"
+      ],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 2,
+        "elapsed_ms": 26
+      },
+      "candidate_stages": {
+        "before_rerank": [
+          "2023-UPI-169:p1:v3c1",
+          "2023-UPI-169:p1:v3c2"
+        ],
+        "after_rerank": [
+          "2023-UPI-169:p1:v3c1",
+          "2023-UPI-169:p1:v3c2"
+        ],
+        "protected_seed_ids": [
+          "2023-UPI-169:p1:v3c1",
+          "2023-UPI-169:p1:v3c2"
+        ],
+        "topic_query": "What limit did UPI OC169 introduce?",
+        "table_focus_ids": [],
+        "phase_focus_ids": [],
+        "overview_change_ids": [],
+        "phase_companion_ids": []
+      },
+      "retrieval_seed_policy": "balanced",
+      "research_policy": "publisher_neutral_v2",
+      "followup_query": null,
+      "query_plan": {
+        "query": "What limit did UPI OC169 introduce?",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "limits"
+        ],
+        "product_filter": null,
+        "issue_date_cutoff": null,
+        "selected_document_ids": [
+          "2023-UPI-169"
+        ],
+        "focus_terms": [
+          "did",
+          "introduce",
+          "limit",
+          "oc169",
+          "upi"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "2023-UPI-169",
+          "title": "Enhancement in UPI LITE transaction limit to ₹500",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2023-08-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S2",
+          "document_id": "2023-UPI-169",
+          "title": "Enhancement in UPI LITE transaction limit to ₹500",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2023-08-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "limits",
+          "label": "Limits and thresholds",
+          "citations": [
+            "S1"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+    },
+    "sources": [
+      {
+        "id": "2023-UPI-169:p1:v3c1",
+        "document_id": "2023-UPI-169",
+        "page": 1,
+        "text": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement",
+        "title": "Enhancement in UPI LITE transaction limit to ₹500",
+        "circular_number": "169",
+        "series": "UPI",
+        "issue_date": "2023-08-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "2023-UPI-169:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2023-UPI-169:p1:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03279,
+        "citation": "S1",
+        "rerank_score": 1.62775,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2023-UPI-169:p1:v3c2",
+        "document_id": "2023-UPI-169",
+        "page": 1,
+        "text": "₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changes on the App & application systems. Members are requested to make the necessary changes with immediate effect. Yours sincerely, SD/- Kunal Kalawatia Chief of Products",
+        "title": "Enhancement in UPI LITE transaction limit to ₹500",
+        "circular_number": "169",
+        "series": "UPI",
+        "issue_date": "2023-08-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 185,
+        "end_word": 249,
+        "section_id": "2023-UPI-169:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-169:p1:v3c1",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03226,
+        "citation": "S2",
+        "rerank_score": -0.5291,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "changes"
+        ]
+      }
+    ],
+    "claims": [
+      {
+        "text": "UPI OC169 introduced a new per transaction value limit of ₹500 for UPI LITE (Purpose code 44 - Online and 45 - Offline), replacing the previous limit of ₹200.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "The circular also clarified that pricing rules applicable to amounts between ₹201 and ₹500 apply to both P2P and P2M transactions under this new limit.",
+        "sources": [
+          "S1",
+          "S2"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review."
+    ],
+    "answer": "Draft answer — check the supporting excerpts.",
+    "abstained": false,
+    "central_answer_status": "retained",
+    "response_status": "draft",
+    "coverage_check": {
+      "status": "not_needed_for_simple_scope",
+      "findings": [],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+    },
+    "elapsed_ms": 5015,
+    "timing": {
+      "total_seconds": 5.015,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "embedding",
+          "seconds": 0.046
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "model_metadata",
+          "seconds": 0.016
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.063
+        },
+        {
+          "stage": "generation",
+          "seconds": 3.046
+        },
+        {
+          "stage": "claim_support",
+          "seconds": 1.844
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "embedding",
+          "status": "completed",
+          "timeout_seconds": 20.0,
+          "prompt_tokens": 32,
+          "output_tokens": null,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.0,
+          "decode_seconds": 0.0,
+          "done_reason": null,
+          "seconds": 0.046
+        },
+        {
+          "stage": "model_metadata",
+          "status": "completed",
+          "timeout_seconds": 10.0,
+          "seconds": 0.016
+        },
+        {
+          "stage": "generation",
+          "status": "completed",
+          "timeout_seconds": 60.0,
+          "prompt_tokens": 2239,
+          "output_tokens": 152,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.732,
+          "decode_seconds": 2.165,
+          "done_reason": "stop",
+          "seconds": 3.046
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 843,
+          "output_tokens": 31,
+          "load_seconds": 0.003,
+          "prompt_seconds": 0.326,
+          "decode_seconds": 0.448,
+          "done_reason": "stop",
+          "seconds": 0.906
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 1052,
+          "output_tokens": 31,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.382,
+          "decode_seconds": 0.442,
+          "done_reason": "stop",
+          "seconds": 0.922
+        }
+      ]
+    }
+  },
+  "seconds": 5.015
+}

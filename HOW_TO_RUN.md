@@ -79,8 +79,9 @@ The second command checks the restored package and runtime fingerprints; it is *
 
 Keep this terminal open. Visit:
 
-- `http://127.0.0.1:8765/` — Ask & Research.
-- `http://127.0.0.1:8765/work` — Query Desk and Change Briefs.
+- `http://127.0.0.1:8765/` — Ask a question.
+- `http://127.0.0.1:8765/work` — Saved work.
+- `http://127.0.0.1:8765/work?kind=impact` — Understand a change.
 
 Leave **Answer style → Automatic** to let the answer use suitable prose, lists or tables. Start with a specific question, inspect at least one citation and read any warnings. Use the [application guide](docs/team/USING_THE_APP.md) for the first walkthrough. Press **Ctrl+C** in the server terminal to stop it.
 

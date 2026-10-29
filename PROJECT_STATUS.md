@@ -1,4 +1,12 @@
-# Current project status — 27 October 2026
+# Current project status — 29 October 2026
+
+The product-clarity development update is implemented: **Ask a question** and **Understand a change** share one engine; **Saved work** supports both. Document-first comparisons, optional review/history, simpler navigation and updated teammate/demo guides are in place. The publication package contains the code, teammate documentation and evaluation records; see the [publication checks](docs/GITHUB_UPDATE_20261029.md).
+
+Verification: **474 Python tests and four JavaScript suites passed**. The final 144-question paired retrieval check preserved **223/234 anchors**, with zero lost anchors or errors. The targeted UPI Lite operative amendment is now recovered, including the tested “simple words” paraphrase. Live probes produced corrected limit figures but still showed scope/novelty errors and incomplete answers. **Engineering implementation is complete; independent answer acceptance is not.**
+
+See [implementation](docs/PRODUCT_MATURITY_20261028.md), [results and limitations](evaluation/product_maturity_20261027/README.md), [team start](TEAM_START_HERE.md), and [demonstration](docs/team/DEMONSTRATION.md). Models, corpus, embeddings, maintained graph and storage formats are unchanged. API integration remains out of scope.
+
+## Historical status — 27 October 2026
 
 The development handoff is published on GitHub `main`. The tested code/source commit is `ff470b81747e23b2e63f5260c4db6ec0552584b5`; the subsequent teammate-onboarding changes document that build and update the setup help message. Start with [TEAM_START_HERE.md](TEAM_START_HERE.md) and [HOW_TO_RUN.md](HOW_TO_RUN.md).
 

@@ -1,0 +1,1648 @@
+{
+  "request": {
+    "query": "What are the UPI Lite transaction and total balance limits?",
+    "mode": "generate",
+    "method": "hybrid",
+    "rerank": true,
+    "answer_style": "auto"
+  },
+  "result": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "The most recent limits for UPI Lite are a per-transaction limit of ₹1,000 and a total balance limit of ₹5,000 at any point in time.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "Earlier provisions established lower limits, specifically a per-transaction limit of ₹200 with a total balance limit of ₹2,000.",
+            "sources": [
+              "S2",
+              "S5"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "A subsequent circular in 2023 increased the per-transaction limit to ₹500 while maintaining the total balance limit at ₹2,000.",
+            "sources": [
+              "S3"
+            ],
+            "draft_index": 3,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S2",
+            "quote": "UPI Lite (including refunds, etc.) will be processed online in the User’s bank account maintained in the bank’s core banking system. The upper limit of an UPI Lite payment transaction shall be ₹200/-.The total limit of UPI Lite balance for an “On-device wallet” shall be ₹2,000/- at any point of time. Replenishment of funds in UPI Lite shall only be allowed in online mode with additional factor authentication (AFA) or using UPI AutoPay which has been registered by the User in online mode with AFA."
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 2,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S3",
+            "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "2025-OC-169A:p1:v3c2",
+        "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+        "2023-UPI-169:p1:v3c1",
+        "2025-OC-169A:p1:v3c3",
+        "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+        "npci-source-5a8de8043d311df7f2560420:p2:v3c10"
+      ],
+      "included_chunk_ids": [
+        "2025-OC-169A:p1:v3c2",
+        "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+        "2023-UPI-169:p1:v3c1",
+        "2025-OC-169A:p1:v3c3",
+        "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+        "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+        "2025-OC-169A:p1:v3c1",
+        "npci-source-5a8de8043d311df7f2560420:p2:v3c1",
+        "2023-UPI-169:p1:v3c2",
+        "npci-source-5a8de8043d311df7f2560420:p1:v3c1",
+        "npci-source-5a8de8043d311df7f2560420:p2:v3c11",
+        "npci-source-5a8de8043d311df7f2560420:p2:v3c9",
+        "2025-OC-138B:p1:v3c2",
+        "2023-UPI-179:p1:v3c7",
+        "2025-OC-221:p1:v3c1"
+      ],
+      "evidence_characters": 15669,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 64,
+        "elapsed_ms": 876
+      },
+      "candidate_stages": {
+        "before_rerank": [
+          "2025-OC-169A:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+          "2023-UPI-169:p1:v3c1",
+          "2025-OC-169A:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+          "2024-OC-205:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c5",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c9",
+          "2025-OC-169A:p2:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c16",
+          "2025-OC-169A:p1:v3c3",
+          "2023-UPI-179:p1:v3c7",
+          "2025-OC-169A:p2:v3c1",
+          "2023-UPI-179:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c5",
+          "2023-UPI-179:p1:v3c6",
+          "2023-UPI-179:p1:v3c5",
+          "2023-UPI-169:p1:v3c2",
+          "2023-UPI-179:p1:v3c4",
+          "2025-OC-169A:p2:v3c5",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c13",
+          "npci-source-5a8de8043d311df7f2560420:p4:v3c3",
+          "2025-OC-221:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c6",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c6",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c1",
+          "2025-OC-169A:p2:v3c4",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c7",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c8",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c15",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c1",
+          "2024-OC-205:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c4",
+          "2023-UPI-186:p1:v3c5",
+          "2025-OC-138B:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c13",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c4",
+          "2023-UPI-179:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c12",
+          "2025-OC-185B:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c10",
+          "2026-OC-177A:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c12",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c14",
+          "2023-UPI-182:p1:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c4",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c5",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c9",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c11",
+          "2024-OC-76A:p1:v3c1",
+          "2024-OC-205:p1:v3c3",
+          "2025-OC-169A:p2:v3c3",
+          "2023-UPI-179:p2:v3c2",
+          "2025-OC-216:p1:v3c2",
+          "2024-OC-185A:p2:v3c2",
+          "2024-OC-192:p1:v3c2",
+          "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+          "2025-OC-138B:p1:v3c2",
+          "2025-OC-216:p1:v3c1",
+          "2023-UPI-185:p1:v3c1"
+        ],
+        "after_rerank": [
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+          "2023-UPI-169:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+          "2025-OC-169A:p1:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c5",
+          "2025-OC-169A:p1:v3c2",
+          "2023-UPI-169:p1:v3c2",
+          "2025-OC-169A:p2:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c9",
+          "2025-OC-169A:p1:v3c1",
+          "2024-OC-205:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c16",
+          "2025-OC-169A:p2:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c7",
+          "2026-OC-177A:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c5",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c3",
+          "2023-UPI-179:p1:v3c4",
+          "2023-UPI-179:p1:v3c7",
+          "npci-source-5a8de8043d311df7f2560420:p4:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c1",
+          "2023-UPI-179:p1:v3c6",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c4",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c6",
+          "2023-UPI-179:p1:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c13",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c6",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c8",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c4",
+          "2023-UPI-182:p1:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c15",
+          "2023-UPI-186:p1:v3c5",
+          "2025-OC-169A:p2:v3c4",
+          "2025-OC-216:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c11",
+          "2023-UPI-179:p1:v3c5",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c9",
+          "2025-OC-169A:p2:v3c3",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c12",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c12",
+          "2025-OC-138B:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c13",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c1",
+          "npci-source-5a8de8043d311df7f2560420:p2:v3c14",
+          "npci-source-5a8de8043d311df7f2560420:p3:v3c10",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c4",
+          "2025-OC-138B:p1:v3c1",
+          "2025-OC-216:p1:v3c1",
+          "2025-OC-221:p1:v3c1",
+          "2024-OC-185A:p2:v3c2",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c5",
+          "2025-OC-169A:p2:v3c5",
+          "2023-UPI-185:p1:v3c1",
+          "2024-OC-205:p1:v3c2",
+          "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+          "2023-UPI-179:p1:v3c2",
+          "2025-OC-185B:p1:v3c1",
+          "2024-OC-76A:p1:v3c1",
+          "2024-OC-205:p1:v3c3",
+          "2024-OC-192:p1:v3c2",
+          "2023-UPI-179:p2:v3c2"
+        ],
+        "protected_seed_ids": [
+          "2025-OC-169A:p1:v3c2",
+          "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+          "2023-UPI-169:p1:v3c1"
+        ],
+        "topic_query": "What are the UPI Lite transaction and total balance limits?",
+        "table_focus_ids": [],
+        "phase_focus_ids": [],
+        "overview_change_ids": [],
+        "phase_companion_ids": []
+      },
+      "retrieval_seed_policy": "balanced",
+      "research_policy": "publisher_neutral_v2",
+      "followup_query": null,
+      "query_plan": {
+        "query": "What are the UPI Lite transaction and total balance limits?",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "limits"
+        ],
+        "product_filter": null,
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "balance",
+          "limits",
+          "lite",
+          "total",
+          "transaction",
+          "upi"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "2025-OC-169A",
+          "title": "Addendum to Enhancement in UPI LITE Limits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-02-27",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S2",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S3",
+          "document_id": "2023-UPI-169",
+          "title": "Enhancement in UPI LITE transaction limit to ₹500",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2023-08-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S4",
+          "document_id": "2025-OC-169A",
+          "title": "Addendum to Enhancement in UPI LITE Limits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-02-27",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S5",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S6",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S7",
+          "document_id": "2025-OC-169A",
+          "title": "Addendum to Enhancement in UPI LITE Limits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2025-02-27",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S8",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S9",
+          "document_id": "2023-UPI-169",
+          "title": "Enhancement in UPI LITE transaction limit to ₹500",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2023-08-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S10",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S11",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S12",
+          "document_id": "npci-source-5a8de8043d311df7f2560420",
+          "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S13",
+          "document_id": "2025-OC-138B",
+          "title": "Addendum to Introduction of UPI LITE",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2025-02-21",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "recorded_reference"
+        },
+        {
+          "citation": "S14",
+          "document_id": "2023-UPI-179",
+          "title": "Customer awareness and engagement for UPI LITE Enablement and Top up",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2023-11-02",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "recorded_reference"
+        },
+        {
+          "citation": "S15",
+          "document_id": "2025-OC-221",
+          "title": "Implementation of L5C compliance penalty in URCS for lite L5 transactions",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2025-09-12",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "same_feature"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "limits",
+          "label": "Limits and thresholds",
+          "citations": [
+            "S1",
+            "S2",
+            "S3",
+            "S5",
+            "S7"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability.",
+      "graph_context": {
+        "status": "not_applicable",
+        "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+        "topics": [],
+        "max_hops": 2,
+        "max_graph_chunks": 12,
+        "relationships": [],
+        "expected_anchor_ids": [],
+        "source_gaps": [],
+        "cautions": [],
+        "review_status": "proposed_ai_assisted",
+        "limitation": "Proposed links guide source retrieval only. No automatic supersession or current-applicability decision."
+      }
+    },
+    "sources": [
+      {
+        "id": "2025-OC-169A:p1:v3c2",
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "text": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately.",
+        "title": "Addendum to Enhancement in UPI LITE Limits",
+        "circular_number": "169A",
+        "series": "UPI",
+        "issue_date": "2025-02-27",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 70,
+        "end_word": 254,
+        "section_id": "2025-OC-169A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-169A:p1:v3c1",
+        "next_chunk_id": "2025-OC-169A:p1:v3c3",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03227,
+        "citation": "S1",
+        "rerank_score": 3.12901,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 1,
+        "text": "UPI Lite (including refunds, etc.) will be processed online in the User’s bank account maintained in the bank’s core banking system. The upper limit of an UPI Lite payment transaction shall be ₹200/-.The total limit of UPI Lite balance for an “On-device wallet” shall be ₹2,000/- at any point of time. Replenishment of funds in UPI Lite shall only be allowed in online mode with additional factor authentication (AFA) or using UPI AutoPay which has been registered by the User in online mode with AFA.",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 370,
+        "end_word": 455,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c1",
+        "feature_ids": [
+          "autopay",
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.032,
+        "citation": "S2",
+        "rerank_score": 6.49658,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2023-UPI-169:p1:v3c1",
+        "document_id": "2023-UPI-169",
+        "page": 1,
+        "text": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement",
+        "title": "Enhancement in UPI LITE transaction limit to ₹500",
+        "circular_number": "169",
+        "series": "UPI",
+        "issue_date": "2023-08-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "2023-UPI-169:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2023-UPI-169:p1:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03154,
+        "citation": "S3",
+        "rerank_score": 3.92433,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2025-OC-169A:p1:v3c3",
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "text": "2. Issuer banks live on UPI LITE shall identify all the UPI LITE accounts that have had zero transactions in the past six months. Any balances in these dormant LITE accounts shall be refunded to the source bank account. Issuer banks shall implement the changes by 30th June 2025. Yours sincerely, SD/- Kunal Kalawatia Chief of Product",
+        "title": "Addendum to Enhancement in UPI LITE Limits",
+        "circular_number": "169A",
+        "series": "UPI",
+        "issue_date": "2025-02-27",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 254,
+        "end_word": 311,
+        "section_id": "2025-OC-169A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-169A:p1:v3c2",
+        "next_chunk_id": "2025-OC-169A:p2:v3c1",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "issuer_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02613,
+        "citation": "S4",
+        "rerank_score": 3.32856,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 1,
+        "text": "volumes. As an efficient strategy to process large-scale small value digital payments and based on the guidelines issued by RBI for enabling mobile devices to support offline payments vide its circular no. CO.DPSS.POLC.No. S1264/ 02-14-003/2021-2022 titled “Framework for facilitating small value digital payments in offline mode” dated 3rd January 2022, NPCI has designed the “UPI Lite – On-Device wallet” (“UPI Lite”) functionality for UPI user (User). In phase 1, UPI Lite will process transactions in near offline mode i.e. debit offline and credit online, and at a later point, UPI Lite will process transactions in complete offline mode i.e. debit and credit both offline. A User of UPI App will have the option to enable UPI Lite i.e. “On-Device wallet” on her/his UPI App. Once enabled, the User can allocate funds from her/his bank account to UPI Lite. Such funds shall reside with the User’s bank in an escrow / pool / designated account and such balance shall reside on-device on the common library (CL) of the User’s UPI App. At present, only debit from UPI Lite balance shall be permitted and all credits to UPI Lite (including refunds, etc.) will be processed online in the User’s bank account maintained in the bank’s core banking system. The upper limit of an UPI Lite payment transaction shall be ₹200/-.The total limit",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 185,
+        "end_word": 405,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p1:v3c1",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02927,
+        "citation": "S5",
+        "rerank_score": 3.88252,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 2,
+        "text": "6. The UPI App shall, by default, use UPI Lite balance for transactions having value of less than or equal to Rs 200/- excluding peer-to-peer collect request transactions.",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 191,
+        "end_word": 219,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "6.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c9",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c11",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02725,
+        "citation": "S6",
+        "rerank_score": 3.47791,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-169A:p1:v3c1",
+        "document_id": "2025-OC-169A",
+        "page": 1,
+        "text": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained.",
+        "title": "Addendum to Enhancement in UPI LITE Limits",
+        "circular_number": "169A",
+        "series": "UPI",
+        "issue_date": "2025-02-27",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 70,
+        "section_id": "2025-OC-169A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2025-OC-169A:p1:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S7",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2025-OC-169A",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p2:v3c1",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 2,
+        "text": "UPI Lite offers the following advantages to the UPI ecosystem:",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 10,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p1:v3c3",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S8",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "2023-UPI-169:p1:v3c2",
+        "document_id": "2023-UPI-169",
+        "page": 1,
+        "text": "₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changes on the App & application systems. Members are requested to make the necessary changes with immediate effect. Yours sincerely, SD/- Kunal Kalawatia Chief of Products",
+        "title": "Enhancement in UPI LITE transaction limit to ₹500",
+        "circular_number": "169",
+        "series": "UPI",
+        "issue_date": "2023-08-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 169",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 185,
+        "end_word": 249,
+        "section_id": "2023-UPI-169:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-169:p1:v3c1",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "169",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "payee_psp"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S9",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2023-UPI-169",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "changes"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p1:v3c1",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 1,
+        "text": "NPCI /UPI/OC No.138/2021-22 March 16, 2022 To, All UPI Member Banks Dear Sir/Madam, Subject: Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions UPI has become one of the most preferred digital payment mode for Indian citizens because of ease and convenience, superior user experience, security and interoperability. To realize the vision of billion-a-day payments within the next 3 to 5 years, NPCI has been aggressively innovating and adding new features in UPI from time to time to expand its usage. Various studies on payment systems have observed that about 75% of the total volume of retail transactions (including cash) in India are below ₹100 transaction value. Further, 50% of the total UPI transactions are having a transaction value of up to ₹200/-. To process billion-a-day transactions, entire UPI ecosystem will have to invest heavily in infrastructure upgrade. Large banks have already implemented upgrades, such as separate financial and meta transactions infrastructure, separate endpoints for payment service provider (PSP) / issuer and to provide better technical up time for UPI services, and such banks are getting ready to process three times of current volumes. As an efficient strategy to process large-scale small value digital payments and based on the guidelines issued by RBI for enabling mobile devices to support offline payments vide its circular no. CO.DPSS.POLC.No. S1264/ 02-14-003/2021-2022",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p1:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S10",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p2:v3c11",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 2,
+        "text": "7. The User shall receive the consolidated debit SMS for financial transactions at regular intervals after the transactions are presented to the User’s bank.",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 219,
+        "end_word": 243,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "7.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c12",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S11",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-5a8de8043d311df7f2560420:p2:v3c9",
+        "document_id": "npci-source-5a8de8043d311df7f2560420",
+        "page": 2,
+        "text": "5. The UPI Lite balance shall be displayed on the home screen of the UPI App to eliminate the need of separate balance inquiry.",
+        "title": "UPI OC 138 - Introduction of “On-Device wallet” – UPI Lite for Small Value Transactions",
+        "circular_number": "138",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_138_Introduction_of_On_Device_wallet_UPI_Lite_for_Small_Value_Transactions_a0930bbc3d.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 138",
+        "fiscal_year": "2022-23",
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 167,
+        "end_word": 191,
+        "section_id": "npci-source-5a8de8043d311df7f2560420:s0",
+        "section_heading": "Document opening",
+        "clause_label": "5.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c8",
+        "next_chunk_id": "npci-source-5a8de8043d311df7f2560420:p2:v3c10",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "upi_app"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S12",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-138B:p1:v3c2",
+        "document_id": "2025-OC-138B",
+        "page": 1,
+        "text": "1. All members shall implement ‘Transfer Out’ functionality. It allows users to withdraw funds from their UPI LITE balance to the source bank account from which it was loaded, without disabling UPI LITE. Purpose Code 46 shail be used to identify ‘Transfer Out’ transactions.",
+        "title": "Addendum to Introduction of UPI LITE",
+        "circular_number": "138B",
+        "series": "UPI",
+        "issue_date": "2025-02-21",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_138_B_FY_2024_25_Addendum_to_Introduction_of_UPI_LITE_2c25ec3dfd.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 138B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 71,
+        "end_word": 115,
+        "section_id": "2025-OC-138B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-138B:p1:v3c1",
+        "next_chunk_id": "2025-OC-138B:p1:v3c3",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "138",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S13",
+        "retrieval_reason": "recorded_reference",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": {
+          "from_id": "2025-OC-138B",
+          "target_id": "npci-source-5a8de8043d311df7f2560420",
+          "reference": "138",
+          "relation": "references",
+          "basis": "imported_related_circulars",
+          "evidence_pages": [
+            1
+          ],
+          "evidence_status": "number_occurrence_only",
+          "status": "resolved",
+          "candidate_ids": [
+            "npci-source-5a8de8043d311df7f2560420"
+          ],
+          "direction": "references_seed"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2023-UPI-179:p1:v3c7",
+        "document_id": "2023-UPI-179",
+        "page": 1,
+        "text": "b) After UPI transaction, if UPI LITE wallet balance is below 200 then pop-up / notification shall be given to the customer. JOO1A, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 OST- T: +91 22 40009100 F: +91 22 40009101 contact@npci.org.in www.npci.org.in CIN: U74990MH2008NPL189067",
+        "title": "Customer awareness and engagement for UPI LITE Enablement and Top up",
+        "circular_number": "179",
+        "series": "UPI",
+        "issue_date": "2023-11-02",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_179_FY_23_24_Customer_awareness_and_engagement_for_UPI_LITE_Enablement_and_Top_up_ab742a2d5d.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 179",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 331,
+        "end_word": 380,
+        "section_id": "2023-UPI-179:s0",
+        "section_heading": "Document opening",
+        "clause_label": "b)",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2023-UPI-179:p1:v3c6",
+        "next_chunk_id": "2023-UPI-179:p2:v3c1",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "179",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S14",
+        "retrieval_reason": "recorded_reference",
+        "via_document_id": "npci-source-5a8de8043d311df7f2560420",
+        "relation": {
+          "from_id": "2023-UPI-179",
+          "target_id": "npci-source-5a8de8043d311df7f2560420",
+          "reference": "138",
+          "relation": "references",
+          "basis": "imported_related_circulars",
+          "evidence_pages": [
+            1
+          ],
+          "evidence_status": "number_occurrence_only",
+          "status": "resolved",
+          "candidate_ids": [
+            "npci-source-5a8de8043d311df7f2560420"
+          ],
+          "direction": "references_seed"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "2025-OC-221:p1:v3c1",
+        "document_id": "2025-OC-221",
+        "page": 1,
+        "text": "Nec oredhr wsita srart Pare NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/2025-26/UPI/221 Sep 12, 2025 To, All Members of Unified Payment Interface (UPI) Subject: Implementation of LSC compliance penalty in URCS for Lite L5 transactions UPI Lite X allows users to make UPI payments offline, without internet, by utilizing Near Field Communication (NFC) technology, building upon the existing UPI Lite feature. lf a UPI Lite X user uninstalls or reinstalls the app, or switch to the other device, the NPCI's MCB (Mini Core Banking System) places a temporary hold on the last available balance for 5 days. This precaution is to ensure that any pending offline transactions are processed. If no such transactions are received (online) within this timeframe, the hold is lifted, and the balance is updated in the system with a specific response code on the Sth day. When the payer bank receives an L5 transactions in the raw file with the balance amount remaining. Payer bank is expected to reconcile these transactions, debit the UPI Lite X GL account and credit the customer’s CASA account (Current and Savings Account). Basis the customer complaints and analysis it is observed the process is not uniformly and consistently followed by the banks resulting in complaints. Furthermore, only the Payer bank is aware of the L5 transaction status, which prevents other parties",
+        "title": "Implementation of L5C compliance penalty in URCS for lite L5 transactions",
+        "circular_number": "221",
+        "series": "UPI",
+        "issue_date": "2025-09-12",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_221_FY_2025_26_Implementation_of_L5_C_compliance_penalty_in_URCS_for_lite_L5_transactions_763c1b2a12.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 221",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 4,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "2025-OC-221:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2025-OC-221:p1:v3c2",
+        "feature_ids": [
+          "upi_lite"
+        ],
+        "family": "221",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S15",
+        "retrieval_reason": "same_feature",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      }
+    ],
+    "claims": [
+      {
+        "text": "The most recent limits for UPI Lite are a per-transaction limit of ₹1,000 and a total balance limit of ₹5,000 at any point in time.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "Earlier provisions established lower limits, specifically a per-transaction limit of ₹200 with a total balance limit of ₹2,000.",
+        "sources": [
+          "S2",
+          "S5"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "A subsequent circular in 2023 increased the per-transaction limit to ₹500 while maintaining the total balance limit at ₹2,000.",
+        "sources": [
+          "S3"
+        ],
+        "draft_index": 3,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+      "The additional completeness review was unavailable; this answer has not been checked for cross-document omissions."
+    ],
+    "answer": "Draft answer — check the supporting excerpts.",
+    "abstained": false,
+    "central_answer_status": "retained",
+    "response_status": "draft",
+    "coverage_check": {
+      "status": "unavailable",
+      "findings": [],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification.",
+      "failure_kind": "timeout",
+      "failure_reason": "TimeoutError: Model request exceeded its time budget",
+      "note": "Coverage review was not completed. This answer has not passed the scope and omissions check."
+    },
+    "elapsed_ms": 24359,
+    "timing": {
+      "total_seconds": 24.359,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.015
+        },
+        {
+          "stage": "embedding",
+          "seconds": 0.094
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "model_metadata",
+          "seconds": 0.016
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 1.171
+        },
+        {
+          "stage": "generation",
+          "seconds": 5.516
+        },
+        {
+          "stage": "claim_support",
+          "seconds": 2.547
+        },
+        {
+          "stage": "coverage",
+          "seconds": 15.0
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "embedding",
+          "status": "completed",
+          "timeout_seconds": 20.0,
+          "prompt_tokens": 33,
+          "output_tokens": null,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.0,
+          "decode_seconds": 0.0,
+          "done_reason": null,
+          "seconds": 0.094
+        },
+        {
+          "stage": "model_metadata",
+          "status": "completed",
+          "timeout_seconds": 10.0,
+          "seconds": 0.016
+        },
+        {
+          "stage": "generation",
+          "status": "completed",
+          "timeout_seconds": 60.0,
+          "prompt_tokens": 7839,
+          "output_tokens": 191,
+          "load_seconds": 0.002,
+          "prompt_seconds": 2.642,
+          "decode_seconds": 2.593,
+          "done_reason": "stop",
+          "seconds": 5.516
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 793,
+          "output_tokens": 31,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.278,
+          "decode_seconds": 0.424,
+          "done_reason": "stop",
+          "seconds": 0.875
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 1083,
+          "output_tokens": 31,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.355,
+          "decode_seconds": 0.42,
+          "done_reason": "stop",
+          "seconds": 0.875
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 830,
+          "output_tokens": 31,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.285,
+          "decode_seconds": 0.427,
+          "done_reason": "stop",
+          "seconds": 0.797
+        },
+        {
+          "stage": "coverage",
+          "status": "failed",
+          "timeout_seconds": 15.0,
+          "error_type": "TimeoutError",
+          "seconds": 15.0
+        }
+      ]
+    }
+  },
+  "seconds": 24.359
+}

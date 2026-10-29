@@ -1,69 +1,55 @@
 # Using the application
 
-Complete [setup](../../HOW_TO_RUN.md) first. This guide is about the user experience; [project flow](PROJECT_FLOW.md) explains the implementation.
+Complete [setup](../../HOW_TO_RUN.md) first. Two main tasks use the same evidence engine.
 
-## Choose the right workspace
-
-| Workspace | Use it when | What you keep |
+| Task | Start with | Get |
 |---|---|---|
-| Ask & Research | You want to explore a question or inspect documents | An answer and evidence; save useful cited answers to Query Desk |
-| Query Desk | You want to retain and refine a response for your team | The question, answer, source snapshot, edits and optional human decision |
-| Change Briefs | You want to understand a document against a comparison baseline | Cited findings, analyst considerations and unresolved questions |
+| Ask a question | A question about a payment guideline | A question-focused answer with citations |
+| Understand a change | A document and confirmed comparison sources | A cited change summary, conditions and unresolved points |
 
-An exploratory answer and a saved response are different things. Query Desk adds persistence and a work history; it does not use a separate, inherently more accurate model.
+**Saved work** keeps either result; it is not a third AI product. **Document library** supports search, inspection, summaries and comparisons. Intake, source review and retrieval checks are under **Manage library & tools**.
 
-## First walkthrough: Ask & Research
+## Ask a question
 
-1. Open `http://127.0.0.1:8765/` and choose the relevant product where useful.
-2. Enter a specific question. For example: “What does OC186A say about UPI Tap & Pay?” Treat this as a practice question, not a guaranteed correct demonstration.
-3. Keep **Cited AI answer** selected. **Source excerpts** instead shows retrieved passages without a model-written explanation.
-4. Leave **Answer style → Automatic**. The answer can use prose, lists, steps or a table. More complex formatting is not automatically better.
-5. Read the answer's qualification and warning text. Select a citation such as S1 to inspect the supporting passage, page and document identity.
-6. Where an original-document link is available, check the original. Extracted text can be incomplete or wrong.
-7. If the answer is useful, save it to Query Desk using the provided save action. Saving copies the completed answer and evidence; it does not regenerate them.
+1. Open `http://127.0.0.1:8765/`, enter a question and select a product when useful.
+2. Select **Ask question**. The default is a cited AI answer with automatic formatting.
+3. Read the answer and visible limitations. Select a citation to inspect its passage and original document.
+4. Select **Save answer** to retain the result. This copies the completed answer and evidence without regenerating them.
 
-If a reference matches several products or years, choose the intended document. Do not treat a clarification request as an answer. If the document is unavailable, the correct behaviour can be an explanation of the gap rather than a generated answer.
+**Filters and answer settings** contains advanced scope, issue-date cutoff, output mode and style. **Source excerpts** shows passages without model-written explanations. Automatic style can combine paragraphs, lists and tables; it does not force a layout.
 
-The job cache is temporary; save a useful answer before restarting the server. Saved Query Desk records persist locally. They are not uploaded to GitHub.
+Clarify ambiguous references. If evidence is unavailable, explaining the gap can be the correct result. An issue-date cutoff is not an effective-date guarantee. Temporary jobs disappear when the server restarts; saved work persists locally.
 
-## Query Desk
+## Understand a change
 
-Create a query request, define the question and scope, optionally select sources, then generate an answer. You can read it, inspect citations, edit the wording, save changes and export with evidence.
+1. Select **Understand a change → Choose documents**.
+2. Search by reference or title. Choose the document to investigate, then add one to five comparison sources. Use **Inspect** to read them.
+3. Select **Continue** and confirm the baseline. Related-document suggestions are leads, not proof of supersession.
+4. Optionally add a focus question or operating context. The default asks for changes, source-backed conditions and dates, and unresolved points.
+5. Select **Prepare change summary**. This saves the comparison and starts generation in one action.
+6. Inspect the answer and citations. Add your considerations under **Internal notes (optional)** if needed, then export with evidence.
 
-The answer comes first. **Human sign-off (optional)** and **History** are collapsed. You do not need approval to read or export an answer. Export includes the actual review status; an unsigned answer does not become approved by being exported.
+The model can still confuse dates or interpret silence too strongly. A requirement absent from a later document is not automatically unchanged or withdrawn. The tool does not issue departmental instructions, deploy transaction rules or make compliance decisions.
 
-**Mark as awaiting review** only records a local status. It does not send an email or assign work to a colleague. If a person reviews it, they enter a name, rationale and decision after checking sources and qualifications. The name provides attribution, not authenticated identity.
+## Saved work, review and history
 
-History keeps saved snapshots. Its revision numbers track changes to the work item, not a model version or a confidence score. Editing an approved answer creates a new draft without carrying approval forward. Earlier decisions remain in History. Relevant evidence/settings changes can require revalidation.
+Open **Saved work** to search both saved answers and summaries. Optional filters narrow by task, review state or active/archive/trash location. **Organise** offers recoverable archive/trash controls; use the location filter to find and restore records.
 
-Human-edited text is not automatically rechecked. Generated layouts are preserved while the text remains unchanged; the editor currently supports plain text, not rich table-cell editing.
+Read, edit or export without human sign-off. **Human sign-off (optional)** records a name, rationale and decision after someone checks sources. Marking a result for review does not notify or assign anyone. A typed name is attribution, not authentication.
 
-## Change Briefs
+**History** stores earlier snapshots. Editing an approved response clears approval on the revised draft. Relevant source/settings changes can require revalidation. Exports retain evidence and actual review status; exporting does not approve a result. Human edits are not automatically rechecked, and the editor supports plain text rather than rich table-cell editing.
 
-1. State the change question and select the document being investigated.
-2. Select and confirm the earlier/comparison sources. A suggested relationship is a lead to inspect, not proof that it applies.
-3. Generate and inspect **Documented findings** and their citations.
-4. Optionally classify findings as a documented change, retained requirement or unresolved finding after checking the sources.
-5. Record **possible actions** and **questions to resolve** separately from source requirements.
-6. Save, optionally obtain human sign-off, and export with evidence.
+In-product sign-off is separate from the independently reviewed 50-case project evaluation.
 
-For example, an analyst might propose that an operations team assess whether an internal procedure is affected. That is an analyst consideration; it is not automatically an obligation stated by the circular. Audience and operating-context fields record useful analyst context. They do not establish institution-specific facts or automatically turn the answer into an implementation plan.
+## Read warnings accurately
 
-The application does not send instructions to departments, alter transaction-risk rules, make a compliance verdict or deploy business changes.
+| State | Meaning |
+|---|---|
+| Incomplete answer / withheld statement | A fact or qualification may be missing or unsupported |
+| Completeness check unavailable / invalid | No usable checker conclusion; this is not a pass |
+| No additional issue found | No further issue was flagged; correctness is not certified |
+| Partial source coverage | Indexed text may omit original content |
+| Needs revalidation | Evidence/settings changed; regenerate and reassess before reuse |
+| Graph degraded | Maintained links failed validation; ordinary retrieval remains available |
 
-## How to interpret warnings
-
-| Message or state | Meaning | Useful next step |
-|---|---|---|
-| Incomplete answer / withheld statement | A central fact, qualification or supported claim may be missing | Inspect the evidence and the checker details |
-| Completeness check unavailable / invalid | The checker did not produce a usable conclusion | Keep the uncertainty; do not treat silence as a pass |
-| No additional issue found | The checker did not flag another issue | Still inspect consequential facts |
-| Partial source coverage / missing pages | Some original content is absent from the indexed text | Find and review the original document |
-| Needs revalidation | The saved response no longer matches its previous evidence/settings snapshot | Regenerate and reassess before reuse |
-| Graph degraded | Maintained graph links failed validation or could not load | Use ordinary retrieval cautiously and report the status |
-
-## Report a useful failure
-
-Capture the exact question, selected product/documents, answer style, commit, answer, citations and warning text. Explain the expected behaviour and identify the original source supporting it. Distinguish “I think this is wrong” from an original-document-verified finding.
-
-The current UPI Lite historical-limit failure is a useful example: the model gave older figures, a newer amendment existed in the corpus, and the completeness check was unavailable. Do not remove that record because it makes a demonstration less favourable. See [the evaluation record](../../evaluation/release_20261027/README.md).
+Report failures with the exact question, filters, answer, citations, warnings, commit and original evidence supporting the correction. Keep unsuccessful results. See [current findings](../PRODUCT_MATURITY_20261028.md).

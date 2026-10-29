@@ -1,0 +1,2888 @@
+{
+  "seconds": 25.406000000000176,
+  "item": {
+    "id": "3381a86c12ef4e05af185bc21d66d4ec",
+    "kind": "impact",
+    "title": "What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved",
+    "state": "Draft",
+    "version": 2,
+    "revision": 3,
+    "busy": 0,
+    "created": "2026-10-28T16:09:02.286673+00:00",
+    "updated": "2026-10-28T16:09:27.682921+00:00",
+    "disposition": "active",
+    "draft": {
+      "request": {
+        "query": "What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved points.",
+        "operating_context": "",
+        "document_ids": [
+          "2025-OC-169A",
+          "2023-UPI-169"
+        ],
+        "series": "",
+        "cutoff": ""
+      },
+      "result": {
+        "answer_blocks": [
+          {
+            "type": "paragraph",
+            "claims": [
+              {
+                "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+                "sources": [
+                  "S1",
+                  "S2",
+                  "S5"
+                ],
+                "draft_index": 1,
+                "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+                "support_status": "automated_supported",
+                "repair_applied": true
+              }
+            ]
+          }
+        ],
+        "answer_style": "auto",
+        "formatting_source": "repaired_layout",
+        "flagged_claims": [
+          {
+            "text": "The 2025 addendum introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 2,
+            "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+            "support_status": "unsupported",
+            "review_reasons": [
+              "Claim contains a number absent from cited text."
+            ]
+          },
+          {
+            "text": "The 2025 addendum (S7) adds a requirement for issuer banks to identify dormant UPI LITE accounts with zero transactions in six months and refund balances, with implementation by 30th June 2025; this requirement is absent from the 2023 baseline (S2).",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 3,
+            "support_status": "unsupported",
+            "review_reasons": [
+              "Claim contains a number absent from cited text."
+            ]
+          },
+          {
+            "text": "The 2025 addendum references an RBI notification dated 4th December 2024 as the basis for the new limits, while the 2023 baseline referenced an RBI circular dated 24th August 2023.",
+            "sources": [
+              "S1",
+              "S2"
+            ],
+            "draft_index": 4,
+            "original_text": "The 2025 addendum (S1) references an RBI notification dated 4th December 2024 as the basis for the new limits, while the 2023 baseline (S2) referenced an RBI circular dated 24th August 2023.",
+            "support_status": "unsupported",
+            "review_reasons": [
+              "Claim contains a number absent from cited text."
+            ]
+          },
+          {
+            "text": "The 2025 addendum states that the new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit, effectively superseding earlier provisions in Annexure A.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 5,
+            "original_text": "The 2025 addendum (S1) states that the new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit, effectively superseding earlier provisions in Annexure A.",
+            "support_status": "unsupported",
+            "review_reasons": [
+              "The local model found that the cited evidence does not fully support the claim."
+            ]
+          }
+        ],
+        "claim_checks": [
+          {
+            "claim_index": 0,
+            "status": "supported",
+            "reasons": [
+              "The local model accepted the selected evidence as support."
+            ],
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+              },
+              {
+                "citation": "S2",
+                "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+              },
+              {
+                "citation": "S5",
+                "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately."
+              }
+            ],
+            "checker": "local_model_plus_deterministic_guards",
+            "repair_applied": true
+          },
+          {
+            "claim_index": 1,
+            "status": "unsupported",
+            "reasons": [
+              "Claim contains a number absent from cited text."
+            ],
+            "quotes": [],
+            "checker": "local_model_plus_deterministic_guards"
+          },
+          {
+            "claim_index": 2,
+            "status": "unsupported",
+            "reasons": [
+              "Claim contains a number absent from cited text."
+            ],
+            "quotes": [],
+            "checker": "local_model_plus_deterministic_guards"
+          },
+          {
+            "claim_index": 3,
+            "status": "unsupported",
+            "reasons": [
+              "Claim contains a number absent from cited text."
+            ],
+            "quotes": [],
+            "checker": "local_model_plus_deterministic_guards"
+          },
+          {
+            "claim_index": 4,
+            "status": "unsupported",
+            "reasons": [
+              "The local model found that the cited evidence does not fully support the claim."
+            ],
+            "quotes": [
+              {
+                "citation": "S1",
+                "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+              }
+            ],
+            "checker": "local_model_plus_deterministic_guards"
+          }
+        ],
+        "mode": "generate",
+        "retrieval_trace": {
+          "route": "compare",
+          "scope": "related",
+          "seed_chunk_ids": [
+            "2025-OC-169A:p1:v3c1",
+            "2023-UPI-169:p1:v3c1",
+            "2025-OC-169A:p2:v3c1",
+            "2023-UPI-169:p1:v3c2",
+            "2025-OC-169A:p1:v3c2",
+            "2025-OC-169A:p2:v3c2",
+            "2025-OC-169A:p1:v3c3",
+            "2025-OC-169A:p2:v3c3",
+            "2025-OC-169A:p2:v3c4",
+            "2025-OC-169A:p2:v3c5"
+          ],
+          "included_chunk_ids": [
+            "2025-OC-169A:p1:v3c1",
+            "2023-UPI-169:p1:v3c1",
+            "2025-OC-169A:p2:v3c1",
+            "2023-UPI-169:p1:v3c2",
+            "2025-OC-169A:p1:v3c2",
+            "2025-OC-169A:p2:v3c2",
+            "2025-OC-169A:p1:v3c3",
+            "2025-OC-169A:p2:v3c3",
+            "2025-OC-169A:p2:v3c4",
+            "2025-OC-169A:p2:v3c5"
+          ],
+          "evidence_characters": 8273,
+          "character_budget": 18000,
+          "max_reference_hops": 1,
+          "notes": [
+            "Requested aspects not located by passage heuristics: Dates and timelines. The answer may be partial.",
+            "Research entity was not specified. Source-specific applicability must remain explicit in the answer."
+          ],
+          "document_coverage": {
+            "2025-OC-169A": {
+              "included_chunks": 8,
+              "total_chunks": 8,
+              "complete": true,
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "metadata_quality": "existing_source_metadata",
+              "page_basis": "source_pages",
+              "available_text_complete": true
+            },
+            "2023-UPI-169": {
+              "included_chunks": 2,
+              "total_chunks": 2,
+              "complete": true,
+              "total_pages": 1,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "metadata_quality": "existing_source_metadata",
+              "page_basis": "source_pages",
+              "available_text_complete": true
+            }
+          },
+          "requested_circulars": [],
+          "reranker": {
+            "enabled": false,
+            "model": null,
+            "candidate_count": 0,
+            "elapsed_ms": 0
+          },
+          "candidate_stages": {},
+          "retrieval_seed_policy": "balanced",
+          "research_policy": "publisher_neutral_v2",
+          "followup_query": null,
+          "query_plan": {
+            "query": "Compare the selected sources to answer: What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved points.\nUser-designated changed source: Addendum to Enhancement in UPI LITE Limits\nFirst document is the proposed change, not proof of supersession. Explain the change concisely; compare earlier and revised provisions with separate citations. Include supported conditions, effective dates and unresolved points. A requirement absent from the newer document is not automatically retained or withdrawn. Retention needs source support. Distinguish new rules from references to earlier rules. Separate issue dates, referenced-letter dates and deadlines. Do not infer retroactivity, grandfathering or post-deadline-only applicability from silence; mark it unresolved. Do not assert institution-specific impact or implementation actions.",
+            "entity": "",
+            "entity_basis": "unspecified",
+            "requested_aspects": [
+              "requirements",
+              "applicability",
+              "limits",
+              "timing",
+              "changes"
+            ],
+            "product_filter": null,
+            "issue_date_cutoff": null,
+            "selected_document_ids": [
+              "2025-OC-169A",
+              "2023-UPI-169"
+            ],
+            "focus_terms": [
+              "absent",
+              "actions",
+              "addendum",
+              "answer",
+              "applicability",
+              "assert",
+              "automatically",
+              "baseline",
+              "change",
+              "changed",
+              "citations",
+              "compared",
+              "concisely",
+              "conditions",
+              "dates",
+              "deadlines",
+              "distinguish",
+              "document",
+              "earlier",
+              "effective",
+              "enhancement",
+              "first",
+              "from",
+              "grandfathering",
+              "identify",
+              "impact",
+              "implementation",
+              "include",
+              "infer",
+              "institution-specific",
+              "issue",
+              "it",
+              "limits",
+              "lite",
+              "mark",
+              "needs",
+              "new",
+              "newer",
+              "not",
+              "points",
+              "post-deadline-only",
+              "proof",
+              "proposed",
+              "provisions",
+              "referenced-letter",
+              "references",
+              "retained",
+              "retention",
+              "retroactivity",
+              "revised",
+              "selected",
+              "separate",
+              "silence",
+              "source",
+              "source-backed",
+              "sources",
+              "supersession",
+              "support",
+              "supported",
+              "unresolved",
+              "upi",
+              "user-designated",
+              "withdrawn"
+            ],
+            "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+          },
+          "evidence_map": [
+            {
+              "citation": "S1",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 1,
+              "section": "Document opening",
+              "aspects": [
+                "limits",
+                "changes"
+              ],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "source_image_checked_transcription",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S2",
+              "document_id": "2023-UPI-169",
+              "title": "Enhancement in UPI LITE transaction limit to ₹500",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 1,
+              "section": "Document opening",
+              "aspects": [
+                "requirements",
+                "applicability",
+                "limits",
+                "changes"
+              ],
+              "applicability": {},
+              "issue_date": "2023-08-31",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "source_image_checked_transcription",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S3",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 2,
+              "section": "Annexure A",
+              "aspects": [],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "machine_extraction_not_verified_word_for_word",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S4",
+              "document_id": "2023-UPI-169",
+              "title": "Enhancement in UPI LITE transaction limit to ₹500",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 1,
+              "section": "Document opening",
+              "aspects": [
+                "changes"
+              ],
+              "applicability": {},
+              "issue_date": "2023-08-31",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "source_image_checked_transcription",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S5",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 1,
+              "section": "Document opening",
+              "aspects": [
+                "requirements",
+                "applicability",
+                "limits"
+              ],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "source_image_checked_transcription",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S6",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 2,
+              "section": "Annexure A",
+              "aspects": [
+                "limits"
+              ],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "machine_extraction_not_verified_word_for_word",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S7",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 1,
+              "section": "Document opening",
+              "aspects": [
+                "requirements"
+              ],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "source_image_checked_transcription",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S8",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 2,
+              "section": "Annexure A",
+              "aspects": [],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "machine_extraction_not_verified_word_for_word",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S9",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 2,
+              "section": "Annexure A",
+              "aspects": [],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "machine_extraction_not_verified_word_for_word",
+              "retrieval_reason": "document_coverage"
+            },
+            {
+              "citation": "S10",
+              "document_id": "2025-OC-169A",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "page": 2,
+              "section": "Annexure A",
+              "aspects": [],
+              "applicability": {},
+              "issue_date": "2025-02-27",
+              "updated_on": null,
+              "effective_date": null,
+              "extraction_review": "machine_extraction_not_verified_word_for_word",
+              "retrieval_reason": "document_coverage"
+            }
+          ],
+          "aspect_coverage": [
+            {
+              "aspect": "requirements",
+              "label": "Requirements",
+              "citations": [
+                "S2",
+                "S5",
+                "S7"
+              ],
+              "status": "passages_found"
+            },
+            {
+              "aspect": "applicability",
+              "label": "Applicability",
+              "citations": [
+                "S2",
+                "S5"
+              ],
+              "status": "passages_found"
+            },
+            {
+              "aspect": "limits",
+              "label": "Limits and thresholds",
+              "citations": [
+                "S1",
+                "S2",
+                "S5",
+                "S6"
+              ],
+              "status": "passages_found"
+            },
+            {
+              "aspect": "timing",
+              "label": "Dates and timelines",
+              "citations": [],
+              "status": "not_located"
+            },
+            {
+              "aspect": "changes",
+              "label": "Changes and references",
+              "citations": [
+                "S1",
+                "S2",
+                "S4"
+              ],
+              "status": "passages_found"
+            }
+          ],
+          "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+        },
+        "sources": [
+          {
+            "id": "2025-OC-169A:p1:v3c1",
+            "document_id": "2025-OC-169A",
+            "page": 1,
+            "text": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained.",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "source_image_checked_transcription",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 0,
+            "end_word": 70,
+            "section_id": "2025-OC-169A:s0",
+            "section_heading": "Document opening",
+            "clause_label": "",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "",
+            "next_chunk_id": "2025-OC-169A:p1:v3c2",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S1",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "limits",
+              "changes"
+            ]
+          },
+          {
+            "id": "2023-UPI-169:p1:v3c1",
+            "document_id": "2023-UPI-169",
+            "page": 1,
+            "text": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement",
+            "title": "Enhancement in UPI LITE transaction limit to ₹500",
+            "circular_number": "169",
+            "series": "UPI",
+            "issue_date": "2023-08-31",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+            "method": "ocr",
+            "review_status": "source_image_checked_transcription",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 1,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 0,
+            "end_word": 220,
+            "section_id": "2023-UPI-169:s0",
+            "section_heading": "Document opening",
+            "clause_label": "",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "",
+            "next_chunk_id": "2023-UPI-169:p1:v3c2",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [
+              "payee_psp"
+            ],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S2",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "requirements",
+              "applicability",
+              "limits",
+              "changes"
+            ]
+          },
+          {
+            "id": "2025-OC-169A:p2:v3c1",
+            "document_id": "2025-OC-169A",
+            "page": 2,
+            "text": "Annexure A 4. NPClI circular, ‘Introduction of “On-Device wallet” — UPI LITE for Small Value Transactions’ vide No. NPCI/UPI/OC No. 138/2021-22, dated 16\" March 2022",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "machine_extraction_not_verified_word_for_word",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 0,
+            "end_word": 25,
+            "section_id": "2025-OC-169A:s1",
+            "section_heading": "Annexure A",
+            "clause_label": "4.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p1:v3c3",
+            "next_chunk_id": "2025-OC-169A:p2:v3c2",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S3",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": []
+          },
+          {
+            "id": "2023-UPI-169:p1:v3c2",
+            "document_id": "2023-UPI-169",
+            "page": 1,
+            "text": "₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changes on the App & application systems. Members are requested to make the necessary changes with immediate effect. Yours sincerely, SD/- Kunal Kalawatia Chief of Products",
+            "title": "Enhancement in UPI LITE transaction limit to ₹500",
+            "circular_number": "169",
+            "series": "UPI",
+            "issue_date": "2023-08-31",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+            "method": "ocr",
+            "review_status": "source_image_checked_transcription",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 1,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 185,
+            "end_word": 249,
+            "section_id": "2023-UPI-169:s0",
+            "section_heading": "Document opening",
+            "clause_label": "",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2023-UPI-169:p1:v3c1",
+            "next_chunk_id": "",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [
+              "payee_psp"
+            ],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S4",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "changes"
+            ]
+          },
+          {
+            "id": "2025-OC-169A:p1:v3c2",
+            "document_id": "2025-OC-169A",
+            "page": 1,
+            "text": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately.",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "source_image_checked_transcription",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 70,
+            "end_word": 254,
+            "section_id": "2025-OC-169A:s0",
+            "section_heading": "Document opening",
+            "clause_label": "1.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p1:v3c1",
+            "next_chunk_id": "2025-OC-169A:p1:v3c3",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S5",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "requirements",
+              "applicability",
+              "limits"
+            ]
+          },
+          {
+            "id": "2025-OC-169A:p2:v3c2",
+            "document_id": "2025-OC-169A",
+            "page": 2,
+            "text": "2. NPCI circular, ‘Enhancement in UPI LITE transaction limit to %500’ vide No. NPCI/UPI/OC No.169/2023-24, dated 31* August 2023",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "machine_extraction_not_verified_word_for_word",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 25,
+            "end_word": 44,
+            "section_id": "2025-OC-169A:s1",
+            "section_heading": "Annexure A",
+            "clause_label": "2.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p2:v3c1",
+            "next_chunk_id": "2025-OC-169A:p2:v3c3",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S6",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "limits"
+            ]
+          },
+          {
+            "id": "2025-OC-169A:p1:v3c3",
+            "document_id": "2025-OC-169A",
+            "page": 1,
+            "text": "2. Issuer banks live on UPI LITE shall identify all the UPI LITE accounts that have had zero transactions in the past six months. Any balances in these dormant LITE accounts shall be refunded to the source bank account. Issuer banks shall implement the changes by 30th June 2025. Yours sincerely, SD/- Kunal Kalawatia Chief of Product",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "source_image_checked_transcription",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 254,
+            "end_word": 311,
+            "section_id": "2025-OC-169A:s0",
+            "section_heading": "Document opening",
+            "clause_label": "2.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p1:v3c2",
+            "next_chunk_id": "2025-OC-169A:p2:v3c1",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [
+              "issuer_bank"
+            ],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S7",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": [
+              "requirements"
+            ]
+          },
+          {
+            "id": "2025-OC-169A:p2:v3c3",
+            "document_id": "2025-OC-169A",
+            "page": 2,
+            "text": "3. NPC circular, ‘Customer awareness and engagement for UPI LITE Enablement and Top-up’ vide No. NPCI/UPI/OC No.179/2023-24, dated 02\"* November 2023",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "machine_extraction_not_verified_word_for_word",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 44,
+            "end_word": 65,
+            "section_id": "2025-OC-169A:s1",
+            "section_heading": "Annexure A",
+            "clause_label": "3.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p2:v3c2",
+            "next_chunk_id": "2025-OC-169A:p2:v3c4",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S8",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": []
+          },
+          {
+            "id": "2025-OC-169A:p2:v3c4",
+            "document_id": "2025-OC-169A",
+            "page": 2,
+            "text": "4. NPCI circular, ‘introduction of UP! TAP & PAY mode of Payments’ vide No. NPCI/UPI/OC No.186/2023-24, dated 19\"\" December 2023",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "machine_extraction_not_verified_word_for_word",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 65,
+            "end_word": 85,
+            "section_id": "2025-OC-169A:s1",
+            "section_heading": "Annexure A",
+            "clause_label": "4.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p2:v3c3",
+            "next_chunk_id": "2025-OC-169A:p2:v3c5",
+            "feature_ids": [
+              "tap_pay",
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S9",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": []
+          },
+          {
+            "id": "2025-OC-169A:p2:v3c5",
+            "document_id": "2025-OC-169A",
+            "page": 2,
+            "text": "5. NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’ vide No. NPCI/UPI/OC No.205/2024-25, dated 27\" August 2024",
+            "title": "Addendum to Enhancement in UPI LITE Limits",
+            "circular_number": "169A",
+            "series": "UPI",
+            "issue_date": "2025-02-27",
+            "listed_update_date": null,
+            "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+            "method": "ocr",
+            "review_status": "machine_extraction_not_verified_word_for_word",
+            "needs_priority_review": false,
+            "ocr_confidence": 89,
+            "product_memberships": [
+              "UPI"
+            ],
+            "reference_label": "OC 169A",
+            "fiscal_year": null,
+            "source_coverage": {
+              "total_pages": 2,
+              "empty_pages": [],
+              "thin_pages": [],
+              "page_count_verified": true,
+              "origin": "existing_v04"
+            },
+            "metadata_quality": "existing_source_metadata",
+            "start_word": 85,
+            "end_word": 103,
+            "section_id": "2025-OC-169A:s1",
+            "section_heading": "Annexure A",
+            "clause_label": "5.",
+            "chunker_version": "clauses-v1",
+            "segmentation_status": "heuristic_not_reviewed",
+            "previous_chunk_id": "2025-OC-169A:p2:v3c4",
+            "next_chunk_id": "",
+            "feature_ids": [
+              "upi_lite"
+            ],
+            "family": "169",
+            "feature_basis": "title_and_clause_regex_unreviewed",
+            "roles": [],
+            "role_basis": "text_regex_unreviewed",
+            "citation": "S10",
+            "retrieval_reason": "document_coverage",
+            "via_document_id": "",
+            "relation": null,
+            "source_group": "www.npci.org.in",
+            "document_type": "Unrecorded",
+            "applicability": {},
+            "evidence_aspects": []
+          }
+        ],
+        "claims": [
+          {
+            "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+            "sources": [
+              "S1",
+              "S2",
+              "S5"
+            ],
+            "draft_index": 1,
+            "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+            "support_status": "automated_supported",
+            "repair_applied": true
+          }
+        ],
+        "warnings": [
+          "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+          "Requested aspects not located by passage heuristics: Dates and timelines. The answer may be partial.",
+          "Research entity was not specified. Source-specific applicability must remain explicit in the answer.",
+          "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+          "4 of 5 draft claims were withheld. The remaining statements may not fully answer your question; inspect the sources and review details.",
+          "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+          "The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below."
+        ],
+        "answer": "Incomplete answer — a statement needed to answer your main question did not pass support checks. The remaining text provides background only.",
+        "abstained": false,
+        "claim_repairs": [
+          {
+            "original": {
+              "text": "The 2025 addendum increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+              "sources": [
+                "S1",
+                "S2"
+              ],
+              "draft_index": 1,
+              "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+              "support_status": "unsupported",
+              "review_reasons": [
+                "Claim contains a number absent from cited text."
+              ]
+            },
+            "status": "accepted",
+            "evidence_citations": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ],
+            "candidate": {
+              "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+              "sources": [
+                "S1",
+                "S2",
+                "S5"
+              ],
+              "draft_index": 1,
+              "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000."
+            },
+            "checks": [
+              {
+                "claim_index": 0,
+                "status": "supported",
+                "reasons": [
+                  "The local model accepted the selected evidence as support."
+                ],
+                "quotes": [
+                  {
+                    "citation": "S1",
+                    "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                  },
+                  {
+                    "citation": "S2",
+                    "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                  },
+                  {
+                    "citation": "S5",
+                    "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately."
+                  }
+                ],
+                "checker": "local_model_plus_deterministic_guards"
+              }
+            ],
+            "original_check": {
+              "claim_index": 0,
+              "status": "unsupported",
+              "reasons": [
+                "Claim contains a number absent from cited text."
+              ],
+              "quotes": [],
+              "checker": "local_model_plus_deterministic_guards"
+            }
+          },
+          {
+            "original": {
+              "text": "The 2025 addendum introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+              "sources": [
+                "S1"
+              ],
+              "draft_index": 2,
+              "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+              "support_status": "unsupported",
+              "review_reasons": [
+                "Claim contains a number absent from cited text."
+              ]
+            },
+            "status": "rejected",
+            "evidence_citations": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5",
+              "S6"
+            ],
+            "candidate": {
+              "text": "The 2025 addendum (Circular 169A) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (Circular 169).",
+              "sources": [
+                "S5"
+              ],
+              "draft_index": 2,
+              "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2)."
+            },
+            "checks": [
+              {
+                "claim_index": 0,
+                "status": "unsupported",
+                "reasons": [
+                  "Claim contains a number absent from cited text."
+                ],
+                "quotes": [],
+                "checker": "local_model_plus_deterministic_guards"
+              }
+            ]
+          }
+        ],
+        "central_answer_status": "withheld_or_incomplete",
+        "response_status": "incomplete",
+        "coverage_check": {
+          "status": "issues_flagged",
+          "findings": [
+            {
+              "kind": "possible_conflict",
+              "reason": "The answer claims the addendum raises the total account limit from ₹2,000 to ₹5,000. However, excerpt S2.2 (baseline) explicitly states the 'Max balance in UPI lite account' remains at ₹2,000 with '(No change)', while excerpt S5.1 (addendum) shows a table where the 'Total Limit at any point in time' for 'UPI LITE — New' is listed as ₹5,000 but the column header structure and context of S5.1 suggest this might be conflating different limit types or misinterpreting the table which lists 'Per Transaction Limit' as ₹1000 and 'Total Limit' as ₹5000 for a specific category (UPI LITE X - Offline) while keeping others at ₹2000. The answer simplifies this into a direct increase without clarifying if the ₹5,000 applies universally or to a specific new category, creating ambiguity about whether the baseline limit of ₹2,000 is fully superseded or if it coexists.",
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                },
+                {
+                  "citation": "S2",
+                  "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                },
+                {
+                  "citation": "S5",
+                  "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                }
+              ]
+            },
+            {
+              "kind": "possible_conflict",
+              "reason": "The answer states the addendum introduces new conditions regarding 'online-mode replenishment and auto top-up options absent in the 2023 circular'. Excerpt S5.1 supports the existence of these features in the addendum (referencing NPCI circular No. 205/2024-25). However, the answer asserts these were 'absent' in the 2023 circular without providing evidence from the 2023 circular (S2) that explicitly confirms their absence or lack of mention. While S2 focuses on offline limits and doesn't detail online replenishment mechanisms, stating they were 'absent' as a definitive fact derived solely from the addendum's introduction is an inference; the baseline might simply not have addressed them yet rather than having an explicit prohibition or feature set that precludes them.",
+              "quotes": [
+                {
+                  "citation": "S2",
+                  "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now"
+                },
+                {
+                  "citation": "S2",
+                  "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                },
+                {
+                  "citation": "S5",
+                  "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                }
+              ]
+            },
+            {
+              "kind": "scope_unclear",
+              "reason": "The answer contrasts the 2025 addendum with the 2023 baseline regarding limits and conditions. However, it does not clearly distinguish between different UPI LITE categories (e.g., 'UPI LITE X - Offline' vs others) mentioned in excerpt S5.1's table. The table in S5.1 shows three columns: 'Existing', 'New', and 'UPI LITE X (Offline) — No Change'. The answer treats the limits as a single unified change, potentially blurring the distinction that some categories might not have changed while others did, leading to an unclear scope of applicability for the limit increases.",
+              "quotes": [
+                {
+                  "citation": "S5",
+                  "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                },
+                {
+                  "citation": "S2",
+                  "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                }
+              ]
+            }
+          ],
+          "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+        },
+        "elapsed_ms": 25375,
+        "timing": {
+          "total_seconds": 25.375,
+          "budget_seconds": 120.0,
+          "stages": [
+            {
+              "stage": "retrieval",
+              "seconds": 0.016
+            },
+            {
+              "stage": "generation",
+              "seconds": 8.609
+            },
+            {
+              "stage": "claim_support",
+              "seconds": 7.031
+            },
+            {
+              "stage": "coverage",
+              "seconds": 9.719
+            }
+          ],
+          "model_calls": [
+            {
+              "stage": "generation",
+              "status": "completed",
+              "timeout_seconds": 60.0,
+              "prompt_tokens": 5947,
+              "output_tokens": 484,
+              "load_seconds": 0.002,
+              "prompt_seconds": 1.91,
+              "decode_seconds": 6.499,
+              "done_reason": "stop",
+              "seconds": 8.609
+            },
+            {
+              "stage": "claim_support",
+              "status": "completed",
+              "timeout_seconds": 12.0,
+              "prompt_tokens": 580,
+              "output_tokens": 25,
+              "load_seconds": 0.002,
+              "prompt_seconds": 0.252,
+              "decode_seconds": 0.453,
+              "done_reason": "stop",
+              "seconds": 0.843
+            },
+            {
+              "stage": "claim_support",
+              "status": "completed",
+              "timeout_seconds": 12.0,
+              "prompt_tokens": 2374,
+              "output_tokens": 152,
+              "load_seconds": 0.001,
+              "prompt_seconds": 0.79,
+              "decode_seconds": 1.96,
+              "done_reason": "stop",
+              "seconds": 2.828
+            },
+            {
+              "stage": "claim_support",
+              "status": "completed",
+              "timeout_seconds": 12.0,
+              "prompt_tokens": 1793,
+              "output_tokens": 47,
+              "load_seconds": 0.001,
+              "prompt_seconds": 0.592,
+              "decode_seconds": 0.634,
+              "done_reason": "stop",
+              "seconds": 1.344
+            },
+            {
+              "stage": "claim_support",
+              "status": "completed",
+              "timeout_seconds": 12.0,
+              "prompt_tokens": 2282,
+              "output_tokens": 83,
+              "load_seconds": 0.001,
+              "prompt_seconds": 0.76,
+              "decode_seconds": 1.118,
+              "done_reason": "stop",
+              "seconds": 2.0
+            },
+            {
+              "stage": "coverage",
+              "status": "completed",
+              "timeout_seconds": 15.0,
+              "prompt_tokens": 3592,
+              "output_tokens": 641,
+              "load_seconds": 0.001,
+              "prompt_seconds": 1.196,
+              "decode_seconds": 8.397,
+              "done_reason": "stop",
+              "seconds": 9.719
+            }
+          ]
+        }
+      },
+      "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular. [S1, S2, S5]",
+      "actions": "",
+      "reviewer_questions": "",
+      "snapshot": {
+        "corpus": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+        "sources": {
+          "2023-UPI-169": "43e3891dc593a4b990b97becff930fc412bceef6be7332e3faf694fc0fc17c04",
+          "2025-OC-169A": "9cff6449b86b0900a97a9ad031dac782fb4365ced7772b3604465d77e01c36d6"
+        },
+        "models": {
+          "generation_model": "qwen3.5:9b",
+          "embedding_model": "qwen3-embedding:0.6b",
+          "context_length": 16384,
+          "max_output_tokens": 3072
+        },
+        "installed_models": {
+          "status": "available",
+          "digests": {
+            "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+            "qwen3-embedding:0.6b": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+          }
+        },
+        "graph": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+      },
+      "edited_by_human": false,
+      "created": "2026-10-28T16:09:27.682921+00:00"
+    },
+    "history": [
+      {
+        "id": 4,
+        "item_id": "3381a86c12ef4e05af185bc21d66d4ec",
+        "version": 1,
+        "at": "2026-10-28T16:09:02.286673+00:00",
+        "action": "created",
+        "reviewer": "",
+        "note": ""
+      },
+      {
+        "id": 5,
+        "item_id": "3381a86c12ef4e05af185bc21d66d4ec",
+        "version": 1,
+        "at": "2026-10-28T16:09:02.286673+00:00",
+        "action": "generation_started",
+        "reviewer": "",
+        "note": ""
+      },
+      {
+        "id": 6,
+        "item_id": "3381a86c12ef4e05af185bc21d66d4ec",
+        "version": 2,
+        "at": "2026-10-28T16:09:27.682921+00:00",
+        "action": "generated",
+        "reviewer": "",
+        "note": ""
+      }
+    ],
+    "versions": [
+      {
+        "version": 1,
+        "request": {
+          "query": "What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved points.",
+          "operating_context": "",
+          "document_ids": [
+            "2025-OC-169A",
+            "2023-UPI-169"
+          ],
+          "series": "",
+          "cutoff": ""
+        },
+        "result": {},
+        "text": "",
+        "actions": "",
+        "reviewer_questions": "",
+        "snapshot": null,
+        "created": "2026-10-28T16:09:02.286673+00:00"
+      },
+      {
+        "version": 2,
+        "request": {
+          "query": "What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved points.",
+          "operating_context": "",
+          "document_ids": [
+            "2025-OC-169A",
+            "2023-UPI-169"
+          ],
+          "series": "",
+          "cutoff": ""
+        },
+        "result": {
+          "answer_blocks": [
+            {
+              "type": "paragraph",
+              "claims": [
+                {
+                  "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+                  "sources": [
+                    "S1",
+                    "S2",
+                    "S5"
+                  ],
+                  "draft_index": 1,
+                  "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+                  "support_status": "automated_supported",
+                  "repair_applied": true
+                }
+              ]
+            }
+          ],
+          "answer_style": "auto",
+          "formatting_source": "repaired_layout",
+          "flagged_claims": [
+            {
+              "text": "The 2025 addendum introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+              "sources": [
+                "S1"
+              ],
+              "draft_index": 2,
+              "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+              "support_status": "unsupported",
+              "review_reasons": [
+                "Claim contains a number absent from cited text."
+              ]
+            },
+            {
+              "text": "The 2025 addendum (S7) adds a requirement for issuer banks to identify dormant UPI LITE accounts with zero transactions in six months and refund balances, with implementation by 30th June 2025; this requirement is absent from the 2023 baseline (S2).",
+              "sources": [
+                "S1"
+              ],
+              "draft_index": 3,
+              "support_status": "unsupported",
+              "review_reasons": [
+                "Claim contains a number absent from cited text."
+              ]
+            },
+            {
+              "text": "The 2025 addendum references an RBI notification dated 4th December 2024 as the basis for the new limits, while the 2023 baseline referenced an RBI circular dated 24th August 2023.",
+              "sources": [
+                "S1",
+                "S2"
+              ],
+              "draft_index": 4,
+              "original_text": "The 2025 addendum (S1) references an RBI notification dated 4th December 2024 as the basis for the new limits, while the 2023 baseline (S2) referenced an RBI circular dated 24th August 2023.",
+              "support_status": "unsupported",
+              "review_reasons": [
+                "Claim contains a number absent from cited text."
+              ]
+            },
+            {
+              "text": "The 2025 addendum states that the new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit, effectively superseding earlier provisions in Annexure A.",
+              "sources": [
+                "S1"
+              ],
+              "draft_index": 5,
+              "original_text": "The 2025 addendum (S1) states that the new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit, effectively superseding earlier provisions in Annexure A.",
+              "support_status": "unsupported",
+              "review_reasons": [
+                "The local model found that the cited evidence does not fully support the claim."
+              ]
+            }
+          ],
+          "claim_checks": [
+            {
+              "claim_index": 0,
+              "status": "supported",
+              "reasons": [
+                "The local model accepted the selected evidence as support."
+              ],
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                },
+                {
+                  "citation": "S2",
+                  "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                },
+                {
+                  "citation": "S5",
+                  "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately."
+                }
+              ],
+              "checker": "local_model_plus_deterministic_guards",
+              "repair_applied": true
+            },
+            {
+              "claim_index": 1,
+              "status": "unsupported",
+              "reasons": [
+                "Claim contains a number absent from cited text."
+              ],
+              "quotes": [],
+              "checker": "local_model_plus_deterministic_guards"
+            },
+            {
+              "claim_index": 2,
+              "status": "unsupported",
+              "reasons": [
+                "Claim contains a number absent from cited text."
+              ],
+              "quotes": [],
+              "checker": "local_model_plus_deterministic_guards"
+            },
+            {
+              "claim_index": 3,
+              "status": "unsupported",
+              "reasons": [
+                "Claim contains a number absent from cited text."
+              ],
+              "quotes": [],
+              "checker": "local_model_plus_deterministic_guards"
+            },
+            {
+              "claim_index": 4,
+              "status": "unsupported",
+              "reasons": [
+                "The local model found that the cited evidence does not fully support the claim."
+              ],
+              "quotes": [
+                {
+                  "citation": "S1",
+                  "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                }
+              ],
+              "checker": "local_model_plus_deterministic_guards"
+            }
+          ],
+          "mode": "generate",
+          "retrieval_trace": {
+            "route": "compare",
+            "scope": "related",
+            "seed_chunk_ids": [
+              "2025-OC-169A:p1:v3c1",
+              "2023-UPI-169:p1:v3c1",
+              "2025-OC-169A:p2:v3c1",
+              "2023-UPI-169:p1:v3c2",
+              "2025-OC-169A:p1:v3c2",
+              "2025-OC-169A:p2:v3c2",
+              "2025-OC-169A:p1:v3c3",
+              "2025-OC-169A:p2:v3c3",
+              "2025-OC-169A:p2:v3c4",
+              "2025-OC-169A:p2:v3c5"
+            ],
+            "included_chunk_ids": [
+              "2025-OC-169A:p1:v3c1",
+              "2023-UPI-169:p1:v3c1",
+              "2025-OC-169A:p2:v3c1",
+              "2023-UPI-169:p1:v3c2",
+              "2025-OC-169A:p1:v3c2",
+              "2025-OC-169A:p2:v3c2",
+              "2025-OC-169A:p1:v3c3",
+              "2025-OC-169A:p2:v3c3",
+              "2025-OC-169A:p2:v3c4",
+              "2025-OC-169A:p2:v3c5"
+            ],
+            "evidence_characters": 8273,
+            "character_budget": 18000,
+            "max_reference_hops": 1,
+            "notes": [
+              "Requested aspects not located by passage heuristics: Dates and timelines. The answer may be partial.",
+              "Research entity was not specified. Source-specific applicability must remain explicit in the answer."
+            ],
+            "document_coverage": {
+              "2025-OC-169A": {
+                "included_chunks": 8,
+                "total_chunks": 8,
+                "complete": true,
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "metadata_quality": "existing_source_metadata",
+                "page_basis": "source_pages",
+                "available_text_complete": true
+              },
+              "2023-UPI-169": {
+                "included_chunks": 2,
+                "total_chunks": 2,
+                "complete": true,
+                "total_pages": 1,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "metadata_quality": "existing_source_metadata",
+                "page_basis": "source_pages",
+                "available_text_complete": true
+              }
+            },
+            "requested_circulars": [],
+            "reranker": {
+              "enabled": false,
+              "model": null,
+              "candidate_count": 0,
+              "elapsed_ms": 0
+            },
+            "candidate_stages": {},
+            "retrieval_seed_policy": "balanced",
+            "research_policy": "publisher_neutral_v2",
+            "followup_query": null,
+            "query_plan": {
+              "query": "Compare the selected sources to answer: What changed in the UPI Lite limits addendum compared with the baseline? Include source-backed conditions and dates, and identify unresolved points.\nUser-designated changed source: Addendum to Enhancement in UPI LITE Limits\nFirst document is the proposed change, not proof of supersession. Explain the change concisely; compare earlier and revised provisions with separate citations. Include supported conditions, effective dates and unresolved points. A requirement absent from the newer document is not automatically retained or withdrawn. Retention needs source support. Distinguish new rules from references to earlier rules. Separate issue dates, referenced-letter dates and deadlines. Do not infer retroactivity, grandfathering or post-deadline-only applicability from silence; mark it unresolved. Do not assert institution-specific impact or implementation actions.",
+              "entity": "",
+              "entity_basis": "unspecified",
+              "requested_aspects": [
+                "requirements",
+                "applicability",
+                "limits",
+                "timing",
+                "changes"
+              ],
+              "product_filter": null,
+              "issue_date_cutoff": null,
+              "selected_document_ids": [
+                "2025-OC-169A",
+                "2023-UPI-169"
+              ],
+              "focus_terms": [
+                "absent",
+                "actions",
+                "addendum",
+                "answer",
+                "applicability",
+                "assert",
+                "automatically",
+                "baseline",
+                "change",
+                "changed",
+                "citations",
+                "compared",
+                "concisely",
+                "conditions",
+                "dates",
+                "deadlines",
+                "distinguish",
+                "document",
+                "earlier",
+                "effective",
+                "enhancement",
+                "first",
+                "from",
+                "grandfathering",
+                "identify",
+                "impact",
+                "implementation",
+                "include",
+                "infer",
+                "institution-specific",
+                "issue",
+                "it",
+                "limits",
+                "lite",
+                "mark",
+                "needs",
+                "new",
+                "newer",
+                "not",
+                "points",
+                "post-deadline-only",
+                "proof",
+                "proposed",
+                "provisions",
+                "referenced-letter",
+                "references",
+                "retained",
+                "retention",
+                "retroactivity",
+                "revised",
+                "selected",
+                "separate",
+                "silence",
+                "source",
+                "source-backed",
+                "sources",
+                "supersession",
+                "support",
+                "supported",
+                "unresolved",
+                "upi",
+                "user-designated",
+                "withdrawn"
+              ],
+              "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+            },
+            "evidence_map": [
+              {
+                "citation": "S1",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 1,
+                "section": "Document opening",
+                "aspects": [
+                  "limits",
+                  "changes"
+                ],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "source_image_checked_transcription",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S2",
+                "document_id": "2023-UPI-169",
+                "title": "Enhancement in UPI LITE transaction limit to ₹500",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 1,
+                "section": "Document opening",
+                "aspects": [
+                  "requirements",
+                  "applicability",
+                  "limits",
+                  "changes"
+                ],
+                "applicability": {},
+                "issue_date": "2023-08-31",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "source_image_checked_transcription",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S3",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 2,
+                "section": "Annexure A",
+                "aspects": [],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "machine_extraction_not_verified_word_for_word",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S4",
+                "document_id": "2023-UPI-169",
+                "title": "Enhancement in UPI LITE transaction limit to ₹500",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 1,
+                "section": "Document opening",
+                "aspects": [
+                  "changes"
+                ],
+                "applicability": {},
+                "issue_date": "2023-08-31",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "source_image_checked_transcription",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S5",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 1,
+                "section": "Document opening",
+                "aspects": [
+                  "requirements",
+                  "applicability",
+                  "limits"
+                ],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "source_image_checked_transcription",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S6",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 2,
+                "section": "Annexure A",
+                "aspects": [
+                  "limits"
+                ],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "machine_extraction_not_verified_word_for_word",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S7",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 1,
+                "section": "Document opening",
+                "aspects": [
+                  "requirements"
+                ],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "source_image_checked_transcription",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S8",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 2,
+                "section": "Annexure A",
+                "aspects": [],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "machine_extraction_not_verified_word_for_word",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S9",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 2,
+                "section": "Annexure A",
+                "aspects": [],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "machine_extraction_not_verified_word_for_word",
+                "retrieval_reason": "document_coverage"
+              },
+              {
+                "citation": "S10",
+                "document_id": "2025-OC-169A",
+                "title": "Addendum to Enhancement in UPI LITE Limits",
+                "source_group": "www.npci.org.in",
+                "document_type": "Unrecorded",
+                "page": 2,
+                "section": "Annexure A",
+                "aspects": [],
+                "applicability": {},
+                "issue_date": "2025-02-27",
+                "updated_on": null,
+                "effective_date": null,
+                "extraction_review": "machine_extraction_not_verified_word_for_word",
+                "retrieval_reason": "document_coverage"
+              }
+            ],
+            "aspect_coverage": [
+              {
+                "aspect": "requirements",
+                "label": "Requirements",
+                "citations": [
+                  "S2",
+                  "S5",
+                  "S7"
+                ],
+                "status": "passages_found"
+              },
+              {
+                "aspect": "applicability",
+                "label": "Applicability",
+                "citations": [
+                  "S2",
+                  "S5"
+                ],
+                "status": "passages_found"
+              },
+              {
+                "aspect": "limits",
+                "label": "Limits and thresholds",
+                "citations": [
+                  "S1",
+                  "S2",
+                  "S5",
+                  "S6"
+                ],
+                "status": "passages_found"
+              },
+              {
+                "aspect": "timing",
+                "label": "Dates and timelines",
+                "citations": [],
+                "status": "not_located"
+              },
+              {
+                "aspect": "changes",
+                "label": "Changes and references",
+                "citations": [
+                  "S1",
+                  "S2",
+                  "S4"
+                ],
+                "status": "passages_found"
+              }
+            ],
+            "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability."
+          },
+          "sources": [
+            {
+              "id": "2025-OC-169A:p1:v3c1",
+              "document_id": "2025-OC-169A",
+              "page": 1,
+              "text": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained.",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "source_image_checked_transcription",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 0,
+              "end_word": 70,
+              "section_id": "2025-OC-169A:s0",
+              "section_heading": "Document opening",
+              "clause_label": "",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "",
+              "next_chunk_id": "2025-OC-169A:p1:v3c2",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S1",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "limits",
+                "changes"
+              ]
+            },
+            {
+              "id": "2023-UPI-169:p1:v3c1",
+              "document_id": "2023-UPI-169",
+              "page": 1,
+              "text": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement",
+              "title": "Enhancement in UPI LITE transaction limit to ₹500",
+              "circular_number": "169",
+              "series": "UPI",
+              "issue_date": "2023-08-31",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+              "method": "ocr",
+              "review_status": "source_image_checked_transcription",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 1,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 0,
+              "end_word": 220,
+              "section_id": "2023-UPI-169:s0",
+              "section_heading": "Document opening",
+              "clause_label": "",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "",
+              "next_chunk_id": "2023-UPI-169:p1:v3c2",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [
+                "payee_psp"
+              ],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S2",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "requirements",
+                "applicability",
+                "limits",
+                "changes"
+              ]
+            },
+            {
+              "id": "2025-OC-169A:p2:v3c1",
+              "document_id": "2025-OC-169A",
+              "page": 2,
+              "text": "Annexure A 4. NPClI circular, ‘Introduction of “On-Device wallet” — UPI LITE for Small Value Transactions’ vide No. NPCI/UPI/OC No. 138/2021-22, dated 16\" March 2022",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "machine_extraction_not_verified_word_for_word",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 0,
+              "end_word": 25,
+              "section_id": "2025-OC-169A:s1",
+              "section_heading": "Annexure A",
+              "clause_label": "4.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p1:v3c3",
+              "next_chunk_id": "2025-OC-169A:p2:v3c2",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S3",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": []
+            },
+            {
+              "id": "2023-UPI-169:p1:v3c2",
+              "document_id": "2023-UPI-169",
+              "page": 1,
+              "text": "₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changes on the App & application systems. Members are requested to make the necessary changes with immediate effect. Yours sincerely, SD/- Kunal Kalawatia Chief of Products",
+              "title": "Enhancement in UPI LITE transaction limit to ₹500",
+              "circular_number": "169",
+              "series": "UPI",
+              "issue_date": "2023-08-31",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_169_Enhancement_in_UPI_LITE_transaction_limit_to_Rs_500_0188d612d9.pdf",
+              "method": "ocr",
+              "review_status": "source_image_checked_transcription",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 1,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 185,
+              "end_word": 249,
+              "section_id": "2023-UPI-169:s0",
+              "section_heading": "Document opening",
+              "clause_label": "",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2023-UPI-169:p1:v3c1",
+              "next_chunk_id": "",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [
+                "payee_psp"
+              ],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S4",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "changes"
+              ]
+            },
+            {
+              "id": "2025-OC-169A:p1:v3c2",
+              "document_id": "2025-OC-169A",
+              "page": 1,
+              "text": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately.",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "source_image_checked_transcription",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 70,
+              "end_word": 254,
+              "section_id": "2025-OC-169A:s0",
+              "section_heading": "Document opening",
+              "clause_label": "1.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p1:v3c1",
+              "next_chunk_id": "2025-OC-169A:p1:v3c3",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S5",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "requirements",
+                "applicability",
+                "limits"
+              ]
+            },
+            {
+              "id": "2025-OC-169A:p2:v3c2",
+              "document_id": "2025-OC-169A",
+              "page": 2,
+              "text": "2. NPCI circular, ‘Enhancement in UPI LITE transaction limit to %500’ vide No. NPCI/UPI/OC No.169/2023-24, dated 31* August 2023",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "machine_extraction_not_verified_word_for_word",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 25,
+              "end_word": 44,
+              "section_id": "2025-OC-169A:s1",
+              "section_heading": "Annexure A",
+              "clause_label": "2.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p2:v3c1",
+              "next_chunk_id": "2025-OC-169A:p2:v3c3",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S6",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "limits"
+              ]
+            },
+            {
+              "id": "2025-OC-169A:p1:v3c3",
+              "document_id": "2025-OC-169A",
+              "page": 1,
+              "text": "2. Issuer banks live on UPI LITE shall identify all the UPI LITE accounts that have had zero transactions in the past six months. Any balances in these dormant LITE accounts shall be refunded to the source bank account. Issuer banks shall implement the changes by 30th June 2025. Yours sincerely, SD/- Kunal Kalawatia Chief of Product",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "source_image_checked_transcription",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 254,
+              "end_word": 311,
+              "section_id": "2025-OC-169A:s0",
+              "section_heading": "Document opening",
+              "clause_label": "2.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p1:v3c2",
+              "next_chunk_id": "2025-OC-169A:p2:v3c1",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [
+                "issuer_bank"
+              ],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S7",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": [
+                "requirements"
+              ]
+            },
+            {
+              "id": "2025-OC-169A:p2:v3c3",
+              "document_id": "2025-OC-169A",
+              "page": 2,
+              "text": "3. NPC circular, ‘Customer awareness and engagement for UPI LITE Enablement and Top-up’ vide No. NPCI/UPI/OC No.179/2023-24, dated 02\"* November 2023",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "machine_extraction_not_verified_word_for_word",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 44,
+              "end_word": 65,
+              "section_id": "2025-OC-169A:s1",
+              "section_heading": "Annexure A",
+              "clause_label": "3.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p2:v3c2",
+              "next_chunk_id": "2025-OC-169A:p2:v3c4",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S8",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": []
+            },
+            {
+              "id": "2025-OC-169A:p2:v3c4",
+              "document_id": "2025-OC-169A",
+              "page": 2,
+              "text": "4. NPCI circular, ‘introduction of UP! TAP & PAY mode of Payments’ vide No. NPCI/UPI/OC No.186/2023-24, dated 19\"\" December 2023",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "machine_extraction_not_verified_word_for_word",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 65,
+              "end_word": 85,
+              "section_id": "2025-OC-169A:s1",
+              "section_heading": "Annexure A",
+              "clause_label": "4.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p2:v3c3",
+              "next_chunk_id": "2025-OC-169A:p2:v3c5",
+              "feature_ids": [
+                "tap_pay",
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S9",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": []
+            },
+            {
+              "id": "2025-OC-169A:p2:v3c5",
+              "document_id": "2025-OC-169A",
+              "page": 2,
+              "text": "5. NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’ vide No. NPCI/UPI/OC No.205/2024-25, dated 27\" August 2024",
+              "title": "Addendum to Enhancement in UPI LITE Limits",
+              "circular_number": "169A",
+              "series": "UPI",
+              "issue_date": "2025-02-27",
+              "listed_update_date": null,
+              "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_169_A_FY_202425_Addendum_to_Enhancement_in_UPI_LITE_Limits_270c24bcbc.pdf",
+              "method": "ocr",
+              "review_status": "machine_extraction_not_verified_word_for_word",
+              "needs_priority_review": false,
+              "ocr_confidence": 89,
+              "product_memberships": [
+                "UPI"
+              ],
+              "reference_label": "OC 169A",
+              "fiscal_year": null,
+              "source_coverage": {
+                "total_pages": 2,
+                "empty_pages": [],
+                "thin_pages": [],
+                "page_count_verified": true,
+                "origin": "existing_v04"
+              },
+              "metadata_quality": "existing_source_metadata",
+              "start_word": 85,
+              "end_word": 103,
+              "section_id": "2025-OC-169A:s1",
+              "section_heading": "Annexure A",
+              "clause_label": "5.",
+              "chunker_version": "clauses-v1",
+              "segmentation_status": "heuristic_not_reviewed",
+              "previous_chunk_id": "2025-OC-169A:p2:v3c4",
+              "next_chunk_id": "",
+              "feature_ids": [
+                "upi_lite"
+              ],
+              "family": "169",
+              "feature_basis": "title_and_clause_regex_unreviewed",
+              "roles": [],
+              "role_basis": "text_regex_unreviewed",
+              "citation": "S10",
+              "retrieval_reason": "document_coverage",
+              "via_document_id": "",
+              "relation": null,
+              "source_group": "www.npci.org.in",
+              "document_type": "Unrecorded",
+              "applicability": {},
+              "evidence_aspects": []
+            }
+          ],
+          "claims": [
+            {
+              "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+              "sources": [
+                "S1",
+                "S2",
+                "S5"
+              ],
+              "draft_index": 1,
+              "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+              "support_status": "automated_supported",
+              "repair_applied": true
+            }
+          ],
+          "warnings": [
+            "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+            "Requested aspects not located by passage heuristics: Dates and timelines. The answer may be partial.",
+            "Research entity was not specified. Source-specific applicability must remain explicit in the answer.",
+            "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+            "4 of 5 draft claims were withheld. The remaining statements may not fully answer your question; inspect the sources and review details.",
+            "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+            "The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below."
+          ],
+          "answer": "Incomplete answer — a statement needed to answer your main question did not pass support checks. The remaining text provides background only.",
+          "abstained": false,
+          "claim_repairs": [
+            {
+              "original": {
+                "text": "The 2025 addendum increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+                "sources": [
+                  "S1",
+                  "S2"
+                ],
+                "draft_index": 1,
+                "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000.",
+                "support_status": "unsupported",
+                "review_reasons": [
+                  "Claim contains a number absent from cited text."
+                ]
+              },
+              "status": "accepted",
+              "evidence_citations": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5",
+                "S6"
+              ],
+              "candidate": {
+                "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular.",
+                "sources": [
+                  "S1",
+                  "S2",
+                  "S5"
+                ],
+                "draft_index": 1,
+                "original_text": "The 2025 addendum (S1) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (S2) had set the per-transaction limit at ₹500 with a total limit of ₹2,000."
+              },
+              "checks": [
+                {
+                  "claim_index": 0,
+                  "status": "supported",
+                  "reasons": [
+                    "The local model accepted the selected evidence as support."
+                  ],
+                  "quotes": [
+                    {
+                      "citation": "S1",
+                      "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                    },
+                    {
+                      "citation": "S2",
+                      "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                    },
+                    {
+                      "citation": "S5",
+                      "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing | UPI LITE — New | UPI LITE X (Offline) — No Change | |---|---|---|---| | Per Transaction Limit | ₹500 | ₹1000 | ₹500 | | Total Limit at any point in time | ₹2000 | ₹5000 | ₹2000 | The new limits shall apply to and govern all existing NPCI circulars pertaining to UPI LITE limit (Annexure A). All the members are required to make the necessary changes pertaining to limit increase immediately."
+                    }
+                  ],
+                  "checker": "local_model_plus_deterministic_guards"
+                }
+              ],
+              "original_check": {
+                "claim_index": 0,
+                "status": "unsupported",
+                "reasons": [
+                  "Claim contains a number absent from cited text."
+                ],
+                "quotes": [],
+                "checker": "local_model_plus_deterministic_guards"
+              }
+            },
+            {
+              "original": {
+                "text": "The 2025 addendum introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+                "sources": [
+                  "S1"
+                ],
+                "draft_index": 2,
+                "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2).",
+                "support_status": "unsupported",
+                "review_reasons": [
+                  "Claim contains a number absent from cited text."
+                ]
+              },
+              "status": "rejected",
+              "evidence_citations": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5",
+                "S6"
+              ],
+              "candidate": {
+                "text": "The 2025 addendum (Circular 169A) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (Circular 169).",
+                "sources": [
+                  "S5"
+                ],
+                "draft_index": 2,
+                "original_text": "The 2025 addendum (S1) introduces a new replenishment rule allowing used limits to be replenished only in online mode with AFA and offering an Auto Top-up option, which were not present in the 2023 baseline (S2)."
+              },
+              "checks": [
+                {
+                  "claim_index": 0,
+                  "status": "unsupported",
+                  "reasons": [
+                    "Claim contains a number absent from cited text."
+                  ],
+                  "quotes": [],
+                  "checker": "local_model_plus_deterministic_guards"
+                }
+              ]
+            }
+          ],
+          "central_answer_status": "withheld_or_incomplete",
+          "response_status": "incomplete",
+          "coverage_check": {
+            "status": "issues_flagged",
+            "findings": [
+              {
+                "kind": "possible_conflict",
+                "reason": "The answer claims the addendum raises the total account limit from ₹2,000 to ₹5,000. However, excerpt S2.2 (baseline) explicitly states the 'Max balance in UPI lite account' remains at ₹2,000 with '(No change)', while excerpt S5.1 (addendum) shows a table where the 'Total Limit at any point in time' for 'UPI LITE — New' is listed as ₹5,000 but the column header structure and context of S5.1 suggest this might be conflating different limit types or misinterpreting the table which lists 'Per Transaction Limit' as ₹1000 and 'Total Limit' as ₹5000 for a specific category (UPI LITE X - Offline) while keeping others at ₹2000. The answer simplifies this into a direct increase without clarifying if the ₹5,000 applies universally or to a specific new category, creating ambiguity about whether the baseline limit of ₹2,000 is fully superseded or if it coexists.",
+                "quotes": [
+                  {
+                    "citation": "S1",
+                    "quote": "NPCI/UPI/OC No. 169 A/2024-25 — 27th February 2025 To, All UPI Members Dear Sir/Madam, **Subject: Addendum to Enhancement in UPI LITE Limits** With reference to the NPCI/UPI/OC No. 138/2021-22, dated 16th March 2022 and NPCI/UPI/OC No. 169/2023-24, dated 31st August 2023, UPI LITE was introduced and transaction limit was increased from ₹200 from ₹500 respectively. > Transcription note: the source itself uses “from ₹200 from ₹500”; that wording is retained."
+                  },
+                  {
+                    "citation": "S2",
+                    "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                  },
+                  {
+                    "citation": "S5",
+                    "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                  }
+                ]
+              },
+              {
+                "kind": "possible_conflict",
+                "reason": "The answer states the addendum introduces new conditions regarding 'online-mode replenishment and auto top-up options absent in the 2023 circular'. Excerpt S5.1 supports the existence of these features in the addendum (referencing NPCI circular No. 205/2024-25). However, the answer asserts these were 'absent' in the 2023 circular without providing evidence from the 2023 circular (S2) that explicitly confirms their absence or lack of mention. While S2 focuses on offline limits and doesn't detail online replenishment mechanisms, stating they were 'absent' as a definitive fact derived solely from the addendum's introduction is an inference; the baseline might simply not have addressed them yet rather than having an explicit prohibition or feature set that precludes them.",
+                "quotes": [
+                  {
+                    "citation": "S2",
+                    "quote": "NPCI/UPI/OC No. 169/2023-24 31st August 2023 To All Member-Unified Payments Interface (UPI) Dear Madam/Sir, **Subject: Enhancement in UPI LITE transaction limit to ₹500** UPI LITE has been designed to play a vital role in reducing infrastructure load on the Core Banking System of the banks. This feature has been making the small value transactions faster and highly reliable for transaction value below ₹200. As per the latest circular issued by RBI on 24th August, 2023 vide Circular No: RBI/2023-24/57 CO.DPSS.POLC.No.S526/02-14-003/2023-24 with subject ‘Enhancing transaction limits for Small Value Digital Payments in Offline Mode’, the upper limit of an offline payment transaction is now"
+                  },
+                  {
+                    "citation": "S2",
+                    "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                  },
+                  {
+                    "citation": "S5",
+                    "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                  }
+                ]
+              },
+              {
+                "kind": "scope_unclear",
+                "reason": "The answer contrasts the 2025 addendum with the 2023 baseline regarding limits and conditions. However, it does not clearly distinguish between different UPI LITE categories (e.g., 'UPI LITE X - Offline' vs others) mentioned in excerpt S5.1's table. The table in S5.1 shows three columns: 'Existing', 'New', and 'UPI LITE X (Offline) — No Change'. The answer treats the limits as a single unified change, potentially blurring the distinction that some categories might not have changed while others did, leading to an unclear scope of applicability for the limit increases.",
+                "quotes": [
+                  {
+                    "citation": "S5",
+                    "quote": "1. As per the latest notification issued by RBI on 4th December 2024 vide circular no. RBI/2021-22/146 CO.DPSS.POLC.No.S1264/02-14-003/2021-2022 with subject ‘Framework for Facilitating Small Value Digital Payments in Offline Mode’, for UPI LITE, the enhanced limits shall be ₹1,000 per transaction with ₹5,000 being the total limit. Replenishment of used limit shall be allowed only in online mode with AFA. Customer will further have the option to set Auto Top-up for limit replenishment as per NPCI circular, ‘Introduction of Auto Top-up on UPI LITE’, vide No. NPCI/UPI/OC No. 205/2024-25, dated 27th August 2024. The details of the LITE limits are as below: | Description | UPI LITE — Existing |"
+                  },
+                  {
+                    "citation": "S2",
+                    "quote": " increased from ₹200 to ₹500. In view of the above, the per transaction value limit for UPI LITE (Purpose code 44 - Online and 45 - Offline) has now been enhanced to ₹500. The details are as below: | UPI LITE Limit | Previous Limit | New Limit | |---|---|---| | Per Transaction | ₹200 | ₹500 | | Max balance in UPI lite account | ₹2000 | ₹2000 (No change) | The existing UPI pricing shall be applicable for transaction amount ₹201-₹500 for both P2P and P2M transactions. With reference to the above, Member Banks (Payee PSP), Third Party App providers (TPAPs), Merchants and other payment providers are requested to take note of the above enhancement"
+                  }
+                ]
+              }
+            ],
+            "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+          },
+          "elapsed_ms": 25375,
+          "timing": {
+            "total_seconds": 25.375,
+            "budget_seconds": 120.0,
+            "stages": [
+              {
+                "stage": "retrieval",
+                "seconds": 0.016
+              },
+              {
+                "stage": "generation",
+                "seconds": 8.609
+              },
+              {
+                "stage": "claim_support",
+                "seconds": 7.031
+              },
+              {
+                "stage": "coverage",
+                "seconds": 9.719
+              }
+            ],
+            "model_calls": [
+              {
+                "stage": "generation",
+                "status": "completed",
+                "timeout_seconds": 60.0,
+                "prompt_tokens": 5947,
+                "output_tokens": 484,
+                "load_seconds": 0.002,
+                "prompt_seconds": 1.91,
+                "decode_seconds": 6.499,
+                "done_reason": "stop",
+                "seconds": 8.609
+              },
+              {
+                "stage": "claim_support",
+                "status": "completed",
+                "timeout_seconds": 12.0,
+                "prompt_tokens": 580,
+                "output_tokens": 25,
+                "load_seconds": 0.002,
+                "prompt_seconds": 0.252,
+                "decode_seconds": 0.453,
+                "done_reason": "stop",
+                "seconds": 0.843
+              },
+              {
+                "stage": "claim_support",
+                "status": "completed",
+                "timeout_seconds": 12.0,
+                "prompt_tokens": 2374,
+                "output_tokens": 152,
+                "load_seconds": 0.001,
+                "prompt_seconds": 0.79,
+                "decode_seconds": 1.96,
+                "done_reason": "stop",
+                "seconds": 2.828
+              },
+              {
+                "stage": "claim_support",
+                "status": "completed",
+                "timeout_seconds": 12.0,
+                "prompt_tokens": 1793,
+                "output_tokens": 47,
+                "load_seconds": 0.001,
+                "prompt_seconds": 0.592,
+                "decode_seconds": 0.634,
+                "done_reason": "stop",
+                "seconds": 1.344
+              },
+              {
+                "stage": "claim_support",
+                "status": "completed",
+                "timeout_seconds": 12.0,
+                "prompt_tokens": 2282,
+                "output_tokens": 83,
+                "load_seconds": 0.001,
+                "prompt_seconds": 0.76,
+                "decode_seconds": 1.118,
+                "done_reason": "stop",
+                "seconds": 2.0
+              },
+              {
+                "stage": "coverage",
+                "status": "completed",
+                "timeout_seconds": 15.0,
+                "prompt_tokens": 3592,
+                "output_tokens": 641,
+                "load_seconds": 0.001,
+                "prompt_seconds": 1.196,
+                "decode_seconds": 8.397,
+                "done_reason": "stop",
+                "seconds": 9.719
+              }
+            ]
+          }
+        },
+        "text": "The 2025 addendum (Circular 169A) increases the per-transaction limit from ₹500 to ₹1,000 and raises the total account limit from ₹2,000 to ₹5,000, whereas the 2023 baseline (Circular 169) set the per-transaction limit at ₹500 with a total limit of ₹2,000. The 2025 addendum also introduces new conditions regarding online-mode replenishment and auto top-up options absent in the 2023 circular. [S1, S2, S5]",
+        "actions": "",
+        "reviewer_questions": "",
+        "snapshot": {
+          "corpus": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+          "sources": {
+            "2023-UPI-169": "43e3891dc593a4b990b97becff930fc412bceef6be7332e3faf694fc0fc17c04",
+            "2025-OC-169A": "9cff6449b86b0900a97a9ad031dac782fb4365ced7772b3604465d77e01c36d6"
+          },
+          "models": {
+            "generation_model": "qwen3.5:9b",
+            "embedding_model": "qwen3-embedding:0.6b",
+            "context_length": 16384,
+            "max_output_tokens": 3072
+          },
+          "installed_models": {
+            "status": "available",
+            "digests": {
+              "qwen3.5:9b": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+              "qwen3-embedding:0.6b": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+            }
+          },
+          "graph": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45"
+        },
+        "edited_by_human": false,
+        "created": "2026-10-28T16:09:27.682921+00:00"
+      }
+    ]
+  }
+}

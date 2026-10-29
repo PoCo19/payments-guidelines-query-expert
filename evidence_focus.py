@@ -7,6 +7,36 @@ import re
 from scope_guard import tables
 
 
+def overview_change_matches(query, candidates, limit=2):
+    """Retain operative amendments already retrieved for a broad explanation.
+
+    This is not a newest-document rule: require an explicit change in the body
+    and the full topic in the title. Never broaden a named-document/history task.
+    The caller applies product/date/document filters and the normal context cap.
+    """
+    if (not re.search(r'\bwhat (?:is|are)\b|\b(?:explain|describe|overview)\b', query, re.I)
+            or re.search(r'\b(?:OC\s*\d+[A-Z]*|circular\s*(?:no\.?\s*)?\d+[A-Z]*|original|historical|previous|introduced|initially|in\s+20\d\d)\b', query, re.I)):
+        return []
+    ignored = terms('what is are the a an explain describe overview give me of about '
+                   'please briefly brief answer in simple terms words paragraph '
+                   'detail detailed and how does work')
+    topic = terms(query) - ignored
+    if len(topic) < 2:
+        return []
+    found = []; docs = set()
+    for part in candidates:
+        if part['document_id'] in docs or not topic <= terms(part.get('title','')):
+            continue
+        body = part['text']
+        # Avoid reference lists and historical prefaces mentioning a past change.
+        operative = re.search(r'\b(?:enhanced|revised|new|increased|reduced|amended)\s+(?:\w+\s+){0,3}(?:limits?|requirements?|thresholds?|conditions?|ceilings?)\s+(?:shall|will|are|is)\b', body, re.I)
+        if operative and topic <= terms(body):
+            found.append(part); docs.add(part['document_id'])
+            if len(found) >= limit:
+                break
+    return found
+
+
 def terms(text):
     return {w[:-1] if w.endswith('s') and len(w)>4 else w
             for w in re.findall(r'[a-z0-9]+', text.lower())}

@@ -36,7 +36,7 @@ Changing the embedding model normally means rebuilding compatible embeddings and
 
 ## Four kinds of checking that are easy to confuse
 
-**Software tests** exercise code behaviour: citations resolve, states transition correctly, invalid input is rejected, and exports retain content. The current recorded suite has 465 Python tests and four JavaScript suites. These are not 465 independently verified payments answers.
+**Software tests** exercise code behaviour: citations resolve, states transition correctly, invalid input is rejected, and exports retain content. The current recorded suite has 474 Python tests and four JavaScript suites. These are not 474 independently verified payments answers.
 
 **Development evaluations** compare retrieval or generated answers on saved questions. They can reveal improvements and failures, but repeated tuning on those questions makes them unsuitable as untouched final evaluation data.
 

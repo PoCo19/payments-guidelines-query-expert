@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-29",
+  "staged_tree_tested": "8545806e7efc500a1d3d05ef300121d7a4aad1c7",
+  "python_tests": 474,
+  "python_result": "passed",
+  "javascript_suites": 4,
+  "javascript_result": "passed",
+  "clean_source_export": true,
+  "existing_pinned_python_environment_reused": true,
+  "reranker_assets": "cached assets verified against repository SHA-256 manifest",
+  "fresh_dependency_install": false,
+  "source_restore": {
+    "status": "passed",
+    "command": "restore",
+    "documents": 1929,
+    "pages": 4834,
+    "chunks": 14480,
+    "corpus_fingerprint": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+    "registry_fingerprint": "5e2427c12b25c7b3ccc9f777cd8279acdeec3fab5b080113d699105a20323c3b",
+    "mixed_source_cases_validated": 20,
+    "model_calls": 0
+  },
+  "credential_scan": "No matches for reviewed credential patterns; not an exhaustive security audit",
+  "evidence_archive_sha256": "29c931105b2a16f88b51bf9e050a614261eb8723cc25ef8971eb16d530fbf4e1",
+  "notes": [
+    "Tested tree excludes subsequent publication documentation and this check record; runtime code unchanged.",
+    "Local model weights, private saved work, embeddings, personal settings and temporary files are not staged.",
+    "Source restore succeeded at a short path after the nested checkout hit the documented Windows path-length guard.",
+    "The raw export initially lacked the intentionally excluded reranker model; tests passed after installing manifest-verified local assets."
+  ]
+}

@@ -1,0 +1,39 @@
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.04}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.02}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 8, "model": "test:embed", "model_digest": "test-digest", "fingerprint": "769ecc9a47ff680be420b9d4b2e9b14dcb0ffe4f947887ab4de49d86e585827d", "elapsed_seconds": 0.03}
+............................................................................................................................................................................WARNING:pypdf._reader:invalid pdf header: b'not a'
+WARNING:pypdf._reader:EOF marker not found
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.01}
+Prepared 1/1 vectors; computed 0, cache hits 1
+{"chunks": 1, "computed": 0, "cache_hits": 1, "dimension": 2, "model": "m", "model_digest": "d1", "fingerprint": "fp", "elapsed_seconds": 0.0}
+Prepared 1/1 vectors; computed 1, cache hits 0
+{"chunks": 1, "computed": 1, "cache_hits": 0, "dimension": 2, "model": "m", "model_digest": "d2", "fingerprint": "fp", "elapsed_seconds": 0.0}
+......................................................................................................................................................................................................................................................................................F.......................
+======================================================================
+FAIL: test_impact_requires_sources_and_separates_actions (test_work_items.WorkTests.test_impact_requires_sources_and_separates_actions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Codex\2026-09-23\i-have-a-set-of-circulars\tests\test_work_items.py", line 109, in test_impact_requires_sources_and_separates_actions
+    self.assertIn('do not assume',sent['query'])
+AssertionError: 'do not assume' not found in 'Compare the selected sources to answer: What changed?\nUser-designated changed source: b\nFirst document is the proposed change, not proof of supersession. Explain the change concisely; compare earlier and revised provisions with separate citations. Include supported conditions, effective dates and unresolved points. A requirement absent from the newer document is not automatically retained or withdrawn. Retention needs source support. Distinguish new rules from references to earlier rules. Separate issue dates, referenced-letter dates and deadlines. Do not infer retroactivity, grandfathering or post-deadline-only applicability from silence; mark it unresolved. Do not assert institution-specific impact or implementation actions.'
+
+----------------------------------------------------------------------
+Ran 474 tests in 14.422s
+
+FAILED (failures=1)

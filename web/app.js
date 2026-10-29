@@ -23,15 +23,17 @@ async function api(path, body) {
 function showError(message) {$("#global-error").textContent = message; $("#global-error").hidden = false;}
 function clearError() {$("#global-error").hidden = true;}
 function setView(view) {
+  if(!["explore","library","experiments","about","review","intake"].includes(view))view="explore";
+  history.replaceState(null,"",view==="explore"?"/":"/?view="+view);
   document.querySelectorAll(".view").forEach(el => el.hidden = el.id !== view);
   document.querySelectorAll(".nav").forEach(el => {el.classList.toggle("active", el.dataset.view === view); el.setAttribute("aria-current", el.dataset.view === view ? "page" : "false");});
-  $("#view-label").textContent = {explore:"Ask a question",library:"Guideline library",experiments:"Experiments",about:"About this project",review:"Source review",intake:"Add documents"}[view];
+  $("#view-label").textContent = {explore:"Ask a question",library:"Document library",experiments:"Experiments",about:"About this project",review:"Source review",intake:"Add documents"}[view];
   if(view === "library") loadLibrary();
   if(view === "review") loadReview();
   if(view === "intake") Intake.refresh();
 }
 document.querySelectorAll(".nav[data-view]").forEach(button => button.addEventListener("click", () => {clearError();setView(button.dataset.view);}));
-const reasonLabel = value => ({graph_anchor:"Linked source passage",document_coverage:"Document section coverage",direct_match:"Direct match",recorded_reference:"Recorded circular reference",same_feature:"Same feature (reviewed or heuristic)",adjacent_context:"Surrounding passage",qualification_context:"Definition, scope or surrounding qualification"}[value] || value || "Direct match");
+const reasonLabel = value => ({graph_anchor:"Linked source passage",operative_change_context:"Matching amendment provision",document_coverage:"Document section coverage",direct_match:"Direct match",recorded_reference:"Recorded circular reference",same_feature:"Same feature (reviewed or heuristic)",adjacent_context:"Surrounding passage",qualification_context:"Definition, scope or surrounding qualification"}[value] || value || "Direct match");
 function sourceCard(s) {
   return '<article class="source-card" id="citation-'+esc(s.citation)+'"><div class="source-top"><span class="tag">'+esc(s.citation)+' · '+(s.issuer ? esc(s.issuer)+' · ' : '')+esc(s.series)+' · '+esc(refLabel(s))+'</span><span>'+esc(s.issue_date || "Date unknown")+'</span></div><h3>'+esc(s.title)+'</h3><p class="retrieval-reason">'+esc(reasonLabel(s.retrieval_reason))+(s.generation_eligible === false ? ' · Excluded from AI use: known source error' : '')+(s.via_document_id ? ' · via '+esc(s.via_document_id) : '')+'</p><p class="micro">'+esc(s.section_heading || 'Source passage')+(s.clause_label ? ' · clause marker '+esc(s.clause_label) : '')+'</p><blockquote>'+esc(s.text)+'</blockquote><div class="source-actions"><button data-document="'+esc(s.document_id)+'" data-page="'+s.page+'">Read page '+s.page+' ↗</button><a target="_blank" rel="noopener" href="'+esc(sourceURL(s.source_url))+'#page='+s.page+'">Official source ↗</a><button data-document="'+esc(s.document_id)+'">Related circulars ↗</button></div><p class="quality">'+(s.needs_priority_review ? "Priority review · " : "")+esc(s.method || "Extraction")+" · "+esc((s.review_status || "Not verified word for word").replaceAll("_"," "))+'</p></article>';
 }
@@ -62,7 +64,7 @@ $("#search-form").addEventListener("submit", async event => {
     const trace=result.retrieval_trace;
     if(trace.graph_context?.status === 'active') {
       const graph=trace.graph_context, anchors=graph.anchor_coverage || [];
-      $('#results .source-grid').insertAdjacentHTML('beforebegin','<details class="trace-box" open><summary>Linked circular evidence</summary><p>'+anchors.filter(a=>a.included).length+'/'+anchors.length+' marked passages included from the supported document families. '+(graph.complete_within_pilot ? 'All marked graph passages are present.' : 'Some marked passages are excluded; coverage is partial.')+'</p><p>Proposed source links · independent review pending · up to two graph hops. The ordinary reference expansion remains one hop.</p><p>This helps retain amendments and related conditions. It does not certify current applicability or complete coverage of all circulars.</p></details>');
+      $('#results .source-grid').insertAdjacentHTML('beforebegin','<details class="trace-box"><summary>Linked circular evidence</summary><p>'+anchors.filter(a=>a.included).length+'/'+anchors.length+' marked passages included from the supported document families. '+(graph.complete_within_pilot ? 'All marked graph passages are present.' : 'Some marked passages are excluded; coverage is partial.')+'</p><p>Proposed source links · independent review pending · up to two graph hops. The ordinary reference expansion remains one hop.</p><p>This helps retain amendments and related conditions. It does not certify current applicability or complete coverage of all circulars.</p></details>');
     }
 
     $("#results .source-grid").insertAdjacentHTML("beforebegin",ResearchView.render(trace,result.coverage_check));
@@ -73,7 +75,7 @@ $("#search-form").addEventListener("submit", async event => {
     const repaired=(result.claim_repairs || []).filter(r=>r.status==='accepted');
     if(repaired.length) $('#results .source-grid').insertAdjacentHTML('beforebegin','<details class="trace-box"><summary>'+repaired.length+' statement(s) corrected and checked again</summary><p>The original drafts below are retained for audit; only the corrected statements appear in the answer.</p>'+repaired.map(r=>'<p><b>Original draft:</b> '+esc(r.original.text)+'<br><b>Corrected:</b> '+esc(r.candidate.text)+'<br><b>Sources:</b> '+r.candidate.sources.map(esc).join(', ')+'</p>').join('')+'</details>');
     if(request.mode === "generate" && result.claims?.length && lastResearchJob) {
-      $("#results .results-head").insertAdjacentHTML("beforeend",'<button class="subtle-button" id="save-query-desk">Save to Query Desk →</button>');
+      $("#results .results-head").insertAdjacentHTML("beforeend",'<button class="subtle-button" id="save-query-desk">Save answer →</button>');
       $("#save-query-desk").onclick=async()=>{
         const save=$("#save-query-desk"); save.disabled=true; clearError();
         try {const item=await api("/api/work-import",{job_id:lastResearchJob});location.href="/work?kind=query&id="+encodeURIComponent(item.id);}
@@ -171,7 +173,7 @@ async function init() {
     if(graph) $("#graph-health").textContent="Graph-assisted retrieval: "+graph.status+". "+(graph.warning || graph.anchors+" maintained anchors; links await independent review. Other eligible documents remain searchable.");
     document.querySelectorAll('[data-corpus-label]').forEach(el => el.textContent=(stats.source_publishers || []).length?'Current sources: '+stats.source_publishers.join(' and ')+'.':'No sources indexed yet. Use Add documents to build your library.');
     $("#research-entities").innerHTML=(stats.research_entities || []).map(value=>'<option value="'+esc(value)+'"></option>').join("");
-    $("#nav-count").textContent = stats.documents;
+
     $("#collection-snapshot").textContent = stats.snapshot+". "+stats.window;
     $("#stats").innerHTML = '<div class="stat"><strong>'+stats.converted+'</strong><p><b>Source documents</b><br>Converted & indexed</p></div><div class="stat"><strong>'+stats.pages+'</strong><p><b>Source pages</b><br>Traceable evidence</p></div><div class="stat"><strong>'+(stats.documents-stats.converted)+'</strong><p><b>Collection gaps</b><br>Explicitly recorded</p></div>';
     for(const feature of (stats.features || [])) $("#feature").add(new Option(feature.label,feature.id));
@@ -256,3 +258,5 @@ document.addEventListener('click',async event=>{
   renderSelection();
  }catch(err){showError(err.message);}
 });
+
+document.addEventListener('DOMContentLoaded',()=>setView(new URLSearchParams(location.search).get("view")||"explore"));

@@ -1,0 +1,91 @@
+{
+  "started": "2026-10-28T16:07:40.650051+00:00",
+  "corpus": "d205ac78542f0e94d70f2beb68cd48b0ba242d1ef0024492c23bd32f67f889c8",
+  "graph": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+  "config_sha256": "db7e8f4fb6c0759e84e94f441e678da1d37041ca67314a1efa3b140928b57d82",
+  "code_hashes": {
+    "adaptive_context.py": "995391bf3588f0d4c72ce4bb530dbf787736054d27cd3027a721ae107f0490f2",
+    "answer_format.py": "f4dcfb6dde0acded78260b076cb7e18c155bc9eec013a7b990351830d3f89226",
+    "app.py": "48514cac8c8cfdcd489a2ec9cb9ef89e27689cd14ed4f133339d1b9cb0402dd6",
+    "claim_check.py": "78484a48f20c3ce529b9d89cc07a63cd1e27967200884dd3cf512a62c4250f0e",
+    "claim_repair.py": "4324635e6d916f61eaa5b115d9d024681a0b0ac166d2acbde71617e9939c79eb",
+    "context.py": "4d6e195ce269ac735acd037fc2946f9b6e2cb4c6dcf05e50533f2af152709e33",
+    "contextual_retrieval.py": "c7ebf769d694d6bacc8527b18de139370f23495279be5d739d03ce64532c4124",
+    "download_reranker.py": "c7dfbccac6d11c0ecd6043b13d4b3655020d02e75bbf4b53fe5f7b1b1fac4c4c",
+    "embedding_cache.py": "5694593ce40fa954e03171870adb3fbccd5115cda4f52bb261681d842d6072f3",
+    "evidence_focus.py": "acd8d2ddc113ba754a1997c05f0d992837293649ab8cf388c7b43b0c65314912",
+    "evidence_spans.py": "fcdb7c2684eece002c33eed5104aaa177d8f989154cfad1fbd2fc310f50899c9",
+    "graph_context.py": "af9dccf1fe87b83cfa3f5a7d39d9b3ac89954c339727a0666e2edffabab41bbb",
+    "ingestion.py": "3d2e10e54a490bb0c3f05c2e55cc13a3f6452cf0662a002b129f2e0c6f97d0d6",
+    "intake_quality.py": "0a73d93b7eaa53dca2fd82d886f71077582779716f751adcacc426d1f6dcb0b7",
+    "launch_app.py": "9a1eaa91f1c6e4bf2d32bdf488fa6a205f9d680bac5f72928495ebc2827f0745",
+    "local_jobs.py": "8e61bbdf4ba66ff13588542c0b0e783282e8c3916eeaf6c0e00eac39d1454426",
+    "model_transport.py": "0e3cdd8ec8bed1d852a11b3d0ad1aa488951fa1aace97e49dd3b9d259717f4cb",
+    "product_scope.py": "c8302b059d075345276b5bccfcdc59719f339348b8077176fbf0fd2fa1be4189",
+    "quality.py": "afdb3fc948d99f870678e89020b2690070a52e2fc2deb50d6c516664c265296c",
+    "query_understanding.py": "9373fa16661bdaabac2a531b8c3027d9a2b075db1197745fe6b22872d1a6b075",
+    "reference_graph.py": "10822c1ec62349d3dcc3934a7141961d0212aa896b48d0bbb7ef1efcbe957818",
+    "registry.py": "6e06671cb6e5ce89fc93e45f6ed1f48c83a86e161e11e015389e7c0d2bfa69b2",
+    "request_runtime.py": "edf99122fc167f3520c5a6131df7a37a17c8f633972ae2634a10fec7a387489a",
+    "reranker.py": "6ad19fff021c211ce6b7f3efc4d36a72ad7bddb14b688e2258b6f7878509695a",
+    "research.py": "380aa445fc47467b7f4b66ad837bf16324128dca551a937c3db236cc53b576bf",
+    "scope_guard.py": "e63f270bc8ad88e7942c509188b2873c6c439e8ce1c03b8e18f4095b194c8b43",
+    "source_quality_gate.py": "f9b7b39ee24fa552b5f6a77ddd7202b43834d2e114a231fec3f2274dc7665acb",
+    "structured_evidence.py": "5564b474349cb248d8da0e2bf9f01dfaa9a43570377404b98917c8d35cab5c1c",
+    "vector_store.py": "2e818607a079111eb4b9da5aae739935dc8b4e9c2516ff7e08027a542400b585",
+    "work_items.py": "4077fe3f6547719cde31465e3a010589032bb3bdfb7a20d0e283b903c587a5aa"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "modified_at": "2026-09-24T01:11:59.6552717+05:30",
+        "size": 6594474711,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 4096
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "tools",
+          "thinking"
+        ]
+      },
+      {
+        "name": "qwen3-embedding:0.6b",
+        "model": "qwen3-embedding:0.6b",
+        "modified_at": "2026-09-24T00:55:17.9025643+05:30",
+        "size": 639150858,
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024
+        },
+        "capabilities": [
+          "tools",
+          "thinking",
+          "embedding"
+        ]
+      }
+    ]
+  }
+}

@@ -163,6 +163,15 @@ def assemble(engine,query,method,series='',cutoff='',feature='',scope='strict',r
                     notes.extend('Graph source gap: '+g for g in graph_trace.get('source_gaps',[]))
                     notes.extend('Graph scope caution: '+g for g in graph_trace.get('cautions',[]))
         for p in seeds:add(p,'direct_match')
+        # Broad explanations can otherwise retain an amendment's historical
+        # preface while dropping the actual provision that changes it.
+        from evidence_focus import overview_change_matches
+        changes = (overview_change_matches(query, original_candidates)
+                   if research and scope=='related' and not document_ids and not numbers else [])
+        candidate_trace['overview_change_ids'] = [p['id'] for p in changes]
+        for p in changes:
+            if allowed(p['document_id']):
+                add(p, 'operative_change_context', p['document_id'])
         if research:
             companions=phase_companions(engine,query,seeds)
             candidate_trace['phase_companion_ids']=[p['id'] for p in companions]

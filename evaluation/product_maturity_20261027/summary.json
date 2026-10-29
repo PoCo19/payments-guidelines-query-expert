@@ -1,0 +1,74 @@
+{
+  "retrieval_questions": 144,
+  "expected_anchors": 234,
+  "retrieval": {
+    "before": {
+      "anchors_found": 223,
+      "errors": 0
+    },
+    "after": {
+      "anchors_found": 223,
+      "errors": 0
+    }
+  },
+  "lost_case_ids": [],
+  "live_cases": [
+    {
+      "case": "change-revised",
+      "status": "incomplete",
+      "claims": 1,
+      "citation_ids_resolve": true,
+      "check": "issues_flagged",
+      "seconds": 25.406
+    },
+    {
+      "case": "gibberish",
+      "status": "abstained",
+      "claims": 0,
+      "citation_ids_resolve": true,
+      "check": "not_run",
+      "seconds": 4.063
+    },
+    {
+      "case": "historical",
+      "status": "draft",
+      "claims": 2,
+      "citation_ids_resolve": true,
+      "check": "not_needed_for_simple_scope",
+      "seconds": 4.797
+    },
+    {
+      "case": "invented",
+      "status": "abstained",
+      "claims": 0,
+      "citation_ids_resolve": true,
+      "check": null,
+      "seconds": 0.0
+    },
+    {
+      "case": "ipo_control",
+      "status": "incomplete",
+      "claims": 2,
+      "citation_ids_resolve": true,
+      "check": "issues_flagged",
+      "seconds": 25.906
+    },
+    {
+      "case": "lite_limits",
+      "status": "draft",
+      "claims": 3,
+      "citation_ids_resolve": true,
+      "check": "unavailable",
+      "seconds": 27.922
+    },
+    {
+      "case": "lite_paraphrase",
+      "status": "incomplete",
+      "claims": 4,
+      "citation_ids_resolve": true,
+      "check": "issues_flagged",
+      "seconds": 18.891
+    }
+  ],
+  "limitation": "Development evidence, not independent acceptance. Resolved citation IDs do not prove claim support."
+}

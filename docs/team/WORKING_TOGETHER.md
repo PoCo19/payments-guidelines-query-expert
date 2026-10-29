@@ -14,7 +14,7 @@ Start with [TEAM_START_HERE.md](../../TEAM_START_HERE.md). This guide is for mak
 | `claim_check.py`, `scope_guard.py`, `claim_repair.py` | Statement support, scope checks and bounded repair |
 | `answer_format.py`, `web/answer_format.js` | Validated answer layout and HTML/Markdown rendering |
 | `web/` | Browser interface; plain HTML, CSS and JavaScript |
-| `work_items.py`, `web/work.*` | Saved Query Desk/Change Brief records, history, review and export |
+| `work_items.py`, `web/work.*` | Saved answer/change-summary records, history, review and export |
 | `local_jobs.py`, `tools/document_pipeline.py` | Local jobs and staged document intake/activation |
 | `tests/` | Software regression tests |
 | `evaluation/` | Question sets, evaluation runners, saved results and limitations |
@@ -71,7 +71,7 @@ When modifying retrieval or generation, also preserve representative positive, n
 
 These are possible ownership areas, not claims about anyone's actual contribution:
 
-- Product flow and usability: test the three workspaces and improve explanations.
+- Product flow and usability: test both tasks and saved work and improve explanations.
 - Sources and provenance: inspect originals, metadata, extraction and amendments.
 - Retrieval and evaluation: study missed evidence and prepare reproducible comparisons.
 - Application engineering: maintain persistence, rendering, intake and regression tests.

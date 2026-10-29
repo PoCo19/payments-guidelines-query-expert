@@ -44,3 +44,15 @@ const savedResult={claims:[savedClaim],sources:[{citation:'S1'}],answer_blocks:[
 assert.match(renderSavedDraft({text:'Supported fact. [S1]',result:savedResult}),/<ul/);
 assert.doesNotMatch(renderSavedDraft({text:'Human edit [S1]',result:savedResult}),/<ul/);
 assert.match(renderSavedDraft({text:'Human edit [S1]',result:savedResult}),/Human edit/);
+const {productNavigation}=require('../web/navigation.js');
+const {defaultChangeQuestion}=require('../web/work.js');
+for(const workbench of [true,false]){
+ const nav=productNavigation(workbench);
+ for(const label of ['Ask a question','Understand a change','Saved work','Document library','Manage library &amp; tools'])assert(nav.includes(label));
+ assert(!nav.includes('Query Desk')&&!nav.includes('Overview'));
+}
+assert(defaultChangeQuestion().length<1000);
+assert.match(defaultChangeQuestion(),/conditions and dates/);
+assert(htmlPage.includes('Prepare change summary'));
+assert(!htmlPage.includes('New query request'));
+console.log('Product navigation and bounded default change question passed.');

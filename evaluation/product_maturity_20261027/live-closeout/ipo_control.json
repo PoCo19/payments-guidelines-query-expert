@@ -1,0 +1,2322 @@
+{
+  "request": {
+    "query": "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?",
+    "mode": "generate",
+    "method": "hybrid",
+    "rerank": true,
+    "answer_style": "auto"
+  },
+  "result": {
+    "answer_blocks": [
+      {
+        "type": "paragraph",
+        "claims": [
+          {
+            "text": "The 10 lakh cumulative Capital Market figure in UPI OC185B does not make a single IPO mandate limit 10 lakh; it establishes a separate per-transaction ceiling of Rs 5 Lakh and a distinct Cumulative Limit (24 hrs) of Rs 10 Lakh for the Capital Market category.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 1,
+            "support_status": "automated_supported"
+          },
+          {
+            "text": "The document explicitly distinguishes between the enhanced per-transaction limit and the cumulative 24-hour limit in its table structure, indicating they are different measures rather than a single mandate ceiling.",
+            "sources": [
+              "S1"
+            ],
+            "draft_index": 2,
+            "support_status": "automated_supported"
+          }
+        ]
+      }
+    ],
+    "answer_style": "auto",
+    "formatting_source": "model_layout",
+    "flagged_claims": [
+      {
+        "text": "Historical context from OC71 confirms that UPI-based ASBA transactions for IPOs (Purpose Code 01 with MCC 6211) were previously subject to a per-transaction limit of Rs 2 lakhs, which was later enhanced to Rs 5 lakh by subsequent circulars.",
+        "sources": [
+          "S8",
+          "S2"
+        ],
+        "draft_index": 3,
+        "support_status": "uncertain",
+        "review_reasons": [
+          "A monetary amount is absent from the circular explicitly named in this statement. Do not borrow amounts from another cited source."
+        ]
+      },
+      {
+        "text": "The cumulative limit of Rs 10 Lakh applies to the total volume within a 24-hour period for the category, not as a replacement for the per-mandate ceiling.",
+        "sources": [
+          "S1",
+          "S9"
+        ],
+        "draft_index": 4,
+        "support_status": "uncertain",
+        "review_reasons": [
+          "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_index": 0,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 1,
+        "status": "supported",
+        "reasons": [
+          "The local model accepted the selected evidence as support."
+        ],
+        "quotes": [
+          {
+            "citation": "S1",
+            "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5"
+          }
+        ],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 2,
+        "status": "uncertain",
+        "reasons": [
+          "A monetary amount is absent from the circular explicitly named in this statement. Do not borrow amounts from another cited source."
+        ],
+        "quotes": [],
+        "checker": "local_model_plus_deterministic_guards"
+      },
+      {
+        "claim_index": 3,
+        "status": "uncertain",
+        "reasons": [
+          "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+        ],
+        "quotes": [],
+        "checker": "local_model_plus_deterministic_guards"
+      }
+    ],
+    "mode": "generate",
+    "retrieval_trace": {
+      "route": "clause",
+      "scope": "related",
+      "seed_chunk_ids": [
+        "2025-OC-185B:p2:v3c1",
+        "2024-OC-200:p2:v3c7",
+        "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+        "2025-OC-185B:p2:v3c2",
+        "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+        "npci-source-4e6fac099b791778ded35153:p1:v3c1"
+      ],
+      "included_chunk_ids": [
+        "2025-OC-185B:p2:v3c1",
+        "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+        "2024-OC-185A:p2:v3c1",
+        "2025-OC-185B:p1:v3c4",
+        "2025-OC-185B:p1:v3c5",
+        "2024-OC-185A:p1:v3c1",
+        "2025-OC-185B:p1:v3c2",
+        "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+        "2025-OC-185B:p2:v3c3",
+        "2023-UPI-185:p1:v3c1",
+        "2024-OC-185A:p1:v3c3",
+        "2025-OC-185B:p1:v3c1",
+        "2024-OC-200:p2:v3c7",
+        "2025-OC-185B:p2:v3c2",
+        "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+        "2024-OC-200:p2:v3c8",
+        "2024-OC-200:p2:v3c6",
+        "npci-source-d46417e82b6fad68d692400c:p1:v3c4"
+      ],
+      "evidence_characters": 17944,
+      "character_budget": 18000,
+      "max_reference_hops": 1,
+      "notes": [
+        "Graph-assisted retrieval: source-anchored proposed links; independent review is pending. Preserve each requirement's scope and effective date. A partial amendment does not replace the entire original circular. Current applicability beyond the indexed sources is unverified.",
+        "Graph scope caution: Distinguish transaction limits from cumulative 24-hour limits and retain verified-merchant and bank-policy conditions.",
+        "Graph scope caution: Prioritise the source specific to UPI ASBA IPO purpose01 and MCC6211 when explaining a mandate limit. A cumulative capital-market table value is a different measure and does not by itself change a per-mandate ceiling.",
+        "Graph scope caution: The original OC71 extraction has an incomplete line; do not reconstruct missing execution conditions.",
+        "Some evidence was omitted by the passage/character budget. Coverage is partial.",
+        "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff."
+      ],
+      "document_coverage": {},
+      "requested_circulars": [
+        "185B"
+      ],
+      "reranker": {
+        "enabled": true,
+        "model": "Xenova/ms-marco-MiniLM-L-6-v2@a09144355adeed5f58c8ed011d209bf8ee5a1fec",
+        "candidate_count": 68,
+        "elapsed_ms": 1235
+      },
+      "candidate_stages": {
+        "before_rerank": [
+          "2024-OC-200:p2:v3c7",
+          "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+          "2025-OC-185B:p2:v3c2",
+          "2025-OC-185B:p2:v3c1",
+          "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+          "2023-UPI-181:p1:v3c4",
+          "npci-source-96fc3cf3e8f092b5130e9de9:p1:v3c1",
+          "npci-source-6d31b45de60e793e7f671361:p1:v3c3",
+          "npci-source-310a721c4bb7c7c11ae403c6:p1:v3c1",
+          "npci-source-ff6f514f4ed2beca05106383:p1:v3c1",
+          "2023-UPI-185:p1:v3c1",
+          "2023-UPI-185:p1:v3c4",
+          "2024-OC-185A:p2:v3c1",
+          "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+          "npci-source-73ba99fec7a4903047b423ad:p2:v3c1",
+          "2024-OC-185A:p1:v3c1",
+          "npci-source-ede614019fb2bb1fff724e50:p1:v3c2",
+          "2024-OC-181B:p1:v3c1",
+          "2025-OC-185B:p2:v3c3",
+          "2025-OC-185B:p1:v3c1",
+          "npci-source-bfa640c9c6ca764d24e0bd98:p1:v3c1",
+          "2023-UPI-185:p1:v3c3",
+          "2024-OC-185A:p2:v3c3",
+          "2023-UPI-185:p1:v3c2",
+          "2025-OC-228:p2:v3c2",
+          "2024-OC-185A:p1:v3c2",
+          "2024-OC-192:p1:v3c2",
+          "2024-OC-200:p2:v3c1",
+          "2024-OC-200:p3:v3c3",
+          "2024-OC-185A:p1:v3c4",
+          "2024-OC-205:p1:v3c5",
+          "2025-OC-201B:p1:v3c8",
+          "2024-OC-200:p1:v3c1",
+          "npci-source-3b81bf583b0c72ee08766e07:p1:v3c2",
+          "2024-OC-200:p3:v3c1",
+          "2024-OC-200:p1:v3c4",
+          "2024-OC-200:p2:v3c5",
+          "2024-OC-200:p1:v3c3",
+          "2024-OC-200:p3:v3c2",
+          "npci-source-ef97d4b1a247c193f527ebfd:p1:v3c1",
+          "2025-OC-76C:p1:v3c1",
+          "2023-UPI-151A:p1:v3c1",
+          "npci-source-5c38e0018bbb17e8c7efafbe:p4:v3c5",
+          "2025-OC-215A:p2:v3c2",
+          "npci-source-5b2b7b07206c3fd27a8826ab:p1:v3c1",
+          "npci-source-664f959fb8aab6e04cc020fe:p1:v3c1",
+          "npci-source-0542e5427a81fb3399649a28:p1:v3c1",
+          "npci-source-658b344a58bd1298604ead6e:p1:v3c1",
+          "2024-OC-185A:p2:v3c2",
+          "npci-source-73ba99fec7a4903047b423ad:p1:v3c1",
+          "2023-UPI-169:p1:v3c1",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c5",
+          "2023-UPI-151A:p2:v3c1",
+          "2025-OC-217:p1:v3c6",
+          "2024-OC-204:p1:v3c4",
+          "npci-source-96fc3cf3e8f092b5130e9de9:p1:v3c2",
+          "2023-UPI-171:p2:v3c6",
+          "npci-source-7c80b3a119ab4e8faec30dbf:p22:v3c2",
+          "npci-source-21e9e7b23efd0fa5bba42dba:p2:v3c1",
+          "npci-source-5a025cae7b53389b87a6fca8:p71:v3c1",
+          "2024-OC-185A:p1:v3c3",
+          "2024-OC-210:p1:v3c1",
+          "2024-OC-200:p1:v3c5",
+          "2023-UPI-181:p1:v3c3",
+          "2025-OC-185B:p1:v3c5",
+          "2025-OC-185B:p1:v3c3",
+          "2025-OC-185B:p1:v3c4",
+          "2025-OC-185B:p1:v3c2"
+        ],
+        "after_rerank": [
+          "2025-OC-185B:p2:v3c1",
+          "2025-OC-185B:p2:v3c2",
+          "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+          "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+          "2024-OC-200:p2:v3c7",
+          "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+          "2024-OC-185A:p2:v3c1",
+          "npci-source-96fc3cf3e8f092b5130e9de9:p1:v3c1",
+          "2023-UPI-181:p1:v3c4",
+          "2024-OC-185A:p1:v3c4",
+          "2023-UPI-185:p1:v3c4",
+          "2023-UPI-185:p1:v3c1",
+          "2024-OC-185A:p1:v3c1",
+          "2024-OC-185A:p2:v3c3",
+          "2024-OC-185A:p2:v3c2",
+          "2024-OC-185A:p1:v3c2",
+          "npci-source-96fc3cf3e8f092b5130e9de9:p1:v3c2",
+          "npci-source-6d31b45de60e793e7f671361:p1:v3c3",
+          "2024-OC-185A:p1:v3c3",
+          "2025-OC-185B:p1:v3c1",
+          "2023-UPI-185:p1:v3c3",
+          "2024-OC-181B:p1:v3c1",
+          "2023-UPI-151A:p2:v3c1",
+          "npci-source-310a721c4bb7c7c11ae403c6:p1:v3c1",
+          "2023-UPI-185:p1:v3c2",
+          "npci-source-3b81bf583b0c72ee08766e07:p1:v3c2",
+          "2025-OC-185B:p2:v3c3",
+          "npci-source-b1b6097e6791700269cddedb:p1:v3c5",
+          "2024-OC-200:p1:v3c5",
+          "2025-OC-185B:p1:v3c5",
+          "npci-source-73ba99fec7a4903047b423ad:p2:v3c1",
+          "2024-OC-205:p1:v3c5",
+          "2025-OC-201B:p1:v3c8",
+          "2024-OC-200:p1:v3c1",
+          "2025-OC-228:p2:v3c2",
+          "2023-UPI-151A:p1:v3c1",
+          "2024-OC-200:p3:v3c1",
+          "npci-source-ede614019fb2bb1fff724e50:p1:v3c2",
+          "2024-OC-200:p3:v3c2",
+          "npci-source-bfa640c9c6ca764d24e0bd98:p1:v3c1",
+          "npci-source-ff6f514f4ed2beca05106383:p1:v3c1",
+          "2024-OC-200:p2:v3c1",
+          "2024-OC-192:p1:v3c2",
+          "npci-source-21e9e7b23efd0fa5bba42dba:p2:v3c1",
+          "npci-source-73ba99fec7a4903047b423ad:p1:v3c1",
+          "npci-source-5b2b7b07206c3fd27a8826ab:p1:v3c1",
+          "npci-source-658b344a58bd1298604ead6e:p1:v3c1",
+          "2025-OC-185B:p1:v3c3",
+          "2023-UPI-169:p1:v3c1",
+          "npci-source-0542e5427a81fb3399649a28:p1:v3c1",
+          "npci-source-ef97d4b1a247c193f527ebfd:p1:v3c1",
+          "2025-OC-185B:p1:v3c2",
+          "npci-source-5a025cae7b53389b87a6fca8:p71:v3c1",
+          "2025-OC-76C:p1:v3c1",
+          "2025-OC-185B:p1:v3c4",
+          "2024-OC-200:p2:v3c5",
+          "2024-OC-200:p1:v3c4",
+          "2024-OC-204:p1:v3c4",
+          "2024-OC-200:p1:v3c3",
+          "2024-OC-200:p3:v3c3",
+          "2023-UPI-171:p2:v3c6",
+          "2025-OC-215A:p2:v3c2",
+          "2024-OC-210:p1:v3c1",
+          "npci-source-5c38e0018bbb17e8c7efafbe:p4:v3c5",
+          "2023-UPI-181:p1:v3c3",
+          "2025-OC-217:p1:v3c6",
+          "npci-source-664f959fb8aab6e04cc020fe:p1:v3c1",
+          "npci-source-7c80b3a119ab4e8faec30dbf:p22:v3c2"
+        ],
+        "protected_seed_ids": [
+          "2025-OC-185B:p2:v3c1",
+          "2024-OC-200:p2:v3c7",
+          "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+          "2025-OC-185B:p2:v3c2"
+        ],
+        "topic_query": "Does the 10 lakh cumulative Capital Market figure in UPI   make a single IPO mandate limit 10 lakh?",
+        "table_focus_ids": [
+          "2025-OC-185B:p2:v3c1"
+        ],
+        "phase_focus_ids": [],
+        "overview_change_ids": [],
+        "phase_companion_ids": []
+      },
+      "retrieval_seed_policy": "balanced",
+      "research_policy": "publisher_neutral_v2",
+      "followup_query": null,
+      "query_plan": {
+        "query": "Does the 10 lakh cumulative Capital Market figure in UPI OC185B make a single IPO mandate limit 10 lakh?",
+        "entity": "",
+        "entity_basis": "unspecified",
+        "requested_aspects": [
+          "limits"
+        ],
+        "product_filter": null,
+        "issue_date_cutoff": null,
+        "selected_document_ids": [],
+        "focus_terms": [
+          "10",
+          "capital",
+          "cumulative",
+          "figure",
+          "ipo",
+          "lakh",
+          "limit",
+          "make",
+          "mandate",
+          "market",
+          "oc185b",
+          "single",
+          "upi"
+        ],
+        "note": "Entity is research context, not an automatic legal-applicability decision. Unknown metadata stays eligible."
+      },
+      "evidence_map": [
+        {
+          "citation": "S1",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Annexure I",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S2",
+          "document_id": "npci-source-4e6fac099b791778ded35153",
+          "title": "UPI OC 127 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S3",
+          "document_id": "2024-OC-185A",
+          "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-24",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S4",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "targeted_currency_correction_ai_visual_check",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S5",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "targeted_currency_correction_ai_visual_check",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S6",
+          "document_id": "2024-OC-185A",
+          "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-24",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S7",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "targeted_currency_correction_ai_visual_check",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S8",
+          "document_id": "npci-source-9c7b5f01193a8e2a82195b29",
+          "title": "Circular 71 - Enhancement of per transaction limit to Rs 2.Lakhs for UPI based ASBA",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "limits",
+            "timing"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S9",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Annexure I",
+          "aspects": [
+            "requirements",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S10",
+          "document_id": "2023-UPI-185",
+          "title": "Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2023-12-19",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S11",
+          "document_id": "2024-OC-185A",
+          "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability"
+          ],
+          "applicability": {},
+          "issue_date": "2024-08-24",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S12",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "targeted_currency_correction_ai_visual_check",
+          "retrieval_reason": "graph_anchor"
+        },
+        {
+          "citation": "S13",
+          "document_id": "2024-OC-200",
+          "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": "2024-07-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S14",
+          "document_id": "2025-OC-185B",
+          "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Annexure I",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": "2025-08-28",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "source_image_checked_transcription",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S15",
+          "document_id": "npci-source-d46417e82b6fad68d692400c",
+          "title": "Circular no. 010 - E-Mandate scope & limit enhancement",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [
+            "limits"
+          ],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "direct_match"
+        },
+        {
+          "citation": "S16",
+          "document_id": "2024-OC-200",
+          "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements",
+            "applicability",
+            "definitions",
+            "changes"
+          ],
+          "applicability": {},
+          "issue_date": "2024-07-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S17",
+          "document_id": "2024-OC-200",
+          "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 2,
+          "section": "Document opening",
+          "aspects": [
+            "requirements"
+          ],
+          "applicability": {},
+          "issue_date": "2024-07-31",
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "machine_extraction_not_verified_word_for_word",
+          "retrieval_reason": "qualification_context"
+        },
+        {
+          "citation": "S18",
+          "document_id": "npci-source-d46417e82b6fad68d692400c",
+          "title": "Circular no. 010 - E-Mandate scope & limit enhancement",
+          "source_group": "www.npci.org.in",
+          "document_type": "Unrecorded",
+          "page": 1,
+          "section": "Document opening",
+          "aspects": [],
+          "applicability": {},
+          "issue_date": null,
+          "updated_on": null,
+          "effective_date": null,
+          "extraction_review": "imported_text_not_verified",
+          "retrieval_reason": "qualification_context"
+        }
+      ],
+      "aspect_coverage": [
+        {
+          "aspect": "limits",
+          "label": "Limits and thresholds",
+          "citations": [
+            "S1",
+            "S2",
+            "S3",
+            "S4",
+            "S5",
+            "S6",
+            "S7",
+            "S8",
+            "S9",
+            "S10",
+            "S12",
+            "S13",
+            "S15"
+          ],
+          "status": "passages_found"
+        }
+      ],
+      "coverage_basis": "Heuristic passage labels; finding a passage does not prove completeness or legal applicability.",
+      "graph_context": {
+        "status": "active",
+        "fingerprint": "6f31ab81eccd69f0568728cb0c4ae7da244295851e7f72e52c69cd073c9d2c45",
+        "topics": [
+          "upi_category_limits_185",
+          "upi_ipo_limit"
+        ],
+        "max_hops": 2,
+        "max_graph_chunks": 12,
+        "relationships": [
+          {
+            "from_id": "2025-OC-185B",
+            "to_id": "2024-OC-185A",
+            "type": "references",
+            "evidence_anchor": "limits_ref",
+            "review_status": "proposed_ai_assisted"
+          },
+          {
+            "from_id": "2024-OC-185A",
+            "to_id": "2023-UPI-185",
+            "type": "references",
+            "evidence_anchor": "limits_tax",
+            "review_status": "proposed_ai_assisted"
+          },
+          {
+            "from_id": "2025-OC-185B",
+            "to_id": "npci-source-4e6fac099b791778ded35153",
+            "type": "related_topic",
+            "evidence_anchor": "limits_capital",
+            "review_status": "proposed_ai_assisted",
+            "target_anchor": "ipo_enhanced",
+            "aspect": "MCC6211_related_scopes_not_automatic_mandate_override"
+          },
+          {
+            "from_id": "2024-OC-185A",
+            "to_id": "npci-source-4e6fac099b791778ded35153",
+            "type": "references",
+            "evidence_anchor": "limits_annex",
+            "review_status": "proposed_ai_assisted"
+          },
+          {
+            "from_id": "npci-source-4e6fac099b791778ded35153",
+            "to_id": "npci-source-9c7b5f01193a8e2a82195b29",
+            "type": "related_topic",
+            "evidence_anchor": "ipo_enhanced",
+            "review_status": "proposed_ai_assisted",
+            "target_anchor": "ipo_original",
+            "aspect": "UPI_ASBA_IPO_history_not_explicit_number_reference"
+          }
+        ],
+        "expected_anchor_ids": [
+          "limits_hospital",
+          "limits_tax",
+          "limits_tax_mcc",
+          "limits_annex",
+          "limits_ref",
+          "limits_verified",
+          "limits_bank",
+          "limits_p2p",
+          "limits_capital",
+          "limits_cc",
+          "limits_gem",
+          "limits_cumulative",
+          "ipo_original",
+          "ipo_enhanced"
+        ],
+        "source_gaps": [],
+        "cautions": [
+          "Distinguish transaction limits from cumulative 24-hour limits and retain verified-merchant and bank-policy conditions.",
+          "Prioritise the source specific to UPI ASBA IPO purpose01 and MCC6211 when explaining a mandate limit. A cumulative capital-market table value is a different measure and does not by itself change a per-mandate ceiling.",
+          "The original OC71 extraction has an incomplete line; do not reconstruct missing execution conditions."
+        ],
+        "review_status": "proposed_ai_assisted",
+        "limitation": "Proposed links guide source retrieval only. No automatic supersession or current-applicability decision.",
+        "anchor_coverage": [
+          {
+            "anchor_id": "limits_hospital",
+            "document_id": "2023-UPI-185",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_tax",
+            "document_id": "2024-OC-185A",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_tax_mcc",
+            "document_id": "2024-OC-185A",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_annex",
+            "document_id": "2024-OC-185A",
+            "page": 2,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_ref",
+            "document_id": "2025-OC-185B",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_verified",
+            "document_id": "2025-OC-185B",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_bank",
+            "document_id": "2025-OC-185B",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_p2p",
+            "document_id": "2025-OC-185B",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_capital",
+            "document_id": "2025-OC-185B",
+            "page": 2,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_cc",
+            "document_id": "2025-OC-185B",
+            "page": 2,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_gem",
+            "document_id": "2025-OC-185B",
+            "page": 2,
+            "included": true
+          },
+          {
+            "anchor_id": "limits_cumulative",
+            "document_id": "2025-OC-185B",
+            "page": 2,
+            "included": true
+          },
+          {
+            "anchor_id": "ipo_original",
+            "document_id": "npci-source-9c7b5f01193a8e2a82195b29",
+            "page": 1,
+            "included": true
+          },
+          {
+            "anchor_id": "ipo_enhanced",
+            "document_id": "npci-source-4e6fac099b791778ded35153",
+            "page": 1,
+            "included": true
+          }
+        ],
+        "complete_within_pilot": true
+      }
+    },
+    "sources": [
+      {
+        "id": "2025-OC-185B:p2:v3c1",
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "text": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 | Jewellery | 5944 | ₹2 Lakh | ₹6 Lakh | | 9 | FX Retail use case with BBPS Platform | MCC-6012; Purpose Code — BF (New Purpose Code for regular UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 75,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 220,
+        "section_id": "2025-OC-185B:s1",
+        "section_heading": "Annexure I",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p1:v3c5",
+        "next_chunk_id": "2025-OC-185B:p2:v3c2",
+        "feature_ids": [
+          "autopay",
+          "credit_on_upi"
+        ],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_capital",
+        "graph_scope": [
+          "Table distinguishes enhanced per-transaction limit from cumulative 24-hour limit",
+          "Credit-card bill payments: separate per-transaction and daily columns",
+          "GeM EMD is a specified use case, not every MCC9311 payment"
+        ],
+        "citation": "S1",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_capital",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "npci-source-4e6fac099b791778ded35153:p1:v3c1",
+        "document_id": "npci-source-4e6fac099b791778ded35153",
+        "page": 1,
+        "text": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl Retail Direct PurposeCode25 Scheme(RDS)* MCC - 6211 *For RDS wehave introduced a new purpose as an identifier which is purpose code 25.Memberbank acting as an acquirer for RDS scheme shall send the transaction with the new purpose code All such transactions shall be considered under \"Verified Merchant\"and appropriate rules will be applicable. Merchants and other payment providers are requested to take note of the above enhancement and undertake requisite changeson the App&application systems.Members arerequestedtomake the necessary changes by 14th December, 2021. Yours sincerely, Praveena Rai ChiefOperatingOfficer 1001A,TheCapital,BWing,10thFlo0r, BandraKurlaComplex,Bandra(E),Mumbai4ooO51. T:+912240009100F:+912240009101 contact@npci.org.inwww.npci.org.in CIN:U74990MH2008NPL189067",
+        "title": "UPI OC 127 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+        "circular_number": "127",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_127_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_9c0353fa31.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 127",
+        "fiscal_year": "2021-22",
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 157,
+        "section_id": "npci-source-4e6fac099b791778ded35153:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "",
+        "feature_ids": [],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "ipo_enhanced",
+        "graph_scope": [
+          "Specific UPI ASBA IPO and RDS per-transaction ceiling, separate purpose identifiers"
+        ],
+        "citation": "S2",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "ipo_enhanced",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-185A:p2:v3c1",
+        "document_id": "2024-OC-185A",
+        "page": 2,
+        "text": "aR ART eT |p NATIONAL PAYMENTS CORPORATION OF INDIA Annexure to OC 185A Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI Regarding circular no. NPCI/UPI/ 2024-25/OC-185A, which pertains to the implementation of a Rs 5 Lakh limit per transaction for verified merchants in specific categories in UPI - Category Circular reference & ee Tax Payments MCC - 9311 NPCI/UPI/2024-25/0C-185A Hospitals and MCC - 8011, 8021, 8031, 8041, NPCI/UPI/2023-24/0C-185 Educational 8042, 8049, 8050, 8062, 8071, (Existing — No Change) Services 8099, 0742, 8211, 8220, 8241, 8244, 8249, 8299 IPO & G Sec MCC 6211, NPCI/UPI/OC-127/2021 -22 through RBI Purpose Code — 01 (IPO), 25 (RDS) | (Existing - No Change) Retail Direct Scheme (RDS) Note:",
+        "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+        "circular_number": "185A",
+        "series": "UPI",
+        "issue_date": "2024-08-24",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 89,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 119,
+        "section_id": "2024-OC-185A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-185A:p1:v3c4",
+        "next_chunk_id": "2024-OC-185A:p2:v3c2",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_annex",
+        "graph_scope": [
+          "Annexure labels IPO/RDS under OC127 as existing, no change"
+        ],
+        "citation": "S3",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_annex",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p1:v3c4",
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "text": "3. Member banks may continue to be provided the discretion to set their internal limits based on their internal policy, within the overall ceilings prescribed by NPCI.",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "targeted_currency_correction_ai_visual_check",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 167,
+        "end_word": 194,
+        "section_id": "2025-OC-185B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p1:v3c3",
+        "next_chunk_id": "2025-OC-185B:p1:v3c5",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_bank",
+        "graph_scope": [
+          "Member banks retain discretion within network ceilings"
+        ],
+        "citation": "S4",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_bank",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "limits"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p1:v3c5",
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "text": "4. The per transaction limit for P2P shall continue as per the extant guidelines. Member, Apps and PSPs take note of the above enhancement, undertake requisite changes and ensure the compliance with the same by 15\" September 2025. Yours Sincerely, SD/- Sourabh Tomar Head UPI Product 10014, The Capital, B Wing, 10\" Floor, Bandra Kurla Complex, Bandra (E), Mumbai 400 O51- a T: +91 22 40009100 F: +91 22 40009101 Together ‘om contacti@npci.org.in www.npci.org.in WeBuild woe CIN: U74990MH2008NPL189067",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "targeted_currency_correction_ai_visual_check",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 194,
+        "end_word": 272,
+        "section_id": "2025-OC-185B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "4.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p1:v3c4",
+        "next_chunk_id": "2025-OC-185B:p2:v3c1",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_p2p",
+        "graph_scope": [
+          "Merchant-category changes do not increase the P2P limit"
+        ],
+        "citation": "S5",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_p2p",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-185A:p1:v3c1",
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "text": "sae ersshr aprary Pere NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2024-25/0C/185A 24\" August 2024 To All Members of UPI, Dear Madan/Sir, Subject: Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories. This proposed enhancement aligns with previous limit enhancements implemented through circulars such as NPCI/UPI/OC-127/2021- 2022 dated 9'\" December 2021 and NPCI/UPI/OC-185/2023-2024 dated 19\" December 2023. In view of the above, the per transaction value limit in UPI has now been enhanced to = 5 lakhs for entities under categories aligned to tax payments. This enhanced limit shall only be applicable to ‘Verified Merchants’, in the applicable category. To enable this enhancement:",
+        "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+        "circular_number": "185A",
+        "series": "UPI",
+        "issue_date": "2024-08-24",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 133,
+        "section_id": "2024-OC-185A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2024-OC-185A:p1:v3c2",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_tax",
+        "graph_scope": [
+          "Tax-payment category and verified merchants"
+        ],
+        "citation": "S6",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_tax",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p1:v3c2",
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "text": "1. The enhanced limits shall be applicable for merchants which are categorised as ‘Verified Merchant’.",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "targeted_currency_correction_ai_visual_check",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 116,
+        "end_word": 131,
+        "section_id": "2025-OC-185B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p1:v3c1",
+        "next_chunk_id": "2025-OC-185B:p1:v3c3",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_verified",
+        "graph_scope": [
+          "Enhanced limits require verified merchant classification"
+        ],
+        "citation": "S7",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_verified",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "npci-source-9c7b5f01193a8e2a82195b29:p1:v3c1",
+        "document_id": "npci-source-9c7b5f01193a8e2a82195b29",
+        "page": 1,
+        "text": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UP1/2019-20/OCNo.71 June21,2019 To, AllMembersofUPl Dear Sir/Madam, Subject:EnhancementofUPlpertransaction limittoRs.2lakhs forUPIbasedAsBA The second phase of the UPl option in IPO is going live with effect from July 1, 2019. It is now advised that all members and PsP banks live on UPl 2.0mandateblock functionality should maintain the per transaction limit of Rs. 2 lakhs for UPl based ASBA transactions with purpose Code01withMCC6211. Member banks and PsPs are advised to ensure necessary checks at their end and maintain transaction limits as directed above for both, mandate block (non-financial) and mandate The ScSB's registered with SEBl and PsP banks shall submit the necessary compliance to ipo.upi@npci.org.inonorbeforeJune30,2019. Yours faithfully, DilipAsbe ManagingDirector&CEO 1001A,The Capital,BWing,10Floor. BandraKurlaComplex,Bandra(E),Mumbai 400O51. T:+912240009100F:+912240009101www.npci.org.in CIN:U74990MH2008NPL189067",
+        "title": "Circular 71 - Enhancement of per transaction limit to Rs 2.Lakhs for UPI based ASBA",
+        "circular_number": "71",
+        "series": "UPI",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Circular_Enhancement_2_Lakhs_UPI_ASBA_7f656631f8.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "Reference 71",
+        "fiscal_year": "2019-20",
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 0,
+        "end_word": 114,
+        "section_id": "npci-source-9c7b5f01193a8e2a82195b29:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "ipo_original",
+        "graph_scope": [
+          "Historical OC71 UPI-ASBA scope; purpose01 and MCC6211"
+        ],
+        "citation": "S8",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "ipo_original",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits",
+          "timing"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p2:v3c3",
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "text": "1. * Issuing banks are required to ensure that such cumulative limits are kept at their end. > Formatting note: the three Insurance MCC subrows and their merged cumulative-limit cell have been combined into one Markdown row without changing the values.",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 75,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 243,
+        "end_word": 284,
+        "section_id": "2025-OC-185B:s1",
+        "section_heading": "Annexure I",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p2:v3c2",
+        "next_chunk_id": "",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_cumulative",
+        "graph_scope": [
+          "Issuer responsibility for 24-hour cumulative ceilings"
+        ],
+        "citation": "S9",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_cumulative",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "limits"
+        ]
+      },
+      {
+        "id": "2023-UPI-185:p1:v3c1",
+        "document_id": "2023-UPI-185",
+        "page": 1,
+        "text": "HRT WERT Bras PRT NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/OC-185/2023-24 19\" December 2023 To, All Members of UPI Dear MadanVSir, Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI With UPI emerging as a preferred payment method, there is a need to enhance the per transaction limit in UPI for specific categories, as per the RBI Statement on Developmental and Regulatory Policies, dated 8'\" December 2023. In view of the above, the per transaction value limit in UP] has now been enhanced to = 5 lakhs for merchants under categories aligned to hospitals and educational services. This enhanced limit shall only be applicable to ‘Verified Merchants’. To enable this enhancement:",
+        "title": "Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+        "circular_number": "185",
+        "series": "UPI",
+        "issue_date": "2023-12-19",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_185_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_65fd071f6c.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 114,
+        "section_id": "2023-UPI-185:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2023-UPI-185:p1:v3c2",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_hospital",
+        "graph_scope": [
+          "Specific verified hospital and education merchants, not all payments"
+        ],
+        "citation": "S10",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_hospital",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-185A:p1:v3c3",
+        "document_id": "2024-OC-185A",
+        "page": 1,
+        "text": "2. Acquiring entities must ensure thai the classification of their merchants within ‘MCC- 9311’ strictly adheres to the tax payments only. They shall ensure that entities are added to the ‘Verified Merchant’ list after proper due diligence.",
+        "title": "Addendum to OC 185 - Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI",
+        "circular_number": "185A",
+        "series": "UPI",
+        "issue_date": "2024-08-24",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_185_A_FY_24_25_Implementation_of_Rs_5_Lakh_limit_per_transaction_for_specific_categories_in_UPI_054c82bc8b.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185A",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 153,
+        "end_word": 190,
+        "section_id": "2024-OC-185A:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-185A:p1:v3c2",
+        "next_chunk_id": "2024-OC-185A:p1:v3c4",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_tax_mcc",
+        "graph_scope": [
+          "MCC9311 tax payments; distinguish GeM EMD purpose despite same MCC"
+        ],
+        "citation": "S11",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_tax_mcc",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p1:v3c1",
+        "document_id": "2025-OC-185B",
+        "page": 1,
+        "text": "urcdte ease ara Perr NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2025-26/0C/185B 28\" August 2025 To, All Members in UPI, Dear Madan/Sir, Subject: Addendum to OC 185 A — Implementation of higher per transaction limit for specific categories in UPI Vide reference to NPCI/UPI/2024-25/0C/185 A dated 24\" August 2024, NPCI has increased the per transaction limits for entities under categories aligned to Tax Payments to ₹5 lakh. With UPI emerging as a preferred payment method, there are requirements from the market on extending higher per transaction limits for additional categories of transactions in UPI. In view of the above the per transaction limits for the mentioned categories in the Annexure I are enhanced accordingly along with additional guidelines:",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "targeted_currency_correction_ai_visual_check",
+        "needs_priority_review": false,
+        "ocr_confidence": 91,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 0,
+        "end_word": 116,
+        "section_id": "2025-OC-185B:s0",
+        "section_heading": "Document opening",
+        "clause_label": "",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "",
+        "next_chunk_id": "2025-OC-185B:p1:v3c2",
+        "feature_ids": [],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "graph_anchor": "limits_ref",
+        "graph_scope": [
+          "Reference to the earlier tax enhancement; additional categories in Annexure I retain their own scope"
+        ],
+        "citation": "S12",
+        "retrieval_reason": "graph_anchor",
+        "via_document_id": "",
+        "relation": {
+          "anchor_id": "limits_ref",
+          "review_status": "proposed_ai_assisted"
+        },
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits",
+          "changes"
+        ]
+      },
+      {
+        "id": "2024-OC-200:p2:v3c7",
+        "document_id": "2024-OC-200",
+        "page": 2,
+        "text": "c. The per transaction limit for such mandate creations shall be Rs 5 Lakh for the purpose code 76, while for purpose code 77 existing UPI limits shall be applicable.",
+        "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+        "circular_number": "200",
+        "series": "UPI",
+        "issue_date": "2024-07-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 200",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 207,
+        "end_word": 237,
+        "section_id": "2024-OC-200:s0",
+        "section_heading": "Document opening",
+        "clause_label": "c.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-200:p2:v3c6",
+        "next_chunk_id": "2024-OC-200:p2:v3c8",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "200",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.032,
+        "citation": "S13",
+        "rerank_score": -1.3254,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "limits"
+        ]
+      },
+      {
+        "id": "2025-OC-185B:p2:v3c2",
+        "document_id": "2025-OC-185B",
+        "page": 2,
+        "text": "UPI transaction); Purpose Code — 01 (For One Time Mandate) | ₹5 Lakh | ₹5 Lakh | | 10 | Digital Account Opening for Term Deposits | 7410 (New MCC) | ₹5 Lakh | ₹5 Lakh | | 11 | Digital Account Opening — Initial Funding | 7409 (New MCC) | ₹2 Lakh | ₹2 Lakh | **Notes**",
+        "title": "Addendum to OC 185A -Implementation of higher per transaction limit for specific categories in UPI",
+        "circular_number": "185B",
+        "series": "UPI",
+        "issue_date": "2025-08-28",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No185_B_FY_2025_26_Addendum_to_OC_185_A_Implementation_of_higher_per_transaction_limit_for_specific_categories_in_UPI_ba517a0902.pdf",
+        "method": "ocr",
+        "review_status": "source_image_checked_transcription",
+        "needs_priority_review": false,
+        "ocr_confidence": 75,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 185B",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 2,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 185,
+        "end_word": 243,
+        "section_id": "2025-OC-185B:s1",
+        "section_heading": "Annexure I",
+        "clause_label": "1.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2025-OC-185B:p2:v3c1",
+        "next_chunk_id": "2025-OC-185B:p2:v3c3",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "185",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.03252,
+        "citation": "S14",
+        "rerank_score": 0.10145,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      },
+      {
+        "id": "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+        "document_id": "npci-source-d46417e82b6fad68d692400c",
+        "page": 1,
+        "text": "2. Current mandate limit of Rs. 1 lakh is increased to Rs. 10 lakhs (Internet banking and debit card authentication modes). In line with the physical mandates, for discouraging PDCs, provision is made for registering security mandate. The limit for security mandate is Rs. 50 lakhs. Security mandate can be registered only for LON category. The mandate limit of Rs. 10 lakhs will be reviewed after 1 year. The limit for eSign based E – Mandate will continue to be at Rs. 1 lakh till further notice.",
+        "title": "Circular no. 010 - E-Mandate scope & limit enhancement",
+        "circular_number": "010E",
+        "series": "NACH",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Circular_no_010_E_Mandate_scope_and_limit_enhancement_decae8a7a9.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "NACH"
+        ],
+        "reference_label": "Reference 010E",
+        "fiscal_year": "2020-21",
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 124,
+        "end_word": 211,
+        "section_id": "npci-source-d46417e82b6fad68d692400c:s0",
+        "section_heading": "Document opening",
+        "clause_label": "2.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-d46417e82b6fad68d692400c:p1:v3c2",
+        "next_chunk_id": "npci-source-d46417e82b6fad68d692400c:p1:v3c4",
+        "feature_ids": [
+          "nach_mandates"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "score": 0.02453,
+        "citation": "S15",
+        "rerank_score": -0.89613,
+        "retrieval_reason": "direct_match",
+        "via_document_id": "",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "limits"
+        ]
+      },
+      {
+        "id": "2024-OC-200:p2:v3c8",
+        "document_id": "2024-OC-200",
+        "page": 2,
+        "text": "d. It is re-iterated that issuer bank shall do all the necessary validation at the time of mandate creation. The execution of such mandates shall be considered success with the premise that mandate created successfully shall be executed successfully. With reference to NPCI/UPI/OC No. 88/2020-21 dated 14° May 2020 and further with NPCI/UPI/OC No.128/2021-22 dated 14 December 2021, NPCI has defined the scope of Deemed Debit and the same shall be extended to Single Block Multiple Debits mandates as well.",
+        "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+        "circular_number": "200",
+        "series": "UPI",
+        "issue_date": "2024-07-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 200",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 237,
+        "end_word": 317,
+        "section_id": "2024-OC-200:s0",
+        "section_heading": "Document opening",
+        "clause_label": "d.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-200:p2:v3c7",
+        "next_chunk_id": "2024-OC-200:p3:v3c1",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "200",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [
+          "issuer_bank"
+        ],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S16",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-200",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements",
+          "applicability",
+          "definitions",
+          "changes"
+        ]
+      },
+      {
+        "id": "2024-OC-200:p2:v3c6",
+        "document_id": "2024-OC-200",
+        "page": 2,
+        "text": "i. QR based ii, Intent iii. | SDK/Plug In The execution/debit of the mandate shall be as per the extant mode of mandates. Other mode of initiation shall be envisaged later.",
+        "title": "Enablement of UPI Mandate feature of Single Block Multiple Debits",
+        "circular_number": "200",
+        "series": "UPI",
+        "issue_date": "2024-07-31",
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/UPI_OC_No_200_FY_24_25_Enablement_of_UPI_Mandate_feature_of_Single_Block_Multiple_Debits_f2f9bc9230.pdf",
+        "method": "ocr",
+        "review_status": "machine_extraction_not_verified_word_for_word",
+        "needs_priority_review": false,
+        "ocr_confidence": 92,
+        "product_memberships": [
+          "UPI"
+        ],
+        "reference_label": "OC 200",
+        "fiscal_year": null,
+        "source_coverage": {
+          "total_pages": 3,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "existing_v04"
+        },
+        "metadata_quality": "existing_source_metadata",
+        "start_word": 176,
+        "end_word": 207,
+        "section_id": "2024-OC-200:s0",
+        "section_heading": "Document opening",
+        "clause_label": "i.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "2024-OC-200:p2:v3c5",
+        "next_chunk_id": "2024-OC-200:p2:v3c7",
+        "feature_ids": [
+          "autopay"
+        ],
+        "family": "200",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S17",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "2024-OC-200",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": [
+          "requirements"
+        ]
+      },
+      {
+        "id": "npci-source-d46417e82b6fad68d692400c:p1:v3c4",
+        "document_id": "npci-source-d46417e82b6fad68d692400c",
+        "page": 1,
+        "text": "3. In order to facilitate the customer in setting up standing instruction to be processed through NACH, a new category “S002 – Standing instruction” is introduced. The customers through E – Mandate can set up a standing instruction allowing the sponsor banks to pull the funds as per their instruction at an agreed frequency. Member banks are advised to take note and carryout necessary software modification for implementing the changes as detailed above. The information herein may be disseminated to all the concerned. Queries, if any, may be raised through CRM. With Warm Regards Giridhar GM (Chief – Offline product operations & technology)",
+        "title": "Circular no. 010 - E-Mandate scope & limit enhancement",
+        "circular_number": "010E",
+        "series": "NACH",
+        "issue_date": null,
+        "listed_update_date": null,
+        "source_url": "https://www.npci.org.in/uploads/Circular_no_010_E_Mandate_scope_and_limit_enhancement_decae8a7a9.pdf",
+        "method": "imported_markdown",
+        "review_status": "imported_text_not_verified",
+        "needs_priority_review": false,
+        "ocr_confidence": null,
+        "product_memberships": [
+          "NACH"
+        ],
+        "reference_label": "Reference 010E",
+        "fiscal_year": "2020-21",
+        "source_coverage": {
+          "total_pages": 1,
+          "empty_pages": [],
+          "thin_pages": [],
+          "page_count_verified": true,
+          "origin": "imported_markdown"
+        },
+        "metadata_quality": "inventory_unverified",
+        "start_word": 211,
+        "end_word": 314,
+        "section_id": "npci-source-d46417e82b6fad68d692400c:s0",
+        "section_heading": "Document opening",
+        "clause_label": "3.",
+        "chunker_version": "clauses-v1",
+        "segmentation_status": "heuristic_not_reviewed",
+        "previous_chunk_id": "npci-source-d46417e82b6fad68d692400c:p1:v3c3",
+        "next_chunk_id": "",
+        "feature_ids": [
+          "nach_mandates"
+        ],
+        "family": "",
+        "feature_basis": "title_and_clause_regex_unreviewed",
+        "roles": [],
+        "role_basis": "text_regex_unreviewed",
+        "citation": "S18",
+        "retrieval_reason": "qualification_context",
+        "via_document_id": "npci-source-d46417e82b6fad68d692400c",
+        "relation": null,
+        "source_group": "www.npci.org.in",
+        "document_type": "Unrecorded",
+        "applicability": {},
+        "evidence_aspects": []
+      }
+    ],
+    "claims": [
+      {
+        "text": "The 10 lakh cumulative Capital Market figure in UPI OC185B does not make a single IPO mandate limit 10 lakh; it establishes a separate per-transaction ceiling of Rs 5 Lakh and a distinct Cumulative Limit (24 hrs) of Rs 10 Lakh for the Capital Market category.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 1,
+        "support_status": "automated_supported"
+      },
+      {
+        "text": "The document explicitly distinguishes between the enhanced per-transaction limit and the cumulative 24-hour limit in its table structure, indicating they are different measures rather than a single mandate ceiling.",
+        "sources": [
+          "S1"
+        ],
+        "draft_index": 2,
+        "support_status": "automated_supported"
+      }
+    ],
+    "warnings": [
+      "Coverage is limited to the imported snapshot. Issue dates are not effective dates. OCR text may contain errors; verify figures and tables against the original.",
+      "Graph-assisted retrieval: source-anchored proposed links; independent review is pending. Preserve each requirement's scope and effective date. A partial amendment does not replace the entire original circular. Current applicability beyond the indexed sources is unverified.",
+      "Graph scope caution: Distinguish transaction limits from cumulative 24-hour limits and retain verified-merchant and bank-policy conditions.",
+      "Graph scope caution: Prioritise the source specific to UPI ASBA IPO purpose01 and MCC6211 when explaining a mandate limit. A cumulative capital-market table value is a different measure and does not by itself change a per-mandate ceiling.",
+      "Graph scope caution: The original OC71 extraction has an incomplete line; do not reconstruct missing execution conditions.",
+      "Some evidence was omitted by the passage/character budget. Coverage is partial.",
+      "Imported document metadata and extraction remain unverified; consult the original PDFs. Unknown issue dates are excluded when using an issue-date cutoff.",
+      "Claims are automatically checked against cited excerpts. This is not independent expert verification. Uncertain or unsupported claims are withheld for review.",
+      "2 of 4 draft claims were withheld. The remaining statements may not fully answer your question; inspect the sources and review details.",
+      "Citation IDs are validated. Whether each citation supports its claim still requires review.",
+      "The answer may omit a material qualification or contain an unresolved difference in scope. Inspect the evidence review below."
+    ],
+    "answer": "Partial draft — some statements were withheld during support checks.",
+    "abstained": false,
+    "claim_repairs": [
+      {
+        "original": {
+          "text": "Historical context from OC71 confirms that UPI-based ASBA transactions for IPOs (Purpose Code 01 with MCC 6211) were previously subject to a per-transaction limit of Rs 2 lakhs, which was later enhanced to Rs 5 lakh by subsequent circulars.",
+          "sources": [
+            "S8",
+            "S2"
+          ],
+          "draft_index": 3,
+          "support_status": "uncertain",
+          "review_reasons": [
+            "A monetary amount is absent from the circular explicitly named in this statement. Do not borrow amounts from another cited source."
+          ]
+        },
+        "status": "rejected",
+        "evidence_citations": [
+          "S2",
+          "S8",
+          "S1",
+          "S3",
+          "S4",
+          "S5"
+        ],
+        "candidate": {
+          "text": "The 10 lakh cumulative limit for Capital Market transactions (MCC 6211) under UPI OC185B applies to the aggregate of all such transactions within a 24-hour period, not as a single-transaction mandate limit; this rule is established in circular 185B. The per-transaction limit for these specific categories remains Rs 5 lakh, as previously enhanced by circular 127 and maintained without change in circular 185A.",
+          "sources": [
+            "S1",
+            "S3"
+          ],
+          "draft_index": 3
+        },
+        "checks": [
+          {
+            "claim_index": 0,
+            "status": "uncertain",
+            "reasons": [
+              "The collective statement names circulars without their own supporting evidence. Attribute each rule separately rather than treating the whole series as identical."
+            ],
+            "quotes": [],
+            "checker": "local_model_plus_deterministic_guards"
+          }
+        ]
+      },
+      {
+        "original": {
+          "text": "The cumulative limit of Rs 10 Lakh applies to the total volume within a 24-hour period for the category, not as a replacement for the per-mandate ceiling.",
+          "sources": [
+            "S1",
+            "S9"
+          ],
+          "draft_index": 4,
+          "support_status": "uncertain",
+          "review_reasons": [
+            "The table amount is not tied to a matching category and limit type in the claim. Cite the correct row and retain its scope."
+          ]
+        },
+        "status": "rejected",
+        "evidence_citations": [
+          "S1",
+          "S9",
+          "S2",
+          "S3",
+          "S4",
+          "S5"
+        ],
+        "candidate": {
+          "text": "The Rs 10 Lakh cumulative limit for Capital Market transactions in Circular 185B applies to the total volume within a 24-hour period and does not replace the per-mandate ceiling of Rs 5 Lakh established by Circular 127.",
+          "sources": [
+            "S1",
+            "S9"
+          ],
+          "draft_index": 4
+        },
+        "checks": [
+          {
+            "claim_index": 0,
+            "status": "unsupported",
+            "reasons": [
+              "Claim contains a number absent from cited text."
+            ],
+            "quotes": [],
+            "checker": "local_model_plus_deterministic_guards"
+          }
+        ]
+      }
+    ],
+    "central_answer_status": "retained",
+    "response_status": "incomplete",
+    "coverage_check": {
+      "status": "issues_flagged",
+      "findings": [
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer claims the 10 lakh figure in UPI OC185B establishes a 'Cumulative Limit (24 hrs)' of Rs 10 Lakh for Capital Market, while S1.1 shows this cumulative limit applies to the category generally. However, S2.1 and S3.1 explicitly link the IPO use-case (MCC-6211) to a specific per-transaction limit enhancement via OC-127/2021-22 without mentioning a 24-hour cumulative cap for IPOs specifically in those earlier documents, creating ambiguity on whether the 10 lakh cumulative limit from S1.1 applies strictly to IPO mandates or only to general Capital Market transactions within that category.",
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+            },
+            {
+              "citation": "S2",
+              "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+            },
+            {
+              "citation": "S3",
+              "quote": "aR ART eT |p NATIONAL PAYMENTS CORPORATION OF INDIA Annexure to OC 185A Implementation of Rs 5 Lakh limit per transaction for specific categories in UPI Regarding circular no. NPCI/UPI/ 2024-25/OC-185A, which pertains to the implementation of a Rs 5 Lakh limit per transaction for verified merchants in specific categories in UPI - Category Circular reference & ee Tax Payments MCC - 9311 NPCI/UPI/2024-25/0C-185A Hospitals and MCC - 8011, 8021, 8031, 8041, NPCI/UPI/2023-24/0C-185 Educational 8042, 8049, 8050, 8062, 8071, (Existing — No Change) Services 8099, 0742, 8211, 8220, 8241, 8244, 8249, 8299 IPO & G Sec MCC 6211, NPCI/UPI/OC-127/2021 -22 through RBI Purpose Code — 01 (IPO), 25 (RDS) |"
+            }
+          ]
+        },
+        {
+          "kind": "scope_unclear",
+          "reason": "The answer distinguishes between 'per-transaction ceiling' and 'Cumulative Limit (24 hrs)', but S1.1 lists these side-by-side for Capital Market without explicitly defining the scope of the cumulative limit's applicability to IPO mandates versus general capital market transactions, leaving it unclear if an IPO mandate is subject to the 24-hour rolling cap or just the per-transaction cap.",
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+            },
+            {
+              "citation": "S12",
+              "quote": "urcdte ease ara Perr NATIONAL PAYMENTS CORPORATION OF INDIA NPCI/UPI/2025-26/0C/185B 28\" August 2025 To, All Members in UPI, Dear Madan/Sir, Subject: Addendum to OC 185 A — Implementation of higher per transaction limit for specific categories in UPI Vide reference to NPCI/UPI/2024-25/0C/185 A dated 24\" August 2024, NPCI has increased the per transaction limits for entities under categories aligned to Tax Payments to ₹5 lakh. With UPI emerging as a preferred payment method, there are requirements from the market on extending higher per transaction limits for additional categories of transactions in UPI. In view of the above the per transaction limits for the mentioned categories in the"
+            }
+          ]
+        },
+        {
+          "kind": "possible_conflict",
+          "reason": "S8.1 states that for UPI based ASBA (IPO) transactions, the per transaction limit was Rs 2 lakhs with purpose Code 01 and MCC 6211 under OC-71, while S2.1 later enhances this to Rs 5 lakh. The answer implies the 10 lakh cumulative figure in S1.1 does not make a single IPO mandate limit 10 lakh, but it is unclear if the cumulative limit of 10 lakh in S1.1 overrides or coexists with the specific IPO limits defined in earlier circulars like OC-71 and OC-127.",
+          "quotes": [
+            {
+              "citation": "S8",
+              "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UP1/2019-20/OCNo.71 June21,2019 To, AllMembersofUPl Dear Sir/Madam, Subject:EnhancementofUPlpertransaction limittoRs.2lakhs forUPIbasedAsBA The second phase of the UPl option in IPO is going live with effect from July 1, 2019. It is now advised that all members and PsP banks live on UPl 2.0mandateblock functionality should maintain the per transaction limit of Rs. 2 lakhs for UPl based ASBA transactions with purpose Code01withMCC6211. Member banks and PsPs are advised to ensure necessary checks at their end and maintain transaction limits as directed above for both, mandate block (non-financial) and mandate The ScSB's registered with SEBl and PsP"
+            },
+            {
+              "citation": "S2",
+              "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+            },
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+            }
+          ]
+        },
+        {
+          "kind": "possible_conflict",
+          "reason": "The answer asserts that the 10 lakh cumulative figure establishes a separate per-transaction ceiling of Rs 5 Lakh and a distinct Cumulative Limit (24 hrs) of Rs 10 Lakh for Capital Market, but S1.1 shows these limits are listed together for Capital Market without explicitly stating that the 10 lakh cumulative limit applies to IPO mandates specifically, which could lead to conflicting interpretations of whether an IPO mandate is capped at 5 lakh per transaction with a 10 lakh daily roll or if it has different rules.",
+          "quotes": [
+            {
+              "citation": "S1",
+              "quote": "### Annexure I 1. Below are the categories where higher limits are extended | Sr No | Categories | Merchant Category/Identifier | Enhanced Limits | Cumulative Limits (24 hrs) * | |---|---|---|---|---| | 1 | Capital Market | 6211 | ₹5 Lakh | ₹10 Lakh | | 2 | Insurance | 5960; 6300; 6529 | ₹5 Lakh for each listed MCC | ₹10 Lakh | | 3 | Government e-Market Place (EMD Payments) | 9311 | ₹5 Lakh | ₹10 Lakh | | 4 | Travel | 4722 | ₹5 Lakh | ₹10 Lakh | | 5 | Credit Card Bill Payments | 5413 | ₹5 Lakh | ₹6 Lakh | | 6 | Collections | 7322 | ₹5 Lakh | ₹10 Lakh | | 7 | Business/Merchant (Including Pre-Approved Payments) | Payer MCC shall not be 0000 and Purpose Code — 20 or 15 | ₹5 Lakh | NA | | 8 |"
+            },
+            {
+              "citation": "S2",
+              "quote": "NPCI NATIONALPAYMENTSCORPORATIONOFINDIA NPCI/UPI/OCNo.127/2021-22 gthDecember,2021 ToAllMember-UnifiedPaymentsInterface(UPl) DearMadam/Sir, Subject:lImplementationof Rs5Lakh limitpertransactionforSpecificCategories inUPl With UPl emerging as a preferred payment method, there is need to extend the per transaction limit in UPl which ispresentlyuptoRs2Lakhpertransactionforspecificusecases. In view of the above,theper transactionvalue limit inUPl has been now enhanced to Rs 5 lakh for Retail Direct SchemeandUPIbasedASBAIPO.Thedetailsareasbelow Foruse-case qualifying underthefollowing business categories; Category Identifier Purpose Code01 InitiaiPublicOffering(IPO) MCC - 6211 GSec throughRBl"
+            }
+          ]
+        }
+      ],
+      "basis": "Automated same-model review of supplied evidence only; not exhaustive or independent verification."
+    },
+    "elapsed_ms": 25906,
+    "timing": {
+      "total_seconds": 25.906,
+      "budget_seconds": 120.0,
+      "stages": [
+        {
+          "stage": "retrieval",
+          "seconds": 0.016
+        },
+        {
+          "stage": "embedding",
+          "seconds": 0.031
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "model_metadata",
+          "seconds": 0.0
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.063
+        },
+        {
+          "stage": "embedding",
+          "seconds": 0.031
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 0.0
+        },
+        {
+          "stage": "model_metadata",
+          "seconds": 0.015
+        },
+        {
+          "stage": "retrieval",
+          "seconds": 1.329
+        },
+        {
+          "stage": "generation",
+          "seconds": 7.718
+        },
+        {
+          "stage": "claim_support",
+          "seconds": 6.36
+        },
+        {
+          "stage": "coverage",
+          "seconds": 10.343
+        }
+      ],
+      "model_calls": [
+        {
+          "stage": "embedding",
+          "status": "completed",
+          "timeout_seconds": 20.0,
+          "prompt_tokens": 46,
+          "output_tokens": null,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.0,
+          "decode_seconds": 0.0,
+          "done_reason": null,
+          "seconds": 0.031
+        },
+        {
+          "stage": "model_metadata",
+          "status": "completed",
+          "timeout_seconds": 10.0,
+          "seconds": 0.0
+        },
+        {
+          "stage": "embedding",
+          "status": "completed",
+          "timeout_seconds": 20.0,
+          "prompt_tokens": 50,
+          "output_tokens": null,
+          "load_seconds": 0.001,
+          "prompt_seconds": 0.0,
+          "decode_seconds": 0.0,
+          "done_reason": null,
+          "seconds": 0.031
+        },
+        {
+          "stage": "model_metadata",
+          "status": "completed",
+          "timeout_seconds": 10.0,
+          "seconds": 0.015
+        },
+        {
+          "stage": "generation",
+          "status": "completed",
+          "timeout_seconds": 60.0,
+          "prompt_tokens": 9505,
+          "output_tokens": 321,
+          "load_seconds": 0.002,
+          "prompt_seconds": 3.117,
+          "decode_seconds": 4.439,
+          "done_reason": "stop",
+          "seconds": 7.718
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 890,
+          "output_tokens": 31,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.338,
+          "decode_seconds": 0.433,
+          "done_reason": "stop",
+          "seconds": 0.985
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 859,
+          "output_tokens": 25,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.335,
+          "decode_seconds": 0.355,
+          "done_reason": "stop",
+          "seconds": 0.765
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 2819,
+          "output_tokens": 118,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.949,
+          "decode_seconds": 1.61,
+          "done_reason": "stop",
+          "seconds": 2.641
+        },
+        {
+          "stage": "claim_support",
+          "status": "completed",
+          "timeout_seconds": 12.0,
+          "prompt_tokens": 2242,
+          "output_tokens": 73,
+          "load_seconds": 0.002,
+          "prompt_seconds": 0.754,
+          "decode_seconds": 1.088,
+          "done_reason": "stop",
+          "seconds": 1.937
+        },
+        {
+          "stage": "coverage",
+          "status": "completed",
+          "timeout_seconds": 15.0,
+          "prompt_tokens": 6069,
+          "output_tokens": 613,
+          "load_seconds": 0.002,
+          "prompt_seconds": 1.992,
+          "decode_seconds": 8.239,
+          "done_reason": "stop",
+          "seconds": 10.343
+        }
+      ]
+    }
+  },
+  "seconds": 25.906
+}

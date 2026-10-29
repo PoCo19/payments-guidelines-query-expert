@@ -106,7 +106,7 @@ class WorkTests(unittest.TestCase):
         sent=self.engine.answer.call_args.args[0]
         self.assertEqual(sent['document_ids'],['b','a'])
         self.assertEqual(sent['route'],'compare')
-        self.assertIn('do not assume',sent['query'])
+        self.assertIn('not proof of supersession',sent['query'])
         self.assertIn('Analyst-proposed actions',self.store.export(item['id'],self.engine))
         self.assertIn('Not supplied',self.store.export(item['id'],self.engine))
 

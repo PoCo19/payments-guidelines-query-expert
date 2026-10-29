@@ -77,7 +77,7 @@ def finding_labels(value, result):
 
 def request_payload(kind, payload, engine):
     if kind not in ('query', 'impact'):
-        raise ValueError('Choose Query Desk or Change-Impact Brief.')
+        raise ValueError('Choose a saved answer or change summary.')
     query = payload.get('query', '')
     limit = 1000 if kind == 'impact' else 2000
     if not isinstance(query, str) or not 1 <= len(query.strip()) <= limit:
@@ -235,7 +235,7 @@ class WorkStore:
         response = job['result']
         original = job['research_request']
         if original.get('mode') != 'generate' or not response.get('claims') or not response.get('sources'):
-            raise ValueError('Generate a cited answer before saving it to Query Desk.')
+            raise ValueError('Generate a cited answer before saving it.')
         if job['research_snapshot'] != snapshot(engine,response):
             raise ValueError('Sources or model settings changed. Run the research question again before saving.')
         request = request_payload('query', original, engine)
@@ -282,9 +282,13 @@ class WorkStore:
             if item['kind'] == 'impact':
                 query = ('Compare the selected sources to answer: '+query+
                     '\nUser-designated changed source: '+engine.by_id[request['document_ids'][0]].get('subject',request['document_ids'][0])[:200]+
-                    '\nThe first selected document is the proposed changed source; do not assume it supersedes the others. '
-                    'Explain documented changes, retained requirements, conditions, dates and unresolved evidence. '
-                    'Distinguish a new requirement from a later reference to an earlier requirement. '
+                    '\nFirst document is the proposed change, not proof of supersession. '
+                    'Explain the change concisely; compare earlier and revised provisions with separate citations. '
+                    'Include supported conditions, effective dates and unresolved points. '
+                    'A requirement absent from the newer document is not automatically retained or withdrawn. '
+                    'Retention needs source support. Distinguish new rules from references to earlier rules. '
+                    'Separate issue dates, referenced-letter dates and deadlines. Do not infer retroactivity, '
+                    'grandfathering or post-deadline-only applicability from silence; mark it unresolved. '
                     'Do not assert institution-specific impact or implementation actions.')
             answer_request = dict(query=query, mode='generate', method='hybrid', rerank=True,
                 scope='related', route='compare' if item['kind']=='impact' else 'auto',
@@ -295,16 +299,10 @@ class WorkStore:
             response = engine.answer(answer_request)
             text = '\n\n'.join(c['text']+' ['+', '.join(c['sources'])+']' for c in response.get('claims',[]))
             if not text: text = response.get('answer','')
-            actions = ('Review checklist suggestions, not inferred institutional impacts:\n'
-                '- Product and operations: assess whether the documented change affects your processes.\n'
-                '- Compliance or policy owner: verify applicability, dates and retained obligations.\n'
-                '- Customer support: review whether approved guidance needs updating.\n'
-                '- Transaction risk owner: assess whether internal rules need review; no live rule configuration is inferred.'
-                if item['kind']=='impact' else '')
-            questions = ('Are the selected earlier sources a complete baseline? Which obligations are retained? '
-                'What effective dates and exceptions need original-source verification? '
-                'Which internal process or rule evidence establishes institution-specific impact?'
-                if item['kind']=='impact' else '')
+            # Internal actions are optional analyst input, never generic AI obligations.
+            # Preserve existing notes when regenerating the source-based comparison.
+            actions = body.get('actions', '') if item['kind']=='impact' else ''
+            questions = body.get('reviewer_questions', '') if item['kind']=='impact' else ''
             updated = dict(request=request,result=response,text=text,actions=actions,reviewer_questions=questions,
                 snapshot=snapshot(engine,response), edited_by_human=False)
             if body.get('origin_request'): updated['origin_request'] = body['origin_request']

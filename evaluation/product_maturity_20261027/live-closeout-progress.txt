@@ -1,0 +1,7 @@
+lite_limits draft 27.922
+lite_paraphrase incomplete 18.891
+historical draft 4.797
+ipo_control incomplete 25.906
+gibberish abstained 4.063
+invented abstained 0.0
+change-revised incomplete

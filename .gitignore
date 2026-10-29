@@ -56,3 +56,7 @@ data/qa*/
 pilot/corpus_reference_graph_v*.json
 handoff/engineering-20261024/*.zip
 tools/prepare_collaboration.py
+
+# Raw copies retained locally; lossless frozen comparison archive is versioned.
+/evaluation/product_maturity_20261027/retrieval-pairs.json
+/evaluation/product_maturity_20261027/final-retrieval/retrieval-pairs.json

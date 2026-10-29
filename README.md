@@ -1,22 +1,24 @@
 # Payments Guidelines Query Expert
 
-**New to the project? Start with [the teammate guide](TEAM_START_HERE.md).** For installation and everyday startup, use [HOW_TO_RUN.md](HOW_TO_RUN.md). The guides explain the flow, concepts, three workspaces and contribution process without assuming prior RAG knowledge.
+**New to the project? Start with [the teammate guide](TEAM_START_HERE.md).** For installation and everyday startup, use [HOW_TO_RUN.md](HOW_TO_RUN.md). The guides explain the flow, concepts, two main tasks and contribution process without assuming prior RAG knowledge.
 
 Evidence-grounded research for payments teams. Search payment circulars, ask questions with citations, and summarise or compare selected documents while inspecting the original evidence.
 
 **Initial corpus: NPCI circulars; local expansion now includes eight core RBI directions.** The active local library covers multiple NPCI products and the RBI snapshots collected on 9 October 2026. The original 50-case UPI evaluation is preserved; a separate 20-case RBI–NPCI development set now tests broader questions. This is a local research assistant, not an authoritative compliance decision-maker.
 
-## Payments Research Workbench
+## One product, two tasks
 
-Automatic answer style now supports optional evidence tables alongside prose and lists. Formatting is preserved in unedited saved answers and exports, with citations and existing warnings. [Adaptive presentation and its limits](docs/ADAPTIVE_ANSWER_PRESENTATION_20261026.md).
+**Ask a question** explains payment guidelines with inspectable citations. **Understand a change** starts with a revised document and a confirmed comparison baseline, then prepares a cited change summary. Both use the same RAG engine.
 
-Open `/work` for the overview, Query Desk and Change Briefs. Ask & Research remains at `/`. The [25 October implementation guide](docs/WORKBENCH_PRODUCT_20261025.md) explains the guided flows, source-preserving handoff, review states and recovery controls. Verification records: [product checks](evaluation/workbench_product_20261025/README.md). These workflows remain supervised; independent answer acceptance is pending.
+**Saved work** keeps useful answers and change summaries. Optional human sign-off and History are supporting tools; they are separate from project evaluation and do not block reading or export. Document library and collapsed management tools support these tasks.
 
-**26 October interface clarification:** answers, edits and evidence exports are the main flow. Human sign-off is optional and collapsed; History retains earlier snapshots. In-product sign-off is separate from the 50-case benchmark and independent evaluation. [What each check means](docs/REVIEW_CLARITY_20261026.md).
+[Current implementation and verification](docs/PRODUCT_MATURITY_20261028.md) · [Team demonstration](docs/team/DEMONSTRATION.md) · [Using the application](docs/team/USING_THE_APP.md).
+
+Automatic answer style can combine prose, lists and tables with citations. Existing source checks and warnings remain visible. This development update includes the interface changes, targeted retrieval repair and saved evaluation evidence. The source package, model configuration and graph manifest are unchanged.
 
 ## Reproducible colleague handoff
 
-**Current GitHub development build:** use the [27 October colleague handoff](docs/GITHUB_HANDOFF_20261027.md) and `config.workbench.json`. It packages the corrected source snapshot with the maintained graph and current workflows. [Additional tests and open quality findings](evaluation/release_20261027/README.md) include a broad UPI Lite question that returned historical limits; this is not a production-ready release.
+**Current source package and setup:** use the [27 October colleague handoff](docs/GITHUB_HANDOFF_20261027.md) and `config.workbench.json`. It packages the corrected source snapshot with the maintained graph and current workflows. [Additional tests and open quality findings](evaluation/release_20261027/README.md) preserve the earlier broad UPI Lite failure. The [28 October verification](evaluation/product_maturity_20261027/README.md) records its targeted repair and remaining synthesis limitations; this is not a production-ready release.
 
 **Frozen engineering candidate (24 October; predates the interface increment):** Payments Query Desk and Change-Impact Briefs support saved drafts, source inspection, versioned human review and evidence exports. [Engineering verification](docs/ENGINEERING_CLOSEOUT_20261024.md) passed 445 Python tests, four JavaScript suites, isolated installation/rebuild/recovery and browser checks. [Portable engineering candidate setup](ENGINEERING_START.md) includes matching sources, graph, cached embeddings and evaluation records. It is not a pilot-approved release: all 20 warm latency responses remained marked incomplete, and independent payments acceptance is pending.
 
